@@ -1,0 +1,1848 @@
+Band names must be immediately followed by a line which has a '-' in the first column
+There must be at least one blank line between the end of one group and the start of the next
+
+
+YY-MM-DD, N, R, S, Notes
+
+	N - # of CDs:  0 = want, 
+	R - rate:      x = keeper,  - = non-keeper,
+	S - source:    f = factory, s = shn,   a = ape,       m = mp3, 
+	               ? = unsure,  v = vinyl, o = official   l = flac
+
+
+LED ZEPPELIN
+--------------------------------------------------------------
+$ Led Zep I
+69-01-10, 2, -, l, ZD
+69-01-11, 1, -, s
+69-01-23, 1, -, s
+69-01-26, 2, -, s
+69-02-14, 2, -, s, ZD
+69-03-15, 1, x, s, 2 short sets - prob diff Mar dates 'cuz often packed together
+69-03-16, 1, x, l,
+69-03-17, 0, -, s, Need this date if not on the 3/15 disc, which it probably is?
+69-03-19, 0, -, -, Lost BBC Session
+69-04-24, 1, x, s, SB
+69-04-25, 1, -, ?, Only 4 songs, B SQ
+69-04-26, 2, -, l, "Graham's Superb"  A little muffled and distorted
+69-04-27, 2, -, s, SB/Aud(2 mins D1T5, 2 mins D2T1)
+69-0x-xx, 1, x, o, BBC Sessions disc 1, mostly June '69
+69-06-27, 1, -, f
+69-07-06, 1, -, s, ZD  Newport Jazz Festival, would be good if Plant was higher in the mix 
+69-07-25, 1, -, s, Midwest Rock Festival
+69-08-31, 1, x, s
+$ Led Zep II
+69-10-10, 1, -, s, new (2007) FM, 2010 Dl is minus radio announcer
+69-10-12, 1, -, s, Acceptable AUD, but 11/6 is better
+69-10-30, 2, -, s
+69-11-05, 1, -, s
+69-11-06, 2, -, l, ZD
+69-12-06, 0, -, l
+70-01-09, 2, -, l, SB & Audience mix
+70-03-07, 2, -, s, Montreaux.  Might be the 14th
+70-03-11, 2, -, s, ZD
+70-03-21, 1, -, s, Correct seq: WGW, HB, SIBLY, Organ, TY, WIaWSNB, CB/RO
+# 3/21 is good, but Page is a little too low in the mix
+70-04-07, 2, -, s, "American Accents", NC
+70-04-14, 1, -, s, "Ottawa Sunshine"
+70-05-xx, 1, -, s, 2 outtakes, HHWCID, JFB
+70-06-28, 2, -, s
+70-07-12, 0, -, s, "Checkpoint Charlie"
+70-07-12, 0, -, s, "Intimate, Almost Mysterious"
+$ Led Zep III
+70-08-15, 0, -, -, DLNB
+70-08-21, 0, -, -, Oklahoma remaster DLNB  
+70-09-02, 0, -, -, 
+70-09-04, 2, x, l, "Blueberry Hill"  Genuine Masters release
+70-09-06, 1, -, s
+70-09-19, 2, -, l
+70-09-19, 2, -, l, afternoon show - American Woman, et al
+70-09-19, 0, -, -, DLNB evening show remastered
+$ Led Zep IV
+71-03-25, 2, x, s, BBC Paris Studios
+71-05-03, 2, -, s, Copenhagen  Gallow's Pole & Four Sticks
+71-08-07, 0, -, -, Montreux
+71-08-21, 2, -, s
+71-08-22, 0, -, -
+71-08-23, 2, -, s, "Hot August Night"  Fort Worth  Incomplete
+71-09-06, 2, -, s
+71-09-09, 2, -, s, Hampton  Zep Digital  SB, flat
+71-09-14, 2, -, f, "Going To California"  Berkely
+71-09-23, 3, -, s 
+71-09-24, 3, -, s
+71-09-28, 3, -, s, Downloaded from two different sources
+71-09-29, 3, -, f
+71-11-13, 2, -, s
+71-11-16, 3, -, s, Ipswitch  Gallow's Pole
+71-11-20, 2, -, s
+71-11-25, 3, -, s
+72-02-19, 2, -, s
+72-02-25, 2, -, s, 2 versions, 1 (inferior?) is incorrectly labeled Feb 24
+72-02-27, 2, -, l
+72-04-xx, 1, -, s, Bombay, use track 3
+72-05-27, 2, -, s
+72-05-28, 2, -, s, Tearing noises through Dazed
+72-05-28, 2, -, s, Brussels  EQ'ed                            
+72-06-09, 2, -, s, Charlotte
+72-06-11, 3, -, s
+72-06-25, 3, -, ?
+72-06-2x, 3, -, o, HTWWW
+72-10-02, 0, -, f
+72-10-03, 3, -, f
+72-10-04, 2, -, l, Good audience recording, but boring show
+72-10-05, 2, -, l
+72-10-09, 2, -, s
+72-10-10, 2, -, s
+72-12-08, 3, -, s, Very good audience & show, but makes speakers shake and buzz
+72-12-16, 3, -. l
+72-12-22, 2, -, s
+72-12-23, 2, -, s
+72-12-23, 2, -, s, 1st gen  Pretty good, but 12/8 is better
+73-01-15, 2, -, s
+73-01-22, 2, -, l  Outstanding sound, mellow show
+$ Houses Of The Holy
+73-03-14, 2, -, l
+73-03-16, 2, -, s, Cleanest of the March 1x dates
+73-03-16, 1, -, s, Soundboard fragment
+73-03-17, 3, -, s, Some "whooo"ing
+73-03-19, 2, -, l, Hissy.  Really gets going around SIBLY
+73-03-21, 2, -, s
+73-03-22, 2, -, s, 2nd audio disc fucked, swirly
+73-03-22, 2, -, l, FBO DLed and tried a version(Gracious)again in 2010, still no
+73-03-24, 3, -, f
+73-03-24, 2, x, s
+73-04-02, 2, -, s
+73-05-13, 2, -, s
+73-05-14, 2, -, -
+73-05-18, 0, -, -
+73-05-19, 0, -, -
+73-05-28, 2, -, l
+73-05-31, 2, -, s, "Bonzo's Birthday Party"
+73-06-02, 2, -, f
+73-06-03, 3, -, s. "Three Days After"  NQ, TSRTS, RS are fucked up  + microcuts?
+73-07-09, 3, -, l, MN "Complete Performance" 
+73-07-12, 3, -, s, Detroit
+73-07-17, 2, -, s
+73-07-17, 3, -, l, Seattle  Almost  "V 1/2"
+73-07-21, 2, -, s, "LZRhoder", Almost. 
+73-07-27, 1, -, f
+73-11-xx, 1, -, s, Outtakes Disc 9 - PG alternate takes
+$ Physical Graffiti
+75-01-12, 2, -, l, Brussels
+75-02-12, 3, -, s, "Flying Circus"  NY
+75-02-28, 0, -, -,
+75-03-11, 3, -, s, 2010 Millard Master. Long Beach
+75-03-14, 3, -, s, SB, but there's better '75 
+75-03-19, 3, -, l, Vancouver SB  Full
+75-03-19, 1, x, l, Vancouver SB  D1: IMToD-end, D2: TU, D3: WLL + Crunge
+75-03-21, 4, x, s, Seattle
+75-03-24, 3, -, l, 2010 Millard Master. Better than 2/14 and 3/25
+75-03-25, 3, -, l, 2010 Millard Master. Same show as Sex Machine
+75-03-27, 3, -, s, 2010 Millard Master.                                   
+75-05-24, 4, -, s, Full
+75-05-24, 3, x, s, D1: 3-last  D2: 1,5  D3: 1,2,3  D4: 1
+75-05-25, 4, -, ?
+$ Presence
+77-04-27, 3, -, s
+77-04-28, 3, -, s
+77-05-21, 0, -, -, DLNB  Houston SB
+77-05-22, 0, -, -, DLNB  SB  Texas Hurricane
+77-05-26, 3, -, s
+77-05-30, 3, -, -
+77-06-10, 3, -, l
+77-06-11, 3, -, l  FBO,  talking during acoustic set. Best NY
+77-06-13, 0, -, -  DLNB
+77-06-14, 0, -, -  DLNB
+77-06-21, 3, x, s, Listen To This Eddie"  "x" marks the spot
+77-06-23, 3, -, s
+77-06-25, 3, -, s
+77-07-17, 4, -, ?
+77-07-24, 2, -, s
+79-07-24, 2, -, s
+79-08-04, 3, -, s
+79-08-11, 3, -, s
+$ In Through The Out Door
+80-06-20, 2, -, f
+80-06-23, 2, -, s
+80-06-29, 2, -, s
+80-07-03, 2, -, f, Dinosaurs
+80-07-07, 2, -, s
+$ Coda
+xx-xx-xx, 1, x, s, 7/6/73 soundcheck
+
+PAGE
+--------------------------------------------------------------
+6x-xx-xx, 1, -, ?, With the Yardbirds
+88-09-08, 0, -, -, DLNB
+91-05-29, 1, -, l, w/ Solid Ground
+9x-xx-xx, 0, -, -, DLNB  Coverdale rehearsals
+94-xx-xx, 1, x, o, "No Quarter"
+96-02-13, 2, x, l, 
+99-xx-xx, 2, x, o, "Live At The Greek"
+
+BLACK SABBATH
+--------------------------------------------------------------
+$ Black Sabbath
+70-03-04, 0, -, -, DLNB  Koln  Probably wrong date.  3 tracks
+70-04-20, 1, x, m, Top Gear mp3s from Ozzman Cometh.
+70-06-26, 0, -, -, "Live at Plumpton" is better than "Return" (?)
+70-06-26, 1, x, l, "Return to 69" Berlin. mislabled as Plumpton, 6/20,5/14,5/23
+$ Paranoid
+70-09-26, 1, x, f, German Beat Club  from "Black Night In SF"
+70-11-22, 1, -, l, Speed-correct version of the supposed SF 27th show
+70-11-27, 1, -, f, "Black Night In San Fran" too fast  Includes Beat Club
+70-11-29, 0, -, -, other possible date for Ozzman Cometh tracks
+70-12-20, 1, x, f, Paris
+71-01-14, 1, -, l, Sheffield. AF, ItV alt lyrics, speed probs on last 3 songs 
+71-02-23, 0, -, -, DLNB  Even Gardner remaster not worth it.  Inglewood CA
+71-03-02, 0, -, -, DLNB  Even Gardner remaster not worth it.  Chapel Hill NC
+71-04-18, 0, -, -, DLNB  B audience, alt After Forever is only thing special 
+$ Master Of Reality
+71-07-18, 1, -, f, Northern Exposure
+71-07-28, 1, -, l
+71-08-12, 0, -, -, DLNB  Chicago  not sure on date
+71-09-04, 0, -, l, Speyer
+71-10-01, 0, -, -, DLNB  Master of Winterland. VG audience
+71-10-17, 0, -, s, Crappy audience
+71-10-22, 1, -, s, NY Academy  slow?  Absolutely nothing special about set list
+72-01-24, 1, -, l, Birmingham. Fair audeience. After Forever
+72-03-10, 1, -, s, Winterland
+72-03-15, 1, -, -, DLNB  LA
+72-03-16, 1, -, l, Tucson. TD & SB alt lyrics  Not quite as good as 3/17
+72-03-17, 1, -, l, Swing Audtrium. TD & SB alt lyrics wooing, Geezer outa tune
+72-03-17, 1, -, l, Swing Audtrium. Remaster 
+$ Vol IV
+72-07-15, 1, -, f, Dayton, Ohio
+72-07-15, 0, -, -, Dayton, Ohio, DLNB upgrade
+72-09-15, 1, -, s, Hollywood Bowl. WoC, UtS
+73-01-07, 1, -, s, NZ. Original plays fast, but ta se a speed-corrected version
+73-01-13, 1, -, l
+73-02-17, 1, -, s, Alternate date: 73-03-03. Sound deteriorates after first 4-5 songs
+73-02-19, 0, -, -, DLNB. Distortion, drop-outs, no Geezer
+73-02-22, 0, -, ?, some mistakenly say the 21st, don't even keep hi-gen remaster
+73-03-03, 1, ?, ?, just ran across audio, don't know where it's from
+73-03-09, 1, -, s
+73-03-xx, 1, x, o, Past Lives
+$ Sabbath Bloody Sabbath
+74-01-11, 0, -, -, DLNB
+74-02-01, 1, -, s
+74-02-11, 0, -, -, DLNB  "Love In Chicago"
+74-02-21, 0, -, -, DLNB  Dan Lampinski
+74-04-06, 1, -, f, Cannibis Confusion
+74-11-07, 0, -, -, DLNB  Australia
+74-11-12, 0, -, -, DLNB  Australia
+$ Sabotage
+75-08-05, 2, x, s
+75-09-xx, 1, -, f, Sabotage Route 666. Not bad except for crowd noise
+76-01-13, 2, -, f, Megalomaniac Architect & Children of the Sabbath
+$ Technical Ecstacy
+76-11-09, 1, -, l, Fresno  Taper removed Snowblind.  Has "All Moving Parts"
+76-12-06, 0, -, -, DLNB  MSG  Zappa intro  2 disc set
+76-12-08, 1, -, s, more cmplete than FM broadcast
+76-12-08, 1, -, s, Even new (?) 2nd gen source isn't worth it 
+76-12-08, 1, -, f, London to Pittsburgh. Broadcast Jan 16, 1977
+76-12-08, 1, -, l, Pre-FM, 10 tracks
+76-12-10, 1, -, l, Niagara 
+77-03-09, 0, -, -, DLNB
+77-04-05, 1, -, l, France
+77-04-21, 1, x, f, Lund  cdparanoia won't read factory disc, so using factory cd for listening copy
+$ Never Say Die
+78-05-21, 0, -, -, DLNB
+78-06-10, 0, -, -, DLNB
+78-06-19, 1, =, v, You Are What You Eat
+78-06-19, 1, =, f, Welcome to the Electric Funeral  Hammersmith
+78-08-23, 0, -, -, DLNB   
+78-08-29, 0, -, -, DLNB   
+78-09-02, 0, -, -, DLNB Pittsburgh 
+78-09-22, 1, -, f, One For The Nose
+78-09-22, 2, -, s, Fresno
+78-09-23, 0, -, -, DLNB  
+78-11-19, 0, -, -, DLNB  Nashville
+7x-xx-xx, 1, -, f, War Pigs In PA, 1-6 NJ '75; 7-10 London '76 (British Biscuit); 11-14 Pitts '78
+$ Heaven And Hell
+80-05-08, 0, -, -, DLNB
+80-06-02, 0, -, -, DLNB  Offenbach
+80-06-26, 0, -, -, DLNB
+80-07-19, 1, -, l
+80-08-10, 1, x, v, Hartford  FM
+80-08-10, 2, -, l, Hartford  Audience
+80-08-12, 1, x, f, Their Satanic Majesties Return, Prov, RI Civic Center
+80-09-07, 0, -, -, DLNB
+80-10-16, 1, ?, l, Rochester  SB?
+80-10-17, 1, -, ?, Nassau, o ebay, missing a track or two, screwed track order
+80-11-18, 1, -, s, "Live Tokyo", from Welfare Pig. Tony gets sick. Robotic keys
+80-11-18, 1, -, -, "Angel And Demon" Much better than "Live Tokyo"
+80-11-18, 1, x, l, "Dark Knight" Better than "Angel And Demon"
+80-11-21, 2, -, f, Last Sacrament
+80-11-27, 1, -, l, Sydney SB  Good, but rough guitar
+81-01-20, 0, -, -, DLNB  Pretty good aud, but there's better
+$ Mob Rules
+81-11-15, 0, -, -, DLNB  1st Mob Rules show  Quebec
+81-12-04, 0, -, -, DLNB  Philly
+81-12-21, 0, -, -, DLNB  
+82-01-0x, 2, x, l, Compiled from 12/31, 1/1, & 1/2  Requires overburning
+82-01-03, 0, -, -, DLNB
+82-03-02, 0, -, -, DLNB
+82-04-12, 0, -, -, DLNB  Might be 11th or 19th. Phoenix.
+82-04-17, 0, -, -, DLNB  San Fran   might be same show as below
+82-05-17, 0, -, -, DLNB  New York   might be same show as above
+82-08-22, 0, -, -, DLNB
+82-08-27, 2, -, l, may be 24th, traded as 11-19-81
+82-08-31, 2, -, -, DLNB
+$ Born Again
+83-08-18, 0, -, -, DLNB
+83-08-19, 2, -, l, 2nd night of tour. Has Keep It Warm
+83-08-21, 0, -, -, Helsinki
+83-08-27, 1, -, f, Reading, part of Chicago 2 CD set
+83-08-27, 1, x, l, Reading
+83-09-14, 0, -, -, DLNB  Gardner remaster
+83-09-15, 0, -, -, DLNB  
+83-09-27, 0, -, -, DLNB
+83-09-28, 0, -, -, DLNB
+83-09-29, 0, -, -, DLNB, Paris. Flat SB
+83-10-20, 2, -, l, or shn
+83-11-04, 1, =, s, Purple Sabbath Definitive Edition.  Supposed To Be Best  
+83-11-04, 1, =, s, Shadows of Flame, Worchester. One reference rates "A"/ Born in Hell "A+" 
+83-11-18, 0, -, -, DLNB 
+83-11-29, 0, -, -, DLNB  Alberquerque
+84-01-25, 1, -, l, San Fran
+84-02-25, 0, -, l, 
+84-02-24, 0, -, l, 
+$ Dehumnaizer
+92-08-09, 1, -, f, Excellent, but slightly incomplete "Dead, Bad, and Ugly"
+92-08-09, 2, x, l, Geezer not as prominent as on the less complete verion
+#92-08-09, Downloading 2nd best version, waiting for Class Of 92, the best
+#most recent DL not as good as my earlier 2-disc version
+92-09-12, 1, x, l, "Europe 1993" or is it Dec 9? Title of boot doesn't match date in txt file
+92-09-14, 0, -, -  
+92-11-14, 0, -, -, DLNB  Next night definitely better
+92-11-15, 1, x, f
+$ Cross Purposes
+94-02-08, 1, x, l, 
+94-02-15, 2, x, l, NY Geezer
+94-03-04, 2, -, l, CA Geezer. Good audience, but weak and too much wooing
+94-05-04, 0, -, -, DLNB
+94-05-28, 2, -, l, Switzerland. B+ Audience. Did not burn audio
+94-08-27, 0, -, l, DLNB
+94-09-03, 1, -, l, Sounboard, but weak. Geezer & Bill
+95-07-10, 2, -, l, Data disc(s) mislabelled as 10/7
+95-08-01, 0, -, -, DLNB
+95-10-13, 2, -, l, Paris
+$ (Reunion)
+97-12-05, 2, x, o, "Reunion"
+98-12-31, 0, -, -, DLNB
+99-01-08, 0, -, -, DLNB  SB, but redundant
+99-06-29, 2, -, l, Deer Creek, SB, not enough audience
+99-12-05, 1, -, l, re-downloaded  "On The Seventh Day"  Sehr gut  MR BILL WARD
+99-12-05, 0, -, -, Complete AUD, good, but not worth it
+99-12-06, -, -, -, FM/SB but some static at the start
+99-12-16, -, -, -
+01-05-22, 0, -, -
+04-07-16, 0, x, ?
+04-07-24, 1, -, -
+05-07-30, 0, -, -, DLNB
+$ (Heaven And Hell)
+07-03-11, 0, -, -, DLNB
+07-03-22, 0, -, -, DLNB
+07-03-24, 0, -, -, DLNB
+07-03-30, 2, x, o          
+07-04-24, 0, -, -, DLNB
+07-04-25, 0, -, -, DLNB
+07-05-10, 0, -, -, DLNB
+07-05-17, 0, -, -, DLNB
+07-05-18, 0, -, -, DLNB
+07-05-19, 0, -, -, DLNB
+07-06-02, 0, -, -, DLNB  Both sources
+07-06-03, 0, -, -, DLNB
+07-06-06, 0, -, -, DLNB
+07-06-07, 1, -, l, Sweden FM  Very Good, but the official H+H show is longer. Sausages
+07-09-05, 0, -, -, DLNB
+07-09-07, 0, -, -, DLNB
+07-09-08, 0, -, -, DLNB
+07-09-14, 0, -, -, DLNB
+07-09-30, 0, -, -, DLNB
+07-10-20, 2, -, l, good recording, show is average
+09-07-30, 1, -, o, Wacken
+
+SABBATH FEATURING IOMMI 
+--------------------------------------------------------------
+87-11-25, 2, -, l, FM
+89-06-14, 0, -, -, DLNB
+89-09-02, 0, -, -, DLNB
+89-09-06, 0, -, -, DLNB
+89-09-15, 0, -, -, DLNB  A diff source? Claims not from factory. Not worth it
+89-09-15, 0, -, ?, 5 tracks from 10/18/90  Gillan guests on last two tracks
+90-09-01, 2, -, l, Aud 8, Cozy Powell
+90-09-05, 2, -, l
+90-10-01, 2, -, l, decent, but did not burn audio
+90-10-18, 2, -, l, Aud 8, Cozy Powell + Sep 15 1989 (Gillan appears last 2 tracks)
+
+OZZY
+--------------------------------------------------------------
+$ Blizzard Of Oz
+80-09-20, 0, -, -, DLNB
+80-10-22, 1, x, l
+$ Diary Of A Madman
+81-xx-xx, 1, x, o, Tribute
+81-05-02, 0, -, -, DLNB
+81-05-11, 0, -, -, "Bat's Head Soup"  Cleveland.  The source for much of Tribute
+81-06-04, 0, -, -, DLNB  Decent SB, but Ozzy isn't his best and mix is off
+81-06-21, 0, -, -, DLNB
+81-06-27, 0, -, -, DLNB
+81-07-04, 0, -, -, DLNB
+81-07-28, 1, X, l, Montreal
+81-08-01, 1, -, l
+81-11-19, 0, -, -, DLNB
+82-01-15, 0, -, -, DLNB
+82-01-22, 1, -, -, Milwaukee
+82-01-24, 0, -, -, Chicago  
+82-01-31, 0, -, -, DLNB
+82-02-09, 0, -, s, Good but flat, Ozzy not great, even remaster is a no-go.
+82-03-15, 1, -, s, or flac - double-check
+86-08-16, 0, -, -, DLNB  Monsters Of Rock
+95-09-09, 0, -, -, DLNB  Geezer, but can't hear him. Could use mixing
+95-09-12, 0, -, -, DLNB 
+96-04-13, 2, -, l,  
+03-06-11, 0, -, -, DLNB
+
+GEEZER
+---------------------------------------------------------------
+85-xx-xx, 0, -, -, DLNB Marquee Club
+97-09-01, 0, -, -, DLNB San Fran
+
+BILL WARD
+---------------------------------------------------------------
+97-05.10, 0, -, -, Bill Ward And Friends
+
+DIO
+---------------------------------------------------------------
+$ Holy Diver
+83-08-20, 1, -, l, FM. Castle Donnington. There is supposedly a version which has DTtS
+83-10-05, 1, -, l, Data On same disc as 7th
+83-10-07  1, -, l, Flatter than above
+83-11-08, 0, -, -, DLNB Good aud or so-so FM
+83-11-17, 0, -, -, DLNB 
+83-12-28, 1, X, l, FM. Fresno. + WR+TLiL from Philly 84 (RnRChildren B-side)
+% The Last In Line
+84-06-11, 0, -, -, DLNB
+84-07-24, 1, -, l, FM. Spokane  Sounds a little small
+84-07-24, 2, x, l, More complete. Added DTtS from B-side and 2 tracks from Donninton 1987
+84-10-29, 0, -, -, DLNB  Essen
+84-xx-xx, 1, -, l, Hammersmith, leaning towards "no"
+% Sacred Heart
+85-08-31, 0, -, -, DLNB
+85-09-18, 0, =, -, DLNB
+86-05-14, 0, -, -, 
+$ Dream Evil
+87-08-15, 0, -, -, DLNB "Giants Of Rock"
+87-08-22, 1, x, o, Donington
+87-11-21, 0, -, -, DLNB
+87-11-23, 0, -, -, DLNB  Paris FM Master
+87-12-07, 0, -, -, DLNB
+87-xx-xx, 0, -, -, DLNB Gothenburg
+# Strange Highways
+94.07.10, 0, -, -, DLNB
+05-09-13, 0, -, -, "Russian Diver"
+
+JIMI HENDRIX
+---------------------------------------------------------------
+65-12-26, 1, -, s
+# "Smash Hits"
+67-02-04, 1, -, l                  
+67-05-24, 1, -, l                  
+67-xx-xx, 1, x, o, Radio One
+67-09-04, 1, x, s,                
+67-09-05, 1, x, s,        
+67-09-10, 0, -, -, DLNB   1st show
+68-01-08. 0. -. s. Damn good show, but annoying sq
+68-02-25, 1, -, s, Chicago
+68-02-28, 0, -, -, Rough SQ
+68-03-15, 1, -, a, Missing interviews
+68-03-17, 1, -, ?, Hendrix & Friends  Very bluesy, who's the singer? 
+68-03-19, 1, -, s, Complete soundboard - rare for this tour. Close, but n/ceegar
+68-05-10, 1, -, s
+68-05-17, 0, -, -, Dled but not burned, horrible sound
+68-08-02, 1, -, ?
+68-08-10, 1, -, s, Chicago
+68-08-23, 1, -, s, NY
+68-10-1x, 2, x, o, Winterland
+68-10-1x, 1, -, s, Star Spangled Blues
+68-12-01, 1, -, s, Chicago
+69-01-09, 1, -, s, 2nd show (1st show supposedly much inferior) ~swirly. good+
+69-01-22, 1, -, ?
+69-02-24, 2, x, s, makes Jan 9 redundant
+69-05-24, 1, -  s, okay show, good sound
+69-05-25, 1, -  s, great show, substandard sound
+69-06-20, 1, -, a, annoying backing vocals
+69-06-22, 0, -, -, DLNB
+69-08-1x, 1, -, o, Woodstock
+69-12-31, 1, -, s
+70-04-25, 2, -, s, VG+ recording, but set list is bleh, just forget 1970
+70-05-30, -, -, -, DLNB, Darn good rehearsals, maybe if the show is recorded...
+70-06-13, 1, -, l
+70-07-30, 2, -, s
+70-09-01, 0, -, -, DLNB
+70-09-04, 1, -, ?
+# Blues
+
+CLAPTON
+--------------------------------------------------------------
+67-1x-xx, 0, -, s, Live In Europe, no good
+67-10-15, 2, -, s, Consensus is it's the best Cream
+# CD 1: Tracks 1, 2.  CD 2: 0 tracks
+68-10-04, 1, -, -
+73-01-13, 2, -, s, "EC And The Palpitations" late show
+# 461 Ocean Blvd
+74-07-12, 2, x, s, two recomendations                 
+74-07-13, 1, -, s, Bright Lights In Blues City. MSG
+74-07-20, 0, -, s
+74-07-21, 0, -, -, DLNB
+74-07-27, 0, -, -, DLNB
+74-08-01, 0, -, -, DLNB
+74-12-04, 2, -, s, 1st cd sehr gut. 2nd cd boring middle, last ~2 songs bad SQ
+74-12-05, 2, -, s, 1st cd performance not as good as on the 4th. Ronnie Wood enc
+75-04-20, 0, -, s, DLNB  slightly garbled, show is so-so
+75-08-09, 2, x, l, Probly best '75, but still not a good set list and kinda thin
+75-08-12, 2, -, s, Denver 
+75-08-14, 2, -, s, Legendary Forum   
+75-08-14, 1, -, s, Stormy Monday Blues                  
+76-08-03, 0, -, -, DLNB
+76-11-13, 0, -, -, DLNB  "Rider On The Storm"
+76-11-15, 2, -, l, audience, complete show, unnecessary, FM boot is plenty
+76-11-15, 1, -, s, broadcast version, Labeled as 16th 
+$ Slowhand
+77-04-26, 1, -, l, Better then Nagoya, but '77 set list sucks when it isn't just boring
+77-06-17, 0, -, -, DLNB
+77-09-27, 0, -, -, 
+77-09-29, 2, -, -               
+77-09-30, 2, -, s, Nagoya
+78-02-01, -, -, s
+78-02-11, 1, -, s
+78-02-11, 2, -, s
+78-03-24, 1, -, s, WHY DO I HAVE IT ON 2 CD'S?????  2/11 is much better
+78-11-19, 2, -, l
+79-06-20, 0, -, -, DLNB
+79-10-06, 2, -, l, Bassy, light vocals
+79-10-29, 0, -, l, DLNB
+83-02-07, 1, -, l, SanFran 1) WLB 2) Crazy Country Hop INCOMPLETE, has R&R Hrt
+83-04-14, 2, -, s, Dublin
+83-04-20, 2, -, s
+83-07-10, 0, -, -, DLNB SB but very dominant vocals
+85-04-22, 1, x, s
+85-05-26, 0, -, -, DLNB
+90-02-03, 0, -, -
+93-xx-xx, 0, -, -,
+91-02-17, 1, -, l
+94-02-20, 0, -, -,
+94-11-0x, 2, -, -, 8th and 9th
+94-11-27, 2, x, l,
+94-11-28, 0, -, -,
+95-04-05, 2, -, f, Pretty good, but static on 2nd disc
+97-07-11, 2, -, f, Jazz
+97-10-27, 2, -, s
+99-11-24, 1, x, l, Japan
+04-06-29, 2, -, l
+
+DEEP PURPLE
+---------------------------------------------------------------
+69-08-24, 1, x, f, "Crash Landing"
+69-09-24, 1, x, o, Concerto
+70-01-15, 0, -, -
+70-02-19, 1, x, o, "In Concert"
+$ In Rock
+70-11-12, 2, x, o, "Scandinavian Nights"  ("Live And Rare" in the U.S.)
+71-01-30, 0, -, -, DLNB
+71-04-24, 2, x, s
+$ Fireball
+71-07-02, 0, -, -, poor aud, Gillan is buried
+71-08-30, 0, -, -, fair aud. DLNB. Good show "Turn Around"
+71-09-04, 0, -, -
+71-09-29, 2, -, l, "Autumn of 71"
+72-01-28, 1, -, l, Pretty good audience, but "In Concert" makes it unneccessary
+72-02-19, 0, -, -
+$ Machine Head
+72-03-19, 1, x, o, "In Concert" 
+72-07-01, 0, -, -, 
+72-08-15, 1, -, s, No "Smoke On the Water"?
+72-08-16, 1, -, s
+72-08-17, 1, x, s, Speed King
+73-06-23, 0, -, -, DLNB
+$ Burn
+73-12-11, 0, -, -, DLNB
+74-05-22, 1, x, o, "Live In London"
+% Perfect Strangers
+87-09-02, 0, -, -,  "Lost Milan Tape"
+% House Of Blue Light
+% Slaves And Masters
+91-02-26, 0, -, -
+91-04-20, 0, -, -, DLNB
+91-08-22, 0, -, -, DLNB
+93-08-11, 0, -, -, DLNB
+93-10-19, 0, -, -, DLNB  SB, but Blackmore is hardly there 
+93-10-29, 0, -, -, DLNB  Pretty good, but SQ just a little subpar
+93-12-03, 2, x, s
+93-12-05, 0, -, -, DLNB
+94-04-06, 0, -, -, DLNB
+94-06-10, 0, -, -, DLNB  Satch
+94-06-26, 2, x, l, Satch
+00-03-30, 0, -, -, DLNB
+00-10-27, 2, -, l, Dio, Concerto
+# D1: t9, t12  D2...?
+06-06-13, 0, -, -, DLNB
+
+RAINBOW
+---------------------------------------------------------------
+$ Blackmore's Rainbow
+$ Rainbow Rising On Stage
+75-11-12, 0, -, l, "First Gig In NY" DLNB
+75-12-18, 0, -, -, DLNB
+76-xx-xx, 0, -, -, "Tower  Of Babel"  3 disc tour rehearsals. 
+76-07-15, 0, -, -, DLNB
+76-09-2x, 2, x, f, "Live In Germany"  Has been data-fied
+76-11-09, 0, -, l, DLNB
+76-12-02, 1, x, l, AUD, but really good, Tokyo Sports Arena
+76-12-09, 1, x, l, SB
+76-12-10, 0, -, l,         
+76-12-14, 2, -, l, Japan
+$ Long Live R&R
+77-10-04, 0, -, -
+77-10-20, 2, -, l, maybe delete. 2nd disc only 2 songs, one of which is DYCYE, no Stargazer.  Has LLRnR
+77-10-27, 0, -, -, DLNB
+77-11-04, 0, -, -, DLNB
+77-11-18, 0, -, -, DLNB
+78-01-16, 2, -, l
+78-01-17, 2, -, l
+78-01-24, 2, x, l, Fukushima
+
+WHITESNAKE
+---------------------------------------------------------------
+$ Trouble
+78-01-11, 1, -, l, Might be Nov 1st  Decent, but tracking probs/fluctauting vol
+78-03-21, 0, -, -, DLNB 
+78-06-17, 0, -, -, DLNB
+78-05-07, 0, -, -, DLNB
+78-10-26, 0, -, -, DLNB  Newcastle
+78-11-01, 0, -, -, Brighton
+78-11-07, 0, -, -, DLNB
+78-11-23, 1, x, o, "Live At Hammersmith"
+79-03-03, 0, -, -, DLNB
+79-03-29, 1, -, l, BBC  Only 4 songs  Almost
+79-04-11, 0, -, -, DLNB
+79-08-26, 1, -, l, Reading
+79-08-xx, 1, -, f, "Wrathchild" Reading
+79-10-28, 0, -, -, DLNB  Also known as 10-27 and 10-30
+79-xx-xx, 1, -, l, BBC.  There's better live versions of every song on this
+# The flac version of RnW I Dled had some bonus live tracks from Reading 79 
+# I removed those and added the two best tracks from Reading 79
+$ Ready An' Willing
+80-04-02, 0, -, -, DLNB  Rainbow Theatre  2-disc aud  Has "Love Man"
+80-04-12, 0, -, -, DLNB  Same quality as King Snake
+80-04-18, 0, -, -, DLNB
+80-06-2x, 1, x, o, "Live In The Heart Of The City"
+80-08-24, 1, X, l, LitHotC has a better set list
+81-04-20, 0, -, -, DLNB
+81-06-25, 0, -, -, DLNB
+81-06-27, 2, -, l, "King Snake" - Nagoya  Good, but a little flat and muffled
+$ Saints & Sinners
+82-12-15, 2, -, l, Newcastle. A little muffled
+# 12-15-82 and 2-22-83 have same set list
+83-02-08, 0, -, -, DLNB
+83-02-22, 0, -, -, DLNB  SB, but flat, vocal-dominant mix. 
+83-03-03, 1, -, l, Germany  w/ Cozy Powell  Guitar a little muffled
+83-03-19, 1, -, l, "Reptile Kiss"  Ludwigshafen, Germany  Good
+$ Slide It In
+84-01-03, 1, -, l, "No Hibernation"  LOOKS LIKE IT'S ACTUALLY MAR 1  Flat
+84-01-04, 0, -, -, DLNB "London Bites" ACTUALLY APR 1?
+84-07-24, 1, -, l, Spokane  w/ Cozy Powell  OR MAYBE IT'S THE 12TH
+#  7/24 is really good sound, but set list and performance is a little blah
+85-01-09, 0, -, -, DLNB
+85-01-19, 0, -, -, DLNB
+88-06-13, 2, =, s 
+
+GILLAN
+---------------------------------------------------------------
+$ Mr Universe
+$ Glory Road
+80.xx.xx, 0, -, -, Reading
+80-08-21, 0, -, -, DLNB Good AUD, but nothing special
+80.09.09, 1, x, o, BBC Tapes Vol II
+82-xx-xx, 0, -, -, DLNB  Oxford
+$ Accidentally On Purpose
+$ Naked Thunder
+$ Toolbox
+92-02.22, 0, -, -
+06-08-16, 0, -, -, DLNB
+
+PINK FLOYD
+--------------------------------------------------------------
+70-02-28, 2, -, l, boring                            
+70-04-22, 0, -, -, DLNB  Boring
+70-07-16, 1, -, s, whole cd is one track
+# Embryo, FOS, GitC (16:40), CwtAE (20:02), If (28:10), AHM (33:30)
+70-09-26, 2, -, s, "The Electric Factory" 
+70-11-21, 2, -, s, one source says common date of 21st is error, really 22nd
+70-11-25, 0, -, -, DLNB  Pretty good AUD, but not quite good enough
+70-11-29, 0, -, -, DLNB  VG AUD, but 9/26 is better 
+71-02-25, 2, -, s
+71-06-05, 0, -, -, DLNB
+71-09-30, 1, x, s, Complete despite 64 min
+# FOS, OoTD, Echoes, Embryo, Blues
+72-03-03, 1, -, a Good show and recording,except ameteurish vocals
+72-05-18, 0, -, -
+72-12-09, 2, -, s
+73-03-14, 2, -, s, good, but 12/9/72 is a little better
+73-05-19, 1, -, s, pre-DSOTM songs, boring
+74-11-15, 0, -, -, DLNB  EX Aud, but distortion. R&D, You've Gotta Be Crazy
+74-11-16, 2, x, l, D1 is DSotM,  D2 is only Echos
+74-11-17, 0, x, s, non DSOTM 
+75-04-26, 2, x, l
+75-06-18, 2, -, s
+75-06-28, 2, -, s, 2nd best of '75 shows
+77-05-09, 2, -, s
+
+AC/DC
+--------------------------------------------------------------
+$ High Voltage
+74-12-31, 0, -, -, DLNB  clear but distant. 1976.07.08 has these tracks covered
+$ TNT 
+76-04-12, 1, -, f
+76-07-08, 1, x, f, HB added some tracks from Live '76
+76-xx-xx, 1, -, f, "Live 76".  Added some tracks from here to 76.07.08
+$ Dirty Deeds
+76-12-18, 1, -, s
+77-01-07, 1, -, l "The Little Cunts Have Done It Again" Hobart, Oz
+$ Let There Be Rock
+77.04.03, 0, -, -, Wrong date for 77.09.03  Waldorf
+77.08.22, 1, x, f,  Clevelend  Agora Ballroom
+77-09-03, 1, x, s, Old Waldorf SanFran,  APPENDED 2 TRACKS FROM "LIVE 77" 
+77-xx-xx, 1, -, f, "Live 77" BBC Oct, San Fran Sep 1. Omit 3 & 4 from audio 
+$ Powerage
+78-04-30, 1, -, o, "If You Want Blood"
+78-05-06, 0, -, -, DLNB
+78-08-08, 1, x, s,  FILLED OUT WITH A FEW TRACKS FROM BOSTON FROM "LIVE 78"
+78-09-10, 1, -, ?, A little distorted, performance not the best
+78-xx-xx, 1, -, f, "Live 78", mostly Boston Oct 21. Omit tracks 5 & 6 from audio
+$ Highway To Hell
+79-10-16, 1, x, l
+79-11-12, 0, -, -, DLNB
+79-12-09, 1, -, f, HALF OF "PAVILLION" IS ACTUALLY FROM 10-16
+79-12-09, 2, x, o, FULL SHOW IS ON "BONFIRE" BREAK DOWN AND BUY THE DAMN THING
+$ Back In Black
+80-07-01, 1, -, s
+80-08-01, 0, -, s, DLNB
+80-10-03, 0, -, -, DLNB  typical 80's SB
+80-10-10, 1, -, l, Fits on 1 disc if overburning, I split to 2 discs
+80-10-26, 0, -, -, DLNB
+80-11-04, 0, -, -, DLNB
+80-11-20, 0, -, -, DLNB
+80-11-22, 0, -, -, DLNB
+80-11-30, 0, -, -, DLNB
+81-02-05, 1, x, l, Tokyo FM - part of Melborne package
+81-02-05, 0, x, l, Tokyo EXCLELLENT AUD - more complete than FM
+81-02-27, 0, -, -, Melbourne. DLNB  flat SB
+81-11-20, 0, -, -, DLNB
+81-11-21, 2, =, l
+81-12-01, 0, -, -, DLNB "Bellringers From Hell" Hartford, CT
+81-12-21, 0, -, -, DLNB
+$ For Those About To Rock
+82-06-10, 0, -, -, DLNB, Budokan  Mr Peach
+82-10-03, 0, -, -, DLNB
+82-10-08, 0, -, -, DLNB
+82-10-13, 0, -, -, DLNB
+82-10-16, 2, -, l
+82-11-30, 2, -, l
+82-12-06, 1, -, s, Flat, dominant vocals
+82-12-12, 0, -, -, DLNB
+$ Flick Of The Switch
+83-xx-xx, 1, -, ?, Detroit,      NEED TO DUPE?
+83-xx-xx, 1, -, ?, "Let It Boogie" NEED TO DUPE?
+83-xx-xx, 0, -, -, Rehearsals and various live. DLNB
+83-10-10, 0, -, -, DLNB rehearsals
+83-11-11, 0, -, -, DLNB
+83-11-13, 0, -, -, DLNB
+83-12-05, 2, -, s, Madison Square Garden NOT FOR TRADE - RnRaNP won't decompress
+84-08-18, 2, -, s, originally didn't have exact date, so CDs only say Aug 84
+84-08-25, 2, -, l, MOR Sweden
+84-09-07, 0, -, -, DLNB
+84-10-06, 0, -, -, DLNB
+$ Fly On The Wall
+85-10-11, 2, -, s
+85-10-12, 1, -, l, Incomplete SB. Sounds more enrgetic than the 11th
+86-01-13, 2, -, s, Good wall of sound, but runs just slightly fast
+86-01-17, 2, -, s, "Sink The Pink".  Wembley + 5 bonus tracks
+86-01-27, 0, -, -, "Shake Your Fly In Hamburg"  
+86-02-09, 2, -, s, Missing interviews and 3 bonus tracks
+86-08-29, 0, -, -, DLNB
+8x-xx-xx, 1, x, ?, Singles  
+$ Blow Up Your Video
+88-02-08, 0, -, -, DLNB
+88-10-23, 0, -, -, DLNB
+$ The Razor's Edge
+91-03-28, 2, -, ?
+91-07-07, 0, -, -, DLNB "Black Money Rules In Sin City"
+91-08-25, 2, -, l
+91-09-21, 0, -, -
+91-xx-xx, 2, -, o
+$ Ballbreaker
+96-02-05, 0, -, -, DLNB
+96-03-18, 0, -, -, DLNB. audience
+96-03-25, 0, -, -, DLNB. rough audience
+96-04-26, -, -, -, DLNB
+96-05-03, 0, -, 0, DLNB
+96-07-05, 1, 0, s, "VH1 Uncut"  Less VH1 songs than Studio Breakers
+96-07-05, 1, x, l, "Studio Breakers"  10 songs, 4 songs 9/13/95
+96-07-13, 0, -, -, DLNB
+96-08-12, 0, -, -, DLNB
+96-08-30, 0, -, -, DLNB
+96-09-13, 0, -, -, DLNB
+$ Stiff Upper Lip
+00-08-06, 0, -, -, DLNB 
+00-09-13, 2, x, l  "Metldown Arizona"
+01-04-11, -, -, -, DLNB. Pretty good AUD, but still doesn't compare to SB
+01-06-22, 2, -, s, Good audeience, a little too much clapping
+03-06-09, 0, -, -, DLNB
+
+ROLLING STONES
+--------------------------------------------------------------
+$ Singles I
+65-04-18, 1, x, s, "Du Fond Du Coeur" 01-04.  Paris
+65-05-26, 1, x, s, "Du Fond Du Coeur" 13-19.  U.S. TV show
+66-02-24, 0, -, -, DLNB  Melbourne
+66-03-29, 1, x, s, "Du Fond Du Coeur" 05-07.  Paris
+66-07-29, 1, -, l, "In Action" 01-09.  HI.  Also has a few other low quality segments
+67-04-11, 1, x, s, "Du Fond Du Coeur" 08-12.  Paris
+$ Beggar's Banquet
+68-xx-xx, 1, x, s, Beggar's Banquet Sessions
+68-11-08, 1, -, l
+$ Let It Bleed
+69-11-09, 1, -, l, "Bring It Back Aliver". 1st show
+69-11-09, 1, -, s, "Liver Than You'll Ever Be" (2nd show)
+69-11-09, 1, -, s, "Even More Liver Than You'll Ever Be" 
+69-11-10, 1, -, s, San Diego (Let it Bleed)
+69-1x-xx, 1, -, s, "There's No Angel Born In Hell"
+69-11-2x, 1, -, o, "Get Yer Ya-Yas Out"
+69-11-29, 0, -, -, "That's No Way To get Along" DLNB
+70-xx-xx, 1, -, l, Sticky Fingers sessions
+70-09-12, 0, -, -, DLNB
+70-09-14, 0, -, -, DLNB
+70-09-16, 1, -, s
+70-09-18, 0, -, -, Cologne
+70-09-2x, 0, -, -, 22nd or 23rd, most likely 22nd Fr radio broadcast  DLNB * 2
+70-09-23, 0, -, -, DLNB
+70-10-07, 1, -, s, Supposed to be best 70?
+70-xx-xx, 0, -, -, Hamburg DLNB DAC-012
+% Sticky Fingers
+71-03-13, 1, -, s, "Get Yer Leeds Lungs Out", A bit muffled, weird arrangements
+71-03-14, -, -, -, DLNB
+71-03-26, 0, -, -, DLNB (also found as part of Oakland 69)
+$ Exile On Main Street
+7x-xx-xx, 1, x, l, "Wingless Angels"  10-xx-70, 7-2[12]-72 Philly
+7x-xx-xx, 2, -, s, "Hillside Blues"
+72-xx-xx, 1, -, l, Stones Touring Party Vol 3 D2. 7-25, 5-21, 6-3, 6-24
+72-03-06, 0, -, l, DLNB  2 CD Vancouver, not sure if it's Mar 6 or June 3
+72-06-03, 0, -, l, DLNB
+72-06-04, 1, -, l
+72-06-08, 1, -, l, 2nd show. Last 72 "Lovin Cup"
+72-06-11, 1, -, s
+72-06-15, 0, -, -, DLNB
+72-06-20, 0, -, -, DLNB  Chicago
+72-06-23, 2, -, l, rehearsals
+72-06-2x, 2, -, s, "Ladies and Gentlemen" 6-24/5 
+72-06-27, 1, -, l, fendert says one of best aud 72 recordings
+72-07-04, 2, -, s, JD on Tour? - source says JDoT is only 1 CD
+72-07-06, 1, -, l
+72-07-11, 0, -, -, DL'ed w/ 6-27-72, not as good as that one
+72-07-18, 1, -, s, Boston, 2nd source
+72-07-22, 1, -, l
+72-xx-xx, 2, -, s, "Philly Special II"  72-07-20/21, 72-06-24/2
+72-07-2x, 2, -, l, "Philly Special"  72-07-20/21
+72-07-22, 1, -, l, Pittsburgh
+72-07-25, 2, -, l, 1st show
+72-07-26, 1, -, l, "Welcome To NY", 2nd half is excellent SB, last song is 25th
+72-xx-xx, 1, -, s, "Very Ancient, Thank You Kindly"
+72-07-2x, 1, x, l, Frnknstin: Trx 1-10: 21st (STP),  Trx 11-15: 26th (Wlcm 2 NY)
+73-01-18, 2, -, s
+73-01-21, 1, -, -, 
+73-01-22, 1, -, l, 2nd show
+73-02-24, 1, -, l, "Backstrap" from Tarantua. Also came with a 27th, not burned 
+73-02-24, 1, -, s, "Rocks Off". 15 tracks
+73-02-24, 0, -, -, 2nd show - don't know if exists, but often attrib to 26th
+73-02-24, 1, -, s, No info. 10 tracks. Audio CD for 24th is this one.
+73-02-26, 1, -, s, "Happy Bday Nicky" 2nd disc.  (D1 of HBN is 24th)
+73-02-27, 1, -, l
+# Goat's Head Soup
+73-09-08, 1, -, l, Empire Pool
+73-09-19, 0, -, -, DLNB
+73-09-30, 1, -, l
+73-xx-xx, 2, -, s, "Timeless Europe" Sep/Oct. Disc 1  Mostly 10/17
+73-10-17, 0, -, -, DLNB "Europe 73" Mostly 10/17   3 songs 9/9 VGP-011
+73-10-17, 1, x, l, "Bunnies Bombs Busts a Princess" all 10/17  
+73-xx-xx, 1, -, l, "Ultimate Live Document": 9/9, 9/13, 10/14(2), 10/17(1)
+73-xx-xx, 0, -, -, Rotterdam  10/13 (7-15) & 10/14 1st show (1-6) DLNB
+74-08-14, 0, -, -, DLNB "Return Of Woody Woodbreaker"  Keith & Ronnie
+75-07-13, 2, -, s
+$ Singles II
+78-06-28, 1, -, s
+78-xx-xx, 4, -, s, "Handsome Girls"
+79-04-22, 1, -, ?, "Blind Date"  Cd 2 only
+81-12-14, 2, -, l, w/ Mick Taylor from D1t10 onwards
+82-07-17, 1, -, l
+90-02-26, 2, -, s
+95-02-04, 0, -, -, "Bucketful Of Water" DLNB
+95-xx-xx, 1, x, o, "Stripped"
+95-xx-xx, 1, x, l, "Stripped Companion"
+02-09-16, 2, -, l, Aragon Ballroom. Bono
+
+MICK TAYLOR
+---------------------------------------------------------------
+73.09.xx, 0, x, o
+81-11-12, 1, -, l, w/ Alvin Lee  1 audio CD only if overburning - put audio on 2
+82-01-16, 1, -, l, 2 shows. So-so, but better than 12-27-86
+84-01-21, 2, -, l, 1st & 2nd shows
+86-07-24, 1, -, l
+86-12-27, 1, -, l, CD mislabeld as Oct
+86-12-28, 1, -, l, CD mislabeld as Oct. Last two tracks with Keith Richards
+86-12-29, 1, -, l, picks up at Red House
+87-04-03, 1, -, l, Japan
+87-04-11, 1, -, l, fusion
+87-07-03, 1, -, l, "Hot Water Music"
+88-05-29, 2, -, l
+88-06-04, 2, X, l, Corky Laing's All Stars
+88-06-17, 1, -, l
+89-04-17, 0, -, -, DLNB
+89-10-27, 1, -, l, Cambridge
+90-03-04, 1, -, l, w/ Carla Olsen  1st show - 2nd show is officially released
+90-03-10, 1, -, l, has "Stop Breaking Down", just a bit too much wooing
+91-04-19, 2, -, l, The full show
+91-04-19, 1, X, l, D1: 3, 5 D2: 1, 4, 5
+91-10-xx, 0, -, -, JLB rehearsals, DLNB
+92-04-26, 0, -, -, DLNB
+92-04-29, 1, -, l, w/ N Hopkins  1st few songs at least are a little different
+92-05-01, 0, -, -, DLNB
+92-05-02, 0, -, -, DLNB
+93-02-12, 1, -, l, Miami
+93-05-01, 0, -, -, DLNB
+93-07-17, 0, -, -, DLNB
+95-04-04, 1, -, l
+96-04-25, 2, -, l
+96-07-22, 1, -, l
+97-03-05, 0, -, -, DLNB
+99-07-20, 2, -, l, great Boogie Man & Blues In The Morning, but otherwise, eh
+00-09-16, 2, -, l, Full
+00-09-16, 1, X, l
+00-11-18, 2, -, l, good, but 9-16 is better performance
+$ Taylor And Rodante
+01-11-24, 1, -, l, Acoustic Stones
+05-09-12, 2, -, l, w/Wentus Blues Band (No Mick on 1st song)
+
+KEITH RICHARDS
+---------------------------------------------------------------
+92-12-18, 2, -, s
+93-02-13, 0, -, -, DLNB
+
+MOTORHEAD
+--------------------------------------------------------------
+$ Motorhead
+77-xx-xx, 1, x, f, "Lock Up Your Daughters"
+77-06-03, 1, x, f, "Blitzkrieg on Birmingham"
+#  Decent, but the only good thing about the set list is "Train Kept-A-Rollin'
+$ Overkill
+# Overkill is 1979
+78-09-25, *, x, o, BBC  IBYS, LL, TYD, KUotR on Stone Deaf Forever Box and BBC
+79-05-16, 1, x, o, BBC
+79-05-26, 1, -, s, "BBCHead"
+$ Ace Of Spades 
+81-03-2x, 1, =, o, "No Sleep Til Hammersmith"
+81-08-23, 0, -, -, DLNB Rough distant audience
+82-03-18, 0, -, -, DLNB
+82-03-22, 0, -, -, DLNB
+82-11-17, 0, -, -, DLNB
+# "The Collection"
+84-10-13, 1, -, l, Bonus disc from Orgasmatron, but I think mine is a boot
+84-12-15, 0, -, -
+85-06-29, 1, x, o, "The Birthday Party"
+85-12-13, 0, -, -, DLNB Wisconsin
+$ Orgasmatron 
+86-04-01, 0, -, -, DLNB
+86-08-16, 1, -, o, BBC  Only 4 songs
+86-08-16, 1, -, o, longer version as part of Rock-n-Roll deluxe edition 2006
+$ Rock And Roll
+87-03-14, 0, -, -
+88-08-31, 0, -, -, DLNB
+88-09-01, 0, -, -
+$ 1916
+91-08-10, 0, -, -, DLNB
+92-03-28, 1, -, l, Gonna Make Your Ears Bleed
+$ March Or Die
+92-xx-xx, 1, -, f, "Baby Don't Panic" (+ 10-10-86)
+92-10-12, 1, =, f, "Better Wear Armor"
+$ Bastards
+93-07-02, 1, x, l, FM, only 7 tracks
+95-10-04, 2, -, -, 
+95-12-14, 2, -, s, With Metallica on first disc
+% Sacrifice (1995)
+% Overnight Sensation (1996)
+97-03-17, 0, -, -
+97-03-18, 1, x, l
+97-05-22, 0, -, -, DLNB  Pretty good audience, but same set list as ELTEE
+97-05-28, 1, -, l, Osaka
+% Snakebite Love
+98-05-xx, 2, x, o, "Everything Louder Than Everyone Else"
+99-07-31, 1, x, l
+% We Are Motorhead
+00-11-27, 1, x, l
+% Hammered (2002)
+$ Inferno
+05-06-16, 2, -, o, "Better Motorhead Than Dead"  Hammersmith
+05-11-11, 0, -, -, DLNB
+08-11-14, 0, -, -
+12-01-27, 0, -, -
+12-01-28, 0, -, -
+
+IRON MAIDEN
+--------------------------------------------------------------
+$ Iron Maiden
+80-06-20, 0, -, -, DLNB  "Revelations At The Rainbow"
+80-11-25, 0, -, -, Adrian's First gig
+80-11-30, 1, -, s
+80-12-21, 1, -, s, VG aud, but Reading is much better
+80-xx-xx, 1, x, l, Reading and Women In Uniform single
+80-??-??, 0, -, 0, Kotrijk
+$ Killers
+81-04-28, 0, -, -, Killing Time
+81-05-22, 0, -, -, distant audience  
+81-05-23, 1, -, f, No Killers or PotO
+81-05-24, 1, x, f, Nakano Sun Plaza Hall
+81-06-22, 0, -, -, DLNB  FM
+81-10-27, 0, -, -, Bruce warm-up tour
+81-10-28, 0, -, -, Bruce warm-up tour
+81-10-29, 0, -, -, Bruce warm-up tour
+$ The Number Of The Beast
+82-03-20, 2, x, o, "Beast Over Hammersmith" from Eddie's Archive
+82-04-24, 1, -, f, "666 1/2"  really June 29th, harsher than NotLD
+82-06-29, 1, -, l, "Night Of The Living Dead"  NY Good, but not as good as 8/28
+82-08-28, 1, x, o, From BBC Archives which is from Eddie's Archive 
+$ Piece Of Mind
+83-05-08, 2, -, l, Ipswitch, England  Master from the taper 
+83-05-08, 2, -, a, Ipswitch, England
+83-05-26, 1, -, f, "Eddie's Boys"
+83-05-26, 2, x, l, "Die With Your Boots On"
+83-10-01, 0, -, -, 
+$ Powerslave
+84-11-03, 0, -, -, DLNB
+85-xx-xx, 2, x, o, "Live After Death"
+85-12-19, 0, -, -, DLNB  Secret gig
+% Somewhere In Time
+86-09-10, 0, -, -, DLNB 
+86-10-08, 0, -, -, DLNB 
+86-10-15, 0, -, -, DLNB 
+86-11-29, 0, -, -, DLNB  SB but no punch to it
+87-01-08, 1, -, s
+87-03-11, 0, -, -, Chicago,  Rosemont Horizon.  Best of Somewhere On Tour
+87-04-17, 0, -, -, DLNB
+% Seventh Son Of A Seventh Son
+88-07-12, 0, -, -, DLNB
+88-08-20, 1, -, o, Donnington, Monsters Of Rock.  Birmingham 11/27 has better set list than this truncated version of this show
+88-08-20, 0, -, ?, Donnington "Metal In The Park" boot, watch out for an AUD ver
+#  Need the 2-disc bootleg of metal in the park
+88-09-10, 0, -, -, DLNB
+88-09-28, 0, -, -, DLNB
+88-11-27, 1, -, o, "Maiden England" Birmingham  Dull performance
+% No Prayer For The Dying
+90-12-18, 0, -, -, DLNB
+$ Fear Of The Dark
+92-08-22, 2, x, o, Donnington, Monsters Of Rock
+92-xx-xx, 2, -, o, "A Real Live/Dead One". Donnington 8/22 covers these better.
+% Brave New World
+00-06-29, 1, -, l, Roskilde
+01-01-19, ?, ?, ?, "Rock In Rio"
+# 2003, 1st half of year was a Classics tour
+% Dance Of Death
+03-11-24, 0, -, o, "Death On The Road"
+04-01-13, 2, x, l
+04-01-17, =, =, =, SB, but muted and lifeless
+# 2005 was a Classics tour
+05-07-09, 0, -, -, DLNB
+% A Matter Of Life And Death
+06-10-13, 0, -, -, DLNB  "Eddie Vs Jason"
+
+DICKENSON
+---------------------------------------------------------------
+$ Tattoed Millionaire
+90-xx-xx, 0, -, -, L.A.
+$ Balls To Picasso
+% Accident Of Birth
+97-11-15, 1, -, l
+% Chemical Wedding
+99-xx-xx, 1, x, o, "Scream For Me Brazil"
+
+NUGENT
+---------------------------------------------------------------
+74-xx-xx, 0, -, -, DLNB  Richard's Nightclub
+$ Ted Nugent
+75-10-31, 1, x, s, Audio tracking fucked
+76-07-28, 0, -, -, DLNB
+77-01-22, 1, -, l
+$ Cat Scratch Fever
+77-xx-xx, 2, x, o, "Double Live Gonzo"
+78-11-29, 2, -, l, Chicago, pretty good, but lacking some energy and mixing
+79-05-09, 1, x, s, London   6) Need You Bad 7) Paralyzed
+79-xx-xx, 0, -, -, "Panic In Detroit"   Got some Wango Tango songs, but who needs that? A little weak in sound and performance
+$ Scream Dream
+80-05-15, 2, x, l, Seattle  Originally mislabeled as 1981
+81-03-28, 2, -, l, FM  Muddy mix
+82-09-17  0, -, -, FM  Muddy mix  DLNB
+94-07-18, 0, -, -, DLNB
+
+VAN HALEN 
+---------------------------------------------------------------
+75-06-13, 0, -, -
+76-00-00, 0, -, -, Bogart's  Lots of covers
+76-05-09, 1, -, s, Golden West Ballroom (some sources claim 5-26)
+76-05-30, 1, -, s, 1/2 Eyes of the Night
+76-05-30, 1, X, l, complete show
+76-06-29, 0, -, -, DLNB  Not as good as 5/30
+76-00-00, 1, -, s, Live at The Best (Pasadena Hilton)
+77-00-00, 1, -, s, Live at The Best (studio)
+$ VH I
+77-10-15, 1, X, l, with a few rehearsal songs
+77-12-20, 1, -, s, "Midnight Cash" mislabeled(?) show - same as above
+77-12-31, 0, -, -, DLNB
+78-02-08, 0, -, -, DLNB
+78-05-10, 1, -, l, Paris  VG aud, but have SBs from CA 77 and London 78  Master
+#                  Longer recording than June 6th. Voodoo Queen, Ice Cream Man
+78-05-18, 1, -, l
+78-05-23, 0, -, -, DLNB
+78-05-28, 1, x, l 
+78-06-01, 1, -, l, London  SB
+78-06-17, 1, =, l, Tokyo
+78-06-21, 0, -, -, DLNB , Roaring Noisily Around
+78-06-22, 0, -, -, DLNB  Tokyo
+78-xx-xx, 1, -, s, 1/2 Eyes of the Night, on one combined CD
+78-06-24, 1, -, f, DOA Dreamer
+78-09-22, 1, =, l, "Never Fear"  Dynamic Audience
+$ VH II
+79-03-25. 1. -. s, Fresno "Live and Loud"  Best and complete  1st VH II show
+79-04-08, 1, -, l
+79-04-12, 1, -, l
+79-06-28, 0, -, -, DLNB
+79-09-08, 0, -, -, DLNB
+79-09-13, 0, -, s, DLNB
+% Women And Children First
+80-05-01, 1, =, a
+80-06-23, 1, =, l, London
+80-07-27, 1, -, l
+$ Fair Warning
+81-06-11, 2, =, ?
+81-06-19, 0, -, -, DLNB          
+81-06-21, 0, -, ?, Listen Up Eddie. DLNB. STILL SUCKY AFTER 2nd TRY
+81-07-21, 2, -, l
+81-08-02, 0, -, -, DLNB
+81-08-25, 1, =, l
+81-08-31, 1, -, l
+$ Diver Down
+82-09-05, 0, -, -  DLNB   
+82-09-15, 2, -, l  Not bad, but 10/27 is a little better  
+82-10-12  2, =, l  Largo
+82-10-12  2, -, l  Largo, from video
+82-10-27, 2, =, s, "Floor Em At The Forum" (Same show as "Shouting Out Loud") 
+82-11-18, 2, -, l, Dallas
+83-01-16, 2, =, l, FM, Caracas.  A little flat.  NOT "I'm So Glad"
+83-02-05, 2, -, s, South American Assault
+83-05-29, 2, -, s, U.S. Festival   Master from vid source
+$ 1984
+84-02-01, 0, -, -, DLNB "The Spider's Web"
+84-02-14, 0, -, -, DLNB
+84-03-24, 2, -, l, Did not burn audio 
+84-04-21, 2, -, l
+84-05-20, 2, -, s
+84-05-21, 2, -, s
+84-07-03, 0, -, -, DLNB  Supposedly best 84 show
+84-07-06, 0, -, -, DLNB 
+84-08-25, 0, -, -, DLNB
+84-09-01, 1, x, s, Soundboard                        
+84-09-01, 1, -, s, Audience, a little longer than above
+84-09-02, 1, -, s, Soundboard                        
+07-09-27, 0, -, -, DLNB
+07-11-03, 0, -, -, DLNB
+08-02-16, 0, -, -, DLNB
+
+METALLICA
+---------------------------------------------------------------
+82-10-18, 1, -, v, Let God Sort 'Em Out
+83-xx-xx, 1, -, s, Up And Down Demos
+83-05-05, 1, -, s, San Francisco
+$ Kill 'Em All
+83-11-25, 0, X, s
+83-12-18, 1, -, v, Cleveland Picture Disc                
+84-02-09, 1, x, l, Espace Balard, Paris
+84-02-11, 1, -, v, Fucking Nuts. Best of the vinyl      
+# 84.07.00 for RtL
+$ Ride The Lightning
+84-11-22, 1, x, 3
+84-12-01, 1, -, v, C4. Germany                         
+84-12-20, 1, x, l, London. prev "Welcome To The Ball", AKA "Four Horsemen in Brooklyn", now from new DL maybe official from Metallica 
+85-01-13, 1, -, s
+85-01-15, 1, -, s
+85-03-10, 1, X, l, Hollywood
+85-03-15, 1, X, l, Last 2 tracks are from previous day. San Francisco
+85-08-17, 1, =, s
+85-08-31, 0, -, f, Day on the Green - THIS IS ACTUALLY SAN FRAN 3/15
+$ Master Of Puppets
+86-05-24, 1, X, s, a little raw
+86-05-30, 1, -, s, Hissy. Runs fast?
+86-09-26, 1, -, s
+86-11-18. 0. -. -, DLNB
+86-11-28. 2. =. l
+86-12-01, 2, -, l, Master tape - higher gen than Assassin    
+86-12-01, 2, -, s, Assassin. Vinyl + Dl'ed shn
+86-12-05, 2, -, s
+86-12-13, 1, -, f, Metal Masters
+87-02-13, 1, -, s, 1 cd, but only if overburning, so audio split in two
+87-02-13, 2, x, s, More Complete, SB, but weak - doesn't cut it in the car
+87-08-20, 1, =, s, 100 Club, London. Audio split to two CDs            
+87-08-30, 1, =, l, Audio on 2 CDs (? huh?), Weak vocals
+$ Singles
+% And Justice For All
+88-09-24, 2, -, a
+88-11-22, 0, -, s, 4 filler tracks on 97-01-29
+89-02-05, 1, X, m 
+89-02-22, 2, =, f, Damaged Justice
+89-03-29, 2, =, l, hollow
+89-05-17, 2, =, l,
+89-08-07, 2, -, l, Fan Club show. C Audience recording.
+% Black Album
+91-09-21, 0, -, -, DLNB
+91-11-03, 0, -, -, 
+91-12-03, 0, =, s, Poor audience
+92-01-11, 0, -, -, DLNB
+92-xx-xx, 2, -, f, For Whom The Bell Tolls, just sounds a little dry and muddy
+92-01-18, 0, -, s, Posers Can't Headbang  
+92-04-14, 0, -, -, DLNB, Canada, clear but weak
+92-07-18, 0, -, -, 
+92-xx-xx, 1, -, f, La Bamba 
+92-12-18, 0, -, l, DLNB
+93-02-xx, 2, x, o, Live Shit
+93-03-23, 2, =, l, Japan  Super raw
+93-05-08, 2, -, s, SB but weak.
+93-06-20, 3, -, l
+94-05-30, 2, =, l
+94-06-17, 0, -, -, Middletown, NY. Clear but weak. DLNB
+94-08-13, 2, =, s, Woostock
+95-08-26, 1, =, ?, Donnington Park
+% Load
+96-06-09, 2, =, ?
+96-11-16, 2, X, l, Added 3 tracks from 3/21/98 + 1 studio jam from same boot
+97-01-16, 1, -, m, This was the middle part of 1996.11.16, don't know which date is right
+97-01-29, 2, =, s. Clear Aud recording, but lacks punch
+97-02-19, 1, -, s, + 8/23 = good mix of songs
+% ReLoad
+97-08-23, 1, -, s, + 2/19 = good mix of songs
+97-08-23, 2, -, s, Kirk is missing, otherwise it's perfect
+97-11-11, 1, =, s
+97-10-18, 1, =, s, Acoustic, same show as below
+97-12-18, 1, =, m, Acoustic, same show as above
+98-03-21, 0, -, s, San Fransisco, DC circulation has some bad files.  First few are acoustic and Creeping Death has diginoise and audience singer, but still very good
+98-11-24, 2, x, f, Garage
+
+GUNS-N-ROSES
+---------------------------------------------------------------
+8x-xx-xx, 0, -, -, DLNB "Dawn Of The Dead" various 85/86
+86-01-18, 0, -, -
+86-09-13, 0, -, -
+86-09-20, 0, -, -
+86-09-21, 1, -, a
+$ Appetite For Destruction
+87-06-19, 0, -, -, DLNB
+87-06-28, 0, -, -, DLNB
+87-08-19, 0, -, -, DLNB
+87-08-24, 0, -, -, DLNB
+87-08-30, 0, -, -, DLNB
+87-09-04, 0, -, -, DLNB
+87-09-05, 0, -, -, DLNB
+87-09-29, 0, -, -, DLNB
+87-09-30, 0, -, -, DLNB
+87-10-02, 1, -, s
+87-10-08, 1, -, -, DLNB
+87-10-17, 0, -, -, DLNB
+87-10-20, 0, -, -, DLNB
+87-10-23, 0, -, -, DLNB
+87-10-27, 0, -, -, DLNB
+87-10-29, 0, -, -, DLNB
+87-10-30, 1, -, ?, 1/2 of acoustic CD, other half is frag of 7-16-93
+# 10/30/87 is good, but 2/2/88 is just as good and has more songs
+87-10-31, 1, -, s  The Horizon  NY
+87-12-17, 0, -, -, DLNB
+87-12-18, 0, -, -, DLNB
+87-12-19, 1, -, l
+87-12-30, 1, -, l
+88-02-02, 1, x, s, Ritz
+88-02-08, 0, -, -, DLNB  
+88-04-30, 0, -, -, DLNB
+88-05-01. 0, -, -, DLNB
+88-05-09. 0, -, -, DLNB
+88-05-11. 0, -, -, DLNB
+88-05-14. 0, -, -, DLNB
+88-08-20, 0, -, -, DLNB
+88-08-28, 0, -, -, DLNB
+$ Lies
+# They allegedly only played four times in '89 - all opening for the Stones
+88-12-07, 1, -, s, "Freewheel" Soft but dynamic. Incomplete version
+88-12-07, 2, -, s, Complete version
+89-10-19, 0, -, -, DLNB "Stoned In LA"
+89-xx-xx, 1, -, f, Silent Shots - The Ritz
+# Use Your Illusion
+91-01-20, 2, -, s, might be flac
+91-01-23, 2, -, s
+91-05-28, 2, -, l
+91-05-29, 2, -, ?,                                                        
+91-06-17, 2, -, l, A little weak
+91-08-17, 0, -, s, Stockholm. DLNB
+92-02-22, 2, -, f, "Bonzai"
+92-04-06, 2, -, l, Oklahoma City  Rare "Pretty Tied Up"
+92-04-09, 3, -, ?, Chicago
+92-06-06, 2, x, m
+92-12-02, not burned yet
+92-12-02, 0, -, -, DLNB  Chile  outstanding, except Slash is buried
+92-12-05, 2, -, s, "Welcome to the Rumor Jungle"
+93-05-29, r0 -, -, Fisrt 3 tracks are SB, rest is bad SB or Aud
+93-07-16, 2, -, s, 
+93-07-17, 0, -, -, 
+
+JUDAS PRIEST
+---------------------------------------------------------------
+# Rocka Rolla
+$ Sad wings Of Destiny
+75-xx-xx, 0, -, -, Reading. DLNB
+$ Sin After Sin
+77-07-16, 0, -, -, DLNB
+78-02-05, 0, -, -, DLNB
+78-03-10, 0, -, -, DLNB
+78-03-11, 0, -, -, DLNB
+$ Stained Class
+78-07-25, 0, =, -, DLNB
+78-07-31, 1, =, l,
+78-08-05, 0, -, -, DLNB
+78-10-23, 0, =, -, DLNB  FM
+$ Hell Bent For Leather
+79-02-1x, 1, x, o, Unleashed In The East
+79-02-09, 2, x, l, Tokyo  Killer's Employee Pension
+79-02-14, 0, -, -, DLNB  Osaka
+79-05-28, 0, -, -, DLNB
+79-10-17, 0, -, -, Decent, but a little rough 
+79-11-04, 2, -, l, FM  Low Gen  NYC  A little muted
+79-11-17, 2, -, l, SB, but dry 
+$ British Steel
+80-06-25, 1, x, l,             same set as below, smooth
+80-07-05, 1, x, l, Long Island same set as above, rough 
+80-08-03, 0, -, -, DLNB
+$ Point Of Entry
+81-05-09, 1, x, l, Chicago
+81-06-21, 1, -, l, Chicago  A little rough, not Halford's best
+81-07-22, 2, x, l, NYC Palladium, same show as below?
+81-07-23, 2, -, a, "Devil's Spine", mislabeled as 82-10-02
+81-07-23, 2, -, s, "Devil's Spine"
+81-xx-xx, 1, -, ?, NY (just barely doesn't make the cut)
+81-11-21, 1, -, f, "Sinners and Saints"  Halford's been better
+# ...SB/FM, but nothing special  No PoE songs
+$ Screaming For Vengeance
+82-09-03, 0, -, -, DLNB
+82-09-10, 1, -, f, "San Antonio Sinners", Pretty heavy on the bottom end
+82-12-12, 1, x, s, "Metal Gods"
+83-06-08, 1, -, f, "The Last Vengeance"  Decent SB/FM, but a little too rough
+$ Defenders Of The Faith
+84-01-21, 0, -, -, DLNB
+84-01-31, 0, -, -, DLNB
+84-05-02, 1, -, s, "Love Bites '84", 3 bonus tracks 84-05-05
+84-05-02, 2, -, f, "New Mexican Radio", Used two tracks from 1-disc version
+84-05-05, 2, x, f, "California Burning"  Has a little more bite than 5/2
+86-05-22, 2, -, l
+$ Ram It Down
+88-08-07, 1, x, f, "Last Temptation", New Haven
+88-10-12, 0, -, -. DLNB
+$ Painkiller
+90-09-13, 1, -, s
+90-10-10, 0, -, s, DLNB
+90-10-19, 0, -, s, DLNB
+91-08-17, 0, -, -, DLNB
+04-06-10, 1, x, l, Sweden  FM
+04-07-29, 0, -, s, DLNB
+04-08-18, 0, -, s, DLNB
+08-06-27, 0, -, -
+
+SCORPIONS
+---------------------------------------------------------------
+# Fly To The Rainbow
+$ In Trance
+75-04-26, 0, -, -
+75-09-26, 1, -, f, Germany
+$ Virgin Killer
+76-05-xx, 0, -, -, DLNB  From Max Uli Years
+77-04-01, 0, -, -, DLNB  From Max Uli Years
+77-04-15, 0, -, -, DLNB  From Max Uli Years
+77-04-30, 1, -, f, England
+78-04-xx, 1, x, o, "Tokyo Tapes"
+$ Lovedrive
+79-03-28, 0, -, -, DLNB
+79-06-04, 0, -, -, DLNB  The Lovedrive tracks are better represented on Reading
+79-08-10, 1, -, l, Chicago   Good, but rough vocals. Might actually be Nov 16 or Nov 18. All the good songs on this are also on the perfect 8/25 disc.
+79-08-25, 1, X, l, Reading,  + 83.05.29 * 3 tracks
+79-09-16, 1, -, l, Tokyo  SB but quiet. 8/25 is far better.
+$ Animal Magnetism
+80-04-22, 0, -, -, DLNB
+80-06-14, 0, -, -, DLNB
+80-07-10, 0, -, -, DLNB
+80-09-26. 0, -, -, DLNB
+$ Blackout
+82-03-14, 1, -, l       
+82-03-30, 0, -, -, DLNB 
+82-04-23, 0, -, -, DLNB 
+82-04-24, 1, -, s, with M. Schenker
+82-04-28, 0, -, -
+82-09-28, 0, -, -, DLNB
+83-12-17, 1, x, f, "Teutonic Terror"
+$ Love At First Sting
+84-02-10, 0, -, -
+84-xx-xx, 2, -, o, "World Wide Live"
+84-04-20, 0, -, -, DLNB
+84-04-30, 0, -, -, DLNB
+84-11-02, 2, x, l       
+85-08-31, 0, -, -
+86-08-16, 0, -, -, DLNB  Monsters Of Rock
+$ Savage Amusement
+88-12-20, 0, -, -, DLNB
+91-01.13, 0, -, -, DLNB  FM but rough 
+
+ACCEPT
+---------------------------------------------------------------
+83-xx-xx, 0, -, -, Paris FM
+83-10-28, 0, -, -, Where Monsters Dwell
+84-03-27, 1, x, l, A show labeled 5/27 is the same as this
+85-03-15, 0, -, -, Aud
+8x-xx-xx, 1, x, 3, 
+9x-xx-xx, 1, x, 3, 
+
+MANOWAR
+---------------------------------------------------------------
+84-10-27, 0, -, -
+86-04-05, 0, -, -
+99-xx-xx, 0, -, -, Sweden  "Mystery In The North"
+99-05-22, 0, -, -, used Twilight Zone, but none of the rest
+02-12-14, 0, -, -, DLNB
+
+GARY MOORE
+---------------------------------------------------------------
+77-03-13, 0, -, -, DLNB Thin Lizzy
+77-10-29, 0, -, -, DLNB Colosseum II
+78-01-14, 0, -, -, DLNB Colosseum II
+81-11-21, 0, -, -, DLNB with Greg Lake
+82-12-18, 0, -, -, DLNB
+83-01-31, 0, -, -, DLNB
+83-03-09, 0, -, -, DLNB
+83-03-16, 0, -, -, DLNB
+84-xx-xx, 1, x, o, "We Want Moore"
+84-02-11, 0, -, -, DLNB
+84-03-19, 0, -, -, DLNB
+84-08-18, 0, -, -, DLNB  VG quality, but short and not best set list
+# "Run For Cover" 1985
+86-06-21, 1, -, s, "1986 Revisited"  Mannheim 
+86-07-17, 0, -, -, DLNB
+# "Wild Frontier" 1987
+87-04-01, 1, X, l, 5/26? Same show as Holland silver boot, has one more song.
+87-04-02, 0, -, -, another wrong date for 5/26
+87-04-04, 0, -, -, Zwolle, Holland another wrong date for 5/26
+87-05-10, 0, -, -, DLNB  FM, very flat
+87-05-24, 0, -, -, DLNB
+87-05-26, 0, -, -, The correct date for Apr 1st
+87-xx-xx, 1, -, l, Holland  A little better sound than Boston  orgnly o factory
+87-09-01, 1, -, s, "Final Frontier"  Boston  ~3 more songs than Holland
+# "After The War" 1989
+89-03-09, 0, -, -, DLNB  Belfast
+89-03-26, 0, -, -, DLNB 
+89-04-08, 0, -, -, DLNB           
+89-04-19, 0, -, -, DLNB           
+$ Still Got The Blues
+90-05-15, 0, -, -, DLNB  "White Thunder" 
+90-07-07, 2, x, s
+90-07-07, 1, -, o, Montreux  Disc 1 - The 2-disc boot is more complete
+$ After Hours
+92-06-07, 2, -, s, "Blues From A Gun"
+92-06-28, 1, x, l, 
+93-xx-xx, 1, x, o, "Blues Alive"
+% BBM 
+94-05-23, 1, x, l,    D1 t1,2,7,8     D2 t? 
+% Blues For Greeny
+95-07-16, 1, -, o, Montreux  Disc 2  Good, Consildated into 1 Montreux disc
+95-07-23, 1, -, l, + 9/28/85 (D2 #6,7) & 4/25/87 (D2 #8,9)  
+#   1st disc only, 2nd disc is eh, and Montreux has better set list than D1
+% Dark Days In Paradise
+97-07-02, 1, -, s, "Around The Next Frontier"  Last 2 songs are from 8-15-97
+97-07-09, 1, =, o, Montreux  Disc 3
+98-07-18, 2, -, l, Chelsea, London w/ Jack Bruce and Gary Husbands + 7-14-98 * 2
+% A Different Beat
+99-07-07, 1, -, o, Montreux  Disc 4, Consolidated into 1 Montreux disc
+00-03-13, 2, -, l, Excellent sound, eh show
+$ Back To The Blues
+01-02-21, 2, -, -, Close, but a little too muffled
+01-06-08, 0, -, -  
+01-06-29, 1, -, l, Close call, but lacks energy
+01-07-06, 1, -, o, Montreux  Disc 5  Consildated into one Montraeux disc
+$ Montreux 1995 - 2001
+% Scars 
+02-10-12, 1, -, -, Close, but a little too muffled
+03-xx-xx, 0, x, o, Monsters Of Rock
+$ Power Of The Blues
+% Old New Ballads Blues 2006
+% Close As You Get      2007
+$ Bad For You Baby
+10-05-22, 0, -, -, DLNB
+10-04-23, 0, -, -, Good, but same set list as 4/28, which is excellent
+10-04-28, 2, x, l, Last Concert In Japan
+
+ELVIS
+---------------------------------------------------------------
+56-09-25, 1, -, s, may be flac (Am I sure this is not May 16?)
+5x-xx-xx, 1, -, ?, "Live In The '50s Vol II" 
+61-03-25, 1, -, ?, 
+68-06-2x, 0, X, ?, Burbank sessions
+69-08-0x, 1, -, l, "Opening Night" ON really 7/31, this is Aug 1st or 3rd G
+69-08-06, 1, -, l, Audience
+69-08-24, 1, -, s, "Here I Go Again" - could be more energetic 
+70-01-26, 1, x, s, "Walk A Mile In My Shoes" CD labeled Feb 1. short & sweet
+70-02-xx, 0, -, o, "On Stage"
+70-02-23, 0, -, -, DLNB       
+70-07-16, 0, -, -, DLNB so-so rehearsals
+70-08-10, 0, -, -, at "The International"? Excellent, but lame songs
+70-08-14, -, -, -, DLNB "The Man In White Vol III"
+70-08-19, 1, -, l, "Double Dynamite"  2 shows. Fair AUD, could do better
+70-08-20           "A Bright Midnight"
+70-11-10, 0, -, -, DLNB  horrible 
+71-01-28, 1, -, s, "Lean, Mean, And Kickin' Butt" may be flac
+71-01-29, 1, -, l, "Snowbird" A little muffled, set list is nada special
+71-08-25, 0, -, -, DLNB "That's Allright Anyway You Do"
+71-11-10, 1, -, l, "One Night Only"  Higher gen than "Zhazam"
+71-11-10, 1, -, s, "The Power Of Zhazam" 
+72-01-26, 1, -, l, "Opening Night '72"
+72-04-09, 1, -, ?, Virginia.  can not find data disc
+72-04-14, 1, X, m
+72-08-11, 1, X, l, "Elvis At Full Blast"  Midnight show
+72-09-03, 1, -, s, may be flac
+73-01-29, 1, -, l, "Don't Think Twice"
+73-02-05, 1, -, l, "It's A Matter Of Time"  Vegas
+74-03-16, 1, X, s
+74-03-20, 1, -, s
+74-06-29, 1, -, l "Kansas City Blues" last ~4 tracks from 28th
+74-09-02, 1, -, s
+74-10-06, 1, -, l, "Breathing Out Fire" Evening show
+75-12-13, 1, -, l
+
+AEROSMITH
+---------------------------------------------------------------
+$ Aerosmith
+73-03-20, 1, -, l
+74-04-04, 1, -, l
+$ Toys In The Attic
+75-08-29, 1, x, s
+75-09-18, 1, -, l, St Louis
+76-04-30, 0, -, -
+$ Rocks 
+76-10-24, 0, -, -
+77-01-29, 0, -, -
+77-06-24, 0, -, -, DLNB good SQ, but nothing special
+78-03-24, 1, -, l
+78-03-28, 1, -, l
+86-05-26, 0, -, -
+88-02-15, 2, -, l, SB but mix isn't the best
+88-08-25, 2, -, l, better set list than Sep
+88-09-14, 2, -, l, better sound than Aug
+90-08-19, 1, x, s, With Jimmy Page
+94-xx-xx, 1, -, 3
+
+RAGE AGAINST THE MACHINE
+---------------------------------------------------------------
+91-10-23, 1, -, l, first official performance. Clear but distant
+$ RATM
+93-02-02, 1, x, l, "The Killing Zone" . Ignore tracks 9+
+                 
+93-02-07, 1, -, l, "Justify Those That Die"  Last track (07) is 15 min remix
+#                   Tracks 1-4 OK, 5-7 (only seven tracks) very good
+93-02-13, 1, -, l
+93-09-09, 1, -, s
+93-xx-xx, 1, -, l, "Unplugged & Rare"  93-12-12  93-01-26
+94-xx-xx, 1, x, s, Pink Pop Festival
+94-xx-xx, 1, -, l, "Year Of The Boomerang" Var USA + Werchter (sic?) festival
+$ Evil Empire
+96-05-11, 1, -, l, Pretty good audience
+96-08-11, 1, -, l
+96-10-01, 1, -, s
+97-01-20, 1, -, l, With Flea and drummer from Jane's Addiction
+97-07-26, 0, -, -, DLNB
+$ Battle Of LA
+99-07-24, 1, -, l, Woodstock
+00-02-04, 1, -, s
+00-06-18, 1, x, s, 1-11
+
+MOUNTAIN/WEST
+---------------------------------------------------------------
+# "Blood of the Sun" whichever date it is, is supposedly official
+70-05-01, 0, -, -, DLNB  Late show
+70-12-3x, 2, =, ?, "Live At The Filmore East"
+71-01-08, 0, -, -, DLNB
+71-02-25, 0, -, -, DLNB
+71-03-25, 0, -, -, DLNB
+71-06-27, 1, -, s, Fillmore East, NYC.  FM
+71-12-14, not burned yet, leaning towrads keeping
+71-12-20, 0, -, -, DLNB
+72-11-06, -, -, -, DLNB.  WBL.  so-so AUD
+73-0x-xx, 1, x, o, "Live 'n' Kickin'". Broke up end of Apr
+73-04-04, 0, -, -, DLNB 
+73-04-05, 0, -, -, DLNB  French Radio
+73-04-14, 1, -, s, "Live in K Town" WBL, OK, but LnKickin is much better 
+73-07-08, 0, -, -, Wild west Show
+73-08-xx, 1, x, o, "Twin Peaks"
+$ Avalanche (Jan-Feb '74)
+74-12-31, 0, -, -, DLNB
+$ Leslie West Band ('75)
+76-08-11, 1, -, l, Toronto. Carmine Appice, Mick Jones (Foreigner)
+85-06-29, 0, -, -, DLNB
+88-xx-xx, 1, x, o, "Theme"
+92-09-20, 1, x, f, "Tribute To Jimi"
+98-03-28, 1, -, s
+05-07-31, 0, -, -, DLNB
+08-01-12, 0, -, -, DLNB
+
+FASTWAY
+---------------------------------------------------------------
+83-04-30, 1, x, l, London
+83-09-05, 1, x, s
+86-01-27, 1, -, s
+
+UFO
+---------------------------------------------------------------
+75-09-23, 1, -, l
+76-05-03, 0, -, -, DLNB  FM
+$ Lights Out
+78-10-13, 1, -, l
+78-10-14, 1, x, o, "Strangers In The Night"  Expanded edition
+94-06-14, 2, -, s, Good, but 70s still better
+98-02-21, 0, -, -, DLNB, decent audience
+
+MALMSTEEN
+---------------------------------------------------------------
+83-xx-xx, 0, -, o, Alcatrazz Live 83
+83-11-18, 1, -, l, w/ Anvil Chorus. Was supposed to be Alcatrazz show  Flat
+84-02-29, 0, 0, 0, Alcatrazz,  Alberquerque
+84-06-15, 0, 0, 0, Alcatrazz,  PA
+85-01-24, 1, -, l, "Far East Memories" Came w/ an '84 show I didn't burn  Good but muffled sound, boring performance
+85-07-06, 2, X, l, Milwaukee Summerfest    
+85-07-07, 2, -, a, "May The Rising Force Be With You"  Milwaukee. Maybe Jul 6th
+85-10-29, 1, x, l
+85-xx-xx, 1, -, l, From vinyl, "Chops City" is 1st song
+85-xx-xx, 0, -, -, DLNB  Brooklyn
+85-xx-xx, 0, -, -, DLNB  Stockholm  "Hero's Return"
+86-10-01, 1, -, l, Data on same CD as 85-10-29
+86-11-14, 0, -, -, DLNB  Osaka
+86-12-17, 0, -, -, DLNB
+87-01-09, 0, x, -, Bad taping
+xx-xx-xx, 0, -, -, Odessy Tour Rehearsals DLNB
+94-05-23, 0, -, -, DLNB
+95-09-16, 0, -, -, DLNB
+96-09-14, 0, -, -, DLNB
+96-11-06, 0, -, -, DLNB
+98-04-06, 0, -, -, DLNB "Wild Young and Free"
+98-06-10, 0, -, -, DLNB
+01-04-08, 0, -, -, DLNB
+01-10-05, 0, -, -, DLNB
+04-06-04, 3, x, l
+
+MERCYFUL FATE
+---------------------------------------------------------------
+81-xx-xx, 0, -, -, DLNB
+81-10-31, 0, -, -, DLNB
+82-03-07, 0, -, -, DLNB
+82-10-05, 1, -, s, Maybe flac - check. Clear but muted
+83-06-23, 0, -, -, DLNB
+84-01-20, 1, x, s, Maybe flac. Hilversum. Has three tracks not on other boots
+84-01-22, 0, -, -, DLNB 
+95-02-18, 0, -, -, DLNB
+96-08-26, 0, -, -, DLNB
+
+ULI JON ROTH
+---------------------------------------------------------------
+79-10-03, 0, -, -
+85-02-26, 0, -, -
+85-05-23, 0, -, -
+90-09-21, 1, -, l, Plays Hendrix
+01-05-17, 0, -, -, DLNB
+06-05-27, 2, x, l, D1: 7,8,9  D2: 2,3,4  D3: 7,9  D4: 1,3,6,7(?)
+08-10-10, 0, -, -
+08-xx-xx, 0, -, -, Tokyo
+11-02-01, 0, -, -, w/ Leslie West
+13-02-02, 0, -, -
+15-02-19, 2, x, l, Nagayo
+15-02-20, 0, -, -, Tokyo
+
+STP
+---------------------------------------------------------------
+94-08-22, 1, -, 
+10-28-02, 0, -, s, so-so audience
+
+THOROGOOD
+---------------------------------------------------------------
+78-04-08, 0, -, -, DLNB
+78-12-06, 2, -, s
+79-05-10, 0, -, -, DLNB.  Dry SB/FM
+79-12-31. 1. x. s
+80-11-23, 0, -, -, DLNB
+82-06-03, 0, -, -, DLNB w/ Mick Jager 3 songs
+
+BOB SEGER
+---------------------------------------------------------------
+74-07-08, 1, -, l
+77-03-21, 0, -, -, DLNB
+# Night Moves
+80-xx-xx, 1, x, o, "Nine Tonight"
+
+BUDDY GUY
+---------------------------------------------------------------
+67-xx-xx, 0, -, -, DLNB, Cambridge
+68-xx-xx, 0, -, -, "This Is Buddy Guy", Funky, little guitar
+% I Left My Blues In San Francisco
+$ A Man And The Blues
+% Hold That Plane
+% Play The Blues
+74-xx-xx, 1, x, 3, Drinkin TNT and Smokin Dynamite
+79-xx-xx, 0, -, -, Checkerboard Lounge, slow blues
+$ Stone Cold
+82-xx-xx, 0, -, -, Chicago FM  Buddy Mulligan's
+82-08-xx, 0, -, -, Portland
+83-09-30, 0, -, -
+84-09-20, 0, -, -
+# Bad Luck Boy  1983  Phil Guy
+86-04-14, 0, -, -, w/ SRV
+87-10-09, 0, -, -, w/ Clapton
+# Breaking Out  1988
+88-11-08, 0, -, -, DLNB w/ Otis Rush
+89-01-19, 0, -, -, Colorado
+89-06-09, 0, -, -, RChicago Blues Fest FM w/ Willie Dixon. So-so setlist, muffled guitar
+89-07-xx, 0, -, -, Chicago Blues Fest
+89-07-30, 1, -, s, same date as below, diff show/city
+89-07-30, 1, -, s, w/ SRV  good, but gets monotonous. Just need the first jam
+90-03-14, 0, -, -, w/ Santana on SHC
+90-07-28, 1, ?, l
+90-12-01, 0, -, -, good show but guitar is buried
+% Damn Right I Got The Blues
+91-11-08, 0, -, -, Great Show, bad sq  Chestnut, Philly
+92-06-09, 0, -, -, At Legends. Buddy only on middle tracks
+92-07-04, 0, -, -, Crystal Palace
+92-07-09, 1, ?, l
+92-07-19, 0, -, -
+93-04-10, 1, x, l, Hammerjacks  Baltimore
+93-08-19, 1, -, s, Santa Fe, might be 18th and might be 1992
+94-01-11, 0, -, -, acoustic
+$ Slippin' In (1994)
+96-xx-xx, 0, -, -, The Real Deal
+96-05-28, 1, ?, s
+98-09-10, 1, ?, s
+00-03-29, 1, ?, s, data burned with 5/6
+00-05-06, 1, ?, s, data burned with 3/29
+% Sweet Tea
+01-09-21, 1, -, l
+02-07-12, 0, -, -
+# Bring 'Em In (2005)  pop duets
+% Skin Deep (2008)
+09-02-27, 0, -, -, Columbus
+09-06-05, 0, -, -, Wanee
+$ Living Proof
+10.07.16, 1, x, l, Switzerland
+
+B.B. KING
+---------------------------------------------------------------
+67-09-16, 0, -, -
+80-07-05, 1, x, l
+89-07-13, 1, x, l, Montreux
+90-07-18, 1, x, l, Montreux
+
+ALBERT KING
+---------------------------------------------------------------
+74-02-02, 0, -, -
+86-05-14, 0, -, -
+
+WILLIE DIXON
+--------------------------------------------------------------
+73-xx-xx, 1, x, l, Atlanta
+
+HOWLIN WOLF
+--------------------------------------------------------------
+69-02-23, 0, -, -
+73-08-23, 0, -, -
+
+BLUES
+--------------------------------------------------------------
+68-04-15, 2, -, l, Jimi ~after first two tracks
+
+BAD COMPANY
+--------------------------------------------------------------
+72-04-30, 0, -, -, DLNB
+72-09-14, 0, -, -, DLNB
+74-08-03, 0, -, -, DLNB  Newcastle
+
+THIN LIZZY
+--------------------------------------------------------------
+79-04-15, 0, -, -, DLNB
+
+SAXON
+--------------------------------------------------------------
+81-xx-xx, 0, -, -, DLNB
+82-01-09, 1, x, l, burned w/ Crusader tracks
+#  Motorcycle Man, The Bands Played On, Princess of the Night, Denim & Leather
+83-02-26, 0, -, -, DLNB
+83-04-01, 0, -, -, DLNB
+83-??-??, 0, -, -, DLNB  Norman OK  broadcast 9/18
+84-02-04, 0, -, -, DLNB
+84-02-11, 0, -, -, DLNB  broadcast 10/28
+84-02-24, 0, -, -, DLNB
+85-09-18, 0, -, -, DLNB
+86-11-02, 0, -, -, DLNB
+
+SLAYER
+--------------------------------------------------------------
+84-03-17, 0, -, -, DLNB
+85-06-02, 0, -, -, DLNB
+86-01-02, 1, x, ?, Find data disc
+
+BILLY IDOL
+--------------------------------------------------------------
+82-08-xx, 0, -, -, DLNB  FM
+84-02-xx, 0, -, -, DLNB  FM
+
+BLIND GUARDIAN
+--------------------------------------------------------------
+06-09-16, 0, -, -, DLNB
+
+ROB TOGNONI
+--------------------------------------------------------------
+04-04-04, 0, -, -, DLNB
+
+MAGIC SLIM
+--------------------------------------------------------------
+2003-07-04, 0, -, -
+
+DEF LEPPARD
+--------------------------------------------------------------
+79-10-03, 0, -, -
+79-xx-xx, 0, -, -, Paris Theatre, London
+83-08-03, 0, -, -, very flat
+83-10-20, 0, -, -
+83-09-11, 1, -, l, L.A. Forum
+83-12-18, 1, -, l
+
+RATT
+--------------------------------------------------------------
+87-08-30, 0, -, -
+
+OTIS RUSH
+--------------------------------------------------------------
+66-10-xx, 0, -, -
+78-10-31, 0, -, -, w/ Nighthawks
+95-06-03, 0, -, -
