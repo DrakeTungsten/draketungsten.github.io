@@ -1,0 +1,88 @@
+.navbar     {
+        background-color:rgb(255,200,240);
+        float: left;
+        width: 18%;
+        margin: 3%;
+}
+.vertstrip {
+        float: left;
+        margin: 3%;
+}
+.p1    {
+        background-color:rgb(255,255,200);
+}
+.p2    {
+        background-color:rgb(222,222,255);
+}
+.code   {
+        background-color:rgb(235,235,235);
+        font-family: monospace, "Lucida Sans Unicode";
+}
+.id     {
+        margin: 2%;
+        font-size: 1.5em;
+        color: red;
+}
+.home     {
+        float: left;
+        margin: 2%;
+        margin-left: 25em;
+        font-size: 1.3em;
+        color: red;
+        background-color:rgb(220,191,220)
+}
+.notes  {
+        font-size: 1.4em;
+        margin-right:16%;
+        float: right;
+        width: 60%;
+}
+.notes2  {
+        font-size: 1.4em;
+        margin-left:50px;
+        margin-right:200px;
+        float: left;
+        width: 800px;
+        height: 400px;
+}
+.hbindent {
+    margin-left:75px;
+}
+
+.hbdiv14 {
+        float: left;
+        width: 450px;
+        height: 100px;
+        margin: 2%;
+}
+.hbdiv51 {
+        float: left;
+        width: 150px;
+        height: 450px;
+        margin: 2%;
+}
+.hbdiv52 {
+        float: left;
+        width: 250px;
+        height: 450px;
+        margin: 2%;
+}
+.hbdiv54 {
+        float: left;
+        width: 450px;
+        height: 450px;
+        margin: 2%;
+}
+
+.exelink A:link {color: red;} 
+.exelink A:visited {color: red;}
+
+div.clear {
+    clear:both;
+}
+
+.table1, .table1 TD, .table1 TH
+{
+font-size:16pt;
+color:blue;
+}

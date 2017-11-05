@@ -1,0 +1,159 @@
+<html>
+<head>    
+<title>The Devil mocks their every step.</title>
+<link rel="shortcut icon"  href="hb.ico"/>
+<link rel="stylesheet" type="text/css" href="hb.css"/>
+
+</head>
+<body>
+<div class="navbar">
+    <b>Contents</b>
+    <br><br>
+    <a href="readme.html">Overview</a>
+    <br><br>
+    <a href="configfile1.html">Configure content &amp menu navigation</a>
+    <br><br>
+    <a href="configfile2.html">Configure layout &amp behavior</a>
+    <br><br>
+    <a href="rascals.html">Rascal animations</a>
+    <br><br>
+    <a href="examples.html">Emulator examples</a>
+    <br><br>
+</div>
+<div class="notes">
+
+    <h3>OVERVIEW</h3>
+
+    This page documents the usage of the the "No Quarter" game launcher. No Quarter is a graphically simple and customizable menu for running applications, built with game system emulators in mind. 
+    <p>
+        <b>What it looks like:</b>
+    </p>
+
+    <p>
+    This screenshot demonstrates most of what you see when it's running:
+    </p>
+    <p>
+        <img src="screen1.png">
+    </p>
+    <p>
+        The top left rectangle is the current game list. The rectangle below the game list presents a slideshow of screenshots for the currently selected game. The right side of the screen displays a poster of the currently selected game. The rectangle above the poster, displaying the five stars, tells you the current category of game lists. The rectangle below the poster tells you the name of the current game list.
+    </p>
+    <p>
+        This screenshot demonstrates the remaining two graphical features which couldn't be captured in a single screenshot:
+    </p>
+    <p>
+        <img src="screen2.png">
+    </p>
+    <p>
+    You can configure a logo for the hardware platform  to be inserted into the slideshow every X number of slides, as seen by the Gamecube logo. Granted, this could also be achieved by placing copies of the logo into the slideshow list for every game, but you have the option of having one copy of the logo for each hardware platform, making it much easier.<br><br>
+   Wolverine is demonstrating the other feature, which is to configure animations representative of the current game list ("versus", in this case) which will pop up from time to time for your amusement. These animations are not on a per-game basis, only per-game-list, which is why you see Logan popping his claws despite the fact that the selected game is not a Marvel game. You may configure as many animations as you like for each game list, or configure none at all.
+    </p>
+
+    <p>
+        <b>Features / Limitations</b>
+    </p>
+    <p>
+        I tried to be as brief as I can in this section to help you decide if No Quarter is something you want to try out. Details of these items will be explained elsewhere.
+    </p>
+    <ul>
+        <li>
+            Most configuration needs to be manually entered into the main configuration file. I believe the documentaion is helpful enough that anybody who isn't me still shouldn't have too much trouble setting things up. To make using the main config file easier, you can define your own variables in it, and also use conditional blocks to turn whole blocks of the file on or off by editing a single line.
+        </li>
+        <li>
+            Runs roms based on user-defined rom-to-emulator associations (which are internal to NQ - I don't touch your OS file associations).  One benefit of this is that roms for different emulators may be mixed in your directories and game lists without any problem.
+        </li>
+        <li>
+            Two-tier categorization:
+            <ol>
+                <li>
+                    Volumes: This is the top level of categorization. In the two screenshots above, the current volume is indicated by the image of the five stars (You may optionlly designate such an image for volumes. If you do not, then the text of the volume name will be displayed. I chose the five-star image for my "favorites" volume). Volumes do not directly contain games. Volumes are collections of the second level of categorization:
+                </li>
+                <li>
+                    Game lists:  The clever reader my deduce that given that this is the final level of categorization, and given the name of the this level, that this is where the individual games are stored, examples of which you have observed in the game names present in the screenshots above. The first screenshot has the "shooters" game list selected (the "shooters" game list being one of the game lists under the "favorites" volume). The second screenshot has the "versus" game list selected (which is also a game list under the "favorites" volume), although its name is mostly obscured by wolverine.
+                </li>
+            </ol>
+        </li>
+        <li>
+            Automatic running of compiled AHK scripts: You'll have to write and compile your own AHK scripts, but if you follow a naming and folder placement convention, your AHK scripts will run automatically without even having to be configured in a config file. Works for AHK files intended for both per-emulator and per-game application.  
+        </li>
+        <li>
+            Ditto for Linux and xmodmap files and xdotool files.  
+        </li>
+        <li>
+            Customizable controls: Each function in NQ may be mapped to multiple keys and/or multiple gamepad buttons, so if you have a 4-player CP, all four of the stations may be configured to navigate the FE.
+        </li>
+        <li>
+            NQ can allow you to configure per-game controls for emulators which do not support this feature. It's a rather Micky Mouse method, and not something cool like grabbing raw input and translating it to your suit your needs. It requires some work on your part, but it gets the job done. 
+        </li>
+        <li>
+            As an extension of the above point, NQ can help you with managing controller changes, so that you can change a line in the config file to switch from KB input for your emulators to your gamepad input, and NQ will make the appropriate changes to the config files for the emulators (actually these would be changes you already set up, so this doesn't happen without prep work on your part)
+        </li>
+        <li>
+            Aliasing game names for the menu. I'm pretty sure plenty of other FEs already do this, where if you have ddragon.7z, it will automatically present it to you "Double Dragon", without any work on your part.  NQ will do this, except you need to alias each game yourself (with the exception of the aliases you're inheriting from the ones I'm including for the demo)
+        </li>
+        <li>
+            Much of the display is customizable. You're stuck with the relative positioning of the three main rectangles, but their lengths, widths, and padding may be changed to whatever you like. You can also change the fonts and font size of on-screen text.  However, due to the simplistic layout, NQ probably isn't going to look very good at resolutions greater than 640 * 480.
+        </li>
+        <li>
+        No Quarter is rather memory hungry. I'm pretty sure there are no memory leaks, but, for example, I load just over 200 games into it, and NQ uses almost 1 GB of RAM for me.
+        </li>
+        <li>
+            To make full use of all the features, you will end up doing some work for every game. For this reason and for the prvious point, I do not recommend this FE for folks who are looking for a FE to manage a large number of roms.
+        </li>
+        <li>
+            Some features require a specific directory structure.
+        </li>
+        <li>
+            I'm having trouble getting some emulators to run correctly unless NQ first minimizes itself. For now, NQ will mnimize whenever any game is launched, run the emulator, and when the emulator exits, it will maximize itself. 
+        </li>
+    </ul>
+
+
+    <p>
+        <b>Running the demo:</b>
+    </p>
+    <p>
+        Make sure the NoQuarter directory is at the root of your C: drive. Double-click nq.exe. You will be greeted with a splash screen while the configuration file is read and processed. No games or emulators have been distributed with this. As mentioned above, NQ works by user-defined file associations, so for the demo, I have associated png files with a simple program which is not an emulator, and configured NQ to load files from the directories where the poster files are.
+    </p>
+    <p>
+    While the splash screen will always take up as much of the screen as possible, once all of the images are loaded and the main part of the program is running, NQ will only take up as much of the screen as configured in the main config file. The demo is configured for the smallest reasonable resolution, so it's only going to be in a 640 * 480 box. If your desktop is at a higher resolution, you will have a bluish-white background which isn't really meant to be seen in production  
+    </p>
+
+    <ul>
+        <li>
+            The up and down arrow keys scroll through the games of the current list.
+        </li>
+        <li>
+            The left and right arrow keys scroll through the game lists of the current volume.
+        </li>
+        <li>
+            The "a" and "s" keys scroll through the volumes.
+        </li>
+        <li>
+            "z" jumps to the first rom in the current rom list (since scrolling through games loops at the endpoints, this also puts you right near the end of the list too) 
+        </li>
+        <li>
+            "x" jumps to the middle rom of the current rom list.
+        </li>
+        <li>
+            "1" launches the current game. Again, there are no emulators or games with this download, so it just launches a program showing you the poster for the game.
+        </li>
+        <li>
+            "Escape" exits the program.
+        </li>
+    </ul>
+
+    <p>
+    </p>
+
+    <p>
+        <b>Configuration:</b>
+    </p>
+    <p>
+        When you're ready to start setting up NoQuarter for your own use, <a href="configfile1.html">click here</a>
+    </p>
+
+
+</div>
+</body>
+</html>
