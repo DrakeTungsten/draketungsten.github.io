@@ -1,0 +1,69 @@
+<html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
+<link href="comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function swapReprint(){
+    var r  = document.getElementById('issuetable').rows
+    var l = r.length
+    var x
+    var temp
+    for (x = 1; x < l; x++){ //  skip row 0 cuz it's col headers
+        if(r[x].cells.length > 4){
+    	    if(r[x].cells[4].innerHTML != "&nbsp;" 
+	    && r[x].cells[1].innerHTML != "(tpb/gn)"){
+                temp = r[x].cells[4].innerHTML
+                r[x].cells[4].innerHTML = 
+	               r[x].cells[0].innerHTML + " " + r[x].cells[1].innerHTML
+                //  break temp into issue title and number
+                var tl = temp.length
+	        var ch = temp.charAt(tl - 1)
+		while(ch == " "){
+                    tl--
+	            ch = temp.charAt(tl - 1)
+                }
+	        if(ch < "0" || ch > "9"){
+	            r[x].cells[0].innerHTML = temp 
+	            r[x].cells[1].innerHTML = "&nbsp;" 
+	        }
+	        else{
+                    var ishnum = ""
+		    var n = tl - 1
+		    while(temp.charAt(n) == " "){
+                         n--
+                    }
+		    while(temp.charAt(n) != " "){
+		        c = temp.charAt(n)
+		        ishnum = c + ishnum
+                        n--
+		        //alert("ishnum = " + ishnum + "  n = " + n)
+		    }
+	            r[x].cells[0].innerHTML = temp.substr(0, n) 
+	            r[x].cells[1].innerHTML = ishnum   
+	        }
+	    }
+        }
+    }
+    temp = r[5].cells[0].innerHTML
+}
+</script>
+				
+<title>ultimate</title></head><body><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
+ <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
+ <td><b>Reprint</b></td>   </tr><tr bgcolor="#ffffff"><td><b>Hellfire And Brimstone</b></td><td>(tpb/gn)</td><td>vol IV, Millar</td><td>&nbsp</td><td>Ultimate X-Men 21-25 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>The Return Of The King </b></td><td>(tpb/gn)</td><td>vol VI, Millar</td><td>&nbsp</td><td>Ultimate X-Men 26-33 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Blockbuster</b></td><td>(tpb/gn)</td><td>vol VII, Bendis</td><td>&nbsp</td><td>Ultimate X-Men 34-39 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>New Mutants</b></td><td>(tpb/gn)</td><td>vol VIII, Bendis</td><td>&nbsp</td><td>Ultimate X-Men 40-45 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>The Tempest</b></td><td>(tpb/gn)</td><td>vol IX, Vaughn</td><td>&nbsp</td><td>Ultimate X-Men 46-49 </td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ececec"><td>Ultimate Marvel Team-up</td><td>002</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Ultimate Marvel Team-up</td><td>003</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Ultimate Spider-Man</td><td>013</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Double Trouble</b></td><td>(tpb/gn)</td><td>vol 3, Kraven, Doc Ock</td><td>&nbsp</td><td>Ultimate Spider-Man 14-21 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Public Scrutiny</b></td><td>(tpb/gn)</td><td>vol 5, impostor</td><td>&nbsp</td><td>Ultimate Spider-Man 28-32 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Cats And Kings</b></td><td>(tpb/gn)</td><td>vol 8</td><td>&nbsp</td><td>Ultimate Spider-Man 47-53  </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Hollywood</b></td><td>(tpb/gn)</td><td>vol 10</td><td>&nbsp</td><td>Ultimate Spider-Man 54-59 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Carnage</b></td><td>(tpb/gn)</td><td>vol 11</td><td>&nbsp</td><td>Ultimate Spider-Man 60-65 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Warriors</b></td><td>(tpb/gn)</td><td>vol 14</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Deadpool</b></td><td>(tpb/gn)</td><td>vol 16</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Clone Saga</b></td><td>(tpb/gn)</td><td>vol 17</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Ultimate Knights</b></td><td>(tpb/gn)</td><td>vol 18</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+</table></body></html>

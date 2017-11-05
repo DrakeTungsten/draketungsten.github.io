@@ -1,0 +1,67 @@
+<html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
+<link href="comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function swapReprint(){
+    var r  = document.getElementById('issuetable').rows
+    var l = r.length
+    var x
+    var temp
+    for (x = 1; x < l; x++){ //  skip row 0 cuz it's col headers
+        if(r[x].cells.length > 4){
+    	    if(r[x].cells[4].innerHTML != "&nbsp;" 
+	    && r[x].cells[1].innerHTML != "(tpb/gn)"){
+                temp = r[x].cells[4].innerHTML
+                r[x].cells[4].innerHTML = 
+	               r[x].cells[0].innerHTML + " " + r[x].cells[1].innerHTML
+                //  break temp into issue title and number
+                var tl = temp.length
+	        var ch = temp.charAt(tl - 1)
+		while(ch == " "){
+                    tl--
+	            ch = temp.charAt(tl - 1)
+                }
+	        if(ch < "0" || ch > "9"){
+	            r[x].cells[0].innerHTML = temp 
+	            r[x].cells[1].innerHTML = "&nbsp;" 
+	        }
+	        else{
+                    var ishnum = ""
+		    var n = tl - 1
+		    while(temp.charAt(n) == " "){
+                         n--
+                    }
+		    while(temp.charAt(n) != " "){
+		        c = temp.charAt(n)
+		        ishnum = c + ishnum
+                        n--
+		        //alert("ishnum = " + ishnum + "  n = " + n)
+		    }
+	            r[x].cells[0].innerHTML = temp.substr(0, n) 
+	            r[x].cells[1].innerHTML = ishnum   
+	        }
+	    }
+        }
+    }
+    temp = r[5].cells[0].innerHTML
+}
+</script>
+				
+<title>dd</title></head><body><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
+ <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
+ <td><b>Reprint</b></td>   </tr><tr bgcolor="#ffffff"><td><b>Man Without Fear</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Elecktra</td><td>Flashback</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Daredevil (I)</td><td>165 </td><td>Miller</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Daredevil (I)</td><td>166 </td><td>Miller</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Daredevil (I)</td><td>167 </td><td>Miller</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>DD Visionaries II</b></td><td>(tpb/gn)</td><td>Miller</td><td>&nbsp</td><td>Daredevil (I) 168-182 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>DD Visionaries III</b></td><td>(tpb/gn)</td><td>Miller</td><td>&nbsp</td><td>Daredevil (I) 183-191 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Love And War</b></td><td>(tpb/gn)</td><td>Miller</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Elektra: Assassin</b></td><td>(tpb/gn)</td><td>Miller</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Born Again</b></td><td>(tpb/gn)</td><td>Miller</td><td>&nbsp</td><td>Daredevil (I) 227-233 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Vol 2</b></td><td>(tpb/gn)</td><td>Bendis</td><td>"Underboss"<br>"Out"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Vol 3</b></td><td>(tpb/gn)</td><td>Bendis</td><td>"Lowlife"<br>"Hardcore"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Vol 4</b></td><td>(tpb/gn)</td><td>Bendis</td><td>"King Of Hell's Kitchen"<br>"The Widow"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Vol 6</b></td><td>(tpb/gn)</td><td>Bendis</td><td>"The Murdock Papers"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Volume One</b></td><td>(tpb/gn)</td><td>Brubaker</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Volume Two</b></td><td>(tpb/gn)</td><td>Brubaker</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+</table></body></html>

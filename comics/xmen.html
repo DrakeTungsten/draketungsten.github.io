@@ -1,0 +1,111 @@
+<html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
+<link href="comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function swapReprint(){
+    var r  = document.getElementById('issuetable').rows
+    var l = r.length
+    var x
+    var temp
+    for (x = 1; x < l; x++){ //  skip row 0 cuz it's col headers
+        if(r[x].cells.length > 4){
+    	    if(r[x].cells[4].innerHTML != "&nbsp;" 
+	    && r[x].cells[1].innerHTML != "(tpb/gn)"){
+                temp = r[x].cells[4].innerHTML
+                r[x].cells[4].innerHTML = 
+	               r[x].cells[0].innerHTML + " " + r[x].cells[1].innerHTML
+                //  break temp into issue title and number
+                var tl = temp.length
+	        var ch = temp.charAt(tl - 1)
+		while(ch == " "){
+                    tl--
+	            ch = temp.charAt(tl - 1)
+                }
+	        if(ch < "0" || ch > "9"){
+	            r[x].cells[0].innerHTML = temp 
+	            r[x].cells[1].innerHTML = "&nbsp;" 
+	        }
+	        else{
+                    var ishnum = ""
+		    var n = tl - 1
+		    while(temp.charAt(n) == " "){
+                         n--
+                    }
+		    while(temp.charAt(n) != " "){
+		        c = temp.charAt(n)
+		        ishnum = c + ishnum
+                        n--
+		        //alert("ishnum = " + ishnum + "  n = " + n)
+		    }
+	            r[x].cells[0].innerHTML = temp.substr(0, n) 
+	            r[x].cells[1].innerHTML = ishnum   
+	        }
+	    }
+        }
+    }
+    temp = r[5].cells[0].innerHTML
+}
+</script>
+				
+<title>xmen</title></head><body><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
+ <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
+ <td><b>Reprint</b></td>   </tr><tr bgcolor="#dedafb"><td>Savage Wolverine</td><td>021 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Savage Wolverine</td><td>022 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Weapon X</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>MCP 72-84</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Wolverine</td><td>Flashback </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Generation X</td><td>Flashback </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>X-Men Omnibus I</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>Uncanny 098<br>Uncanny 099<br>Uncanny 101<br>Uncanny120-122<br>Uncanny129-131  </td><td>Classic 06<br>Classic 07<br>Classic 09<br>Classic 26-28<br>Classic 35-37</td></tr>
+<tr bgcolor="#ffffff"><td><b>X-Men Omnibus II</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>Uncanny 132-143<br>Uncanny 147<br>Uncanny 149<br>Uncanny 150<br>Uncanny 153<br>Uncanny Annual 4  </td><td>Classic 38-49<br>Classic 51<br>Classic 53<br>Classic 54<br>Classic 57<br>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Wolverine  </b></td><td>(tpb/gn)</td><td>Miller, Claremont </td><td>&nbsp</td><td>Wolverine 1-4<br>Uncanny 172<br>Uncanny 173 </td><td>&nbsp<br>Classic 76<br>Classic 77</td></tr>
+<tr bgcolor="#dedafb"><td>Lost Tales</td><td>001 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Lost Tales</td><td>002 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Classic X-Men</td><td>080 </td><td>&nbsp</td><td>&nbsp</td><td>Uncanny 176 </td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Classic X-Men</td><td>084 </td><td>&nbsp</td><td>&nbsp</td><td>Uncanny 180 </td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Classic X-Men</td><td>087 </td><td>Juggernaut </td><td>&nbsp</td><td>Uncanny 183 </td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Classic X-Men</td><td>088 </td><td>&nbsp</td><td>&nbsp</td><td>Uncanny 184             </td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Classic X-Men</td><td>090 </td><td>&nbsp</td><td>&nbsp</td><td>Uncanny 186                         </td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Classic X-Men</td><td>092 </td><td>~ end '85/start '86    </td><td>&nbsp</td><td>Uncanny 188 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Classic X-Men</td><td>093 </td><td>&nbsp</td><td>&nbsp</td><td>Uncanny 189</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Classic X-Men</td><td>098 </td><td>&nbsp</td><td>&nbsp</td><td>Uncanny 194 </td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Classic X-Men</td><td>100 </td><td>&nbsp</td><td>&nbsp</td><td>Uncanny 196 </td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Classic X-Men</td><td>103 </td><td>&nbsp</td><td>&nbsp</td><td>Uncanny 199 </td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Classic X-Men</td><td>109 </td><td>&nbsp</td><td>&nbsp</td><td>Uncanny 205 </td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Uncanny X-Men</td><td>206 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Uncanny X-Men</td><td>207 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Uncanny X-Men</td><td>208 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Uncanny X-Men</td><td>209 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>X-factor</td><td>006</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Blood Hungry</b></td><td>(tpb/gn)</td><td>Cyber</td><td>&nbsp</td><td>MCP 85-92 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Savage Wolverine</td><td>019</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>050</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>055</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>056</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>057</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>077 </td><td>Deathstrike</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>078 </td><td>Bloodscream</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>079 </td><td>Cyber</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>082 </td><td>Yukio, Amiko</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>087 </td><td>Maverick</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>093 </td><td>Juggernaut</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>102</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>103</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>119 </td><td>&nbsp</td><td>"Not Dead Yet"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>120 </td><td>&nbsp</td><td>"Not Dead Yet"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>121 </td><td>&nbsp</td><td>"Not Dead Yet"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Wolverine</td><td>122 </td><td>&nbsp</td><td>"Not Dead Yet"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>X-Statix</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>"New Beginnings"<br>"Final Chaper"<br>"Good Omens"<br>"X-Statix Vs The Avengers"</td><td>+116-122<br>+125-129<br>+1-5<br>+9-11<br>+19-21<br>+24-26 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>New X-Men II</b></td><td>(tpb/gn)</td><td>Xorn<br>Fantomex </td><td>"Riot At Xavier's"<br>"Murder At The Mansion"</td><td>127 - 141<br>-132, -133 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>New X-Men III</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>"Assault On Weapon Plus"<br>"Planet X"<br>"Here Comes Tomorrow"</td><td>142 - 154 </td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Deadpool</td><td>065 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Deadpool</td><td>066 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Deadpool</td><td>067 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Deadpool</td><td>068 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Deadpool</td><td>069 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Soldier X</td><td>001 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Soldier X</td><td>002 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Soldier X</td><td>003 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Soldier X</td><td>004 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td>Soldier X</td><td>005 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Soldier X</td><td>006 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td>Soldier X</td><td>007 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>The Burnt Offering</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>Cable / Deadpool 7-12</td><td>&nbsp</td></tr>
+</table></body></html>

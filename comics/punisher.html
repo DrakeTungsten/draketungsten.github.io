@@ -1,0 +1,70 @@
+<html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
+<link href="comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function swapReprint(){
+    var r  = document.getElementById('issuetable').rows
+    var l = r.length
+    var x
+    var temp
+    for (x = 1; x < l; x++){ //  skip row 0 cuz it's col headers
+        if(r[x].cells.length > 4){
+    	    if(r[x].cells[4].innerHTML != "&nbsp;" 
+	    && r[x].cells[1].innerHTML != "(tpb/gn)"){
+                temp = r[x].cells[4].innerHTML
+                r[x].cells[4].innerHTML = 
+	               r[x].cells[0].innerHTML + " " + r[x].cells[1].innerHTML
+                //  break temp into issue title and number
+                var tl = temp.length
+	        var ch = temp.charAt(tl - 1)
+		while(ch == " "){
+                    tl--
+	            ch = temp.charAt(tl - 1)
+                }
+	        if(ch < "0" || ch > "9"){
+	            r[x].cells[0].innerHTML = temp 
+	            r[x].cells[1].innerHTML = "&nbsp;" 
+	        }
+	        else{
+                    var ishnum = ""
+		    var n = tl - 1
+		    while(temp.charAt(n) == " "){
+                         n--
+                    }
+		    while(temp.charAt(n) != " "){
+		        c = temp.charAt(n)
+		        ishnum = c + ishnum
+                        n--
+		        //alert("ishnum = " + ishnum + "  n = " + n)
+		    }
+	            r[x].cells[0].innerHTML = temp.substr(0, n) 
+	            r[x].cells[1].innerHTML = ishnum   
+	        }
+	    }
+        }
+    }
+    temp = r[5].cells[0].innerHTML
+}
+</script>
+				
+<title>punisher</title></head><body><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
+ <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
+ <td><b>Reprint</b></td>   </tr><tr bgcolor="#ffffff"><td><b>Born</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Punisher War Zone</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>War Zone 1-6</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Welcome Back, Frank</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Knights Double Shot</td><td>001 </td><td>&nbsp</td><td>"Roots"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Punisher (MK)</td><td>006 </td><td>&nbsp</td><td>"Do Not Fall In New York City"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Business As Usual</b></td><td>(tpb/gn)</td><td>South America<br>Wolverine<br>Belfast</td><td>&nbsp</td><td>Punisher (MK) 13-18 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Punisher (MK)</td><td>019 </td><td>Joan</td><td>"Of Mice And Men"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Punisher (MK)</td><td>020 </td><td>&nbsp</td><td>"Brotherhood"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Punisher (MK)</td><td>021 </td><td>&nbsp</td><td>"Brotherhood"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Punisher (MK)</td><td>022 </td><td>&nbsp</td><td>"Brotherhood"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Punisher (MK)</td><td>032 </td><td>&nbsp</td><td>"Soap"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Punisher Max v1</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>"In The Beginning"</td><td>Punisher (Max) 1-6</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Punisher Max v2</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>"Mother Russia"<br>"Up Is Down And Black Is White"</td><td>Punisher (Max) 13-18<br>Punisher (Max) 19-24</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Punisher Max v3</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>"The Slavers"<br>"Barracuda"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Punisher Max v4</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>"Man Of Stone"<br>"Widowmaker"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Punisher Max v5</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>"Long Cold Dark"<br>"Valley Forge, Valley Forge"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>The Resurrection Of Ma Gnucci</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td><b>From First To Last</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>The Tyger, The Cell, The End</td><td>&nbsp</td></tr>
+</table></body></html>

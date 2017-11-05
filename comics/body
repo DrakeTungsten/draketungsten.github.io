@@ -1,0 +1,82 @@
+<div id="vertsurfbar">
+<ul>
+        <li><a href="http://www.amazon.com/Comic-Book-Stor-Folio-inch-Storage/dp/B002ARMZTK/ref=pd_sim_229_3?ie=UTF8&dpID=411UsnMWdsL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=01QWRMBXWBW70GCTF92E">Comic Portfolios, 2 for $20, 15 comics each</a></li>
+        <li><a href="http://www.herringandrobinsonbookbinders.com/">Book Binders</a></li>
+        <li><a href="http://comicbindingpro.com/faq">Book Binders 2</a></li>
+        <li><a href="http://www.collectededitions.com/storefront.html">Buy Collected Editions</a></li>
+        <li><a href="http://www.bleedingcool.com/">Bleeding Cool</a></li>
+        <li><a href="http://www.comicbookresources.com/">Comic Book Resources</a></li>
+        <li><a href="http://www.housetoastonish.com/">The X-Axis</a></li>
+        <li><a href="http://tplist.millarworld.net/index.html">TPB List</a></li>
+        <li><a href="http://www.diamondcomics.com/shipping.asp">Diamond Shipping List</a></li>
+        <li><a href="http://www.cbdb.com/search.htm">Comic Database</a></li>
+        <li><a href="http://www.uky.edu/Projects/Chemcomics/">Comic Book Periodical Table</a></li>
+        <li><a href="http://www.seanbaby.com/super.htm">Seanbaby's Super Friends Page</a></li>
+</ul>        
+</div>
+
+<div id="col4nav">
+    <ul class="hbdatalinks">
+        <h3><li>Marvel</li></h3>
+        <li><a href="mu.html">Avengers</a></li>
+        <li><a href="ff.html">Fantastic Four</a></li>
+        <li><a href="xmen.html">X-Men</a></li>
+        <li><a href="spiderman.html">Spider-Man</a></li>
+        <li><a href="dd.html">Daredevil</a></li>
+        <li><a href="fury.html">Nick Fury</a></li>
+        <li><a href="pmif.html">Heroes For Hire</a></li>
+        <li><a href="punisher.html">Punisher</a></li>
+        <li><a href="mokf.html">Master Of Kung Fu</a></li>
+        <li><br></tr></td>
+        <li><a href="ultimate.html">Ultimate Marvel</a></li>
+    </ul>
+</div>
+<div id="col4nav">
+    <ul class="hbdatalinks">
+        <h3><li>DC</li></h3>
+        <li><a href="dc2.html">DCU</a></li>
+        <li><a href="batman.html">Batman</a></li>
+        <li><a href="wonderWoman.html">Wonder Woman</a></li>
+        <li><a href="greenLantern.html">Green Lantern</a></li>
+        <li><a href="lsh.html">Legion Of Superheroes</a></li>
+        <li><a href="ambug.html">Ambush Bug</a></li>
+    </ul>
+</div>
+<div id="col4nav">
+    <ul class="hbdatalinks">
+        <h3><li>Vertigo</li></h3>
+        <li>Swamp Thing</li>
+        <li>Shade</li>
+        <li>The Human Target</li>
+        <li><a href="doompatrol.html">The Doom Patrol</a></li>
+        <li><a href="hellblazer.html">Hellblazer</a></li>
+        <li>Animal Man</li>
+        <li>Preacher</li>
+        <li>Sandman</li>
+        <li><br></li>
+        <li><a href="vertmisc.html">Misc</a></li>
+    </ul>
+</div>
+<div id="col4nav">
+    <ul class="hbdatalinks">
+        <h3><li>Other</li></h3>
+        <li><a href="conan.html">Conan</a></li>
+        <li><a href="conancomics.html">&nbsp &nbsp &nbsp Conan (comics)</a></li>
+        <li><a href="conanmags.html">&nbsp &nbsp &nbsp Conan (mags)</a></li>
+        <li><a href="conansaga.txt">&nbsp &nbsp &nbsp Conan Saga</a></li>
+        <li><a href="conanchronology.txt">&nbsp &nbsp &nbsp Chronology</a></li>
+        <li><a href="starwars.html">Star Wars</a></li>
+        <li><a href="shadow.html">The Shadow</a></li>
+        <li><a href="fafhrd.html">Fafhrd  And The Grey Mouser</a></li>
+        <li><a href="sincity.html">Sin City</a></li>
+        <li><a href="ec.html">EC Archives</a></li>
+        <li><br></li>
+        <li><a href="abc.html">ABC</a></li>
+        <li><a href="kbac.html">Astro City</a></li>
+        <li><br></li>
+        <li><a href="hist.html">Historical Fiction</a></li>
+        <li><a href="misc.html">Misc</a></li>
+    </ul>
+</div>
+
+

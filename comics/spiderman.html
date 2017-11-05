@@ -1,0 +1,95 @@
+<html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
+<link href="comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function swapReprint(){
+    var r  = document.getElementById('issuetable').rows
+    var l = r.length
+    var x
+    var temp
+    for (x = 1; x < l; x++){ //  skip row 0 cuz it's col headers
+        if(r[x].cells.length > 4){
+    	    if(r[x].cells[4].innerHTML != "&nbsp;" 
+	    && r[x].cells[1].innerHTML != "(tpb/gn)"){
+                temp = r[x].cells[4].innerHTML
+                r[x].cells[4].innerHTML = 
+	               r[x].cells[0].innerHTML + " " + r[x].cells[1].innerHTML
+                //  break temp into issue title and number
+                var tl = temp.length
+	        var ch = temp.charAt(tl - 1)
+		while(ch == " "){
+                    tl--
+	            ch = temp.charAt(tl - 1)
+                }
+	        if(ch < "0" || ch > "9"){
+	            r[x].cells[0].innerHTML = temp 
+	            r[x].cells[1].innerHTML = "&nbsp;" 
+	        }
+	        else{
+                    var ishnum = ""
+		    var n = tl - 1
+		    while(temp.charAt(n) == " "){
+                         n--
+                    }
+		    while(temp.charAt(n) != " "){
+		        c = temp.charAt(n)
+		        ishnum = c + ishnum
+                        n--
+		        //alert("ishnum = " + ishnum + "  n = " + n)
+		    }
+	            r[x].cells[0].innerHTML = temp.substr(0, n) 
+	            r[x].cells[1].innerHTML = ishnum   
+	        }
+	    }
+        }
+    }
+    temp = r[5].cells[0].innerHTML
+}
+</script>
+				
+<title>spiderman</title></head><body><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
+ <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
+ <td><b>Reprint</b></td>   </tr><tr bgcolor="#cecece"><td colspan="6"> TW 14 | AF 15-17 | ASM 1,3 | UT 1-2 | ASM 7 | UT 3-4 | ASM 9 | UT 5-8 | ASM 11 | UT 10 | ASM 12 | UT 11-18, 25  | ASM 25, 27-20
+</td></tr><tr bgcolor="#ececec"><td>Tangled Web</td><td>014</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Spider-Man Ditko Omnibus</b></td><td>(tpb/gn)</td><td>&nbsp<br>&nbsp<br>Doc Ock<br>Vulture<br>Electro<br>Doc Ock<br>Doc Ock<br>Spider Slayer<br>Green Goblin<br>Molten Man<br>Scorpion<br>Cat Burglar </td><td>&nbsp</td><td>Amazing Fantasy 14<br>ASM 1<br>ASM 3<br>ASM 7<br>ASM 9<br>ASM 11<br>ASM 12<br>ASM 25<br>ASM 27<br>ASM 28<br>ASM 29<br>ASM 30</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Untold Tales Of Spider-Man Omnibus</b></td><td>(tpb/gn)</td><td>&nbsp<br>&nbsp<br>&nbsp<br>Scorcher<br>Batwing<br>Sandman<br>The Spacemen<br>Vulture<br>Torch, Wizard<br>Electro<br>Enforcers<br>Commanda<br>Electro, Eel<br>Betty Brant<br>Bluebird<br>Scorcher<br>Betty Brant<br>MJ<br>Hawkeye<br>Headsman<br>Green Goblin  </td><td>&nbsp</td><td>Amazing Fantasy 15<br>Amazing Fantasy 16<br>Amazing Fantasy 17<br> Untold Tales 1<br>Untold Tales 2<br>Untold Tales 3<br>Untold Tales 4<br>Untold Tales 5<br>Untold Tales 6<br>Untold Tales 7<br>Untold Tales 8<br>Untold Tales 10<br>Untold Tales 11<br>Untold Tales 12<br>Untold Tales 13<br>Untold Tales 14<br>Untold Tales 15<br>Untold Tales 16<br>Untold Tales 17<br>Untold Tales 18<br>Untold Tales 25 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Spider-Man Masterworks V</b></td><td>(tpb/gn)</td><td>Rhino<br>Rhino<br>Shocker<br>Kingpin </td><td>&nbsp</td><td>+ASM 41<br>+ASM 42<br>+ASM 46<br>+ASM 50 </td><td>MT 180<br>MT 183<br>&nbsp<br>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Spidey/Torch</b></td><td>(tpb/gn)</td><td>Torch </td><td>&nbsp</td><td>Spidey/Torch 02<br>Spidey/Torch 03</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>The Complete Frank Miller Spider-Man</b></td><td>(tpb/gn)</td><td>Doom/Strange<br>DocOck/Punisher  </td><td>&nbsp</td><td>ASM Annual 14<br>ASM Annual 15 </td><td>MT 200</td></tr>
+<tr bgcolor="#ffffff"><td><b>Spider-Man Stern Omnibus</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>+231<br>+232<br>+238<br>+239<br>+248<br>+249<br>+250<br>+251<br>+252 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Tales</td><td>270  </td><td>Puma</td><td>&nbsp</td><td>Amazing Spider-Man 256 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Tales</td><td>271  </td><td>Puma</td><td>&nbsp</td><td>Amazing Spider-Man 257 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Tales</td><td>272  </td><td>FF</td><td>&nbsp</td><td>Amazing Spider-Man 258 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Tales</td><td>273  </td><td>MJ</td><td>&nbsp</td><td>Amazing Spider-Man 259 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Tales</td><td>274  </td><td>Hobgoblin</td><td>&nbsp</td><td>Amazing Spider-Man 260 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Tales</td><td>275  </td><td>Hobgoblin</td><td>&nbsp</td><td>Amazing Spider-Man 261 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Tales</td><td>276  </td><td>Spider-Kid</td><td>&nbsp</td><td>Amazing Spider-Man 263 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Tales</td><td>277  </td><td>Silver Sable</td><td>&nbsp</td><td>Amazing Spider-Man 265 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Amazing Spider-Man</td><td>266  </td><td>Toad</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Amazing Spider-Man</td><td>267  </td><td>The Commuter</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Tales</td><td>278  </td><td>Gold Fever</td><td>&nbsp</td><td>Amazing Spider-Man 268   </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Tales</td><td>281  </td><td>Crusher Hogan</td><td>&nbsp</td><td>Amazing Spider-Man 271   </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Tales</td><td>283  </td><td>Hobgoblin</td><td>&nbsp</td><td>Amazing Spider-Man 275   </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Tales</td><td>284  </td><td>Unmasked</td><td>&nbsp</td><td>Amazing Spider-Man 276   </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Peter Parker</td><td>113            </td><td>A House Divided</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Peter Parker</td><td>119            </td><td>Sabretooth</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Peter Parker</td><td>121            </td><td>Rashomon</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Fanfare</td><td>027</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Spider-Man vs Wolverine</td><td></td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Amazing Spider-Man</td><td>289            </td><td>Hobgoblin Revealed</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Web Of Spider-Man</td><td>029            </td><td>Wolverine</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Kraven's Last Hunt</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Peter Parker</td><td>134</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Peter Parker</td><td>135</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Peter Parker</td><td>136</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Spider-Man McFarlane Omnibus</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>+300<br>+316<br>+317<br>+318<br>+319 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Amazing Spider-Man</td><td>347</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Shadows And Light</td><td>003</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Peter Parker</td><td>186</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Peter Parker</td><td>187</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Peter Parker</td><td>188</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Peter Parker</td><td>189</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Peter Parker</td><td>190</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Peter Parker</td><td>200</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Tangled Web</td><td>005 </td><td>Rhino</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Tangled Web</td><td>006 </td><td>Rhino</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+</table></body></html>

@@ -1,0 +1,137 @@
+<html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
+<link href="comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function swapReprint(){
+    var r  = document.getElementById('issuetable').rows
+    var l = r.length
+    var x
+    var temp
+    for (x = 1; x < l; x++){ //  skip row 0 cuz it's col headers
+        if(r[x].cells.length > 4){
+    	    if(r[x].cells[4].innerHTML != "&nbsp;" 
+	    && r[x].cells[1].innerHTML != "(tpb/gn)"){
+                temp = r[x].cells[4].innerHTML
+                r[x].cells[4].innerHTML = 
+	               r[x].cells[0].innerHTML + " " + r[x].cells[1].innerHTML
+                //  break temp into issue title and number
+                var tl = temp.length
+	        var ch = temp.charAt(tl - 1)
+		while(ch == " "){
+                    tl--
+	            ch = temp.charAt(tl - 1)
+                }
+	        if(ch < "0" || ch > "9"){
+	            r[x].cells[0].innerHTML = temp 
+	            r[x].cells[1].innerHTML = "&nbsp;" 
+	        }
+	        else{
+                    var ishnum = ""
+		    var n = tl - 1
+		    while(temp.charAt(n) == " "){
+                         n--
+                    }
+		    while(temp.charAt(n) != " "){
+		        c = temp.charAt(n)
+		        ishnum = c + ishnum
+                        n--
+		        //alert("ishnum = " + ishnum + "  n = " + n)
+		    }
+	            r[x].cells[0].innerHTML = temp.substr(0, n) 
+	            r[x].cells[1].innerHTML = ishnum   
+	        }
+	    }
+        }
+    }
+    temp = r[5].cells[0].innerHTML
+}
+</script>
+				
+<title>batman</title></head><body><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
+ <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
+ <td><b>Reprint</b></td>   </tr><tr bgcolor="#ffffff"><td><b>Year One</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>The Monster Men</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>The Mad Monk</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Prey</b></td><td>(tpb/gn)</td><td>Hugo Strange<br>Catwoman </td><td>&nbsp</td><td>LoTDK 11 - 15</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Blink</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>LoTDK 156 - 158</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Legends Of The Dark Knight</td><td>069 </td><td>&nbsp</td><td>"Criminals"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Legends Of The Dark Knight</td><td>070 </td><td>&nbsp</td><td>"Criminals"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Legends Of The Dark Knight</td><td>050 </td><td>Joker         </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Detective</td><td>Annual #8 </td><td>Riddler </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Showcase '94</td><td>008 </td><td>Scarface </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Showcase '94</td><td>009 </td><td>Scarface </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Legends Of The DCU</td><td>010 </td><td>Batgirl    </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Legends Of The DCU</td><td>011 </td><td>Batgirl    </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td bgcolor="#ddffdd">Batman Chronicles</td><td>009 </td><td>Batgirl<br>Robin </td><td>"Photo Finish"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>The Bat And The Cat</b></td><td>(tpb/gn)</td><td>Batgirl<br>Catwoman</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td><b>Mad Love</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>Mad Love<br>Annual #1<br>Annual #2</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Batman Adventures I</b></td><td>(tpb/gn)</td><td>Catwoman<br>Riddler </td><td>&nbsp</td><td>+2<br>+9<br>+10 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Batman Adventures II</b></td><td>(tpb/gn)</td><td>Batgirl, Harley<br>Gordon<br>Joker<br>Ra's Al Ghul<br>Batgirl, Robin<br>Mastermind </td><td>&nbsp</td><td>+12<br>+15<br>+16<br>+17<br>+18<br>+20 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Batman Adventures III</b></td><td>(tpb/gn)</td><td>Two-Face<br>Poison Ivy<br>Superman<br>Batgirl, Robin<br>&nbsp<br> </td><td>&nbsp</td><td>+22<br>+23<br>+25<br>+26<br>+27 </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Batman Adventures IV</b></td><td>(tpb/gn)</td><td>Joker<br>Talia<br>Perfesser<br>&nbsp<br>Catwoman<br>Catwoman<br>Catwoman<br>Mr Freeze  </td><td>"Twelve Days Of Madness"<br>"Demonseed"<br>"Natural Born Loser"<br>"Just Another Night"<br>"In Memoriam"<br>"The Book Of Memory"<br>"The Last Batman Adventure"<br>"Holiday Special"</td><td>+28<br>+29<br>+30<br>+33<br>+34<br>+35<br>+36<br>&nbsp </td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Harley And Ivy</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Batman & Robin Adventures</td><td>001 </td><td>Two-Face<br>Joker             </td><td>"Two-Timer"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Batman & Robin Adventures</td><td>002 </td><td>Two-Face                      </td><td>"Two-Timer"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Batman & Robin Adventures</td><td>003 </td><td>Riddler                                   </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Batman & Robin Adventures</td><td>006 </td><td>Robin auditions                           </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Batman & Robin Adventures</td><td>007 </td><td>Scarface                                  </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Batman & Robin Adventures</td><td>008 </td><td>Robin<br>Ivy<br>Harley                    </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Batman & Robin Adventures</td><td>019 </td><td>Huntress                                  </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Batman & Robin Adventures</td><td>022 </td><td>Two-Face                                  </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Batgirl Adventures</td><td>001 </td><td>Batgirl                                         </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Batman Gotham Adventures</td><td>013 </td><td>Nightwing<br>Mastermind<br>Perfesser<br>Mr Nice </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td bgcolor="#ddffdd">Birds Of Prey:<br>Catwoman and Batgirl</td><td></td><td>Batgirl<br>Catwoman </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td><b>Batman '66 Vol I</b></td><td>(tpb/gn)</td><td>Mad Hatter </td><td>"The Hatter Takes The Crown"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Batman '66 Vol II</b></td><td>(tpb/gn)</td><td>Olga<br>False Face<br>King Tut<br>Shame<br>Cleopatra </td><td>"Queen Of Cossacks"<br>"The Fiend Is False"<br>"King Tut Barges In"<br>"Showdown With Shame"<br>"Cleo-Bat-Ra"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Batman '66 Vol III</b></td><td>(tpb/gn)</td><td>Joker, Riddler </td><td>"The Bat-Robot Takes Flight"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Batman '66 Vol IV</b></td><td>(tpb/gn)</td><td>Joker </td><td>"A Stand Up Guy"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Batman '66 Vol V</b></td><td>(tpb/gn)</td><td>Grundy<br>Marsha<br>Harlequin<br>Scarecrow<br>Killer Croc<br>Ma Parker<br>Catwoman<br>Riddler </td><td>"The Groovy Grave of..."<br>"Diamond Disaster"<br>"Night of the Harlequin"<br>"Scarecrow Comes To Town"<br>"Hunt The Croc Down"<br>"Parker Breaks Out"<br>"Catwoman Comes About"<br>"Main Title"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Batman '66<br>Steed And Peel</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td><b>Neal Adams Omnibus</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td><b>The Greatest Batman Stories<br> Ever Told v1</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>Detective 500</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Batman</td><td>393 </td><td>&nbsp</td><td>"The Dark Rider"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Batman</td><td>394 </td><td>&nbsp</td><td>"The Dark Rider"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Detective</td><td>Annual #1 1988 </td><td>Talia  </td><td>"Fables"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Secret Origins</td><td>Special 1989 </td><td>Penguin           </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Teen Titans Spotlight</td><td>14 </td><td>Nightwing  </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Batman Black And White v3</td><td>001 </td><td>&nbsp</td><td>"Driven"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Batman/Predator</b></td><td>(tpb/gn)</td><td>Predator</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Legends of The Dark Knight:<br> Norm Brefoygle v1</b></td><td>(tpb/gn)</td><td>Scarface<br>Etrigan<br>Mud Pack </td><td>&nbsp</td><td>'Tec 582 - 607 </td><td>'87 - '89</td></tr>
+<tr bgcolor="#ffffff"><td><b>Legends of The Dark Knight:<br> Norm Brefoygle v2</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Gotham Nights</td><td>001 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f7f7d5"><td bgcolor="#ddffdd">Gotham Nights</td><td>002 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Gotham Nights</td><td>003 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#dedafb"><td bgcolor="#ddffdd">Gotham Nights</td><td>004 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td bgcolor="#ddffdd">Detective</td><td>622 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td bgcolor="#ddffdd">Detective</td><td>623 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td bgcolor="#ddffdd">Detective</td><td>624 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td><b>Dark Knight, Dark City</b></td><td>(tpb/gn)</td><td>Riddler </td><td>&nbsp</td><td>Batman 452 - 454<br>'Tec 629 - 633</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>A Lonely Place Of Dying</b></td><td>(tpb/gn)</td><td>Tim Drake </td><td>&nbsp</td><td>Batman 440 - 442<br>NTT 60 - 61</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Batman</td><td>465 </td><td>&nbsp</td><td>"Debut"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td><b>KnightFall</b></td><td>(tpb/gn)</td><td>Bane </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Knight Quest</b></td><td>(tpb/gn)</td><td>Bane</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Knight's End</b></td><td>(tpb/gn)</td><td>Bane</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td><b>Batman:<br>Moench And Jones</b></td><td>(tpb/gn)</td><td>Killer Croc<br>Two-Face<br>Deadman </td><td>&nbsp</td><td>Batman 515 - 535</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td bgcolor="#ddffdd"><b>Batman/Predator II</b></td><td>(tpb/gn)</td><td>Predator </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td bgcolor="#ddffdd"><b>Batman/Predator III</b></td><td>(tpb/gn)</td><td>Predator </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td bgcolor="#ddffdd">Nightwing</td><td>025 </td><td>Nightwing<br>Robin  </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td><b>Death And The Maidens</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Gotham Central I</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Gotham Central II</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Gotham Central III</b></td><td>(tpb/gn)</td><td>-(26-31)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Gotham Central IV</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td><b>Batman And Son</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Superman/Batman</td><td>077 </td><td>Damian<br>Kara </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Batman And Robin</td><td>Annual 1</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td><b>The Dark Knight Returns</b></td><td>(tpb/gn)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+</table></body></html>
