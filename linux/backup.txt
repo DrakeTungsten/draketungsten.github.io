@@ -1,0 +1,91 @@
+#!/bin/bash
+
+if [ $# = "2" ]
+then
+    cd /backup
+    rm backup*tar*
+    if [ $1 = "docs" ]
+    then
+    # DOCS
+        HOMEDIR="/backup/docs/"
+        # clean every directory that needs cleaning
+        rm -f ${HOMEDIR}/programming/*.tar*
+        for DIR in programming/hbnet programming/hbio programming/poker programming/formatcomics programming/formatmusic programming/hubris website/comics website/music website/linux website/programming website/windows website/connie website/arcade
+        do
+            echo ">>>> Cleaning $HOMEDIR$DIR"
+            cd $HOMEDIR$DIR
+            make clean
+        done
+        # End clean
+
+        # Create tarball
+        echo ">>>> Creating backup tarball for docs."
+        cd /backup
+        TARFILE="backup.`date +%F`.tar"
+        tar -X /etc/hb/backup-pokerdata -X /etc/hb/backup-pics -X /etc/hb/backup-ignore -cf $TARFILE docs
+    elif [ $1 = "poker" ]
+    then
+    # POKER DATA
+        echo ">>>> Creating backup tarball for poker data."
+        cd /backup
+        TARFILE="backup.poker.tar"
+        tar -T /etc/hb/backup-pokerdata -cf $TARFILE 
+    elif [ $1 = "pics" ]
+    then
+    # PICS
+        echo ">>>> Creating backup tarball for pics."
+        cd /backup
+        TARFILE="backup.pics.tar"
+        tar -T /etc/hb/backup-pics -cf $TARFILE 
+    elif [ $1 = "win" ]
+    then
+    # WINDOWS
+        echo ">>>> Creating backup tarball for Windows"
+        cd /backup
+        TARFILE="backup.windows.tar"
+        tar -cf $TARFILE wincustom winportable 
+    else
+        echo ">>> Invalid backup target"
+        echo "usage: backup docs|poker|pics|win offsite|lan"
+        exit 
+    fi
+
+    ##############################################################
+    # Compress and send
+    gzip $TARFILE
+    GZIPFILE="${TARFILE}.gz"
+    if [ $2 = "lan" ]
+    then
+        echo ">>>> Sending $GZIPFILE to pneuman"
+        scp $GZIPFILE 192.168.1.36:$GZIPFILE
+        cp $GZIPFILE $HOME
+    elif [ $2 = "offsite" ]
+    then
+        echo ">>>> Sending $GZIPFILE to comcast website"
+        ftp -n upload.comcast.net << ALL_DONE
+`cat /etc/hb/offsite-signon`
+put $GZIPFILE
+ALL_DONE
+    else
+        echo ">>>> Invalid destination argument. Specify lan or offsite next time."
+    fi
+else
+    echo "usage: backup docs|poker|pics|win offsite|lan"
+fi
+
+
+# create all other misc tarballs in bunnydocs directory
+#cd /archive/windows/programming
+#rm sdl.tar.gz
+#tar -cvf sdl.tar sdl
+#gzip sdl.tar
+#cd ~/comics
+#make clean
+#for DIR in ~/recipes ~/music ~/comics ~/resume /archive/scripts /archive/allconfig /archive/windows/pc_poohbox/docs /archive/websitebase
+#do
+#   BASE=${DIR##*/}
+#   cd $DIR
+#   cd ..
+#    tar -chf ~/bunnydocs/${BASE}.tar $BASE
+#done
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for wavFile in *.wav
+do
+    outFile=${wavFile%.wav}.shn
+    shorten -n 256 "$wavFile" "$outFile" 
+done
+

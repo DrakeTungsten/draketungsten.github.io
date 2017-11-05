@@ -1,0 +1,26 @@
+# Inserts the line INSERT after the first instance of  
+# a line containing the string MARKER
+MARKER="commonPrint"
+INSERT='<link rel="stylesheet" href="lfs.css" />'
+for FILE in *
+do
+    if [ $FILE != "insertlines.sh" ]
+    then
+        rm temp
+        FOUND="n"
+        while read LINE
+        do
+            echo $LINE >> temp
+            if [ $FOUND = "n" ] 
+            then
+                echo $LINE | grep $MARKER
+                if [ $? = "0" ] 
+                then
+                    echo $INSERT >> temp 
+                    FOUND="y"
+                fi
+            fi
+        done < "$FILE"
+        mv temp $FILE
+    fi
+done

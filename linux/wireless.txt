@@ -1,0 +1,3 @@
+sudo ifconfig ath0 up
+sudo iwconfig ath0 essid "aquilonia"
+sudo dhclient ath0

@@ -1,0 +1,15 @@
+#!/bin/bash
+if [ $# = "1" ]
+then
+    cdparanoia -d /dev/scd0 -B
+    rm track00.cdda.wav
+    flac *wav
+    rm -f *wav
+    for file in $(ls track*flac)
+    do
+        trackno=${file:5:2}
+        mv $file ${1}-${trackno}.flac
+    done
+else
+    echo "Usage: audioToNamedFlac <track prefix>"
+fi

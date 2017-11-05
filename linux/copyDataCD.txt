@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if ! [ -d /tmp/hbcd ]
+then
+    mkdir /tmp/hbcd
+fi   
+cd /tmp/hbcd
+rm -rf *
+mount /mnt/cdrom
+cp -r /mnt/cdrom/* .
+umount /mnt/cdrom
+burn
+rm -rf *
+

@@ -1,0 +1,7 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../hb.css" />
+<link href="linux.ico" rel="icon" type="image/bmp">
+<title>Linux</title></head>
+<body style="background-image: url('tux.png');
+background-position: top;">

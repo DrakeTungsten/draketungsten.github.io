@@ -1,0 +1,5 @@
+for f1 in *
+do
+    f2=$(echo $f1 | tr  [A-Z] [a-z])
+    mv "$f1" "$f2"
+done

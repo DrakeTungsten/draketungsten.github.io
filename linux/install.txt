@@ -1,0 +1,7 @@
+sudo cp -f *sh /bin
+if ! [ -e /etc/hb ]
+then
+    sudo mkdir /etc/hb
+fi
+sudo cp backup-pokerdata backup-pics backup-ignore offsite-signon /etc/hb
+

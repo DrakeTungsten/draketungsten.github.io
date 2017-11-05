@@ -1,0 +1,59 @@
+#!/bin/bash
+#
+
+# Might need to suid cdrecord to allow any user to record:
+# chown root /usr/local/bin/cdrecord
+# chmod 4710 /usr/local/bin/cdrecord
+
+#SPD="16"
+SPD="4"
+
+#RECDEV="ATAPI:0,0,0"
+RECDEV="/dev/hdc"
+
+WAVFILES="none"
+for FILE in $(ls *wav)
+do
+    WAVFILES="some"
+done
+
+if [ $WAVFILES = "none" ]
+then
+    if [ $# = "0" ]
+    then
+        ISO="cdimage.iso"
+        # alternative to this for making a copy of a cd:
+        # dd if=scd0 of=/temp/whatever/image.iso
+        mkisofs -J -r -v -o $ISO .
+        RMISO="YES"
+    else
+        ISO=$1
+        RMISO="NO"
+    fi
+
+    cdrecord -v speed=$SPD dev="$RECDEV" -eject -data "$ISO"
+    if [ $RMISO = "YES" ]
+    then 
+        rm $ISO
+    fi 
+else
+
+# Not every burner supports dao, may use raw instead but requires more mem
+    #cdrecord -v -dao speed=$SPD dev="$RECDEV" -pad -eject -audio *.wav
+    cdrecord -v -raw speed=16 dev="$RECDEV" -pad -eject -audio *.wav
+fi
+
+
+# check sum of wav file sizes
+#
+#    TOTAL=0
+#    for WAVSIZE in $(ls -l *wav | cut -b 34-43)
+#    do
+#        TOTAL=$(($TOTAL+WAVSIZE))
+#    done
+#    if [ $(($TOTAL)) -gt 820000000 ]
+#    then
+#        echo "ERROR: total size of wav files > 800 Megs"
+#        exit 1 
+#    fi
+

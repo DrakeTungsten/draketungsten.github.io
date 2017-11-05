@@ -1,0 +1,5 @@
+for f in *
+do
+    file=$(echo $f | tr -d \' | tr ' ' _ | tr \( - | tr -d \))
+    [ ! -f $file ] && mv "$f" $file
+done

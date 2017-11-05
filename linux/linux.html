@@ -1,0 +1,361 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../hb.css" />
+<link href="linux.ico" rel="icon" type="image/bmp">
+<title>Linux</title></head>
+<body style="background-image: url('tux.png');
+background-position: top;">
+<div id="navbar">
+<ul>
+<li><a href="../home.html">Home</a></li>
+<li><a href="../music/music.html">Music</a></li>
+<li><a href="../comics/comics.html">Comics</a></li>
+<li><a href="../computing/computing.html">Programming</a></li>
+<li><a href="../linux/linux.html">Linux</a></li>
+<li><a href="../windows/windows.html">Windows</a></li>
+<li><a href="../arcade/arcade.html">Arcade</a></li>
+<li><a href="../workout/workout.html">Exercise</a></li>
+<li><a href="../connie/connie.html">Connie</a></li>
+<li><a href="../politics/politics.html">Politics</a></li>
+<li><a href="../misc/misc.html">Misc</a></li>
+<li><a href="http://www.google.com">Google</a></li>
+</ul>
+</div>
+<div id="vertsurfbar">
+<ul>
+<li><a href="http://adventuresinswitching.blogspot.com/2008/04/convert-shn-shorten-to-mp3-or-flac-in.html">Shn in Ubuntu</a></li>
+<li><a href="http://www.faqs.org/docs/artu/">Art of Unix Programming</a></li>
+<li><a href="http://www.delorie.com/gnu/docs/cvs/cvs_toc.html">CVS ToC</a></li>
+<li><a href="http://www.cvshome.org/docs/manual/cvs-1.11.7/cvs.html">CVS manual</a></li>
+<li><a href="http://iaaa.cps.unizar.es/personal/jangelb/docencia/Programacion/freePascal/develcvs.html">More CVS Basics</a></li>
+<li><a href="http://www.start-linux.com/articles/article_138.php">CVS client basics</a></li>
+<li><a href="http://www.rayninfo.co.uk/vimtips.html">vim tips</a></li>
+<li><a href="https://engineering.purdue.edu/ECN/Resources/KnowledgeBase/Docs/20020202121609">vi tutorial</a></li>
+<li><a href="http://www.unc.edu/~jwatt/inls183/1samba-2.0.7.html">Samba intro</a></li>
+<li><a href="http://www.troubleshooters.com/linux/samba.htm">Samba</a></li>
+<li><a href="http://www.monmouth.demon.co.uk/ipsubs/portforwarding.html">Port Forwarding</a></li>
+<li><a href="http://www.linuxplanet.com/linuxplanet/">Linux Planet</a></li>
+</ul>
+</div>
+
+<div id="col3navDouble">
+<h3>Xubuntu</h3>
+Post-install:
+<p>
+    <span class="code">
+        sudo apt-get install nfs-common
+    </span>
+</p>
+<p>
+    <span class="code">
+        sudo mkdir /tao
+    </span>
+</p>
+<p>
+    <span class="code">
+        sudo chown sean /tao
+    </span>
+</p>
+<p>
+    <span class="code">
+        sudo mount 10.0.0.150:/archive /tao
+    </span>
+</p>
+<h3>KB Layout</h3>
+<p>
+    <span class="code">xmodmap -pke</span>
+    <ul>
+        <li>
+            Prints keymappings
+        </li>
+    </ul>
+</p>
+<p>
+    <span class="code">xmodmap -e "keycode 127 = p"</span>
+    <ul>
+        <li>
+            keycode is the code of the physical button your finger presses.
+        </li>
+        <li>
+            The RHS is the character the OS receives.
+        </li>
+    </ul>
+</p>
+<hr>
+<p>
+    <span class="code">xbindkeys</span>
+<br><br>
+     Assign key(s) to an executable or a command with arguments. 
+    <ul>
+        <li>
+            <span class="code">.xbindkeysrc</span> is the config file. Each bind is two lines. The first line is the command to run, the second line is the keystroke(s) you want to trigger the command.
+        </li>
+        <li>
+            <span class="code">xbindkeys -k</span> then press a key to get its keycode
+        </li>
+        <li>
+            <span class="code">xbindkeys -p</span> (re)load the config file
+        </li>
+        <li>
+            Might need to append <span class="code"> + Release</span> to the keystroke line when your command line is an xdotool command.
+        </li>
+    </ul>
+</p>
+<hr>
+<p>
+    <a href="http://manpages.ubuntu.com/manpages/precise/man1/xdotool.1.html"><span class="code">xdotool</span></a>
+</p>
+<hr>
+<p>
+    <span class="code">xvkbd</span>
+</p>
+<hr>
+<p>
+    <span class="code">/etc/X11/xkb/symbols/us</span>
+</p>
+<p>
+    Anatomy of a KB layout line:
+</p>
+<p>
+    key &ltAE01&gt  { [         1,     exclam,          bar,   exclamdown ] };
+    <br>
+    key &ltAE04&gt  { [         4,     dollar,   asciitilde,       dollar ] };
+    <br>
+    <br>
+    The string inside the key tag:
+    <ul>
+        <li>
+            I don't know what the "A" is for.
+        </li>
+        <li>
+            The second letter is the row, counting up from the bottom.
+        </li>
+        <li>
+            The last two characters are the keys position in the row, counting from zero.
+        </li>
+    </ul>
+    The data inside the curly braces: 
+    <ul>
+        <li>
+           The first field inside the brackets is the default character for the key.
+        </li>
+        <li>
+           The second field inside the brackets is the shifted character for the key.
+        </li>
+        <li>
+           The third and fourth fields inside the brackets are presumably for other modifiers applied to the key.
+        </li>
+    </ul>
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<h3>COMMANDS</h3>
+<p>lshw (as root) - Belarc-type info</p>
+<p>dmidecode (as root) - Belarc-type info</p>
+<p>wget -e robots=off -r --no-parent http://...</p>
+<p>su -c "modprobe loop; umount /usr/winecd; mount -o loop,ro rfactor.iso /usr/winecd"</p>
+<p>displayconfig-gtk - tell Ubunut 8.04 and lower your monitor model</p>
+<p></p>
+<h3>SETUP</h3>
+<p>Ubuntu: Add 'export LANG="C"' to ~/.bashrc for old style shell sorting (case sensitive, etc...)</p>
+
+<p>Edit desktop settings to save settings at logout (default was to not
+		save)</p>
+
+<p>add /archive/scripts to PATH in /etc/profile<br>
+might also want to add it in the section of profile that deals with root
+ssh</p>
+
+<p>The file /usr/share/dict/words was not installed.</p>
+
+<p>On one Zen install, /ect/rc.d/rc.portmap was executable, on other it
+wasn't.<br> Needs to be executable for nfs to work: chmod 755 rc.portmap</p>
+
+<p>alsaconf got sound running<p>
+
+<p><span id="subsection">Boot Scripts in /etc/rc.d/</span><br>
+rc.S  <span id="comment">(S = Single user)</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+file system stuff<br>
+&nbsp &nbsp &nbsp &nbsp 
+rc.M  <span id="comment">(M = Multi-user)</span><br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+rc.inet1 - <span id="comment">network configuration</span><br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+rc.inet2 - <span id="comment">network servers </span><br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+rc.local</p>
+
+<p><span id="subsection">nfs</span> <span id="comment">(already
+		installed)</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+edit /etc/exports<br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<span id="input">/archive/scripts	192.168.1.36(rw)</span><br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<span id="comment">(This entry will trigger start of proper daemons at boot)</span> <br>
+&nbsp &nbsp &nbsp &nbsp 
+On Linux machine that mounts /archive/scripts, edit /etc/fstab:<br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<span id="input">192.168.1.1:/archive   /archive   nfs   rw,hard,intr   0 0</span></p>
+
+
+<h3>UTILITIES</h3> 
+<span id="subsection">dhcp</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./configure && make && su -c "make install"</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	edit /etc/rc.d/rc.inet2<br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		<span id="input">if [ -x /usr/sbin/dhcpd ]; then</span><br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		  <span id="input">/usr/sbin/dhcpd</span><br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		<span id="input">fi</span><br>
+<br>
+<span id="subsection">samba</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">cd source</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./configure && make && make install</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	location for smb.conf is /usr/local/samba/lib  (need to create manually)<br>
+&nbsp &nbsp &nbsp &nbsp 
+	binaries installed in /usr/local/samba/sbin | bin<br>
+&nbsp &nbsp &nbsp &nbsp 
+	make sure users exist on system<br>
+&nbsp &nbsp &nbsp &nbsp 
+	add users to samba password file: smbpasswd -a <user><br>
+
+<h3>APPLICATIONS</h3>
+<span id="subsection">tightvnc</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	Requires zlib & jpeg libraries (looks like vnc will make 'em)<br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">xmkmf</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">make World</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">cd Xvnc</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./configure</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">make</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">cd ..</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">su -c "./vncinstall /usr/local/bin
+	/usr/local/man"</span><br>
+<br>
+<span id="subsection">pan</span> <br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./configure && make && su -c "make install"</span><br>
+
+<br>
+<span id="subsection">mpg123</span> -  mp3 decoder (and command-line music player)<br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">make linux && su -c "make install"</span><br>
+<br>
+<span id="subsection">flac</span>  (includes xmms flac plug-in)<br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./configure && make && su -c "make install"</span><br>
+<br>
+<span id="subsection">shorten</span>  (Does NOT include xmms plug-in)<br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./configure && make && make check && su -c "make install"</span><br>
+<br>
+<span id="subsection">xmms</span> - music player<br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./configure && make && su -c "make install"</span><br>
+<br>
+<span id="subsection">xmms-shn</span>  (xmms shn plug-in)<br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./configure && make && su -c "make install"</span><br>
+<br>
+
+<span id="subsection">mplayer</span> - video player<br>
+&nbsp &nbsp &nbsp &nbsp 
+	Install codecs from archive first<br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		<span id="input">su</span><br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		<span id="input">cp mplayer-codecs.tar.gz /usr/local/lib</span><br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		<span id="input">tar -zxvf mplayer-codecs.tar.gz</span> # untars as dir "codecs"<br>
+&nbsp &nbsp &nbsp &nbsp 
+	Build exe<br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		<span id="input">./configure && make && su -c "make install"</span><br>
+<br>
+<span id="subsection">notlame</span> - mp3 encoder<br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">mv notlame /usr/local/bin</span><br>
+
+
+<h3>PROGRAMMING</h3>
+<span id="subsection">freebasic</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">su -c "./install.sh -i"</span><br>
+<br>
+<span id="subsection">wxGTK</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+	<span id="input">./configure --with-gtk && make && su -c "make install && ldconfig"</span><br>
+&nbsp &nbsp &nbsp &nbsp 
+        Need to edit LD_LIBRARY PATH?<br>
+&nbsp &nbsp &nbsp &nbsp 
+	wxGTK-<version>/samples/minimal contains base makefile.unx<br>
+<br><br>
+</div>
+
+<div id="col3nav">
+<h3>SCRIPTS</h3> 
+<ul class="hbdatalinks">
+<li><a href="processfilesbyline.txt">processfilesbyline</a><div class="summary">script to process files line by line</div></li>
+<li><a href="insertlines.txt">insertlines</a><div class="summary">script to insert lines into files</div></li>
+<li><a href="decompressAudio.txt">decompressaudio</a><div class="summary">decompresses flac, shn, mp3, ape</div></li>
+<li><a href="copyAudioCD.txt">copyAudioCD</a><div class="summary">copy an audio CD</div></li>
+<li><a href="copyDataCD.txt">copyDataCD</a><div class="summary">copy a data CD</div></li>
+<li><a href="audioToNamedMp3.txt">audioToNamedMp3</a><div class="summary">create mp3 files from an audio CD</div></li>
+<li><a href="wavToMp3.txt">wavToMp3</a><div class="summary">create mp3 files from wav files</div></li>
+<li><a href="wavToShn.txt">wavToShn</a><div class="summary">create shn files from wav files</div></li>
+<li><a href="burn.txt">burn</a><div class="summary">burn data or audio</div></li>
+<li><a href="send.txt">send</a><div class="summary">a wrapper for scp over local network</div></li>
+<li><a  href=/dosgame.txt">dosgame</a><div class="summary">a wrapper for executing a game inside dosemu</div></li>
+<li><a href="menu.py">menu.py</a><div class="summary">the beginnings of an emu front end in Python</div></li>
+<li><a href="namelower.txt">namelower</a><div class="summary">makes all file names in directory lower case</div></li>
+<li><a href="hb_game_menu">game menu</a><div class="summary">wish/tk front end for multiple emulators</div></li>
+</ul>
+</div>
+<div id="navbar">
+<ul>
+<li><a href="../home.html">Home</a></li>
+<li><a href="../music/music.html">Music</a></li>
+<li><a href="../comics/comics.html">Comics</a></li>
+<li><a href="../computing/computing.html">Programming</a></li>
+<li><a href="../linux/linux.html">Linux</a></li>
+<li><a href="../windows/windows.html">Windows</a></li>
+<li><a href="../arcade/arcade.html">Arcade</a></li>
+<li><a href="../workout/workout.html">Exercise</a></li>
+<li><a href="../connie/connie.html">Connie</a></li>
+<li><a href="../politics/politics.html">Politics</a></li>
+<li><a href="../misc/misc.html">Misc</a></li>
+<li><a href="http://www.google.com">Google</a></li>
+</ul>
+</div>
+</body></html>

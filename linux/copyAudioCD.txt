@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if ! [ -d /tmp/hbcd ]
+then
+    mkdir /tmp/hbcd
+fi   
+cd /tmp/hbcd
+rm *
+cdparanoia -d /dev/hdd -B
+rm track00.cdda.wav
+burn
+rm *

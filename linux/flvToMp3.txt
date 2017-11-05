@@ -1,0 +1,2 @@
+#ffmpeg -i "$1" -ab 128 -ar 44100 temp.mp3 
+ffmpeg -i "$1" -acodec copy output.mp3

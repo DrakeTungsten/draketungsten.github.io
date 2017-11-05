@@ -1,0 +1,2 @@
+sudo /etc/init.d/cdemu-daemon start
+cdemud-session &

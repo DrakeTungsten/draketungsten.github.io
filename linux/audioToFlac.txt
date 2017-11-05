@@ -1,0 +1,5 @@
+#!/bin/bash
+cdparanoia -d /dev/scd0 -B
+rm track00.cdda.wav
+flac *wav
+rm -f *wav

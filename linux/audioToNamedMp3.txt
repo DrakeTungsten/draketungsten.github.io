@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Run 'cdparanoia -vsQ' to find devices
+
+if [ $# = "1" ]
+then
+    cdparanoia -d /dev/scd0 -B
+    rm track00.cdda.wav
+    wavToMp3.sh
+    for file in $(ls track*mp3)
+    do
+        trackno=${file:5:2}
+        mv $file ${1}-${trackno}.mp3
+    done
+    rm -f *wav
+else
+    echo "Usage: audioToNamedMp3 <track prefix>"
+fi

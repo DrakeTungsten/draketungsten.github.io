@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for wavFile in *.wav
+do
+    outFile=${wavFile%.wav}.mp3
+    #notlame --preset 96 "$wavFile" "$outFile" 
+    lame --preset extreme "$wavFile" "$outFile" 
+done
+

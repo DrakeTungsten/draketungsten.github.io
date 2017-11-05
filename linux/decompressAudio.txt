@@ -1,0 +1,84 @@
+#!/bin/bash
+
+if [ $# -ne "1" ]
+then
+    echo "usage: decompressAudio.sh <outputDirectory>"
+    exit 1
+fi
+
+if [ ! -d $1 ]
+then
+    echo "$1 is not a directory."
+    exit 1
+fi
+
+for mp3file in *.[Mm][Pp]3
+do
+    if [ "$mp3file" != '*.[Mm][Pp]3' ]
+    then
+        outfile=$1/${mp3file%.??3}.wav
+        if !([ -e "$outfile" ])
+        then
+            echo "*** Creating $outfile..."
+            mpg123 -q -w "$outfile" "$mp3file"
+        else
+            echo "*** $outfile already exists."
+        fi
+    fi
+done
+
+# Decompress shn files
+# --------------------
+
+for shnfile in *.[Ss][Hh][Nn]
+do
+    if [ "$shnfile" != '*.[Ss][Hh][Nn]' ]
+    then
+        outfile=$1/${shnfile%.???}.wav
+        if !([ -e "$outfile" ])
+        then
+            echo "*** Creating $outfile..."
+            shorten -x "$shnfile" "$outfile"
+        else
+            echo "*** $outfile already exists."
+        fi
+    fi
+done
+
+
+# Decompress flac files
+# --------------------
+
+for flacfile in *.[Ff][Ll][Aa][Cc]
+do
+    if [ "$flacfile" != '*.[Ff][Ll][Aa][Cc]' ]
+    then
+        outfile=$1/${flacfile%.????}.wav
+        if !([ -e "$outfile" ])
+        then
+            echo "*** Creating $outfile..."
+            flac -d "$outfile" "$flacfile"
+        else
+            echo "*** $outfile already exists."
+        fi
+    fi
+done
+
+# Decompress ape files
+# --------------------
+
+for apefile in *.[Aa][Pp][Ee]
+do
+    if [ "$apefile" != '*.[Aa][Pp][Ee]' ]
+    then
+        outfile=$1/${apefile%.ape}.wav
+        if !([ -e "$outfile" ])
+        then
+            echo "*** Creating $outfile..."
+            wine /backup/winexe/MAC.exe "$apefile" "$outfile" -d
+        else
+            echo "*** $outfile already exists."
+        fi
+    fi
+done
+

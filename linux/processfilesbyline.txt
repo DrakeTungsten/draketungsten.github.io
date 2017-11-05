@@ -1,0 +1,30 @@
+for FILE in *html
+do
+    rm temp.html
+    P="y"
+    while read LINE
+    do
+        echo $LINE | grep "hotslot"
+        if [ $? = "0" ] 
+        then
+            echo "TURNED OFF PRINTING TO FILE BECAUSE I FOUND:" 
+            echo "    $LINE" 
+            P="n"
+        fi
+
+        echo $LINE | grep "<div id=\"content"
+        if [ $? = "0" ] 
+        then
+            echo "TURNED ON PRINTING TO FILE BECAUSE I FOUND:"
+            echo "     $LINE" 
+            P="y" 
+        fi
+
+        if [ $P = "y" ] 
+        then
+            echo $LINE >> temp.html
+        fi
+
+    done < "$FILE"
+    mv temp.html $FILE
+done
