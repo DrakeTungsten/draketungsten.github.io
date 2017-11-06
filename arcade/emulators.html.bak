@@ -1,0 +1,2261 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../hb.css" />
+<link href="hbgames.ico" rel="icon" type="image/bmp">
+<style>
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    margin-left: -330px;
+    bottom: 1%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+</style>
+<title>Emulators</title></head>
+<body>
+
+    <p>
+    <center><a href="cpgames.html"><h2>Back to genres list</h2></a></center>
+    </p>
+
+<table cellpadding="20">
+    <tr bgcolor="#ffffe7">
+        <td>Name</td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <img src="kbbuttons/key_p.png">
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <img src="kbbuttons/space.png">
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/f5.png">
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/f8.png">
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <img src="kbbuttons/key_5.png">
+            <img src="kbbuttons/key_6.png">
+            <br>
+        </td>
+        <td>
+                SAVE STATES:
+                <hr>
+                Emulators for which I use save states:
+                <ul>
+                    <li>FS-UAE(?)</li>
+                    <li><a href="#fusion">Fusion</a></li>
+                    <li><a href="#mame">MAME</a></li>
+                    <li><a href="#mess">MESS</a></li>
+                    <li><a href="#mednafen">Mednafen</a></li>
+                    <li><a href="#mgba">mGBA(?)</a></li>
+                    <li>T98 Next(?)</li>
+                    <li>Virtual Jaguar(?)</li>
+                </ul>
+            <img src="kbbuttons/f5.png"> &amp <img src="kbbuttons/f7.png"> are hard-coded in PCSX2 for one of its plugins (see the ini file in PCSX2). This should not eliminate these keys from consideration because you should not be using that emulator's save states.
+            <br><br>
+            <img src="kbbuttons/key_0.png"> through <img src="kbbuttons/key_z.png"> are off-limits for the save/load buttons because MAME will also count save/load command button as the save slot.
+            <br><br>
+            So the save/load buttons (but not the slot selection buttons) need to be non-alpha-numeric. The best bet is probably a F[1-12] button. This means that KeyWiz is a poor choice for KB encoder for Linux, since it has no default F[1-12] ports, and you cannot reconfigure KeyWiz in Linux. Also, AHK does not work with MAME, so you would have to maintain seperate Linux and Windows configs if using KeyWiz (and even then, I don't know if xmodkeys works with MAME). So just use F[1-12] keys.
+            <br><br>
+            <img src="kbbuttons/f5.png"> &amp <img src="kbbuttons/f8.png"> are hard-coded in Fusion for save and load. So let's try using these.
+            <br><br>
+            <img src="kbbuttons/key_5.png"> &amp <img src="kbbuttons/key_6.png"> should work as the save selection buttons. In MAME, these are the coin buttons, and adding a coin as you select the state will not be a big deal. For consoles, these were planned to be used as the "select" buttons, but the "select" button is virtually unused, and for those games which do use it, I now map "select" to one of the game-play buttons on a per-game basis, as needed.
+                <hr>
+            <br><br>
+            <span class="attention">WINE</span>: Linked <span class="code">/NoQuarter</span> to <span class="code">~/.wine/drive_c</span> so paths passed to WINE can use <span class="code">C:</span> instead of <span class="code">Z:</span>
+        </td>
+        <td>System/Games</td>
+    </tr>
+</table>
+
+
+<center><h3>ARCADE</h3></center>
+<table cellpadding="20">
+    <tr bgcolor="#fff0ef">
+        <td id="mame">
+            MAME
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <img src="kbbuttons/key_p.png">
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <img src="kbbuttons/tab.png">
+            &nbsp
+            (hold)
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/f7.png">
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/shift.png">
+            <img src="kbbuttons/f7.png">
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <img src="kbbuttons/key_a.png">
+            ::
+            <img src="kbbuttons/key_9.png">
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f12.png">
+        </td>
+        <td>
+            <p>
+                <span class="code">/NoQuarter/emulators/mame-177/mame64.linux -skip_gameinfo &ltrom&gt</span>
+            </p>
+            First run: <span class="code">mame -cc</span> 
+            <ul>
+                <li>.\snapshot\</li>
+                <li>.\cfg\</li>
+                <li>.\nvram\</li>
+                <li>.\hi\</li>
+                <li>.\mame.ini</li>
+            </ul>
+            <img src="kbbuttons/f5.png"> Showed up in "Toggle Debugger" and "Toggle Post-Processing". Clear these bindings.
+            <br>
+            <img src="kbbuttons/f8.png"> Is supposed to be "Decrease frame skip", but it wasn't set. Check and clear this binding if necessary.
+
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>Arcade</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Asteroids</li>
+                                <li>...</li>
+                                <li>Zaxxon</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr bgcolor="#f0fff0">
+        <td id="zinc">
+            Zinc 
+            <br>
+            <span class="attention">WINE</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            [END]
+            <br>
+            <img src="adminbuttons/ff3.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save3.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/load3.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/select3.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f5.png">
+        </td>
+        <td>
+            <ul>
+                <li>AHK mostly for pausing (?)</li>
+                <li>Game identifiers hard-coded in NoQuarter</li>
+                <li>Parent roms need to be in zinc\roms(?)</li>
+            </ul>
+        </td>
+        <td> 
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>Arcade</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>G-Darius</li>
+                                <li>Strider 2</li>
+                                <li>Ray Storm</li>
+                                <li>Star Gladiator 2</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+
+<center><h3>8-BIT</h3></center>
+<table cellpadding="20">
+    <tr>
+        <td id="atari800win">
+            Atari 800 Win Plus
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td> </td>
+        <td> 
+            <ul>
+                <li>??? control mapping.</li> 
+                <li>Wrapped in an AHK exe</li>
+            </ul>
+            MAME/MESS have glitchy graphics for Dropzone
+            <br> <br>
+            But now using the SNES Dropzone, so moved Demon Attack to MESS as it's the only 800 game now and it works fine in MESS.
+        </td>
+        <td>
+            <ul>
+                <li><strike>Demon Attack</strike></li>
+                <li><strike>Drop Zone</strike></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+
+<center><h3>16-BIT</h3></center>
+<table cellpadding="20">
+</table>
+
+
+<center><h3>32-BIT</h3></center>
+<table cellpadding="20">
+</table>
+
+
+<center><h3>HAND-HELD</h3></center>
+<table cellpadding="20">
+    <tr bgcolor="#f0fff0">
+        <td id="desmume2">
+            <a href="emulators/DeSmuME.html">Desmume X432</a> 
+            <br>
+            <span class="attention">WINE</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <img src="kbbuttons/pausebreak.png">
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <img src="kbbuttons/tab.png">
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/nativesave.png">
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/nativesave.png">
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/ctrl.png">
+            <img src="kbbuttons/f12.png">
+            <br>
+            <img src="adminbuttons/exit2.png">
+            &nbsp
+            <img src="kbbuttons/alt.png">
+            <img src="kbbuttons/f4.png">
+        </td>
+        <td>
+            <p>
+                <span class="code">wine DeSmuME_X432R_x64.exe C:\\NoQuarter\\roms\\nintendods\\&ltrom&gt</span>
+            </p>
+            <p>
+            <span class="code">/NoQuarter/emulators/desmumeX432R/DeSmuME_X432R_x&lt<i>arch</i>&gt.ini</span> configuration
+                <ul>
+                    <li><span class="code">[Controls]</span></li>
+                </ul>
+            </p>
+            I have it configured to just display one of the screens at a time, and P2 B1 is used for toggling which screen is displayed. So ignore the following stuff about screen size ratios: 
+            <br> <br>
+            Window Size = the whole app window
+            <br>
+            Screen Size: Ratio of screen 1 to screen 2. IOW how the two screens divide up the window size. Stock Desmume allows you to choose window size, but the screen 1 to screen 2 ratio is always 1:1
+            <br> <br>
+            Config =&gt 3D Settings =&gt Renderer
+            <br>
+            This is where you can choose one of the high internal resolution options, whether of the Softrasterizer or OpenGL variety. Unfortunately, the high-res choices crash in WINE. At least if you set it to non-high-res OpenGL, you can set AA and Alpha Blending, which does not appear to be present in stock Desmume.
+            <br>
+            <a href="emulators/desmume.txt">Readme</a> <br>
+            <a href="emulators/desmumefaq.html">FAQ</a> <br>
+            <a href="emulators/desmumecommandline.html">Command Line</a> <br>
+            Run the emulator w/ or w/o game and config controllers. Use Alt+Enter to toggle full screen. The config file will remember if you were full screen or windowed.
+        </td>
+        <td>
+                    <span class=tooltip>
+                        <b>Nintendo DS</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Spider-Man:Web Of Shadows</li>
+                                <li>New Super Mario Bros</li>
+                            </ul>
+                        </span>
+                    </span>
+        </td>
+    </tr>
+    <tr>
+        <td id="desmume">
+            <a href="emulators/DeSmuME.html">Desmume</a> 
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <img src="kbbuttons/pausebreak.png">
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <img src="kbbuttons/tab.png">
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/key_i.png">
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/key_p.png">
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <img src="kbbuttons/key_0.png">
+            <span class="punctuation">::</span>
+            <img src="kbbuttons/key_9.png">
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/ctrl.png">
+            <img src="kbbuttons/f12.png">
+            <br>
+            <img src="adminbuttons/exit2.png">
+            &nbsp
+            <img src="kbbuttons/alt.png">
+            <img src="kbbuttons/f4.png">
+        </td>
+        <td>
+            <span class="code">.\screenshots </span>
+            <br>
+            <a href="emulators/desmume.txt">Readme</a> <br>
+            <a href="emulators/desmumefaq.html">FAQ</a> <br>
+            <a href="emulators/desmumecommandline.html">Command Line</a> <br>
+            run emu w/ or w/o game and config controllers
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <u>Nintendo DS</u>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Spider-Man:Web Of Shadows</li>
+                                <li>New Super Mario Bros</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td id="cps3">
+            <a href="emulators/cps3.txt">CPS3</a> 
+        </td>
+        <td>
+        </td>
+        <td>
+		Tentatively replaced by MAME<br>
+		Need to double-check Warzard and SFIII3 will work OK.
+		<br><br>
+            .\shots<br>.\cfg 
+            <ul>
+                <li>Visual control mapping, per game:<br>Load game, and click "game" =&gt "config controls"</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+		    <li><strike>SFIII</strike></li><li><strike>Warzard</strike></li><li><strike>JoJo</strike></li> 
+            </ul>
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td id="demul">
+            Demul 
+            <br>
+            <span class="attention">WINE</span>
+        </td>
+        <td> 
+            <img src="adminbuttons/pause2.png">
+            &nbsp
+            <img src="kbbuttons/pausebreak.png">
+            <br>
+            <img src="adminbuttons/ff3.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/f5.png">
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/f6.png">
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <img src="kbbuttons/undefined.png">
+            <span class="punctuation">++</span>
+            <img src="kbbuttons/undefined.png">
+            <span class="punctuation">--</span>
+            <br>
+            <img src="adminbuttons/snapshot2.png">
+            &nbsp
+            <img src="kbbuttons/f9.png">
+            <br>
+            <hr>
+            <img src="adminbuttons/fullscreen2.png">
+            &nbsp
+            <img src="kbbuttons/alt.png">
+            <img src="kbbuttons/enter.png">
+            <br>
+            <img src="adminbuttons/exit2.png">
+            &nbsp
+            <img src="kbbuttons/alt.png">
+            <img src="kbbuttons/f4.png">
+        </td>
+        <td>
+            Config =&gt GamePad =&gt Global/hot keys
+            <br>
+            <a href="emulators/demulquick.html">Quick Start</a>
+            <br>
+            <a href="emulators/demulfull.html">Full Guide</a>
+            <br>
+            Needs one of the following files to contain the path to the image:
+            <ul>
+                <li>
+                    <span class="code">gdrCHD.ini</span> 64 bit
+                </li>
+                <li>
+                    <span class="code">gdrImage.ini</span> 32 bit
+                </li>
+            </ul>
+            <span class="code">demul -run=dc</span>
+            <br>
+            AHK file uses Alt+Enter for full screen	    
+            <ul>
+                <li>Visual control mapping</li>
+                <li>Supports mixed input</li>
+                <li>Wrapped in an AHK exe - why?</li>
+                <li>v56 has DX Legacy, v582 only DX10+ (no XP)</li>
+                <li>TODO: add slot changing in AHK file</li>
+            </ul>
+            Wacky Races PAL has better compatability than NTSC as of version .57 "Disable opaque modifiers" 
+            <br>
+            One guy couldn't get SFRush 2049 USA version working, but PAL version worked.
+            <br>
+            Everything else has playable-level compatibility without any config edits.
+        </td>
+        <td>
+            <ul>
+                <li>Vampire Chronicle</li>
+                <li>Wacky Races</li>
+            </ul>
+        </td>
+    </tr>
+    
+    
+    
+    
+    <tr bgcolor="#fff0ef">
+        <td id="dolphin">
+            Dolphin 
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td> 
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/nativesave.png">
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/nativesave.png">
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <br>
+        </td>
+        <td> 
+            <p>
+                <span class="code">dolphin-emu-nogui -e /NoQuarter/roms/gamecube/&ltrom&gt</span>
+            </p>
+            <p>
+                <span class="code">~/.cache/dolphin-emu</span>
+                <br>
+                <span class="code">~/.config/dolphin-emu</span>
+                <br>
+                <span class="code">~/.local/share/dolphin-emu</span>
+            </p>
+            <p>
+            When installing to a new PC, need to ensure that the correct device is used as input for the virtual gamepad. Ubuntu's representation of the keyboard can change from PC to PC to laptop. If you need to change it, do it for every ini under _keyboard, etc. It's the first or second line. Get the correct value by running the GUI and let it write to the current ini.
+            </p>
+            <p>
+            There is no longer a full screen flag on the command line. 
+            </p>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>Gamecube</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Alien Hominid</li>
+                                <li>F-Zero GX</li>
+                                <li>Mario Kart Double Dash</li>
+                                <li>Soul Calibur 2</li>
+                                <li>Super Mario strikers</li>
+                                <li>Super Smash Bros Melee</li>
+                                <li>Viewtiful Joe</li>
+                                <li>Wave Race Blue Storm</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class=tooltip>
+                        <b>Wii</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Tatsunoko Vs Capcom</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td id="epsxe">
+            <a href="emulators/ePSXe.txt">ePSXe</a> 
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause3.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff2.png">
+            &nbsp
+            <img src="kbbuttons/f4.png">
+            &nbsp
+            (toggle)
+            <br>
+            <img src="adminbuttons/save2.png">
+            &nbsp
+            <img src="kbbuttons/f1.png">
+            <br>
+            <img src="adminbuttons/load2.png">
+            &nbsp
+            <img src="kbbuttons/f3.png">
+            <br>
+            <img src="adminbuttons/select2.png">
+            &nbsp
+            <img src="kbbuttons/f2.png">
+            <br>
+            <img src="adminbuttons/snapshot2.png">
+            &nbsp
+            <img src="kbbuttons/f8.png">
+        </td>
+        <td>
+            <ul>
+                <li>HKCU\Software\epsxe\config</li> 
+                <li>.\snap </li>
+                <li>.\memcards</li>
+                <li>.\sstates </li>
+            </ul>
+            <ul>
+                <li>Run w/o game and config controllers</li>
+                <li>Per-game memory cards</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li><u>PS1</u></li>
+            </ul>
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td id="fba">
+            FBA 
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <br>
+        </td>
+        <td>
+                Input for each game must be done individually in the GUI. 
+                <br>
+                Also map 'p' to pause for each game...
+                <br>
+                ...so an AHK file is no longer necessary for every FBA game.
+                <br>
+                <br>
+                Replaced with MAME
+        </td>
+        <td>
+            <strike>
+            <ul>
+                <li>Martial Masters</li>
+                <li>The Gladiator </li>
+            </ul>
+            </strike>
+        </td>
+    </tr>
+    
+    
+    <tr bgcolor="#fff0ef">
+        <td id="fsuae">
+            FS-UAE 
+            <span class="attention">Linux native</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/f12.png">
+            ...
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/f12.png">
+            ...
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/exit2.png">
+            &nbsp
+            <img src="kbbuttons/alt.png">
+            <img src="kbbuttons/f4.png">
+        </td>
+        <td>
+            <p>
+                <span class="code">fs-uae ~/Documents/FS-UAE/Configurations/&ltgame&gt.fs-uae --fullscreen=1 --load_state=1 --keep_aspect=1</span> Linux
+                <br>
+                <span class="code">windows\fs-uae\fs-uae.exe configurations\&ltgame&gt.fs-uae --fullscreen=1 --load_state=1 --keep_aspect=1</span> Windows
+            </p>
+            <p>
+                <span class="code">~/Documents/FS-UAE</span>
+                <br>
+                <span class="code">~/.local/share/fs-uae/???</span>
+                <br>
+                <span class="code">/usr/share/fs-uae/???</span>
+            </p>
+            <ul>
+                <li>
+                    Put floppies images in the <span class="code">.\Floppies</span> directory.
+                </li>
+                <li>
+                    Create (copy from existing) <span class="code">.\Configurations\&ltgame&gt.fs-uae</span>
+                </li>
+                <li>
+                    Edit <span class="code">.\Configurations\&ltgame&gt.fs-uae</span>
+                </li>
+            </ul>
+            Some configuration (?) can also be done through the launch program.
+            <br><br>
+            Following the above procedure is not enough to get Overkill running from scratch. I can't get it past the crack team intro. However I did it before, I have the save state for once it's past the crack team intro, so it works when you load it with the save state, but I don't know how to recreate the save state.
+            <br><br>
+            The joystick "fire" button is RAlt and RCtrl. These cannot be remapped. I believe the developer used these because he wants the rest of your KB to be used as the virtual Amiga's KB, and the Amiga probably didn't have a RAlt and RCtrl. AHK also is not reliable with this emulator. The emulator does support gamepads, so when I get that working, there won't be a mapping issue for the cabinet.
+            <br><br>
+            "Escape" does not exit the emulator. Use Alt + F4 or F12 + Q
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>Amiga</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Overkill</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    
+    
+    <tr bgcolor="#f0fff0">
+        <td id="fusion">
+            Fusion 
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause2.png">
+            &nbsp
+            <img src="kbbuttons/pausebreak.png">
+            <br>
+            <img src="adminbuttons/ff2.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save2.png">
+            &nbsp
+            <img src="kbbuttons/f5.png">
+            <br>
+            <img src="adminbuttons/load2.png">
+            &nbsp
+            <img src="kbbuttons/f8.png">
+            <br>
+            <img src="adminbuttons/select2.png">
+            &nbsp
+            <img src="kbbuttons/f6.png">
+            <span class="punctuation">++</span>
+            <img src="kbbuttons/f7.png">
+            <span class="punctuation">--</span>
+            <br>
+            <img src="adminbuttons/snapshot2.png">
+            &nbsp
+            <img src="kbbuttons/shift.png">
+            <img src="kbbuttons/f12.png">
+            <br>
+            <img src="adminbuttons/exit2.png">
+            &nbsp
+            <img src="kbbuttons/alt.png">
+            <img src="kbbuttons/f4.png">
+        </td>
+        <td>
+            <p>
+                <span class="code">kega-fusion -fullscreen &ltrom&gt</span>
+            </p>
+            <p>
+                <span class="code">~/.Kega Fusion</span>
+                <br>
+                <strike><span class="code">/usr/share/kega-fusion/Fusion.ini</span></strike>
+                <br>
+                <span class="code">/home/sean/.Kega Fusion/Fusion.ini</span>
+            </p>
+            <p>
+                Windows version is at 3.64. Linux version is at 3.63
+            </p>
+            <p>
+            The windows version will exit on Escape key if started in full screen mode. The Linux version only ever toggles between full-screen and windowed mode with the Escape key. Need to exit the Linux version with Alt-F4.
+            </p>
+            <p>
+                Forced sequential control mapping. Does not mix KB and JS
+            </p>
+            <p>
+                Make sure full screen ratio matches your monitor ratio:<br>(Video =&gt Full Screen Resolution)
+            </p>
+            <p>
+                Single key substitutions:<br>
+                <strike><span class="code">xmodmap -e "keycode 24 = F5"</span> &nbsp map "q" to save</strike>
+                <br>
+                <strike><span class="code">xmodmap -e "keycode 25 = F8"</span> &nbsp map "w" to load</strike>
+                <br>
+                <span class="code">xmodmap -e "keycode 14 = F7"</span> &nbsp map "5" to slot--
+                <br>
+                <span class="code">xmodmap -e "keycode 15 = F6"</span> &nbsp map "6" to slot++
+                <br>
+                <span class="code">xmodmap -e "keycode 33 = Pause"</span> &nbsp map "p" to pause
+            </p>
+            <p>
+                One-to-Multiple key substitutions: (in .xbindkeysrc)<br>
+                <span class="code">
+                    "xdotool key alt+F4"<br>
+                    Escape + Release
+                </span> 
+            </p>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>Genesis</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Alien Soldier</li>
+                                <li>Comix Zone</li>
+                                <li>Contra Hard Corps</li>
+                                <li>Gunstar Heroes</li>
+                                <li>Mickey Mouse World Of Illusion</li>
+                                <li>Mutant League Football</li>
+                                <li>Quackshot</li>
+                                <li>Ranger X</li>
+                                <li>Ristar</li>
+                                <li>Shinobi 3</li>
+                                <li>Vectorman</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class=tooltip>
+                        <b>Sega CD</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Earthworm Jim</li>
+                                <li>Mickey Mania</li>
+                                <li>Spider-Man Vs Kingpin</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    
+
+    <tr>
+        <td id="higan">
+            Higan 
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td> 
+
+        </td>
+        <td> 
+            <p>
+                <span class="code">higan -fullscreen &ltrom&gt</span>
+                <br>
+                What is <span class="code">higan-bin</span>?
+            </p>
+            <p>
+                <span class="code">~/.local/share/higan</span>
+            </p>
+            <p>
+                Games need to be imported into the Higan library.
+                <br>
+                <span class="code">icarus</span> is a Higan game library management tool(?) I don't remember if I used this or Higan itself for the import. 
+            </p>
+            <p>
+                Some versions don't respect <span class="code">-fullscreen</span>, or don't do full screen correctly. Other versions have some other unremembered problem, possibly to do with input remapping/AHK
+            </p>
+            <p>
+            <strike>Version 101 does not have the above-mentioned problems</strike>, but it is only for 64-bit OSes. The author stopped compiling for 32-bit somewhere in the mid-90s versions.
+            <br>
+            Having a hell of a time with latest version in Linux. The -fullscreen option is ignored. Accepting keys from xdotool is inconsistent. No option for save state inc or dec.
+            </p>
+            <p>
+                The most accurate SNES emulator, but not recommended for non-SNES hardware.
+            </p>
+        </td>
+        <td>
+            <ul>
+                <li><u>SNES</u></li>
+            </ul>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            Kawaks 
+        </td>
+        <td> </td>
+        <td>Unused alternative for CPS1/2 and NeoGeo. Using FBA for these games. </td>
+        <td> </td>
+    </tr>
+    
+    
+    <tr>
+        <td id="model2">
+            Model 2 Sega
+        </td>
+        <td> </td>
+        <td> 
+            <ul>
+                <li>Visual control mapping.</li> 
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Zero Gunner</li>
+                <li>Sonic Fighters</li>
+                <li>Virtual On</li> 
+            </ul>
+        </td>
+    </tr>
+    
+    
+
+
+    <tr bgcolor="#f0fff0">
+        <td id="mamepp">
+            MAMEPP
+            <br>
+            <span class="attention">WINE</span>
+        </td>
+        <td>
+        </td>
+        <td>
+            Runs Cotton Boomerang at a good speed. But I'm using Cotton 2, and I think Cotton 2 is fine with my regualr MAME version.
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>Arcade</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Cotton Boomerang</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr bgcolor="#fff0ef">
+        <td id="uxme">
+            UXME
+            <br>
+            <span class="attention">WINE</span>
+        </td>
+        <td>
+        </td>
+        <td>
+            Contains Defender 8-way patch.
+            <br><br>
+            Asteroids deluxe has speed issues with MAME 177 when using background artwork. No such issues with this version.
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>Arcade</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Asteroids Deluxe</li>
+                                <li>Defender</li>
+                                <li>Defender 2</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+
+
+    <tr bgcolor="#f0fff0">
+        <td id="mess">
+            MESS
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td>
+
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <img src="kbbuttons/key_p.png">
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <img src="kbbuttons/tab.png">
+            &nbsp
+            (hold)
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/f7.png">
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/shift.png">
+            <img src="kbbuttons/f7.png">
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <img src="kbbuttons/key_a.png">
+            ::
+            <img src="kbbuttons/key_9.png">
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f12.png">
+        </td>
+        <td>
+            <p>
+                <span class="code">/NoQuarter/emulators/mame-177/mess64.linux -skip_gameinfo a2600 -cart &ltrom&gt</span>
+                <br>
+                <span class="code">/NoQuarter/emulators/mame-177/mess64.linux -skip_gameinfo a800  -ui_active -flop1 &ltrom&gt</span>
+                <br>
+                <span class="code">/NoQuarter/emulators/mame-177/mess64.linux -skip_gameinfo nes   -cart &ltrom&gt</span>
+                <br>
+                <span class="code">/NoQuarter/emulators/mame-177/mess64.linux -skip_gameinfo snes  -cart &ltrom&gt</span>
+                <br>
+            </p>
+            First run: <span class="code">mess -cc</span> 
+            <ul>
+                <li>.\snapshot\</li>
+                <li>.\cfg\</li>
+                <li>.\nvram\</li>
+                <li>.\hi\</li>
+                <li>.\mame.ini</li>
+            </ul>
+            <a href="mess.txt">MESS Systems</a>
+            <br>
+            <a href="emulators/messusage.html">MESS command line options</a>
+            <br>
+            <a href="http://www.progettoemma.net/mess/sysset.php">System status</a>
+
+            <blockquote>
+            <p>
+As a general rule, the shortcut
+            </p>
+            <p>
+<span class="code">MESS system gamename</span>
+            </p>
+            <p>
+is thought to be a gentle introduction to emulation of consoles/cart games for new users.
+            </p>
+            <p>
+Using it for disk games is not suggested at all because it is prone to these kinds of errors: the emulator just tries to load as many disks as disk drives are available.
+For instance every game requiring to have only the first disk mounted at start would fail.
+            </p>
+            <p>
+For home computer games it would be considered a bug only if it would fail to load with
+            </p>
+            <p>
+            <span class="code">MESS system -flop1 gamename -flop2 gamename:flopX</span>
+            </p>
+            <p>
+(with X=3 in this case, since Aquales expects the third disk to be mounted - it only needs disk 1 and 3 mounted)
+            </p>
+            </blockquote>
+            
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>Atari 2600</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Yar's Revenge</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class=tooltip>
+                        <b>Atari 800</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Demon Attack</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class=tooltip>
+                        <b>NES</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Contra</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class=tooltip>
+                        <b>SNES</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Adventures Of Batman And Robin</li>
+                                <li>Contra 3</li>
+                                <li>Donkey Kong Country 2</li>
+                                <li>Super Dropzone</li>
+                                <li>Kirby Superstar</li>
+                                <li>Sparkster</li>
+                                <li>Super Mario World</li>
+                                <li>Yoshi's Island</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+
+
+    <tr bgcolor="#fff0ef">
+        <td id="mednafen">
+            <a href="emulators/mednafen/mednafen.html">Mednafen</a> 
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause3.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <img src="kbbuttons/tab.png">
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/f5.png">
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/f7.png">
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <img src="kbbuttons/key_0.png">
+            <span class="punctuation">::</span>
+            <img src="kbbuttons/key_9.png">
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <img src="kbbuttons/undefined.png">
+            <span class="punctuation">++</span>
+            <img src="kbbuttons/undefined.png">
+            <span class="punctuation">--</span>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f9.png">
+        </td>
+        <td>
+            <p>
+                <span class="code">mednafen -fs 1 &ltrom&gt</span>
+                <br>
+                <span class="code">mednafen -fs 1 -loadcd pce &ltrom&gt</span>
+                <br>
+                <span class="code">mednafen -fs 1 -loadcd psx &ltrom&gt</span>
+                <br>
+            </p>
+            <p>
+                <span class="code">~/.mednafen</span>
+            </p>
+            <p>
+                <span class="code">~/.mednafen/mednafen-09x.cfg</span>
+                    <ul>
+                        <li><span class="code">sound.driver sdl</span> for sound to work in Linux</li>
+                        <li><span class="code">&ltsystem&gt.stretch</span> Experiment with these to see which works best with the TV</li>
+                    </ul>
+            </p>
+            <p>
+                Per-game config. Place in <span class="code">pgconfig/&ltbase rom name&gt.pce|psx.cfg</span>
+            </p>
+            <p>
+                No native pause function, but it can be implemented by alternating between Alt-A (advance frame) and Alt-R (resume)
+            </p>
+            <p>
+                Functions are supposedly remappable by pressing <span class="code">F2</span> in-game, and then you hit the deafult/current key for the function you want remapped, then hit the key it should be remapped to twice (the second stroke tells the F2 function you are done remapping)
+            </p>
+            <p>
+            Hotkeys can also be remapped in <span class="code">mednafen-common\mednafen-09x.cfg</span> When making config changes, do it for the current config in mednafen-common, and also do it in the cfg file under inputmapping\keyboard|joypad|etc\mednafen
+            </p>
+            <p>
+            Alt+Shift+n = remap controller n
+            <br>
+            If remapping controller buttons through the GUI, you are forced to remap every key in sequence for that controller.
+            </p>
+            <p>
+            <a href="mednafenkeys.txt">key codes</a>
+            </p>
+            <p>
+            Emulator resolution needs to match desktop resolution?
+            </p>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>PCE/TG-16</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Blazing Lazers</li>
+                                <li>Devil's Crush</li>
+                                <li>Castlevania - Rondo Of Blood</li>
+                                <li>Sapphire</li>
+                                <li>Seireisenshispriggan</li>
+                                <li>Super Star Soldier</li>
+                                <li>Soldier Blade</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <span class=tooltip>
+                        <b>Playstation</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Arkanoid Returns</li>
+                                <li>Castlevania: Symphony Of The Night</li>
+                                <li>Crash Team Racing</li>
+                                <li>Einhander</li>
+                                <li>Firebugs</li>
+                                <li>Parodius: Forever With Me</li>
+                                <li>Spyro 3</li>
+                                <li>Toy Story 2</li>
+                                <li>Zanac X Zanac</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+
+
+    <tr bgcolor="#f0fff0">
+        <td id="mgba">
+            <a href="emulators/mgba.html">mGBA</a>
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <img src="kbbuttons/ctrl.png">
+            <img src="kbbuttons/key_p.png">
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <img src="kbbuttons/tab.png">
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <img src="kbbuttons/shift.png">
+            <img src="kbbuttons/tab.png">
+            <hr>
+            <img src="adminbuttons/exit.png">
+            &nbsp
+            <img src="kbbuttons/ctrl.png">
+            <img src="kbbuttons/key_q.png">
+        </td>
+        <td>
+            <p>
+                <span class="code">mgba-qt -f &ltrom&gt</span>
+            </p>
+            <p>
+                <span class="code">~/.config/mgba</span>
+            </p>
+            <p>
+                <span class="code">mgba</span> has no menu to config controls, or anything else. Editing the config file manually under "SDL" had no effect, and the defaults were automatically put back in anyway after two or three games.
+                <br>
+                <span class="code">mgba-qt</span> allows editing of controls (and everything else), but video is broke (especially in full screen) unless you force it to use OpenGL 1.x under Tools =&gt Settings =&gt Audio/Video =&gt Display Driver
+            </p>
+            <p>
+                <span class="code">~/.config/mgba</span>
+            </p>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>GBA</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Astroboy</li>
+                                <li>Ninja 50</li>
+                                <li>Spider-Man: Mysterio's Menace</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+
+
+    <tr bgcolor="#fff0ef">
+        <td id="mupen64">
+            Mupen
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td> 
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <img src="kbbuttons/key_p.png">
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <img src="kbbuttons/tab.png">
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/nativesave.png">
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/nativesave.png">
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f12.png">
+        </td>
+        <td>
+            <p>
+                <span class="code">mupen64plus</span>
+            </p>
+            2.0 for XP 32
+            <br>
+            2.5 for 7 64
+            <br>
+            No GUI - need to edit cfg files.
+            <br>
+            Which also means it won't run without a rom.
+            <br>
+            <br>
+            Save slots are hard-coded to 1-9, so I use AHK to remap P1 and P2 start buttons to "i" and "o"
+            <br>
+            <br>
+            <span class="code">/usr/share/games/InputAutoCfg.ini</span>
+            <br>
+            <span class="code">c:\noquarter\emulators\mupen64plus-2.x\InputAutoCfg.ini</span>
+            <ul>
+                <li>
+                    configures your real physical input devices
+                </li>
+            </ul>
+            <p>
+            <span class="code">/home/sean/.config/mupen64plus/mupen64plus.cfg</span>
+            <br>
+            <span class="code">c:\noquarter\emulators\mupen-common\mupen64plus.cfg</span>
+            </p>
+            <ul>
+                <li>
+                    Configure hotkeys
+                    <ul>
+                        <li>
+                            <a href="emulators/mupenkeycodes.png">Most keycodes here</a>
+                        </li>
+                        <li>
+                            F1 = 282
+                        </li>
+                        <li>
+                            F5 = 286
+                        </li>
+                        <li>
+                            F12 = 293
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Any conflicts with InputAutoCfg will get over-written in this file.
+                </li>
+                <li>
+                    I linked the <span class="code">mupen-common</span> folder to where mupen looks for it:
+                    <span class="code">%appdata%\MupenPlus64</span>
+                </li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>Nintendo 64</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Diddy Kong Racing</li>
+                                <li>F-Zero X</li>
+                                <li>Mario Kart 64</li>
+                                <li>Pilot Wings 64</li>
+                                <li>Super Mario 64</li>
+                                <li>Super Smash Bros</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            Nebula 
+        </td>
+        <td> </td>
+        <td>
+            <ul>
+                <li>Unused alternative for CPS1/2, NeoGeo, and PGM. </li>
+                <li>Supports mixed input</li>
+                <li>Per-game control configuration</li>
+            <ul>
+        </td>
+        <td>
+            <ul> 
+                <li>Marvel Fighters</li>
+                <li>Garou</li>
+                <li>Darkstalkers/Vampire</li>
+                <li>...</li>
+            </ul> 
+        </td>
+    </tr>
+
+
+    <tr>
+        <td id="nestopia">
+            Nestopia 
+        </td>
+        <td> 
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/alt.png">
+            <img src="kbbuttons/key_e.png">
+        </td>
+        <td>
+            .\screenshots
+            <ul>
+                <li>Visual control mapping.</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li><u><strike>NES</strike></u></li>
+            </ul>
+            Replaced by MESS
+        </td>
+    </tr>
+
+
+    <tr bgcolor="#f0fff0">
+        <td id="nulldc">
+            NullDC 
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save3.png">
+            &nbsp
+            <img src="kbbuttons/nativesave.png">
+            <br>
+            <img src="adminbuttons/load3.png">
+            &nbsp
+            <img src="kbbuttons/nativesave.png">
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f8.png">
+            <br>
+        </td>
+        <td>
+            <b>.</b>\ 
+            <ul>
+                <li>Wrapped in a bat file or video won't work.</li>
+                <li>Won't run without a game.</li>
+                <li>Menu bar still available in full screen.</li>
+                <li>Visual control mapping.</li>
+                <li>No mixed input.</li>
+                <li>
+                The config file is read-only because otherwise the emulator rewrites its default settings to the config file.
+                </li>
+                <li>
+                The config file is set to autoload/autorun the default rom (which is named on the command line in the batch file), and the emulator will crash if run naked, since it will not have a default rom to load. This can be changed by (backing up and then) giving write permission to the config file and editing it so that it does not auto-load/run.
+                </li>
+                <li>
+                To configure controls: 
+                <ol>
+                    <li>open a cmd prompt in the NullDC directory</li>
+                    <li>attrib -r nullDC.cfg</li>
+                    <li>run the command: nulldc.bat \NoQuarter\roms\dreamcast\anyrom.gdi</li>
+                    <li>cp nullDC.cfg romname.cfg and copy to nulldc kb directory. Do not leave the nullDC directory without a nullDC.cfg file, or it will not run the next time.</li>
+                <ol>
+                </li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>Dreamcast</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Looney Tunes Space Race</li>
+                                <li>Bangai-O</li>
+                                <li>Hydro Thunder</li>
+                                <li>Jet Grind Radio</li>
+                                <li>Marvel Vs Capcom 2</li>
+                                <li>NFL Blitz 2000</li>
+                                <li>Project Justice</li>
+                                <li>San Francisco Rush 2049</li>
+                                <li>Soul Calibur</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+
+
+    <tr bgcolor="#fff0ef">
+        <td id="pcsx2">
+            PCSX2
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause3.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <img src="kbbuttons/tab.png">
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/f1.png">
+            &nbsp
+            <img src="kbbuttons/nativesave.png">
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/f3.png">
+            &nbsp
+            <img src="kbbuttons/nativesave.png">
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <img src="kbbuttons/f2.png">
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f8.png">
+        </td>
+        <td>
+            <p>
+                <span class="code">PCSX2 &ltrom&gt</span>
+            </p>
+            <p>
+                <span class="code">~/.config/PCSX2</span>
+            </p>
+            <p>
+            Remap hotkeys in <span class="code">PCSX2_keys.ini</span>
+            </p>
+            <p>
+            Visual control mapping.
+            </p>
+            <p>
+            Supports mixed input.
+            </p>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>Playstation 2</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Guilty Gear XX ACP</li>
+                                <li>Gradius V</li>
+                                <li>Kinetica</li>
+                                <li>Looney Tunes Space Race</li>
+                                <li>Red Star</li>
+                                <li>Virtua Fighter 4</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    
+    
+    <tr bgcolor="#f0fff0">
+        <td id="ppsspp">
+            PPSSPP
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <img src="kbbuttons/key_p.png">
+            <br>
+            <img src="adminbuttons/ff3.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/nativesave.png">
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/nativesave.png">
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f12.png">
+        </td>
+        <td>
+            <p>
+                <span class="code">ppsspp --fullscreen &ltrom&gt</span>
+            </p>
+            <p>
+                <span class="code">~/.config/ppsspp</span>
+            </p>
+            <p>
+                Might want to open the config file and set save file encryption to false. It's only for if you want to copy save files to a real device. Some downloaded saves might not be compatible with it.
+            </p>
+            <p>
+            config is under <span class="code">.\memstick</span>
+            <br>
+            <span class="code">memstick\PSP\SAVEDATA</span> contains psp saves. Each game has its own subfolder.
+            <br>
+                Run the emulator to configure hotkeys.
+            </p>
+            <p>
+                Cropping screenshots to 360 * 520 works well, and then resize of course in NQ.
+            </p>
+            <p>
+                Cropping screenshots to 450 * 650 works well, and then resize of course in NQ.
+            </p>
+            <p>
+            Supports mixed input
+            </p>
+        </td>
+        <td> 
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>PSP</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Ultimate Ghosts-n-Goblins</li>
+                                <li>Jetpack Joyride</li>
+                                <li>Space Invaders Extreme</li>
+                                <li>A Space Shooter For Two Bucks</li>
+                                <li>Wipeout Pure</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td id="project64">
+            Project64
+        </td>
+        <td> 
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f3.png">
+        </td>
+        <td> 
+            <ul>
+                <li>
+                    Supports mixed input
+                </li>
+                <li>
+                    Projct64 1.6/7 was last of the original team
+                </li>
+                <li>
+                    Projct64 2.2 is the current version. The installer installs adware, but I'm running a portable 2.2 which should be safe, and doesn't write to the registry
+                </li>
+                <li>
+                    The default save slot is not '1', but '~'. All subsequent slots are numeric and my ahk script does not use the default '~' slot.
+                </li>
+            </ul>
+        </td>
+        <td> 
+            <ul>
+                <li>
+                    <b>Nintendo 64</b>   
+                </li>
+            </ul>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td id="psx">
+            PSX fin
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f12.png">
+        </td>
+        <td>
+            <ul>
+                <li>Visual control mapping</li>
+            </ul>
+        </td>
+        <td> 
+            <ul>
+                <li><strike>Parodius Jikkyou</strike></li>
+                <li>Rogue Trip</li>
+                <li>Wipeout XL</li>
+            </ul>
+        </td>
+    </tr>
+    
+    <tr>
+        <td id="reicast">
+            Reicast
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td> 
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <br>
+        </td>
+        <td> 
+            <p>
+            <span class="code">~/.config/reicast/emu.cfg</span> 
+            <ul>
+                <li>
+                    fullscreen = 1
+                </li>
+                <li>
+                    evdev_device_id_1 = X
+                </li>
+                <li>
+                    evdev_device_id_2 = Z
+                </li>
+                <li>
+                    evdev_mapping_1 = /path/to/map
+                </li>
+                <li>
+                    evdev_mapping_2 = /path/to/map
+                </li>
+            </ul>
+            </p>
+            <p>
+            <span class="code">~/.local/share/reicast/data</span>
+            <ul>
+                <li>
+                    BIOS files
+                </li>
+                <li>
+                    buttons.png
+                </li>
+            </ul>
+            </p>
+            <p>
+            <span class="code">~/.local/share/reicast/</span> 
+            <ul>
+                <li>
+                    VMU files
+                </li>
+            </ul>
+            </p>
+            <p>
+            <span class="code">/usr/local/share/reicast/mappings/</span> 
+            <br>
+            I linked this to ~/.config/reicast in desperation, since the man page said mappings directory should be "inside the reicast config directory"
+            <ul>
+                <li>
+                    pre-made mappings for common devices
+                </li>
+                <li>
+                    Naming convention must be followed for them to automatically work.
+                </li>
+            </ul>
+            </p>
+            <p>
+            <span class="code">reicast-joyconfig -f &ltfile name&gt</span>
+            </p>
+            <p>
+                <span class="code">evtest</span>
+                <br>
+                Gives info on (such as name), and tests, Linux devices
+            </p>
+        </td>
+        <td>
+            <ul>
+                <li><u>Dreamcast</u></li>
+            </ul>
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td id="ssf">
+            SSF 
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/shift.png">
+            <img src="kbbuttons/f7.png">
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/f7.png">
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f8.png">
+        </td>
+        <td> 
+            <ul>
+                <li>
+                    Wrapped in an AHK exe to mount the CD image.
+                </li>
+                <li>
+                    Forced sequential mapping.
+                </li>
+                <li>
+                    Per-game mapping.
+                </li>
+                <li>
+                    No mixed input, or if there is, it's not worth it.
+                </li>
+                <li>
+                    May only use letter keys for mapping.
+                </li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Guardian Heroes</li>
+                <li><strike>Cotton Boomerang</strike></li>
+                <li><strike>Radiant Silver Gun</strike></li>
+            </ul>
+        </td>
+    </tr>
+
+    
+    <tr>
+        <td id="stella">
+            Stella 
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f8.png">
+        </td>
+        <td> 
+            <ul>
+                <li>Visual control mapping.</li>
+                <li>"Fire" button starts game. </li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li><u><strike>Atari 2600</strike></u></li>
+            </ul>
+            Replaced by MESS
+        </td>
+    </tr>
+    
+
+    <tr bgcolor="#fff0ef">
+        <td id="t98next">
+            T98 Next 
+            <br>
+            <span class="attention">Wine</span>
+            <br>
+            (platinum)
+        </td>
+        <td>
+            <img src="adminbuttons/pause3.png">
+            <br>
+            <img src="adminbuttons/ff3.png">
+            <br>
+            <img src="adminbuttons/save2.png">
+            &nbsp
+            <img src="kbbuttons/f12.png">
+            &nbsp,
+            <img src="kbbuttons/f11.png">
+            <br>
+            <img src="adminbuttons/load2.png">
+            &nbsp
+            <img src="kbbuttons/f12.png">
+            <br>
+            <img src="adminbuttons/select2.png">
+            &nbsp
+            <img src="kbbuttons/f1.png">
+            ...
+            <img src="kbbuttons/f4.png">
+            <br>
+            <img src="adminbuttons/snapshot2.png">
+            &nbsp
+            <img src="kbbuttons/f12.png">
+            &nbsp,
+            <img src="kbbuttons/f9.png">
+            <hr>
+            <img src="adminbuttons/fullscreen2.png">
+            &nbsp
+            <img src="kbbuttons/f12.png">
+            &nbsp,
+            <img src="kbbuttons/f10.png">
+            <br>
+            <img src="adminbuttons/exit2.png">
+        </td>
+        <td>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>PC9801</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Flame Zapper</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    
+
+    <tr bgcolor="#f0fff0">
+        <td id="virtualjaguar">
+            Virtual Jaguar
+        </td>
+        <td> </td>
+        <td> 
+            <p>
+                <span class="code">~/.config/Underground Software</span>
+            </p>
+            <p>
+                Visual control mapping. 
+            </p>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>Atari Jaguar</b> 
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Protector SE</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td id="vba">
+            Visual Boy Advanced 
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f12.png">
+        </td>
+        <td>
+            <p>
+            Visual control mapping. 
+            </p>
+        </td>
+        <td>
+            <ul>
+                <li><u>GBA</u></li>
+            </ul>
+        </td>
+    </tr>
+
+
+
+    <tr bgcolor="#fff0ef">
+        <td id="zinc">
+            PC Games
+            <br>
+            <span class="attention">WINE</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause3.png">
+            <br>
+            <img src="adminbuttons/ff3.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save3.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/load3.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/select3.png">
+            &nbsp
+        </td>
+        <td>
+        </td>
+        <td> 
+            <ul>
+                <li>
+                    <span class=tooltip>
+                        <b>PC</b>
+                        <span class="tooltiptext">
+                            <ul>
+                                <li>Balls Of Steel</li>
+                                <li>Cho-ren-sha 68k</li>
+                                <li>Fighting Spirit</li>
+                            </ul>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td id="zsnes">
+            <a href="emulators/zsnes/readme.htm">ZSNES</a> 
+            <br>
+            <span class="attention">Linux native</span>
+        </td>
+        <td>
+            <img src="adminbuttons/pause.png">
+            &nbsp
+            <img src="kbbuttons/key_p.png">
+            <br>
+            <img src="adminbuttons/ff.png">
+            &nbsp
+            <br>
+            <img src="adminbuttons/save.png">
+            &nbsp
+            <img src="kbbuttons/f2.png">
+            <br>
+            <img src="adminbuttons/load.png">
+            &nbsp
+            <img src="kbbuttons/f4.png">
+            <br>
+            <img src="adminbuttons/select.png">
+            &nbsp
+            <img src="kbbuttons/f3.png">
+            <br>
+            <img src="adminbuttons/snapshot.png">
+            &nbsp
+            <img src="kbbuttons/f1.png">
+            <img src="kbbuttons/enter.png">
+            <br>
+            <ul>
+                <li>F3, L/R * x, Enter: select save slot (which will be used for susbesequest quick saves/loads)</li>
+            </ul>
+        </td>
+        <td> 
+            <ul>
+                <li>Visual control mapping.</li> 
+                <li>Mixed input (read the FAQ).</li> 
+                <li>Has a cool key combo feature which is broke. Under "Misc" =&gt "Key Comb", you can create macros. They will work for that session, but will not work the next time you run zsnes. Howver, you do not need to recreate them the next time. They are still there, but you do have to bring up the key combo window again before they will work on any subsequent runs. The combos are stored in .cmb files.</li>
+            </ul>
+            <p>
+                Single key substitutions:<br>
+                <span class="code">xmodmap -e "keycode 24 = F2"</span> &nbsp map "q" to save
+                <br>
+                <span class="code">xmodmap -e "keycode 25 = F4"</span> &nbsp map "w" to load
+                <br>
+                <span class="code">xmodmap -e "keycode 14 = F3"</span> &nbsp map "5" to bring up slot selection
+                <br>
+                <span class="code">xmodmap -e "keycode 15 = Return"</span> &nbsp map "6" to set selection
+            </p>
+        </td>
+        <td>
+            <ul>
+                <li><u>SNES</u></li>
+            </ul>
+        </td>
+    </tr>
+    
+    
+    <tr>
+        <td> 
+	</td>
+        <td> 
+	</td>
+        <td> 
+	</td>
+        <td> 
+	</td>
+    </tr>
+
+
+</table>
+<a href="cpgames.html">
+<img src="cabparade.jpg">
+</a>
+</body></html>

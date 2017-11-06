@@ -1,0 +1,69 @@
+<div id=vertsurfbar>
+<ul>
+    <li><a href="http://www.mame.net">MAME</a></li>
+    <li><a href="http://arcadecontrols.com/arcade.htm">Build Your Own Arcade Controls</a></li>
+    <li><a href="http://www.arcadecab.com/Intro.htm">Arcadecab walk-through</a></li>
+    <li><a href="http://forum.arcadecontrols.com/index.php?topic=39181.0">Example - good interior pics</a></li>
+    <li><a href="http://directory.google.com/Top/Games/Coin-Op/Arcade_Games/Cabinets/Constructing/">Google Arcade Directory</a></li>
+    <li><a href="http://forum.arcadecontrols.com/index.php?topic=42366.0">Power On discussion</a></li>
+    <li><a href="http://forum.arcadecontrols.com/index.php?topic=41707.0">MDF - monitor support, screws</a></li>
+    <li><a href="http://forum.arcadecontrols.com/index.php?topic=41189.0">CP wiring</a></li>
+    <li><a href="http://www.retroblast.com/hardware.html">Retroblast</a></li>
+
+</ul>
+</div>
+
+<div id="col3nav">
+        <h3>Construction Of My Cabinet</h3>
+        I followed the design of <a href="http://www.arcadeparadise.org/">Arcade Paradise (III)</a> pretty closely.<br><br>
+        Measurements And Cuts (taken straight from Arcade Paradise):
+    <ul class="hbdatalinks">
+        <li><a href="pics/ap3-01.gif">Board 1</a></li>  
+        <li><a href="pics/ap3-02.gif">Board 2</a></li>  
+        <li><a href="pics/ap3-03.gif">Board 3</a></li> 
+    </ul>
+        <br>
+        Construction Pics
+    <ul class="hbdatalinks">
+        <li><a href="page1.html">Page 1</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+    </ul>
+</div>
+
+<div id="col3nav">
+        <br><br>
+        KeyWiz keyboard encoder and controls purchased through <a href="http://www.groovygamegear.com/">Groovy Game Gear.</a><br><br>
+        <a href="pics/keywiz.png">Keywiz encoder wiring doc</a>
+        <br><br>
+        Marquee purchased through <a href="http://www.mamemarquees.com/multiarcade-marquees-c-67_21.html">Mame Marquees.</a> 
+        <br><br>
+        <a href="buttonbox.htm">Button Box Construction</a>
+        <br><br>
+</div>
+
+<div id="col3nav">
+<br><br>
+<a href="cpgames.html">Cabinet Games</a><br>
+<a href="emulators.html">Emulators</a><br>
+<a href="emulatormaps.html">Emulator Mapping</a><br>
+<a href="ultimarc.html">Ultimarc 360</a><br>
+<br>
+<a href="arcadegames.html">Arcade Games</a><br>
+<a href="snesmanuals.html">SNES Games</a><br>
+<a href="genesismanuals.html">Genesis Games</a><br>
+<a href="n64manuals.html">N64 Games</a><br>
+<br>
+<a href="pcgames.html">PC Games</a><br>
+<a href="dosmanuals.html">DOS Games</a><br>
+<br>
+<a href="wine.html">WINE notes</a><br>
+<a href="http://www.thecomputershow.com/computershow/walkthru.htm">Walkthroughs</a><br>
+<br>
+<a href="http://www.quartertothree.com/game-talk/showthread.php?p=553849">Morrowind mods</a><br>
+<a href="http://www.hiredgoons.net/MWFiles/">Morrowind mods</a><br>
+<a href="http://www.octopusoverlords.com/phpBB2/viewtopic.php?t=74&highlight=morrowind+mod+dvd">Morrowind mods</a><br>
+<a href="http://uk.geocities.com/galsiah/#technical">Morrowind mods</a><br>
+<a href="http://forumplanet.gamespy.com/morrowind_plugins_mods/b49690/9296301/r19569776/">Morrowind mods</a><br>
+<a href="http://gwos.org/doku.php/wine:winestuff">wine stuff</a><br>
+<a href="http://appdb.winehq.org/">wine appdb</a><br>
+</div>

@@ -1,0 +1,378 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../hb.css">
+<link href="hbgames.ico" rel="icon" type="image/bmp">
+</head>
+<body>
+<div id="col2">
+<h3>Shooters - Overhead</h3><br>
+<table cellpadding="12" border=2">
+<tr><td>Game</td><td>Set Name</td><td>Buttons</td><td>Year</td></tr>
+<tr><td><a href="arcademanuals/Ajax.htm">Ajax</a></td><td>ajax</td><td>3</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/1943.htm">1943</a></td><td>1943</td><td>2</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/Phelios.htm">Phelios</a></td><td>phelios</td><td>3</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/1941.htm">1941</a></td><td>1941</td><td>2</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Dragon_Saber.htm">Dragon Saber</a></td><td>dsaber</td><td>3</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Bells_And_Whistles.htm">Bells And Whistles</a></td><td>blswhstl</td><td>2</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Truxton_2.htm">Truxton 2</a></td><td>truxton2</td><td>4</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Macross.htm">Macross</a></td><td>macross</td><td>2</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Batsugun.htm">Batsugun</a></td><td>batsugun</td><td>2</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Mahou_Daisakusen.htm">Mahou Daisakusen</a></td><td>mahoudai</td><td>2</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Daioh.htm">Daioh</a></td><td>daioh</td><td>6</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Gunlock.htm">Gunlock</a></td><td>gunlock</td><td>4</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Mazinger_Z.htm">Mazinger Z</a></td><td>mazinger</td><td>3</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Gunbird.htm">Gunbird</a></td><td>gunbird</td><td>3</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Super-X.htm">Super-X</a></td><td>superxm</td><td>4</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Ultra_X.htm">Ultra X</a></td><td>ultrax</td><td>3</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Gekirido.htm">Gekirido</a></td><td>gekirido</td><td>4</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Twinkle_Star_Sprites.htm">Twinkle Star Sprites</a></td><td>twinspri</td><td>4</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Ray_Storm.htm">Ray Storm</a></td><td>raystorm</td><td>3</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Battle_Garegga.htm">Battle Garegga</a></td><td>bgareggat2</td><td>3</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/19XX.htm">19XX</a></td><td>19xx</td><td>2</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Macross_Plus.htm">Macross Plus</a></td><td>macrossp</td><td>4</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Strikers_1945_2.htm">Strikers 1945 2</a></td><td>s1945ii</td><td>2</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/DoDonPachi.htm">DoDonPachi</a></td><td>ddonpach</td><td>3</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Gunbird_2.htm">Gunbird 2</a></td><td>gunbird2</td><td>3</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/Dangun_Feveron.htm">Dangun Feveron</a></td><td>dfeveron</td><td>3</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/Cyvern.htm">Cyvern</a></td><td>cyvern</td><td>2</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/Armed_Police_Batrider.htm">Armed Police Batrider</a></td><td>batrid</td><td>3</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/ESP_RaDe.htm">ESP RaDe</a></td><td>esprade</td><td>3</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/Radiant_Silvergun.htm">Radiant Silvergun</a></td><td>rsgun</td><td>6</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/Battle_Bakraid.htm">Battle Bakraid</a></td><td>bkraidu</td><td>3</td><td>1999</td></tr>
+<tr><td><a href="arcademanuals/Captain_Tomaday.htm">Captain Tomaday</a></td><td>ctomaday</td><td>4</td><td>1999</td></tr>
+<tr><td><a href="arcademanuals/Giga_Wing.htm">Giga Wing</a></td><td>gigawing</td><td>2</td><td>1999</td></tr>
+<tr><td><a href="arcademanuals/Mars_Matrix.htm">Mars Matrix</a></td><td>mmatrix</td><td>1</td><td>2000</td></tr>
+<tr><td><a href="arcademanuals/Dimahoo.htm">Dimahoo</a></td><td>dimahoo</td><td>3</td><td>2000</td></tr>
+<tr><td><a href="arcademanuals/Dragon_Blaze.htm">Dragon Blaze</a></td><td>dragnblz</td><td>3</td><td>2000</td></tr>
+<tr><td><a href="arcademanuals/Vasara.htm">Vasara</a></td><td>vasara</td><td>3</td><td>2000</td></tr>
+</table>
+
+<br><br><h3>Platform Scrollers</h3><br>
+<table cellpadding="12" border=2">
+<tr><td>Game</td><td>Set Name</td><td>Buttons</td><td>Year</td></tr>
+<tr><td><a href="arcademanuals/Ghosts-n-Goblins.htm">Ghosts-n-Goblins</a></td><td>gng</td><td>2</td><td>1985</td></tr>
+<tr><td><a href="arcademanuals/Rastan.htm">Rastan</a></td><td>rastan</td><td>2</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/Xenophobe.htm">Xenophobe</a></td><td>xenophob</td><td>3</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/Shinobi.htm">Shinobi</a></td><td>shinobi</td><td>3</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/Ghouls-n-Ghosts.htm">Ghouls-n-Ghosts</a></td><td>ghouls</td><td>2</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Ninja_Spirit.htm">Ninja Spirit</a></td><td>nspirit</td><td>4</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Robocop.htm">Robocop</a></td><td>robocop</td><td>5</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Shadow_Dancer.htm">Shadow Dancer</a></td><td>shdancer</td><td>3</td><td>1989</td></tr>
+<tr><td><a href="arcademanuals/Crime_City.htm">Crime City</a></td><td>crimec</td><td>2</td><td>1989</td></tr>
+<tr><td><a href="arcademanuals/Strider.htm">Strider</a></td><td>strider</td><td>3</td><td>1989</td></tr>
+<tr><td><a href="arcademanuals/Three_Wonders.htm">Three Wonders</a></td><td>3wonders</td><td>3</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Rohga_Armor_Force.htm">Rohga Armor Force</a></td><td>rohga</td><td>3</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Caveman_Ninja.htm">Caveman Ninja</a></td><td>cninja</td><td>2</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Sunset_Riders.htm">Sunset Riders</a></td><td>ssriders</td><td>2</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/COW-Boys_Of_Moo_Mesa.htm">COW-Boys Of Moo Mesa</a></td><td>moo</td><td>2</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/JJ_Squawkers.htm">JJ Squawkers</a></td><td>jjsquawk</td><td>2</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Spin_Master.htm">Spin Master</a></td><td>spinmast</td><td>4</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Gun_Force_2.htm">Gun Force 2</a></td><td>gunforc2</td><td>2</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Top_Hunter.htm">Top Hunter</a></td><td>tophuntr</td><td>4</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Biomechanical_Toy.htm">Biomechanical Toy</a></td><td>biomtoy</td><td>2</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Osman.htm">Osman</a></td><td>osman</td><td>3</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Metal_Slug.htm">Metal Slug</a></td><td>mslug</td><td>4</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Metal_Slug_2.htm">Metal Slug 2</a></td><td>mslug2</td><td>4</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/Metal_Slug_X.htm">Metal Slug X</a></td><td>mslugx</td><td>4</td><td>1999</td></tr>
+<tr><td><a href="arcademanuals/Strider_2.htm">Strider 2</a></td><td>strider2</td><td>3</td><td>1999</td></tr>
+<tr><td><a href="arcademanuals/Metal_Slug_3.htm">Metal Slug 3</a></td><td>mslug3</td><td>4</td><td>2000</td></tr>
+</table>
+
+<br><br><h3>Versus</h3><br>
+<table cellpadding="12" border=2">
+<tr><td>Game</td><td>Set Name</td><td>Buttons</td><td>Year</td></tr>
+<tr><td><a href="arcademanuals/King_Of_The_Monsters.htm">King Of The Monsters</a></td><td>kotm</td><td>4</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/King_Of_The_Monsters_2.htm">King Of The Monsters 2</a></td><td>kotm2</td><td>4</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Mobile_Suit_Gundam.htm">Mobile Suit Gundam</a></td><td>msgundam</td><td>2</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Samurai_Shodown.htm">Samurai Shodown</a></td><td>samsho</td><td>4</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Super_Street_Fighter_2.htm">Super Street Fighter 2</a></td><td>ssf2</td><td>6</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Super_Street_Fighter_2_Turbo.htm">Super Street Fighter 2 Turbo</a></td><td>ssf2t</td><td>6</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Primal_Rage.htm">Primal Rage</a></td><td>primrage</td><td>4</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/X-Men_Children_Of_The_Atom.htm">X-Men Children Of The Atom</a></td><td>xmcota</td><td>6</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Darkstalkers.htm">Darkstalkers</a></td><td>dstlk</td><td>6</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Mobile_Suit_Gundam_Ex_Revue.htm">Mobile Suit Gundam Ex Revue</a></td><td>gundamex</td><td>4</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Samurai_Shodown_2.htm">Samurai Shodown 2</a></td><td>samsho2</td><td>4</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Samurai_Shodown_3.htm">Samurai Shodown 3</a></td><td>samsho3</td><td>4</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/World_Heroes_Perfect.htm">World Heroes Perfect</a></td><td>whp</td><td>4</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Avengers_Galactic_Storm.htm">Avengers Galactic Storm</a></td><td>avengrgs</td><td>4</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Cyberbots.htm">Cyberbots</a></td><td>cybots</td><td>4</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Night_Warriors.htm">Night Warriors</a></td><td>nwarr</td><td>6</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Far_East_Of_Eden.htm">Far East Of Eden</a></td><td>kabukikl</td><td>4</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Real_Bout_Fatal_Fury.htm">Real Bout Fatal Fury</a></td><td>rbff1</td><td>4</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Fatal_Fury_3.htm">Fatal Fury 3</a></td><td>fatfury3</td><td>4</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Savage_Reign.htm">Savage Reign</a></td><td>savagere</td><td>4</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Mega_Man.htm">Mega Man</a></td><td>mmancp2u</td><td>3</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Marvel_Super_Heroes.htm">Marvel Super Heroes</a></td><td>msh</td><td>6</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/X-Men_Vs_Street_Fighter.htm">X-Men Vs Street Fighter</a></td><td>xmvsf</td><td>6</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Mega_Man_2.htm">Mega Man 2</a></td><td>megamn2d</td><td>3</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Waku_Waku_7.htm">Waku Waku 7</a></td><td>wakuwak7</td><td>4</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Street_Fighter_Alpha_2.htm">Street Fighter Alpha 2</a></td><td>sfa2</td><td>6</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Samurai_Shodown_4.htm">Samurai Shodown 4</a></td><td>samsho4</td><td>4</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Vampire_Hunter_2.htm">Vampire Hunter 2</a></td><td>vhunt2</td><td>6</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Vampire_Savior.htm">Vampire Savior</a></td><td>vsava</td><td>6</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Vampire_Savior_2.htm">Vampire Savior 2</a></td><td>vsav2</td><td>6</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/The_Last_Blade.htm">The Last Blade</a></td><td>lastblad</td><td>4</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Super_Gem_Fighter.htm">Super Gem Fighter</a></td><td>sgemf</td><td>3</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Marvel_Super_Heroes_Vs_Street_Fighter.htm">Marvel Super Heroes Vs Street Fighter</a></td><td>mshvsf</td><td>6</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Marvel_Vs_Capcom.htm">Marvel Vs Capcom</a></td><td>mvsc</td><td>6</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/Asura_Blade.htm">Asura Blade</a></td><td>asurabld</td><td>3</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/The_Last_Blade_2.htm">The Last Blade 2</a></td><td>lastbld2</td><td>4</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/Street_Fighter_EX_2_Plus.htm">Street Fighter EX 2 Plus</a></td><td>sfex2p</td><td>6</td><td>1999</td></tr>
+<tr><td><a href="arcademanuals/Garou.htm">Garou</a></td><td>garou</td><td>4</td><td>1999</td></tr>
+<tr><td><a href="arcademanuals/Marvel_Vs_Capcom_2.htm">Marvel Vs Capcom 2</a></td><td>mvsc2</td><td>6</td><td>2000</td></tr>
+</table>
+
+<br><br><h3>Walking Shooters</h3><br>
+<table cellpadding="12" border=2">
+<tr><td>Game</td><td>Set Name</td><td>Buttons</td><td>Year</td></tr>
+<tr><td><a href="arcademanuals/Commando.htm">Commando</a></td><td>commandou</td><td>2</td><td>1985</td></tr>
+<tr><td><a href="arcademanuals/Alien_Syndrome.htm">Alien Syndrome</a></td><td>aliensyn</td><td>3</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/Guerrilla_War.htm">Guerrilla War</a></td><td>gwar</td><td>2</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/Gang_Busters.htm">Gang Busters</a></td><td>gbusters</td><td>2</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Out_Zone.htm">Out Zone</a></td><td>outzone</td><td>3</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Moonwalker.htm">Moonwalker</a></td><td>mwalk</td><td>3</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Mercs.htm">Mercs</a></td><td>mercs</td><td>2</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Dark_Seal.htm">Dark Seal</a></td><td>darkseal</td><td>2</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Dark_Seal_2.htm">Dark Seal 2</a></td><td>darkseal2</td><td>2</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Wizard_Fire.htm">Wizard Fire</a></td><td>wizdfire</td><td>2</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Gaiapols.htm">Gaiapols</a></td><td>gaiapols</td><td>3</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Gundhara.htm">Gundhara</a></td><td>gundhara</td><td>3</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Shock_Troopers.htm">Shock Troopers</a></td><td>shocktro</td><td>4</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Shock_Troopers_2.htm">Shock Troopers 2</a></td><td>shocktr2</td><td>4</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/Guwange.htm">Guwange</a></td><td>guwange</td><td>3</td><td>1999</td></tr>
+</table>
+
+<br><br><h3>Puzzle</h3><br>
+<table cellpadding="12" border=2">
+<tr><td>Game</td><td>Set Name</td><td>Buttons</td><td>Year</td></tr>
+<tr><td><a href="arcademanuals/Monster_Bash.htm">Monster Bash</a></td><td>monsterb</td><td>1</td><td>1982</td></tr>
+<tr><td><a href="arcademanuals/Mappy.htm">Mappy</a></td><td>mappy</td><td>1</td><td>1983</td></tr>
+<tr><td><a href="arcademanuals/Elevator_Action.htm">Elevator Action</a></td><td>elevator</td><td>2</td><td>1983</td></tr>
+<tr><td><a href="arcademanuals/Bomb_Jack.htm">Bomb Jack</a></td><td>bombjack</td><td>1</td><td>1984</td></tr>
+<tr><td><a href="arcademanuals/Bubble_Bobble.htm">Bubble Bobble</a></td><td>bublbobl</td><td>2</td><td>1986</td></tr>
+<tr><td><a href="arcademanuals/Solomons_Key.htm">Solomons Key</a></td><td>solomon</td><td>2</td><td>1986</td></tr>
+<tr><td><a href="arcademanuals/Arkanoid.htm">Arkanoid</a></td><td>arkanoid</td><td>1</td><td>1986</td></tr>
+<tr><td><a href="arcademanuals/Psychic_5.htm">Psychic 5</a></td><td>psychic5</td><td>2</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/The_New_Zealand_Story.htm">The New Zealand Story</a></td><td>tnzs</td><td>2</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Columns.htm">Columns</a></td><td>columns</td><td>1</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Super_Pang.htm">Super Pang</a></td><td>spang</td><td>2</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Rod-Land.htm">Rod-Land</a></td><td>rodland</td><td>2</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Tumble_Pop.htm">Tumble Pop</a></td><td>tumblep</td><td>2</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Hexion.htm">Hexion</a></td><td>hexion</td><td>2</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Bubble_Bobble_2.htm">Bubble Bobble 2</a></td><td>bublbob2</td><td>4</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Elevator_Action_Returns.htm">Elevator Action Returns</a></td><td>elvactr</td><td>4</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Puzzle_Bobble.htm">Puzzle Bobble</a></td><td>pbobblen</td><td>4</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Puzzle_Bobble_2.htm">Puzzle Bobble 2</a></td><td>pbobble2</td><td>4</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Sokonuke.htm">Sokonuke</a></td><td>sokonuke</td><td>1</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Neo_Mr_Do.htm">Neo Mr Do</a></td><td>neomrdo</td><td>4</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Puzzle_Bobble_3.htm">Puzzle Bobble 3</a></td><td>pbobble3</td><td>4</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Puzzle_Bobble_4.htm">Puzzle Bobble 4</a></td><td>pbobble4</td><td>4</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Magical_Drop_3.htm">Magical Drop 3</a></td><td>magdrop3</td><td>4</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Neo_Bomberman.htm">Neo Bomberman</a></td><td>neobombe</td><td>4</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Arkanoid_Returns.htm">Arkanoid Returns</a></td><td>arkretrn</td><td>4</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Money_Puzzle_Exchanger.htm">Money Puzzle Exchanger</a></td><td>miexchng</td><td>4</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Popn_Pop.htm">Popn Pop</a></td><td>popnpop</td><td>4</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Mr_Driller.htm">Mr Driller</a></td><td>mrdrillr</td><td>6</td><td>1999</td></tr>
+<tr><td><a href="arcademanuals/Tetris_Absolute_Grand_Master_2.htm">Tetris Absolute Grand Master 2</a></td><td>tgm2</td><td>3</td><td>2000</td></tr>
+<tr><td><a href="arcademanuals/Nightmare_In_The_Dark.htm">Nightmare In The Dark</a></td><td>nitd</td><td>4</td><td>2000</td></tr>
+<tr><td><a href="arcademanuals/Penguin_Brothers.htm">Penguin Brothers</a></td><td>penbros</td><td>2</td><td>2000</td></tr>
+<tr><td><a href="arcademanuals/Mighty_Pang.htm">Mighty Pang</a></td><td>mpang</td><td>1</td><td>2000</td></tr>
+<tr><td><a href="arcademanuals/Zupapa.htm">Zupapa</a></td><td>zupapa</td><td>4</td><td>2001</td></tr>
+</table>
+
+</div>
+<div id="col2">
+
+<h3>Shooters - Side</h3><br>
+<table cellpadding="12" border=2">
+<tr><td>Game</td><td>Set Name</td><td>Buttons</td><td>Year</td></tr>
+<tr><td><a href="arcademanuals/Section_Z.htm">Section Z</a></td><td>sectionz</td><td>2</td><td>1985</td></tr>
+<tr><td><a href="arcademanuals/Side_Arms.htm">Side Arms</a></td><td>sidearms</td><td>3</td><td>1986</td></tr>
+<tr><td><a href="arcademanuals/Salamander.htm">Salamander</a></td><td>salamand</td><td>2</td><td>1986</td></tr>
+<tr><td><a href="arcademanuals/R-Type.htm">R-Type</a></td><td>rtype</td><td>4</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/Battle_Chopper.htm">Battle Chopper</a></td><td>bchopper</td><td>4</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/P-47.htm">P-47</a></td><td>p47</td><td>2</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Silk_Worm.htm">Silk Worm</a></td><td>silkworm</td><td>3</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Forgotten_Worlds.htm">Forgotten Worlds</a></td><td>forgottn</td><td>1</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Zero_Wing.htm">Zero Wing</a></td><td>zerowing</td><td>2</td><td>1989</td></tr>
+<tr><td><a href="arcademanuals/R-Type_2.htm">R-Type 2</a></td><td>rtype2</td><td>4</td><td>1989</td></tr>
+<tr><td><a href="arcademanuals/Prehistoric_Isle.htm">Prehistoric Isle</a></td><td>prehisle</td><td>3</td><td>1989</td></tr>
+<tr><td><a href="arcademanuals/Air_Buster.htm">Air Buster</a></td><td>airbustr</td><td>2</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Parodius_DA.htm">Parodius DA</a></td><td>parodius</td><td>3</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/US_AAF_Mustang.htm">US AAF Mustang</a></td><td>mustang</td><td>2</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Carrier_Air_Wing.htm">Carrier Air Wing</a></td><td>cawing</td><td>3</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Cosmic_Cop.htm">Cosmic Cop</a></td><td>cosmccop</td><td>4</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Raiga_Strato_Fighter.htm">Raiga Strato Fighter</a></td><td>stratof</td><td>2</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Xexex.htm">Xexex</a></td><td>xexex</td><td>2</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Cotton.htm">Cotton</a></td><td>cotton</td><td>3</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Boogie_Wings.htm">Boogie Wings</a></td><td>boogwing</td><td>3</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Mystic_Riders.htm">Mystic_Riders</a></td><td>mysticri</td><td>2</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/R-Type_Leo.htm">R-Type Leo</a></td><td>rtypeleo</td><td>2</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Hyper_Duel.htm">Hyper Duel</a></td><td>hyprduel</td><td>3</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/In_The_Hunt.htm">In The Hunt</a></td><td>inthunt</td><td>2</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Bio-hazard.htm">Bio-hazard</a></td><td>mp_bio</td><td>4</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Darius_Gaiden.htm">Darius Gaiden</a></td><td>dariusg</td><td>4</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Pulstar.htm">Pulstar</a></td><td>pulstar</td><td>4</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Salamander_2.htm">Salamander 2</a></td><td>salmndr2</td><td>3</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Sol_Divide.htm">Sol Divide</a></td><td>soldivid</td><td>3</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/G-Darius.htm">G-Darius</a></td><td>gdarius</td><td>3</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Cotton2.htm">Cotton2</a></td><td>cotton2</td><td>6</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Cotton_Boomerang.htm">Cotton Boomerang</a></td><td>cottonbm</td><td>6</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/Blazing_Star.htm">Blazing Star</a></td><td>blazstar</td><td>4</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/Prehistoric_Isle_2.htm">Prehistoric Isle 2</a></td><td>preisle2</td><td>4</td><td>1999</td></tr>
+<tr><td><a href="arcademanuals/Progear.htm">Progear</a></td><td>progear</td><td>3</td><td>2001</td></tr>
+</table>
+
+<br><br><h3>Beat 'Em Ups</h3><br>
+<table cellpadding="12" border=2">
+<tr><td>Game</td><td>Set Name</td><td>Buttons</td><td>Year</td></tr>
+<tr><td><a href="arcademanuals/Double_Dragon.htm">Double Dragon</a></td><td>ddragon</td><td>3</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/Double_Dragon_2.htm">Double Dragon 2</a></td><td>ddragon2</td><td>3</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Final_Fight.htm">Final Fight</a></td><td>ffight</td><td>3</td><td>1989</td></tr>
+<tr><td><a href="arcademanuals/Golden_Axe.htm">Golden Axe</a></td><td>goldnaxe</td><td>3</td><td>1989</td></tr>
+<tr><td><a href="arcademanuals/Teenage_Mutant_Ninja_Turtles.htm">Teenage Mutant Ninja Turtles</a></td><td>tmnt</td><td>2</td><td>1989</td></tr>
+<tr><td><a href="arcademanuals/Alien_Storm.htm">Alien Storm</a></td><td>astorm</td><td>3</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/King_Of_Dragons.htm">King Of Dragons</a></td><td>kod</td><td>2</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Knights_Of_The_Round.htm">Knights Of The Round</a></td><td>knights</td><td>2</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Captain_America_And_Avengers.htm">Captain America And Avengers</a></td><td>captaven</td><td>2</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Captain_Commando.htm">Captain Commando</a></td><td>captcomm</td><td>2</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Teenage_Mutant_Ninja_Turtles_2.htm">Teenage Mutant Ninja Turtles 2</a></td><td>tmnt2</td><td>2</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Spider-Man.htm">Spider-Man</a></td><td>spidman</td><td>2</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Robo_Army.htm">Robo Army</a></td><td>roboarmy</td><td>4</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/B.Rap_Boys.htm">B.Rap Boys</a></td><td>brapboys</td><td>2</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Golden_Axe_2.htm">Golden Axe 2</a></td><td>ga2</td><td>3</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Warriors_Of_Fate.htm">Warriors Of Fate</a></td><td>wof</td><td>2</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/X-Men.htm">X-Men</a></td><td>xmen</td><td>3</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/DnD_Tower_Of_Doom.htm">DnD Tower Of Doom</a></td><td>ddtod</td><td>4</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Mystic_Warriors.htm">Mystic Warriors</a></td><td>mystwarr</td><td>3</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Punisher.htm">Punisher</a></td><td>punisher</td><td>2</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Cadillacs_And_Dinosaurs.htm">Cadillacs And Dinosaurs</a></td><td>dino</td><td>2</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Armored_Warriors.htm">Armored Warriors</a></td><td>armwar</td><td>3</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Night_Slashers.htm">Night Slashers</a></td><td>nslasher</td><td>3</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Battle_Toads.htm">Battle Toads</a></td><td>btoads</td><td>2</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Alien_Vs_Predator.htm">Alien Vs Predator</a></td><td>avsp</td><td>3</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/DnD_Shadow_Over_Mystara.htm">DnD Shadow Over Mystara</a></td><td>ddsom</td><td>4</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Battle_Circuit.htm">Battle Circuit</a></td><td>batcir</td><td>2</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Oriental_Legend.htm">Oriental Legend</a></td><td>orlegend</td><td>4</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Knights_Of_Valour.htm">Knights Of Valour</a></td><td>kov</td><td>4</td><td>1999</td></tr>
+<tr><td><a href="arcademanuals/Knights_Of_Valour_Plus.htm">Knights Of Valour Plus</a></td><td>kovplus</td><td>4</td><td>1999</td></tr>
+<tr><td><a href="arcademanuals/Knights_Of_Valour_Super_Heroes.htm">Knights Of Valour Super Heroes</a></td><td>kovsh</td><td>4</td><td>1999</td></tr>
+<tr><td><a href="arcademanuals/Knights_Of_Valour_2.htm">Knights Of Valour 2</a></td><td>kov2</td><td>4</td><td>2000</td></tr>
+<tr><td><a href="arcademanuals/The_Crystal_Of_Kings.htm">The Crystal Of Kings</a></td><td>crysking</td><td>4</td><td>2001</td></tr>
+</table>
+
+<br><br><h3>Classic</h3><br>
+<table cellpadding="12" border=2">
+<tr><td>Game</td><td>Set Name</td><td>Buttons</td><td>Year</td></tr>
+<tr><td><a href="arcademanuals/Defender.htm">Defender</a></td><td>defender</td><td>5</td><td>1980</td></tr>
+<tr><td><a href="arcademanuals/Missile_Command.htm">Missile Command</a></td><td>missile</td><td>3</td><td>1980</td></tr>
+<tr><td><a href="arcademanuals/Tempest.htm">Tempest</a></td><td>tempest</td><td>2</td><td>1980</td></tr>
+<tr><td><a href="arcademanuals/Wizard_Of_Wor.htm">Wizard Of Wor</a></td><td>wow</td><td>2</td><td>1980</td></tr>
+<tr><td><a href="arcademanuals/Pac-Man.htm">Pac-Man</a></td><td>pacman</td><td>1</td><td>1980</td></tr>
+<tr><td><a href="arcademanuals/Ms_Pac-Man.htm">Ms Pac-Man</a></td><td>mspacman</td><td>1</td><td>1981</td></tr>
+<tr><td><a href="arcademanuals/Stargate.htm">Stargate</a></td><td>stargate</td><td>6</td><td>1981</td></tr>
+<tr><td><a href="arcademanuals/Bosconian.htm">Bosconian</a></td><td>bosco</td><td>1</td><td>1981</td></tr>
+<tr><td><a href="arcademanuals/Colony_7.htm">Colony 7</a></td><td>colony7</td><td>3</td><td>1981</td></tr>
+<tr><td><a href="arcademanuals/Space_Dungeon.htm">Space Dungeon</a></td><td>sdungeon</td><td>0</td><td>1981</td></tr>
+<tr><td><a href="arcademanuals/Frogger.htm">Frogger</a></td><td>frogger</td><td>0</td><td>1981</td></tr>
+<tr><td><a href="arcademanuals/Super_Cobra.htm">Super Cobra</a></td><td>scobra</td><td>2</td><td>1981</td></tr>
+<tr><td><a href="arcademanuals/Donkey_Kong.htm">Donkey Kong</a></td><td>dkong</td><td>1</td><td>1981</td></tr>
+<tr><td><a href="arcademanuals/Donkey_Kong_Jr.htm">Donkey Kong Jr</a></td><td>dkongjr</td><td>1</td><td>1982</td></tr>
+<tr><td><a href="arcademanuals/Joust.htm">Joust</a></td><td>joust</td><td>1</td><td>1982</td></tr>
+<tr><td><a href="arcademanuals/Star_Trek.htm">Star Trek</a></td><td>startrek</td><td>4</td><td>1982</td></tr>
+<tr><td><a href="arcademanuals/Millipede.htm">Millipede</a></td><td>milliped</td><td>1</td><td>1982</td></tr>
+<tr><td><a href="arcademanuals/Buck_Rogers.htm">Buck Rogers</a></td><td>buckrog</td><td>3</td><td>1982</td></tr>
+<tr><td><a href="arcademanuals/Tron.htm">Tron</a></td><td>tron</td><td>1</td><td>1982</td></tr>
+<tr><td><a href="arcademanuals/Dig_Dug.htm">Dig Dug</a></td><td>digdug</td><td>1</td><td><a href="http://maws.mameworld.info/maws/srch.php?year=9">1982</a></td></td></tr>
+<tr><td><a href="arcademanuals/Zaxxon.htm">Zaxxon</a></td><td>zaxxon</td><td>1</td><td>1982</td></tr>
+<tr><td><a href="arcademanuals/Burger_Time.htm">Burger Time</a></td><td>btime</td><td>1</td><td>1982</td></tr>
+<tr><td><a href="arcademanuals/Super_Zaxxon.htm">Super Zaxxon</a></td><td>szaxxon</td><td>1</td><td>1982</td></tr>
+<tr><td><a href="arcademanuals/Robotron.htm">Robotron</a></td><td>robotron</td><td>0</td><td>1982</td></tr>
+<tr><td><a href="arcademanuals/Time_Pilot.htm">Time Pilot</a></td><td>timeplt</td><td>1</td><td>1982</td></tr>
+<tr><td><a href="arcademanuals/Senjyo.htm">Senjyo</a></td><td>senjyo</td><td>1</td><td>1983</td></tr>
+<tr><td><a href="arcademanuals/Gaplus.htm">Gaplus</a></td><td>gaplus</td><td>1</td><td>1984</td></tr>
+<tr><td><a href="arcademanuals/Pitfall_2.htm">Pitfall 2</a></td><td>pitfall2</td><td>2</td><td>1985</td></tr>
+<tr><td><a href="arcademanuals/Rampage.htm">Rampage</a></td><td>rampage</td><td>2</td><td>1986</td></tr>
+<tr><td><a href="arcademanuals/Contra.htm">Contra</a></td><td>contra</td><td>2</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/After_Burner.htm">After Burner</a></td><td>aburner</td><td>2</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/Black_Tiger.htm">Black Tiger</a></td><td>blktiger</td><td>2</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/APB.htm">APB</a></td><td>apb</td><td>3</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/Galaga_88.htm">Galaga 88</a></td><td>galaga88</td><td>3</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/Operation_Wolf.htm">Operation Wolf</a></td><td>opwolf</td><td>2</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/Assault.htm">Assault</a></td><td>assault</td><td>1</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Assault_Plus.htm">Assault Plus</a></td><td>assaultp</td><td>1</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Super_Contra.htm">Super Contra</a></td><td>scontra</td><td>2</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Escape_From_Planet_Of_Robot_Monsters.htm">Escape From Planet Of Robot Monsters</a></td><td>eprom</td><td>3</td><td>1989</td></tr>
+<tr><td><a href="arcademanuals/Blood_Brothers.htm">Blood Brothers</a></td><td>bloodbro</td><td>3</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Bonanza_Brothers.htm">Bonanza Brothers</a></td><td>bnzabros</td><td>3</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Super_Burger_Time.htm">Super Burger Time</a></td><td>supbtime</td><td>2</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Super_Space_Invaders_91.htm">Super Space Invaders 91</a></td><td>ssi</td><td>2</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Smash_TV.htm">Smash TV</a></td><td>smashtv</td><td>0</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Rampart.htm">Rampart</a></td><td>rampartj</td><td>2</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Space_Gun.htm">Space Gun</a></td><td>spacegun</td><td>3</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/Crossed_Swords.htm">Crossed Swords</a></td><td>crsword</td><td>4</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/Strike_Force.htm">Strike Force</a></td><td>strkforc</td><td>3</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/GI_Joe.htm">GI Joe</a></td><td>gijoe</td><td>3</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Total_Carnage.htm">Total Carnage</a></td><td>totcarn</td><td>0</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Dead_Connection.htm">Dead Connection</a></td><td>deadconx</td><td>2</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Numan_Athletics.htm">Numan Athletics</a></td><td>numanath</td><td>3</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Outfoxies.htm">Outfoxies</a></td><td>outfxies</td><td>3</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/Namco_Classics_1.htm">Namco Classics 1</a></td><td>ncv1</td><td>2</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Namco_Classics_2.htm">Namco Classics 2</a></td><td>ncv2</td><td>2</td><td>1996</td></tr>
+</table>
+
+<br><br><h3>3D Fighting</h3><br>
+<table cellpadding="12" border=2">
+<tr><td>Game</td><td>Set Name</td><td>Buttons</td><td>Year</td></tr>
+<tr><td><a href="arcademanuals/Die_Hard.htm">Die Hard</a></td><td>diehard</td><td>6</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Soul_Edge_2.htm">Soul Edge 2</a></td><td>souledge</td><td>4</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Star_Gladiator.htm">Star Gladiator</a></td><td>starglad</td><td>6</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Rival_Schools.htm">Rival Schools</a></td><td>rvschool</td><td>6</td><td>1997</td></tr>
+<tr><td><a href="arcademanuals/Fighting_Layer.htm">Fighting Layer</a></td><td>fgtlayer</td><td>6</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/Soul_Calibur.htm">Soul Calibur</a></td><td>soulclbr</td><td>6</td><td>1998</td></tr>
+<tr><td><a href="arcademanuals/Star_Gladiator_2.htm">Star Gladiator 2</a></td><td>stargld2</td><td>6</td><td>1998</td></tr>
+</table>
+
+<br><br><h3>Sports / Driving</h3><br>
+<table cellpadding="12" border=2">
+<tr><td>Game</td><td>Set Name</td><td>Buttons</td><td>Year</td></tr>
+<tr><td><a href="arcademanuals/Hat_Trick.htm">Hat Trick</a></td><td>hattrick</td><td>1</td><td>1984</td></tr>
+<tr><td><a href="arcademanuals/Pinball_Action.htm">Pinball Action</a></td><td>pbaction</td><td>4</td><td>1985</td></tr>
+<tr><td><a href="arcademanuals/Out_Run.htm">Out Run</a></td><td>outrun</td><td>1</td><td>1986</td></tr>
+<tr><td><a href="arcademanuals/Tecmo_Bowl.htm">Tecmo Bowl</a></td><td>tbowl</td><td>2</td><td>1987</td></tr>
+<tr><td><a href="arcademanuals/Power_Drift.htm">Power Drift</a></td><td>pdrift</td><td>1</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Chase_HQ.htm">Chase HQ</a></td><td>chasehq</td><td>4</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Galaxy_Force_2.htm">Galaxy Force 2</a></td><td>gforce2</td><td>2</td><td>1988</td></tr>
+<tr><td><a href="arcademanuals/Burning_Force.htm">Burning Force</a></td><td>burnforc</td><td>3</td><td>1989</td></tr>
+<tr><td><a href="arcademanuals/Night_Striker.htm">Night Striker</a></td><td>nightstr</td><td>2</td><td>1989</td></tr>
+<tr><td><a href="arcademanuals/STUN_Runner.htm">STUN Runner</a></td><td>stunrun</td><td>2</td><td>1989</td></tr>
+<tr><td><a href="arcademanuals/Pigskin.htm">Pigskin</a></td><td>pigskin</td><td>3</td><td>1990</td></tr>
+<tr><td><a href="arcademanuals/WWF_WrestleFest.htm">WWF WrestleFest</a></td><td>wwfwfest</td><td>2</td><td>1991</td></tr>
+<tr><td><a href="arcademanuals/OutRunners.htm">OutRunners</a></td><td>orunners</td><td>5</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Super_Sidekicks.htm">Super Sidekicks</a></td><td>ssideki</td><td>4</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Baseball_Stars_2.htm">Baseball Stars 2</a></td><td>bstars2</td><td>4</td><td>1992</td></tr>
+<tr><td><a href="arcademanuals/Heavy_Smash.htm">Heavy Smash</a></td><td>hvysmsh</td><td>6</td><td>1993</td></tr>
+<tr><td><a href="arcademanuals/Windjammers.htm">Windjammers</a></td><td>wjammers</td><td>4</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/NBA_Jam_TE.htm">NBA Jam TE</a></td><td>nbajamte</td><td>3</td><td>1994</td></tr>
+<tr><td><a href="arcademanuals/WWF_Wrestlemania.htm">WWF Wrestlemania</a></td><td>wwfmania</td><td>5</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Mille_Miglia_2.htm">Mille Miglia 2</a></td><td>gtmr2a</td><td>8</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Goal_Goal_Goal.htm">Goal Goal Goal</a></td><td>goalx3</td><td>4</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Open_Ice.htm">Open Ice</a></td><td>openice</td><td>3</td><td>1995</td></tr>
+<tr><td><a href="arcademanuals/Over_Top.htm">Over Top</a></td><td>overtop</td><td>4</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/NBA_Max_Hangtime.htm">NBA Max Hangtime</a></td><td>nbamht</td><td>3</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Neo_Turf_Masters.htm">Neo Turf Masters</a></td><td>turfmast</td><td>4</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Hyper_Athlete.htm">Hyper Athlete</a></td><td>hyperath</td><td>3</td><td>1996</td></tr>
+<tr><td><a href="arcademanuals/Capcom_Sports_Club.htm">Capcom Sports Club</a></td><td>csclub</td><td>3</td><td>1997</td></tr>
+</table>
+
+<br><br><h3>3D</h3><br>
+<table cellpadding="12" border=2">
+<tr><td>Game</td><td>Set Name</td><td>Buttons</td><td>Year</td></tr>
+<tr><td><a href="arcademanuals/Gauntlet_Legends.htm">Gauntlet Legends</a></td><td>gauntleg</td><td>3</td><td>1998</td></tr>
+</table>
+
+</div>
+</body>
+</html>
+
+

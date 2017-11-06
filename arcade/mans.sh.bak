@@ -1,0 +1,29 @@
+COUNT=$(ls manuals | wc -l)
+DIRCOUNT=$(ls -l manuals | grep drw | wc -l)
+FILECOUNT=$[COUNT-DIRCOUNT]
+COL_LEN=$[FILECOUNT/3 + 1]
+cat manhead > manuals.html
+echo "<div id=\"col3\">" >> manuals.html
+echo "    <ul class=\"hbdatalinks\">" >> manuals.html
+X=0
+for OBJECT in $(ls manuals)
+do
+    if [ -f manuals/$OBJECT ]
+    then
+        BASE=${OBJECT%.*}
+        echo "        <li><a href=\"manuals/$OBJECT\">$BASE</a></li>" >> manuals.html
+        X=$[X + 1]
+        if [ $X = $COL_LEN ] 
+        then
+            echo "    </ul>" >> manuals.html
+            echo "</div>" >> manuals.html
+            echo "<div id=\"col3\">" >> manuals.html
+            echo "    <ul class=\"hbdatalinks\">" >> manuals.html
+            X=0
+        fi
+    fi
+done
+echo "    </ul>" >> manuals.html
+echo "</div>" >> manuals.html
+
+echo "</body></html>" >> manuals.html

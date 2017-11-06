@@ -1,0 +1,2410 @@
+<html>
+<head>
+    <style>
+    span.genre{
+        color: maroon;
+        letter-spacing: 9px;
+        font-size: 3.1em;
+        font-weight: bold;
+    }
+    </style>
+</head>
+
+
+
+<body>
+<table cellpadding="15">
+<tr>
+    <td>
+        <span class="genre">CLASSICS</span>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/astdelux.htm"><img src="marquees/astdelux.png"><br>Asteroids Deluxe</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/astdelux.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/blood_brothers.htm"><img src="marquees/bloodbro.png"><br>Blood Brothers</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/bloodbro.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/bubble_bobble_2.htm"><img src="marquees/bublbob2.png"><br>Bubble Bobble 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/bublbob2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/bwidow.htm"><img src="marquees/bwidow.png"><br>Black Widow</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/bwidow.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/colony_7.htm"><img src="marquees/colony7.png"><br>Colony 7</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/colony7.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/defender.htm"><img src="marquees/defender1.png"><br>Defender</a>
+    </td>
+    <td>
+        <a href="emulators.html#epsxe">epsxe</a>
+    </td>
+    <td>
+        <a href="controls/defender1.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/defender2.htm"><img src="marquees/defender2.png"><br>Defender 2 / Stargate</a>
+    </td>
+    <td>
+        <a href="emulators.html#epsxe">epsxe</a>
+    </td>
+    <td>
+        <a href="controls/defender2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/demonattack-osb.htm"><img src="marquees/demonattack-osb.png"><br>Demon Attack</a>
+    </td>
+    <td>
+        <a href="emulators.html#atari800win">Atari 800 Win Plus</a>
+    </td>
+    <td>
+        <a href="controls/demonattack-osb.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/donkey_kong.htm"><img src="marquees/dkong.png"><br>Donkey Kong</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/dkong.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/donkey_kong_jr.htm"><img src="marquees/dkongjr.png"><br>Donkey Kong Jr</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/dkongjr.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/dropzone-xl.htm"><img src="marquees/dropzone-xl.png"><br>Dropzone</a>
+    </td>
+    <td>
+        <a href="emulators.html#atari800win">Atari 800 Win Plus</a>
+    </td>
+    <td>
+        <a href="controls/dropzone-xl.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/elevator_action_returns.htm"><img src="marquees/elvactr.png"><br>Elevator Action Returns</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/elvactr.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/escape_from_the_planet_of_the_robot_monsters.htm"><img src="marquees/eprom.png"><br>Escape From The Planet Of The Robot Monsters</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/eprom.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/frogger.htm"><img src="marquees/frogger.png"><br>Frogger</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/frogger.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/galaga.htm"><img src="marquees/galaga.png"><br>Galaga</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/galaga.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/galaga_88.htm"><img src="marquees/galaga88.png"><br>Galaga 88</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/galaga88.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/joust.htm"><img src="marquees/joust.png"><br>Joust</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/joust.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/junofrst.htm"><img src="marquees/junofrst.png"><br>Juno First</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/junofrst.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/llander.htm"><img src="marquees/llander.png"><br>Lunar Lander</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/llander.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/mars.htm"><img src="marquees/mars.png"><br>Mars</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/mars.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/millipede.htm"><img src="marquees/milliped.png"><br>Millipede</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/milliped.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/missile_command.htm"><img src="marquees/missile.png"><br>Missile Command</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/missile.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/mpatrol.htm"><img src="marquees/mpatrol.png"><br>Moon Patrol</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/mpatrol.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/ms_pac-man.htm"><img src="marquees/mspacman.png"><br>Ms Pac-Man</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/mspacman.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/neo_bomberman.htm"><img src="marquees/neobombe.png"><br>Neo Bomberman</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/neobombe.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/overkill.htm"><img src="marquees/overkill.png"><br>Overkill</a>
+    </td>
+    <td>
+        <a href="emulators.html#winuae">WinUAE</a>
+    </td>
+    <td>
+        <a href="controls/overkill.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/pacman.htm"><img src="marquees/pacman.png"><br>Pac-Man</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/pacman.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/pang3.htm"><img src="marquees/pang3.png"><br>Pang 3</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/pang3.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/puzzle_bobble_2.htm"><img src="marquees/pbobble2.png"><br>Puzzle Bobble 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/pbobble2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/pitfall2.htm"><img src="marquees/pitfall2.png"><br>Pitfall 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/pitfall2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/pkunwar.htm"><img src="marquees/pkunwar.png"><br>Penguin Wars</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/pkunwar.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/rbisland.htm"><img src="marquees/rbisland.png"><br>Rainbow Islands</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/rbisland.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/rescue.htm"><img src="marquees/rescue.png"><br>Rescue</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/rescue.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/rampage_world_tour.htm"><img src="marquees/rmpgwt.png"><br>Rampage World Tour</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/rmpgwt.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/robotron.htm"><img src="marquees/robotron.png"><br>Robotron</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/robotron.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/seawolf.htm"><img src="marquees/seawolf.png"><br>Sea Wolf</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/seawolf.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/seawolf2.htm"><img src="marquees/seawolf2.png"><br>Sea Wolf 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/seawolf2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/spiders2.htm"><img src="marquees/spiders2.png"><br>Spiders 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/spiders2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/starwars.htm"><img src="marquees/starwars.png"><br>Star Wars</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/starwars.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/super_burger_time.htm"><img src="marquees/supbtime.png"><br>Super Burger Time</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/supbtime.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/suprglob.htm"><img src="marquees/suprglob.png"><br>Super Glob</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/suprglob.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/super_zaxxon.htm"><img src="marquees/szaxxon.png"><br>Super Zaxxon</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/szaxxon.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/time_pilot.htm"><img src="marquees/timeplt.png"><br>Time Pilot</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/timeplt.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/wizard_of_wor.htm"><img src="marquees/wow.png"><br>Wizard Of Wor</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/wow.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/yarsrevenge.htm"><img src="marquees/yarsrevenge.png"><br>Yar's Revenge</a>
+    </td>
+    <td>
+        <a href="emulators.html#stella">Stella</a>
+    </td>
+    <td>
+        <a href="controls/yarsrevenge.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <span class="genre">JUMP & PUNCH</span>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/3wonders.htm"><img src="marquees/3wonders.png"><br>3 Wonders</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/3wonders.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/alienhominid.htm"><img src="marquees/alienhominid.png"><br>Alien Hominid</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/alienhominid.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/aliensoldier.htm"><img src="marquees/aliensoldier.png"><br>Alien Soldier</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/aliensoldier.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/Asterix.htm"><img src="marquees/asterix.png"><br>Asterix</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/asterix.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/astroBoy.htm"><img src="marquees/astroBoy.png"><br>Astro Boy</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/astroBoy.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/Alien_Vs_Predator.htm"><img src="marquees/avsp.png"><br>Aliens Vs Predator</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/avsp.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/Battle_Circuit.htm"><img src="marquees/batcir.png"><br>Battle Circuit</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/batcir.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/batmanandrobin.htm"><img src="marquees/batmanandrobin.png"><br>Adventures Of Batman And Robin</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/batmanandrobin.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/biomechanical_toy.htm"><img src="marquees/biomtoy.png"><br>Biomechanical Toy</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/biomtoy.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/black_tiger.htm"><img src="marquees/blktiger.png"><br>Black Tiger</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/blktiger.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/bucky_ohare.htm"><img src="marquees/bucky.png"><br>Bucky O'Hare</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/bucky.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/captain_america_and_avengers.htm"><img src="marquees/captaven.png"><br>Captain America And The Avengers</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/captaven.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/castlevania-rondo.htm"><img src="marquees/castlevania-rondo.png"><br>Castlevania - Rondo Of Blood</a>
+    </td>
+    <td>
+        <a href="emulators.html#mednafen">Mednafen</a>
+    </td>
+    <td>
+        <a href="controls/castlevania-rondo.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/castlevania-symphony.htm"><img src="marquees/castlevania-symphony.png"><br>Castlevania - Symphony Of The Night</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/castlevania-symphony.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/charlien.htm"><img src="marquees/charlien.png"><br>Charlie Ninja</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/charlien.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/caveman_ninja.htm"><img src="marquees/cninja.png"><br>Caveman Ninja</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/cninja.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/comixzone.htm"><img src="marquees/comixzone.png"><br>Comix Zone</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/comixzone.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/contra-nes.htm"><img src="marquees/contra-nes.png"><br>Contra</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/contra-nes.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/contra3.htm"><img src="marquees/contra3.png"><br>Contra 3</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/contra3.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/contraHardCorps.htm"><img src="marquees/contraHardCorps.png"><br>Contra Hard Corps</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/contraHardCorps.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/the_crystal_of_kings.html"><img src="marquees/crysking.png"><br>Crystal Of Kings</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/crysking.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/double_dragon.htm"><img src="marquees/ddragon.png"><br>Double Dragon</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/ddragon.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/dnd_shadow_over_mystara.htm"><img src="marquees/ddsom.png"><br>Dungeons And Dragons: Shadow Over Mystara</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/ddsom.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/donKongCountry2.htm"><img src="marquees/donKongCountry2.png"><br>Donkey Kong Country 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/donKongCountry2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/dyna_gear.htm"><img src="marquees/dynagear.png"><br>Dynagear</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/dynagear.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/earthwormjim-se.htm"><img src="marquees/earthwormjim-se.png"><br>Earthworm Jim</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/earthwormjim-se.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/fspirit.htm"><img src="marquees/fspirit.png"><br>Fighting Spirit</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/fspirit.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/ghosts-n-goblins.htm"><img src="marquees/ghosts.png"><br>Ghosts-n-Goblins</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/ghosts.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/ghouls-n-ghosts.htm"><img src="marquees/ghouls.png"><br>Ghouls-n-Ghosts</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/ghouls.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/guardianheroes.htm"><img src="marquees/guardianheroes.png"><br>Guardian Heroes</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/guardianheroes.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/gunstarHeroes.htm"><img src="marquees/gunstarHeroes.png"><br>Gunstar Heroes</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/gunstarHeroes.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/jetGrindRadio.htm"><img src="marquees/jetGrindRadio.png"><br>Jet Grind Radio</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/jetGrindRadio.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/jetpackjoyride.htm"><img src="marquees/jetpackjoyride.png"><br>Jetpack Joyride</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/jetpackjoyride.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/jj_squawkers.htm"><img src="marquees/jjsquawk.png"><br>J.J. Squawkers</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/jjsquawk.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/kirbySuperstar.htm"><img src="marquees/kirbySuperstar.png"><br>Kirby Super Star</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/kirbySuperstar.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/knights_of_valour_2.htm"><img src="marquees/kov2p204.png"><br>Knights Of Valour 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/kov2p204.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/mickeymania.htm"><img src="marquees/mickeymania.png"><br>Mickey Mania</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/mickeymania.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/mm-worldOfIllusion.htm"><img src="marquees/mm-worldOfIllusion.png"><br>Mickey Mouse: World Of Illusion</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/mm-worldOfIllusion.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/metal_slug.htm"><img src="marquees/mslug.png"><br>Metal Slug</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/mslug.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/metal_slug_3.htm"><img src="marquees/mslug3.png"><br>Metal Slug 3</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/mslug3.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/metal_slug_x.htm"><img src="marquees/mslugx.png"><br>Metal Slug X</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/mslugx.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/nbbatman.htm"><img src="marquees/nbbatman.png"><br>Ninja Baseball Batman</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/nbbatman.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/ninja50.htm"><img src="marquees/ninja50.png"><br>Ninja 50</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/ninja50.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/ninja_spirit.htm"><img src="marquees/nspirit.png"><br>Ninja Spirit</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/nspirit.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/osman.htm"><img src="marquees/osman.png"><br>Osman</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/osman.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/punisher.htm"><img src="marquees/punisher.png"><br>The Punisher</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/punisher.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/quackshot.htm"><img src="marquees/quackshot.png"><br>Quackshot</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/quackshot.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/rangerx.htm"><img src="marquees/rangerx.png"><br>Ranger X</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/rangerx.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/redstar.htm"><img src="marquees/redstar.png"><br>Red Star</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/redstar.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/ristar.htm"><img src="marquees/ristar.png"><br>Ristar</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/ristar.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/super_contra.htm"><img src="marquees/scontra.png"><br>Super Contra</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/scontra.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/sengoku_3.htm"><img src="marquees/sengoku3.png"><br>Sengoku 3</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/sengoku3.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/shinobi3.htm"><img src="marquees/shinobi3.png"><br>Shinobi 3</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/shinobi3.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/sparkster.htm"><img src="marquees/sparkster.png"><br>Sparkster</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/sparkster.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/spiderman-webofshadows.htm"><img src="marquees/spiderman-webofshadows.png"><br>Spiderman: Web Of Shadows</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/spiderman-webofshadows.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/spidey-kingpin.htm"><img src="marquees/spidey-kingpin.png"><br>Spiderman Vs Kingpin</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/spidey-kingpin.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/spin_master.htm"><img src="marquees/spinmast.png"><br>Spinmaster</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/spinmast.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/spyro3.htm"><img src="marquees/spyro3.png"><br>Spyro 3</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/spyro3.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/sunset_riders.htm"><img src="marquees/ssriders.png"><br>Sunset Riders</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/ssriders.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/strider.htm"><img src="marquees/strider.png"><br>Strider</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/strider.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/strider_2.htm"><img src="marquees/strider2.png"><br>Strider 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/strider2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/superMarioWorld.htm"><img src="marquees/superMarioWorld.png"><br>Super Mario World</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/superMarioWorld.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/supermario-ds.htm"><img src="marquees/supermario-ds.png"><br>New Super Mario Brothers</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/supermario-ds.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/superMario64.htm"><img src="marquees/superMario64.png"><br>Super Mario 64</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/superMario64.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/thegladiator.html"><img src="marquees/thegladpcb.png"><br>The Gladiator: Road Of Swords</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/thegladpcb.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/teenage_mutant_ninja_turtles_2.htm"><img src="marquees/tmnt2.png"><br>Teenage Mutant Ninja Turles 2: Turtles In Time</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/tmnt2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/toystory2.htm"><img src="marquees/toystory2.png"><br>Toy Story 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/toystory2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/vectorman1.htm"><img src="marquees/vectorman1.png"><br>Vectorman</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/vectorman1.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/vectorman2.htm"><img src="marquees/vectorman2.png"><br>Vectorman 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/vectorman2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/viewtifuljoe.htm"><img src="marquees/viewtifuljoe.png"><br>Viewiful Joe</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/viewtifuljoe.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/x-men.htm"><img src="marquees/xmen.png"><br>X-Men</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/xmen.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/yoshisIsland.htm"><img src="marquees/yoshisIsland.png"><br>Yoshi's Island</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/yoshisIsland.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <span class="genre">RACING</span>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/crashteamracing.htm"><img src="marquees/crashteamracing.png"><br>Crash Team Racing</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/crashteamracing.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/fzerogx.htm"><img src="marquees/fzerogx.png"><br>F-Zero GX</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/fzerogx.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/hydrothunder.htm"><img src="marquees/hydrothunder.png"><br>Hydro Thunder</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/hydrothunder.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/jetmoto3.htm"><img src="marquees/jetmoto3.png"><br> Jet Moto 3</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/jetmoto3.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/looneytunesspacerace.htm"><img src="marquees/looneytunesspacerace.png"><br>Looney Tunes Space Race</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/looneytunesspacerace.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/marioKart64.htm"><img src="marquees/marioKart64.png"><br>Mario Kart 64</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/marioKart64.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/mariokartdoubledash.htm"><img src="marquees/mariokartdoubledash.png"><br>Mario Kat Double Dash</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/mariokartdoubledash.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/rollcage2.htm"><img src="marquees/rollcage2.png"><br>Roll Cage Stage 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/rollcage2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/wackyraces.htm"><img src="marquees/wackyraces.png"><br>Wacky Races</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/wackyraces.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/waveracebluestorm.htm"><img src="marquees/waveracebluestorm.png"><br>Wave Race Blue Storm</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/waveracebluestorm.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/wipeoutxl.htm"><img src="marquees/wipeoutxl.png"><br>Wipeout XL</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/wipeoutxl.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <span class="genre">SHOOTERS</span>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/1941.htm"><img src="marquees/1941.png"><br>1941</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/1941.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/19xx.htm"><img src="marquees/19xx.png"><br>19xx</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/19xx.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/apidya.htm"><img src="marquees/apidya.png"><br>Apidya</a>
+    </td>
+    <td>
+        <a href="emulators.html#winuae">WinUAE</a>
+    </td>
+    <td>
+        <a href="controls/apidya.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/batsugun.htm"><img src="marquees/batsugun.png"><br>Batsugun</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/batsugun.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/Armed_Police_Batrider.htm"><img src="marquees/batrider.png"><br>Armed Police Batrider</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/batrider.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/battle_bakraid.htm"><img src="marquees/bbakraid.png"><br>Battle Bakraid</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/bbakraid.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/blazinglazers.htm"><img src="marquees/blazinglazers.png"><br>Blazing Blazers</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/blazinglazers.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/blazing_star.htm"><img src="marquees/blazstar.png"><br>Blazing Star</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/blazstar.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/boogie_wings.htm"><img src="marquees/boogwing.png"><br>Boogie Wing</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/boogwing.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/chorensha.htm"><img src="marquees/chorensha.png"><br>Cho-Ren-Sha 6800</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/chorensha.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/cotton_boomerang.htm"><img src="marquees/cottonboomerang.png"><br>Cotton Boomerang</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/cottonboomerang.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/daioh.htm"><img src="marquees/daioh.png"><br>Daioh</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/daioh.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/darius_gaiden.htm"><img src="marquees/dariusg.png"><br>Darius Gaiden</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/dariusg.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/dbreed.htm"><img src="marquees/dbreed.png"><br>Dragon Breed</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/dbreed.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/dodonpachi.htm"><img src="marquees/ddonpach.png"><br>Dodonpachi</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/ddonpach.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/dangun_feveron.htm"><img src="marquees/dfeveron.png"><br>Dangun Feveron</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/dfeveron.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/dimahoo.htm"><img src="marquees/dimahoo.png"><br>Dimahoo</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/dimahoo.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/dragon_blaze.htm"><img src="marquees/dragnblz.png"><br>Dragon Blaze</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/dragnblz.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/einhander.htm"><img src="marquees/einhander.png"><br>Einhander</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/einhander.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/esp_rade.htm"><img src="marquees/esprade.png"><br>ESPrade</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/esprade.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/forgotten_worlds.htm"><img src="marquees/forgottn.png"><br>Forgotten Worlds</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/forgottn.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/gateOfThunder.htm"><img src="marquees/gateOfThunder.png"><br>Gate Of Thunder</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/gateOfThunder.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/g-darius.htm"><img src="marquees/gdarius.png"><br>G-Darius</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/gdarius.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/giga_wing.htm"><img src="marquees/gigawing.png"><br>Gigawing</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/gigawing.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/gradiusv.htm"><img src="marquees/gradiusv.png"><br>Gradius V</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/gradiusv.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/gunbird_2.htm"><img src="marquees/gunbird2.png"><br>Gundird 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/gunbird2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/ikaruga.htm"><img src="marquees/ikaruga.png"><br>Ikaruga</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/ikaruga.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/in_the_hunt.htm"><img src="marquees/inthunt.png"><br>In The Hunt</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/inthunt.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/keioflyingsquadron.htm"><img src="marquees/keioflyingsquadron.png"><br>Keio Flying Squadron</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/keioflyingsquadron.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/lordsofthunder.htm"><img src="marquees/lordsofthunder.png"><br>Lords Of Thunder</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/lordsofthunder.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/mars_matrix.htm"><img src="marquees/mmatrix.png"><br>Mars Matrix</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/mmatrix.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/mazinger_z.htm"><img src="marquees/mazinger.png"><br>Mazinger</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/mazinger.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/parodius-foreverwithme.htm"><img src="marquees/parodius-foreverwithme.png"><br>Parodius: Forever With Me</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/parodius-foreverwithme.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/sexy_parodius.htm"><img src="marquees/parodius-sexy.png"><br>Sexy Parodius</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/parodius-sexy.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/progear.htm"><img src="marquees/progear.png"><br>Progear</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/progear.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/radiant_silvergun.htm"><img src="marquees/radiantsilvergun.png"><br>Radiant Silvergun</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/radiantsilvergun.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/r-type_2.htm"><img src="marquees/rtype2.png"><br>R-Type 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/rtype2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/r-type.htm"><img src="marquees/rtype.png"><br>R-Type</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/rtype.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/r-type_leo.htm"><img src="marquees/rtypeleo.png"><br>R-Type Leo</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/rtypeleo.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/Strikers_1945_2.htm"><img src="marquees/s1945ii.png"><br>Strikers 1945 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/s1945ii.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/salamander.htm"><img src="marquees/salamand.png"><br>Salamander</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/salamand.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/salamander_2.htm"><img src="marquees/salmndr2.png"><br>Salamander 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/salmndr2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/samurai_aces.htm"><img src="marquees/samuraia.png"><br>Samurai Aces</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/samuraia.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/section_z.htm"><img src="marquees/sectionz.png"><br>Section Z</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/sectionz.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/soldierblade.htm"><img src="marquees/soldierblade.png"><br>Soldier Blade</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/soldierblade.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/soukyugurentai.htm"><img src="marquees/soukyugurentai.png"><br>Soukyugutentai</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/soukyugurentai.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/superstarsoldier.htm"><img src="marquees/superstarsoldier.png"><br>Super Star Soldier</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/superstarsoldier.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/tcobra2.htm"><img src="marquees/tcobra2.png"><br>Twin Cobra 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/tcobra2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/tengai.htm"><img src="marquees/tengai.png"><br>Tengai</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/tengai.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/tenkomor.htm"><img src="marquees/tenkomor.png"><br>Tenkomor</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/tenkomor.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/twin_eagle_2.htm"><img src="marquees/twineag2.png"><br>Twin Eagle 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/twineag2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <span class="genre">SHOOTERS - 360</span>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/bangai-o.htm"><img src="marquees/bangai-o.png"><br>Bangai-O</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/bangai-o.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/gundhara.htm"><img src="marquees/gundhara.png"><br>Gundhara</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/gundhara.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/guwange.htm"><img src="marquees/guwange.png"><br>Guwange</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/guwange.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/outzone.htm"><img src="marquees/outzone.png"><br>Outzone</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/outzone.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/shock_troopers.htm"><img src="marquees/shocktro.png"><br>Shock Troopers</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/shocktro.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/shock_troopers_2.htm"><img src="marquees/shocktr2.png"><br>Shock Troopers 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/shocktr2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/smash_tv.htm"><img src="marquees/smashtv.png"><br>Smash TV</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/smashtv.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+	    <a href="cpmanuals/total_carnage.htm"><img src="marquees/totcarn.png"><br>Total Carnage</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/totcarn.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <span class="genre">SPORTS</span>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/bang_bead.htm"><img src="marquees/bangbead.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/bangbead.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/defjam.htm"><img src="marquees/defjam.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/defjam.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/hat_trick.htm"><img src="marquees/hattrick.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/hattrick.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/hvysmsh.htm"><img src="marquees/hvysmsh.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/hvysmsh.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/nba_jam_te.htm"><img src="marquees/nbajamte.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/nbajamte.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/nflblitz2k.htm"><img src="marquees/nflblitz2k.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/nflblitz2k.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/outfxies.htm"><img src="marquees/outfxies.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/outfxies.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/pilotwings64.htm"><img src="marquees/pilotwings64.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/pilotwings64.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/powerstone2.htm"><img src="marquees/powerstone2.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/powerstone2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/ready2RumbleR2.htm"><img src="marquees/ready2RumbleR2.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/ready2RumbleR2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/stonebal.htm"><img src="marquees/stonebal.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/stonebal.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/superSmashBros.htm"><img src="marquees/superSmashBros.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/superSmashBros.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/supersmashbrosmelee.htm"><img src="marquees/supersmashbrosmelee.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/supersmashbrosmelee.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/trapgunner.htm"><img src="marquees/trapgunner.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/trapgunner.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/wwfmania.htm"><img src="marquees/wwfmania.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/wwfmania.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/wwfnomercy.htm"><img src="marquees/wwfnomercy.png"></a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/wwfnomercy.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <span class="genre">VERSUS</span>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/asura_buster.htm"><img src="marquees/asurabus.png"><br>Asura Buster</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/asurabus.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/garou.htm"><img src="marquees/garou.png"><br>Garou: Mark Of The Wolves</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/garou.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/ggxxacp.htm"><img src="marquees/ggx.png"><br>Guilty Gear XX Accent Core Plus</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/ggear.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/JoJo_files/home.htm"><img src="marquees/jojobane.png"><br>JoJo's Bizarre Adventure</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/jojobane.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/MartialMasters.html"><img src="marquees/martialmasters.png"><br>Martial Masters</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/martialmasters.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/Samurai_Shodown_2.htm"><img src="marquees/samsho2.png"><br>Samurai Shodown 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/samsho2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/Samurai_Shodown_4.htm"><img src="marquees/samsho4.png"><br>Samurai Shodown 4</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/samsho4.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/Street_Fighter_Alpha_2.htm"><img src="marquees/sfa2.png"><br>Street Fighetr Alpha 2</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/sfa2.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/Street_Fighter_III_3.htm"><img src="marquees/sfiii3.png"><br>Street Fighetr III 3</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/sfiii3.png">controls</a>
+    </td>
+</tr>
+<tr>
+    <td>
+        <a href="cpmanuals/VampireChronicle.html"><img src="marquees/vampchron.png"><br>Vampire Chronicle</a>
+    </td>
+    <td>
+        <a href="emulators.html#mame">mame</a>
+    </td>
+    <td>
+        <a href="controls/vampchron.png">controls</a>
+    </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+</body>
+</html>
