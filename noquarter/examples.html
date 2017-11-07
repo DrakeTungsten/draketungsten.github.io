@@ -1,6 +1,6 @@
 <html>
 <head>    
-<title>The Devil mocks their every step.</title>
+<title>The winds of Thor are blowing cold.</title>
 <link rel="shortcut icon"  href="hb.ico"/>
 <link rel="stylesheet" type="text/css" href="hb.css"/>
 
@@ -19,10 +19,153 @@
     <br><br>
     <a href="examples.html">Emulator examples</a>
     <br><br>
+    <a href="build.html">Build</a>
+    <br><br>
 </div>
 <div class="notes">
+    <h3>EMULATOR CONFIGURATION EXAMPLES</h3>
+    These are most of the <a href="configfile1.html#emulatorconfig">emulator configurations</a> I use, to help illustrate how that section needs to be populated, and also as a reference for some command-line options for popular emulators. Notice that a few emulators need the <span class="code">@</span> symbol, and that some have an empty "options" field (you will see double commas at the end of the "executable" field), and that the Mame emulators do not have a "minimize" field. Recall that the "minimize" field needs a dummy value if you're going to use it, and I chose to use "m" for all of them.
+    <br>
+    <br>
+<br>
+ <span class="code">mame,           emulators\mame-177,       mame64.exe,   -skip_gameinfo,             base,    emulators\mame-177\cfg</span>
+<br>
 
-    <h3>EMULATOR COMMAND LINES AND CONFIG EXAMPLES</h3>
+<br>
+ <span class="code">mamepp,         emulators\mameplusplus,   mameppkgui.exe,   -skip_gameinfo,           noarg,   emulators\mameplusplus\cfg</span>
+<br>
+
+<br>
+ <span class="code">uxme,           emulators\uxme-0.171-4,   uxme.exe,         -skip_gameinfo,             base,    emulators\uxme-0.171-4\cfg</span>
+<br>
+
+<br>
+ <span class="code">mednafen-pce,   emulators\mednafen-0.9.43-win64,     mednafen.exe,   -fs 1 -loadcd pce,     full,    emulators\mednafen-common\pgconfig,     m</span>
+<br>
+
+<br>
+ <span class="code">mednafen-cue,   emulators\mednafen-0.9.43-win64,     mednafen.exe,   -fs 1,     full,    emulators\mednafen-common\pgconfig,     m</span>
+<br>
+
+<br>
+ <span class="code">mednafen-psx,   emulators\mednafen-0.9.43-win64,     mednafen.exe,   -fs 1 -loadcd psx,     full,    emulators\mednafen-common\pgconfig,     m</span>
+<br>
+
+<br>
+ <span class="code">zinc,           emulators\zinc11,                    zinc.exe,,             base,    emulators\zinc11\cfg,                   m</span>
+<br>
+
+<br>
+ <span class="code">supermodel,     emulators\supermodel,                supermodel.exe,   -fullscreen,       full,    emulators\supermodel\Config,            m</span>
+<br>
+
+<br>
+ <span class="code">fs-uae,         emulators\fs-uae-2.8.3\Programs\Windows\x86-64,   fs-uae.exe,  @  --fullscreen=1 --load_state=1 --keep_aspect=1,           full,    emulators\fs-uae-2.8.3\Configurations,  m</span>
+<br>
+
+<br>
+ <span class="code">vj,             emulators\virtualjaguar,  virtualjaguar.exe,,               full,    emulators\virtualjaguar,                m</span>
+<br>
+
+<br>
+For the next two emulators, I only use Triforce and T98Next for one game each, which is configured in the respective emulator's own configuration to run automatically when the emulator is launched, so no argument is needed as far as No Quarter is concerned:
+<br>
+
+<br>
+ <span class="code">triforce,       emulators\triforce-4.0-315,  DolphinWX.exe, -b -e \NoQuarter\roms\triforce\GGPE01\game.iso,         noarg,   emulators\triforce-4.0-315\User\Config, m</span>
+<br>
+
+<br>
+ <span class="code">t98next,        emulators\t98-next,                  next.exe,,          noarg,   emulators\t98-next,                       m</span>
+<br>
+
+<br>
+ <span class="code">retroarch-snes, emulators\retroarch,                 retroarch.exe, -L \NoQuarter\emulators\retroarch\cores\bsnes_accuracy_libretro.dll,   full,    emulators\retroarch\retroarch.cfg, m</span>
+<br>
+
+<br>
+ <span class="code">retroarch-gen,  emulators\retroarch,                 retroarch.exe, -L \NoQuarter\emulators\retroarch\cores\genesis_plus_gx_libretro.dll,    full,    emulators\retroarch\retroarch.cfg, m</span>
+<br>
+
+<br>
+ <span class="code">retroarch-psx,  emulators\retroarch,                 retroarch.exe, -L \NoQuarter\emulators\retroarch\cores\mednafen_psx_libretro.dll,    full,    emulators\retroarch\retroarch.cfg, m</span>
+<br>
+
+<br>
+ <span class="code">retroarch-sat,  emulators\retroarch,                 retroarch.exe, -L \NoQuarter\emulators\retroarch\cores\mednafen_saturn_libretro.dll,    full,    emulators\retroarch\retroarch.cfg, m</span>
+<br>
+
+<br>
+ <span class="code">retroarch-mgba, emulators\retroarch,                 retroarch.exe, -L \NoQuarter\emulators\retroarch\cores\mgba_libretro.dll,   full,    emulators\retroarch\retroarch.cfg, m</span>
+<br>
+
+<br>
+ <span class="code">mess-2600,      emulators\mame-177,    mess64.exe,       -skip_gameinfo a2600 -cart,        full,    emulators\mame-177\cfg-mess\a2600.cfg, m</span>
+<br>
+
+<br>
+ <span class="code">mess-800,       emulators\mame-177,    mess64.exe,       -skip_gameinfo a800 -ui_active -flop1,         full,    emulators\mame-177\cfg-mess\a800.cfg,  m</span>
+<br>
+
+<br>
+ <span class="code">mess-nes,       emulators\mame-177,    mess64.exe,       -skip_gameinfo nes -cart,         full,    emulators\mame-177\cfg-mess\nes.cfg,   m</span>
+<br>
+
+<br>
+ <span class="code">mess-snes,      emulators\mame-177,    mess64.exe,       -skip_gameinfo snes -cart,        full,    emulators\mame-177\cfg-mess\snes.cfg,  m</span>
+<br>
+
+<br>
+ <span class="code">fusion,         emulators\Fusion-364,     fusion.exe,          -fullscreen,           full,    emulators\Fusion-364\fusion.ini,       m</span>
+<br>
+
+<br>
+ <span class="code">mupen,          emulators\mupen64plus-2.5, mupen64plus.exe, --fullscreen,            full,    emulators\mupen-common\mupen64plus.cfg,  m</span>
+<br>
+
+<br>
+ <span class="code">pcsx2,          emulators\pcsx2-1.4.0,       pcsx2.exe,,            full,    emulators\pcsx2-1.4.0\inis_1.4.0\LilyPad.ini,  m</span>
+<br>
+
+<br>
+ <span class="code">dolphin,        emulators\dolphin-5.0,       Dolphin.exe,   -b -e,          full,    emulators\dolphin-5.0\User\Config\GCPadNew.ini, m</span>
+<br>
+
+<br>
+ <span class="code">nulldc,         emulators\nulldc104r50,      nulldc.exe, -config ImageReader:defaultImage="@",           full,    emulators\nulldc104r50\nullDC.cfg,              m</span>
+<br>
+
+<br>
+ <span class="code">demul,          emulators\demul,             demul-582.exe, -run=dc    -image=@,            full,    emulators\demul\padDemul.ini,                   m</span>
+<br>
+
+<br>
+ <span class="code">demul-naomi,    emulators\demul-07a,         demul.exe,     -run=naomi -rom=@,      base,    emulators\demul-07a\padDemul.ini,               m</span>
+<br>
+
+<br>
+ <span class="code">desmume,        emulators\desmumeX432R,      desmume_x432r_x64.exe,,          full,    emulators\desmumeX432R\DeSmuME_X432R_x64.ini,       m</span>
+<br>
+
+<br>
+ <span class="code">ppsspp,         emulators\ppsspp,                    PPSSPPWindows64.exe, --fullscreen,           full,    emulators\ppsspp\memstick\PSP\SYSTEM\controls.ini,  m</span>
+<br>
+
+<br>
+These next three are games which are Windows executables, to give you some examples of how such games need to be entered in the config file: 
+<br>
+
+<br>
+ <span class="code">chorensha,      roms\native\chorensha,     chorensha.exe,,      noarg,   roms\native\chorensha,       m</span>
+<br>
+
+<br>
+ <span class="code">kaikan,         roms\native\kaikan_v11,  kaikan.exe,,         noarg,   roms\native\kaikan_v11,    m</span>
+<br>
+
+<br>
+ <span class="code">fspirit,        roms\native\fightingspirit, fightingspirit.exe,, noarg,   roms\native\fightingspirit\Saves,  m</span>
+<br>
 
 
 

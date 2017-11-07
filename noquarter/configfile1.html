@@ -19,6 +19,8 @@
     <br><br>
     <a href="examples.html">Emulator examples</a>
     <br><br>
+    <a href="build.html">Build</a>
+    <br><br>
 </div>
 <div class="notes">
 
@@ -26,7 +28,7 @@
         <h3>Configuration File Intro</h3>
     </p> 
     <p> 
-    This document highlights file names and example config file entries by giving them a gray background and a different font. Italicised text in an example config file entry means to use some appropriate value for what the italicised term represents, not the literal words which are italicised. A pipe character, <span class="code">|</span>, between terms in a field definiton means to use only one of the terms which are separated by the pipe(s).
+    This document highlights file names and example config file entries by giving them a gray background and a different font. Italicised text in an example config file entry means to use some appropriate value for what the italicised term represents, not the literal words which are italicised. A pipe character, <span class="code">|</span>, between terms in a field definition means to use only one of the terms which are separated by the pipe(s).
     </p> 
     <p> 
         <span class="code">NoQuarter.cfg</span> is the main config file. The program works by creating file associations. When working in the config file, it might help to remember that the whole point is to define that a certain file extension should be opened with a certain program. Almost everything else in the config file is in support of this concept. 
@@ -38,7 +40,7 @@
         Comments: Create a comment line (that is, a line to make notes for yourself and which will be ignored by the NoQuarter program), by starting it with a pound sign.
     </p> 
     </p> 
-        Directories: Wherever a directory may be part of the value for a field, you may use an absolute path or a path relative to where nq.exe is sitting on your hard drive.
+        Directories: Wherever a directory may be part of the value for a field, you may use an absolute path or a path relative to where nq.exe is sitting on your hard drive. When you enter a directory which includes spaces as a field value, be sure to enclose it in quotes.
     </p> 
     <p> 
     <h3><span id="uservars">User-Defined Variables and Conditional Blocks</span></h3>
@@ -112,14 +114,14 @@
     </p> 
 
     <h3>Images</h3>
-    All images will be resized to fit the maximum area available to them, while maintaining their width:height ratio (they will not be skewed). So nearly all images will end being letter-box or pillar-boxed within their alotted screen space, unless they happen to exactly match the aspect ratio of their designated screen space.
+    All images will be resized to fit the maximum area available to them, while maintaining their width:height ratio (they will not be skewed). So nearly all images will end being letter-boxed or pillar-boxed within their alotted screen space, unless they happen to match the aspect ratio of their designated screen space.
         <h3>Directories</h3>
         <ul>
             <li>
-            <span class="code">ahk</span> <br> If you want a certain AHK script to run every time a certain emulator is run, then compile your AHK script, name it with the <a href="#refname">emulator's reference name</a>, and put it in this folder.
+            <span class="code">ahk</span> <br> If you want a certain AHK script to run every time a certain emulator is run, then compile your AHK script, name it with the <a href="#refname">emulator's reference name</a>, and put it in this folder. If you want an AHK script to run when a certain rom is run, then compile your ahk script and name it the same as the rom, swapping out the rom's extension for the .exe of the compiled script. 
             </li>
             <li>
-            <span class="code">banners</span> <br> Volumes may be represented by an image file instead of their name. I only created this functionality because I liked having an image of five stars to represent my "favorites" volume. But any volume may use this functionality. 
+            <span class="code">banners</span> <br> Volumes may be represented by an image file instead of their name. I only created this functionality because I liked having an image of five stars to represent my "favorites" volume. But any volume may use this functionality. Place an image file with th same base name as the name of the volume in this folder to have it be used as a banner image for that volume.
             </li>
             <li>
             <span class="code">font</span> <br> Font files for menu entries and tier labels need to go in this directory. 
@@ -140,11 +142,13 @@
             </li>
         </ul>
         
-        
+        <hr> 
+        <hr> 
+        <h3>The sections of noquarter.cfg:</h3>
 
     <p> 
-        <h3>Config File Section: [emulator config]</h3>
-        Configure your emulators. Format:<br>
+    <h3><span id="emulatorconfig">[emulator config]</span></h3>
+    Configure your emulators. You can find many examples <a href="examples.html">here</a>. Format:<br>
         <span class="code" id="refname"><i>reference name, directory, executable, options, argument type, input config FSO [, minimize]</i></span> 
         <ul>
             <li>
@@ -157,7 +161,7 @@
                 <span class="code">emulator executable:</span> Self-explanatory, I hope.
             </li>
             <li>
-            <span class="code">options:</span> Put in whatever command-line arguments and switches (other than the rom name) you need for the emulator. By default, a space and then the rom name will automatically be added to the end of the list of arguments when a rom is selected to run. If the rom name needs to appear on the command line somewhere other than after a space at the end of the list of arguments, then place the <span class="code">@</span> symbol at the posiion in this field to represent where the rom name should go.
+            <span class="code">options:</span> Put in whatever command-line arguments and switches (other than the rom name) you need for the emulator. By default, a space and then the rom name will automatically be added to the end of the list of arguments when a rom is selected to run. If the rom name needs to appear on the command line somewhere other than after a space at the end of the list of arguments, then place the <span class="code">@</span> symbol at the position in this field to represent where the rom name should go. You will also need to do this if your rom names have spaces in them, so you would have to put this: <span class="code">"@"</span> somewhere in this options field.
             </li>
             <li>
                 <span class="code" id="argtype">argument type</span>: This is how much of the rom's path/name should be passed to the emulator. There are four valid values:
@@ -226,25 +230,11 @@
             </li>
         </ul>
     </p> 
-    <p> 
-        <h3>Config File Section: [aliases]</h3>
-        The roms in rom lists are sorted alphabetically. Mame requires that roms have specific names. If you want a Mame rom to sort in the list as though it had a different name, then create an alias for it in this section. This alias will also become the display name, unless you also create an entry for the rom in <span class="code">displaynames.txt</span>, in which case the name in displaynames.txt will be the display name, but it will still sort based on the alias created here. Format:
-        <span class="code"><i>rom base name, alias</i></span> 
-        <ul>
-            <li>
-            <span class="code">rom base name</span> The name of the rom, without the file extension.
-            </li>
-            <li>
-            <span class="code">alias</span> The name of the rom for alphabetical sorting purposes. Will also be the display name if there is no entry for it in <span class="code">displaynames.txt</span>
-            </li>
-        </ul>
     </p> 
+
+
     <p> 
-        <h3>Config File Section: [shared configs]</h3>
-        Documentation to come later.
-    </p> 
-    <p> 
-    <h3><span id="associations">Config File Section: [associations]</span></h3>
+    <h3><span id="associations">[associations]</span></h3>
         This section creates an association between a file extension (roms) and a program (emulator). There are two other types of associations, other than file extension associations: a unique association, which associates a full file name with a program, and a folder + extension combination association, which is a file extension association applicable only to the files in a certain folder.  The format is:
         <br>
         <span class="code"><i>extension </i>| <i>name</i> | <i>folder + extension, emulator reference name</i></span>
@@ -263,7 +253,23 @@
         </ul>
     </p> 
     <p> 
-    <h3>Config File Section: [ignore]</h3>
+        <h3>[aliases]</h3>
+        The roms in rom lists are sorted alphabetically. Mame requires that roms have specific names. If you want a Mame rom to sort in the list as though it had a different name, then create an alias for it in this section. This alias will also become the display name, unless you also create an entry for the rom in <span class="code">displaynames.txt</span>, in which case the name in displaynames.txt will be the display name, but it will still sort based on the alias created here. Format:
+        <span class="code"><i>rom base name, alias</i></span> 
+        <ul>
+            <li>
+            <span class="code">rom base name</span> The name of the rom, without the file extension.
+            </li>
+            <li>
+            <span class="code">alias</span> The name of the rom for alphabetical sorting purposes. Will also be the display name if there is no entry for it in <span class="code">displaynames.txt</span>
+            </li>
+        </ul>
+    </p> 
+    <p> 
+        <h3>[shared configs]</h3>
+        Documentation to come later.
+    <p> 
+    <h3>[ignore]</h3>
     The next section, <span class="code">[load roms]</span>, is where you load files from directories into rom lists. Before we get there, you can exclude certain files in those directories from being loaded by naming them in this section. Separate file names by any mix of new lines or spaces (if you have spaces in your file names, then you are out of luck here). Use the full file name without the path, or you can use a directory and extension combo. I use this mostly for bios roms, and for parent/clones when you only want either the parent or the clone to be loaded into the menu. Format:
     <br><br>
     <span class="code"><i>file name</i> | <i>directory and extension combo</i></span> 
@@ -271,7 +277,7 @@
     The directory and extension combo works the same here as it does for the associations section. For example, I use this: <span class="code">roms\psx\.bin</span> because I load this directory in the <span class="code">[load roms]</span> section, but I only want the cue files. There are also .bin files in this directory, but since .bin is associated with a Genesis emulator, those .bin files would get loaded too if I did not have this "ignore" entry for them.
     </p> 
     <p> 
-        <h3>Config File Section: [load roms]</h3>
+        <h3>[load roms]</h3>
         NQ uses two levels of grouping (also referred to as tiers). The top level (or tier) is called volumes, and the bottom level is called rom lists. This section defines volumes and the rom lists they contain, and populates your rom lists with roms from your directories. You can load multiple directories into a list, and you can have one directory loaded into multiple lists. Only files with extensions which have an association defined will be loaded. Keep in mind any file you want put into a rom list from favorites.txt must first be loaded into some other rom list from this section. Format:
         <br> <br>
         <span class="code"><i>volume, rom list, directory [, hardware logo]</i></span>
@@ -299,7 +305,7 @@
         </ul>
     </p> 
     <p> 
-        <h3>Config File Section: [key config]</h3>
+        <h3>[key config]</h3>
         Configure keyboard controls to navigate NQ. Format:
         <br> <br>
         <span class="code"><i>nq function, SDL decimal keycode</i> | <i>character</i></span>
@@ -340,7 +346,7 @@
                 <span class="code">exit</span> exit NQ
             </li>
         </ul>
-        SDL decimal keycode - or - character
+        Character or SDL decimal keycode
         <ul>
             <li>
                 You can find SDL keycodes <a href=https://wiki.libsdl.org/SDLKeycodeLookup>here</a>. If you are going to identify a key by the SDL keycode, then you need to use the decimal value (the left-most column). You can figure out the key name by looking at the right-most column...
@@ -375,15 +381,15 @@
                 <span class="code">paste</span> Pastes all collected roms into the current rom list. The roms in a list are sorted alphabetically, and all pasted roms will be inserted alphabetically, so it doesn't matter where in the list you are when you hit the button which calls this function. Pasting clears the buffer.
             </li>
             <li>
-            <span class="code">delete</span> Deletes the current rom from the current rom list. This will only work if the rom is in the list because it was added as a favorite (which happens when you add it with the collect &amp paste features just above, or if you manually added it in the file <span class="code">favorites.txt</span>). If the rom is in the list because it was loaded into this list because of a line in the <span class="code">[load roms]</span> section, then it ill not be deleted. The only way to remove such roms from rom lists is to delete the rom file from the directory it was loaded from.
+            <span class="code">delete</span> Deletes the current rom from the current rom list. This will only work if the rom is in the list because it was added as a favorite (which happens when you add it with the collect &amp paste features described just above, or if you manually added it in the file <span class="code">favorites.txt</span>). If the rom is in the list because it was loaded into this list because of a line in the <span class="code">[load roms]</span> section, then it ill not be deleted. The only way to remove such roms from rom lists is to delete the rom file from the directory it was loaded from.
             </li>
             <li>
-                <span class="code">display name</span> Create or change the diaplay name for the current rom. This only changes what you see in the menu list, it does not rename the rom file. The display name is not used for alphbetical sorting, only the file name is used. You will see two vertical lines on the input field. These lines represent the width of the area used to display rom names in the menu. If the name you type expands beyond these guides, then the name will exceed the allowed area for game names in the menu, and will look kinda crappy. 
+                <span class="code">display name</span> Create or change the display name for the current rom. This only changes what you see in the menu list, it does not rename the rom file. The display name is not used for alphabetical sorting, only the file name is used. You will see two vertical lines on the input field. These lines represent the width of the area used to display rom names in the menu. If the name you type expands beyond these guides, then the name will exceed the allowed area for game names in the menu. 
             </li>
         </ul>
     </p> 
     <p> 
-        <h3>Config File Section: [joy config]</h3>
+        <h3>[joy config]</h3>
         Configure a joystick to navigate NQ. Format:
         <br> <br>
         <span class="code"><i>nq function, joystick button</i></span>
