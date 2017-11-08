@@ -25,9 +25,71 @@
 <div class="notes">
 
     <h3>BUILD</h3>
-
-
-
+    <b>Windows:</b>
+    <br>
+    Built in Windows with MSYS2.
+    <br><br>
+These are more or less the instructions I followed from a post in Stack Exchange to install MSYS2. It wasn't crystal clear and I didn't take good notes as I was doing this, but this will get you at least really close, if not all the way, to having an MSYS2 install for building the source:
+<br>
+<br>
+Download and run the msys2 installer.
+<br>
+<br>
+<span class="code">
+pacman -Sy pacman
+</span>
+<br>
+[close and re-open]
+<br>
+<br>
+<span class="code">
+pacman -Syu
+</span>
+<br>
+[close and re-open]
+<br>
+<br>
+<span class="code">
+pacman -Su
+</span>
+[close and re-open???]
+<br>
+<br>
+<span class="code">
+pacman -S mingw-w64-x86_64-gcc
+</span>
+<br>
+<span class="code">
+pacman -S mingw-w64-x86_64-toolchain
+</span>
+<br>
+   ??? probably don't do this one:
+<span class="code">
+ pacman -S mingw-w64-x86_64-SDL
+</span>
+<br>
+<span class="code">
+pacman -S mingw-w64-x86_64-SDL2
+</span>
+<br>
+<span class="code">
+pacman -S mingw-w64-x86_64-SDL2_image
+</span>
+<br>
+<span class="code">
+pacman -S mingw-w64-x86_64-SDL2_ttf
+</span>
+<br>
+<span class="code">
+pacman -S make
+</span>
+<br>
+<p>
+Once it's all installed, open a MinGW64 command promt, cd to where No Quarter is (the root of your C: drive is <span class="code">/c</span> in mingw), then cd to the "src" directory. type <span class="code">make -f makefile.mingw</span> This will compile, and also place a copy of nq.exe in the parent folder (there is no separate "install" target) ready to go.
+<p>
+<br><br>
+    <b>Linux:</b>
+    Not much to say. I had one library missing, but I forgot what it was. Whatever it was, it was easy enough to install from Ubuntu's repos.
 </div>
 </body>
 </html>
