@@ -26,9 +26,10 @@
     <h3>EMULATOR CONFIGURATION EXAMPLES</h3>
     These are most of the <a href="configfile1.html#emulatorconfig">emulator configurations</a> I use, to help illustrate how that section needs to be populated, and also as a reference for some command-line options for popular emulators. Notice that a few emulators need the <span class="code">@</span> symbol to indicate where in the list of arguments the rom name needs to go, and that some have an empty "options" field (you will see double commas at the end of the "executable" field), and that the Mame emulators do not have a "minimize" field. Recall that the "minimize" field needs a dummy value if you're going to use it, and I chose to use "m" for all of them.
     <br><br>
-    Multi-system emulators like Retroarch, Mednafen, and Mess/Mame, which require a system to be specified on the command line, have multiple configuration lines (one line for each system), but a lot of information is repeated from line to line. I actually use variables to hold that repeated information, but thought it would be too confusing to present these eaxmples using those text-substituting variables.  But that is the way I would recommend entering such information in the config file.  A single variable may contain a string which spans multiple fields. 
-    <br>
-    <br>
+    Multi-system emulators like Retroarch, Mednafen, and Mess/Mame, which require a system to be specified on the command line, have multiple configuration lines (one line for each system), but a lot of information is repeated from line to line. I actually use variables to hold that repeated information, but thought it would be too confusing to present these examples using those text-substituting variables.  But that is the way I would recommend entering such information in the config file.  A single variable may contain a string which spans multiple fields. 
+    <br> <br>
+    Just as a refresher for how these configurations work, the first field is a user-made-up name for the configuration defined in the rest of the fields. This name is then associated with a file type (or a directory + file type combo, or a specific file) in the [associations] section of noquarter.cfg.
+    <br> <br>
 <br>
  <span class="code">mame,           emulators\mame-177,       mame64.exe,   -skip_gameinfo,             base,    emulators\mame-177\cfg</span>
 <br>
@@ -169,6 +170,7 @@ These next three are games which are Windows executables, to give you some examp
  <span class="code">fspirit,        roms\native\fightingspirit, fightingspirit.exe,, noarg,   roms\native\fightingspirit\Saves,  m</span>
 <br>
 
+<br><br>
 
 
 </div>
