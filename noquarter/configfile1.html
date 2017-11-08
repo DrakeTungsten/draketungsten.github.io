@@ -141,7 +141,10 @@
             Place the sprite sheets for rascal animations here.
             </li>
         </ul>
-        
+        <h3>Starting Fresh</h3>
+        To start with a fresh noquarter.cfg file, you can either remove the lines of demo data under the various sections of the noquarter.cfg file which came with the download, or just copy or rename the file skeleton.cfg to "noquarter.cfg".
+        <br> 
+        <br> 
         <hr> 
         <hr> 
         <h3>The sections of noquarter.cfg:</h3>
@@ -242,7 +245,7 @@
             <li>
             <span class="code">extension | name | folder + extension</span>: This field is where you define either a file extension or a specific file to be associated with an emulator and the other configuration values represnted by fields on this line with either a file extension or a specific file. This field takes one of three forms:
                 <ul>
-                    <li>universal extension association: associates a file extension with a configured emulator. Include the leading dot, so a typical example values for this field would be <span class="code">.7z</span> and <span class="code">.sfc</span>.</li>
+                    <li>universal extension association: associates a file extension with a configured emulator. Include the leading dot, so typical example values for this field would be <span class="code">.7z</span> and <span class="code">.sfc</span>.</li>
                     <li>unique association: associates a specific file with a configured emulator. Use the whole file name (but not including the path) instead of the extension.</li> 
                     <li>directory-specific extension association: associates the files of a directory which have the indicated extension with a configured emulator. This is used to over-ride a universal extension association for a specific directory. Create this type of association by providing a path name followed by the extension, including the dot. There is no wildcard character used to represent the base name of the roms. An example of this form is <span class="code">\some\path\.7z</span> Keep in mind that even though you indicate a directory here, this will not load roms from that directory into any rom list. Using this form is only saying that if the named directory is loaded into a rom list (in the <span class="code">[load roms]</span> section), then use this association for those roms. So any directory named here should also appear in the <span class="code">[load roms]</span> section.</li>
                 </ul>
@@ -300,7 +303,7 @@
             <span class="code">directory</span>: The directory to load roms from. This may be an absolute path, or a path relative to where NQ is installed. Only files which have extensions for which you created an association will be loaded. 
             </li>
             <li>
-            <span class="code">hardware logo</span>: A .png file which you have placed under the <span class="code">logos/</span> directory to represent the hardware which these roms run on (or any other image which you want associated with all of the files in this directory). This field is optional.
+            <span class="code">hardware logo</span>: A .png or .jpg file which you have placed under the <span class="code">logos/</span> directory to represent the hardware which these roms run on (or any other image which you want associated with all of the files in this directory). This field is optional.
             </li>
         </ul>
     </p> 
@@ -325,7 +328,7 @@
                 <span class="code">middle</span> Jump to the middle of the rom list
             </li>
             <li>
-                <span class="code">1/3</span> Jump 1/3 of the way through the rom list. This also looks at the list circularly, so if the jump would put you X number of games past the end, you will end up X number of games from the beginning. For the sake of simplifying using NQ on your cabinet, I suggest either assigning buttons to both the "beginning" and "middle" functions, or leave them unassigned and assign a button to this function.
+                <span class="code">1/3</span> Jump 1/3 of the way through the rom list. This also looks at the list circularly, so if the jump would put you X number of games past the end, you will end up X number of games from the beginning. For the sake of simplifying using NQ on your cabinet, I suggest either assigning buttons to both the "beginning" and "middle" functions and leave this function unassigned, or leave those two functions unassigned and assign a button to this function.
             </li>
             <li>
                 <span class="code">prev list</span> Go to the next rom list in the volume
@@ -358,7 +361,7 @@
             <br>
             <b>Alternative scrolling functions:</b>
             <br> <br>
-            There are three things which can be scrolled through: volumes (scroll through the different volumes), rom lists (scroll between rom lists of a volume), and roms (scroll through the roms in the current list). You might prefer to scroll through all three things using a joystick, but joysticks only have two axes. Using the functions defined above, you would have to pick one of the three things to be scrolled through using buttons. The following functions allow you to use a joystick for all three, by assigning a button to be the tier toggle. Hitting the "tier toggle" button will cause focus for left/right scrolling to be switched between volumes and rom lists. 
+            There are three things which can be scrolled through: volumes (scroll through the different volumes), rom lists (scroll between rom lists of a volume), and roms (scroll through the roms in the current list). You might prefer to scroll through all three things using a joystick (or arrow buttons), but joysticks (arrow buttons) only have two axes. Using the functions defined above, you would have to pick one of the three things to be scrolled through using buttons. The following functions allow you to use a joystick (arrow buttons) for all three, by assigning a button to be the tier toggle. Hitting the "tier toggle" button will cause focus for left/right scrolling to be switched between volumes and rom lists. 
         <ul>
             <li>
                 <span class="code">tier toggle</span> Toggle between volumes and rom lists for scrolling focus. If this function is defined, then two little focus-indicator icons will appear on each side of the outline-shape/frame of the tier label which has focus. So when volumes have focus, you will see these icons next to both sides of that pinkish box at the top of the screen which frames the name of the volumes. When the rom list tier has scrolling focus, you will see the icons just outside the pinkish box at the bottom of the screen which frames rom list names.
@@ -373,6 +376,8 @@
             <br>
             <b>GUI functions:</b>
             <br> <br>
+            The first three functions are used to populate favorites-style rom lists. These functions make changes to the file favorites.txt, which you can just as easily edit manually if you want. The last function is for changing the menu's display names of your roms, and will edit the file displaynames.txt, which may also be edited manually as an alternative to using this in-program function.
+            <br>
         <ul>
             <li>
                 <span class="code">collect</span> Adds the current rom to a buffer of collected roms. 
@@ -381,7 +386,7 @@
                 <span class="code">paste</span> Pastes all collected roms into the current rom list. The roms in a list are sorted alphabetically, and all pasted roms will be inserted alphabetically, so it doesn't matter where in the list you are when you hit the button which calls this function. Pasting clears the buffer.
             </li>
             <li>
-            <span class="code">delete</span> Deletes the current rom from the current rom list. This will only work if the rom is in the list because it was added as a favorite (which happens when you add it with the collect &amp paste features described just above, or if you manually added it in the file <span class="code">favorites.txt</span>). If the rom is in the list because it was loaded into this list because of a line in the <span class="code">[load roms]</span> section, then it ill not be deleted. The only way to remove such roms from rom lists is to delete the rom file from the directory it was loaded from.
+            <span class="code">delete</span> Deletes the current rom from the current rom list. This will only work if the rom is in the list because it was added as a favorite (which happens when you add it with the collect &amp paste features described just above, or if you manually added it in the file <span class="code">favorites.txt</span>). If the rom is in the list because it was loaded into this list because of a line in the <span class="code">[load roms]</span> section, then it will not be deleted. The only way to remove such roms from rom lists is to delete the rom file from the directory it was loaded from.
             </li>
             <li>
                 <span class="code">display name</span> Create or change the display name for the current rom. This only changes what you see in the menu list, it does not rename the rom file. The display name is not used for alphabetical sorting, only the file name is used. You will see two vertical lines on the input field. These lines represent the width of the area used to display rom names in the menu. If the name you type expands beyond these guides, then the name will exceed the allowed area for game names in the menu. 
