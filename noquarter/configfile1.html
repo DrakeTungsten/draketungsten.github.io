@@ -142,11 +142,16 @@
             </li>
         </ul>
         <h3>Starting Fresh</h3>
+        <p>To remove the demo data to make way for your data:</p>
+        <p>
         To start with a fresh noquarter.cfg file, you can either remove the lines of demo data under the various sections of the noquarter.cfg file which came with the download, or just copy or rename the file skeleton.cfg to "noquarter.cfg".
-        <br>
+        </p>
+        <p>
         If you don't want any of the slideshow screenshots, posters, banners, hardware logos, or sprites which came with the download (I included them for the demo), then delete them under the directories "slideshow", "posters", "banners", "logos", and "sprites".
-        <br> 
-        <br> 
+        </p>
+        <p>
+        Remove all of the data from displaynames.txt and favorites.txt. For the demo, displaynames.txt is full of .png files, which won't do you any good, even if you are partial to the display names I created. 
+        </p>
         <hr> 
         <hr> 
         <h3>The sections of noquarter.cfg:</h3>
@@ -160,7 +165,7 @@
             <span class="code">reference name</span>: Assign a name to this emulator configuration.
             </li>
             <li>
-            <span class="code">emulator directory</span>: This is the directory where the emulator which you want associated with the extension/file is sitting. No Quarter will change to this directory right before running the emulator. If the emulator is on your OS's path environmental variable and so it doesn't matter where it is called from, then you can use <span class="code">@</span> as the value for this filed, and No Quarter will stay in its own home directory when calling the emulator.
+            <span class="code">emulator directory</span>: This is the directory where the emulator which you want associated with the extension/file is sitting. No Quarter will change to this directory right before running the emulator. If the emulator is on your OS's path environmental variable and so it doesn't matter where it is called from, then you can use <span class="code">@</span> as the value for this field, and No Quarter will stay in its own home directory when calling the emulator.
             </li>
             <li>
                 <span class="code">emulator executable:</span> Self-explanatory, I hope.
