@@ -40,7 +40,7 @@
         Comments: Create a comment line (that is, a line to make notes for yourself and which will be ignored by the NoQuarter program), by starting it with a pound sign.
     </p> 
     </p> 
-        Directories: Wherever a directory may be part of the value for a field, you may use an absolute path or a path relative to where nq.exe is sitting on your hard drive. When you enter a directory which includes spaces as a field value, be sure to enclose it in quotes.
+    Directories: Wherever a directory may be part of the value for a field, you may use an absolute path or a path relative to where nq.exe is sitting on your hard drive. You do not have to supply book-end quotes for file or directory names which include spaces, unless such a space-containing name is in the <a href="#options">options field in the [emulator config] section</a>.
     </p> 
     <p> 
     <h3><span id="uservars">User-Defined Variables and Conditional Blocks</span></h3>
@@ -130,11 +130,11 @@
             <span class="code">logos</span> <br> Hardware logo images need to go in here.
             </li>
             <li>
-            <span class="code">posters</span> <br> Posters are the main images used to represent games. Posters need to go in this directory, or in a subdirectory of this directory. Posters may be .jpg or .png files.
+            <span class="code">posters</span> <br> Posters are the main images used to represent games. Posters need to go in this directory, or in a subdirectory of this directory. Posters may be .jpg or .png files. For now, keep these image file under half a meg, or there will be noticable stuttering when they are scrolled through in the menu.
             </li>
             <li>
             <span class="code">slideshow</span> <br>
-            Create a folders under this directory named after the base name of your roms, put the screenshots for the games under these folders, and now you've got the slideshows.
+            Create folders under this directory named after the base name of your roms, put the screenshots for the games under these folders, and now you've got the slideshows.
             </li>
             <li>
             <span class="code">sprites</span> <br>
@@ -171,7 +171,7 @@
                 <span class="code">emulator executable:</span> Self-explanatory, I hope.
             </li>
             <li>
-            <span class="code">options:</span> Put in whatever command-line arguments and switches (other than the rom name) you need for the emulator. By default, a space and then the rom name will automatically be added to the end of the list of arguments when a rom is selected to run. If the rom name needs to appear on the command line somewhere other than after a space at the end of the list of arguments, then place the <span class="code">@</span> symbol at the position in this field to represent where the rom name should go. You will also need to do this if your rom names have spaces in them, so you would have to put this: <span class="code">"@"</span> somewhere in this options field.
+            <span class="code" id="options">options:</span> Put in whatever command-line arguments and switches (other than the rom name) you need for the emulator. By default, a space and then the rom name will automatically be added to the end of the list of arguments when a rom is selected to run. If the rom name needs to appear on the command line somewhere other than after a space at the end of the list of arguments, then place the <span class="code">@</span> symbol at the position in this field to represent where the rom name should go. You will also need to do this if your rom names have spaces in them, so you would have to put this: <span class="code">"@"</span> somewhere in this options field.
             </li>
             <li>
                 <span class="code" id="argtype">argument type</span>: This is how much of the rom's path/name should be passed to the emulator. There are four valid values:
@@ -184,7 +184,7 @@
                 Be aware that if you use either <span class="code">base</span> or <span class="code">file</span> here, then that very likely means that your emulator has its own list of paths to search. This must be configured separately in your emulators.
             </li>
             <li>
-              <span class="code">input config FSO</span>: FSO = file system object. This is either a directory or a file (a directory for the on-controller-change-only version, a file for the per-game version). No Quarter can manage per-game controller configuration for any emulator which does not already natively support per-game controller configuration. It similarly allows you to manage emulator controller configuration when switching between input devices. This is a labor-intensive feature, so I advise skipping over this section until you've decided you will be using NQ and you are going to make use of this feature. Whether or not you use this feature, the least you need to know about it is that a valid FSO is required in this field, so I recommend using the emulator's directory as a dummy value for this field, and then you can skip down to reading about the <span class="code"><a href="#associations">[associations]</a></span> section.<br><br>
+              <span class="code">input config FSO</span>: (FSO = file system object) This is either a directory or a file (a directory for the on-controller-change-only version, a file for the per-game version). No Quarter can manage per-game controller configuration for any emulator which does not already natively support per-game controller configuration. It similarly allows you to manage emulator controller configuration when switching between input devices. This is a labor-intensive feature, so I advise skipping over this section until you've decided you will be using NQ and you are going to make use of this feature. Whether or not you use this feature, the least you need to know about it is that a valid FSO is required in this field, so I recommend using the emulator's directory as a dummy value for this field, and then you can skip down to reading about the <span class="code"><a href="#associations">[associations]</a></span> section.<br><br>
             Let's look at emulator input device swapping management first. You would use this feature in the case where an emulator natively supports per-game configuration, but you want to use NQ to manage changing those per-game configurations when you change input devices. For example, I use it for Mame and Mednafen when I switch between different input devices. On the <a href="configfile2.html">variables page</a>, you see there is a variable <span class="code">?input</span>, in which you create whatever name you want for an input device. NQ keeps track of the last value of this variable in the file <span class="code">lastcontroller</span>. This is a text file which contains the value of <span class="code">?input</span> (with the addition of a leading underscore) from the last time NQ was run. To allow the use of different input mappings based on switching between different physical input devices, repeat this process for each input device (this will only fully work if the emulator stores its per-game configs in a seperate file for each game, and if the default config file is in the same directory as the per-game config files):
             <br><br>
             <ol>  
@@ -280,11 +280,11 @@
         Documentation to come later.
     <p> 
     <h3>[ignore]</h3>
-    The next section, <span class="code">[load roms]</span>, is where you load files from directories into rom lists. Before we get there, you can exclude certain files in those directories from being loaded by naming them in this section. Separate file names by any mix of new lines or spaces (if you have spaces in your file names, then you are out of luck here). Use the full file name without the path, or you can use a directory and extension combo. I use this mostly for bios roms, and for parent/clones when you only want either the parent or the clone to be loaded into the menu. Format:
+    The next section, <span class="code">[load roms]</span>, is where you load files from directories into rom lists. Before we get there, you can exclude certain files in those directories from being loaded by naming them in this section. Separate file names by any mix of new lines or commas. Use the full file name without the path, or you can use a directory and extension combo. I use this mostly for bios roms, and for parent/clones when you only want either the parent or the clone to be loaded into the menu. Format:
     <br><br>
     <span class="code"><i>file name</i> | <i>directory and extension combo</i></span> 
     <br><br>
-    The directory and extension combo works the same here as it does for the associations section. For example, I use this: <span class="code">roms\psx\.bin</span> because I load this directory in the <span class="code">[load roms]</span> section, but I only want the cue files. There are also .bin files in this directory, but since .bin is associated with a Genesis emulator, those .bin files would get loaded too if I did not have this "ignore" entry for them.
+    The directory and extension combo works the same here as it does for the associations section. For example, I use this: <span class="code">roms\psx\.bin</span> because I load this directory in the [load roms] section, but I only want the cue files. There are also .bin files in this directory, but since .bin is associated with a Genesis emulator, those .bin files would get loaded too if I did not have this "ignore" entry for them.
     </p> 
     <p> 
         <h3>[load roms]</h3>
@@ -300,7 +300,7 @@
         Use the second format for rom lists which will only be populated by the <span class="code">favorites.txt</span> file. Such rom lists do still need to be defined in this section.
         <ul>
             <li>
-            <span class="code">volume</span>: The name of the volume which the rom list (the next field) belongs to. Naming the volume here defines/creates it. When you cycle through volumes as you use NQ, they will cycle in the order that they first appear on lines in this section of the config file. The only invalid characters for volume names are the comma and the semicolon.
+            <span class="code">volume</span>: The name of the volume which the rom list (the next field) belongs to. Naming the volume here defines/creates it. When you cycle through volumes as you use NQ, they will cycle in the order that they first appear on lines in this section of the config file. The only invalid characters for volume names are the comma and the semicolon, and the first character cannot be a pound sign.
             </li>
             <li>
             <span class="code">rom list</span>: The name of the rom list which the roms will be loaded into. Naming the rom list here defines/creates it. When you cycle through rom lists as you use NQ, they will cycle in the order that they first appear on lines in this section of the config file. The only invalid characters for rom list names are the comma and the semicolon.

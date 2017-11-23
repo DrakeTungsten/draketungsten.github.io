@@ -50,10 +50,10 @@
         CPU: The least-powerful CPU tested with is a 3.0 GHz P4, and it works fine on that. I see no reason why a PIII would have any issues.
         </li>
         <li>
-        RAM: About 1 MB per game.
+        RAM: The biggest RAM-eater is the images for the hardware logos (because they are loaded at start-up and are persistent until you exit), but I imagine most people would have less than a dozen of these. Unless you use more logos than that, or also have thousands of games, you can get by with 100 MB.
         </li>
         <li>
-        Graphics Card: Also about 1 MB per game. The demo has about 60 games, and a video card with 64 MB can't quite load all of the textures.
+        Graphics Card: Requirement for this is also based on quantity and size of hardware logo images, plus the size of your largest sprite sheet (for the rascal animations). Graphics hardware acceleration is required, but unless you've went hog-wild with the hardware logos and sprites, you'll be fine with 64 MB, and likely even 32 MB of video RAM.
         </li>
     </ul>
     
@@ -137,10 +137,7 @@
             Much of the display is customizable. You're stuck with the relative positioning of the three main rectangles, but their lengths, widths, and padding may be changed to whatever you like. You can also change the fonts and font size of on-screen text.  However, due to the simplistic layout, NQ probably isn't going to look very good at resolutions greater than 640 * 480.
         </li>
         <li>
-        No Quarter is rather memory hungry. As mentioned in the System Requirements above, you will need about 1 MB per game in both main RAM and on your video card. I am still working to bring this down.
-        </li>
-        <li>
-            To make full use of all the features, you will end up doing some work for every game. For this reason and for the previous point, I do not recommend this FE for folks who are looking for a FE to manage a large number of roms.
+            To make full use of all the features, you will end up doing some work for every game. For this reason, I do not recommend this FE for folks who are looking for a FE to manage a large number of roms.
         </li>
         <li>
             I'm having trouble getting most emulators to run correctly unless NQ first minimizes itself. For now, most emulators will need to be configured to have NQ minimize itself before the emulator runs, exposing the OS desktop. 
@@ -152,6 +149,9 @@
     </p>
     <ul>
         <li>
+        Since posters are read from disk each time as needed, there can be a slight stutter in scrolling the menu as a poster is loaded, if the image file is not small. I plan to attack this issue two ways: Create copies of the posters sized precisely as needed and save to new files, which will become the files read in by the porgram, and also read the files in their own thread. Since posters change halfway through the scrolling animation, a small file could be read in and ready to go by the time it's needed to be displayed. 
+        </li>
+        <li>
         Integrating Ultrastick map uploading.
         </li>
         <li>
@@ -162,9 +162,6 @@
         </li>
         <li>
         I might do something similar with Joy2key as I do with AHK, where if you have Joy2key configurations sitting in a designated folder, and which are named after the roms and/or emulators, then the configuration will be automatically applied when the game runs.
-        </li>
-        <li>
-        Try to reduce the memory footprint.
         </li>
         <li>
         Try to create a handing off of the video between NQ and the emulators which doesn't show the OS desktop.
@@ -209,7 +206,7 @@
             "x" jumps to the middle rom of the current rom list.
         </li>
         <li>
-            "1" launches the current game. Again, there are no emulators or games with this download, so it just launches Notepad, then waits for you to exit Notepad before returning to the FE..
+            "1" launches the current game. Again, there are no emulators or games with this download, so it just launches Notepad, then waits for you to exit Notepad before returning to the FE.
         </li>
         <li>
             "Escape" exits the program.
