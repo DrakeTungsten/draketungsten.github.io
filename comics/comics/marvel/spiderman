@@ -1,0 +1,131 @@
+# af = Amazing Fantasy
+# as = Amazing Spider-Man
+# ut = Untold Tales Of Spider-Man
+# uto = .Untold Tales Of Spider-Man Omnibus
+# ditko = .Spider-Man Ditko Omnibus
+# stern = .Spider-Man Stern Omnibus
+# sc = Spider-Man Classics
+# mt = Marvel Tales
+# sl = Shadows And Light
+# tu = Marvel Team-Up
+# mf = Marvel Fanfare
+# pp = Peter Parker
+# ws = Web Of Spider-Man
+# tw = Tangled Web
+# ht = .Spidey/Torch
+# wv = Spider-Man vs Wolverine
+# jw = .The Death Of Jean DeWolff
+# kr = .Kraven's Last Hunt
+# fm = .The Complete Frank Miller Spider-Man
+# mw5 = .Spider-Man Masterworks V
+# mcf = .Spider-Man McFarlane Omnibus
+
+: TW 14 | AF 15-17 | ASM 1,3 | UT 1-2 | ASM 7 | UT 3-4 | ASM 9 | UT 5-8 | ASM 11 | UT 10 | ASM 12 | UT 11-18, 25  | ASM 25, 27-20
+tw 014
+ditko *&nbsp<br>&nbsp<br>Doc Ock<br>Vulture<br>Electro<br>Doc Ock<br>Doc Ock<br>Spider Slayer<br>Green Goblin<br>Molten Man<br>Scorpion<br>Cat Burglar @Amazing Fantasy 14<br>ASM 1<br>ASM 3<br>ASM 7<br>ASM 9<br>ASM 11<br>ASM 12<br>ASM 25<br>ASM 27<br>ASM 28<br>ASM 29<br>ASM 30
+uto *&nbsp<br>&nbsp<br>&nbsp<br>Scorcher<br>Batwing<br>Sandman<br>The Spacemen<br>Vulture<br>Torch, Wizard<br>Electro<br>Enforcers<br>Commanda<br>Electro, Eel<br>Betty Brant<br>Bluebird<br>Scorcher<br>Betty Brant<br>MJ<br>Hawkeye<br>Headsman<br>Green Goblin  @Amazing Fantasy 15<br>Amazing Fantasy 16<br>Amazing Fantasy 17<br> Untold Tales 1<br>Untold Tales 2<br>Untold Tales 3<br>Untold Tales 4<br>Untold Tales 5<br>Untold Tales 6<br>Untold Tales 7<br>Untold Tales 8<br>Untold Tales 10<br>Untold Tales 11<br>Untold Tales 12<br>Untold Tales 13<br>Untold Tales 14<br>Untold Tales 15<br>Untold Tales 16<br>Untold Tales 17<br>Untold Tales 18<br>Untold Tales 25 
+#af 015
+#af 016
+#af 017
+#af 018
+#sc 002  @as 001          ^1
+#sc 004  @as 003 *Doc Ock ^2
+#ut 001 *Scorcher ^1
+#ut 002 *Batwing  ^2
+#sc 008  @as 007 *Vulture ^1
+#ut 003 *Sandman          ^2
+#ut 004 *The Spacemen     ^1
+#sc 010  @as 009 *Electro ^2
+#ut 005 *Vulture          ^1
+#ut 006  *Torch, Wizard   ^2
+#ut 007  *Electro         ^1
+#ut 008  *Enforcers       ^2
+#sc 012  @as 011 *Doc Ock ^1
+#ut 010  *Commanda        ^2
+#sc 013  @as 012 *Doc Ock ^1
+#ut 011 *Electro, Eel     ^2
+#ut 012 *Betty Brant ^1
+#ut 013 *Blue Bird   ^2
+#ut 014 *Scorcher
+#ut 015 *Betty Brant
+#ut 016 *MJ
+#ut 017 *Hawkeye
+#ut 018 *Headsman
+#ut 025  *Green Goblin
+#mt 163  @as 025 *Spider Slayer
+#mt 165  @as 027 *Green Goblin
+#mt 166  @as 028 *Molten Man
+#mt 168  @as 029 *Scorpion
+#mt 169  @as 030 *Cat Burglar
+#
+mw5 *Rhino<br>Rhino<br>Shocker<br>Kingpin @+ASM 41<br>+ASM 42<br>+ASM 46<br>+ASM 50 @MT 180<br>MT 183<br>&nbsp<br>&nbsp
+#as 041 @mt 180 *Rhino
+#as 042 @mt 183 *Rhino
+#as 046 *Shocker
+#as 050 *Kingpin
+#
+ht *Torch @Spidey/Torch 02<br>Spidey/Torch 03
+#mt 077  @as 096
+#mt 078  @as 097
+#mt 079  @as 098
+#mt 080  @as 099
+#mt 252  @as 101
+#mt 253  @as 102
+#mt 085  @as 106
+#mt 086  @as 107
+#mt 098  @as 121
+#mt 099  @as 122
+#as Annual 13 *1979 Doc Ock Wolfman/Byrne
+#as Annual 14 *Doom/Strange O'Neil/Miller              @TCFMSM  @mt 200
+#as Annual 15 *1981<br> Doc Ock/Punisher O'Neil/Miller @TCFMSM
+#tu Annual 04 *1981<br> Cage/Fist/DD Miller/Trimpe     @TCFMSM
+fm  *Doom/Strange<br>DocOck/Punisher  @ASM Annual 14<br>ASM Annual 15 @MT 200
+stern @+231<br>+232<br>+238<br>+239<br>+248<br>+249<br>+250<br>+251<br>+252
+#as 231 *Cobra, Hyde
+#as 232 *Cobra, Hyde
+#as 248 "The Kid Who Collects Spider-Man"
+#mt 257  @as 238
+#mt 258  @as 239
+#mt 259  @as 249
+#mt 260  @as 250
+#mt 261  @as 251
+#mt 266  @as 252 *Black costume
+mt 270  @as 256 *Puma
+mt 271  @as 257 *Puma
+mt 272  @as 258 *FF
+mt 273  @as 259 *MJ
+mt 274  @as 260 *Hobgoblin
+mt 275  @as 261 *Hobgoblin
+mt 276  @as 263 *Spider-Kid
+mt 277  @as 265 *Silver Sable
+as 266  *Toad
+as 267  *The Commuter
+mt 278  @as 268   *Gold Fever
+mt 281  @as 271   *Crusher Hogan
+#jw @pp 107-110
+mt 283  @as 275   *Hobgoblin
+mt 284  @as 276   *Unmasked
+pp 113            *A House Divided
+pp 119            *Sabretooth
+#mt 288  @as 280   *Sep 86 *Sinister Syndicate
+#mt 289  @as 281   *Oct 86 *Sinister Syndicate
+pp 121            *Rashomon
+mf 027
+wv
+as 289            *Hobgoblin Revealed
+ws 029            *Wolverine
+kr
+pp 134
+pp 135
+pp 136
+mcf @+300<br>+316<br>+317<br>+318<br>+319
+as 347
+sl 003
+pp 186
+pp 187
+pp 188
+pp 189
+pp 190
+pp 200
+tw 005 *Rhino
+tw 006 *Rhino

@@ -1,0 +1,14 @@
+# ac1 = KBAC Vol I
+# ac2 = KBAC Vol II
+# life = .Life In The Big City
+# conf = .Confession
+# fama = .Family Album
+# tarn = .The Tarnished Angel
+
+life @KBAC (vol I) 1-6
+conf @KBAC (vol II) 4-9, 1/2
+fama @KBAC (vol II) 1-3, 10-13
+tarn @KBAC (vol II) 14-20
+ac2 21
+ac2 22
+

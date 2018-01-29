@@ -1,0 +1,28 @@
+# gs = Giant-Size Master Of Kung Fu
+# kf = Master Of Kung Fu
+
+kf 015
+kf 017
+gs 002 "Death Masque" @p 159-183
+kf 022 "A Fortune Of Death"
+kf 025 "Rites Of Courage, Fists Of Death" @p 335
+gs 003 "Fires Of Rebirth" @p 355-395
+kf 029 "The Crystal Connection" @p 501
+kf 030 "A Gulf Of Lions" @p 521
+kf 031 "SnowBuster" @p 541
+:
+kf 038 *Cat
+kf 039 *Cat "Fight Without Pity"
+kf 040 "The Murder Agency" @p 90
+kf 042 "The Clock Of Shattered Time" @p 127
+kf 043 "A Flash Of Purple Sparks" @p 146
+kf 044 "Golden Daggers" @p 165
+kf 045 "The Death Seed" @p 184
+kf 046
+kf 047
+kf 048
+kf 049
+kf 050
+kf 055 "The Ages Of Death" @p 359
+# ?? - 89 "Warriors of the Golden Dawn"
+

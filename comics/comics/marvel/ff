@@ -1,0 +1,73 @@
+# ff = Fantastic Four
+# f2 = Fantastic Four II
+# gc = Marvel's Greatest Comics
+# sm = The Sub-Mariner
+# u1 = She-Hulk '90s
+# u2 = She-Hulk '00s
+# ta = Marvel Triple Action
+# hl = Heroes And Legends
+# cg = SS: The Coming Of Galactus
+# perez1 = .Fantastic Four Visionaries: George Perez v1
+# perez2 = .Fantastic Four Visionaries: George Perez v2
+# mf = Marvel Fanfare
+# chan = .The Big Change
+# ffomni2 = .FF Omnibus vII
+# advff = Marvel Adventures: Fantastic Four
+
+
+sm 008 *The Thing
+ff 001 *Marvel Milestone
+ff 005 *Marvel Milestone
+ff Special Edition *1984 @ff Annual #1
+hl 1-shot
+
+
+ffomni2 @+Fantastc Four 35<br>+Fantastic Four 48-60 @MGC 27<br>MGC 36-41<br>MTA 1-4
+#ff 035 @gc 027 @o2
+# # cg @o2
+#ff 048 @gc 036 @o2 *Silver Surfer
+#ff 049 @gc 036 @o2 *Silver Surfer
+#ff 050 @gc 037 @o2 *Silver Surfer
+#ff 051 "This Man, This Monster" @gc 038 @o2
+#ff 052 *Black Panther @ &nbsp @o2
+#ff 053 *Black Panther @ &nbsp @o2
+#ff 054  *Inhumans @gc 041 @o2
+# # ff 55 *Ben vs Surfer
+# # ff 56 *Klaw
+#ff 057 *Doom @ &nbsp @o2
+#ff 058 *Doom @ &nbsp @o2
+#ff 059 *Doom @ta 003 @o2 
+#ff 060 *Doom @ta 004 @o2
+
+
+
+#ff 061 *Sandman @gc 044 
+#ff 062 *Blastaar @gc 045 
+#ff 063 *Sandman<br>Blastaar @gc 046 
+#ff 064 *Kree Sentry @gc 047 
+#ff 065 *Ronan The Accuser
+# ff 066 *Beehive
+# ff 067 *Him     
+# ff Annual #5 *Psych-man, Inhumans, Surfer/Quasimodo
+# ff 068 *Ben brainwashed
+# ff 069 *Ben brainwashed
+# ff 070 *Ben brainwashed
+# ff 071 *Mad Thinker's Android  @gc 54
+#ff 072 *Surfer rampage @gc 042 
+#ff 081 *The Wizard @gc 063 
+#ff 082 *Maximus @gc 064 
+#ff 083 *Maximus @gc 065 
+# gc 068 @ff 086 *Doom 
+# gc 069 @ff 087 *Doom
+# gc 070 @ff 088 *Mole Man
+# gc 076 @ff 095 *Monocle
+:
+perez1 *Hulk<br>Hulk @+166<br>+167
+perez2
+chan *Hulk & The Thing
+mf 015     ^1 }
+advff 039  ^2 }
+f2 055     ^1 }
+f2 056     ^2 }
+# She-Hulk 1-8 no go
+---

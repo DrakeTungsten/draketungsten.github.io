@@ -1,0 +1,90 @@
+# aot = .Ages Of Thunder
+# mrvl = .Marvels
+# asgd = .Tales Of Asgard 
+# thr1 = Thor (I)
+# blth = .Thor: Blood Oath
+# thr2 = Thor (II)
+# sent = .Sentinel Of Liberty
+# irag = The Iron Age
+# case = Captain America Special Edition
+# cap1 = Captain America (I)
+# cap2 = Captain America (II)
+# cap3 = Captain America (III)
+# cap4 = Captain America (IV)
+# irn1 = Iron Man (I)
+# irn2 = Iron Man (II)
+# avcl = Avengers Classic
+# avr1 = Avengers (I)
+# avr2 = Avengers (II)
+# avr3 = Avengers (III)
+# subm = The Sub-Mariner
+# dfnr = Defenders
+# avdf = .Avengers vs Defenders
+# spns = Tales Of Suspense
+# avrw = Avengers West Coast
+# mrvu = Marvel Universe
+# caps = Cap America: Sentinel of Liberty
+# spct = Marvel Spectacular
+# dblf = Marvel Double Feature
+# supa = Marvel Super Action
+# fnfr = Marvel Fanfare
+# sh&l = Shadows And Light
+# avrx = Avengers Special
+# hero = Marvel Super-Heroes
+# fant = Fantasy Masterpieces
+# kree = .Kree/Skrull War
+# serp = .The Serpent Crown
+# mprm = Marvel Premiere
+# spot = Marvel Spotlight
+# aemh = Earth's Mightiest Heroes
+# vkng = .Vikings
+# tsap = .To Serve And Protect
+# rna1 = .Runaways Vol I 
+# rna2 = .Runaways Vol II
+# rna3 = .Runaways Vol III
+# ynga = Young Avengers
+# newv = New Avengers
+# wntr = .The Winter Soldier
+# rmen = .The Red Menace
+# side = .Sidekicks
+# famm = .Family Matters
+# capo1 = .Captain America Omnibus I
+# capo2 = .Captain America Omnibus II
+# young1 = .Young Avengers I
+# secav = Secret Avengers
+
+aot
+asgd
+thr1 Giant-Sized # 1  *1975 @Annual #2 @JIM Annual #1
+:
+blth
+#spct 008 @Thor 137 *Ulik
+#spct 009 @Thor 138 *Ulik
+#spct 010 @Thor 139 *Ulik
+#spct 013 @Thor 142 *Super-Skrull
+thr1 156 *Mangog
+thr1 157 *Mangog
+thr1 166 *Him
+thr1 175 *Loki
+#thr1 385 ^2 *Thor vs Hulk 
+thr1 260
+thr1 261
+thr1 263
+spot 030 *Warriors Three
+thr1 337 "Doom!"
+thr1 338 "A Fool And His Hammer..."
+thr1 339 "Something Old, Something New..."
+thr1 340 "Though Hel Should Bar The Way"
+thr1 353 "Doom II"
+thr1 355 "The Icy Hearts"
+thr1 357 "A New Deal From An Old Deck"
+thr1 359 "The Grand Alliance"
+thr1 373 "The Gift Of Death"
+thr1 374 "Fires Of The Night"
+thr1 377 "This Hollowed Armor"
+thr1 378 "When Loki Stood Alone"
+thr1 379 "There Were Giants In Those Days"
+thr1 380 "Mjolnir's Song"
+thr1 381 "Ye Olde Shell Game"
+thr1 382 "Journey Into Mystery"
+vkng

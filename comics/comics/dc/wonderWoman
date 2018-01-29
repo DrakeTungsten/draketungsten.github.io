@@ -1,0 +1,19 @@
+# perez = .Wonder Woman Perez Omnibus
+# ww = Wonder Woman
+# hk = .Hiketeia
+# de = .Down To Earth
+# br = .Bitter Rivals
+# eg = .The Eyes Of The Gorgon
+
+perez
+ww 030
+ww 031 "Savage Moon"
+ww 033
+#hk
+de @ww 195-200
+br @ww 201-205 *-201
+eg @ww 206-213
+ww 215
+ww 216
+ww 217
+# Infinite Crisis...

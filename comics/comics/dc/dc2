@@ -1,0 +1,584 @@
+# 52 = .52
+# wed = .Wednesday Comics
+# gldl = .Green Lantern: Dragon Lord
+# msos = Society Of Super-Heroes
+# gotd = .Guns Of The Dragon
+# gasf = Golden Age Secret Files
+# pos = Power Of Shazam
+# tobab = .Tales Of The Batman:<br>Alan Brennert
+# act = Action
+# adcu = Adventures In The DCU
+# aos = Adventures Of Superman
+# ali = .Superman Vs Muhammad Ali
+# allstar = .All Star Superman
+# aqua = Aquaman
+# asd1 = .Adventures of Superman v1
+# asd3 = .Adventures of Superman v3
+# asm = Adventures Of Superman
+# ass = All-Star Squadron
+# batc = Batman Chronicles
+# bb = Brave And The Bold
+# bbx = Brave And The Bold (mini)
+# bdes = .The Book Of Destiny
+# bel = .I Can't Believe<br>It's Not The Justice League
+# bmca = Batman / Captain America
+# bop = Birds Of Prey
+# bsa = Bats & Supes Adventures
+# cam1 = .Camelot Falls v1
+# cam2 = .Camelot Falls v2
+# ssvu = .Villains United
+# ssmm = .Money For Murder
+# cic = .Cat's Cradle
+# cie = .Crisis On Infinite Earths
+# cme = .Crisis On Multiple Earths III
+# dc2k = DC 2000
+# dcc = DC Challenge
+# dcp = DC Comics Presents
+# dcpgl = DC Presents: Green Lantern
+# glantern = Green Lantern
+# ded = .Deadshot
+# dep = .The Depths
+# drkh = .The Darkest House
+# et2 = .Justice League: Earth 2
+# flash = Flash
+# flash2 = Flash 2
+# guy = Guy Gardner
+# legtom = Legends Of Tomorrow
+# g13 = .Superman/Gen 13
+# ga = Green Arrow
+# ga2 = Green Arrow 2
+# gen1 = Generations
+# gen2 = Generations II
+# gla = .Green Lantern/Green Arrow
+# hik = .The Hiketeia
+# hit = Hitman
+# hot = .Honor Among Thieves
+# hulk = Superman vs Hulk
+# hulk2 = Batman vs Hulk
+# fudd = Batman / Fudd
+# spidey1 = Superman/Spider-Man
+# spidey2 = Superman/Spider-Man
+# idf = The Immortal Dr Fate
+# newf = The New Frontier
+# inc = JLA Incarnations
+# inv = .Invasion
+# j80 = JLA 80-page Giant
+# jim = Jimmy Olson
+# jimo = .Jimmy Olson Adventures
+# jla = JLA
+# jle = Justice League Europe
+# jli = Justice League International
+# jli4 = .JLI vol IV
+# jli5 = .JLI vol V
+# jli6 = .JLI vol VI
+# jl = Justice League
+# jlq = Justice League Quarterly
+# jlu = Justice League Unlimited
+# js1 = .Justice Society I
+# js2 = .Justice Society II
+# jsa = The Justice Society
+# jsaas = .JSA All-Stars
+# jsoa = Justice Society of America
+# jsaclass = JSA Classified
+# jst = Justice League Of America
+# justice = .Justice
+# kng = .The Kingdom
+# krp = The Krypton Chronicles
+# lcl = JLA Classified
+# ldc = Legends Of The DCU
+# darkseidspec = Kirby 100
+# leg = Legacies
+# nlbc = Kirby 100th
+# lo1 = .A League Of One
+# lotdk = Legends Of The Dark Knight
+# luk = .The Lords Of Luck
+# meg = .DC 1,000,000
+# mmh = Martian Manhunter
+# mor1 = .JLA I
+# mor2 = .JLA II
+# mor3 = .JLA III
+# mos = Man Of Steel
+# thunder = Thunder World
+# nye = New Year's Evil
+# orig = .DC Origins
+# pow = .Power Girl
+# repb = .The Reptile Brain
+# retro = JLA Retro
+# s6 = Secret Six
+# sbm = Superman/Batman
+# scl = JSA Classified
+# seasons = .A Superman For All Seasons
+# sec2 = Secret Origins v2
+# sergio = Sergio Destroys DC
+# shazam = .Superman / Shazam
+# showcase = Showcase
+# silver = The Silver Age
+# sma = Superman Adventures
+# smad = Superman Adventures
+# smatpb = .Superman Adventures
+# across = .Across The Universe
+# so = Secret Origins
+# solo = Solo
+# spctr = Spectre
+# spell = .Bloodspell
+# ssq = Suicide Squad
+# strength = .Strength
+# sup = Superman
+# swamp = Swamp Thing
+# glcq = Green Lantern Corps Quarterly
+# tbf = .Trial By Fire
+# nso = .The Nightshade Odyssey
+# ssq3 = .Rogues
+# ssq4 = .The Janus Directive
+# ssq5 = .Apokolips Now
+# ssq6 = .The Phoenix Gambit
+# tbw = .The Battle Within
+# pp = .Perfect Pitch
+# bnc = .Blood And Circuits
+# dwinter = .Dead Of Winter
+# kings = .A King's Game
+# pawn = .Pawn Breaks
+# fall = .Fall Of The Wall
+# nttv2 = .New Teen Titans v2
+# ttx = Titans/X-Men
+# unh = .Unhinged
+# wf1990 = .World's Finest
+# wfv2 = .World's Finest Vol II
+# batsunday = .Batman Sunday Classics<br>1943 - 1946
+# wht = .Whatever Happened To<br> The Man Of Tomorrow
+# ww = Wonder Woman
+# ww75 = Wonder Woman<br>75th Anniversary
+# xmas = X-mas With The Superheroes
+# xover = .Crossover Classics
+# bmbw = Batman Black And White
+# bmbw3 = Batman Black And White v3
+# gk = Gotham Knights
+# sens = Sensation Comics
+# sens1 = .Sensation Comics v1
+# lastson = .Last Son
+# RAB = .The Ring, The Arrow,<br>And The Bat
+# convq = Convergence: The Question
+# convsg = Convergence: Supergirl
+# convtec = Convergence: Detective
+# convpm = Convergence: Plastic Man
+# convwf = Convergence: World's Finest
+# convact = Convergence: Action
+# convglc = Convergence: GLC
+# convnwo = Convergence: Nightwing/Oracle
+# jl52 = Justice League
+# misterm = Mister Miracle
+# mmtpb = .Mister Miracle
+# ganthet = Ganthet's Tale
+# gods = .War Of The Gods
+# xmen = Teen Titans/X-Men
+# ww77 = Wonder Woman 77
+# loww = .Legend Of Wonder Woman
+# clown = .The Joker:<br>Clown Prince Of Crime
+# tpz = .The Phantom Zone
+# avengers = JLA/Avengers
+# peace = .Peace On Earth
+# truth = .Spirit Of Truth
+# dcuv = DCU Villains
+# dcuholb = DCU Holiday Bash
+# infhol = DCU Infinite Holiday Special
+# ngsf = New Gods Secret Files
+# plas = Plastic Man
+# wgs = .World's Greatest<br>Super-Heroes
+# spidey = Batman / Spider-Man
+# lotdc = Legends Of The Dark Claw
+# dca = Dark Claw Adventures
+# sb = Spider-Boy
+# sbtu = Spider-Boy Team-Up
+# supsol = Super Soldier
+# ssmow = Super Soldier: Man Of War
+# loboduck = Lobo The Duck
+# roadrunner = Lobo / Road Runner
+# wtg = Wild Times: Grifter
+# advcom = Adventure Comics
+# manh = .Manhunter
+# ps = Phantom Stranger
+# artwalt = .The Art Of Walt Simonson
+# dk = .Demon Knights
+# bmww = Batman 66<br>Wonder Woman 77
+# gahm = .Hunter's Moon
+# jgl = .Adventures Of Superman<br>Jose Garcia-Lopez
+# access = Unlimited Access
+# sdtu = Scooby-Doo Team-Up
+
+# skip Titans 40-41
+:
+dk
+gldl  }
+JSA 043 *Vandal Savage<br>Black Adam ^1 }
+JSA 044 *Vandal Savage<br>Black Adam ^2 }
+dcuv 001 *Vandal Savage ^1 }
+msos 001 *Vandal Savage ^2 }
+gotd   }
+: <center><h4>MYSTERY MEN</h4></center>
+so  001 ^1 *Superman }
+mos 080 ^2 *Superman }
+mos 081 ^1 *Superman }
+mos 082 ^2 *Superman }
+so   006  *Batman                                   ^1 }
+bmbw3 002 *Batman "Silent Knight... Unholy Knight"  ^2 }
+gen1 001  *Superman<br>Batman }
+so  003 *Shazam          ^1  }
+so  005 *Crimson Avenger ^2  }
+so  024 *Dr Fate         ^1  }
+so  025 *The Atom        ^2  }
+leg 001 *The Atom<br>Sandman         ^1                   }
+spctr Annual 1 *Spectre<br>Dr Fate   ^2                   }
+Hawkman Annual 2 *Hawkman                             ^1  }
+wtg 001 *Grifter  ^2 }
+jsaas  "Blind Spot" *Dr Mid Nite
+: <center><h4>WWII</h4></center>
+so  031 *JSA        ^1       }
+so  019 *Uncle Sam  ^2       }
+leg 002 *JSA<br>Guardian<br>Seven Soldiers   ^1  }
+nlbc 1 *Newsboy Legion<br>Boy Commandos      ^2  }
+bmbw 004 "Heroes" *Batman             ^1 }
+gk 009 "Blackout" *Batman<br>Catwoman ^2 }
+ass 001 ^1 }
+ass 002 ^2 }
+ass 003 ^1 }
+ass 004 ^2 }
+:
+jgl *Superman<br>Wonder Woman
+:
+dc2k 001 *JLA<br>JSA ^1 }
+dc2k 002 *JLA<br>JSA ^2 }
+bmca 1 *Batman<br>Captain America        }
+gen2 001 *Batman<br>Superman             }
+supsol   ^1 }
+ssmow    ^2 }
+Starman 042 *Starman<br>Demon     ^1     }
+Starman 044 *Phantom Lady         ^2     }
+gasf 001    *JSA  "Class Struggle"     ^1  }
+dcuholb 002 *JSA  "I Left My Heart..." ^2  }
+pos 008 *Bulletman<br>Spy Smasher        }
+loww *Wonder Woman
+: <center><h4>EARTH 2</h4></center>
+# batsunday *Batman<br>Robin
+wfv2 *Superman<br>Batman @World's Finest <br>86-101
+infhol 001 *Superman<br>Batman}
+solo 009 "Batman 1947" *Batman               ^1 }
+pos 024 *Spy Smasher "Trail Of The Scorpion" ^2 }
+idf 001 *Dr Fate @1st Issue Special #9       ^1 }
+idf 002 *Dr Fate @Flash Backups              ^2 }
+idf 003 *Dr Fate @Flash Backups                 }
+newf 002  ^1 }
+newf 004  ^2 }
+newf 005  ^1 }
+newf 006  ^2 }
+newf Special }
+# js1 *Power Girl @All Star Comics 58-67 @DC Special #29
+# js2 *Power Girl @All Star Comics 68-74 @Adventure 461-466
+#bb 182 ^1 }
+#bb 197 ^2 }
+tobab @B&ampB 182<br>B&ampB 197
+convtec 1 *Robin<br>Huntress ^1 }
+convtec 2 *Robin<br>Huntress ^2 }
+#convact 1 *Superman<br>Power Girl ^1 }
+#convact 2 *Superman<br>Power Girl ^2 }
+: <center><h4>STRANGE VISITORS</h4></center>
+jl52 23.1 *Darkseid                             ^1 }
+ngsf 001  *Granny Goodness "Learn... And Live!" ^2 } 
+sens 002 *Wonder Woman "Brace Yourself" @digital 004 ^1 }
+sens 005 *Wonder Woman<br>Darkseid  "Dig For Fire"   ^2 }
+bmww 001 *Bruce Wayne<br>Wonder Woman ^1 }
+bmww 002 *Bruce Wayne<br>Wonder Woman ^2 }
+so 035 *Martian Manhunter                          ^1 }
+mmh 021  "Revelations" *J'onn J'onzz<br>Abin Sur   ^2 }
+act 900 *Jor-El "Life Support" ^1 }
+sec2 001 *Super-moms           ^2 }
+sma 026  *Mxyzptlk }
+leg 006 *LSH "Snapshot: Revision"                  ^1 }
+mmh 020  "Revelations" *J'onn J'onzz<br>Clark Kent ^2 }
+mos 002  *Lois      ^1 }
+asm Annual 7 *SCU   ^2 }
+seasons *Clark<br>Lana<br>Luthor
+smatpb *Luthor<br>Metallo<br>&nbsp @+Adventures 1<br>+Adventures 2<br>+Adventures 4
+hulk 1 *Hulk }
+aos 010 *Metallo "Dear Superman" ^1 }
+sma 024 *Parasite                ^2 } 
+sma 030 *Kryptonians ^1 }
+sma 031 *Kryptonians ^2 }
+sma 036 *Puppy dog   ^1 }
+sma 041 *21          ^2 }
+: <center><h4>SILVER AGE JUSTICE</h4></center>
+: <center>Cornerstone</center>
+gk 010 "Guardian" *Batman<br>Alan Scott    ^1 }
+ga Annual #7 *Green Arrow "Year One"       ^2 }
+ga2 025 *Green Arrow<br>Batman "Zero Year"     ^1 }
+flash2 025 *Barry Allen<br>Bullock "Zero Year" ^2 }
+so 050     *Barry Allen<br>Jay Garrick "The Flash Of Two Worlds"  ^1 }
+jsoa 050   *JSA<br>JLA "Cornerstone"                              ^2 }
+:
+RAB *Green Arrow<br>Green Lantern<br>Batman
+orig
+wgs *Superman<br>Wonder Woman<br>Batman<br>Shazam "Peace On Earth|Spirit Of Truth|War On Crime|Power Of Hope"
+: <center>Bold Incarnations</center>
+inc 001    *JLA<br>JSA             ^1 }
+inc 002    *JLA<br>Batman<br>Grodd ^2 }
+ldc 006 *Robin<br>Superman     ^1 }
+xmas 002 *Deadman<br>Kara    ^2  }
+leg 004    *The Next Generation ^1 }
+bbx 002    *Kid Lantern         ^2 }
+bbx 003    *Alan Scott<br>Jay Garrick             ^1 }
+bbx 004    *Flash<br>Green Lantern<br>Green Arrow ^2 }
+ww Retro *Wonder Woman   ^1 }
+ww75 *Princess Bouquet   ^2 }
+ww 008   *Minerva       ^1 }
+ww 23.1  *Cheetah       ^2 }
+so 040   *Grodd        "Gorilla in Our Midst"  ^1 }
+swamp Annual #3 *Grodd "Distant Cousins"       ^2 }
+:
+wf1990 *Joker<br>Luthor
+asd3 *Metallo<br>Sugar &amp Spike "Exposed|The Coming Of..." @ AoS 13<br>AoS 14. p 121 @digital 39<br>digital 42
+wed *Batman<br>Superman<br>Hawkman<br>Green Lantern<br>Metal Men<br>Wonder Woman
+# aos 013 *Metallo "Exposed" ^1 @digital 37<br>digital 38<br>digital 39 }
+# aos 014 *Sugar &amp Spike  ^2 @digital 42 }
+: <center>The Sensational Silver Age</center>
+sma 025 *Superman<br>Batgirl ^1     }      
+dcp Superman Special *Stan Lee ^2   }
+bmww 003 *Batman<br>Wonder Woman ^1 }
+bmww 004 *Batman<br>Wonder Woman ^2 }
+sens 004 *Wonder Woman<br>Deadman "Attack Of The 500' WW|Ghosts And Gods" @digital 010<br>digital 008  ^1 }
+plas 001 *Plastic Man ^2 }
+silver 1 *Dial H<br>Martian Manhunter     ^1 }
+silver 2 *Doom Patrol                     ^2 }
+silver 3 "Showcase" *Deadman<br>Batgirl<br>Metamorpho  ^1 }
+silver 4 *80-Page Giant                                ^2 }
+avengers 003 *Avengers<br>Krona }
+sb    ^1 *Spider-Boy } 
+sbtu  ^2 *Spider-Boy }
+lotdc ^1 *Dark Claw }
+dca   ^2 *Dark Claw }
+: <center><h4>BRONZE AGE EVOLUTION</h4></center>
+cme *JSA<br>7SV<br>Freedom Fighters @JLoA 91-92<br>JLoA 100-102<br>JLoA 107-108<br>JLoA 113
+# gla *Green Lantern<br>Green Arrow
+.Hawkworld *Hawkman<br>Hawkwoman
+jimo 133 @Jimmy Olson <br>133-136 *Jimmy Olson<br>Cadmus
+: <center>Fourth World</center>
+sma 042 *Mr Miracle ^1 }
+sma 057 *Kalibak    ^2 }
+ldc 80-page Giant #2 *Darkseid ^1 } 
+darkseidspec 1 *Darkseid ^2 }
+mmtpb *Mister Miracle @005<br>006<br>007
+# misterm 005    *Mister Miracle  }
+# misterm 006 ^1 *Mister Miracle }
+# misterm 007 ^2 *Mister Miracle }
+:
+artwalt *Metal Men
+clown *Green Arrow<br>Luthor @Joker 4<br>Joker 7
+shazam @DCP 33, 34<br>DCP Annual 2 *Superman<br>Shazam
+: <center>Bronze Age Showcase</center>
+thunder 1 *Shazam   ^1 }
+adcu 007  *Shazam   ^2 }
+sdtu 016  *Shazam<br>Scooby-Doo }
+sdtu 025  *Green Lantern<br>Green Arrow<br>Scooby-Doo }
+glantern 091 *Green Lantern<br>Green Arrow ^1 }
+glantern 092 *Green Lantern<br>Green Arrow ^2 }
+advcom 428 *Black Orchid ^1 }
+advcom 429 *Black Orchid ^2 }
+advcom 430 *Black Orchid ^1 }
+ps 041     *Black Orchid ^2 }
+manh *Manhunter }
+showcase 100 *Green Lantern<br>Flash<br>Lois Lane      ^1 }
+dcp 004 *Metal Men                                     ^2 }
+:
+ali *Ali
+justice *Legion Of Doom
+spell *Zatanna<br>Black Canary
+: <center>Crossovers &amp Rogues</center>
+ww77 0?? *Wonder Woman<br>Clayface }
+#xover *Spider-Man<br>Hulk<br>X-Men
+spidey1 *Superman<br>Spider-Man ^1 }
+spidey2 *Superman<br>Spider-Man ^2 }
+sup 338 "Let My People Grow"  *Kandor  }
+#krp 001                      ^2 *Krypton }
+#krp 002                      ^1 *Krypton }
+#krp 003                      ^2 *Krypton }
+act 544 *Luthor  ^1 }
+sup 386 *Luthor  ^2 }
+dcp 028 *Supergirl ^1 }
+dcp 029 *Supergirl ^2 }
+dcp 039 *Plastic Man ^1 }
+dcp 061 *OMAC        ^2 }
+dcp 071 *Bizzaro ^1 }
+dcp 082 *Adam Strange ^2 }
+: <center><h4>PRE-CRISIS</h4></center>
+nttv2 @21 - 41
+across *Superman, Mongul<br>Green Arrow<br>GLC
+asd1 *Bizarro<br>Superman "Bizzaro's Worst Day|Savior" @p29<br>p125
+tpz
+: <center>Dissolution &amp Challenge</center>
+inc 003  *Green Arrow ^1 }
+inc 004  *dissolution ^2 }
+hulk2 *Batman<br>Hulk ^1 }
+fudd *Batman<br>Elmer Fudd ^1 }
+sup Annual #9 *Superman<br>Batman  "Villain, Villain, Who's Got The Villain?" ^1 }
+dcc 005 *Shazam<br>Dr Fate<br>Adam Strange ^2 }
+dcc 006 ^1 }
+dcc 007 ^2 }
+dcc 011 ^1 }
+dcc 012 ^2 }
+#sup Annual #11 "For The Man Who Has Everything" *Mongul     ^1 }
+: <center>Farewell Tour</center>
+dcp 052 *Ambush Bug ^1 }
+dcp 081 *Ambush Bug ^2 }
+act 560 *Ambush Bug ^1 }
+act 563 *Ambush Bug ^2 }
+dcp Annual #1 *Kal-L<br>Ultraman  ^1 }
+xmen *Teen Titans<br>X-Men<br>Darkseid ^2 }
+swamp 057 ^1 *Adam Strange }
+swamp 058 ^2 *Adam Strange }
+convpm 1 *Plastic Man<br>Uncle Sam ^1 }
+convpm 2 *Plastic Man<br>Uncle Sam ^2 }
+#convglc 1 *Guy Gardner ^1 }
+#convglc 2 *Guy Gardner ^2 }
+# so Annual #2 *Barry Allen                
+# act 546 *JLA, Titans
+: <center><h4>CRISIS ON INFINITE EARTHS</h4></center>
+cie *DCU
+: <center><h4>POST-CRISIS</h4></center>
+Lobo 000 *Lobo        ^1 }
+loboduck              ^2 }
+roadrunner *Lobo<br>Road Runner            ^1 )
+glantern 208 *Kilowog ^2 }
+glantern 209 *Kilowog ^1 }
+glantern 210 *Kilowog ^2 }
+swamp 079 *Superman<br>Luthor  ^1 }
+batc 005 *Oracle               ^2 }
+adcu 006 *Power Girl "Rolling On The River" ^1 }
+jlu 043 *Beetle<br>Booster                  ^2 }
+ganthet *Hal Jordan  }
+:
+gahm *Green Arrow
+:
+tbf *Jihad<br>Furies<br>Russia @ssq 1-8
+nso *Batman<br>Vixen<br>JLI<br>Nightshade @ssq 9-16
+#ssq 009 *Millenium   ^1 }
+#ssq 010 *Batman      ^2 }
+#ssq 011 *Vixen       ^1 }
+#ssq 012 *Vixen       ^2 }
+#ssq 013 *JLI         ^1 }
+ded *Deadshot
+ssq3 *&nbsp<br>Personal Files<br>Captain Boomerang<br>Nightshade shot<br>Deadshot<br>Congress<br>Congress @ annual 1<br>019<br>020<br>021<br>022<br>024<br>025
+#ssq Annual 1         
+#ssq 019 *Personal Files    ^1 }
+#ssq 020 *Captain Boomerang ^2 }
+#ssq 021 *Nightshade shot   ^1 }
+#ssq 022 *Deadshot          ^2 }
+#ssq 024 * Congress         ^1 }
+#ssq 025 * Congress         ^2 }
+ssq4 *Flag, Jihad @026
+#ssq 026 *Flag, Jihad          }
+#ssq 033 *Apokolips         ^1 }
+#ssq 034 *Apokolips         ^2 }
+#ssq 035 *Apokolips         ^1 }
+#ssq 036 *Apokolips         ^2 }
+ssq5 *Apokolips @033<br>034<br>035<br>036
+# ssq 037 *ID pie thrower
+:
+inv  *Dominators
+: <center><h4>JUSTICE LEAGUE INTERNATIONAL</h4></center>
+jli4 @23-30 @+23<br>+24<br>+28 *Beetle<br>Booster
+jli5 @JLE 1-6 @+JLE 6          *Flash<br>Captain Atom
+jli6 @31-35 @+33<br>+34<br>+35 *Beetle<br>Booster
+: <center><h4>JLI</h4></center>
+j80 1 "Mousebusters" *1998 ^1 }
+jli 037                    ^2 }
+jli 041 ^1 }
+jli 042 ^2 }
+jli 043 ^1 }
+jli 044 ^2 }
+#jlq 001 Conglomerate... blah
+adcu 008 *Beetle<br>Booster                 ^1 }
+jlq 002 *Fire<br>Ice "Running Hot And Cold" ^2 }
+jl Annual 4 *JL Antarctica  ^1 }
+retro 90s *Injustice League ^2 }
+jli 045   *Guy Gardner<br>Ice "A Fool In Love"  ^1 }
+guy 003   *Guy Gardner "In Space, No One Can Hear You Fight" ^2 }
+: <center><h4>JLI SHOWCASE</h4></center>
+flash 045 *Flash<br>Grodd ^1 }
+flash 046 *Flash<br>Grodd ^2 }
+flash 047 *Flash<br>Grodd ^1 }
+flash 054 *Flash          ^2 }
+sens 001 *Wonder Woman<br>Two-Face   @digital 001<br>digital 002 ^1 }
+sens 003 *Wonder Woman<br>Catwoman "Morning Coffee" @digital 009 ^2 }
+sens 006 *Wonder Woman<br>Barda "Not Included"   @digital 11, 12, 13 ^1 }
+dcpgl 1 *Green Lantern<br>Green Arrow "Feel Something"               ^2 }
+#Chase 002 *Suicide Squad ^1 }
+#Chase 003 *Suicide Squad ^2 }
+glcq 001 "War"                    ^1 }
+glcq 006 "Those Who Sit And Wait" ^2 }
+access 001 *Hal Jordan<br>Wonder Woman  ^1 }
+lotdk 214 *Batman<br>Deadshot           ^2 }
+:
+ssq6 @Suicide Squad 40-49
+bel @lcl 4-9 *Beetle<br>Booster<br>Guy Gardner
+#gods
+: <center><h4>BIG GUNS</h4></center>
+mor2 "Rock Of Ages" *Luthor<br>Darkseid<br>Prometheus<br>WildCATs   @jla 10-17
+meg *Justice Legion Alpha
+et2 *Crime Syndicate
+hik *Wonder Woman<br>Batman
+lo1 *Wonder Woman<br>JLA
+: <center><h4>STRENGTH</h4></center>
+strength  *Superman }
+g13  *Superman<br>Gen 13 }
+hit 034 *Superman<br>Hitman   }
+spidey *Batman<br>Spider-Man       }
+dcuholb 001 *Orion<br>High Father ^1 }
+Orion 005 *Orion<br>Darkseid      ^2 }
+ldc 024 *Darkseid ^1 }
+ldc 025 *Darkseid ^2 }
+: <center><h4>INFINITE CRISIS</h4></center>
+# VU  2005, July - Dec 2006
+ssvu *Vandal Savage @Villains United<br>Six&deg Of Devestation
+# 52 collects May 2006 - May 2007
+52 *Booster Gold<br>The Question<br>Black Adam
+: <center><h4>ONE YEAR LATER</h4></center>
+# Birds Of Prey  2005 - Sep 2007
+tbw @bop <br>81-85 *Wildcat<br>Black Canary
+pp @bop <br>86-95 *Green Arrow<br>Deathstroke<br>Batman<br>Lady Shiva<br>Prometheus
+bnc @bop <br>98-103 @-96, -97 *Spy Smasher<br>Misfit<br>Barda
+dwinter @bop <br>104-108 *Spy Smasher<br>Misfit<br>Barda
+# JSA Classified  Spring 2006
+jsaclass 010 *Vandal Savage ^1 }
+jsaclass 011 *Vandal Savage ^2 }
+jsaclass 012 *Vandal Savage ^1 }
+jsaclass 013 *Vandal Savage ^2 }
+# Checkmate  June 2006 - 2008
+kings *Checkmate @1-7
+pawn  *Checkmate @8-12
+fall  *Checkmate @16-22
+# The Brave And The Bold  Apr 2007 - Apr 2008
+luk
+bdes
+# Secret Six Ongoing  Nov 2008 - 2011
+ssmm *Secret Six @s6 1-14 @Unhinged<br>The Depths
+cic  *Secret Six @s6 19-24
+repb *Secret Six @s6 25-29
+drkh *Secret Six @s6 30-36
+:
+lastson *Zod
+cam1 *Superman @Superman 654<br>Superman 655<br>Superman 656<br>Superman 657<br>Superman 658
+cam2 *Superman @Superman 662<br>Superman 663<br>Superman 664<br>Superman 667<br> Annual 13
+# The Third Kryptonian: Superman 668, 669, 670
+# Shadows Linger: Superman 671 - 675  Insect Queen, Galactic Golem
+:
+jim 1 *Jimmy Olson ^1 }
+sup 660 *Prankster ^2 }
+legtom 001 *Killer Moth }
+# convnwo 1 *Nightwing<br>Oracle ^1 }
+# convnwo 2 *Nightwing<br>Oracle ^2 }
+# convq 1 *The Question ^1 }
+# convq 2 *The Question ^2 }
+: <center><h4>LEGENDS</h4></center>
+bmbw 002 "Legend" *Batman
+sup 400 *Superman
+wht @sup 423<br>Action 583
+allstar
+

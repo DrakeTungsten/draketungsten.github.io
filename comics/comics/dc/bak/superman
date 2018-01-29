@@ -1,0 +1,81 @@
+# sec2 = Secret Origins v2
+# hulk = Superman vs Hulk
+# mos = Man Of Steel
+# sup = Superman
+# act = Action
+# sma = Superman Adventures
+# smatpb = .Superman Adventures
+# jim = Jimmy Olson
+# jimo = .Jimmy Olson Adventures
+# dcp = DC Comics Presents
+# krp = The Krypton Chronicles
+# spm = Superman Vol II
+# g13 = .Superman/Gen 13
+# hit = Hitman
+# asm = Adventures Of Superman
+# allstar = .All Star Superman
+# str = .Strength
+# wht = .WHT The Man Of Tomorrow
+# ali = .Superman Vs Muhammad Ali
+# asd = .Adventures of Superman
+# shazam = .Superman / Shazam
+# svs = Superman / Spider-Man
+# cam = .Camelot Falls
+# seasons = .A Superman For All Seasons
+
+%0146 sec2 001 *Lara<br>Martha  ^1
+%0147 sma 026  *Mxy             ^2
+%0179 mos 002  *Lois  ^1
+%0180 asm Annual 7 *SCU   ^2
+%0182 seasons
+%0188 smatpb *Luthor<br>Metallo<br>&nbsp @+Adventures 1<br>+Adventures 2<br>+Adventures 4
+#sma 001 ^1 *Luthor
+#sma 002 ^2 *Metallo
+#sma 004 ^1
+%0189 hulk 1 *Hulk
+%0190 sma 024 *Parasite 
+%0193 sma 030 *Kryptonians ^1
+%0196 sma 031 *Kryptonians ^2
+%0199 sma 036 *Puppy dog    ^1
+%0200 sma 041 *21 ^2
+%0203 sma 042 *Mr Miracle ^1
+%0205 sma 057 *Kalibak    ^2
+%0305 jimo 133 @Jimmy Olson 133-136 *Cadmus
+%0333 shazam @DCP 33, 34<br>DCP Annual 2 *Superman<br>Shazam
+%0335 sup Annual #9 *Superman<br>Batman ^1   
+%0336 sma 025 *Superman<br>Batgirl      ^2
+%0340 dcp Superman Special *Stan Lee ^1
+%0341 dcp 004 *Metal Men ^2
+%0342 dcp 028 *Supergirl ^1
+%0343 dcp 029 *Supergirl ^2
+%0346 dcp 039 *Plastic Man ^1
+%0349 dcp 061 *OMAC ^2
+%0355 ali *Ali
+%1002 sup 338 "Let My People Grow" ^1 *Kandor
+%1003 krp 001                      ^2 *Krypton
+%1004 krp 002                      ^1 *Krypton
+%1005 krp 003                      ^2 *Krypton
+%1200 act 544 *Luthor  ^1
+%1201 sup 386 *Luthor  ^2
+%1202 dcp 071 *Bizzaro ^1
+%1203 dcp 082 *Adam Strange ^2
+%1250 dcp Annual #1 *Kal-L<br>Ultraman ^1
+# svs 1 ^1 *Spider-Man
+# svs 2 ^2 *Spider-Man
+%3050 asd *Superman Anthology
+%4061 dcp 052 *Ambush Bug ^1
+%4062 dcp 081 *Ambush Bug ^2
+%4063 act 560 *Ambush Bug ^1
+%4064 act 563 *Ambush Bug ^2
+%4070 sup Annual #11 "For The Man Who Has Everything" *Mongul    
+%8090 :
+%8100 str 
+%8200 g13 
+%8220 hit 034 *Garth Ennis ^1
+%8240 jim 1 *Nick Sencer ^2
+%8990 :
+%9000 cam
+%9890 :
+%9900 sup 400
+%9950 wht @sup 423<br>Action 583
+%9999 allstar

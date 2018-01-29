@@ -1,0 +1,110 @@
+# ### = NEED TO GET
+# arc = X-Men Archives  2-6
+
+# wpx = .Weapon X
+# gen = Generation X
+# mcp = Marvel Comics Presents
+# mcp1 = .Marvel Comics Presents I
+# wlv = Wolverine
+# dbw = .DeathBlow & Wolverine
+# uxm = Uncanny X-Men
+# uxm1 = .X-Men Omnibus I
+# uxm2 = .X-Men Omnibus II
+# cxm = Classic X-Men
+# xlt = Lost Tales
+# drk = .The Dark Phoenix Saga
+# fut = .Days Of Future Past
+# wln = .Wolverine  *Claremont, Miller
+# wc2 = .Wolverine Classic II
+# bld = .Blood Hungry
+# fac = X-factor
+# exc = Excalibur
+# nxm = New X-Men
+# mut = New Mutants
+# for = X-Force
+# dpl = Deadpool
+# sol = Soldier X
+# wv2 = Wolverine Vol II
+# stx = X-Statix
+# cdp = Cable / Deadpool
+# brn = .The Burnt Offering
+# svg = Savage Wolverine
+# nxm2 = .New X-Men II
+# nxm3 = .New X-Men III
+# xstx = .X-Statix
+
+svg 021 ^1
+svg 022 ^2
+wpx @MCP 72-84
+wlv Flashback ^1
+gen Flashback ^2
+#dbw @ 1 + 2
+uxm1 @Uncanny 098<br>Uncanny 099<br>Uncanny 101<br>Uncanny120-122<br>Uncanny129-131  @Classic 06<br>Classic 07<br>Classic 09<br>Classic 26-28<br>Classic 35-37
+uxm2 @Uncanny 132-143<br>Uncanny 147<br>Uncanny 149<br>Uncanny 150<br>Uncanny 153<br>Uncanny Annual 4  @Classic 38-49<br>Classic 51<br>Classic 53<br>Classic 54<br>Classic 57<br>&nbsp
+#uxm Giant-Size #1
+wln *Miller, Claremont @Wolverine 1-4<br>Uncanny 172<br>Uncanny 173 @&nbsp<br>Classic 76<br>Classic 77
+xlt 001 ^1
+xlt 002 ^2
+cxm 080 @Uncanny 176 ^1
+cxm 084 @Uncanny 180 ^2
+cxm 087 @Uncanny 183 *Juggernaut ^1
+cxm 088 @Uncanny 184             ^2
+cxm 090 @Uncanny 186                         ^1
+cxm 092 @Uncanny 188 *~ end '85/start '86    ^2
+cxm 093 @Uncanny 189
+# mut 19, 10, 26, 27  NO GO
+cxm 098 @Uncanny 194 ^1
+cxm 100 @Uncanny 196 ^2
+cxm 103 @Uncanny 199 ^1
+cxm 109 @Uncanny 205 ^2
+uxm 206 ^1
+uxm 207 ^2
+uxm 208 ^1
+uxm 209 ^2
+fac 006
+# mcp1 @mcp 1-10 *Madripoor<br>Claremont, Buscema, Janson
+#wlv 004
+#wlv 005
+#wc2 @wlv 6-10
+#wc4 @wlv 19-23 *Spore
+bld @MCP 85-92 *Cyber
+svg 019
+wlv 050
+wlv 055
+wlv 056
+wlv 057
+#xfv1 @fac 71-75
+#xfv3 @fac 79-83
+wlv 077 *Deathstrike
+wlv 078 *Bloodscream
+wlv 079 *Cyber
+wlv 082 *Yukio, Amiko
+wlv 087 *Maverick
+wlv 093 *Juggernaut
+wlv 102
+wlv 103
+wlv 119 "Not Dead Yet"
+wlv 120 "Not Dead Yet"
+wlv 121 "Not Dead Yet"
+wlv 122 "Not Dead Yet"
+#xfc 001
+#xfc 002
+#xfc 003
+#xfc 004
+xstx @+116-122<br>+125-129<br>+1-5<br>+9-11<br>+19-21<br>+24-26 "New Beginnings|Final Chaper|Good Omens|X-Statix Vs The Avengers"
+nxm2 *Xorn<br>Fantomex @127 - 141<br>-132, -133 "Riot At Xavier's|Murder At The Mansion"
+nxm3 @142 - 154 "Assault On Weapon Plus|Planet X|Here Comes Tomorrow"
+dpl 065 ^1
+dpl 066 ^2
+dpl 067 ^1
+dpl 068 ^2
+dpl 069 ^1
+sol 001 ^2
+sol 002 ^1
+sol 003 ^2
+sol 004 ^1
+sol 005 ^2
+sol 006 ^1
+sol 007 ^2
+brn @cdp 7-12
+#mad

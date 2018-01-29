@@ -1,0 +1,46 @@
+# brn = .Born
+# tyg = .The Tyger
+# war = .Punisher War Zone
+# bak = .Welcome Back, Frank
+# p01 = Punisher (MK)
+# p04 = Punisher (Max)
+# mkd = Marvel Knights Double Shot
+# cel = .The Cell
+# end = .Punisher: The End
+# bus = .Business As Usual
+# beg = .In The Beginning
+# rus = .Mother Russia
+# upd = .Up Is Down And Black Is White
+# bar = .Barracuda
+# mos = .Man Of Stone 
+# ftl = .From First To Last
+# lcd = .Long Cold Dark
+# vfvf = .Valley Forge, Valley Forge
+# widow = .Widowmaker
+# slv = .The Slavers
+# gnucci = .The Resurrection Of Ma Gnucci
+# pm1 = .Punisher Max v1
+# pm2 = .Punisher Max v2
+# pm3 = .Punisher Max v3
+# pm4 = .Punisher Max v4
+# pm5 = .Punisher Max v5
+
+brn 
+war @War Zone 1-6
+bak
+mkd 001 "Roots"
+p01 006 "Do Not Fall In New York City"
+bus @p01 13-18 *South America<br>Wolverine<br>Belfast
+p01 019 "Of Mice And Men" *Joan
+p01 020 "Brotherhood"
+p01 021 "Brotherhood"
+p01 022 "Brotherhood"
+p01 032 "Soap"
+pm1 "In The Beginning" @p04 1-6
+pm2 "Mother Russia|Up Is Down And Black Is White" @p04 13-18<br>Punisher (Max) 19-24
+pm3 "The Slavers|Barracuda"
+pm4 "Man Of Stone|Widowmaker"
+pm5 "Long Cold Dark|Valley Forge, Valley Forge"
+gnucci
+:
+ftl @The Tyger, The Cell, The End

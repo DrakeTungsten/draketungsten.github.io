@@ -1,0 +1,245 @@
+# gen1 = Generations
+# gen2 = Generations II
+# bmca = Batman / Captain America
+# spctr = Spectre
+# leg = Legacies
+# so = Secret Origins
+# dc2k = DC 2000
+# bsa = Bats & Supes Adventures
+# ldc = Legends Of The DCU
+# mmh = Martian Manhunter
+# inc = JLA Incarnations
+# silver = The Silver Age
+# sho = Showcase
+# dcc = DC Challenge
+# cme = .Crisis On Multiple Earths III
+# cie = .Crisis On Infinite Earths
+# bbx = Brave And The Bold (mini)
+# bb = Brave And The Bold
+# gla = Green Lantern/Green Arrow
+# ga = Green Arrow
+# jst = Justice League Of America
+# js1 = .Justice Society I
+# js2 = .Justice Society II
+# justice = .Justice
+# ttx = Titans/X-Men
+# ntt = New Teen Titans
+# ttt = Tales Of The Teen Titans
+# tjc = .The Judas Contract
+# action = Action
+# ssq = Suicide Squad
+# tbf = .Trial By Fire
+# ded = .Deadshot
+# inv = .Invasion
+# jli = Justice League Intern'l
+# jli4 = .JLI vol IV
+# jli5 = .JLI vol V
+# jli6 = .JLI vol VI
+# jle = Justice League Europe
+# jla = JLA
+# j80 = JLA 80-page Giant
+# meg = .DC 1,000,000
+# nye = New Year's Evil
+# kng = .The Kingdom
+# ww3 = .World War III
+# umc = .Ultramarine Corps
+# bop = Birds Of Prey
+# sbm = Superman/Batman
+# trn = .Trinity
+# lcl = JLA Classified
+# scl = JSA Classified
+# et2 = .Justice League: Earth 2
+# lo1 = .A League Of One
+# hik = .The Hiketeia
+# jlu = Justice League Unlimited
+# pow = .Power Girl
+# hot = .Honor Among Thieves
+# bel = .I Can't Believe It's Not The Justice League
+# mor1 = .JLA I
+# mor2 = .JLA II
+# mor3 = .JLA III
+# tbw = .Birds Of Prey: The Battle Within
+# luk = .The Lords Of Luck
+# bdes = .The Book Of Destiny
+# adcu = Adventures In The DCU
+# s6 = The Secret Six
+# unh = .Secret Six: Unhinged
+# dep = .Secret Six: The Depths
+# cic = .Secret Six: Cat's In The Cradle
+# repb = .Secret Six: The Reptile Brain
+# drkh = .Secret Six: The Darkest House
+# sergio = Sergio Destroys DC
+# wfv2 = .World's Finest Vol II
+# wf1990 = .World's Finest
+# 52 = .52
+# ass = All-Star Squadron
+# wgsh = .World's Greatest Super-Heroes
+# jsoa = Justice Society of America
+# retro = JLA Retro
+# idf = The Immortal Dr Fate
+# jsa = The Justice Society
+# smad = Superman Adventures
+# jsaas = .JSA All-Stars
+# lotdk = Legends Of The Dark Knight
+# dcpgl = DC Presents: Green Lantern
+# xmas = X-mas With The Superheroes
+# spell = .Bloodspell
+# xover = .Crossover Classics
+# ww = Wonder Woman
+# batc = Batman Chronicles
+# swamp = Swamp Thing
+# multi = .Multiversity
+# flash = Flash
+# orig = .DC Origins
+# aqua = Aquaman
+# ga2 = Green Arrow 2
+# flash2 = Flash 2
+
+%0020 so 001 ^1 *Superman
+%0021 so 006 ^2 *Batman
+%0025 gen1 001 *World's Fair
+%0030 so  003 *Shazam          ^1
+%0033 so  005 *Crimson Avenger ^2
+%0036 so  024 *Dr Fate         ^1
+%0039 so  025 *The Atom        ^2
+%0042 leg 001 *The Atom<br>Sandman         ^1
+%0045 spctr Annual 1 *Spectre<br>Dr Fate   ^2
+%0048 Hawkman Annual 2 *Hawkman 
+%0052 jsaas  *Dr Mid-Nite 
+%0055 so  031 *JSA        ^1
+%0058 so  019 *Uncle Sam  ^2
+%0061 ass 001 ^1
+%0062 ass 002 ^2
+%0063 ass 003 ^1
+%0064 ass 004 ^2
+%0075 dc2k 001 ^1
+%0076 dc2k 002 ^2
+%0079 bmca 1
+%0080 gen2 001
+%0085 :
+%0090 wfv2 *Superman<br>Batman @World's Finest 86-101
+# %0100 js1 *Power Girl @All Star Comics 58-67 @DC Special #29
+# %0101 js2 *Power Girl @All Star Comics 68-74 @Adventure 461-466
+%0111 idf 001 ^1 *Dr Fate @1st Issue Special #9
+%0112 idf 002 ^2 *Dr Fate @Flash Back-ups
+%0113 idf 003    *Dr Fate @Flash Backups
+%0130 bb 182 ^1
+%0131 bb 197 ^2
+%0145 :
+%0154 aqua Annual 001 *Aquaman<br>Wonder Woman ^1
+%0155 so 035 *Martian Manhunter                ^2
+%0160 mmh 020  "Revelations" *Clark Kent ^1
+%0161 mmh 021  "Revelations" *Abin Sur   ^2
+%0207 ga Annual #7 *Green Arrow "Year One" ^1
+%0208 ga2 025 *Green Arrow "Zero Year" ^2
+%0211 flash2 025 *Barry Allen "Zero Year" ^1
+%0212 flash 000 *Wally West  "Zero Hour" ^2
+%0215 jsoa 050 *JSA<br>JLA "Cornerstone"  
+%0218 inc 001 *JLA<br>JSA    ^1
+%0219 inc 002 *JLA<br>Batman ^2
+%0230 leg 004 *The Next Generation ^1
+%0231 bbx 002 *Kid Lantern         ^2
+%0232 bbx 003  *Alan Scott<br>Jay Garrick             ^1
+%0233 bbx 004  *Green Lantern<br>Flash<br>Green Arrow ^2
+%0239 orig
+%0241 wgsh *Shazam<br>Wonder Woman<br>Superman<br>Batman
+%0243 xmas 002               ^1
+%0244 ww Retro *Wonder Woman ^2
+%0250 silver 1 *Dial H<br>Martian Manhunter     ^1
+%0251 silver 2 *Doom Patrol                     ^2
+%0252 silver 3 "Showcase" *Deadman<br>Batgirl<br>Metamorpho  ^1
+%0253 silver 4 *80-Page Giant                                ^2
+%0271 so 040 *Grodd             ^1
+%0272 swamp Annual #3 *Grodd     ^2
+%0300 cme *JSA<br>7SV<br>Freedom Fighters @jst 91-92, 100-102, 107-108, 113
+%0308 wf1990 *Joker<br>Luthor
+%0360 justice *JLA 
+%0365 spell *Zatanna<br>Black Canary
+%2000 so Annual #2 *Barry Allen                 ^2
+#%2010 Superman Ann 9 *Superman<br>Batman ^2
+%2300 inc 003  *Green Arrow ^1
+%2350 inc 004  *dissolution ^2
+%3000 xover *Spider-Man<br>Hulk<br>X-Men
+# ttx 1
+# ntto2
+#%4051 smad 025 *Superman<br>Batgirl               ^1
+%4051 adcu 007 *Shazam                           ^1
+%4052 dcc 005 *Shazam<br>Dr Fate<br>Adam Strange ^2
+%4053 dcc 006 ^1
+%4054 dcc 007 ^2
+%4055 dcc 011 ^1
+%4056 dcc 012 ^2
+%4100 # action 546 *JLA, Titans
+# ntt 038
+# skip Titans 40-41
+# tjc @ntt 39-44<br>Annual #3
+%4999 :
+%5000 cie
+%5001 :
+%5040 swamp 079 *Superman<br>Luthor ^1
+%5050 batc 005 *Oracle              ^2
+%5100 tbf *Jihad, Furies, Russia @ssq 1-8
+%5101 ssq 009 *Millenium   ^1
+%5102 ssq 010 *Batman      ^2
+%5103 ssq 011 *Vixen       ^1
+%5104 ssq 012 *Vixen       ^2
+%5105 ssq 013 *JLI         ^1
+%5110 ssq Annual 1         ^2
+%5115 ded *Deadshot
+%5119 ssq 019 *Personal Files    ^1
+%5120 ssq 020 *Captain Boomerang ^2
+%5121 ssq 021 *Nightshade shot   ^1
+%5122 ssq 022 *Deadshot          ^2
+---
+%5124 ssq 024 * Congress         ^1
+%5125 ssq 025 * Congress         ^2
+%5126 ssq 026 *Flag, Jihad
+%5133 ssq 033 *Apokolips         ^1
+%5134 ssq 034 *Apokolips         ^2
+%5135 ssq 035 *Apokolips         ^1
+%5136 ssq 036 *Apokolips         ^2
+%5137 # ssq 037 *ID pie thrower
+%5200 lotdk 214         ^1
+%5300 dcpgl 1 *Pasko    ^2
+%5500 :
+%6000 inv 
+%7000 jli4 @23-30 @+23<br>+24<br>+28
+%7001 jli5 @JLE 1-6 @+JLE 6
+%7002 jli6 @31-35 @+33<br>+34<br>+35
+%7010 j80 1 "Mousebusters" *1998 ^1
+%7020 jli 037 ^2
+%7041 jli 041 ^1
+%7042 jli 042 ^2
+%7043 jli 043 ^1
+%7044 jli 044 ^2
+%7070 adcu 008 *Booster<br>Beetle ^1
+%7090 retro 90s *Injustice League ^2
+%7200 bel @lcl 4-9
+#jsa 001
+#jsa 002
+#jsa 003
+#jsa 004
+#jsa 005
+#jsa 006
+#jsa 007
+#jsa 008
+#jsa 009
+#jsa 010
+%8400 :
+%8500 mor2 "Rock Of Ages" *Luthor<br>Darkseid<br>WildCATs  @Rock Of Ages<br>Prometheus @jla 10-17
+%8600 meg *Justice Legion Alpha
+%8650 et2 *Crime Syndicate
+%8720 hik *Wonder Woman<br>Batman
+%8725 lo1 *Wonder Woman<br>JLA
+%8750 52 *Booster Gold<br>The Question<br>Black Adam
+%8810 luk
+%8811 bdes
+%8880 tbw @bop 76-85 *Wildcat<br>Black Canary
+%8890 unh @s6 1-7
+%8891 dep @s6 8-14
+# Danse Macabre
+%8892 cic @s6 19-24
+%8893 repb @s6 25-29
+%8894 drkh @s6 30-36
+%9010 :
+%9100 multi

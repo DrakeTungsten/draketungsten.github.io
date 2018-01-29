@@ -1,0 +1,75 @@
+non-keepers deleted. keepers marked w/ 'x'
+
+CS 001, CB 001, CB 002, CB 003
+CS 002, CB 004, CB 005, CB 006 
+CS 003, CB 007, CB 008, CB 009
+CS 004, CB 010, CB 011
+CS 005, CB 012, CB 013, CB 014
+CS 006, CB 015, CB 019, ST 001
+CS 007, CB 021, CB 022, CB 023
+CS 008, CB 024, CB 025, CB 037
+CS 009, ST 002, ST 003
+CS 010, CB 017, ST 005, ST 004
+CS 011, CB 018, SS 001
+CS 012, SS 002, SS 003
+CS 013, SS 003, SS 004                 x
+CS 014, SS 011                         x
+CS 017, SS 014                         x
+CS 018, SS 024                         x
+CS 019, SS 028                         x
+CS 020, SS 025                         x
+CS 022, GC 001, GC 002
+CS 023, GC 003
+CS 024, GC 004, SS 008
+CS 025, SS 010
+CS 028, SS 029, SS 016                 x
+CS 029, SS 017                         x
+CS 030, SS 008, SS 018                 x
+CS 031, SS 001, SS 019                 x
+CS 032, SS 005                         x
+CS 033                                 x
+CS 034, SS 031                         x
+CS 035, SS 032                         x 
+CS 036, SS 012                         x
+CS 038, CB 094, CB 095     Amra
+CS 039, CB 096, CB 097     Amra
+CS 040, SS 039, SS 026     Amra
+CS 041, SS 027             Amra
+CS 042, SS 040                         x
+CS 043, SS 041                         x
+CS 044, SS 058, SS 042                 x
+CS 045, SS 043                         x
+CS 047, SS 022   x
+CS 048, SS 023   x
+CS 050, CB 057, CB 058
+CS 051, CB 059, CB 060
+CS 052, CB 061, CB 062, CB 063
+CS 053, SS 049
+CS 054, SS 050
+CS 055, SS 051
+CS 056, SS 052
+CS 057
+CS 058
+CS 059, SS 038                         x
+CS 060, SS 044                         x
+CS 061, SS 056
+CS 062, SS 057
+CS 063, SS 058, CB 026
+CS 064, CB 027, SS 059
+CS 065, CB 028, SS 060
+CS 066, CB 029, CA 002
+CS 067, CB 030, CA 004
+CS 068, CB 031, CA 005
+CS 069
+CS 070, CB 032, CB 033, CB 034
+CS 071, MS 002
+CS 072, SS 053
+CS 073, SS 054, CB 035
+CS 074, SS 055, CB 036
+CS 075, CB 069, CB 092
+CS 076
+# Exclusively reprints CTB at Saga #77 (some CTB were reprinted earlier in Saga)
+CS 085, CB 065, CB 066, MF 006
+CS 086, CB 067, MF 007, CB 068
+CS 088, CB 072, CB 073
+CS 089, CB 074, CB 075, CB 076, CB 077

@@ -1,0 +1,206 @@
+# mrvl = .Marvels
+# gray = .Gray
+# hulk = Incredible Hulk
+# smash = Hulk Smash
+# savage = The Savage Hulk
+# mmg = Marvel Monster Group
+# asgd = .Tales Of Asgard 
+# thr1 = Thor (I)
+# oath = .Thor: Blood Oath
+# thr2 = Thor (II)
+# mangog = .To Wake The Mangog
+# irag = The Iron Age
+# case = Captain America Special Edition
+# cap1 = Captain America (I)
+# cap2 = Captain America (II)
+# cap3 = Captain America (III)
+# cap4 = Captain America (IV)
+# irn1 = Iron Man (I)
+# irn2 = Iron Man (II)
+# avcl = Avengers Classic
+# avr1 = Avengers (I)
+# avr2 = Avengers (II)
+# avr3 = Avengers (III)
+# subm = The Sub-Mariner
+# dfnr = Defenders
+# avdf = .Avengers vs Defenders
+# spns = Tales Of Suspense
+# mrvu = Marvel Universe
+# caps = Cap America: Sentinel of Liberty
+# spct = Marvel Spectacular
+# dblf = Marvel Double Feature
+# supa = Marvel Super Action
+# fnfr = Marvel Fanfare
+# avrx = Avengers Special
+# hero = Marvel Super-Heroes
+# fant = Fantasy Masterpieces
+# avprem = .Marvel Premier: Ultron
+# kree = .Kree/Skrull War
+# serp = .The Serpent Crown
+# mprm = Marvel Premiere
+# spot = Marvel Spotlight
+# vkng = .Vikings
+# rna1 = .Runaways Vol I 
+# rna2 = .Runaways Vol II
+# rna3 = .Runaways Vol III
+# ynga = Young Avengers
+# newv = New Avengers
+# capo1 = .Captain America Omnibus I
+# capo2 = .Captain America Omnibus II
+# young1 = .Young Avengers I
+# within = .Iron Man: The Enemy Within
+# duelfe = .Duel of Iron
+# warg = .Iron Man: War Games
+# immw4 = .Iron Man MW v4
+# capmw1 = .Captain America MW v1
+# capmw2 = .Captain America MW v2
+# capmw3 = .Captain America MW v3
+# w3 = .Warriors Three
+# odinquest = .The Quest For Odin
+# thoro = .Thor Omnibus
+# pad4 = .Hulk Visionaries: PAD v4
+# pad5 = .Hulk Visionaries: PAD v5
+# pad6 = .Hulk Visionaries: PAD v6
+# pad7 = .Hulk Visionaries: PAD v7
+# pad8 = .Hulk Visionaries: PAD v8
+# imp = Future Imperfect
+# maa = Marvel Adventures Avengers
+
+asgd
+thr1 Giant-Sized # 1  *1975 @Annual #2 @JIM Annual #1
+oath
+:
+caps 002 *Invaders ^1
+caps 003 *Invaders ^2
+caps 004 *Invaders ^1
+mrvu 001 *Invaders ^2
+mrvu 002 *Invaders ^1
+mrvu 003 *Invaders ^2
+:
+#mrvl
+gray *Hulk
+spns 039 *Iron Man
+hulk 001 *Hulk @Milestone
+irag 001 *Iron Man ^1
+irag 002 *Iron Man ^2
+avcl 001 *Avengers @Avengers 001 @Milestone ^1
+avrx 001.5 *Avengers                        ^2
+avcl 003 @Avengers 003 @MSH 021 *Avengers      ^1
+avcl 004 @Avengers 004 *Avengers               ^2
+caps 005 *Captain America<br>Iron Man          ^1
+caps 006 *Captain America<br>Iron Man          ^2
+smash 001 *Hulk
+smash 002 *Hulk
+#savage  1
+:
+#spct 008 @Thor 137 *Ulik
+#spct 009 @Thor 138 *Ulik
+#spct 010 @Thor 139 *Ulik
+#spct 013 @Thor 142 *Super-Skrull
+mangog *Mangog<br>Mangog<br>Him<br>Loki @Thor 156<br>Thor 157<br>Thor 166<br>Thor 175  
+:
+#irn1 Giant-Sized #1  *1975 (intro Hawkeye)
+irn1 King-Sized #1  *Iron Man<br>Namor<br>(1970) @ToS 79-80
+immw4 *Iron Man @ToS 85<br>ToS 86<br>ToS 87<br>ToS 88<br>ToS 91<br>ToS 92<br>ToS 93<br>ToS 94<br>ToS 95<br>ToS 96 @DF 002<br>DF 003<br>DF 004<br>DF 005<br>DF 008<br>DF 009<br>DF 010<br>&nbsp<br>&nbsp<br>&nbsp
+:
+capmw1 *Fury<br>Red Skull<br>Red Skull<br>Red Skull @ToS 78<br>ToS 79<br>ToS 80<br>ToS 81 @DF 002<br>DF 003<br>DF 004<br>DF 005
+capmw2 *&nbsp<br>&nbsp<br>&nbsp<br>AIM<br>MODOK<br>&nbsp<br>&nbsp @ToS 84<br>ToS 85<br>ToS 86<br>ToS 93<br>ToS 94<br>ToS 95<br>ToS 96 @DF 008<br>DF 009<br>DF 010<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp
+capmw3 *Captain America @Cap 103<br>Cap 104<br>Cap 110<br>Cap 111<br>Cap 113
+#cap1 103 @Cap Masterworks III @supa 005 
+#cap1 104 @Cap Masterworks III @supa 006 
+#cap1 110-111 @Cap Masterworks III @case 001 
+#cap1 113 @Cap Masterworks III @case 002 
+:
+avprem @Avengers 066<br>Avengers 067<br>Avengers 068
+#supa 027 @Avengers 066 *BWS
+#supa 028 @Avengers 067 *BWS
+#supa 029 @Avengers 068 *Buscema
+kree @Avengers 89-97
+#avr1 098 ^1
+#avr1 099 ^2
+#avr1 100 ^1
+mprm 003 *Dr Strange
+subm 035
+avdf @Avengers 116, 117<br>Defenders 9, 10 
+mmg 1 *Devil Dinosaur
+fnfr 029 *Hulk ^1
+dfnr 062       ^2
+dfnr 063       ^1
+dfnr 064       ^2
+serp @Avengers 141-144<br>Avengers 147-149
+#avr1 150
+odinquest @Thor 260<br>Thor 261<br>Thor 263
+w3 *Baldur, Fandril, Volstagg @Marvel Spotlight 30
+:
+within @169<br>170<br>172<br>173<br>174<br>175
+duelfe @178<br>182<br>184<br>185<br>188<br>191<br>192
+#irn1 169 "Blackout"
+#irn1 170 "And Who Shall Clothe Himself In Iron"
+#irn1 172 "Firebrand's Revenge"
+#irn1 173 "Judas Is A Woman"
+#irn1 174 "Armor Chase"
+#irn1 175 "This Treasure Of Red And Gold"
+#irn1 178 "Once An Avenger, Always An Avenger"
+#irn1 182 "Deliverance"
+#irn1 184 "On The Road"
+#irn1 185 "Terror In Tulaluma"
+#irn1 188 "And Grimm Shall Be Their Name"
+#irn1 191 "Losing The Touch"
+#irn1 192 "A Duel Of Iron"
+irn1 200 "Resolutions"
+:
+thoro @337<br>338<br>339<br>340<br>353<br>355<br>357<br>359<br>373<br>374<br>377<br>378<br>379<br>380<br>381<br>382
+#thr1 337 "Doom!"
+#thr1 338 "A Fool And His Hammer..."
+#thr1 339 "Something Old, Something New..."
+#thr1 340 "Though Hel Should Bar The Way"
+#thr1 353 "Doom II"
+#thr1 355 "The Icy Hearts"
+#thr1 357 "A New Deal From An Old Deck"
+#thr1 359 "The Grand Alliance"
+#thr1 373 "The Gift Of Death"
+#thr1 374 "Fires Of The Night"
+#thr1 377 "This Hollowed Armor"
+#thr1 378 "When Loki Stood Alone"
+#thr1 379 "There Were Giants In Those Days"
+#thr1 380 "Mjolnir's Song"
+#thr1 381 "Ye Olde Shell Game"
+#thr1 382 "Journey Into Mystery"
+:
+pad4
+pad5 *Countdown<br>Countdown<br>Hyde<br>Freedom Force<br>Defenders<br>Dark Hulk<br>&nbsp@365<br>367<br>368<br>369<br>370<br>371<br>372
+pad6 *&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>Pantheon  @373<br>374<br>375<br>376<br>377<br>379<br>381<br>382
+pad7 @383-389
+pad8 @390-396
+imp 1
+imp 2
+:
+maa 004
+maa 009 
+maa 025
+:
+rna1
+rna2
+rna3 
+young1 @ynga 1-12
+:
+capo1 @cap3 1-25
+capo2 @cap3 25-42
+# Captain America 602 - 605 "Two Americas"
+# Secret Avengers
+# Steve Rogers, Super Soldier
+# Captan America 606 - 619
+# Captain America and Bucky 620-???
+cap4 ???
+:
+vkng
+
+#thr1 385 ^2 *Thor vs Hulk 
+
+irn1 Annual #3  *1976 
+fnfr 018 *Captain America
+
+
+
+#irn1 Giant-Sized #1  *1975 (intro Hawkeye)
+

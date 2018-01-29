@@ -1,0 +1,19 @@
+# biggs = .Biggs Darklighter
+# vdq = .Vader's Quest
+# phantom = .The Phantom Affair
+# dw = Devil Worlds
+# tales = Star Wars Tales
+
+tales 023 "Lucky"    ^1
+tales 010 "Trooper"  ^2
+: <center><h4>A NEW HOPE</h4></center>
+biggs
+vdq
+dw 001 ^1
+dw 002 ^2
+tales 016 "Lunch Break" ^1
+tales 024 "Fett Club"   ^2
+: <center><h4>THE EMPIRE STRIKES BACK</h4></center>
+: <center><h4>RETURN OF THE JEDI</h4></center>
+tales 022 "Marooned"
+phantom

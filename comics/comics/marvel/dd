@@ -1,0 +1,50 @@
+# mwf = .Man Without Fear
+# elk = Elecktra
+# ass = .Elektra: Assassin
+# dd1 = Daredevil (I)
+# dd2 = Daredevil (II)
+# vs2 = .DD Visionaries II
+# vs3 = .DD Visionaries III
+# lov = .Love And War
+# brn = .Born Again
+# unb = .Underboss
+# out = .Out
+# low = .Lowlife
+# hrd = .Hardcore
+# kng = .King Of Hell's Kitchen
+# wid = .The Widow
+# gld = .Golden Age
+# pap = .The Murdock Papers
+# vol2 = .Vol 2
+# vol3 = .Vol 3
+# vol4 = .Vol 4
+# vol6 = .Vol 6
+# vone = .Volume One
+# vtwo = .Volume Two
+
+mwf 
+elk Flashback
+dd1 165 *Miller
+dd1 166 *Miller
+dd1 167 *Miller
+vs2 @dd1 168-182 *Miller
+vs3 @dd1 183-191 *Miller
+lov *Miller
+ass *Miller
+brn @dd1 227-233 *Miller
+
+vol2  "Underboss|Out" *Bendis
+vol3 "Lowlife|Hardcore" *Bendis
+vol4 "King Of Hell's Kitchen|The Widow" *Bendis
+vol6 "The Murdock Papers" *Bendis
+vone *Brubaker
+vtwo *Brubaker
+#unb *vol IV    @dd2 26-31 @DD HC II
+#out *vol V     @dd2 32-40 @DD HC II
+#low *vol VI    @dd2 41-45 @DD HC III
+#hrd *vol VII   @dd2 46-50 @DD HC III
+#kng *vol IX    @dd2 56-60 @DD HC IV
+#wid *vol X     @dd2 61-65 @DD HC IV
+#gld *vol XI    @dd2 66-70 @DD HC V
+#pap            @dd2 75-81 @DD HC VI
+

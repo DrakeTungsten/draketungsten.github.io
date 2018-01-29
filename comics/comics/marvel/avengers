@@ -1,0 +1,83 @@
+# aot = .Ages Of Thunder
+# mrvl = .Marvels
+# asgd = .Tales Of Asgard 
+# thr1 = Thor (I)
+# blth = .Thor: Blood Oath
+# thr2 = Thor (II)
+# sent = .Sentinel Of Liberty
+# irag = The Iron Age
+# case = Captain America Special Edition
+# cap1 = Captain America (I)
+# cap2 = Captain America (II)
+# cap3 = Captain America (III)
+# cap4 = Captain America (IV)
+# irn1 = Iron Man (I)
+# irn2 = Iron Man (II)
+# avcl = Avengers Classic
+# avr1 = Avengers (I)
+# avr2 = Avengers (II)
+# avr3 = Avengers (III)
+# subm = The Sub-Mariner
+# dfnr = Defenders
+# avdf = .Avengers vs Defenders
+# spns = Tales Of Suspense
+# avrw = Avengers West Coast
+# mrvu = Marvel Universe
+# caps = Cap America: Sentinel of Liberty
+# spct = Marvel Spectacular
+# dblf = Marvel Double Feature
+# supa = Marvel Super Action
+# fnfr = Marvel Fanfare
+# sh&l = Shadows And Light
+# avrx = Avengers Special
+# hero = Marvel Super-Heroes
+# fant = Fantasy Masterpieces
+# kree = .Kree/Skrull War
+# serp = .The Serpent Crown
+# mprm = Marvel Premiere
+# spot = Marvel Spotlight
+# aemh = Earth's Mightiest Heroes
+# vkng = .Vikings
+# tsap = .To Serve And Protect
+# rna1 = .Runaways Vol I 
+# rna2 = .Runaways Vol II
+# rna3 = .Runaways Vol III
+# ynga = Young Avengers
+# newv = New Avengers
+# wntr = .The Winter Soldier
+# rmen = .The Red Menace
+# side = .Sidekicks
+# famm = .Family Matters
+# capo1 = .Captain America Omnibus I
+# capo2 = .Captain America Omnibus II
+# young1 = .Young Avengers I
+# secav = Secret Avengers
+
+mrvl
+:
+avcl 001 @avr1 001 @Marvel Milestone 
+avrx 001.5
+avcl 003 @Avengers 003 @hero 021 
+avcl 004 @avr1 004
+caps 005
+caps 006
+supa 027 @Avengers 066 *BWS
+supa 028 @Avengers 067 *BWS
+supa 029 @Avengers 068 *Buscema
+# kree @Avengers 89-97
+#avr1 098 ^1
+#avr1 099 ^2
+#avr1 100 ^1
+#thr1 385 ^2 *Thor vs Hulk 
+mprm 003 *Dr Strange
+subm 035
+avdf @Avengers 116, 117<br>Defenders 9, 10 
+dfnr 062
+dfnr 063
+dfnr 064
+#serp @avr1 141-144, 147-149
+#avr1 150
+rna1
+rna2
+rna3 
+young1 @ynga 1-12

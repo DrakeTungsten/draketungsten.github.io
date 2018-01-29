@@ -1,0 +1,47 @@
+# sec = Secret Origins
+# adv = Adventure Comics
+# lsh = Legion Of Superheroes
+# gds = .The Great Darkness Saga
+# l2 = Legion Of Superheroes v2
+# curse = .The Curse
+
+l2 008     }
+sec 025 ^1 }
+sec 037 ^2 }
+# adv 307, 308, 309, 323, 325, 331, 334, 336
+# Looks good
+# 304
+# 305
+# 313
+# 315
+# 318
+# 320
+# 324
+# 333 The Civil War Of the Legion
+# 350
+
+# archive v2: 306-317
+adv 310 *Mxy, Hamilton  @Arch v2
+adv 311 *Legion Of Subs @Arch v2
+adv 316                 @Arch v2
+# archive v4: 329 - 339
+adv 329 *Bizarro        @Arch v4
+# adv 340, 348, 351, 355, 357, 358, 360, 361, 369, 370, 373, 378
+# Superboy 205 reprints ENB ADV 350, 351 - are there more reprints in Superboy?
+lsh 239 "Murder Most Foul" }
+lsh 241 ^1 }
+lsh 242 ^2 }
+lsh 243 ^1 }
+lsh 244 ^2 }
+# lsh 245 might as well finish it
+lsh 285
+lsh 287
+gds @287(partial)<br>290-294 @annual 1984 #3
+curse @+298<br>+300<br>+302<br>+303<br>+304<br>+305 @297-313
+lsh 298
+lsh 300
+lsh 302
+lsh 303
+lsh 304
+lsh 305
+

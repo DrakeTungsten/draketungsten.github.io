@@ -1,0 +1,54 @@
+# x = Ultimate X-Men
+# hell = .Hellfire And Brimstone
+# rtrn = .The Return Of The King 
+# blkb = .Blockbuster
+# newm = .New Mutants
+# tmpt = .The Tempest
+
+# sp = Ultimate Spider-Man
+# tu = Ultimate Marvel Team-up
+# u6 = .The Ultimate Six
+# dt = .Double Trouble
+# ps = .Public Scrutiny
+# ck = .Cats And Kings
+# hw = .Hollywood
+# cr = .Carnage
+# wr = .Warriors
+# dp = .Deadpool
+# cs = .Clone Saga
+# uk = .Ultimate Knights
+
+hell @x 21-25 *vol IV, Millar
+rtrn @x 26-33 *vol VI, Millar
+blkb @x 34-39 *vol VII, Bendis
+newm @x 40-45 *vol VIII, Bendis
+tmpt @x 46-49 *vol IX, Vaughn
+# vol XI (The Most Dangerous Game) is 54-57
+# hard lessons @x 58-60, Annual 1 *vol XII
+# magnetic north  @x 61-?? *vol XIII
+:
+tu 002
+tu 003
+# sp 001
+# sp 002
+# sp 003
+# sp 004
+# sp 005
+# sp 006
+# sp 007
+# vol 2 @sp 8-13
+sp 013
+dt @sp 14-21 *vol 3, Kraven, Doc Ock
+ps @sp 28-32 *vol 5, impostor
+# Venom 33-39
+# Irresponsible @sp 40-45 *vol 7
+ck @sp 47-53  *vol 8
+# Ultimate 6 *vol 9
+hw @sp 54-59 *vol 10
+cr @sp 60-65 *vol 11
+# Superstars #sp 66-71  *vol 12
+wr *vol 14
+# Silver Sable
+dp *vol 16
+cs *vol 17
+uk *vol 18
