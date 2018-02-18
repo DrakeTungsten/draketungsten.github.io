@@ -29,7 +29,7 @@
     </p> 
 
     <p> 
-    This page documents all of the variables available to configure the behavior of NQ. As mentioned on the other page which documents the config file, there are two different types of variables which may appear in the config file. This page talks about variables which NQ understands and uses to change its appearance or behavior, and these variables require specific names. <a href="configfile1.html#uservars">The other type of variable</a> is the user-defined variable, which are variables where you define the name as well as the value, and are meant to be a convenience for working with the configuartion file. Make sure you are on the right page to read up about the right kind of variable you are interested in.
+    This page documents all of the variables available to configure the behavior of NQ. As mentioned on the page which documents the config file sections, there are two different types of variables which may appear in the config file. This page concerns variables which NQ understands and uses to change its appearance or behavior, and these variables require specific names. <a href="configfile1.html#uservars">The other type of variable</a> is the user-defined variable, which are variables where you define the name as well as the value, and are meant to be a convenience for working with the configuartion file. Make sure you are on the right page to read about the kind of variable you are interested in.
     </p> 
     NQ variables should appear at the top of the file, before the <span class="code">[emulator config]</span> section. They take the form:
     <br><br>
@@ -37,7 +37,7 @@
         <br> <br>
         If you've already familiarized yourself with some of the documentation on configuration sections, you will have noticed that lines of data for the various sections all separate their fields with a comma. Variable definitions are different, they just require white space to separate the variable name from the value.
     <br><br>
-    Non-layout variables:
+    Behavior variables:
     <ul>
         <li>
         <span class="code">safeexit</span> <br>Set to <span class="code">1</span> to activate the safe exit feature. This means that whatever button(s) are configured to exit the program need to be be tapped rapidly three times in order for the program to exit. Set to <span class="code">0</span> for normal single-tap exiting.
@@ -63,56 +63,14 @@
     </ul>
     <p>
     </p>
-    Screen geometry-related variables:
+    Screen variables:
     <ul>
-        <li>
-            <span class="code">padding</span> <br>in pixels
-        </li>
-        <li>
-            <span class="code">divide</span> <br>in pixels
-        </li>
-        <li>
-        <span class="code">menusize</span> <br> The number of roms in your list to be displayed at one time. This number should be odd. If it is even, then the actual value used when the program runs will be one less than the value you indicated here.
-        </li>
-        <li>
-            <span class="code">max_slide_w</span> <br>in pixels 
-        </li>
-        <li>
-            <span class="code">max_slide_h</span> <br>in pixels
-        </li>
-        <li>
-            <span class="code">max_poster_w</span> <br>in pixels
-        </li>
-        <li>
-            <span class="code">max_poster_h</span> <br>in pixels 
-        </li>
         <li>
             <span class="code">menufontfile</span> <br>The font file to be used for the printing the names of the roms in the rom list.
         </li>
         <li>
-            <span class="code">menufontsize</span> <br>This value is in units of font point size, not pixels.
-        </li>
-        <li>
-        <span class="code">menuitem_h</span> <br>The height, in pixels, that menu items (game names) will take up.
-        </li>
-        <li>
-            <span class="code">tier_h</span> <br>in pixels
-        </li>
-        <li>
-            <span class="code">tierframepadding</span> <br>in pixels 
-        </li>
-        <li>
             <span class="code">tierfontfile</span> <br>The font file to be used for printing the volume names and the rom list names. 
         </li>
-        <li>
-            <span class="code">tierfontsize</span> <br>this value is in font point size, not pixels.
-        </li>
-        <li>
-            <span class="code">squaredef</span> <br>Logo image files are resized so that they they fit as much of the the area on the screen reserved for the slideshow as possible while maintaining their ratio of width:height. Many hardware logos have banner-style dimensions. That is, their length is much greater than their height. But some are square or square-ish. If you have a mix of square and banner logos, the square logos end up looking much bigger (because the slideshow area is square-ish). I do not like the way this makes them seem more important than banner-shaped logos. So the squaredef variable, and the one below (squareshrink) shrink square-ish logos. This variable is how close to 1:1 the width:height ratio should be before a logo is considered square, and needs to be a floating point number close to 0.0.  The closer this number is to 0.0, the closer the banner image needs to be to a perfect square before it kicks in the next variable:
-        </li>
-        <li>
-        <span class="code">squareshrink</span> <br> The percentage of its full size a square image should be shrunk to. So, for example, a value of <span class="code">80</span> here means that the logo image would only be 80% of the width and height it would have been had it been fully resized to fully occupy the available on-screen area.
-        </li> 
     </ul>
 
 </div>

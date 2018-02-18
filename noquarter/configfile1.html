@@ -31,16 +31,16 @@
     This document highlights file names and example config file entries by giving them a gray background and a different font. Italicised text in an example config file entry means to use some appropriate value for what the italicised term represents, not the literal words which are italicised. A pipe character, <span class="code">|</span>, between terms in a field definition means to use only one of the terms which are separated by the pipe(s).
     </p> 
     <p> 
-        <span class="code">NoQuarter.cfg</span> is the main config file. The program works by creating file associations. When working in the config file, it might help to remember that the whole point is to define that a certain file extension should be opened with a certain program. Almost everything else in the config file is in support of this concept. 
+        <span class="code">NoQuarter.cfg</span> is the main config file. No quarter works by creating file associations. When working in most parts of the config file, it might help to remember that the whole point is to define that a certain file extension should be opened with a certain program.  
     </p> 
     <p> 
         Spaces: leading and trailing spaces get stripped as much as possible: they get stripped from beginning of lines, and from the values of fields, so use as many spaces as you like to line up and format your data.
     </p> 
     <p> 
-        Comments: Create a comment line (that is, a line to make notes for yourself and which will be ignored by the NoQuarter program), by starting it with a pound sign.
+        Comments: Create a comment line (that is, a line to make notes for yourself and which will be ignored by the No Quarter program as it reads the config file), by starting it with a pound sign.
     </p> 
     </p> 
-    Directories: Wherever a directory may be part of the value for a field, you may use an absolute path or a path relative to where nq.exe is sitting on your hard drive. You do not have to supply book-end quotes for file or directory names which include spaces, unless such a space-containing name is in the <a href="#options">options field in the [emulator config] section</a>.
+    Directories: Wherever a directory may be part of the value for a field, you may use an absolute path or a path relative to where nq.exe is sitting on your hard drive. You do not have to enclose space-containing file or directory names with quotes, unless such a space-containing name is in the <a href="#options">options field in the [emulator config] section</a>.
     </p> 
     <p> 
     <h3><span id="uservars">User-Defined Variables and Conditional Blocks</span></h3>
@@ -110,7 +110,7 @@
         <h3>NQ Variables</h3>
     </p> 
     <p> 
-    There is another kind of variable, and these are configuration variables for the program. These variables take the form <span class="code">?<i>variablename value</i></span>. Most of these variables are related to configuring the screen, and this activity deserves its own page, so <a href="configfile2.html">click here</a> to learn about the configuration variables. Any variable not defined will receive a default value, so  it's not imperative to define these variables immediately. If you're still on the fence about using NQ, then I would skip that page for now, and instead keep reading on here to learn about setting up your emulators and roms.
+    There is another kind of variable, and these are configuration variables for the program. These variables take the form <span class="code">?<i>variablename value</i></span>. <a href="configfile2.html">Click here</a> to learn about the configuration variables. Any variable not defined will receive a default value, so it's not imperative to define these variables immediately. If you're still on the fence about using NQ, then I would skip that page for now, and instead keep reading on here to learn about setting up your emulators and roms.
     </p> 
 
     <h3>Images</h3>
@@ -130,7 +130,10 @@
             <span class="code">logos</span> <br> Hardware logo images need to go in here.
             </li>
             <li>
-            <span class="code">posters</span> <br> Posters are the main images used to represent games. Posters need to go in this directory, or in a subdirectory of this directory. Posters may be .jpg or .png files. For now, keep these image file under half a meg, or there will be noticable stuttering when they are scrolled through in the menu.
+            <span class="code">posters-master</span> <br> Posters are the main images used to represent games. Posters need to go in this directory, or in a subdirectory of this directory. Posters may be .jpg or .png files. 
+            </li>
+            <li>
+            <span class="code">posters</span> <br> You don't put anything in this directory directly. No Quarter will create subdirectories under this folder as you create different poster dimensions for the different layouts you might create, and copy the images from the "posters" directory into the subdirectories in here, resized to the named dimensions. If you create poster dimensions that you decide you will ultimately not be using, then you can delete the subdirectory under this directory which matches those dimensions. 
             </li>
             <li>
             <span class="code">slideshow</span> <br>
@@ -147,7 +150,7 @@
         To start with a fresh noquarter.cfg file, you can either remove the lines of demo data under the various sections of the noquarter.cfg file which came with the download, or just copy or rename the file skeleton.cfg to "noquarter.cfg".
         </p>
         <p>
-        If you don't want any of the slideshow screenshots, posters, banners, hardware logos, or sprites which came with the download (I included them for the demo), then delete them under the directories "slideshow", "posters", "banners", "logos", and "sprites".
+        If you don't want any of the slideshow screenshots, posters, banners, hardware logos, or sprites which came with the download (I included them for the demo), then delete the files under the directories "slideshow", "posters-master", "banners", "logos", and "sprites", and delete the directories under the "posters" folder.
         </p>
         <p>
         Remove all of the data from favorites.txt. 
@@ -155,6 +158,7 @@
         <hr> 
         <hr> 
         <h3>The sections of noquarter.cfg:</h3>
+        A section begins with an opening tag, which is the name of the section enclosed in braces. NQ does not use closing tags - the opening tag of a new section will close the section preceding it.
 
     <p> 
     <h3><span id="emulatorconfig">[emulator config]</span></h3>
@@ -184,15 +188,22 @@
                 Be aware that if you use either <span class="code">base</span> or <span class="code">file</span> here, then that very likely means that your emulator has its own list of paths to search. This must be configured separately in your emulators.
             </li>
             <li>
-              <span class="code">input config FSO</span>: (FSO = file system object) This is either a directory or a file (a directory for the on-controller-change-only version, a file for the per-game version). No Quarter can manage per-game controller configuration for any emulator which does not already natively support per-game controller configuration. It similarly allows you to manage emulator controller configuration when switching between input devices. This is a labor-intensive feature, so I advise skipping over this section until you've decided you will be using NQ and you are going to make use of this feature. Whether or not you use this feature, the least you need to know about it is that a valid FSO is required in this field, so I recommend using the emulator's directory as a dummy value for this field, and then you can skip down to reading about the <span class="code"><a href="#associations">[associations]</a></span> section.<br><br>
-            Let's look at emulator input device swapping management first. You would use this feature in the case where an emulator natively supports per-game configuration, but you want to use NQ to manage changing those per-game configurations when you change input devices. For example, I use it for Mame and Mednafen when I switch between different input devices. On the <a href="configfile2.html">variables page</a>, you see there is a variable <span class="code">?input</span>, in which you create whatever name you want for an input device. NQ keeps track of the last value of this variable in the file <span class="code">lastcontroller</span>. This is a text file which contains the value of <span class="code">?input</span> (with the addition of a leading underscore) from the last time NQ was run. To allow the use of different input mappings based on switching between different physical input devices, repeat this process for each input device (this will only fully work if the emulator stores its per-game configs in a seperate file for each game, and if the default config file is in the same directory as the per-game config files):
+              <span class="code">input config FSO</span>: (FSO = file system object) This is either a directory or a file (a directory for the on-controller-change-only version, a file for the per-game version). No Quarter can manage per-game controller configuration for any emulator which does not already natively support per-game controller configuration. It similarly allows you to manage emulator controller configuration when switching between input devices. This is a labor-intensive feature, so I advise skipping over this section until you've decided you will be using NQ and you are going to make use of this feature. Whether or not you use this feature, the least you need to know about it is that a valid FSO is required in this field, so I recommend using the emulator's directory as a dummy value for this field, and then you can skip down to reading about the <span class="code"><a href="#minimize">minimize</a></span> field.<br><br>
+              <ul>
+                  <li>
+                  <u>Emulator input device swapping management:</u>
+              <br>
+              You would use this feature in the case where an emulator natively supports per-game configuration, but you want to use NQ to manage changing those per-game configurations when you change input devices. For example, I use it for Mame and Mednafen when I switch between different input devices. On the <a href="configfile2.html">variables page</a>, you see there is a variable <span class="code">?input</span>, in which you create whatever name you want for an input device. NQ keeps track of the last value of this variable in the file <span class="code">lastcontroller</span>. This is a text file which contains the value of <span class="code">?input</span> from the last time NQ was run. To allow the use of different input mappings based on switching between different physical input devices, repeat this process for each input device (this will only fully work if the emulator stores its per-game configs in a seperate file for each game, and if the default config file is in the same directory as the per-game config files):
             <br><br>
             <ol>  
                 <li>
-                    Decide on a name for the device, and create a folder for the device under the folder which holds the emulator's per-game configuration files, and name the folders the name of the input device, prepended with an underscore. Using mame for an example (mame stores its per-game config files under the directory <span class="code">cfg</span>), under the main mame folder, I have the folders 
-                    <span class="code">cfg\_keyboard</span> ,
-                    <span class="code">cfg\_gamepad1</span> , and
-                    <span class="code">cfg\_ultratsik</span>
+                Create a folder named <span class="code">_nqinputcfg</span> under the folder which holds the emulator's per-game configuration files.
+                </li>
+                <li>
+                For each device, decide on a name for the device, and create a folder for the device under <span class="code">_nqinputcfg</span>, and name the folder the name of the input device. Using mame for an example (mame stores its per-game config files under the directory <span class="code">cfg</span>), under the main mame folder, I have the folders 
+                    <span class="code">cfg\_nqinputcfg\keyboard</span> ,
+                    <span class="code">cfg\_nqinputcfg\gamepad1</span> , and
+                    <span class="code">cfg\_nqinputcfg\ultratsik</span>
                 </li>
                 <li>
                     Plug in the device and configure the emulator for it, and do so for each game if you have different game configurations. Make sure each configuration is saved.
@@ -201,17 +212,21 @@
                     The emulator also likely has a default configuration file, which you should configure with the defaults for the controller.
                 </li>
                 <li>
-                    Copy all of the per-game configuration files and the default config file to the folder you created in the first step. 
+                    Copy all of the per-game configuration files and the default config file to the folder you created in the second step. 
                 </li>
             </ol>  
             <br>
-            After this is done, then you can change emulator input configurations by changing the value of <span class="code">?input</span> in noquarter.cfg. The next time NQ is run, it will see that the value of <span class="code">?input</span> is different, and will copy the config files out of the directory <span class="code">_<i>input device</i></span> over the existing configuration files one level up for every emulator which has such a named directory. A downside to this technique is that if you decide to change any other type of configuration for your emulator(s) which happen to be stored in the same files as input configuration, then you will lose those changes the next time you change the value of <span class="code">?input</span>, unless you make that change in all of the copies you made in the subdirectories you created.
+            After this is done, then you can change emulator input configurations by changing the value of <span class="code">?input</span> in noquarter.cfg. The next time NQ is run, it will see that the value of <span class="code">?input</span> is different, and will copy the config files out of the directory <span class="code"><i>input device</i></span> over the existing configuration files one level up for every emulator which has such a named directory. A downside to this technique is that if you decide to change any other type of configuration for your emulator(s) which happen to be stored in the same files as input configuration, then you will lose those changes the next time you change the value of <span class="code">?input</span>, unless you make that change in all of the copies you made in the subdirectories you created.
             <br><br>
-            Per-game input configuration management: Use this for emulators which do not natively support per-game configuration.
+            </li>
+            <li>
+            <u>Per-game input configuration management:</u>
+            <br>
+            Use this for emulators which do not natively support per-game configuration.
             <br><br>
             <ol>  
                 <li>
-                    If you have not already configured per-controller configuration, then you need to do some of it now. Even if you do not plan to ever change your input device, you still need to create one folder per emulator named after your permanent input device. Decide on a name for the device, and create a folder at the same level as the configuration file for the emulator which holds input config, and name the folder the name of the input device, prepended with an underscore.
+                If you have not already configured per-controller configuration, then you need to do some of it now. Even if you do not plan to ever change your input device, you still need to create one folder per emulator named after your permanent input device. Create a folder at the same level as the configuration file for the emulator which stores the emulator's input config, and name it <span class="code">_nqinputcfg</span>. Decide on a name for the device, create a folder for the device under _nqinputcfg, and name the new folder the name of the input device.
                 </li>
                 <li>
                     Configure the emulator for default key bindings.
@@ -235,8 +250,10 @@
                 </li>
             </ol>  
             </li>
+        </ul>
+            </li>
             <li>
-                <span class="code">minimize:</span> When NQ launches a game, most emulators will be missing the video, or have some other issue, if NQ does not first minimize itself. So far, I think only Mame does not require NQ to minimize itself. This field is optional, but if you add it, then NQ will minimize itself before running an emulator. The value you use for this field does not matter, but you do have to put in some kind of dummy value. Just a comma and then nothing after it will not count as this field existing.
+                <span id="minimize" class="code">minimize:</span> When NQ launches a game, most emulators will be missing the video, or have some other issue, if NQ does not first minimize itself. So far, I think only Mame does not require NQ to minimize itself. This field is optional, but if you add it, then NQ will minimize itself before running an emulator. The value you use for this field does not matter, but you do have to put in some kind of dummy value. Just a comma and then nothing after it will not count as this field existing.
             </li>
         </ul>
     </p> 
@@ -258,13 +275,13 @@
                 </ul>
             </li>
             <li>
-            <span class="code">emulator reference name</span>: A reference name you defined in the previous section.
+            <span class="code">emulator reference name</span>: A reference name you defined in the <a href="#emulatorconfig">emulator config</a> section.
             </li>
         </ul>
     </p> 
     <p> 
-        <h3>[aliases]</h3>
-        The roms in rom lists are sorted alphabetically. Mame requires that roms have specific names. If you want a Mame rom to sort in the list as though it had a different name, then create an alias for it in this section. This alias will also become the display name, unless you also create an entry for the rom in <span class="code">displaynames.txt</span>, in which case the name in displaynames.txt will be the display name, but it will still sort based on the alias created here. Format:
+    <h3><span id="sortalias">[aliases]</span></h3>
+        The roms in rom lists are sorted alphabetically. Mame requires that roms have specific names. If you want a Mame rom to sort in the list as though it had a different name, then create an alias for it in this section. This alias will also become the display name, unless you also create an entry for the rom in <a href="#displaynames">displaynames.txt</a>, in which case the name in displaynames.txt will be the display name, but it will still sort based on the alias created here. Format:
         <span class="code"><i>rom base name, alias</i></span> 
         <ul>
             <li>
@@ -288,7 +305,7 @@
     </p> 
     <p> 
         <h3>[load roms]</h3>
-        NQ uses two levels of grouping (also referred to as tiers). The top level (or tier) is called volumes, and the bottom level is called rom lists. This section defines volumes and the rom lists they contain, and populates your rom lists with roms from your directories. You can load multiple directories into a list, and you can have one directory loaded into multiple lists. Only files with extensions which have an association defined will be loaded. Keep in mind any file you want put into a rom list from favorites.txt must first be loaded into some other rom list from this section. Format:
+        NQ uses two levels of grouping (referred to as tiers). The top level (or tier) is called volumes, and the bottom level is called rom lists. This section defines volumes and the rom lists they contain, and populates your rom lists with roms from your directories. You can load multiple directories into a list, and you can have one directory loaded into multiple lists. Only files with extensions which have an association defined will be loaded. Keep in mind any file you want put into a rom list from favorites.txt must first be loaded into some other rom list from this section. Format:
         <br> <br>
         <span class="code"><i>volume, rom list, directory [, hardware logo]</i></span>
         <br>
@@ -344,6 +361,9 @@
                 <span class="code">next list</span> Go to the previous rom list in the volume
             </li>
             <li>
+                <span class="code">tier shift</span> while this button is being held down, the "prev list" and "next list" inputs will instead function as "prev volume" and "next volume". I recommend using this functionality over using the next two functions, but they're here anyway:
+            </li>
+            <li>
                 <span class="code">prev volume</span> Go to the previous volume
             </li>
             <li>
@@ -351,6 +371,9 @@
             </li>
             <li>
                 <span class="code">run</span> Run the currently-selected rom
+            </li>
+            <li>
+            <span id="cyclelo" class="code">cycle layout</span> Cycle to the next <a href="#layout">layout</a>
             </li>
             <li>
                 <span class="code">exit</span> exit NQ
@@ -366,24 +389,9 @@
             </li>
         </ul>
             <br>
-            <b>Alternative scrolling functions:</b>
-            <br> <br>
-            There are three things which can be scrolled through: volumes (scroll through the different volumes), rom lists (scroll between rom lists of a volume), and roms (scroll through the roms in the current list). You might prefer to scroll through all three things using a joystick (or arrow buttons), but joysticks (arrow buttons) only have two axes. Using the functions defined above, you would have to pick one of the three things to be scrolled through using buttons. The following functions allow you to use a joystick (arrow buttons) for all three, by assigning a button to be the tier toggle. Hitting the "tier toggle" button will cause focus for left/right scrolling to be switched between volumes and rom lists. 
-        <ul>
-            <li>
-                <span class="code">tier toggle</span> Toggle between volumes and rom lists for scrolling focus. If this function is defined, then two little focus-indicator icons will appear on each side of the outline-shape/frame of the tier label which has focus. So when volumes have focus, you will see these icons next to both sides of that pinkish box at the top of the screen which frames the name of the volumes. When the rom list tier has scrolling focus, you will see the icons just outside the pinkish box at the bottom of the screen which frames rom list names.
-            </li>
-            <li>
-                <span class="code">prev tier item</span> If the "volume" tier has scrolling focus, then go back one volume. If the "rom list" tier has scrolling focus, then go back one rom list.
-            </li>
-            <li>
-                <span class="code">next tier item</span> If the "volume" tier has scrolling focus, then go forward one volume. If the "rom list" tier has scrolling focus, then go forward one rom list.
-            </li>
-        </ul>
-            <br>
             <b>GUI functions:</b>
             <br> <br>
-            The first three functions are used to populate favorites-style rom lists. These functions make changes to the file favorites.txt, which you can just as easily edit manually if you want. The last function is for changing the menu's display names of your roms, and will edit the file displaynames.txt, which may also be edited manually as an alternative to using this in-program function.
+            The first three functions are used to populate favorites-style rom lists. These functions make changes to the file favorites.txt, which you can just as easily edit manually if you want. The last function is for changing the menu's display names of your roms, and will edit the file displaynames.txt, which may also be edited manually as an alternative to using this in-program function. 
             <br>
         <ul>
             <li>
@@ -396,7 +404,7 @@
             <span class="code">delete</span> Deletes the current rom from the current rom list. This will only work if the rom is in the list because it was added as a favorite (which happens when you add it with the collect &amp paste features described just above, or if you manually added it in the file <span class="code">favorites.txt</span>). If the rom is in the list because it was loaded into this list because of a line in the <span class="code">[load roms]</span> section, then it will not be deleted. The only way to remove such roms from rom lists is to delete the rom file from the directory it was loaded from.
             </li>
             <li>
-                <span class="code">display name</span> Create or change the display name for the current rom. This only changes what you see in the menu list, it does not rename the rom file. The display name is not used for alphabetical sorting, only the file name is used. You will see two vertical lines on the input field. These lines represent the width of the area used to display rom names in the menu. If the name you type expands beyond these guides, then the name will exceed the allowed area for game names in the menu. 
+            <span id="displaynames" class="code">display name</span> Create or change the display name for the current rom. This only changes what you see in the menu list, it does not rename the rom file. The display name is not used for alphabetical sorting - only the file name is used for sorting (or the optional <a href="#sortalias">sorting alias</a>). You will see two vertical lines on the input field. These lines represent the width of the area used to display rom names in the menu. If the name you type expands beyond these guides, then the name will exceed the allowed area for game names in the menu.  Changes made with this function are saved in the file displaynames.txt.
             </li>
         </ul>
     </p> 
@@ -408,9 +416,76 @@
         <br> <br>
         NQ functions: Use the list from the previous section.
         <br> <br>
-        Joystick button: The button number on the joystick. There is a helper program in the same directory as nq.exe, joytest.exe. Run this program and press a button on your joystick to see which number you should enter for the value of this field. You cannot map the analog up/down and left/right axes. They are hardcoded to prevrom/nextrom/prevlist/nextlist. If you have more than one joystick plugged in, NQ does not differentiate between which device sent a joystick button. So if you have multiple joysticks of different types, then input from any of them will be processed, but only the one you configured NQ for will be guaranteed to have the correct functions mapped to the correct buttons.
+        Joystick button: The button number on the joystick. There is a helper program in the same directory as nq.exe named joytest.exe. Run this program and press a button on your joystick to see which number you should enter for the value of this field. You cannot map the analog up/down and left/right axes. They are hardcoded to prevrom/nextrom/prevlist/nextlist. If you have more than one joystick plugged in, NQ does not differentiate between which device sent a joystick button. So if you have multiple joysticks of different types, then input from any of them will be processed, but only the one you configured NQ for will be guaranteed to have the correct functions mapped to the correct buttons.
     </p> 
 
+
+    <p> 
+    <h3><span id="layout">[layout]</span></h3>
+    Layouts define the geometry of the various screen objects. You may have more than one layout section (they all need to start exactly with the tag [layout] - don't add a number or anything to the tags for multiple layouts). Your different layouts can be cycled through when No Quarter is running by hitting the <a href="#cyclelo">cycle layout</a> button.
+    <br><br>
+    The width of the No Quarter screen = padding * 2 + max slide width + divide + max poster width
+    <br>
+    The height of the No Quarter screen = padding * 2 + tier height * 2 + max poster height  
+        <p>
+        Format:<br>
+        <span class="code"><i>property, value</i></span>
+        </p>
+        <p>
+        These are the properties you should define for each layout:
+        </p>
+            <ul>
+        <li>
+            <span class="code">padding</span> <br>The number of pixels to pad on the outside of all four sides.
+        </li>
+        <li>
+            <span class="code">divide</span> <br>The number of pixels to space between the menu/slideshow left half of the screen and the poster/tiers right side of the screen.
+        </li>
+        <li>
+        <span class="code">menu items</span> <br>The number of roms in your list to be displayed at one time. This number should be odd. If it is even, then the actual value used when the program runs will be one less than the value you indicate here. This value should be tweaked in conjunction with max slide height and menu item height in order to get the maximum number of items on the screen as possible. In other words, the larger are max slide height and menu item height, the smaller this number will have to be. I will some day have NQ calculate this value for you.
+        </li>
+        <li>
+            <span class="code">max slide width</span> <br>The width for the left half of the screen. This is not only the maximum width for slides, but will also be the width of the game menu list. 
+        </li>
+        <li>
+            <span class="code">max slide height</span> <br>in pixels
+        </li>
+        <li>
+            <span class="code">max poster width</span> <br>in pixels
+        </li>
+        <li>
+            <span class="code">max poster height</span> <br>in pixels 
+        </li>
+        <li>
+            <span class="code">menu font size</span> <br>Font size of game list menu items.
+        </li>
+        <li>
+        <span class="code">menu item height</span> <br>The greater the difference is between this value and menu font size, the greater the spacing between menu items.
+        </li>
+        <li>
+            <span class="code">tier height</span> <br>The vertical pixels allotted for each of the two tier labels. The tier frames are also squeezed into this area, and there is also the padding variable on the next line which takes pixels out of this allotment, so this shouldn't just match the font size of the tier font - it needs to be larger than that.
+        </li>
+        <li>
+            <span class="code">tier frame padding</span> <br>in pixels 
+        </li>
+        <li>
+            <span class="code">tier font size</span> <br>Font size of tier labels.
+        </li>
+        <li>
+            <span class="code">square def</span> <br>Logo image files are resized so that they they fit as much of the the area on the screen reserved for the slideshow as possible while maintaining their ratio of width:height. Hardware logos tend to have banner-style dimensions. That is, their length is significantly greater than their height. But some are square or square-ish. If you have a mix of square and banner logos, the square logos end up looking much bigger (because the slideshow area is square-ish). I do not like the way this makes square-ish logos seem more important than banner-shaped logos. So the squaredef variable, and the one below (squareshrink) shrink square-ish logos. This variable is how close to 1:1 the width:height ratio should be before a logo is considered square, and needs to be a floating point number close to 0.0.  The closer this number is to 0.0, the closer the banner image needs to be to a perfect square before it kicks in the next variable:
+        </li>
+        <li>
+        <span class="code">square shrink</span> <br> The percentage of its full size a square image should be shrunk to. So, for example, a value of <span class="code">80</span> here means that the logo image would only be 80% of the width and height it would have been had it been fully resized to fully occupy the available on-screen area.
+        </li> 
+        <li>
+        <span class="code">posters on</span> <br> This is an optional line, and it is a single field. "posters on" is a flag all by itself, and so does not require any more data on the line. If a layout does not contain a "posters on" line, then the default placeholder image will be used as the poster for every game. Why am I forcing you to explicitly indicate that you want the posters you spent hours selecting/downloading/creating to be used to represent your games? Because when posters are turned on for the first time for any new poster dimension (that is, a layout contains a max poster width * max poster height which you have never used in your NQ install before), then No Quarter will make resized copies of all your posters to match the new dimensions. This could take a minute or two if you have lots of posters. You might be tweaking a layout, and not be sure if you're going to stick with this new max poster width * max poster height, and so you could be wasting time waiting for the copies to be made. Once you have settled on new poster dimensions, then you should add a "posters on" line to the layout, and then the next time NQ runs, the copies will be made. The copying will just be a one-time occurrence.
+        </li> 
+        <li>
+        <span class="code"><i>rotation</i></span> <br> This is an optional line, and it will consist of a single field, and the two allowable values are "clockwise" and "widdershins". In other words, the whole line should consist of just one of those two words, without the quotations (but any number of leading spaces is still allowed, as with all lines in the config file.)
+        </li> 
+    </ul>
+    </p> 
+    <br><br>
     <p> 
     <a href="configfile2.html">Configuration File page 2 - variables</a>
     </p> 

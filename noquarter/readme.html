@@ -24,6 +24,10 @@
 </div>
 <div class="notes">
 
+    <br>
+    <p>
+    <u>No Quarter<b></b></u> - It's crafted!
+    </p>
     <h3>OVERVIEW</h3>
 
     This page documents the usage of the the "No Quarter" game launcher. No Quarter is a graphically minimalist and customizable menu for opening documents based on associated programs, built with arcade and game console emulators in mind.
@@ -34,7 +38,7 @@
                 <img src="fair.jpg">
             </td>
             <td class="notes2">
-    I do not recommend using No Quarter with high resolution desktops or with large rom lists.
+    No Quarter looks best with lower-resolution desktops. 
             </td>
         </tr>
     </table>
@@ -44,13 +48,13 @@
     <p>
     <ul>
         <li>
-        OS: Windows XP 32 bit, Windows 7 or above 64-bit, or Linux
+        OS: Windows XP 32 bit, Windows 7 or above 64-bit. Linux support coming soon(ish).
         </li>
         <li>
         CPU: The least-powerful CPU tested with is a 3.0 GHz P4, and it works fine on that. I see no reason why a PIII would have any issues.
         </li>
         <li>
-        RAM: The biggest RAM-eater is the images for the hardware logos (because they are loaded at start-up and are persistent until you exit), but I imagine most people would have less than a dozen of these. Unless you use more logos than that, or also have thousands of games, you can get by with 100 MB.
+        RAM: The biggest RAM-eater is the images for the hardware logos (because they are loaded at start-up and are persistent until you exit the program), but I imagine most people would have less than a dozen of these. Unless you use many more logos than that, or have thousands of games, No quarter won't use much more than 100 MB.
         </li>
         <li>
         Graphics Card: Requirement for this is also based on quantity and size of hardware logo images, plus the size of your largest sprite sheet (for the rascal animations). Graphics hardware acceleration is required, but unless you've went hog-wild with the hardware logos and sprites, you'll be fine with 64 MB, and likely even 32 MB of video RAM.
@@ -86,7 +90,7 @@
         <b>Features &amp Limitations</b>
     </p>
     <p>
-        I tried to be as brief as I can in this section to help you decide if No Quarter is something you want to try out. Details of these items will be explained elsewhere.
+        I tried to be as brief as I can in this section to help you decide if No Quarter is something you want to try out. Details of these items are explained elsewhere.
     </p>
     <ul>
         <li>
@@ -96,13 +100,16 @@
             Runs roms based on user-defined rom-to-emulator associations (which are internal to NQ - I don't touch your OS file associations).  One benefit of this is that roms for different emulators may be mixed in your directories and game lists without any problem.
         </li>
         <li>
+        NQ's file associations allows you to distinguish between different versions of the same emulator, so running one rom with one version of a particular emulator and running a different rom with a different version of that emulator is no problem.
+        </li>
+        <li>
             Two-tier categorization:
             <ol>
                 <li>
                     Volumes: This is the top level of categorization. In the two screenshots above, the current volume is indicated by the image of the five stars (You may optionally designate such an image for volumes. If you do not, then the text of the volume name will be displayed. I chose the five-star image for my "favorites" volume). Volumes do not directly contain games. Volumes are collections of the second level of categorization:
                 </li>
                 <li>
-                    Game lists:  The clever reader my deduce that given that this is the final level of categorization, and given the name of this level, that this is where the individual games are stored, examples of which you have observed in the game names present in the screenshots above. The first screenshot has the "shooters" game list selected (the "shooters" game list being one of the game lists under the "favorites" volume). The second screenshot has the "versus" game list selected (which is also a game list under the "favorites" volume), although its name is mostly obscured by Wolverine.
+                    Game lists:  This is where the individual games are stored, examples of which you have observed in the game names present in the screenshots above. The first screenshot has the "shooters" game list selected (the "shooters" game list being one of the game lists under the "favorites" volume). The second screenshot has the "versus" game list selected (which is also a game list under the "favorites" volume), although its name is mostly obscured by Wolverine.
                 </li>
             </ol>
         </li>
@@ -110,7 +117,7 @@
             Automatic running of compiled AHK scripts: You'll have to write and compile your own AHK scripts, but if you follow a naming and folder placement convention, your AHK scripts will run automatically without even having to be configured in a config file. Works for AHK files intended for both per-emulator and per-game application.  
         </li>
         <li>
-            Ditto for Linux and xmodmap files and xdotool files.  
+            Ditto for Linux and xmodmap files and xdotool files (when Linux support is finalized, anyway).  
         </li>
         <li>
             Customizable controls: Each function in NQ may be mapped to multiple keys and/or multiple gamepad buttons, so if you have a 4-player CP, all four of the stations may be configured to navigate the FE.
@@ -119,16 +126,13 @@
             NQ can allow you to configure per-game controls for emulators which do not support this feature. It's a rather Micky Mouse method, and not something cool like grabbing raw input and translating it while the game is running. It requires some work on your part, but it gets the job done. 
         </li>
         <li>
-            As an extension of the above point, NQ can help you with managing controller changes, so that you can change a line in the config file to switch from KB input for your emulators to your gamepad input, and NQ will make the appropriate changes to the config files for the emulators (actually these would be changes you already set up, so this doesn't happen without prep work on your part)
+            As an extension of the above point, NQ can help you with managing controller changes, so that you can change a line in the NQ config file to switch from KB input for your emulators to your gamepad input, and NQ will make the appropriate changes to the config files for the emulators (actually these would be changes you already set up, so this doesn't happen without prep work on your part)
         </li>
         <li>
             Aliasing game names for the menu. I'm pretty sure plenty of other FEs already do this, where if you have ddragon.7z, it will automatically present it to you as "Double Dragon", without any work on your part.  NQ will do this, except you need to alias each game yourself (with the exception of the aliases you're inheriting from the ones I'm including for the demo)
         </li>
         <li>
-            A second kind of aliasing allows you to assign an alias for sorting purposes, so that you can have Mame roms sorted as though they had a different name.
-        </li>
-        <li>
-        You can use different versions of the same emulator.
+            A second kind of aliasing allows you to assign an alias for sorting purposes, so that you can have Mame roms sorted as though they had a different name. (game lists are sorted alphabetically)
         </li>
         <li>
             Safe exit: Optionally require that the exit button be triple-tapped in order to exit the FE.
@@ -142,15 +146,15 @@
         <li>
             I'm having trouble getting most emulators to run correctly unless NQ first minimizes itself. For now, most emulators will need to be configured to have NQ minimize itself before the emulator runs, exposing the OS desktop. 
         </li>
+        <li>
+            Rotation and multiple layouts: No Quarter supports rotating the menu 90&deg in either direction. To implement this, I added functionality for loading multiple layouts, and one of the properties of a layout is rotation, so you can switch from right-side-up to rotated by hitting the "cycle layout" button (assuming you configured the next layout in the cycle to be rotated, of course).
+        </li>
     </ul>
 
     <p>
     <b>Planned features/improvements</b> 
     </p>
     <ul>
-        <li>
-        Since posters are read from disk each time as needed, there can be a slight stutter in scrolling the menu as a poster is loaded, if the image file is not small. I plan to attack this issue two ways: Create copies of the posters sized precisely as needed and save to new files, which will become the files read in by the porgram, and also read the files in their own thread. Since posters change halfway through the scrolling animation, a small file could be read in and ready to go by the time it's needed to be displayed. 
-        </li>
         <li>
         Integrating Ultrastick map uploading.
         </li>
@@ -173,7 +177,7 @@
         Get a better icon.
         </li>
         <li>
-        I have a few Zinc codes hard-coded (Zinc does not take rom names as arguments, you need the numeric code it associates with the roms) so that you can associate Zinc directly with rom files and it will work without any trickery on your part to get the numeric code passed to it. I can add more if requested.
+        I have a few Zinc codes hard-coded (Zinc does not take rom names as arguments, you need the numeric code it associates with the roms) so that you can associate Zinc directly with rom files in noquarter.cfg and it will work without any trickery on your part to get the numeric code passed to Zinc. I can add more if requested.
         </li>
     </ul>
 
@@ -183,10 +187,10 @@
     <p>
     I use AVG for my anti-virus, and it always insists on running a scan on NQ every time I launch it. It doesn't find anything suspicious, but be aware that your anti-virus might make some noise about it.
     </p>
-    <p> You can run No Quarter from wherever you unzipped it to. Double-click nq.exe. You will be greeted with a splash screen while the configuration file is read and processed. (I haven't tested this on a lot of PCs, but IIRC, the splash screen always looks funky on the first run on any PC. Subsequent runs do not have this problem) No games or emulators have been distributed with this. As mentioned above, NQ works by user-defined file associations, so for the demo, I have associated png and jpg files with Notepad (but without any arguments to Notepad, so it won't be trying to open the image files). If you choose to run a game, Notepad will open, and then closing Notepad will return you to the FE.
+    <p> You can run No Quarter from wherever you unzipped it to. Double-click nq.exe. You will be greeted with a splash screen while the configuration file is read and processed. (I haven't tested this on a lot of PCs, but IIRC, the splash screen always looks funky on the first run on any PC. Subsequent runs do not have this problem. I cannot replicate this problem because I've already run NQ on all of my PCs) No games or emulators have been distributed with this. As mentioned above, NQ works by user-defined file associations, so for the demo, I have associated png and jpg files with Notepad (but without any arguments to Notepad, so it won't be trying to open the image files). If you choose to run a game, Notepad will open, and then closing Notepad will return you to the FE.
     </p>
     <p>
-    While the splash screen will always take up as much of the screen as possible, once all of the images are loaded and the main part of the program is running, NQ will only take up as much of the screen as is configured in the main config file. The demo is configured for the smallest reasonable resolution, so it's only going to be in a 640 * 480 box. If your desktop is at a higher resolution, you will have a blueish-white background which isn't really meant to be seen in production  
+    While the splash screen will always take up as much of the screen as possible, once all of the images are loaded and the main part of the program is running, NQ will only take up as much of the screen as is configured in the main config file. The demo is configured for a 640 * 480 resolution. If your desktop is at a higher resolution, you will have a blueish-white background behind the main box which isn't really meant to be seen in production  .
     </p>
     This is not a comprehensive list of features, but these actions cover the majority of the NQ experience:
     <ul>
@@ -197,7 +201,7 @@
             The left and right arrow keys scroll through the game lists of the current volume.
         </li>
         <li>
-            The "a" and "s" keys scroll through the volumes.
+            LShift + the left and right arrow keys scroll through the volumes.
         </li>
         <li>
             "z" jumps to the first rom in the current rom list (since scrolling through games loops at the endpoints, this also puts you right near the end of the list too) 
@@ -206,7 +210,10 @@
             "x" jumps to the middle rom of the current rom list.
         </li>
         <li>
-            "1" launches the current game. Again, there are no emulators or games with this download, so it just launches Notepad, then waits for you to exit Notepad before returning to the FE.
+            "1" (number one) launches the current game. Again, there are no emulators or games with this download, so it just launches Notepad, then waits for you to exit Notepad before returning to the FE.
+        </li>
+        <li>
+            "l" (lower-case el) cycles through the layouts. There are three layouts in the demo - right-side-up, 90&deg clockwise, and 90&deg widdershins.
         </li>
         <li>
             "Escape" exits the program.
