@@ -45,8 +45,9 @@
     <p> 
     <h3><span id="uservars">User-Defined Variables and Conditional Blocks</span></h3>
     </p> 
-
-
+    <p> 
+    This section might be confusing if you aren't already familiar with the concepts involved, and nothing in here is necessary for modifying your config files, so if you aren't right now on a misison to understand how the config file uses variables and conditional blocks, you might want to jump down to the <a href="#images">next section.</a> 
+    </p> 
     <p> 
        To make the config file easier to manage, you can define your own variables. These variables will cause nq.exe to perform text substitutions when it processes the configuration file. The format is the variable name enclosed in dollar signs, an equal sign, and then the value to assign to the variable. For example, the line:
     </p> 
@@ -83,6 +84,7 @@
         - or -
         <br>
         <span class="code">&ampelse</span>
+        <br>
         ...is encountered.
         <br>
         <br>
@@ -113,7 +115,7 @@
     There is another kind of variable, and these are configuration variables for the program. These variables take the form <span class="code">?<i>variablename value</i></span>. <a href="configfile2.html">Click here</a> to learn about the configuration variables. Any variable not defined will receive a default value, so it's not imperative to define these variables immediately. If you're still on the fence about using NQ, then I would skip that page for now, and instead keep reading on here to learn about setting up your emulators and roms.
     </p> 
 
-    <h3>Images</h3>
+    <h3><span id="images">Images</span></h3>
     All images will be resized to fit the maximum area available to them, while maintaining their width:height ratio (they will not be skewed). So nearly all images will end being letter-boxed or pillar-boxed within their alotted screen space, unless they happen to match the aspect ratio of their designated screen space.
         <h3>Directories</h3>
         <ul>
@@ -166,7 +168,7 @@
         <span class="code" id="refname"><i>reference name, directory, executable, options, argument type, input config FSO [, minimize]</i></span> 
         <ul>
             <li>
-            <span class="code">reference name</span>: Assign a name to this emulator configuration.
+            <span class="code">reference name</span>: Assign a name to the emulator configuration defined on this line.
             </li>
             <li>
             <span class="code">emulator directory</span>: This is the directory where the emulator which you want associated with the extension/file is sitting. No Quarter will change to this directory right before running the emulator. If the emulator is on your OS's path environmental variable and so it doesn't matter where it is called from, then you can use <span class="code">@</span> as the value for this field, and No Quarter will stay in its own home directory when calling the emulator.
@@ -253,7 +255,7 @@
         </ul>
             </li>
             <li>
-                <span id="minimize" class="code">minimize:</span> When NQ launches a game, most emulators will be missing the video, or have some other issue, if NQ does not first minimize itself. So far, I think only Mame does not require NQ to minimize itself. This field is optional, but if you add it, then NQ will minimize itself before running an emulator. The value you use for this field does not matter, but you do have to put in some kind of dummy value. Just a comma and then nothing after it will not count as this field existing.
+                <span id="minimize" class="code">minimize:</span> For now, When NQ launches a game, most emulators will be missing the video, or have some other issue, if NQ does not first minimize itself. So far, I think only Mame does not require NQ to minimize itself. This field is optional, but if you add it, then NQ will minimize itself before running an emulator. The value you use for this field does not matter, but you do have to put in some kind of dummy value. Just a comma and then nothing after it will not count as this field existing. I hope to have the need for this field eliminated eventually.
             </li>
         </ul>
     </p> 
@@ -262,7 +264,7 @@
 
     <p> 
     <h3><span id="associations">[associations]</span></h3>
-        This section creates an association between a file extension (roms) and a program (emulator). There are two other types of associations, other than file extension associations: a unique association, which associates a full file name with a program, and a folder + extension combination association, which is a file extension association applicable only to the files in a certain folder.  The format is:
+        This section creates an association between a file extension (roms) and a program (emulator). There are two other types of associations other than file extension associations: a unique association, which associates a full file name with a program, and a folder + extension combination association, which is a file extension association applicable only to the files in a certain folder.  The format is:
         <br>
         <span class="code"><i>extension </i>| <i>name</i> | <i>folder + extension, emulator reference name</i></span>
         <ul>
@@ -314,7 +316,7 @@
         <span class="code"><i>volume, rom list</i></span>
         <br>
         <br>
-        Use the second format for rom lists which will only be populated by the <span class="code">favorites.txt</span> file. Such rom lists do still need to be defined in this section.
+        Use the second format for rom lists which will only be populated by the favorites.txt file. Such rom lists do still need to be defined in this section.
         <ul>
             <li>
             <span class="code">volume</span>: The name of the volume which the rom list (the next field) belongs to. Naming the volume here defines/creates it. When you cycle through volumes as you use NQ, they will cycle in the order that they first appear on lines in this section of the config file. The only invalid characters for volume names are the comma and the semicolon, and the first character cannot be a pound sign.
@@ -401,7 +403,7 @@
                 <span class="code">paste</span> Pastes all collected roms into the current rom list. The roms in a list are sorted alphabetically, and all pasted roms will be inserted alphabetically, so it doesn't matter where in the list you are when you hit the button which calls this function. Pasting clears the buffer.
             </li>
             <li>
-            <span class="code">delete</span> Deletes the current rom from the current rom list. This will only work if the rom is in the list because it was added as a favorite (which happens when you add it with the collect &amp paste features described just above, or if you manually added it in the file <span class="code">favorites.txt</span>). If the rom is in the list because it was loaded into this list because of a line in the <span class="code">[load roms]</span> section, then it will not be deleted. The only way to remove such roms from rom lists is to delete the rom file from the directory it was loaded from.
+            <span class="code">delete</span> Deletes the current rom from the current rom list. This will only work if the rom is in the list because it was added as a favorite (which happens when you add it with the collect &amp paste features described just above, or if you manually added it in the file favorites.txt. If the rom is in the list because it was loaded into this list because of a line in the <span class="code">[load roms]</span> section, then it will not be deleted. The only way to remove such roms from rom lists is to delete the rom file from the directory it was loaded from.
             </li>
             <li>
             <span id="displaynames" class="code">display name</span> Create or change the display name for the current rom. This only changes what you see in the menu list, it does not rename the rom file. The display name is not used for alphabetical sorting - only the file name is used for sorting (or the optional <a href="#sortalias">sorting alias</a>). You will see two vertical lines on the input field. These lines represent the width of the area used to display rom names in the menu. If the name you type expands beyond these guides, then the name will exceed the allowed area for game names in the menu.  Changes made with this function are saved in the file displaynames.txt.
@@ -423,6 +425,8 @@
     <p> 
     <h3><span id="layout">[layout]</span></h3>
     Layouts define the geometry of the various screen objects. You may have more than one layout section (they all need to start exactly with the tag [layout] - don't add a number or anything to the tags for multiple layouts). Your different layouts can be cycled through when No Quarter is running by hitting the <a href="#cyclelo">cycle layout</a> button.
+    <br><br>
+    I have this section on the bottom of this documentation page because creating your own layouts is probably one of the last things you're going to do, but in the file noquarter.cfg, the layout section(s) need to be the first section(s) in that file.
     <br><br>
     The width of the No Quarter screen = padding * 2 + max slide width + divide + max poster width
     <br>
