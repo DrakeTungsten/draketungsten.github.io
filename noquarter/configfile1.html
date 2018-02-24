@@ -28,7 +28,7 @@
         <h3>Configuration File Intro</h3>
     </p> 
     <p> 
-    This document highlights file names and example config file entries by giving them a gray background and a different font. Italicised text in an example config file entry means to use some appropriate value for what the italicised term represents, not the literal words which are italicised. A pipe character, <span class="code">|</span>, between terms in a field definition means to use only one of the terms which are separated by the pipe(s).
+    This document highlights example config file entries by giving them a gray background and a different font. Italicised text in an example config file entry means to use some appropriate value for what the italicised term represents, not the literal words which are italicised. A pipe character, <span class="code">|</span>, between terms in a field definition means to use only one of the terms which are separated by the pipe(s).
     </p> 
     <p> 
         <span class="code">NoQuarter.cfg</span> is the main config file. No quarter works by creating file associations. When working in most parts of the config file, it might help to remember that the whole point is to define that a certain file extension should be opened with a certain program.  
@@ -46,7 +46,7 @@
     <h3><span id="uservars">User-Defined Variables and Conditional Blocks</span></h3>
     </p> 
     <p> 
-    This section might be confusing if you aren't already familiar with the concepts involved, and nothing in here is necessary for modifying your config files, so if you aren't right now on a misison to understand how the config file uses variables and conditional blocks, you might want to jump down to the <a href="#images">next section.</a> 
+    This section might be confusing if you aren't already familiar with the concepts involved, and nothing in here is necessary for modifying your config files, so if you aren't right now on a mission to understand how the config file uses variables and conditional blocks, you might want to jump down to the <a href="#images">next section.</a> 
     </p> 
     <p> 
        To make the config file easier to manage, you can define your own variables. These variables will cause nq.exe to perform text substitutions when it processes the configuration file. The format is the variable name enclosed in dollar signs, an equal sign, and then the value to assign to the variable. For example, the line:
@@ -132,10 +132,10 @@
             <span class="code">logos</span> <br> Hardware logo images need to go in here.
             </li>
             <li>
-            <span class="code">posters-master</span> <br> Posters are the main images used to represent games. Posters need to go in this directory, or in a subdirectory of this directory. Posters may be .jpg or .png files. 
+            <span class="code">posters-master</span> <br> Posters are the main images used to represent games. Posters need to go in this directory, or in a subdirectory of this directory (but only up to one level deep). Posters may be .jpg or .png files. 
             </li>
             <li>
-            <span class="code">posters</span> <br> You don't put anything in this directory directly. No Quarter will create subdirectories under this folder as you create different poster dimensions for the different layouts you might create, and copy the images from the "posters" directory into the subdirectories in here, resized to the named dimensions. If you create poster dimensions that you decide you will ultimately not be using, then you can delete the subdirectory under this directory which matches those dimensions. 
+            <span class="code">posters</span> <br> You don't put anything in this directory directly. No Quarter will create subdirectories under this folder as you create different poster dimensions for the different layouts you might create, and NQ copies the images from the "posters-master" directory into the subdirectories in here, resized to the named dimensions. If you create poster dimensions that you decide you will ultimately not be using, then you can delete the subdirectory under this directory which matches those dimensions. 
             </li>
             <li>
             <span class="code">slideshow</span> <br>
@@ -311,7 +311,7 @@
         <br> <br>
         <span class="code"><i>volume, rom list, directory [, hardware logo]</i></span>
         <br>
-        - OR -
+        - or -
         <br>
         <span class="code"><i>volume, rom list</i></span>
         <br>
@@ -337,7 +337,7 @@
         <h3>[key config]</h3>
         Configure keyboard controls to navigate NQ. Format:
         <br> <br>
-        <span class="code"><i>nq function, SDL decimal keycode</i> | <i>character</i></span>
+        <span class="code"><i>nq function, character</i> | <i>SDL decimal keycode</i></span>
         <br> <br>
         <b>Navigation functions</b>:
         <ul>
@@ -381,16 +381,6 @@
                 <span class="code">exit</span> exit NQ
             </li>
         </ul>
-        Character or SDL decimal keycode
-        <ul>
-            <li>
-                You can find SDL keycodes <a href=https://wiki.libsdl.org/SDLKeycodeLookup>here</a>. If you are going to identify a key by the SDL keycode, then you need to use the decimal value (the left-most column). You can figure out the key name by looking at the right-most column...
-            </li>
-            <li>
-                ...but for most keys (keys which map to printable characters), you can just put the character for that key in this field.
-            </li>
-        </ul>
-            <br>
             <b>GUI functions:</b>
             <br> <br>
             The first three functions are used to populate favorites-style rom lists. These functions make changes to the file favorites.txt, which you can just as easily edit manually if you want. The last function is for changing the menu's display names of your roms, and will edit the file displaynames.txt, which may also be edited manually as an alternative to using this in-program function. 
@@ -409,6 +399,15 @@
             <span id="displaynames" class="code">display name</span> Create or change the display name for the current rom. This only changes what you see in the menu list, it does not rename the rom file. The display name is not used for alphabetical sorting - only the file name is used for sorting (or the optional <a href="#sortalias">sorting alias</a>). You will see two vertical lines on the input field. These lines represent the width of the area used to display rom names in the menu. If the name you type expands beyond these guides, then the name will exceed the allowed area for game names in the menu.  Changes made with this function are saved in the file displaynames.txt.
             </li>
         </ul>
+        <b>Character or SDL decimal keycode</b>
+        <ul>
+            <li>
+                You can find SDL keycodes <a href=https://wiki.libsdl.org/SDLKeycodeLookup>here</a>. If you are going to identify a key by the SDL keycode, then you need to use the decimal value (the left-most column). You can figure out the key name by looking at the right-most column...
+            </li>
+            <li>
+                ...but for most keys (keys which map to printable characters), you can just put the character for that key in this field.
+            </li>
+        </ul>
     </p> 
     <p> 
         <h3>[joy config]</h3>
@@ -416,9 +415,9 @@
         <br> <br>
         <span class="code"><i>nq function, joystick button</i></span>
         <br> <br>
-        NQ functions: Use the list from the previous section.
+        <b>NQ function</b>: Use the list from the previous section.
         <br> <br>
-        Joystick button: The button number on the joystick. There is a helper program in the same directory as nq.exe named joytest.exe. Run this program and press a button on your joystick to see which number you should enter for the value of this field. You cannot map the analog up/down and left/right axes. They are hardcoded to prevrom/nextrom/prevlist/nextlist. If you have more than one joystick plugged in, NQ does not differentiate between which device sent a joystick button. So if you have multiple joysticks of different types, then input from any of them will be processed, but only the one you configured NQ for will be guaranteed to have the correct functions mapped to the correct buttons.
+        <b>Joystick button</b>: The button number on the joystick. There is a helper program in the same directory as nq.exe named joytest.exe. Run this program and press a button on your joystick to see which number you should enter for the value of this field. You cannot map the analog up/down and left/right axes. They are hardcoded to prevrom/nextrom/prevlist/nextlist. If you have more than one joystick plugged in, NQ does not differentiate between which device sent a joystick button. So if you have multiple joysticks of different types, then input from any of them will be processed, but only the one you configured NQ for will be guaranteed to have the correct functions mapped to the correct buttons.
     </p> 
 
 
