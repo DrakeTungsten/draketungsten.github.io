@@ -218,7 +218,7 @@
                 </li>
             </ol>  
             <br>
-            After this is done, then you can change emulator input configurations by changing the value of <span class="code">?input</span> in noquarter.cfg. The next time NQ is run, it will see that the value of <span class="code">?input</span> is different, and will copy the config files out of the directory <span class="code"><i>input device</i></span> over the existing configuration files one level up for every emulator which has such a named directory. A downside to this technique is that if you decide to change any other type of configuration for your emulator(s) which happen to be stored in the same files as input configuration, then you will lose those changes the next time you change the value of <span class="code">?input</span>, unless you make that change in all of the copies you made in the subdirectories you created.
+            After this is done, then you can change emulator input configurations by changing the value of <span class="code">?input</span> in noquarter.cfg. The next time NQ is run, it will see that the value of <span class="code">?input</span> is different, and will copy the config files out of the directory <span class="code">_nqinputcfg\<i>input device</i></span> over the existing configuration files one level up for every emulator which has such a named directory. A downside to this technique is that if you decide to change any other type of configuration for your emulator(s) which happen to be stored in the same files as input configuration, then you will lose those changes the next time you change the value of <span class="code">?input</span>, unless you make that change in all of the copies you made in the subdirectories you created.
             <br><br>
             </li>
             <li>
@@ -269,11 +269,11 @@
         <span class="code"><i>extension </i>| <i>name</i> | <i>folder + extension, emulator reference name</i></span>
         <ul>
             <li>
-            <span class="code">extension | name | folder + extension</span>: This field is where you define either a file extension or a specific file to be associated with an emulator and the other configuration values represnted by fields on this line with either a file extension or a specific file. This field takes one of three forms:
+            <span class="code">extension | name | folder + extension</span>: This field takes one of three forms:
                 <ul>
                     <li>universal extension association: associates a file extension with a configured emulator. Include the leading dot, so typical example values for this field would be <span class="code">.7z</span> and <span class="code">.sfc</span>.</li>
-                    <li>unique association: associates a specific file with a configured emulator. Use the whole file name (but not including the path) instead of the extension.</li> 
-                    <li>directory-specific extension association: associates the files of a directory which have the indicated extension with a configured emulator. This is used to over-ride a universal extension association for a specific directory. Create this type of association by providing a path name followed by the extension, including the dot. There is no wildcard character used to represent the base name of the roms. An example of this form is <span class="code">\some\path\.7z</span> Keep in mind that even though you indicate a directory here, this will not load roms from that directory into any rom list. Using this form is only saying that if the named directory is loaded into a rom list (in the <span class="code">[load roms]</span> section), then use this association for those roms. So any directory named here should also appear in the <span class="code">[load roms]</span> section.</li>
+                    <li>unique association: associates a specific file with a configured emulator. Use the whole file name (but not including the path) instead of just the extension.</li> 
+                    <li>directory-specific extension association: associates the files of a directory which have the indicated extension with a configured emulator. This is used to over-ride a universal extension association for a specific directory. Create this type of association by providing a path name followed by the extension, including the dot. There is no wildcard character used to represent the base name of the roms. An example of this form is <span class="code">\some\path\.7z</span> Keep in mind that even though you indicate a directory here, this will not load roms from that directory into any rom list. Using this form is only saying that if the named directory is loaded into a rom list (in the <a href="#loadroms">[load roms]</a> section), then use this association for those roms. So any directory named here should also appear in the [load roms] section.</li>
                 </ul>
             </li>
             <li>
@@ -299,14 +299,14 @@
         Documentation to come later.
     <p> 
     <h3>[ignore]</h3>
-    The next section, <span class="code">[load roms]</span>, is where you load files from directories into rom lists. Before we get there, you can exclude certain files in those directories from being loaded by naming them in this section. Separate file names by any mix of new lines or commas. Use the full file name without the path, or you can use a directory and extension combo. I use this mostly for bios roms, and for parent/clones when you only want either the parent or the clone to be loaded into the menu. Format:
+    The next section, [load roms], is where you load files from directories into rom lists. Before we get there, you can exclude certain files in those directories from being loaded by naming them in this section. Separate file names by any mix of new lines or commas. Use the full file name without the path, or you can use a directory and extension combo. I use this mostly for bios roms, and for parent/clones when you only want either the parent or the clone to be loaded into the menu. Format:
     <br><br>
     <span class="code"><i>file name</i> | <i>directory and extension combo</i></span> 
     <br><br>
     The directory and extension combo works the same here as it does for the associations section. For example, I use this: <span class="code">roms\psx\.bin</span> because I load this directory in the [load roms] section, but I only want the cue files. There are also .bin files in this directory, but since .bin is associated with a Genesis emulator, those .bin files would get loaded too if I did not have this "ignore" entry for them.
     </p> 
     <p> 
-        <h3>[load roms]</h3>
+    <h3><span id="loadroms">[load roms]</a></h3>
         NQ uses two levels of grouping (referred to as tiers). The top level (or tier) is called volumes, and the bottom level is called rom lists. This section defines volumes and the rom lists they contain, and populates your rom lists with roms from your directories. You can load multiple directories into a list, and you can have one directory loaded into multiple lists. Only files with extensions which have an association defined will be loaded. Keep in mind any file you want put into a rom list from favorites.txt must first be loaded into some other rom list from this section. Format:
         <br> <br>
         <span class="code"><i>volume, rom list, directory [, hardware logo]</i></span>
@@ -363,7 +363,7 @@
                 <span class="code">next list</span> Go to the previous rom list in the volume
             </li>
             <li>
-                <span class="code">tier shift</span> while this button is being held down, the "prev list" and "next list" inputs will instead function as "prev volume" and "next volume". I recommend using this functionality over using the next two functions, but they're here anyway:
+                <span class="code">tier shift</span> while this button is being held down, the "prev list" and "next list" inputs will instead function as "prev volume" and "next volume". I recommend using this functionality over using the next two functions, but they're here anyway (not because the next two functions are buggy - they aren't - but because I thnk it's more intuitive to scroll through volumes with shifted arrow functions than with a pair of buttons):
             </li>
             <li>
                 <span class="code">prev volume</span> Go to the previous volume
@@ -481,14 +481,14 @@
         <span class="code">square shrink</span> <br> The percentage of its full size a square image should be shrunk to. So, for example, a value of <span class="code">80</span> here means that the logo image would only be 80% of the width and height it would have been had it been fully resized to fully occupy the available on-screen area.
         </li> 
         <li>
-        <span class="code">posters on</span> <br> This is an optional line, and it is a single field. "posters on" is a flag all by itself, and so does not require any more data on the line. If a layout does not contain a "posters on" line, then the default placeholder image will be used as the poster for every game. Why am I forcing you to explicitly indicate that you want the posters you spent hours selecting/downloading/creating to be used to represent your games? Because when posters are turned on for the first time for any new poster dimension (that is, a layout contains a max poster width * max poster height which you have never used in your NQ install before), then No Quarter will make resized copies of all your posters to match the new dimensions. This could take a minute or two if you have lots of posters. You might be tweaking a layout, and not be sure if you're going to stick with this new max poster width * max poster height, and so you could be wasting time waiting for the copies to be made. Once you have settled on new poster dimensions, then you should add a "posters on" line to the layout, and then the next time NQ runs, the copies will be made. The copying will just be a one-time occurrence.
+        <span class="code">posters on</span> <br> This is an optional line, and it is a single field. "posters on" is a flag all by itself, and so does not require any more data on the line. If a layout does not contain a "posters on" line, then the default placeholder image will be used as the poster for every game. Why am I forcing you to explicitly indicate that you want the posters you spent hours selecting/downloading/creating to be used to represent your games? Because when posters are turned on for the first time for any new poster dimension (that is, a layout contains a max poster width * max poster height which you have never used in your NQ install before), then No Quarter will make resized copies of all your posters to match the new dimensions. This could take a minute or two if you have lots of posters. You might be tweaking a layout, and not be sure if you're going to stick with this new max poster width * max poster height, and so you could be wasting time waiting for the copies to be made. Once you have settled on new poster dimensions, then you should add a "posters on" line to the layout, and then the next time NQ runs, the copies will be made. This batch copying will just be a one-time occurrence, but NQ does check for additional or updated images under posters-master/ every time it runs, and makes more or updated copies as needed.
         </li> 
         <li>
         <span class="code"><i>rotation</i></span> <br> This is an optional line, and it will consist of a single field, and the two allowable values are "clockwise" and "widdershins". In other words, the whole line should consist of just one of those two words, without the quotations (but any number of leading spaces is still allowed, as with all lines in the config file.)
         </li> 
     </ul>
     </p> 
-    <br><br>
+    <br>
     <p> 
     <a href="configfile2.html">Configuration File page 2 - variables</a>
     </p> 
