@@ -6,7 +6,7 @@ Conan
 The Names
 Cinema Purgatoria
 X-23
-Lone Ranger
+Lone Ranger (Russell)
 Catwoman/Tweety
 Lex/Porky
 Joker/Daffy
@@ -55,14 +55,12 @@ Batman Annual #1 2016 Ace
 Nightwing 25
 Batman Black And White #1 (Death Alley cover) Don't Know Where...
 
-Green Lantern: Dragon Lord
+Demon Knights 2, 3, 4, 5, 7
 New Gods Secret Files
-DCU Villains Secret Files And Origins (Vandal Savage)
 Guns Of The Dragon 4
 Wild Times: Grifter
 Super Soldier Man Of War
 New Frontier Special
-DCU Infinite Holiday Special
 Green Arrow Annual: Year One
 Superman Adventures 25 
 Plastic Man 1 ("... a man can ply")
@@ -70,12 +68,15 @@ JLA / Avengers 3
 Dark Claw Adventures
 Adventure 428, 429, 430
 Phantom Stranger 41
+Beach Blanket Bad Guys
 Scooby-Doo Team-Up 16(Shazam) , 25 (GL/GA)
 Lobo The Duck
 Lobo Annual 2
 Green Lantern Corps Quarterly  1, 6
 Justice League Unlimited 43 (Blue and Gold)
 All New Batman: The Brave And The Bold: 7 (Alan Scott), 16 (Batgirl)
+Super Sons annual 1 (Krypto and Titus)
+Super Sons and Dynomutt
 
 Ambush Bug: Nothing Special 
 DC Comics Presents: Metal Men #1 (Giffen, DP backups)
@@ -89,6 +90,15 @@ Blazing Combat (Warren magazine) - COLLECTED!
 Other Warren stuff
 The Rook 3, 4: Toth
 Thrilling Adventure Stories (Atlas magazine)
+Savage Combat Tales
+Somerset Holmes
+Echo of Futurepast
+P.I.s (First)
+Mars (First)
+Prowler (Eclipse)
+Lost Planet (Eclipse)
+Fusion (Eclipse)
+Hotspur
 The Secret History
 Rocket Girl
 MLP
@@ -98,7 +108,6 @@ Star Wars 61, 62, 63, 65, 68, 69
 
 Marvel single issues
 -----------------------------------
-Spider-Man Family 3 (FF)
 Iron Man 12? - 128, 131-133
 Hulk 300
 Hulk Adventures 2
@@ -115,6 +124,7 @@ Swamp Thing
 Instant Piano
 Frankenstein Alive Alive - IDW, Wrightson
 Velvet
+Paper Girls
 
 Omnibus / Absolute
 ==========================================
@@ -176,6 +186,7 @@ X-Men Vignettes
 Captain Britain  Moore and Davis
 Punisher MK 2,3
 Thor: To Wake The Mangog
+Wolverine: Weapon X Unbound
 
 -----------------------------------
 EC: The Living Mummy (Jack Davis vol II)
@@ -184,7 +195,6 @@ EC: Came The Dawn (Wally Wood)
 PS238
 Four Kids Walk Into A Bank
 Black Magic - Rucka, Nicola
-Corto Maltese
 Flight Of The Raven
 Star Wars: The Classic Newspaper Comics vol 2 (Mar 2018)
 Star Wars: The Classic Newspaper Comics vol 3
@@ -205,10 +215,6 @@ War Is Hell - Ennis & Chaykin
 Astro City: Shining Stars
 7 Ronin
 Five Ronin
-
-
-## ???
-Thrilling Adventure Hour
 
 ----------
 Frankenstein: Alive, Alive
