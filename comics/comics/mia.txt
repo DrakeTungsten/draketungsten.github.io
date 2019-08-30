@@ -1,36 +1,43 @@
+Shops:
+-----------------------------------
+No:
+Comic Collecter, Riverside
 -----------------------------------
 DC Single issues:
 -----------------------------------
+DCP - take another look
 Angel And The Ape
-Mister Miracle 19+
+Mister Miracle 19+ (tpb)
 Batman Black And White #1 (Death Alley cover) Don't Know Where...
 
-Batman 311, 400
+Green Lantern 31 1940s
+
+Swamp Thing 7 (batman, 1973)
+    Roots of the Swamp Thing 4
+    Batman Hidden Treasures 1
+
+All New Batman: The Brave And The Bold: 7 (Alan Scott), 16 (Batgirl)
 Beware The Batman 6
-Batman Secret Files 1 (2018)
-Batman Annual 3
-New Gods Secret Files
+Batman 311, 321, 400
 Guns Of The Dragon 4
 Superman 197: reprint of 142 (Capone)
 Wild Times: Grifter
 Super Soldier Man Of War
+Wonder Woman 232
 New Frontier Special
-Hawkman 8
+DC Comics Presents 38 (Crimson Avenger)
+Hawkman (2018, Krypton) 8
 Green Arrow Annual: Year One 
 JLA / Avengers 3
 Dark Claw Adventures
 Adventure 430
 Phantom Stranger 41
 Scooby-Doo Team-Up 16(Shazam)
-Shazam 15
-Swamp Thing 46
-All New Batman: The Brave And The Bold: 7 (Alan Scott), 16 (Batgirl)
-Green Lantern Corps Quarterly 2
-Green Lantern 25
+Shazam 15, 28, 29
 World's Funnest
-Young Justice 2011
+Young Justice 2011 #11 (Ra's Al Ghul)
+Wonder Woman: Simone
 Super Sons annual 1 (Krypto and Titus)
-Sinestro: Year Of The Villain
 Riddler: Year Of The Villain
 Joker: Year of the Villain
 
@@ -41,29 +48,43 @@ Tarzan
 -----------------------------------
 Marvel single issues
 -----------------------------------
+Spectacular Spider-man Magazine 2-issue reprint hardcover(?) Nov 2019
+Loki 5
+Spectacular Spider-Man 7
+Marvel Team-Up 48 (Jean DeWolf)
+Tales To Astonish 82 (1966)
+    Marvel Super-Heroes 37
+Tales To Astonish 92, 93 (1967): Hulk Masterworks v3
+    Marvel Super-Heroes 47, 48
+Silver Surfer 4 (Thor)
+    Fantasy Masterpieces 4
 Avengers Classic 3, 4
-Peter Parker 121 (in the house somewhere, but lost)
-Thor 370, 385
-Marvel Team-Up 62 (Super-Skrull)
+Thor 385
+Not Brand Echh
 Marvel Premiere 45, 46 (Man-Wolf: Perez)
-Iron Man 12? - 128, 131-133
-Hulk 300
+Iron Man 112, 116, 119
+Hulk 142, 172, 214 (1977), 300, 316, 406, 409
+    142 in Marvel Super-Heroes 93
 Hulk Adventures 2
 Defenders 17, 18, 19
 Marvel Adventures Avengers 4, 9
 Slapstick 2
-Marvel Comics Presents 7
+Marvel Two-In-One
+FF ~560 Nillar
 MARVEL SUPER HERO ADVENTURES: SPIDER-MAN - SPIDER-SENSE OF ADVENTURE #1 (Sholly Fisch)
-True Believers: Hulk 299
 True Believers: X-Men stuff in Oct
 Hulk 1 facimile edtn, october
 Fantastic Four Grand Design #1
+Fantastic Four 347, 348
+Shadows And Light 1, 2
+Busiek Avengers & Iron Man
+Luke Cage 8, 9
 
 -----------------------------------
 Independent single issues:
 -----------------------------------
 Star Wars Tales: 16, 22, 23, 24
-Star Wars 68, 69
+Star Wars 71, 72
 Mike Hammer (Max Alan Collins)
 Shadow / Grendel Book 2
 Red Sonja: Art of Blood And Fire
@@ -84,6 +105,7 @@ The Secret History
 Rocket Girl
 MLP
 Supernatural Law / Wolff and Byrd
+Judge Dredd: Black Mania, Apocalypse (Case Files v5)
 
 
 ==============================================================
@@ -93,15 +115,15 @@ Trades
 -----------------------------------
 DC
 -----------------------------------
+The Last God(?)
 Superman Smashes the Klan
 Batman: A Lonely Place Of Dying 
 NO! does not contain ALPOD as advertised! Batman: The Caped Crusader v2
 Batman: Prey
-Robin Triumphant
 Batman Vs Predator (June 2017)
 Tales Of The Batman - Conway vol 3 (Sep 2019)
 Batman: Li'l Gotham: vol 2, or Lot of LG
-Batman / Teenage Ninja Mutant Turtles
+Mister Miracle: Englehart
 Spectre v1, v2
 Legion Of Super-Heroes: The Great Darkness Saga Deluxe
 Superboy and LoSH: The Lost Years
@@ -112,11 +134,10 @@ Huntress: Dark Knight Daughter
 Wonder Twins
 Young Justice (Bendis)
 The Terrifics
-Batman Universe #1 (Jul)
-Superman Up In The Sky #1 (Jul)
+Batman: Universe
+Superman: Up In The Sky
 Freedom Fighters
 Inferior Five
-The Terrifics
 
 -----------------------------------
 Vertigo
@@ -132,23 +153,25 @@ Marvel
 Immortal Hulk
 Spider-Man
 Black Widow: Web Of Inrigue (2009 hardcover)
-Uncanny X-Force
 Iron Monger
+Iron Man Epic: War Games: 258 - 277
 Iron Man Epic: War Machine: 278 - 289
+Fantastic Four: Epic 21 The New FF, OR FF Visionaries Walt Simonson 3(?)
 MI13
 X-Men Vignettes
 Captain Britain  Moore and Davis
 Punisher MK 2,3
-Thor: The Wrath Of Odin
-Thor: To Wake The Mangog
-Thor: The Fall Of Asgrad
 MM: Luke Cage, Hero for Hire vol I
 Gambit: Thieve's World (Layman)
 Power Man and Iron Fist Epic v3
+MW: Defenders v3
+Sgt Fury And His Howling Commandos Epic Collection v1
 
 -----------------------------------
 Independent
 -----------------------------------
+Tarzan vs Predators
+Doctor Who - the first Baker-era w/ Gibbons and Eastman?
 Frankenstein Alive Alive - IDW, Wrightson
 Paper Girls v2, v3
 Red Sonja (Russel?)
@@ -158,20 +181,23 @@ PS238
 Four Kids Walk Into A Bank
 Black Magic - Rucka, Nicola
 Dick Tracy Forever
+Vagabond (manga)
 Flight Of The Raven
 Star Wars Legacy v2
-Conan vol 6
+Star Wars 2013 1-20
 Conan: The Phoenix On The Sword (Dark Horse)
 Conan: The Hour Of The Dragon (Dark Horse) part 1
 Conan: The Conquerer (Dark Horse) part 2
 Conan: Wolves Beyond the Border (Dark Horse)
 Conan The Reaver
-Conan: The Skull Of Set
 Conan The Slayer
 Grendel / Shadow
 Black Moon Chronicles
 Masterpiece Comics
 The Tick
+Blueberry
+Blacksad
+Charley's War
 War Is Hell - Ennis & Chaykin
 Astro City: Shining Stars
 7 Ronin
@@ -189,25 +215,29 @@ Tales Of Bizarro World
 Groo
 Black Metal
 Houdini: The Handcuff King
+The Yellow "M"
+Zorro by Toth
 
 ==============================================================
 Omnibus / Absolute
 ==============================================================
 
 Batman: Secrets Of the Batcave  lithograph
-The Unwritten Deluxe
 ----------------------------
 Absolute Watchmen 
 Absolute V For Vendetta
 From Hell (Top Shelf), Sep 2015
+Absolute Swamp Thing
 ----------------------------
 Hulk by PAD v1
-Thor: Marvel Masterworks vol 5 (69) (131 - 140, annual 2)
+Hulk Masterworks v3 (56)
 Thor: Marvel Masterworks vol 6 (80) (141 - 152)
 Thor: Marvel Masterworks vol 7 (96) (153 - 162)
-Thor Omnibus vol III (153 - 194)
+Spider-Man Masterworks 6 (33)
+Spider-Man Masterworks 11 (122)
+Sub-Mariner Masterworks 7
 Daredevil by Miller
-Fantastic Four Byrne v?
+Fantastic Four Byrne v2
 Cap Omnibus Vol II - The Death Of Captain America
 Immortal Iron Fist
 Uncanny X-Force
