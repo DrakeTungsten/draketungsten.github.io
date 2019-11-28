@@ -1,0 +1,66 @@
+<html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
+<link href="comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function swapReprint(){
+    var r  = document.getElementById('issuetable').rows
+    var l = r.length
+    var x
+    var temp
+    for (x = 1; x < l; x++){ //  skip row 0 cuz it's col headers
+        if(r[x].cells.length > 4){
+    	    if(r[x].cells[4].innerHTML != "&nbsp;" 
+	    && r[x].cells[1].innerHTML != "(tpb/gn)"){
+                temp = r[x].cells[4].innerHTML
+                r[x].cells[4].innerHTML = 
+	               r[x].cells[0].innerHTML + " " + r[x].cells[1].innerHTML
+                //  break temp into issue title and number
+                var tl = temp.length
+	        var ch = temp.charAt(tl - 1)
+		while(ch == " "){
+                    tl--
+	            ch = temp.charAt(tl - 1)
+                }
+	        if(ch < "0" || ch > "9"){
+	            r[x].cells[0].innerHTML = temp 
+	            r[x].cells[1].innerHTML = "&nbsp;" 
+	        }
+	        else{
+                    var ishnum = ""
+		    var n = tl - 1
+		    while(temp.charAt(n) == " "){
+                         n--
+                    }
+		    while(temp.charAt(n) != " "){
+		        c = temp.charAt(n)
+		        ishnum = c + ishnum
+                        n--
+		        //alert("ishnum = " + ishnum + "  n = " + n)
+		    }
+	            r[x].cells[0].innerHTML = temp.substr(0, n) 
+	            r[x].cells[1].innerHTML = ishnum   
+	        }
+	    }
+        }
+    }
+    temp = r[5].cells[0].innerHTML
+}
+</script>
+				
+<title>war</title></head><body><center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
+ <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
+ <td><b>Reprint</b></td>   </tr><tr bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>"Pigs Of The Roman Empire"</td><td style='border-bottom:none'>Two-Fisted Tales 21</td><td style='border-bottom:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Zero Hour"</td><td style='border-bottom:none;border-top:none'>Front-Line Combat 02</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Weak Link"</td><td style='border-bottom:none;border-top:none'>Two-Fisted Tales 24</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Buzz Bomb"</td><td style='border-bottom:none;border-top:none'>Two-Fisted Tales 25</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Bomb Run</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>John Severin </td><td style='border-bottom:none;border-top:none'>"War Machines"</td><td style='border-bottom:none;border-top:none'>Front-Line Combat 05</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Alamo"</td><td style='border-bottom:none;border-top:none'>Two-Fisted Tales 28</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Washington"</td><td style='border-bottom:none;border-top:none'>Two-Fisted Tales 29</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Bull Run"</td><td style='border-bottom:none;border-top:none'>Front-Line Combat 09</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>"Campaign"</td><td style='border-top:none'>Two-Fisted Tales 31</td><td style='border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Blazing Combat</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Enemy Ace: War In Heaven</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>War Stories Vol I</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>War Stroies Vol II</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+</table></center></body></html>
