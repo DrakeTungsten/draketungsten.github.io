@@ -14,8 +14,8 @@ DC Single issues:
 -----------------------------------
 Batman Black And White #1 (Death Alley cover) Don't Know Where...
 All New Batman: The Brave And The Bold: 16 (Batgirl)
-Batman 366 (Joker, $30),  370 (Fang, $10),  374 (Penguin, $15),  377, 380, 381, 388 (Flash Rogues), 389, 390, 391
-Detective 481 (Rodgers/O'Niell, $10), 500, 532 (Joker, $25),  542, 544, 546, 547, 555 (Flash Rogues), 556, 557
+Batman 366 (Joker, $30),  374 (Penguin, $15),  377, 380, 381, 388 (Flash Rogues), 389, 390, 391
+Detective 481 (Rodgers/O'Niell, $10), 500, 532 (Joker, $25),  542, 547, 555 (Flash Rogues), 556, 557
 
 All-Star Squadron 10, 11, 12
 Superman 197: reprint of 142 (Capone)
@@ -26,14 +26,12 @@ JLA / Avengers 3
 Adventure 430
 Phantom Stranger 41
 Scooby-Doo Team-Up 16(Shazam)
-Action 565 (Ambush Bug)
-DCP 97, Annual 2, Annual 4
+DCP Annual 2, Annual 4
 World's Funnest
 Secret Origins 46
 Action 23.3 (Luthor)
 Wonder Woman 750 
 Detective Comics 359 faxed Jan
-Batman 100-page Giant #3 (vol 2 or 3, Jan(?), Russell)
 Detective 38 faxed Mar (Robin)
 Dollar Comics: The Brave And The Bold 197
 Flash 100-page Giant 4
@@ -42,6 +40,8 @@ Joker 80th Anniversary (Apr)
 Catwoman 80th Anniversary
 Young Justice 15
 DC Super Stars 17 fax-ed
+Generation One (May)
+Batman: The Adventures Continue 1
 
 -----------------------------------
 Marvel single issues
@@ -89,8 +89,6 @@ Star Wars Tales: 16, 22, 23, 24
 Mike Hammer (Titan Comics, Max Alan Collins) 
 Other Warren stuff
 Instant Piano 3
-The Rook 3, 4: Toth
-Savage Combat Tales
 Somerset Holmes *
 Hotspur
 The Secret History
@@ -115,6 +113,7 @@ Huntress: Origins (Jan 2020)
 Mister Miracle: Englehart (Mar 2020 HC)
 Spectre v1, v2
 Superman: Up In The Sky (Mar 2020)
+Hiketia Deluxe
 Freedom Fighters
 The Last God
 The Golden Age
@@ -140,6 +139,7 @@ Immortal Hulk v2 Jan
 Spider-Man (Spencer)
 Spider-Man Symbiote v1, v2 (Alien Reality) (PAD)
 Spider-Man Masterworks: Marvel Team-Up v5 - JDW
+Defenders Masterworks v7 (May)
 Gwen Stacy (2020, Gage)
 Spectacular Spider-Man: Lo, This Monster   Magazine 2-issue reprint Dec 2019
 Black Panther and  the Agents of Wakanda
@@ -195,12 +195,15 @@ Batman: Secrets Of the Batcave  lithograph
 IDW Artists Edition: Walt Simonson Star Wars
 The Prisoner - Kirby   $52
 ----------------------------
+LotDK: Matt Wagner
 Absolute Watchmen 
 Absolute V For Vendetta
 From Hell (Top Shelf), Sep 2015
 Absolute Swamp Thing
+Absolute Swamp Thing v2 (May)
 Preacher Omni
 League of Extraordinary Gentlemen
+Witzend, Fantagraphics
 ----------------------------
 Hulk by PAD v1 (Jan 2020)
 Thor: Marvel Masterworks vol 7 (96) (153 - 162)
@@ -301,3 +304,4 @@ Luke Cage 8, 9
 MI13
 USA Comics 70th ann spec
 Webspinners
+Savage Combat Tales
