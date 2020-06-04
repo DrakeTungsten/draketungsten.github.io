@@ -1,0 +1,133 @@
+<html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
+<link href="comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function swapReprint(){
+    var r  = document.getElementById('issuetable').rows
+    var l = r.length
+    var x
+    var temp
+    for (x = 1; x < l; x++){ //  skip row 0 cuz it's col headers
+        if(r[x].cells.length > 4){
+    	    if(r[x].cells[4].innerHTML != "&nbsp;" 
+	    && r[x].cells[1].innerHTML != "(tpb/gn)"){
+                temp = r[x].cells[4].innerHTML
+                r[x].cells[4].innerHTML = 
+	               r[x].cells[0].innerHTML + " " + r[x].cells[1].innerHTML
+                //  break temp into issue title and number
+                var tl = temp.length
+	        var ch = temp.charAt(tl - 1)
+		while(ch == " "){
+                    tl--
+	            ch = temp.charAt(tl - 1)
+                }
+	        if(ch < "0" || ch > "9"){
+	            r[x].cells[0].innerHTML = temp 
+	            r[x].cells[1].innerHTML = "&nbsp;" 
+	        }
+	        else{
+                    var ishnum = ""
+		    var n = tl - 1
+		    while(temp.charAt(n) == " "){
+                         n--
+                    }
+		    while(temp.charAt(n) != " "){
+		        c = temp.charAt(n)
+		        ishnum = c + ishnum
+                        n--
+		        //alert("ishnum = " + ishnum + "  n = " + n)
+		    }
+	            r[x].cells[0].innerHTML = temp.substr(0, n) 
+	            r[x].cells[1].innerHTML = ishnum   
+	        }
+	    }
+        }
+    }
+    temp = r[5].cells[0].innerHTML
+}
+</script>
+				
+<title>mu.bak</title></head><body><center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
+ <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
+ <td><b>Reprint</b></td>   </tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Tales Of Asgard </b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Thor (I)</td><td>Giant-Sized # 1  </td><td>1975 </td><td>&nbsp</td><td>Annual #2 </td><td>JIM Annual #1</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Thor: Blood Oath</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6"> <center><h4>WWII</h4></center>
+</td></tr><tr bgcolor="#decaff"><td bgcolor="#ddffdd">Cap America: Sentinel of Liberty</td><td>002 </td><td>Invaders </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#decaff"><td bgcolor="#ddffdd">Cap America: Sentinel of Liberty</td><td>003 </td><td>Invaders </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f9f9a5"><td bgcolor="#ddffdd">Cap America: Sentinel of Liberty</td><td>004 </td><td>Invaders </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f9f9a5"><td bgcolor="#ddffdd">Marvel Universe</td><td>001 </td><td>Invaders </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#decaff"><td bgcolor="#ddffdd">Marvel Universe</td><td>002 </td><td>Invaders </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#decaff"><td bgcolor="#ddffdd">Marvel Universe</td><td>003 </td><td>Invaders </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td bgcolor="#ddffdd">Marvel Comics Presents 2019</td><td>001 </td><td>Wolverine<br>Namor </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6"> <center><h4>MARVEL AGE</h4></center>
+</td></tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Gray</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Hulk</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td bgcolor="#ddffdd">Tales Of Suspense</td><td>039 </td><td>Iron Man </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td bgcolor="#ddffdd">Incredible Hulk</td><td>001 </td><td>Hulk </td><td>&nbsp</td><td>Milestone </td><td>&nbsp</td></tr>
+<tr bgcolor="#f9f9a5"><td bgcolor="#ddffdd">The Iron Age</td><td>001 </td><td>Iron Man </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f9f9a5"><td bgcolor="#ddffdd">The Iron Age</td><td>002 </td><td>Iron Man </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#decaff"><td bgcolor="#ddffdd">Avengers Classic</td><td>001 </td><td>Avengers </td><td>&nbsp</td><td>Avengers 001 </td><td>Milestone </td></tr>
+<tr bgcolor="#decaff"><td bgcolor="#ddffdd">Avengers Special</td><td>001.5 </td><td>Avengers                        </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f9f9a5"><td bgcolor="#ddffdd">Avengers Classic</td><td>003 </td><td>Avengers      </td><td>&nbsp</td><td>Avengers 003 </td><td>MSH 021 </td></tr>
+<tr bgcolor="#f9f9a5"><td bgcolor="#ddffdd">Avengers Classic</td><td>004 </td><td>Avengers               </td><td>&nbsp</td><td>Avengers 004 </td><td>&nbsp</td></tr>
+<tr bgcolor="#decaff"><td bgcolor="#ddffdd">Cap America: Sentinel of Liberty</td><td>005 </td><td>Captain America<br>Iron Man          </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#decaff"><td bgcolor="#ddffdd">Cap America: Sentinel of Liberty</td><td>006 </td><td>Captain America<br>Iron Man          </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f9f9a5"><td bgcolor="#ddffdd">Hulk Smash</td><td>001 </td><td>Hulk </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f9f9a5"><td bgcolor="#ddffdd">Hulk Smash</td><td>002 </td><td>Hulk </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>To Wake The Mangog</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Mangog<br>Mangog<br>Him<br>Loki </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Thor 156<br>Thor 157<br>Thor 166<br>Thor 175  </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ececec"><td>Iron Man (I)</td><td>King-Sized #1  </td><td>Iron Man<br>Namor<br>(1970) </td><td>&nbsp</td><td>ToS 79-80</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Iron Man MW v4</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Iron Man </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>ToS 85<br>ToS 86<br>ToS 87<br>ToS 88<br>ToS 91<br>ToS 92<br>ToS 93<br>ToS 94<br>ToS 95<br>ToS 96 </td><td style='border-bottom:none;border-top:none'>DF 002<br>DF 003<br>DF 004<br>DF 005<br>DF 008<br>DF 009<br>DF 010<br>&nbsp<br>&nbsp<br>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Captain America MW v1</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Fury<br>Red Skull<br>Red Skull<br>Red Skull </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>ToS 78<br>ToS 79<br>ToS 80<br>ToS 81 </td><td style='border-bottom:none;border-top:none'>DF 002<br>DF 003<br>DF 004<br>DF 005</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Captain America MW v2</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp<br>&nbsp<br>&nbsp<br>AIM<br>MODOK<br>&nbsp<br>&nbsp </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>ToS 84<br>ToS 85<br>ToS 86<br>ToS 93<br>ToS 94<br>ToS 95<br>ToS 96 </td><td style='border-bottom:none;border-top:none'>DF 008<br>DF 009<br>DF 010<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Captain America MW v3</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Captain America </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Cap 103<br>Cap 104<br>Cap 110<br>Cap 111<br>Cap 113</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Marvel Premier: Ultron</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Avengers </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Avengers 066<br>Avengers 067<br>Avengers 068</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Kree/Skrull War</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Avengers </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Avengers 89-97</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Premiere</td><td>003 </td><td>Dr Strange</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>The Sub-Mariner</td><td>035</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6"> <center><h4>BRONZE AGE</h4></center>
+</td></tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Avengers vs Defenders</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Avengers<br>Defenders </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Avengers 116, 117<br>Defenders 9, 10 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#decaff"><td bgcolor="#ddffdd">Marvel Fanfare</td><td>029 </td><td>Hulk </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#decaff"><td bgcolor="#ddffdd">Marvel Adventures Hulk</td><td>002 </td><td>Hulk<br>Madrox </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f9f9a5"><td bgcolor="#ddffdd">Marvel Monster Group</td><td>1 </td><td>Devil Dinosaur </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#f9f9a5"><td bgcolor="#ddffdd">Defenders</td><td>062 </td><td>Dollar Bill </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#decaff"><td bgcolor="#ddffdd">Defenders</td><td>063 </td><td>everybody   </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#decaff"><td bgcolor="#ddffdd">Defenders</td><td>064 </td><td>Valkyrie    </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>The Serpent Crown</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Avengers </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Avengers 141-144<br>Avengers 147-149</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>The Quest For Odin</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Thor </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Thor 260<br>Thor 261<br>Thor 263</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Warriors Three</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Baldur, Fandril, Volstagg </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Marvel Spotlight 30</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Iron Man: The Enemy Within</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Iron Man </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>169<br>170<br>172<br>173<br>174<br>175 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Duel of Iron</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Iron Man </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>178<br>182<br>184<br>185<br>188<br>191<br>192 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Iron Man (I)</td><td>200 </td><td>&nbsp</td><td>"Resolutions"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Thor Omnibus</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>337<br>338<br>339<br>340<br>341<br>342<br>Fafnir<br>353<br>355<br>357<br>359<br>373<br>374<br>377<br>378<br>379<br>380<br>381<br>382 </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>337<br>338<br>339<br>340<br>341<br>342<br>343<br>353<br>355<br>357<br>359<br>373<br>374<br>377<br>378<br>379<br>380<br>381<br>382 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ececec"><td bgcolor="#ddffdd">Marvel Comics Presents </td><td>045 </td><td>Hulkster </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Hulk Visionaries: PAD v4</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Hulk Visionaries: PAD v5</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Countdown<br>Countdown<br>Hyde<br>Freedom Force<br>Defenders<br>Dark Hulk<br>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>365<br>367<br>368<br>369<br>370<br>371<br>372 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Hulk Visionaries: PAD v6</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>Pantheon  </td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>373<br>374<br>375<br>376<br>377<br>379<br>381<br>382 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Hulk Visionaries: PAD v7</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>383-389 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Hulk Visionaries: PAD v8</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>390-396 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Future Imperfect</td><td>1</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Future Imperfect</td><td>2</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ececec"><td>Marvel Adventures Avengers</td><td>004</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Adventures Avengers</td><td>009 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Adventures Avengers</td><td>025</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Runaways Vol I </b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Runaways Vol II</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Runaways Vol III</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Young Avengers I</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Young Avengers 1-12</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Captain America Omnibus I</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Captain America (III) 1-25</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Captain America Omnibus II</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Captain America (III) 25-42</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Captain America (IV)</td><td>???</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#cecece"><td colspan="6">
+</td></tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Vikings</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Iron Man (I)</td><td>Annual #3  </td><td>1976 </td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="#ececec"><td>Marvel Fanfare</td><td>018 </td><td>Captain America</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+</table></center></body></html>
