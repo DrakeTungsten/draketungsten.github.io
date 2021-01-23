@@ -3,9 +3,42 @@
 <link rel="stylesheet" type="text/css" href="../../hb.css" />
 <link href="../music.ico" rel="icon" type="image/bmp">
 <title>AAA</title></head>
+<style>
+span{ display: inline; margin:1em; }
+h3{ text-decoration: none; font-family: serif; }
+.tooltip {
+    position: relative;
+    display: inline;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -100%;
+    bottom: 1%;
+}
+.tooltip:hover {
+    background-color: #dd9999;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+</style>
+<script type="text/javascript">
+function setmetadata(dta){
+    var element = document.getElementById("metadata");
+    element.innerHTML = dta;
+}
+</script>
 </head>
 <body>
 <div style="margin-left:27%;">
+<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: white; color: red; line-height: 1.5; width: 350"><h3>Metal<br>Up<br>Your<br>Ass</h3></div>
 &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<a href="MetalUpYourAss:#AAA/0000.BillyJoel"><img src="controls/play.png"></a> <font color="#088809">BillyJoel</font><br>
 &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<a href="MetalUpYourAss:&amp#AAA/0000.BillyJoel">(tag nfc)</a><br>
 &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<a href="MetalUpYourAss:#AAA/0000.DefLeppard"><img src="controls/play.png"></a> <font color="#088809">DefLeppard</font><br>
