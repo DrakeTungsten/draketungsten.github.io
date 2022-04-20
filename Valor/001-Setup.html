@@ -1,0 +1,154 @@
+<html>
+<head>
+<link
+rel="stylesheet"
+type="text/css"
+href="hb.css"
+/>
+<link href="rpg.ico" rel="icon" type="image/bmp">
+<title>Setup</title>
+</head>
+<body>
+<div id="onecolnarrow">
+<p>
+    <a href="000-Home.html"><img height="100" src="000-Valor.png"></a>
+</p>
+
+<h2>General RPG Links</h2>
+<p>
+    <a href="https://www.dungeonsolvers.com/2018/05/25/legendary-actions-and-lair-actions/">Dungeon Solvers: Legendary Actions And Lair Actions</a>
+</p>
+<p>
+    <a href="https://www.reddit.com/r/Solo_Roleplaying/comments/tg6fla/free_to_use_maps/">Maps</a>
+</p>
+<p>
+    <a href="https://doomslakers.blogspot.com/">Doomslakers</a>
+</p>
+<p>
+    <a href="https://www.reddit.com/r/osr/comments/r36wng/hex_crawling_looking_to_find_some_good_lists_of/">environmental hazards</a>
+</p>
+<p>
+    <a href="https://www.reddit.com/r/rpg/comments/mipvf9/excellent_adventuringtravel_systems/">travel</a>
+</p>
+<p>
+    <a href="https://www.reddit.com/r/rpg/comments/1p4jbv/ancient_classical_era_themed_rpgs/">ancient history rpgs</a>
+</p>
+<p>
+    <a href="https://www.dungeonsolvers.com/category/dungeons-and-dragons/homebrew/page/2/">Dungeon Solvers</a>
+</p>
+<p>
+    <a href="https://www.themonstersknow.com/">The Monsters Know What They're Doing</a>    
+</p>
+<P>
+    <a href="https://forgottenrealms.fandom.com/wiki/Main_Page">The Forgotten Realms Wiki</a>
+</P>
+<p>
+    <a href="https://2e.aonprd.com/">Archive Of Nethys (Pathfinder (2e))</a>
+</p>
+<p>
+    <a href="https://athenaeum.antilibrari.es/t/discovering-osr-old-school-renassiance-revival-tabletop-game-books/269">OSR Stuff</a>
+</p>
+<p>
+    <a href="https://www.rpgpub.com/threads/heroic-fantasy-campaign-settings.6047/">settings</a>
+</p>
+
+
+
+<p>
+<h2>PDF coding</h2>
+<span class="code">qpdf --empty --pages source.pdf 4-6,8 -- new.pdf</span> Extract pages from a PDF file.
+<br>
+<span class="code">qpdf --empty --pages $(for i in *.pdf; do echo $i 1-z; done) -- new.pdf</span> Merge all pdfs in a folder into one new PDF file.
+<br>
+<span class="code">pdfimages xxx.pdf ExtractedFilesBaseNameAndPath/ -png -p</span> (-p is to include page number in file name) Extract images from a PDF file.
+<br>
+&nbsp &nbsp <span class="code"> -[0-9]{3}-[0-9]{3}</span> regex to use in FC multi-rename to remove page numbers from names of extracted jpg/png files.
+<br>
+<span class="code">convert image.png -page letter outfile.pdf</span> Create a pdf file from (an) image(s). If not using "-page letter", then pdf page(s) will be the size of the image. If creating one PDF from many images which are of different dimensions, the output may not be as desired or expected when using "-page letter" 
+<br>
+<span class="code">[python] pdfkit.from_file</span> Create pdf from an html file <a href="https://codingislove.com/custom-font-pdfkit-wkhtmltopdf">how-to use custom font</a> &nbsp <a href="https://pypi.org/project/pdfkit/">options</a>
+<br>
+<span class="code">[python] ReportLab</span> Create pdf from scratch <a href="https://www.blog.pythonlibrary.org/2010/03/08/a-simple-step-by-step-reportlab-tutorial/">tutorial</a> &nbsp <a href="__reportlab-userguide.pdf">user's guide</a>
+</p>
+
+<h2>PRINT THESE</h2>
+<h4>
+    <a href="_PrintVersions/HBYesNoOracle-rollunder.png"><img src="_PrintVersions/HBYesNoOracle-rollunder.png" height="200"></a>
+    <a href="502-Weather-Spring.png"><img src="502-Weather-Spring.png" height="200"></a>
+    <a href="502-Weather-Summer.png"><img src="502-Weather-Summer.png" height="200"></a>
+    <a href="502-Weather-Fall.png"><img src="502-Weather-Fall.png" height="200"></a>
+    <a href="502-Weather-Winter.png"><img src="502-Weather-Winter.png" height="200"></a>
+</h4>
+
+<h2>DICE</h2>
+<h3><a href="240-Combat.html">Martial Dice</a> <a href="130-Skills.html">(also Skill Dice)</a></h3>
+<ul>
+    <li> 6 d20 red: Martial Pool attack dice / Skill Check Dice</li>
+    <li> 6 d20 blue: Martial Pool active defense</li>
+</ul>
+<h3><a href="130-Skills.html">OPPOSED ROLL DICE</a></h3>
+<ul>
+    <li> 4 d12 red: attacker (normally use 3, + 1 possible for advantage) TODO</li>
+    <li> 4 d12 blue: defender (normally use 3, + 1 possible for advantage) TODO</li>
+</ul>
+<h3>Damage Dice</h3>
+<ul>
+    <li>4 d3 (white)</li>
+    <li>4 d4 (sunburst)</li>
+    <li>6 d6 (sunburst)</li>
+    <li>6 d8 (vortex, orange/black)</li>
+    <li>8 d10 (scarab, scarlet)</li>
+    <li>8 d12 (scarab, blueblood)</li>
+</ul>
+<h3>Oracle Dice</h3>
+<ul>
+    <li> 2 d10 clear: pair of percentage dice for oracle</li>
+    <li> 1 d20 clear: for yes/no modifier TODO</li>
+</ul>
+<h3>Story Dice</h3>
+<ul>
+    <li>Rory's story cubes
+        <ul>
+            <li>
+                Base Set
+            </li>
+            <li>
+                Adventure Set
+            </li>
+            <li>
+                Fantasia Set
+            </li>
+            <li>
+                Actions Set
+            </li>
+            <li>
+                Emergency Set (TODO)
+            </li>
+            <li>
+                Primal Set (TODO)
+            </li>                        
+        </ul>
+    </li>
+</ul>
+<h3>Misc Dice</h3>
+<ul>
+    <li>2 d6 Weather Hex (TODO)</li>
+    <li>1 d6 Investigation Resources (TODO)</li>
+    <li>1 d6 escalation die</li>
+    <li>3 df Fudge/Fate</li>
+    <li>X d4-d20 Countdown series</li>
+</ul>
+<h2>CARDS</h2>
+<ul>
+    <li>
+        Dungeon Deck from Inked Adventures, Etsy, from UK
+    </li>
+    <li>
+        GM Apprentice Cards (base + fantasy expansion)
+    </li>
+    <li>Conversation Cards (for quick NPC reactions)</li>
+    <li>Axebane's Deck Of Many Dungeons (TODO)</li>
+</ul>
+</div>
+</body>
+</html>
