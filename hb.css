@@ -11,6 +11,10 @@ h3{
     font-family: serif;
 }	
 
+span{ display: inline-block; margin:1em; } 
+.flip_H{ transform: scale(-1, 1); color:red; }
+.flip_V{ transform: scale(1, -1); color:green; }
+
 
 #col2{ 
     width:48%; 
