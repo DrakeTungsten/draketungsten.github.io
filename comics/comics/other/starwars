@@ -3,17 +3,29 @@
 # phantom = .The Phantom Affair
 # dw = Devil Worlds
 # tales = Star Wars Tales
+# rebspec = Age Of Rebellion Special
+# sw = Star Wars
+# smugrun = Smuggler's Run
+# epic3 = .Star Wars: The Original Marvel Years<br>Epic Collection v3
+# swa = Star Wars Adventures
+# weapon = The Weapon Of A Jedi
 
-tales 023 "Lucky"    ^1
-tales 010 "Trooper"  ^2
+Beckett 001          ^1 }
+tales 010 "Trooper"  ^2 }
 : <center><h4>A NEW HOPE</h4></center>
-biggs
-vdq
-dw 001 ^1
-dw 002 ^2
-tales 016 "Lunch Break" ^1
-tales 024 "Fett Club"   ^2
+biggs *Biggs Darklighter<br>Roons Sewell  @Star Wars: Republic 8-12, 15
+vdq *Darth Vader
+smugrun 001 *Han Solo<br>Chewbacca ^1 }
+smugrun 002 *Han Solo<br>Chewbacca ^2 }
+weapon 001  *Luke ^1 }
+weapon 002  *Luke ^2 }
+dw 001 ^1 }
+dw 002 ^2 }
+tales 016 "Lunch Break" ^1 }
+rebspec 001 *IG-88      ^2 }
 : <center><h4>THE EMPIRE STRIKES BACK</h4></center>
+swa 001 "Invasion Of Echo Base"
+epic3 @Star Wars 051<br>Star Wars 052
 : <center><h4>RETURN OF THE JEDI</h4></center>
-tales 022 "Marooned"
-phantom
+tales 022 "Marooned" }
+phantom *Wedge Antilles

@@ -7,8 +7,10 @@
 # ldkd = LotDK Digital
 # pry = .Prey
 # adv = Batman Adventures
+# adv03 = Batman Adventures (2003)
 # bra = Batman & Robin Adventures
 # bopcw = Birds Of Prey:<br>Catwoman and Batgirl
+# youngj = Young Justice
 # got = Batman Gotham Adventures
 # man = .Manhunter
 # sob = Shadow Of The Bat
@@ -24,21 +26,23 @@
 # gfb = .Girl Frenzy: Batgirl
 # jok = .The Killing Joke
 # sec = Secret Origins
+# secfiles18 = Secret Files (2018)
 # azr = .Sword Of Azrael
 # vbn = Vengeance Of Bane
-# pd2 = .Batman/Predator II
+# pd2 = Batman/Predator II
 # lonely = .A Lonely Place Of Dying
 # nwg = Nightwing
 # vob = .Vengeance Of Bane II
 # azl = Azrael
 # bdm = .Bane Of The Demon
 # gcp = .GCPD
-# pd3 = .Batman/Predator III
+# pd3 = Batman/Predator III
 # gra = Green Arrow
 # nml = No Man's Land
 # bwm = .Bruce Wayne: Murderer?
 # bmbw = Batman Black And White
-# bmbw3 = Batman Black And White v3
+# bmbw2013 = Batman Black And White (2013)
+# bmbw2021 = Batman Black And White (2021)
 # bgk = Gotham Knights
 # dam = .Death And The Maidens
 # gcn = Gotham Central
@@ -75,56 +79,97 @@
 # bata4 = .Batman Adventures IV
 # s94 = Showcase '94
 # nights = Gotham Nights
-# bref1 = .Legends of The Dark Knight:<br> Norm Brefoygle v1
-# bref2 = .Legends of The Dark Knight:<br> Norm Brefoygle v2
+# bref1 = .Legends of The Dark Knight:<br> Norm Breyfogle v1
+# bref2 = .Legends of The Dark Knight:<br> Norm Breyfogle v2
 # tts = Teen Titans Spotlight
 # sbm = Superman/Batman
 # bnr = Batman And Robin
-
+# anbb = All New Batman:<br>The Brave And The Bold
+# robtri = .Robin Triumphant
+# conway3 = .Tales Of The Batman<br>Conway Vol III
+# fudd = Batman / Elmer Fudd
+# robiny1 = .Robin: Year One
+# turtles = .Batman / TMNT
+# beware = Beware The Batman
+# yearblood = .Year Of Blood
+# dawn = .Dawn Of The Demons
+# swamp = Swamp Thing
+# wholelot = .Whole Lot Of Li'l Gotham
+# dredd = .Batman/Judge Dredd
+# bluedev = Blue Devil
+# cc4 = .Caped Crusader v4
+# vill100 = Villains 100-page Giant
+# dcspec = DC Special Series
+# laughs = .The Man Who Laughs
+# 80p1998 = Batman 80-Page Giant<br>1998
+# 80p2010 = Batman 80-Page Giant<br>2010
+# cw80 = Catwoman 80th Anniversary
+# batman100 = Batman 100-page Giant
+:
+crn 006 *Gotham }
+:
 yr1
+:
 mnm
 mdm
+:
 pry *Hugo Strange<br>Catwoman @LoTDK 11 - 15
+:
 blink @LoTDK 156 - 158
-bat Annual #2 (2017) *Catwoman }
+:
+laughs *Joker
+:
+bat Annual 2 *Catwoman @&nbsp @2017 ^1 }
+Solo 001 *Catwoman "Date Knight" ^2 }
+ldk 052 "Tao" ^1 }
+ldk 053 "Tao" ^2 }
 ldk 069 "Criminals" ^1 }
 ldk 070 "Criminals" ^2 }
-ldk 050 *Joker         ^1 }
-tec Annual #8 *Riddler ^2 }
+#ldk 050 *Joker                      ^1 }
 s94 008 *Scarface ^1 }
 s94 009 *Scarface ^2 }
-bat Annual #1 (2016) *Ace }
-ldcu 010 *Batgirl    }                              ^1
-ldcu 011 *Batgirl    }                              ^2
-crn 009 "Photo Finish" *Batgirl<br>Robin }  
+ldcu 010 *Batgirl ^1 }                              ^1
+ldcu 011 *Batgirl ^2 }                              ^2
+crn 009 "Photo Finish" *Batgirl<br>Robin ^1 }  
+bopcw *Batgirl<br>Catwoman ^2 }
+tec Annual 8 *Riddler @&nbsp @1995 }
+#rob 010 *Dick, Tim                       ^2 }
+:
+robiny1 *Robin
+:
 bac *Batgirl<br>Catwoman
 :
-mad @Mad Love<br>Annual #1<br>Annual #2
-#adv 009 "The Little Red Book"                      ^1 
-#adv 010 "The Last Riddler Story" *Riddler          ^2 
-bata1 *Catwoman<br>Riddler @+2<br>+9<br>+10
-bata2 *Batgirl, Harley<br>Gordon<br>Joker<br>Ra's Al Ghul<br>Batgirl, Robin<br>Mastermind @+12<br>+15<br>+16<br>+17<br>+18<br>+20
-#adv 012 "Batgirl: Day One" *Batgirl<br>Harley      ^1
-#adv 015 "Badge Of Honor"                           ^2
-#adv 016 "The Killing Book" *Joker                  ^1
-#adv 017 "The Tangled Web" *Ra's Al Ghul            ^2
-#adv 018 *Batgirl<br>Robin                          ^1
-#adv 020 *Mastermind, Perfesser, Mr Nice            ^2
-bata3 *Two-Face<br>Poison Ivy<br>Superman<br>Batgirl, Robin<br>&nbsp<br> @+22<br>+23<br>+25<br>+26<br>+27
-#adv 022 *Two-Face                                  ^1 
-#adv 023 *Poison Ivy                                ^2 
-#adv 025 *Superman                                  ^1 
-#adv 026 *Batgirl, Robin                            ^2 
-#adv 027 "Survivor Syndrome"                         
-bata4 *Joker<br>Talia<br>Perfesser<br>&nbsp<br>Catwoman<br>Catwoman<br>Catwoman<br>Mr Freeze  @+28<br>+29<br>+30<br>+33<br>+34<br>+35<br>+36<br>&nbsp   "Twelve Days Of Madness|Demonseed|Natural Born Loser|Just Another Night|In Memoriam|The Book Of Memory|The Last Batman Adventure|Holiday Special"
-hiv 
-#adv 028 "Twelve Days Of Madness" *Joker  }
-#adv 029 "Demonseed" *Ra's Al Ghul<br>Talia                       ^1 } 
-#adv 030 "Natural Born Loser" *Mastermind<br>Perfesser<br>Mr Nice ^2 }
-#adv 033 "Just Another Night"                       ^1 }
-#adv 034 "In Memoriam" *Catwoman<br>Hugo Strange    ^2 }
-#adv 035 "The Book Of Memory" *Catwoman             ^1 }
-#adv 036 "The Last Batman Adventure" *Catwoman      ^2 }
+.A @Annual 1
+mad @Mad Love
+.Z @Annual 2
+:
+.A @Batman Adventures 002 
+bata1 *Catwoman @Batman Adventures 009 "The Little Red Book"
+.Z @Batman Adventures 010 *Riddler "The Last Riddler Story"
+.A @Batman Adventures 012 *Batgirl, Harley "Batgirl: Day One"
+.0 @Batman Adventures 015 *Gordon "Badge Of Honor"
+bata2 @Batman Adventures 016 *Joker "The Killing Book"
+.0 @Batman Adventures 017 *Ra's Al Ghul "The Tangled Web"
+.0 @Batman Adventures 018 *Batgirl, Robin
+.Z @Batman Adventures 020 *Mastermind
+:
+.A @adv 022 *Two-Face                     
+.0 @adv 023 *Poison Ivy                 
+bata3 @adv 025 *Superman               
+.0 @adv 026 *Batgirl, Robin             
+.Z @adv 027 "Survivor Syndrome"                         
+:
+hiv *Harley<br>Ivy
+:
+.A @adv 028 "Twelve Days Of Madness" *Joker  
+.0 @adv 029 "Demonseed" *Ra's Al Ghul<br>Talia    
+.0 @adv 030 "Natural Born Loser" *Mastermind<br>Perfesser<br>Mr Nice 
+bata4 @adv 033 "Just Another Night"   
+.0 @adv 034 "In Memoriam" *Catwoman<br>Hugo Strange 
+.0 @adv 035 "The Book Of Memory" *Catwoman 
+.0 @adv 036 "The Last Batman Adventure" *Catwoman   
+.Z @Holiday Special *Mr Freeze   
+:
 bra 001 "Two-Timer" *Two-Face<br>Joker             ^1 }
 bra 002 "Two-Timer" *Two-Face                      ^2 }
 bra 003 *Riddler                                   ^1 }
@@ -135,56 +180,240 @@ bra 019 *Huntress                                  ^1 }
 bra 022 *Two-Face                                  ^2 }
 bad 001 *Batgirl                                         ^1 }
 got 013 *Nightwing<br>Mastermind<br>Perfesser<br>Mr Nice ^2 }
-bopcw *Batgirl<br>Catwoman }
+got 046 *Scarface              ^1 }
+anbb 016 *Bat-Mite<br>Batgirl  ^2 }
+:
+youngj 011 *Ra's Al Ghul "The Demon Rises"              ^1 }
+adv03 011  *Riddler "Questions That Begin With A Queue" ^2 }
+adv03 005 ^1 *Deadshot }
+adv03 006 ^2 *Matches  }
+adv03 007 ^1 *Batgirl  }
+adv03 008 ^2 *Matches  }
+adv03 010 ^1 *Catwoman }
+adv03 013 ^2 *Penguin "Swan Song" }
+ldk 162 *Joker "Auteurism" ^1 }
+ldk 163 *Joker "Auteurism" ^2 }
+tec 359 *Batgirl }
 :
 661 *Mad Hatter "The Hatter Takes The Crown"
-662 *Olga<br>False Face<br>King Tut<br>Shame<br>Cleopatra "Queen Of Cossacks|The Fiend Is False|King Tut Barges In|Showdown With Shame|Cleo-Bat-Ra"
+.A *Olga "Queen Of The Cossacks"
+.0 *False Face "The Fiend Is False"
+662 *King Tut "King Tut Barges In"
+.0 *Shame "Showdown With Shame"
+.Z *Cleopatra "Cleo-Bat-Ra"
 663 *Joker, Riddler "The Bat-Robot Takes Flight"
 664 *Joker "A Stand Up Guy"
-665 *Grundy<br>Marsha<br>Harlequin<br>Scarecrow<br>Killer Croc<br>Ma Parker<br>Catwoman<br>Riddler "The Groovy Grave of...|Diamond Disaster|Night of the Harlequin|Scarecrow Comes To Town|Hunt The Croc Down|Parker Breaks Out|Catwoman Comes About|Main Title"
-66steed
+.A *Solomon Grundy "The Groovy Grave of..."
+.0 *Marsha "Diamond Disaster"
+.0 *Harlequin "Night Of The Harlequin"
+665 *Scarecrow "Scarecrow Comes To Town"
+.0 *Killer Croc "Hunt The Croc Down"
+.0 *Ma Parker "Parker Breaks Out"
+.0 *Catwoman "Catwoman Comes About"
+.Z *Riddler "Main Title"
+#66steed
 :
 adamsomni
 :
-greatest @Detective 500
+greatest @Detective 457<br>Detecive 500 "There Is No Hope In Crime Alley|To Kill A Legend"
 :
-#man @tec 43?-443
-bat 393 "The Dark Rider" ^1 }
-bat 394 "The Dark Rider" ^2 }
-#gfb
+cw80 "Catwoman Of Earth" ^9 }
+Solo 011 "A Batman Story" *Sergio   ^1 }
+bgk 021 *Batgirl "Day &amp Night"   ^2 }
+swamp  007 *Swamp Thing @Roots Of The Swamp Thing 004 @Batman: Hidden Treasures<br>1973 ^1 }
+Batman 257 *Penguin<br>Talia @&nbsp @1974   ^2 }
+tec 439 "Night Of The Stalker" @&nbsp @1974 ^1 }
+tec 481 "Ticket To Tragedy" @&nbsp @1978 ^2 }
+fudd 001 *Elmer Fudd             @&nbsp @1970s   ^1 }
+secfiles18 001 *Detective Chimp  @&nbsp @1970s   ^2 }
+bat 311 *Batgirl<br>Dr Phosphorous  ^1 @&nbsp @1979}
+bat 312 *Calendar Man               ^2 }
+bat 321 *Joker "Dreadful Birthday, Dear Joker...!"   @&nbsp @1979 ^1 }
+dcspec 021 *Santa Claus @Christmas With The Superheroes 001 @1979 ^2 }
+tec 497 *The Squid "A Bad Night In Baja" ^1 }
+tec 500 ^2 }
+Solo 005 "Deja Vu"   }
+:
+.A *The Squid<br>Killer Croc @Batman 357
+conway3 *The Squid <br>Killer Croc @Detective 524 @1983
+.Z "All My Enemies Against Me" @Detective 526
+:
+beware 006 *Killer Croc<br>Alfred "First Person Shooter" ^1 }
+crn 023 *Alfred<br>Bullock ^2 }
+tec 532 *Joker ^1 @&nbsp @1983 }
+bat 366 *Joker ^2 }
+adv03 009 *Robin "Deathtrap A-Go-Go|The Couch" ^1 }
+adv03 017 *Joe Chill                           ^2 }
+bat 370 *Fang    ^1 }
+bat 374 *Penguin ^2 }
+tec 542 *Bullock<br>Welfare Services "Between Two Nights" ^1 }
+bat 377 *Natalia Knight "The Slayer Of The Night"         ^2 }
+tec 544 *Nocturna "Deceit In Dark Secret"   ^1 }
+tec 546 *Hill, Bullock "Hill's Descent"     ^2 }
+:
+bat 380 *Night-Slayer "End Of The Bat"           ^1 }
+tec 547 "Cast of Characters; Sequence of Events" ^2 }
+bat 381 "Darkly Moved The Pawns"     ^1 }
+bluedev 019 *Kid Devil<br>Jason Todd ^2 }
+bat 388 *Mirror Master<br>Captain Boomerang @&nbsp @1985    ^1 }
+tec 555 *Mirror Master<br>Captain Boomerang ^2 }
+swamp 052 *Swamp Thing @&nbsp @1986 ^1 }
+bat 389 *Nocturna "Red Skies"       ^2 }
+tec 556 *Nocturna "The Bleeding Night"        ^1 }
+bat 390 *Nocturna "Women, Dark and Dangerous" ^2 }
+:
+tec 557 *Nocturna "Still Beating"          ^1 }
+bat 391 *Nocturna "Death Comes As The End" ^2 }
+bat 393 "The Dark Rider" ^1  }
+bat 394 "The Dark Rider" ^2  }
+bat 400 "Resurrection Night" ^1 @&nbsp @1986 }
+adv03 012 *Nightwing "The Hidden Display" ^2 }
 #bat Annual #11 "Mortal Clay" *1987 Alan Moore
-#jok
-tec Annual #1 1988 "Fables" *Talia  ^1 }
+tec Annual 1 "Fables" *Talia  @&nbsp @1988 ^1 }
 sec Special 1989 *Penguin           ^2 }
-tts 14 *Nightwing  ^1 }
-bmbw3 001 "Driven" ^2 }
+#bat Annual 13 *Jason Todd<br>Barbara Gordon @&nbsp @1989 ^1 }
+Detective Annual 3 *Tsunetomo "Obligation"  @&nbsp @1990 ^1 }
+bmbw2013 001 "Driven" *Batmobile ^2 }
+crn 010 "Odd Attachment" ^1 }
+80p1998 001 *Scarface<br>Rhino ^2 }
+
+:
 prd  *Predator
-bref1 @'Tec 582 - 607 *Scarface<br>Etrigan<br>Mud Pack @'87 - '89
-bref2
 :
-nights 001 ^1               }
-nights 002 ^2               }
-nights 003 ^1               }
-nights 004 ^2               }
-tec 622 }
-tec 623 }
-tec 624 }
+.A    @Batman Annual 11  @1987 *Penguin "Love Bird"
+.0    @tec 583 *Scarface @1988
+.0    @tec 584 *Scarface
+#.0    @tec 585 *Ratcatcher
+#.0    @tec 586 *Ratcatcher
+.0    @tec 587 "Night People"
+bref1 @tec 588 "Night People" *The Corrosive Man
+.0    @tec 589 "Night People" *The Corrosive Man
+#.0    @tec 590 "An American Batman In London"
+#bref1 @tec 591 "Aborigine"
+.0    @tec 592 *Cornelius Stirk
+.0    @tec 593 *Cornelius Stirk
+.0    @tec 594 "Ecstacy" *Joe Potato
+#.0    @tec 601
+#.0    @tec 602
+.Z    @tec 603 *The Demon
+#.0    @tec 604
+#.0    @tec 605
+#.0    @tec 606
+#.Z    @tec 607 *Mudpack @1989
 :
-dkdc *Riddler @Batman 452 - 454<br>'Tec 629 - 633
-lonely *Tim Drake @Batman 440 - 442<br>NTT 60 - 61
-bat 465 "Debut"      
+lonely *Tim Drake @Batman 440 - 442<br>NTT 60 - 61 @Fall '89
 :
-kf *Bane 
-kq *Bane
-ke *Bane
+.A    @tec 608 *Anarky @1989
+.0    @tec 609 *Anarky
+.0    @tec 610 *Penguin
+.0    @tec 611 *Penguin
+#.0    @tec 612 *Catman<br>Catwoman
+#.0    @tec 613 "Trash"
+.0    @tec 614 *Street Demonz
+#.0    @tec 615 "The Penguin Affair" Part 2 - Not in this collection
+#.0    @tec 616 "Stone Killer"
+.0    @tec 617 *Joker  @1990
+.0    @tec 618 *Tim Drake "Rite Of Passage, Part One"
+bref2 @tec 619 *Tim Drake "Rite Of Passage, Part Two" 
+.0    @tec 620 *Tim Drake "Rite Of Passage, Part Three" 
+.0    @tec 621 *Tim Drake "Rite Of Passage, Part Four" 
+.0    @bat 455 "Identity Crisis"
+.0    @bat 456 "Identity Crisis"
+.0    @bat 457 "Master Of Fear" *Scarecrow
+.0    @bat 458 "Night Monsters" *Harold
+.Z    @bat 459 "Saturday Night At The Movies" *Gordon, Essen @1991
 :
-jones *Killer Croc<br>Two-Face<br>Deadman @Batman 515 - 535
+nights 001 ^1 @&nbsp @1992 }
+nights 002 ^2 }
+nights 003 ^1 }
+nights 004 ^2 }
+#tec 622 }
+#tec 623 }
+#tec 624 } @&nbsp @1990
+#:
+#.A   @Batman 452 *Riddler @1990
+#.0   @Batman 453 *Riddler
+#dkdc @Batman 454 *Riddler
+#.0   @Detective 629
+#.0   @Detective 630
+#.0   @Detective 631
+#.0   @Detective 632
+#.Z   @Detective 633 @1991
+#:
+#.A  @Batman 460 "Sisters In Arms"
+#cc4 @Batman 461 "Sisters In Arms"
+#.Z  @Batman 465 "Debut" @1991
+#robtri *Robin @Batman 465 "Debut" @&nbsp @1991
+#.0     *Robin @Batman 467 "Shadow Box"
+#.0     *Robin @Batman 468 "Shadow Box"
+#.0     *Robin @Batman 469 "Shadow Box"
+#.0     *Robin @Robin II 001 @&nbsp @1991
+#.0     *Robin @Robin II 002
+#.0     *Robin @Robin II 003
+#.Z     *Robin @Robin II 004
+Batman 460 *Catwoman "Sisters In Arms" ^1 }
+Batman 461 *Catwoman "Sisters In Arms" ^2 }
+Batman 465 *Robin "Debut" @&nbsp @1991 ^1 }
+Batman 466 *Robin "No More Heroes"     ^2 }
+Batman 475    *Scarface<br>Montoya  @&nbsp @1992 ^1 }
+Detective 642 *Scarface                          ^2 }
+Batman 476    *Scarface "The Gig Heat"         ^1 }
+Detective 651 *Bullock  "A Bullet For Bullock" ^2 }
+crn 002 *Harold "Going Downtown" }
+:
+.A *Bane @Vengeance Of Bane
+.0 *Bane @Batman 491
+.0 *Mad Hatter @Batman 492
+.0 *Ventriliquist, Amygdala @Detective 659
+.0 *Zsasz @Batman 493
+.0 *Killer Croc @Detective 660
+.0 *Joker, Scarecrow @Batman 494
+.0 *Riddler @Detective 662
+kf *Joker @Batman 496 
+.0 *Trogg, Zombie @Detective 663
+.0 *Bane @Batman 497 
+.0 *Jean Paul @Detective 664
+.0 *Catwoman, Shondra @Batman 498
+.0 *Jack Drake @Detective 665
+.0 *Tough Tony @Batman 499 
+.0 *Jean Paul, Bane @Detective 666
+.Z *Jean Paul, Bane @Batman 500
+:
+.A @Detective 667 *Trigger Twins
+.0 @Detective 668 *Trigger Twins
+.0 @Detective 669 *Trigger Twins
+.0 @Detective 670 *Mr Freeze
+kq @Detective 671 *Joker
+.0 @Detective 672 *Joker
+.0 @Detective 673 *Joker
+.0 @Detective 674 *Gunhawk
+.0 @Detective 675 *Gunhawk
+.Z @Robin 007 *Bruce
+:
+.A @Batman 509 "Spirit Of The Bat"
+.0 @Shadow Of The Bat 029 "Manimal: Proving Ground"
+.0 @Detective 676 "Too Many Ninjas"
+.0 @Legends Of The Dark Knight 062 "Devils"
+ke @Robin 008 "Death's Door"
+.0 @Batman 510 "Return Of The Bat" 
+.0 @Shadow Of The Bat 030 "Wild Knights, Wild City"
+.0 @Detective 677 "Flesh And Steel"
+.Z @Legends Of The Dark Knight 063 "Climax"
+:
+jones *Killer Croc<br>Mister Freeze "Fast Train To The Wet Dark|Frozen Assets" @Batman 521<br>Batman 525
+:
 #bdm
 #gcp 
-pd2 *Moench, Gulacy *Predator }
-pd3 *Dixon          *Predator }
-nwg 025 *Nightwing<br>Robin  }
-:
+pd2 001 *Predator ^1 }
+pd2 002 *Predator ^2 }
+pd2 003 *Predator ^1 }
+pd2 004 *Predator ^2 }
+pd3 001 *Predator ^1 }
+pd3 002 *Predator ^2 }
+pd3 003 *Predator ^1 }
+pd3 004 *Predator ^2 }
+crn 001 *Huntress<br>Gordon ^1 }
+nwg 025 *Nightwing<br>Robin ^2 }
 #tec 742                           ^1
 #tec 751 *Poison Ivy               ^2
 #tec 752 *Poison Ivy               ^1
@@ -203,15 +432,36 @@ nwg 025 *Nightwing<br>Robin  }
 #tec 773                             
 #tec 774  ^1
 #tec 775  ^2
-dam 
+#:
+#dam 
+:
+dredd *Judge Dredd
+:
 gcn1
 gcn2
 gcn3 *-(26-31)
 gcn4
-bsn
-sbm 077 *Damian<br>Kara 
-bnr Annual 1
-#tec annual 11 - Fab Nic, Question, Az - Don't want it
+:
+bsn @&nbsp @2006 *Damian
+#tec annual 11 - Fab Nic, Question, Azreal - Don't want it
+:
+wholelot *Damian
+:
+#yearblood *Damian
+#dawn *Damian
+bmbw2021 005 "Father &amp Son Outing" }
+sbm 077 *Damian<br>Kara  @@nbsp @2010 ^1 }
+bnr Annual 1 "Batman Impossible" *Damian @&nbsp @2013 ^2 }
+Batman Annual 3 *Alfred @&nbsp @2018     ^1 }
+Batman Annual 4 *Batman @&nbsp @2019 "Every Day" ^2 }
+#80p2010 *Riddler<br>Catwoman ^1 }
+bmbw2013 004 "Long Night" *Catwoman }
+vill100 001 *Joker  "Balyushka" ^9 }
+batman100 004 "Concrete Jungle" ^9 }
+:
+turtles *Teenage Mutant Ninja Turtles
 :
 tdkr
+
+
 #bmbw 002 "Legend" This is in the DCU page

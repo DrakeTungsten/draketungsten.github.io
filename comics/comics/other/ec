@@ -2,13 +2,39 @@
 # mummy = .The Living Mummy
 # sucker = .Sucker Bait
 # grave = .Grave Business
-# thing = .The Thing From The Grave
-# bomb = .Bomb Run
 
-
-taint *Jack Davis "Bats In My Belfry|The Trophy|Bargain In Death|Grounds... For Horror|Gas-tly Prospects|Survival... Or Death|'Taint The Meat... It's The Humanity|Lower Berth|Mirror, Mirror, On The Wall|Dead Right|Forever Ambergris|Telescope"
+.A    "Bats In My Belfry"                    @Tales From The Crypt 24
+.0    "The Trophy"                           @Tales From The Crypt 25
+.0    "Bargain In Death"                     @Tales From The Crypt 28
+.0    "Grounds... For Horror"                @Tales From The Crypt 29
+.0    "Gas-tly Prospects"                    @Tales From The Crypt 30
+taint *Jack Davis "Survival... Or Death"     @Tales From The Crypt 31
+.0    "'Taint The Meat... It's The Humnaity" @Tales From The Crypt 32
+.0    "Lower Berth"                          @Tales From The Crypt 33
+.0    "Mirror, Mirror, On The Wall"          @Tales From The Crypt 34
+.0    "Dead Right"                           @Tales From The Crypt 37
+.0    "Forever Ambergris"                    @Tales From The Crypt 44
+.Z    "Telescope"                            @Tales From The Crypt 45
+:
 mummy *Jack Davis
-sucker *Graham Ingels
-grave *Graham Ingles
-thing *Joe Orlando
-bomb *John Severin
+:
+.A "A Little Stranger"                          @Haunt Of Fear 14
+.0 "A Grim Fairy Tale"                          @Vault Of Horror 27
+.0 "Sugar 'n Spice 'n..."                       @Shock SuspenStories 06
+.0 "There was An Old Woman"                     @Tales From The Crypt 34
+sucker *Graham Ingels "Horror We? How's Bayou?" @Haunt Of Fear 17
+.0 "Pipe Down"                                  @Haunt Of Fear 18
+.0 "The Handler"                                @Tales From The Crypt 36
+.0 "One Good Turn..."                           @Vault Of Horror 31
+.Z "Strung Along"                               @Vault Of Horror 33
+:
+.A "Grave Business"                @Haunt Of Fear 10
+.0 "The Ventriloquist's Dummy"     @Tales From The Crypt 28
+.0 "The Rug"                       @Shock SuspenStories 01
+.0 "A Sucker For A Spider"         @Tales From The Crypt 29
+grave *Graham Ingels "Halloween"   @Shock SuspenStories 02
+.0 "Mournin', Ambrose"             @Tales From The Crypt 30
+.0 "Collection Completed"          @Vault Of Horror 25
+.0 "For The Love Of Death"         @Haunt Of Fear 13
+.Z "Buried Treasure"               @Tales From The Crypt 31
+:

@@ -6,33 +6,42 @@
 # ms = Marvel Super Special
 # mf = Marvel Feature
 # gc = Giant Sized Conan
-# rg = .Conan The Rogue
+# rg = Conan The Rogue
 # cn = Conan
 # cs = Saga
 # cc = Classic 
-# sk = .The Skull Of Set
+# sk = The Skull Of Set
 # fg = .The Frost Giant's Daughter
 # te = .The Tower Of The Elephant
 # bowl = .The God In The Bowl
 # sotd = .Songs Of The Dead
 # cron3 = .Chronicles III
 # cron4 = .Chronicles IV
+# phoenix = .The Phoenix On The Sword
+# hour = .The Hour Of The Dragon
+# conq = .Conan The Conquerer
+# wolves = .Wolves Beyond The Border
+# omni1 = .Conan The Barbarian Omnibus v1
+# omni2 = .Conan The Barbarian Omnibus v2
+# omni3 = .Conan The Barbarian Omnibus v3
+# omni4 = .Conan The Barbarian Omnibus v4
+# cimm = The Cimmerean
 # CB 30???   Don't have CB 11
 # Saga 72: Saga
 # Saga 72: ConComChron I
 # st 004 @cs 004
 # ss 203  "Old Garrad's Heart"
 # ss 006 @saga 37
+ss 039  "Legions Of The Dead" *(Hyperborea) @cs 40 ^2
 # cb 069
-ss 039  "Legions Of The Dead"           *Hyperborea @cs 40
 #cb 003  "Twilight Of The Grim Grey God" *Hyperborea @cs 01   @cc 03 
 # cb 003  "Twilight Of The Grim Grey God" *Hyperborea @cs 01   @cc 03 
 #ss 024  "The Tower Of The Elephant" *Arenjun (Zamora)  @cs 18          
 # cb 004  "The Tower Of The Elephant" ^1 *Arenjun (Zamora) @cs 02 @cb Annual 1 
 # Saga 73: CCC II
-# ss 008  "The Forever Phial"  *Road of Kings       @cs 30
-# cb 009  "The Garden Of Fear"                      @cs 03     @cc 09 ^1
-#cb 011  "Rogues In The House"     *(Corinthia)    @cs 04            ^2 }
+# ss 008  "The Forever Phial"  *Road of Kings    @cs 30
+# cb 009  "The Garden Of Fear"                  @cs 03     @cc 09
+#cb 011  "Rogues In The House"     *(Corinthia)    @cs 04           
 #ss 053  "Conan And The Sorcerer" *Isparana   @cs 72
 #ss 054  "Conan And The Sorcerer"             @cs 73
 #ss 055  "Conan And The Sorcerer"             @cs 74
@@ -40,30 +49,25 @@ ss 039  "Legions Of The Dead"           *Hyperborea @cs 40
 #ss 057  "The Sword Of Skelos"                @cs 62
 #ss 058  "The Sword Of Skelos"                @cs 63 
 # Saga 74: CCC III
-# cb 014  *Elric
-# cb 015  *Elric
+#cb 014  *Elric
+#cb 015  *Elric
 #cb 017  "The Gods of Bal-Saggoth" *(Turan)<br>Fafnir @cs 10<br>(2nd story) @Chronicles III
 #cb 018  "The Thing In The Temple" *Yezdigerd<br>Fafnir @cs 11<br>(2nd story)   @Chronicles III
-#cb 027  "The Blood Of Bel-Hissar"            @cs 64<br>(2nd story)  }
-ss 059  "City Of Skulls"                     @cs 64 *bodyguard to Yolinda
+# ss 059  "City Of Skulls"               @cs 64 *Yolinda - wrong  ^1
 # ss 033 "Curse Of The Monolith"
 # ss 003  "Demons Of The Summit"               @cs 13 *(Turan)
-# cb 38 @cs 77 *Narim-bey dies, Conan deserts
-ss 001  "Curse Of The Undead Man"         @cs 11 *Red Sonja <br>Arenjun (Zamora)
-# ss 001  "Red Sonja"                       @cs 31
-st 005  "The Secret Of Skull River"       @cs 10           @cb 64       
-st 004  "Night Of The Dark God"           @cs 10 *Cimerria
+ss 001  "Curse Of The Undead Man"     @cs 11 *Red Sonja <br>(Arenjun, Zamora) ^1
+# ss 001  "Red Sonja"                       @cs 31 
+st 005<br>004  "The Secret Of Skull River|Night Of The Dark God"  @cs 10 *&nbsp<br>(Cimmeria) ^2 
+#st 004  "Night Of The Dark God"           @cs 10 *Cimerria
 # st 001  "The Frost Giant's Daughter"      @cs 06           @cb 16
 # ss 034 "Lair Of The Ice Worm" @cs 37
 # Saga 76: CCC IV  (or 3?)
-# cb 065  "Fiends Of The Feathered Serpent" @cs 85
 # cb 066  "Dagger And Death Gods"           @cs 85 *Red Sonja
 # mf 006  "Beware The Sacred Sons Of Set"   @cs 85 *Red Sonja
 # cb 067  "Talons Of The Man-Tiger"         @cs 86 *Red Sonja
 # mf 007  "Battle Of The Barbarians"        @cs 86 *Red Sonja
 # cb 068  "Of Once And Future Kings"        @cs 86 *Red Sonja, Kull
-# cb 086  "The Devourer Of The Dead"        @cs 92
-# cb 088  "The Queen And The Corsairs"      @cs 93      
 # cb 094 @cs 38
 # cb 095 @cs 38 
 # cb 096 @cs 39
@@ -73,27 +77,34 @@ st 004  "Night Of The Dark God"           @cs 10 *Cimerria
 # ss 061 "Wizard Fiend Of Zingara"
 # ss 036 "Hawks Over Shem" @cs 49
 # cb 262  "Panther's Blood" *Shem
+# sk *(Argos) ^1
+ss 108 "Fear Of Crom" *(Argos) ^2
 # ss 216  "Vengeance Of Nitocris"
-ss 002  "Black Colossus" *(Khoraja)        @cs 12                            ^1
+ss 002<br>003  "Black Colossus|At The Mountain Of The Moon-God" *Yasmela (Khoraja)<br>Yasmela (Khoraja) @cs 12 ^1
 # cb 249
 # cb 250
 # cb 251
-ss 003  "At The Mountain Of The Moon-God" *(Khoraja)  @cs 12 @cb Annual 3
-ss 029  "Child Of Sorcery"                @cs 28<br>(2nd story)              ^2
+#ss 003  "At The Mountain Of The Moon-God" *(Khoraja)  @cs 12 @cb Annual 3
+ss 029  "Child Of Sorcery"   @cs 28 (2nd story)     ^2
 # cb 252-265
 ################## Saga 83: CCC VIII
-ss 004  "Iron Shadows In The Moon"        @cs 13 *Vilayet pirate        ^1
+#cb 266 *(Koth) ^1 }
+#cb 267 *(Koth) ^2 }
+#cb 268 *(Koth) ^1 }
+#cb 269 *(Koth) ^2 }
+ss 004  "Iron Shadows In The Moon"  @cs 13           ^1
 # ss 062
-ss 038  "Road Of The Eagles"              @cs 59 *deserted by pirates   ^2
+ss 038  "Road Of The Eagles"        @cs 59 *(Turan)  ^2
+ss 179 "Fury Of The Iron Damsels" *Valeria<br>Red Sonja ^2
 # ss 223  "The Feeders From The Skies" ("Nekht Semerkhet")
-ss 005  "A Witch Shall Be Born"         @cs 32 *(Khauran)<br>Zuigir Chieftan ^1
+ss 005  "A Witch Shall Be Born"         @cs 32 *(Khauran) ^1
 # ss 006 "The Sleeper Beneath The Sands"  @cs 33
 # ss 058  "Mirror Of The Manticore"       @cs 22 *no Conan
 # ss 007 "Citadel At The Center Of Time"  @cs 15 
 # ss 009 "The Curse Of The Cat-Goddess"   @cs 15 
 # ss 063 "Moat Of Blood"
 # ss 035 "Black Tears"                    @cs 58 *Deserted by Zuagirs
-ss 011  "Abode Of The Damned"             @cs 14 *Fortress of Thieves        ^2
+ss 011  "Abode Of The Damned"             @cs 14 *(Fortress of Thieves)   ^2
 ss 012  "Haunters Of The Castle Crimson"  @cs 36           ^1
 ss 028  "Blood Of The Gods"               @cs 19 *Zamboula ^2
 ss 014  "Shadows In Zamboula"             @cs 17 *Zamboula ^1
@@ -106,13 +117,15 @@ ss 037  "Son Of The White Wolf"           *Kozaki chieftan ^2
 # ss 147  "Vulture's Shadow" *(Brythunia) retconned from Nemedia, gladiator
 #     CCC mistakenly lists above story as SS 047
 # ss 015 "The Devil In Iron" @cs 46 *back to the Kozaks
-ss 031  "The Flame Knife"                 @cs 34 *Iranistan<br>Olgerd ^1
-ss 032  "The Ghouls Of Yanaidar"          @cs 35 *Iranistan<br>Olgerd ^2
+ss 031  "The Flame Knife"                 @cs 34 *Olgerd<br>(Iranistan) ^1
+ss 032  "The Ghouls Of Yanaidar"          @cs 35 *Olgerd<br>(Iranistan) ^2
 ss 016  "People Of The Black Circle"      @cs 28 ^1
 ss 017  "On To Yimsha"                    @cs 29 ^2
 ss 018  "The Battle Of The Towers"        @cs 30 ^1
 ss 019  "Vengence In Vendhya"             @cs 31 ^2
 ################# Saga 86: CCC X
+ss 110 "The Dinner Guest" @cs 76   ^1
+ss 165 "City Of Rats" *(Iranistan) ^2
 # ss 020 "The Slithering Shadow" @cs 16
 # ss 021  "The Horror From The Red Tower"   @cs 21 *Argossian mercenary
 ss 045  "The Gem In The Tower"  *Barachan <i>Hawk</i> ^1
@@ -146,17 +159,17 @@ ss 043  "King Thoth-Amon"            @cs 45 *Black Zarono  ^2
 # ss 217  "When Walks The Living Wind"
 #  Should at least be after Zamboula stories.  South of Stygia after pirating 
 #  again, so could also be after "The Horror From The Red Tower" 
-ss 025  "The Jewels Of Gwahlur"         @cs 20 *Keshan     ^1
-ss 060  "The Ivory Goddess"             @cs 65 *Punt       ^2
+ss 025  "The Jewels Of Gwahlur"         @cs 20 *(Keshan)     ^1
+ss 060  "The Ivory Goddess"             @cs 65 *(Punt)       ^2
 ##################  Saga 91: CCC XIII 
 # ss 026  "Beyond The Black River"        @cs 40 *Aquilonian scout
 # ss 027  "Children Of Jhebbal Sag"       @cs 41
 # ss 046  "Moon Of Blood"  
-ss 201  "The Man In The Iron Tower" *Valeria               ^1
+ss 201  "The Man In The Iron Tower" *Valeria ^2
 # ss 047 "Treasure Of Tranicos"      @cs 26
 # ss 048 "A Wind Blows From Stygia"  @cs 27                ^2
 # ss 059  "Wolves Beyond The Border" *no Conan   
-ss 049  "When Madness wears The Crown"  @cs 53                    ^1
+ss 049  "When Madness Wears The Crown"  @cs 53                    ^1
 ss 050  "Swords Across The Alimane"     @cs 54                    ^2
 ss 051  "Satyr's Blood"                 @cs 55                    ^1
 ss 052  "Conan The Liberator"           @cs 56 *King Of Aquilonia ^2
@@ -172,3 +185,6 @@ ss 214  "The Reign Of Thulundra Thuu"                       ^1
 # gc 004                                  @cs 24
 # ss 008  "Corsairs Against Stygia"       @cs 24
 # ss 010  "Conan The Conqueror"           @cs 25
+#ca 004  "Return Of The Conqueror"       @cs 67  ^1
+#ca 005  "Bride Of The Conqueror"        @cs 68  ^2
+################### Truman

@@ -24,6 +24,7 @@
 # pm3 = .Punisher Max v3
 # pm4 = .Punisher Max v4
 # pm5 = .Punisher Max v5
+# realms = .War Of The Realms
 
 brn 
 war @War Zone 1-6
@@ -42,5 +43,6 @@ pm3 "The Slavers|Barracuda"
 pm4 "Man Of Stone|Widowmaker"
 pm5 "Long Cold Dark|Valley Forge, Valley Forge"
 gnucci
+realms
 :
 ftl @The Tyger, The Cell, The End

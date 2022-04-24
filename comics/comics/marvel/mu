@@ -11,11 +11,11 @@
 # mangog = .To Wake The Mangog
 # irag = The Iron Age
 # case = Captain America Special Edition
-# cap1 = Captain America (I)
+# cap1 = Captain America
 # cap2 = Captain America (II)
 # cap3 = Captain America (III)
 # cap4 = Captain America (IV)
-# irn1 = Iron Man (I)
+# irn1 = Iron Man
 # irn2 = Iron Man (II)
 # avcl = Avengers Classic
 # avr1 = Avengers (I)
@@ -24,17 +24,19 @@
 # subm = The Sub-Mariner
 # dfnr = Defenders
 # avdf = .Avengers vs Defenders
+# hulktorch = From The Marvel Vault:<br>The Hulk &amp The Human Torch
+# aov = Avengers Origins: Vision
 # spns = Tales Of Suspense
 # mrvu = Marvel Universe
 # caps = Cap America: Sentinel of Liberty
 # spct = Marvel Spectacular
 # dblf = Marvel Double Feature
 # supa = Marvel Super Action
-# fnfr = Marvel Fanfare
+# fanfare = Marvel Fanfare
 # avrx = Avengers Special
 # hero = Marvel Super-Heroes
 # fant = Fantasy Masterpieces
-# avprem = .Marvel Premier: Ultron
+# avprem = .Marvel Premiere: Ultron
 # kree = .Kree/Skrull War
 # serp = .The Serpent Crown
 # mprm = Marvel Premiere
@@ -48,16 +50,22 @@
 # capo1 = .Captain America Omnibus I
 # capo2 = .Captain America Omnibus II
 # young1 = .Young Avengers I
-# within = .Iron Man: The Enemy Within
+# within = .The Enemy Within
 # duelfe = .Duel of Iron
 # warg = .Iron Man: War Games
-# immw4 = .Iron Man MW v4
-# capmw1 = .Captain America MW v1
-# capmw2 = .Captain America MW v2
-# capmw3 = .Captain America MW v3
+# thormw5 = .Masterworks: Thor v5
+# thormw6 = .Masterworks: Thor v6 (80)
+# thormw7 = .Masterworks: Thor v7 (96)
+# immw4 = .Masterworks: Iron Man v4
+# capmw1 = .Masterworks: Captain America v1
+# capmw2 = .Masterworks: Captain America v2
+# capmw3 = .Masterworks: Captain America v3
+# hulkmw3 = .Masterworks: Hulk v3
+# hulkmw6 = .Masterworks: Hulk v6
 # w3 = .Warriors Three
 # odinquest = .The Quest For Odin
 # thoro = .Thor Omnibus
+# pado1 = .Hulk Omnibus: PAD v1
 # pad4 = .Hulk Visionaries: PAD v4
 # pad5 = .Hulk Visionaries: PAD v5
 # pad6 = .Hulk Visionaries: PAD v6
@@ -65,142 +73,478 @@
 # pad8 = .Hulk Visionaries: PAD v8
 # imp = Future Imperfect
 # maa = Marvel Adventures Avengers
+# mah = Marvel Adventures Hulk
+# mcp = Marvel Comics Presents 
+# mcp19 = Marvel Comics Presents 2019
+# intrigue = .Black Widow: Web Of Intrigue
+# prem = Marvel Premiere
+# thorkirby3 = .Thor Omnibus vol III
+# subby = Sub-Mariner
+# ff = Fantastic Four
+# ffo1 = .Fantastic Four Omnibus v1
+# ffbyrne = .Fantastic Four Omnibus: Byrne v2
+# ffgp1 = .Fantastic Four Visionaries: Perez v1
+# ffgp2 = .Fantastic Four Visionaries: Perez v2
+# ffa = Marvel Adventures: Fantastic Four
+# change = .The Big Change
+# ff2 = Fantastic Four II 
+# wargames = .War Games
+# warmach = .War Machine
+# surfer = Silver Surfer
+# tta = Tales To Astonish
+# gdff = Grand Design: Fantastic Four
+# howling = .Sgt Fury And His Howling Commandos
+# submw7 = .Masterworks: Sub-Mariner v7
+# hsa = Hulk Smash Avengers
+# mshs92 = Marvel Super-Heroes Spring '92
+# mshs93 = Marvel Super-Heroes Spring '93
+# mshf93 = Marvel Super-Heroes Fall '93
+# rwb = .Red, White, And Blue
+# mythoshulk = Mythos: Hulk
+# mythosff = Mythos: Fantastic Four
+# ffwalt3 = .Fantastic Four Visionaries: Simonson v3
+# 2in1 = Marvel Two-In-One
+# sub70 = Marvel 70th Anniversary:<br>Sub-Mariner Comics
+# shield = .SHIELD: The Complete Collection
+# ffspec = Fantastic Four Secial One-Sot
+# hulkfff = Hulk vs Fin Fang Foom
+# mcm = Marvel Comics
+# kssps = Spider-Man King-Size<br>Summer Special
+# grounded = .Rocket Raccoon: Grounded
+# imhulk1 = .The Immortal Hulk v1
+# imhulk2 = .The Immortal Hulk v2
+# snapcap = Marvels Snapshot: Captain America
+# ffroast = Fantastic Four Roast
+# jim = Journey Into Mystery
+# shadl = Shadows And Light
+# as1 = Avengers: Season 1
+# nfys = Night Falls On Yancy Street
+# snapsubby = Marvels Snapshot: Sub-Mariner
+# freefall = .Hawkeye: Freefall
+# who = Whosoever Weilds This Hammer
+# tourn = Tournament Of Heroes
+# slmss = Stan Lee Meets The Silver Surfer
+# slmtt = Stan Lee Meets The Thing
+# epicill = Epic Illustrated
+# mtss = Marvel Tales: Silver Surfer
+# mds = Marvel Double-Shot
+# ca65 = Captain America:<br>65th Anniversary Special
+# pride = Marvel Voices: Pride
 
-asgd
-thr1 Giant-Sized # 1  *1975 @Annual #2 @JIM Annual #1
-oath
+#asgd
 :
-caps 002 *Invaders ^1
-caps 003 *Invaders ^2
-caps 004 *Invaders ^1
-mrvu 001 *Invaders ^2
-mrvu 002 *Invaders ^1
-mrvu 003 *Invaders ^2
+oath *Thor<br>The Warriors Three
+: <center><h4>WWII</h4></center>
+Thor Giant-Sized 001<br>(1975) *The Destroyer<br>Hercules @Thor Annual #2<br>Journey Into Mystery Annual #1 ^1 }
+Thor 370 *Loki        ^2 }
+fanfare 016 *Sky-Wolf ^1 }
+fanfare 017 *Sky-Wolf ^2 }
+sub70 001 *Namor }
+caps 002 *Invaders ^1 }
+caps 003 *Invaders ^2 }
+caps 004 *Invaders ^1 }
+mrvu 001 *Invaders ^2 }
+mrvu 002 *Invaders ^1 }
+mrvu 003 *Invaders ^2 }
+ca65 001 *Captain America ^1 }
+mcp19 001 *Wolverine<br>Namor ^2 }
 :
-#mrvl
+howling
+:
+rwb *Captain America<br>Red Skull
+:
+snapsubby *Namor }
+: <center><h4>THE MARVEL AGE</h4></center>
+epicill 001 *Silver Surfer }
+ff 001 *Fantastic Four @Marvel Milestone @1961  ^1 }
+mythosff 1 *Fantastic Four                      ^2 }
+#ff 005 *Fantastic Four<br>Doctor Doom @Marvel Milestone @1962 ^2 }
+hulk 001 *Hulk @Milestone  @1962  ^1 }
+mythoshulk 1                *Hulk ^2 }
+who *Thor @Journey Into Mystery 083<br>Journey Into Mystery 084<br>Journey Into Mystery 088 }
+:
 gray *Hulk
-spns 039 *Iron Man
-hulk 001 *Hulk @Milestone
-irag 001 *Iron Man ^1
-irag 002 *Iron Man ^2
-avcl 001 *Avengers @Avengers 001 @Milestone ^1
-avrx 001.5 *Avengers                        ^2
-avcl 003 @Avengers 003 @MSH 021 *Avengers      ^1
-avcl 004 @Avengers 004 *Avengers               ^2
-caps 005 *Captain America<br>Iron Man          ^1
-caps 006 *Captain America<br>Iron Man          ^2
-smash 001 *Hulk
-smash 002 *Hulk
+:
+ff Annual 1 *Fantastic Four<br>Namor @1984 Special Edition @1963 ^1 }
+spns 039 *Iron Man @&nbsp  @1963                                 ^2 }
+irag 001 *Iron Man ^1 }
+irag 002 *Iron Man ^2 }
+avcl 001 *Avengers "The Coming Of The Avengers|Some Assembly Required" @Avengers 001 @1963 ^1 }
+avrx 001.5 *Avengers<br>Doctor Doom            ^2 }
+avcl 003 "Sub-Mariner|Crack In The Armor" @Avengers 003 @MSH 021 *Hulk<br>Namor ^1 }
+avcl 004 "Captain America Joins The Avengers|Blues In The Night" @Avengers 004 *Captain America  @1964 ^2 }
+caps 005 *Captain America<br>Iron Man          ^1 }
+caps 006 *Captain America<br>Iron Man          ^2 }
+:
+Avengers 006 *Avengers<br>Masters Of Evil @True Believers @1964 ^1 }
+jim 114 *Thor<br>Absorbing Man @True Believers @1965 ^2 }
+hsa 001 *Hulk<br>Avengers @&nbsp @~1964   }
+#as1 004 *Avengers                     ^2 }
+smash 001 *Hulk ^1 }
+smash 002 *Hulk ^2 }
+shadl 001 *Iron Man ^1 }
+tta 082 *Namor<br>Iron Man @Marvel Super-Heroes 037 @1966 ^2 }
+#tta 092 *Hulk<br>Silver Surfer @Marvel Super-Heroes 047 @1967 ^1 }
+#tta 093 *Hulk<br>Silver Surfer @Marvel Super-Heroes 048 @1967 ^1 }
+#gdff 001 *Fantastic Four  ^1 }      
+Marvels 003 *Galactus @&nbsp @1966 }
 #savage  1
 :
-#spct 008 @Thor 137 *Ulik
-#spct 009 @Thor 138 *Ulik
-#spct 010 @Thor 139 *Ulik
-#spct 013 @Thor 142 *Super-Skrull
-mangog *Mangog<br>Mangog<br>Him<br>Loki @Thor 156<br>Thor 157<br>Thor 166<br>Thor 175  
+.A    *Fantastic Four @Fantastic Four 035 @MGC 027, 1965
+.0    *Fantastic Four "Bedlam At The Baxter Building" @Fantastic Four Annual 3 @1965
+.0    *The Watcher "The Coming Of Galactus"  @Fantastic Four 048 @MGC 035, 1966
+.0    *Galactus       @Fantastic Four 049 @MGC 036
+.0    *Silver Surfer  @Fantastic Four 050 @MGC 037
+.0    *Fantastic Four "This Man... This Monster" @Fantastic Four 051 @MGC 038
+.0    *Black Panther  @Fantastic Four 052 @MGC 039
+ffo1  *Fantastic Four @Fantastic Four 053 @MGC 040
+.0    *Fantastic Four @Fantastic Four 054 @MGC 041
+.0    *Silver Surfer  @Fantastic Four 055 @MTA 001
+.0    *Klaw           @Fantastic Four 056 @MGC 043
+.0    *Doctor Doom    @Fantastic Four 057 @MTA 001
+.0    *Doctor Doom    @Fantastic Four 058 @MTA 002
+.0    *Inhumans "Doomsday" @Fantastic Four 059 @MTA 003
+.Z    *Doctor Doom    @Fantastic Four 060 @MTA 004, 1967
+:
+.A       *Hulk<br>Silver Surfer @Tales To Astonish 092
+hulkmw3  *Hulk<br>Silver Surfer @Tales To Astonish 093 @1967
+.Z       *Hulk<br>Asgardians    @Tales To Astonish 100
+:
+.A      @Thor 137 *Ulik @Marvel Spectacular 008 @1967
+thormw5 @Thor 138 *Ulik @Marvel Spectacular 009
+.Z      @Thor 139 *Ulik @Marvel Spectacular 010
+.A @Thor 142 *Super-Skrull @Marvel Spectacular 013
+.0 @Thor 143 @1967
+.0 @Thor 144
+thormw6 @Thor 148 *The Wrecker
+.0 @Thor 149 *The Wrecker
+.0 @Thor Annual 2 *The Destroyer
+.0 @Thor 151 *The Destroyer
+.Z @Thor 152 *The Destroyer, Ulik @1968
+.A @Thor 155 *Mangog @1968
+thormw7 @Thor 156 *Mangog
+.Z @Thor 157 *Mangog @&nbsp @1968
+
+#mangog *Mangog<br>Mangog<br>Him<br>Loki @Thor 156<br>Thor 157<br>Thor 166<br>Thor 175  
+#thorkirby3
 :
 #irn1 Giant-Sized #1  *1975 (intro Hawkeye)
-irn1 King-Sized #1  *Iron Man<br>Namor<br>(1970) @ToS 79-80
-immw4 *Iron Man @ToS 85<br>ToS 86<br>ToS 87<br>ToS 88<br>ToS 91<br>ToS 92<br>ToS 93<br>ToS 94<br>ToS 95<br>ToS 96 @DF 002<br>DF 003<br>DF 004<br>DF 005<br>DF 008<br>DF 009<br>DF 010<br>&nbsp<br>&nbsp<br>&nbsp
+#irn1 King-Sized #1  *Iron Man<br>Namor<br>(1970) @ToS 79-80
+.A *Iron Man @Tales Of Suspense 085 @Double Feature 002 @1967
+.0 *Iron Man @Tales Of Suspense 086 @Double Feature 003
+.0 *Iron Man @Tales Of Suspense 087 @Double Feature 004
+.0 *Iron Man @Tales Of Suspense 088 @Double Feature 005
+immw4 *Iron Man @Tales Of Suspense 091 @Double Feature 008
+.0 *Iron Man @Tales Of Suspense 092 @Double Feature 009
+.0 *Iron Man @Tales Of Suspense 093 @Double Feature 010
+.0 *Iron Man @Tales Of Suspense 094 
+.0 *Iron Man @Tales Of Suspense 095 
+.Z *Iron Man @Tales Of Suspense 096  @1967
 :
-capmw1 *Fury<br>Red Skull<br>Red Skull<br>Red Skull @ToS 78<br>ToS 79<br>ToS 80<br>ToS 81 @DF 002<br>DF 003<br>DF 004<br>DF 005
-capmw2 *&nbsp<br>&nbsp<br>&nbsp<br>AIM<br>MODOK<br>&nbsp<br>&nbsp @ToS 84<br>ToS 85<br>ToS 86<br>ToS 93<br>ToS 94<br>ToS 95<br>ToS 96 @DF 008<br>DF 009<br>DF 010<br>&nbsp<br>&nbsp<br>&nbsp<br>&nbsp
-capmw3 *Captain America @Cap 103<br>Cap 104<br>Cap 110<br>Cap 111<br>Cap 113
-#cap1 103 @Cap Masterworks III @supa 005 
-#cap1 104 @Cap Masterworks III @supa 006 
-#cap1 110-111 @Cap Masterworks III @case 001 
-#cap1 113 @Cap Masterworks III @case 002 
+.A *Fury @Tales Of Suspense 078 @Double Feature 002 @1966
+capmw1 *Red Skull @Tales Of Suspense 079 @Double Feature 003
+.0 *Red Skull @Tales Of Suspense 080 @Double Feature 004
+.Z *Red Skull @Tales Of Suspense 081 @Double Feature 005
+.A *Captain America @Tales Of Suspense 084 @Double Feature 008
+.0 *Captain America @Tales Of Suspense 085 @Double Feature 009
+.0 *Captain America @Tales Of Suspense 086 @Double Feature 010
+capmw2 *Captain America @Tales Of Suspense 093 
+.0 *Captain America @Tales Of Suspense 094
+.0 *Captain America @Tales Of Suspense 095
+.Z *Captain America @Tales Of Suspense 096 @1967
+.A *Captain America @Captain America 103 @1968
+.0 *Captain America @Captain America 104 
+capmw3 *Captain America @Captain America 110 
+.0 *Captain America @Captain America 111 
+.Z *Captain America @Captain America 113  @1969
 :
-avprem @Avengers 066<br>Avengers 067<br>Avengers 068
-#supa 027 @Avengers 066 *BWS
-#supa 028 @Avengers 067 *BWS
-#supa 029 @Avengers 068 *Buscema
-kree @Avengers 89-97
+.A     *Nick Fury @Strange Tales 140 @1966
+.0     *Nick Fury @Strange Tales 146
+.0     *Nick Fury @Strange Tales 147
+.0     *Nick Fury @Strange Tales 148
+shield *Nick Fury @Strange Tales 149 @1966
+.0     *Nick Fury @Strange Tales 152
+.0     *Nick Fury @Strange Tales 153
+.0     *Nick Fury @Nick Fury, Agent Of Shield 001
+.Z     *Nick Fury @Nick Fury, Agent Of Shield 002 @1968
+:
+aov 1 *Vision @&nbsp @1968 }
+surfer 004 *Silver Surfer<br>Thor @Fantasy Masterpieces 004 @1969 ^1 }
+slmss 001 *Silver Surfer<br>Stan Lee ^2 }
+hulkfff 1 *Hulk<br>Fin Fang Foom ^1 }
+mmg 1 *Hulk<br>Devil Dinosaur   ^2 }
+mtss *Silver Surfer<br>Namor<br>Hulk @Sub-Mariner 034<br>@Sub-Mariner 035 @1971 }
+:
+.A *Ultron @Avengers 066 @1969
+avprem *Ultron @Avengers 067
+.Z *Ultron @Avengers 068 @1969
+:
+.A      *Hulk<br>Fantastic Four    @Incredible Hulk 122  @1969
+.0      *Hulk<br>The Absorbing Man @Incredible Hulk 125
+.0      *Hulk<br>Avengers          @Incredible Hulk 128
+hulkmw6 *Hulk<br>Iron Man          @Incredible Hulk 131 "A Titan Stalks The Tenements"
+.0      *Hulk<br>Hydra             @Incredible Hulk 132 
+.0      *Hulk                      @Incredible Hulk 133 "The Demon And The Dictator"
+.Z      *Hulk                      @Incredible Hulk 134  @1970
+:
+.A   @Avengers 089 *Avengers @1971
+.0   @Avengers 090 *Avengers
+.0   @Avengers 091 *Avengers
+.0   @Avengers 092 *Avengers
+kree @Avengers 093 *Avengers
+.0   @Avengers 094 *Avengers
+.0   @Avengers 095 *Avengers
+.0   @Avengers 096 *Avengers
+.Z   @Avengers 097 *Avengers @1972
 #avr1 098 ^1
 #avr1 099 ^2
 #avr1 100 ^1
-mprm 003 *Dr Strange
-subm 035
-avdf @Avengers 116, 117<br>Defenders 9, 10 
-mmg 1 *Devil Dinosaur
-fnfr 029 *Hulk ^1
-dfnr 062       ^2
-dfnr 063       ^1
-dfnr 064       ^2
-serp @Avengers 141-144<br>Avengers 147-149
-#avr1 150
-odinquest @Thor 260<br>Thor 261<br>Thor 263
-w3 *Baldur, Fandril, Volstagg @Marvel Spotlight 30
+#mprm 003 *Dr Strange
+#subm 035
+#:
+#.A     *Namor @Sub-Mariner 051
+#submw7 *Namor @Sub-Mariner 052 @1972
+#.Z     *Namor @Sub-Mariner 053
+: <center><h4>BRONZE AGE</h4></center>
+.A @Avengers 116 *Avengers<br>Defenders @1973
+avdf @Defenders 009 *Avengers<br>Defenders
+.0 @Avengers 117 *Avengers<br>Defenders
+.Z @Defenders 010 *Avengers<br>Defenders @1973
 :
-within @169<br>170<br>172<br>173<br>174<br>175
-duelfe @178<br>182<br>184<br>185<br>188<br>191<br>192
-#irn1 169 "Blackout"
-#irn1 170 "And Who Shall Clothe Himself In Iron"
-#irn1 172 "Firebrand's Revenge"
-#irn1 173 "Judas Is A Woman"
-#irn1 174 "Armor Chase"
-#irn1 175 "This Treasure Of Red And Gold"
-#irn1 178 "Once An Avenger, Always An Avenger"
-#irn1 182 "Deliverance"
-#irn1 184 "On The Road"
-#irn1 185 "Terror In Tulaluma"
-#irn1 188 "And Grimm Shall Be Their Name"
-#irn1 191 "Losing The Touch"
-#irn1 192 "A Duel Of Iron"
-irn1 200 "Resolutions"
+#subby 008 *Namor<br>The Thing @&nbsp @1968 ^1 }
+#hulktorch *Hulk<br>Human Torch }
+hulk 142 *Hulk "They Shoot Hulks, Don't They?"  @Marvel Super-Heroes 093 @1971 ^1 }
+hulk 172 *Hulk<br>Juggernaut                    @&nbsp                   @1973 ^2 }
+hulk 180 *Hulk<br>Wendigo   ^1 }
+hulk 181 *Hulk<br>Wolverine ^2 @&nbsp @1974 }
+Thor 385 *Thor<br>Hulk   ^1 }
+mah  002 *Hulk<br>Madrox ^2 }
 :
-thoro @337<br>338<br>339<br>340<br>353<br>355<br>357<br>359<br>373<br>374<br>377<br>378<br>379<br>380<br>381<br>382
-#thr1 337 "Doom!"
-#thr1 338 "A Fool And His Hammer..."
-#thr1 339 "Something Old, Something New..."
-#thr1 340 "Though Hel Should Bar The Way"
-#thr1 353 "Doom II"
-#thr1 355 "The Icy Hearts"
-#thr1 357 "A New Deal From An Old Deck"
-#thr1 359 "The Grand Alliance"
-#thr1 373 "The Gift Of Death"
-#thr1 374 "Fires Of The Night"
-#thr1 377 "This Hollowed Armor"
-#thr1 378 "When Loki Stood Alone"
-#thr1 379 "There Were Giants In Those Days"
-#thr1 380 "Mjolnir's Song"
-#thr1 381 "Ye Olde Shell Game"
-#thr1 382 "Journey Into Mystery"
+.A   @Avengers 141 *Avengers @1975
+.0   @Avengers 142 *Avengers
+.0   @Avengers 143 *Avengers
+serp @Avengers 144 *Avengers
+.0   @Avengers 147 *Avengers
+.0   @Avengers 148 *Avengers
+.Z   @Avengers 149 *Avengers @1976
 :
-pad4
-pad5 *Countdown<br>Countdown<br>Hyde<br>Freedom Force<br>Defenders<br>Dark Hulk<br>&nbsp@365<br>367<br>368<br>369<br>370<br>371<br>372
-pad6 *&nbsp<br>&nbsp<br>&nbsp<br>&nbsp<br>Pantheon  @373<br>374<br>375<br>376<br>377<br>379<br>381<br>382
-pad7 @383-389
-pad8 @390-396
-imp 1
-imp 2
+ffgp1 *Fantastic Four<br>Hulk @Fantastic Four 166<br>Fantastic Four 167 @1976 
+ffgp2 *Fantastic Four
 :
-maa 004
-maa 009 
-maa 025
+.A *Thor @Thor 260 @&nbsp @1977
+odinquest *Thor @Thor 261
+.Z *Thor @Thor 263 @1977 
+.A *Warriors Three @Marvel Spotlight 30 @1976
+.0 *Warriors Three @Marvel Fanfare 13
+w3 *Warriors Three @Marvel Fanfare 34
+.0 *Warriors Three @Marvel Fanfare 35
+.0 *Warriors Three @Marvel Fanfare 36
+.Z *Warriors Three @Marvel Fanfare 37
 :
-rna1
+snapcap 1 *Captain America @&nbsp @1976 }
+hulk 214 *Hulk<br>Jack Of Hearts @&nbsp @1977   ^1 }
+tourn 001 *Dollar Bill<br>Everybody<br>Valkyrie ^2 @Defenders 062<br>Defenders 063<br>Defenders 064 @1978 }
+#dfnr 062 *Dollar Bill            @&nbsp @1978 ^2 }
+#dfnr 063 *Everybody   ^1 }
+#dfnr 064 *Valkyrie    ^2 }
+2in1 044 *The Thing<br>Hercules @&nbsp @1978                  ^1 }
+irn1 112 *Iron Man<br>Jack Of Hearts @&nbsp @1978 "Moon Wars" ^2 }
+irn1 116 *Iron Man<br>Madame Masque @&nbsp @1978 ^1 }
+#irn1 117 *Iron Man @&nbsp @1978
+#irn1 118 *Iron Man @&nbsp @1978
+irn1 119 *Iron Man<br>Nick Fury @&nbsp @1978      ^2 }
+irn1 131 *Iron Man<br>Hulk ^1 @&nbsp @1979 ^1 }  
+irn1 132 *Iron Man<br>Hulk ^2 @&nbsp @1979 ^2 }
+hsa 002 *Hulk<br>Avengers       @&nbsp @1979 ^1 }
+2in1 051 *The Thing<br>Avengers @Adventures Of The Thing 3 @1979 ^2 }
+prem 045 *Man-Wolf ^1 @&nbsp @1978}
+prem 046 *Man-Wolf ^2 }
+ffroast *Fantastic Four<br>Everybody @&nbsp @1982}
+:
+.A @Iron Man 169 "Blackout" *Iron Man @1983
+.0 @Iron Man 170 "And Who Shall Clothe Himself In Iron" *Iron Man
+within @Iron Man 172 "Firebrand's Revenge" *Iron Man
+.0 @Iron Man 173 "Judas Is A Woman" *Iron Man
+.0 @Iron Man 174 "Armor Chase" *Iron Man
+.Z @Iron Man 175 "This Treasure Of Red And Gold" *Iron Man
+.A @Iron Man 178 "Once An Avenger, Always An Avenger" *Iron Man
+.0 @Iron Man 182 "Deliverance" *Iron Man
+.0 @Iron Man 184 "On The Road" *Iron Man
+duelfe @Iron Man 185 "Terror In Tulaluma" *Iron Man
+.0 @Iron Man 188 "And Grimm Shall Be Their Name" *Iron Man
+.0 @Iron Man 191 "Losing The Touch" *Iron Man
+.Z @Iron Man 192 "A Duel Of Iron" *Iron Man @1985
+:
+irn1 200 "Resolutions" *Iron Man  @&nbsp @1985  }
+#fanfare 044 *Iron Man<br>Doctor Doom ^2 }
+#fanfare 022 *Iron Man<br>Doc Ock ^1 }
+#fanfare 023 *Iron Man<br>Doc Ock ^2 }
+cap1 291 *Captain America<br>The Tumbler @&nbsp @1984 }
+hsa  003 *Hulk<br>Avengers @&nbsp @1983 ^1 }
+hulk 300 *Hulk<br>Avengers @&nbsp @1984 ^2 }
+maa 004 *Avengers       ^1 }
+maa 009 *Avengers       ^2 }
+maa 025 *Avengers       ^1 }
+ffa 039 *Fantastic Four ^2 }
+fanfare 015 *The Thing                  ^1 }
+hulk 316 *Hulk<br>Avengers @&nbsp @1985 ^2 }
+:
+change *Hulk<br>The Thing 
+:
+intrigue *Black Widow
+:
+.A @Thor 337 "Doom!" *Beta Ray Bill @&nbsp @1983
+.0 @Thor 338 "A Fool And His Hammer..." *Beta Ray Bill
+.0 @Thor 339 "Something Old, Something New..." *Beta Ray Bill
+.0 @Thor 340 "Though Hel Should Bar The Way" *Beta Ray Bill
+.0 @Thor 341 "The Past Is A Bucket Of Ashes" *Fafnir
+.0 @Thor 342  "The Last Viking" *Thor
+.0 @Thor 343 "If I Should Die Before I Wake"  *Fafnir
+.0 @Thor 353 "Doom II" *Surtur
+.0 @Thor 355 "The Icy Hearts" *Tiwaz
+.0 @Thor 357 "A New Deal From An Old Deck" *Beta Ray Bill
+thoro @Thor 359 "The Grand Alliance" *Lorelei, Loki @1985
+.0 @Thor 364 "Thor Croaks" *Thor
+.0 @Thor 365 "Guess Who's Coming To Dinner" *Thor
+.0 @Thor 366 "What Do You Call A 6' Fighting Mad Bull Frog?" *Thor
+#.0 @Thor 373 "The Gift Of Death"
+#.0 @Thor 374 "Fires Of The Night"
+.0 @Thor 375 "Shadows Of The Past" *The Wrecker
+.0 @Thor 376 "Heroes Always Win... Don't They?" *Absorbing Man
+.0 @Thor 377 "This Hollowed Armor" *Grendell
+.0 @Thor 378 "When Loki Stood Alone" *Loki
+.0 @Thor 379 "There Were Giants In Those Days"
+.0 @Thor 380 "Mjolnir's Song" *Midgard Serpent
+.0 @Thor 381 "Ye Olde Shell Game"
+.Z @Thor 382 "Journey Into Mystery" @&nbsp @1987
+:
+mshs93 013 *Iron Man<br>Midas "Gold Fever"    @&nbsp @~1987 ^1 } 
+mshs92 009 *Iron Man          "The Applicant" @&nbsp @~1989 ^2 } 
+hsa 004 *Hulk<br>Avengers @&nbsp @1988 ^1   }
+She-Hulk 003 *She-Hulk<br>Spider-Man @&nbsp @1989 ^2 }
+:
+#.A      *Fantastic Four @Fantastic Four 263 @1984
+#ffbyrne *Fantastic Four @Fantastic Four
+#.Z      *Fantastic Four @Fantastic Four 284 @1985
+#`:
+.A     *Hulk          @Incredible Hulk 365 "Countdown" @1990
+pado1  *Hulk          @Incredible Hulk 367 "Countdown"
+.Z     *Hyde          @Incredible Hulk 368
+:
+.A      @Fantastic Four 347 *Hulk<br>Wolverine<br>Ghost Rider<br>Spider-Man 
+ffwalt3 @Fantastic Four 348 *Hulk<br>Wolverine<br>Ghost Rider<br>Spider-Man @1990 
+.Z      @Fantastic Four 349 *Hulk<br>Wolverine<br>Ghost Rider<br>Spider-Man 
+:
+.A     *Freedom Force @Incredible Hulk 369
+pad5   *Defenders     @Incredible Hulk 370
+.0     *Dark Hulk     @Incredible Hulk 371
+.Z     *Hulk          @Incredible Hulk 372
+.A     *Hulk          @Incredible Hulk 373
+.0     *Hulk          @Incredible Hulk 374
+.0     *Hulk          @Incredible Hulk 375
+pad6   *Hulk          @Incredible Hulk 376
+.0     *Hulk          @Incredible Hulk 377
+.0     *Hulk          @Incredible Hulk 379
+.0     *Hulk          @Incredible Hulk 381
+.Z     *Hulk          @Incredible Hulk 382
+.A     *Hulk          @Incredible Hulk 383
+.0     *Hulk          @Incredible Hulk 384
+.0     *Hulk          @Incredible Hulk 385
+pad7   *Hulk          @Incredible Hulk 386
+.0     *Hulk          @Incredible Hulk 387
+.0     *Hulk          @Incredible Hulk 388
+.Z     *Hulk          @Incredible Hulk 389
+.A     *X-Factor      @Incredible Hulk 390 "War And Peices"
+.0     *X-Factor      @Incredible Hulk 391 "War And Peices"
+pad8   *X-Factor      @Incredible Hulk 392 "War And Peices"
+.0     *Hulk          @Incredible Hulk 393 "The Closing Circle"
+#.0     *Trauma          @Incredible Hulk 394
+.0     *Punisher      @Incredible Hulk 395
+.Z     *Punisher      @Incredible Hulk 396 @1992
+:
+#.A       *Iron Man @Iron Man 258 @1990
+#wargames *Iron Man
+#.Z       *Iron Man @Iron Man 277
+#.A       *Iron Man @Iron Man 278
+#warmach  *Iron Man
+#.Z       *Iron Man @Iron Man 289 @1993
+#irn1  300  *Iron Man ^1 @&nbsp @1994 }
+Slapstick 001 ^1 } @&nbsp @1992
+Slapstick 002 ^2 }
+Slapstick 003 ^1 }
+Slapstick 004 ^2 }
+hulk 406 *Captain America  @&nbsp @1993  ^1 }
+hulk 409 *Motormouth       @&nbsp @1993  ^2 }
+mshf93 015 *Volstagg "Volstagg's Mostly Greatest Adventure"  @&nbsp @1993 ^1 } 
+kssps 1 *She-Hulk<br>Scarlet Witch<br>Hellcat<br>MJ         @&nbsp @2008 ^2 }
+She-Hulk 039 *She-Hulk<br>The Thing @&nbsp @1992  ^1 }
+ffspec *Doom @&nbsp @2005                         ^2 }
+:
+ff2 055 *Fantastic Four ^1 @&nbsp @2002 }
+ff2 056 *Fantastic Four ^2 @&nbsp @2002 }
+nfys 001 *The Thing ^1 }
+nfys 002 *The Thing ^2 }
+nfys 003 *The Thing ^1 }
+nfys 004 *The Thing ^2 }
+slmtt 001 *The Thing<br>Stan Lee }
+mds 004 *Iron Man    ^1 }
+mcp19 007 *Iron Man  ^2 }
+:
+#hulk 410 *Fury
+#hulk 411 *Fury
+#hulk 412 *She-Hulk
+imp 1 *Maestro ^1 }
+imp 2 *Maestro ^2 }
+#hulk 417
+#hulk 418 *Wedding
+#hulk 421 *Mythconceptions
+#hulk 422 *Mythconceptions
+#hulk 423 *Mythconceptions
+#hulk 424 *Fall Of The Pantheon
+#hulk 425
+#hulk 435 *Hulk at bat
+#hulk 449 *Thunderbolts
+hulk 451 "Island Getaway" }
+hulk 452
+hulk 453
+hulk Flashback
+hulk 454
+hulk 455
+hulk 456
+hulk 457
+hulk 460
+hulk 462
+hulk 463
+hulk 464
+hulk 465
+hulk 466
+hulk 467 @&nbsp @1998
+:
+rna1 @&nbsp @2003
 rna2
 rna3 
-young1 @ynga 1-12
 :
-capo1 @cap3 1-25
-capo2 @cap3 25-42
+young1 @ynga 1-12 @2005
+:
+capo1 @cap3 1-25 @2005
+capo2 @cap3 25-42 @2007
+:
+grounded *Rocket Raccoon
+:
+freefall *Hawkeye
+:
+mcm 1000 ^9 }
+pride
+
+
 # Captain America 602 - 605 "Two Americas"
 # Secret Avengers
 # Steve Rogers, Super Soldier
 # Captan America 606 - 619
 # Captain America and Bucky 620-???
-cap4 ???
+#cap4 ???
 :
-vkng
-
-#thr1 385 ^2 *Thor vs Hulk 
-
-irn1 Annual #3  *1976 
-fnfr 018 *Captain America
-
-
-
+#irn1 Annual #3  *1976 
+#fanfare 018 *Captain America
 #irn1 Giant-Sized #1  *1975 (intro Hawkeye)
 

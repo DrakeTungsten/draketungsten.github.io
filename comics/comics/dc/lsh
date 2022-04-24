@@ -4,10 +4,17 @@
 # gds = .The Great Darkness Saga
 # l2 = Legion Of Superheroes v2
 # curse = .The Curse
+# arch2 = .LSH Archives v2
+# arch4 = .LSH Archives v4
+# andlegion2 = .Superboy And The<br>Legion Of Super-Heroes v2
+# 31st = The Legion Of Super-Heroes<br>In The 31st Century
 
-l2 008     }
-sec 025 ^1 }
-sec 037 ^2 }
+l2 008  *RJ Brande ^1 }
+sec 025 *RJ Brande ^2 }
+sec 046 *Arm-Fall-Off Boy            ^1 }
+31st 16 *Arm-Fall-Off Boy            ^2 }
+sec 037 *Legion Of Substitute Heroes  }
+:
 # adv 307, 308, 309, 323, 325, 331, 334, 336
 # Looks good
 # 304
@@ -21,27 +28,35 @@ sec 037 ^2 }
 # 350
 
 # archive v2: 306-317
-adv 310 *Mxy, Hamilton  @Arch v2
-adv 311 *Legion Of Subs @Arch v2
-adv 316                 @Arch v2
+.A    @Adventure Comics 310 *Mxyzptlk
+arch2 @Adventure Comics 311 *Legion Of Substitute Heroes
+.Z    @Adventure Comics 316                
+:
 # archive v4: 329 - 339
-adv 329 *Bizarro        @Arch v4
+arch4 @Adventure Comics 329 *Bizarro   
+:
 # adv 340, 348, 351, 355, 357, 358, 360, 361, 369, 370, 373, 378
 # Superboy 205 reprints ENB ADV 350, 351 - are there more reprints in Superboy?
 lsh 239 "Murder Most Foul" }
-lsh 241 ^1 }
-lsh 242 ^2 }
-lsh 243 ^1 }
-lsh 244 ^2 }
-# lsh 245 might as well finish it
+:
+.A         @Legion Of Super-Heroes 241
+.0         @Legion Of Super-Heroes 242
+andlegion2 @Legion Of Super-Heroes 243
+.0         @Legion Of Super-Heroes 244
+.Z         @Legion Of Super-Heroes 245
+:
 lsh 285
 lsh 287
-gds @287(partial)<br>290-294 @annual 1984 #3
-curse @+298<br>+300<br>+302<br>+303<br>+304<br>+305 @297-313
-lsh 298
-lsh 300
-lsh 302
-lsh 303
-lsh 304
-lsh 305
+:
+#gds @287(partial)<br>290-294 @annual 1984 #3
+#:
+# The curse = 297 - 313
+.A    @lsh 298
+.0    @lsh 300
+curse @lsh 302
+.0    @lsh 303
+.0    @lsh 304
+.Z    @lsh 305
+:
+l2 011
 

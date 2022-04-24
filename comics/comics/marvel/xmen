@@ -32,79 +32,198 @@
 # nxm2 = .New X-Men II
 # nxm3 = .New X-Men III
 # xstx = .X-Statix
+# wxu = .Weapon X Unleashed
+# ufor = .Uncanny X-Force
+# xfc = X-Force
+# cw2 = .Classic Wolverine v2
+# msx = Marvels Snapshots: X-Men
+# xmen = X-Men
+# dptu = Deadpool Team-Up
+# gsxmt = Giant-Size X-Men Tribute 
 
-svg 021 ^1
-svg 022 ^2
+svg 021 ^1 }
+svg 022 ^2 }
 wpx @MCP 72-84
-wlv Flashback ^1
-gen Flashback ^2
+wlv Flashback ^1 }
+gen Flashback ^2 }
+msx 001 *Scott               ^1 }
+xmen 058 *Havok @&nbsp @1969 ^2 }
+gsxmt 1 @&nbsp @1975<br>2021 }
+
 #dbw @ 1 + 2
-uxm1 @Uncanny 098<br>Uncanny 099<br>Uncanny 101<br>Uncanny120-122<br>Uncanny129-131  @Classic 06<br>Classic 07<br>Classic 09<br>Classic 26-28<br>Classic 35-37
-uxm2 @Uncanny 132-143<br>Uncanny 147<br>Uncanny 149<br>Uncanny 150<br>Uncanny 153<br>Uncanny Annual 4  @Classic 38-49<br>Classic 51<br>Classic 53<br>Classic 54<br>Classic 57<br>&nbsp
+:
+.A   @Uncanny X-Men 098 @Classic 006, 1976
+.0   @Uncanny X-Men 099 @Classic 007
+.0   @Uncanny X-Men 101 @Classic 009
+.0   @Uncanny X-Men 120 @Classic 026
+uxm1 @Uncanny X-Men 121 @Classic 027
+.0   @Uncanny X-Men 122 @Classic 028
+.0   @Uncanny X-Men 129 @Classic 035
+.0   @Uncanny X-Men 130 @Classic 036
+.Z   @Uncanny X-Men 131 @Classic 037, 1980
+:
+.A   @Uncanny X-Men 132 @Classic 038
+.0   @Uncanny X-Men 133 @Classic 039
+.0   @Uncanny X-Men 134 @Classic 040
+.0   @Uncanny X-Men 135 @Classic 041
+.0   @Uncanny X-Men 136 @Classic 042
+.0   @Uncanny X-Men 137 @Classic 043
+.0   @Uncanny X-Men 138 @Classic 044
+.0   @Uncanny X-Men 139 @Classic 045
+uxm2 @Uncanny X-Men 140 @Classic 046
+.0   @Uncanny X-Men 141 @Classic 047
+.0   @Uncanny X-Men 142 @Classic 048
+.0   @Uncanny X-Men 143 @Classic 049
+.0   @Uncanny X-Men 147 @Classic 051
+.0   @Uncanny X-Men 149 @Classic 053
+.0   @Uncanny X-Men 150 @Classic 054, 1981
+.0   @Uncanny X-Men 153 @Classic 057
+.Z   @Uncanny X-Men Annual 4 
+:
 #uxm Giant-Size #1
-wln *Miller, Claremont @Wolverine 1-4<br>Uncanny 172<br>Uncanny 173 @&nbsp<br>Classic 76<br>Classic 77
-xlt 001 ^1
-xlt 002 ^2
-cxm 080 @Uncanny 176 ^1
-cxm 084 @Uncanny 180 ^2
-cxm 087 @Uncanny 183 *Juggernaut ^1
-cxm 088 @Uncanny 184             ^2
-cxm 090 @Uncanny 186                         ^1
-cxm 092 @Uncanny 188 *~ end '85/start '86    ^2
-cxm 093 @Uncanny 189
+.A  @Wolverine 001 @1982
+.0  @Wolverine 002
+wln @Wolverine 003
+.0  @Wolverine 004
+.0  @Uncanny X-Men 172 @Classic 76, 1983
+.0  @Uncanny X-Men 173 @Classic 77
+:
+xlt 001 ^1 }
+xlt 002 ^2 }
+:
+uxm 176             @cxm 080 ^1 }
+uxm 180             @cxm 084 ^2 }
+uxm 183 *Juggernaut @cxm 087 ^1 @1984 }
+uxm 184             @cxm 088 ^2 }
+uxm 186             @cxm 090 ^1 }
+uxm 188             @cxm 092 ^2 }
+uxm 189             @cxm 093  }
+:
 # mut 19, 10, 26, 27  NO GO
-cxm 098 @Uncanny 194 ^1
-cxm 100 @Uncanny 196 ^2
-cxm 103 @Uncanny 199 ^1
-cxm 109 @Uncanny 205 ^2
-uxm 206 ^1
-uxm 207 ^2
-uxm 208 ^1
-uxm 209 ^2
-fac 006
+uxm 194 @cxm 098 ^1 @1985 }
+uxm 196 @cxm 100 ^2 }
+uxm 199 @cxm 103 ^1 }
+uxm 205 @cxm 109 ^2 }
+uxm 206 ^1 }
+uxm 207 ^2 }
+uxm 208 ^1 }
+uxm 209 ^2 @&nbsp @1986 }
+uxm 211 ^? @True Believers }
+#fac 006          ^1 }
+svg 019 *Jubilee                              ^1 }
+uxm 244 "Ladies' Night" @True Believers @1989 ^2 }
+wlv 001 *Wolverine ^1 @True Believers @Nov 1988 }
+wlv 010 *Wolverine<br>Sabretooth ^2 @True Believers @Aug 1989 }
+wlv 037 *Wolverine<br>Albert<br>Elsie Dee @True Believers @1991 ^1 }
+uxm 282 *Bishop @True Believers @1991                           ^2 }
 # mcp1 @mcp 1-10 *Madripoor<br>Claremont, Buscema, Janson
 #wlv 004
 #wlv 005
 #wc2 @wlv 6-10
 #wc4 @wlv 19-23 *Spore
-bld @MCP 85-92 *Cyber
-svg 019
-wlv 050
-wlv 055
-wlv 056
-wlv 057
+:
+.A @Wolverine 006 *Wolverine
+.0 @Wolverine 007 *Wolverine
+cw2 @Wolverine 008 *Wolverine
+.0 @Wolverine 009 *Wolverine
+.Z @Wolverine 010 *Wolverine
+:
+bld @MCP 85-92 *Cyber @1991
+:
+.A *Wolverine @Wolverine 50  @1992
+wxu *Wolverine @Wolverine 55
+.0 *Wolverine @Wolverine 56
+.Z *Wolverine @Wolverine 57 @1992
 #xfv1 @fac 71-75
 #xfv3 @fac 79-83
-wlv 077 *Deathstrike
-wlv 078 *Bloodscream
-wlv 079 *Cyber
-wlv 082 *Yukio, Amiko
-wlv 087 *Maverick
-wlv 093 *Juggernaut
-wlv 102
-wlv 103
-wlv 119 "Not Dead Yet"
-wlv 120 "Not Dead Yet"
-wlv 121 "Not Dead Yet"
-wlv 122 "Not Dead Yet"
-#xfc 001
-#xfc 002
-#xfc 003
-#xfc 004
-xstx @+116-122<br>+125-129<br>+1-5<br>+9-11<br>+19-21<br>+24-26 "New Beginnings|Final Chaper|Good Omens|X-Statix Vs The Avengers"
-nxm2 *Xorn<br>Fantomex @127 - 141<br>-132, -133 "Riot At Xavier's|Murder At The Mansion"
-nxm3 @142 - 154 "Assault On Weapon Plus|Planet X|Here Comes Tomorrow"
-dpl 065 ^1
-dpl 066 ^2
-dpl 067 ^1
-dpl 068 ^2
-dpl 069 ^1
-sol 001 ^2
-sol 002 ^1
-sol 003 ^2
-sol 004 ^1
-sol 005 ^2
-sol 006 ^1
-sol 007 ^2
-brn @cdp 7-12
-#mad
+wlv 077 *Deathstrike  ^1 @&nbsp @1994}
+wlv 078 *Bloodscream  ^2 }
+wlv 079 *Cyber        ^1 }
+wlv 082 *Yukio, Amiko ^2 }
+wlv 087 *Maverick     ^1 }
+wlv 093 *Juggernaut   ^2 }
+wlv 102 ^1 }
+wlv 103 ^2 }
+wlv 119 "Not Dead Yet" ^1 }
+wlv 120 "Not Dead Yet" ^2 }
+wlv 121 "Not Dead Yet" ^1 }
+wlv 122 "Not Dead Yet" ^2 }
+:
+.A    @xfc 116 @2001
+.0    @xfc 117
+.0    @xfc 118
+.0    @xfc 119
+.0    @xfc 120
+.0    @xfc 121
+.0    @xfc 122
+.0    @xfc 125
+.0    @xfc 126
+.0    @xfc 127
+.0    @xfc 128
+.0    @xfc 129
+xstx  @stx 001
+.0    @stx 002
+.0    @stx 003
+.0    @stx 004
+.0    @stx 005
+.0    @stx 009
+.0    @stx 010
+.0    @stx 011
+.0    @stx 019
+.0    @stx 020
+.0    @stx 021
+.0    @stx 024
+.0    @stx 025
+.0    @stx 026 @2004
+:
+.A   @nxm 127 @2002
+.0   @nxm 128
+.0   @nxm 129
+.0   @nxm 130
+.0   @nxm 131
+.0   @nxm 134
+nxm2 @nxm 135
+.0   @nxm 136
+.0   @nxm 137
+.0   @nxm 138
+.0   @nxm 139
+.0   @nxm 140
+.Z   @nxm 141
+:
+.A   @nxm 142
+.0   @nxm 143
+.0   @nxm 144
+.0   @nxm 145
+.0   @nxm 146
+.0   @nxm 147
+nxm3 @nxm 148
+.0   @nxm 149
+.0   @nxm 150
+.0   @nxm 151
+.0   @nxm 152
+.0   @nxm 153
+.Z   @nxm 154 @2004
+:
+dpl 065 ^1 @&nbsp @2002 }
+dpl 066 ^2 }
+dpl 067 ^1 }
+dpl 068 ^2 }
+dpl 069  }
+dptu 884              ^1 }
+dptu 890 *Machine Man ^2 }
+sol 001 ^2 }
+sol 002 ^1 }
+sol 003 ^2 }
+sol 004 ^1 }
+sol 005 ^2 }
+sol 006 ^1 }
+sol 007 ^2 @&nbsp @2003 }
+:
+.A  @cdp 007
+.0  @cdp 008
+brn @cdp 009
+.0  @cdp 010
+.0  @cdp 011
+.Z  @cdp 012 @2005
+:
+ufor @Uncanny X-Force 1-35

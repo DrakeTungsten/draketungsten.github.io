@@ -4,7 +4,7 @@
 # nwp1 = .Northwest Passage I
 # nwp2 = .Northwest Passage II
 # nwp3 = .Northwest Passage III
-# hell = .From Hell
+# fromhell = .From Hell
 # enemy = .Enemy Ace: War In Heaven
 # war1 = .War Stories Vol I
 # war2 = .War Stroies Vol II
@@ -14,10 +14,6 @@ nwp1
 nwp2
 nwp3
 :
-hell
-:
-enemy
-war1
-war2
+fromhell
 :
 fade

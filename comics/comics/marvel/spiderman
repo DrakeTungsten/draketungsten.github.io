@@ -6,8 +6,8 @@
 # stern = .Spider-Man Stern Omnibus
 # sc = Spider-Man Classics
 # mt = Marvel Tales
-# sl = Shadows And Light
-# tu = Marvel Team-Up
+# shadows = Shadows And Light
+# mtu = Marvel Team-Up
 # mf = Marvel Fanfare
 # pp = Peter Parker
 # ws = Web Of Spider-Man
@@ -15,56 +15,110 @@
 # ht = .Spidey/Torch
 # wv = Spider-Man vs Wolverine
 # jw = .The Death Of Jean DeWolff
-# kr = .Kraven's Last Hunt
+# kraven = .Kraven's Last Hunt
 # fm = .The Complete Frank Miller Spider-Man
 # mw5 = .Spider-Man Masterworks V
+# mw6 = .Spider-Man Masterworks VI
+# mw11 = .Spider-Man Masterworks XI
 # mcf = .Spider-Man McFarlane Omnibus
+# mcp = Marvel Comics Presents 2019
+# specmag = .The Spectacular Spider-Man
+# docy1 = .Doctor Octopus Year One
+# deathdest = Death And Destiny
+# fullcirc = Full Circle
+# sweet = Sweet Charity
+# smf = Spider-Man Family
+# asmf = Amazing Spider-Man Family
+# symb = .Symbiote Spider-Man
+# alien = .Alien Reality
 
-: TW 14 | AF 15-17 | ASM 1,3 | UT 1-2 | ASM 7 | UT 3-4 | ASM 9 | UT 5-8 | ASM 11 | UT 10 | ASM 12 | UT 11-18, 25  | ASM 25, 27-20
-tw 014
-ditko *&nbsp<br>&nbsp<br>Doc Ock<br>Vulture<br>Electro<br>Doc Ock<br>Doc Ock<br>Spider Slayer<br>Green Goblin<br>Molten Man<br>Scorpion<br>Cat Burglar @Amazing Fantasy 14<br>ASM 1<br>ASM 3<br>ASM 7<br>ASM 9<br>ASM 11<br>ASM 12<br>ASM 25<br>ASM 27<br>ASM 28<br>ASM 29<br>ASM 30
-uto *&nbsp<br>&nbsp<br>&nbsp<br>Scorcher<br>Batwing<br>Sandman<br>The Spacemen<br>Vulture<br>Torch, Wizard<br>Electro<br>Enforcers<br>Commanda<br>Electro, Eel<br>Betty Brant<br>Bluebird<br>Scorcher<br>Betty Brant<br>MJ<br>Hawkeye<br>Headsman<br>Green Goblin  @Amazing Fantasy 15<br>Amazing Fantasy 16<br>Amazing Fantasy 17<br> Untold Tales 1<br>Untold Tales 2<br>Untold Tales 3<br>Untold Tales 4<br>Untold Tales 5<br>Untold Tales 6<br>Untold Tales 7<br>Untold Tales 8<br>Untold Tales 10<br>Untold Tales 11<br>Untold Tales 12<br>Untold Tales 13<br>Untold Tales 14<br>Untold Tales 15<br>Untold Tales 16<br>Untold Tales 17<br>Untold Tales 18<br>Untold Tales 25 
-#af 015
-#af 016
-#af 017
-#af 018
+:
+docy1 *Doc Ock
+:
+: TW 14 | AF 15-17 | Amazing Spider-Man 1,3 | UT 1-2 | Amazing Spider-Man 7 | UT 3-4 | Amazing Spider-Man 9 | UT 5-8 | Amazing Spider-Man 11 | UT 10 | Amazing Spider-Man 12 | UT 11-18, 25  | Amazing Spider-Man 25, 27-30
+:
+tw 014 *Crusher Hogan }
+:
+.A                   @Amazing Fantasy 14
+.0                   @Amazing Spider-Man 001
+.0    *Doc Ock       @Amazing Spider-Man 003
+.0    *Vulture       @Amazing Spider-Man 007
+.0    *Electro       @Amazing Spider-Man 009
+ditko *Doc Ock       @Amazing Spider-Man 011
+.0    *Doc Ock       @Amazing Spider-Man 012
+.0    *Spider Slayer @Amazing Spider-Man 025
+.0    *Green Goblin  @Amazing Spider-Man 027
+.0    *Molten Man    @Amazing Spider-Man 028
+.0    *Scorpion      @Amazing Spider-Man 029
+.Z    *Cat Burglar   @Amazing Spider-Man 030
+:
+smf 003 *Fantastic Four @What If 001 ^1 }
+shadows 002 ^2 *Liz, Rhino }
+:
+.A     @Amazing Fantasy 015
+.0     @Amazing Fantasy 016
+.0     @Amazing Fantasy 017
+# ? .0     @Amazing Fantasy 018
 #sc 002  @as 001          ^1
 #sc 004  @as 003 *Doc Ock ^2
-#ut 001 *Scorcher ^1
-#ut 002 *Batwing  ^2
+.0     @Untold Tales 001 *Scorcher 
+.0     @Untold Tales 002 *Batwing  
 #sc 008  @as 007 *Vulture ^1
-#ut 003 *Sandman          ^2
-#ut 004 *The Spacemen     ^1
+.0     @Untold Tales 003 *Sandman          
+.0     @Untold Tales 004 *The Spacemen     
 #sc 010  @as 009 *Electro ^2
-#ut 005 *Vulture          ^1
-#ut 006  *Torch, Wizard   ^2
-#ut 007  *Electro         ^1
-#ut 008  *Enforcers       ^2
+.0     @Untold Tales 005 *Vulture         
+.0     @Untold Tales 006  *Torch, Wizard   
+uto   @Untold Tales 007  *Electro         
+.0     @Untold Tales 008  *Enforcers       
 #sc 012  @as 011 *Doc Ock ^1
-#ut 010  *Commanda        ^2
+.0     @Untold Tales 010  *Commanda        
 #sc 013  @as 012 *Doc Ock ^1
-#ut 011 *Electro, Eel     ^2
-#ut 012 *Betty Brant ^1
-#ut 013 *Blue Bird   ^2
-#ut 014 *Scorcher
-#ut 015 *Betty Brant
-#ut 016 *MJ
-#ut 017 *Hawkeye
-#ut 018 *Headsman
-#ut 025  *Green Goblin
+.0     @Untold Tales 011 *Electro, Eel    
+.0     @Untold Tales 012 *Betty Brant 
+.0     @Untold Tales 013 *Blue Bird  
+.0     @Untold Tales 014 *Scorcher
+.0     @Untold Tales 015 *Betty Brant
+.0     @Untold Tales 016 *MJ
+.0     @Untold Tales 017 *Hawkeye
+.0     @Untold Tales 018 *Headsman
+.Z     @Untold Tales 025 *Green Goblin
+:
 #mt 163  @as 025 *Spider Slayer
 #mt 165  @as 027 *Green Goblin
 #mt 166  @as 028 *Molten Man
 #mt 168  @as 029 *Scorpion
 #mt 169  @as 030 *Cat Burglar
 #
-mw5 *Rhino<br>Rhino<br>Shocker<br>Kingpin @+ASM 41<br>+ASM 42<br>+ASM 46<br>+ASM 50 @MT 180<br>MT 183<br>&nbsp<br>&nbsp
-#as 041 @mt 180 *Rhino
-#as 042 @mt 183 *Rhino
-#as 046 *Shocker
-#as 050 *Kingpin
-#
-ht *Torch @Spidey/Torch 02<br>Spidey/Torch 03
+#mw5 *Rhino<br>Rhino<br>Shocker<br>Kingpin @Amazing Spider-Man 41<br>Amazing Spider-Man 42<br>Amazing Spider-Man 46<br>Amazing Spider-Man 50 @MT 180<br>MT 183<br>&nbsp<br>&nbsp
+.A  @Amazing Spider-Man 041 @mt 180 *Rhino
+mw5 @Amazing Spider-Man 042 @mt 183 *Rhino
+.0  @Amazing Spider-Man 046         *Shocker
+.Z  @Amazing Spider-Man 050         *Kingpin
+.A  @Amazing Spider-Man 051         *Kingpin
+.0  @Amazing Spider-Man 052         *Kingpin
+.0  @Amazing Spider-Man 053         *Doctor Octopus
+mw6 @Amazing Spider-Man 054         *Doctor Octopus
+.0  @Amazing Spider-Man 055         *Doctor Octopus
+.0  @Amazing Spider-Man 056         *Doctor Octopus
+.Z  @Amazing Spider-Man 058         *Spider-Slayer   @1968
+specmag *The Smasher<br>The Disruptor @The Spectacular Spider-Man 001<br>The Spectacular Spider-Man 002
+:
+deathdest 001 ^1 @&nbsp @~Amazing Spider-Man 090 }
+deathdest 002 ^2 }
+deathdest 003    }
+:
+#mw11 @Amazing Spider-Man 10x        
+#:
+ht *Torch, Kraven<br>Torch, Red Ghost    @Spidey/Torch 002<br>SPidey/Torch 003
+:
+Marvels 004 *Gwen @&nbsp @Jun 1973     ^1 }
+mtu 048 *Jean DeWolff @&nbsp @Aug 1976 ^2 }
+mcp 004 *Gibbon   @&nbsp @May 1977 ^1  }
+pp  007 *Morbius  @&nbsp @Jun 1977 ^2  }
+mtu 062 *Super-Skrull, Ms Marvel @Marvel Tales 196 @Oct 1977 ^1 }
+mf 027  *Spider-Man                                          ^2 }
+:
 #mt 077  @as 096
 #mt 078  @as 097
 #mt 079  @as 098
@@ -78,54 +132,97 @@ ht *Torch @Spidey/Torch 02<br>Spidey/Torch 03
 #as Annual 13 *1979 Doc Ock Wolfman/Byrne
 #as Annual 14 *Doom/Strange O'Neil/Miller              @TCFMSM  @mt 200
 #as Annual 15 *1981<br> Doc Ock/Punisher O'Neil/Miller @TCFMSM
-#tu Annual 04 *1981<br> Cage/Fist/DD Miller/Trimpe     @TCFMSM
-fm  *Doom/Strange<br>DocOck/Punisher  @ASM Annual 14<br>ASM Annual 15 @MT 200
-stern @+231<br>+232<br>+238<br>+239<br>+248<br>+249<br>+250<br>+251<br>+252
-#as 231 *Cobra, Hyde
-#as 232 *Cobra, Hyde
-#as 248 "The Kid Who Collects Spider-Man"
-#mt 257  @as 238
-#mt 258  @as 239
-#mt 259  @as 249
-#mt 260  @as 250
-#mt 261  @as 251
-#mt 266  @as 252 *Black costume
-mt 270  @as 256 *Puma
-mt 271  @as 257 *Puma
-mt 272  @as 258 *FF
-mt 273  @as 259 *MJ
-mt 274  @as 260 *Hobgoblin
-mt 275  @as 261 *Hobgoblin
-mt 276  @as 263 *Spider-Kid
-mt 277  @as 265 *Silver Sable
-as 266  *Toad
-as 267  *The Commuter
-mt 278  @as 268   *Gold Fever
-mt 281  @as 271   *Crusher Hogan
-#jw @pp 107-110
-mt 283  @as 275   *Hobgoblin
-mt 284  @as 276   *Unmasked
-pp 113            *A House Divided
-pp 119            *Sabretooth
+#mtu Annual 04 *1981<br> Cage/Fist/DD Miller/Trimpe     @TCFMSM
+fm  *Doom, Strange<br>Doc Ock, Punisher  @Amazing Spider-Man Annual 14<br>Amazing Spider-Man Annual 15 @1980<br>1981
+:
+.A @Amazing Spider-Man 226   *Black Cat @Mar 1982
+.0 @Amazing Spider-Man 227   *Black Cat
+.0 @Amazing Spider-Man 229   *Juggernaut
+.0 @Amazing Spider-Man 230   *Juggernaut
+.0 @Amazing Spider-Man 231   *Cobra, Hyde
+.0 @Amazing Spider-Man 232   *Cobra, Hyde
+.0 @Amazing Spider-Man 233   *Tarantula, 'Nose'
+.0 @Amazing Spider-Man 234   *Will-O-The-Wisp
+.0 @Amazing Spider-Man 235   *Will-O-The-The-Wisp, Tarantula
+.0 @Amazing Spider-Man 236   *Will-O-The-Wisp, Tarantula @Jan 1983
+stern @Amazing Spider-Man 238   *Hobgoblin @Marvel Tales 257
+.0 @Amazing Spider-Man 239   *Hobgoblin    @Marvel Tales 258
+.0 @Amazing Spider-Man 240   *Vulture
+.0 @Amazing Spider-Man 241   *Vulture
+.0 @Amazing Spider-Man 244   *Hobgoblin, MJ
+.0 @Amazing Spider-Man 245   *Lefty, MJ
+.0 @Amazing Spider-Man 247   *'Nose', Frogman
+.0 @Amazing Spider-Man 248   *Thunderball, TKWCSM @Jan 1984
+.0 @Amazing Spider-Man 249   *Hobgoblin, Kingpin @Marvel Tales 259
+.0 @Amazing Spider-Man 250   *Hobgoblin     @Marvel Tales 260
+.0 @Amazing Spider-Man 251   *Hobgoblin     @Marvel Tales 261
+.Z @Amazing Spider-Man 252   *Black Costume @Marvel Tales 266 @May 1984
+:
+symb *Mysterio
+:
+alien *Hobgoblin
+:
+#mt 270  @Amazing Spider-Man 256 *Puma ^1 }
+#mt 271  @Amazing Spider-Man 257 *Puma ^2 }
+as 258 @mt 272 *Fantastic Four  @Nov 1984 ^1 }
+as 259 @mt 273 *MJ                        ^2 }
+as 260 @mt 274 *Hobgoblin                 ^1 }
+as 261 @mt 275 *Hobgoblin                 ^2 }
+#mt 276  @Amazing Spider-Man 263 *Spider-Kid      ^1 }
+#mt 277  @Amazing Spider-Man 265 *Silver Sable    ^2 }
+#as 266  *Toad                     ^1 }
+#as 267  *The Commuter             ^2 }
+as 268  @mt 278             *Gold Fever    ^1 }
+as 271  @mt 281   @Dec 1985 *Crusher Hogan ^2 }
+:
+.A *Sin-Eater @pp 107 @Oct 1985
+jw *Sin-Eater @pp 108
+.0 *Sin-Eater @pp 109
+.Z *Sin-Eater @pp 110 @Jan 1986
+:
+as 275 @mt 283  @Apr 1986  *Hobgoblin     ^1 }
+as 276 @mt 284  @May 1986  *Hobgoblin     ^2 }
+#pp 113            *A House Divided ^1 }
+pp 119            *Sabretooth "Catfight" @Sabretooth Classics 5  @Oct 1986 ^1 }
 #mt 288  @as 280   *Sep 86 *Sinister Syndicate
 #mt 289  @as 281   *Oct 86 *Sinister Syndicate
-pp 121            *Rashomon
-mf 027
-wv
-as 289            *Hobgoblin Revealed
-ws 029            *Wolverine
-kr
-pp 134
-pp 135
-pp 136
-mcf @+300<br>+316<br>+317<br>+318<br>+319
-as 347
-sl 003
-pp 186
-pp 187
-pp 188
-pp 189
-pp 190
-pp 200
-tw 005 *Rhino
-tw 006 *Rhino
+pp 121            *Rashomon                                                ^2 }
+#wv
+#as 289            *Hobgoblin Revealed (Not Really)
+#ws 029            *Wolverine
+asmf 002           ^1 } 
+shadows 003  *AIM  ^2 }
+:
+kraven @&nbsp @1987
+#:
+#pp 134
+#pp 135
+#pp 136
+:
+.A @ Amazing Spider-Man 300 *Venom                       @May 1988
+.0 @ Amazing Spider-Man 303 *Sandman
+.0 @ Amazing Spider-Man 304 *Black Fox
+.0 @ Amazing Spider-Man 305 *Black Fox, Prowler
+.0 @ Amazing Spider-Man 306 *Humbug
+.0 @ Amazing Spider-Man 308 *TaskMaster
+.0 @ Amazing Spider-Man 309 *Styx And Stone
+mcf @ Amazing Spider-Man 312 *Green Goblin, Hobgoblin
+.0 @ Amazing Spider-Man 313 *Lizard
+.0 @ Amazing Spider-Man 314 *Santa
+.0 @ Amazing Spider-Man 316 *Venom
+.0 @ Amazing Spider-Man 317 *Venom
+.0 @ Amazing Spider-Man 318 *Scorpion
+.0 @ Amazing Spider-Man 319 *Scorpion
+.Z @ Amazing Spider-Man 328 *Hulk                        @Jan 1990
+:
+smf 002 *Venom ^1 }
+as 347  *Venom ^2 @&nbsp @May 1991 }
+pp 186 *Vulture @&nbsp @Mar 1992      ^1 }
+pp 187 *Vulture                       ^2 }
+pp 188 *Vulture                       ^1 }
+pp 189 *Osborns                       ^2 }
+pp 190 *Rhino ^1 @&nbsp @Jul 1992 }
+pp 200 *Green Goblin ^2 @&nbsp @May 1993 }
+tw 005 *Rhino ^1 }
+tw 006 *Rhino ^2 }
+#sweet    1 ^1 *Scorpion<br>JJJ }

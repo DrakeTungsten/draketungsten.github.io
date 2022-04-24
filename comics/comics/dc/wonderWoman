@@ -1,19 +1,17 @@
-# perez = .Wonder Woman Perez Omnibus
+# perez1 = .Wonder Woman: Perez Omnibus v1
+# perez2 = .Wonder Woman: Perez Omnibus v2
+# rucka1 = .Wonder Woman: Rucka v1
+# rucka2 = .Wonder Woman: Rucka v2
 # ww = Wonder Woman
-# hk = .Hiketeia
 # de = .Down To Earth
 # br = .Bitter Rivals
 # eg = .The Eyes Of The Gorgon
 
-perez
-ww 030
-ww 031 "Savage Moon"
-ww 033
-#hk
-de @ww 195-200
-br @ww 201-205 *-201
-eg @ww 206-213
-ww 215
-ww 216
-ww 217
+perez1
+perez2 @030<br>031<br>033
+rucka1 @195-200<br>202-205
+rucka2 @206-217
+#de @ww 195-200
+#br @ww 201-205 *-201
+#eg @ww 206-213
 # Infinite Crisis...

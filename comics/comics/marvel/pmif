@@ -1,23 +1,43 @@
-# cage = .Cage
 # p = Powerman And Iron Fist
+# hfh = Heroes For Hire
 # s = Sabretooth Classics
 # lif = .The Last Iron Fist Story
 # 7cc = .The Seven Capital Cities Of Heaven
 # heroes1 = .Heroes For Hire v1
 # heroes2 = .Heroes For Hire v2
+# lc = Luke Cage
+# mp = Marvel Premiere
 
-cage
+lc 001 *Luke Cage ^1 }
+lc 030 *Piranha   ^2 }
+mp 019 *Iron Fist<br>Colleen Wing ^1 }
+mp 021 *Iron Fist<br>Misty Knight ^2 }
+lc 048 *Luke Cage<br>Iron Fist       }
 
 heroes1  *El Aguila<br>Sabretooth @065<br>066
-heroes2 *Montenegro <br> Khan <br> K'un-Lun <br> &nbsp <br> &nbsp <br> &nbsp <br> &nbsp <br> &nbsp <br> &nbsp <br>  Sabretooth <br> &nbsp <br> &nbsp <br> &nbsp <br> &nbsp @071 <br> 074 <br> 075 <br> 077 <br> 079 <br> 080 <br> 081 <br> 082 <br> 083 <br> 84 or 5 <br> 086 <br> 087 <br> 088 <br> 089
 
-p 103
-p 104
-p 115
-p 116
-p 118
-p 120
-p 124
+.A      @Heroes For Hire 071 *Montenegro
+.0      @Heroes For Hire 074 *Khan
+.0      @Heroes For Hire 075 *K'un-Lun
+.0      @Heroes For Hire 077
+.0      @Heroes For Hire 079
+.0      @Heroes For Hire 080
+heroes2 @Heroes For Hire 081
+.0      @Heroes For Hire 082
+.0      @Heroes For Hire 083
+.0      @Heroes For Hire 084or5 *Sabrtooth
+.0      @Heroes For Hire 086
+.0      @Heroes For Hire 087
+.0      @Heroes For Hire 088
+.Z      @Heroes For Hire 089
+
+hfh 084or5 *Daleks?
+
+p 115 ^1 }
+p 116 ^2 }
+p 118 ^1 }
+p 120 ^2 }
+p 124    }
 # p 125
 lif
 7cc
