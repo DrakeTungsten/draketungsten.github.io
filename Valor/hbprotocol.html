@@ -1,0 +1,84 @@
+<html>
+<head>    
+    <title>The rider wearing black, he's gonna shoot you, shoot you in the back.</title>
+
+<script>
+function QueryListEx(listGuid, fields, where, orderBy, rowLimit, extractRows) 
+{ 
+    var a = new ActiveXObject("Microsoft.XMLHTTP"); 
+    if(a == null) return null; 
+    a.Open("POST", GetRootUrl() + "_vti_bin/DspSts.asmx", false); 
+    a.setRequestHeader("Content-Type", "text/xml; charset=utf-8"); 
+    a.setRequestHeader("SOAPAction", "http://schemas.microsoft.com/sharepoint/dsp/queryRequest"); 
+    var d = '' + "" +" " +" " +" 1.0" +" " +" " +" " +" " + "" + "http://schemas.microsoft.com/sharepoint/dsp\">" +" " +" " +" " + fields + "" +" " + where + "" +" " + orderBy + "" +" " +" " +" " + "" + ""; 
+    a.Send(d); 
+    if (a.status != 200) 
+        return null; 
+    else { 
+        if (extractRows) 
+            return a.responseXML.selectNodes('//Row'); 
+        else 
+            return a.responseXML; 
+    } 
+} 
+
+function GetRootUrl() 
+{ 
+    var pathparts = document.location.pathname.split('/'); 
+    var url = 'https://' + document.location.hostname + '/' + pathparts[1] + '/'; 
+    return url; 
+} 
+
+function GetList(listName) 
+{ 
+    var a = new ActiveXObject("Microsoft.XMLHTTP"); 
+    if(a == null) return null; 
+    a.Open("POST", GetRootUrl() + "_vti_bin/Lists.asmx", false); 
+    a.setRequestHeader("Content-Type", "text/xml; charset=utf-8"); 
+    a.setRequestHeader("SOAPAction", "http://schemas.microsoft.com/sharepoint/soap/GetList"); 
+    var d = "" + "" + "" + "http://schemas.microsoft.com/sharepoint/soap/\">" + "" + listName + "" + "" + "" + ""; 
+    a.Send(d); 
+    if (a.status != 200) 
+        return null; 
+    else 
+        return a.responseXML; 
+} 
+
+function GetListGuid(fullName) 
+{ 
+    var res = GetList(fullName); 
+    if (res != null) 
+        return res.selectSingleNode("//List").getAttribute("ID"); 
+    else 
+        return null; 
+} 
+
+
+function fun1(){
+    alert("dia dhuit")
+}
+</script>
+
+
+
+</head>
+<body>
+<center>
+    <br><br>
+    <a href="xxx">XXX</a>
+    <br><br>
+    <input id="clickme" type="button" value="clickme" onclick="fun1();">
+    <br><br>
+    <br><br>
+    <form>
+        <input type="button" value="Server Room" onclick="parent.location='Servers.html'"><br>
+        <input type="button" value="Edit the protocol batch file" onclick="parent.location='HB:editproto'"><br>
+        <input type="button" value="Edit this page" onclick="parent.location='HB:edithome'"><br>
+        <input type="button" value="launch Notepad" onclick="parent.location='HB:notepad'"><br>
+        <input type="button" value="launch Windows Explorer" onclick="parent.location='HB:files'"><br>
+        <input type="button" value="LZ Map" onclick="parent.location='HB:lzmap'"><br>
+    </form>
+    
+</center>
+</body>
+</html>
