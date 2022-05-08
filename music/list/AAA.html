@@ -4,8 +4,10 @@
 <link href="../music.ico" rel="icon" type="image/bmp">
 <title>AAA</title></head>
 <style>
-span{ display: inline; margin:1em; }
-h3{ text-decoration: none; font-family: serif; }
+span{ display: inline-block; margin:0em; height: 22px; width:1000px;}
+.musicfile{padding-left: 30px; font-weight:normal;}
+.setlist{font-weight:bold; margin-bottom: 10px;}
+h3{ text-decoration: none; font-family: serif; padding-left: 22px;}
 .tooltip {
     position: relative;
     display: inline;
@@ -34,15 +36,26 @@ function showpic(){
     var element = document.getElementById("metadata");
     element.innerHTML = "<img src='../bandpics/Metal-RPM.png' width='350'>";
 }
-function setmetadata(dta){
+function setmetadata(dta, trackid){
     var element = document.getElementById("metadata");
     element.innerHTML = dta;
+    var element2 = document.getElementById(trackid);
+    element2.style.backgroundColor = 'yellow';
+}
+function resetbg(trackid){
+    var element2 = document.getElementById(trackid);
+    element2.style.backgroundColor = '#EEEEEE';
+}
+function playoptions(trackpath){
+    var myanow   = "MetalUpYourAss:@" + trackpath;
+    var myalater = "MetalUpYourAss:+" + trackpath;
+    alert(myanow);
 }
 </script>
 </head>
 <body>
-<div style="margin-left:27%;">
-<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: lightgreen; color: red; line-height: 1.5; width: 350"><image src="../bandpics/Metal-RPM.png" width="350"></div>
+<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: black; color: white; line-height: 1.5; width: 350"><image src="../bandpics/Metal-RPM.png" width="350"></div>
+<div style="margin-left:27%;" onmouseleave="showpic()">
 &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<a href="MetalUpYourAss:#AAA/0000.BillyJoel"><img src="controls/play.png"></a> <font color="#088809">BillyJoel</font><br>
 &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<a href="MetalUpYourAss:&amp#AAA/0000.BillyJoel">(tag nfc)</a><br>
 &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp<a href="MetalUpYourAss:#AAA/0000.DefLeppard"><img src="controls/play.png"></a> <font color="#088809">DefLeppard</font><br>

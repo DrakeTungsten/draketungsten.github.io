@@ -174,6 +174,7 @@ PAGE
 --------------------------------------------------------------
 6x-xx-xx, 1, -, ?, With the Yardbirds
 88-09-08, 0, -, -, DLNB
+88-10-19, 0, -, -, DLNB
 91-05-29, 1, -, l, w/ Solid Ground
 9x-xx-xx, 0, -, -, DLNB  Coverdale rehearsals
 94-xx-xx, 1, x, o, "No Quarter"
@@ -189,6 +190,7 @@ $ Black Sabbath
 70-06-26, 1, x, l, "Return to 69" Berlin. mislabled as Plumpton, 6/20,5/14,5/23
 $ Paranoid
 70-09-26, 1, x, f, German Beat Club  from "Black Night In SF"
+70-11-07, 0, -, -, Portland, Maine
 70-11-22, 1, -, l, Speed-correct version of the supposed SF 27th show
 70-11-27, 1, -, f, "Black Night In San Fran" too fast  Includes Beat Club
 70-11-29, 0, -, -, other possible date for Ozzman Cometh tracks
@@ -318,8 +320,8 @@ $ Dehumnaizer
 92-11-14, 0, -, -, DLNB  Next night definitely better
 92-11-15, 1, x, f
 $ Cross Purposes
-94-02-08, 1, x, l, 
-94-02-15, 2, x, l, NY Geezer
+94-02-08, 1, -, l, 
+94-02-15, 2, x, l, NY Geezer  Where is it???
 94-03-04, 2, -, l, CA Geezer. Good audience, but weak and too much wooing
 94-05-04, 0, -, -, DLNB
 94-05-28, 2, -, l, Switzerland. B+ Audience. Did not burn audio
@@ -363,6 +365,8 @@ $ (Heaven And Hell)
 07-09-30, 0, -, -, DLNB
 07-10-20, 2, -, l, good recording, show is average
 09-07-30, 1, -, o, Wacken
+$ (Final Ozzy)
+16-09-19, -, -, -, DLNB  even the fan remix sucks
 
 SABBATH FEATURING IOMMI 
 --------------------------------------------------------------
@@ -416,8 +420,30 @@ BILL WARD
 
 DIO
 ---------------------------------------------------------------
+# ******** Singles:
+# All Donington 1983 tracks accounted for in full show release
+# Rainbow In The Dark & The Last In Line Have the same live B Side recordings:
+#    X Stand Up And Shout + 
+#    X Straight Through the Heart - sehr gut - Donington 83
+# We Rock:
+#    X Holy Diver (eh) + 
+#    X Rainbow In The Dark - Donington 83
+# Mystery:
+#    = Eat Your Heart Out + 
+#    Don't Talk To Strangers - Spokane 84
+# Rock-n-Roll Children:
+#    We Rock + 
+#    The Last In Line - Spectrum 1985(according to .cue maybe really 1984)
+# Hungry For Heaven
+#    King Of Rock And Roll + 
+#    Like The Beat Of A Heart - Spectrum 1985
+# Like The Beat Of A Heart
+#    We Rock - Spectrum 1984
+#    X Holy Diver - Donington 1983
+
 $ Holy Diver
-83-08-20, 1, -, l, FM. Castle Donnington. There is supposedly a version which has DTtS
+83-08-20, 1, -, l, FM. Castle Donington. There is supposedly a version which has DTtS
+83-08-20, 1, x, o, FM. Castle Donington. There is supposedly a version which has DTtS
 83-10-05, 1, -, l, Data On same disc as 7th
 83-10-07  1, -, l, Flatter than above
 83-11-08, 0, -, -, DLNB Good aud or so-so FM
@@ -426,21 +452,24 @@ $ Holy Diver
 % The Last In Line
 84-06-11, 0, -, -, DLNB
 84-07-24, 1, -, l, FM. Spokane  Sounds a little small
-84-07-24, 2, x, l, More complete. Added DTtS from B-side and 2 tracks from Donninton 1987
+84-07-24, 2, x, l, More complete. Added DTtS from "Mystery" B-side 
+84-08-25, 0, -, -, This is supposedly the date for the spokane tracks on the single and such. Someone has a full set list posted. I don't know if there is an actual boot
 84-10-29, 0, -, -, DLNB  Essen
 84-xx-xx, 1, -, l, Hammersmith, leaning towards "no"
 % Sacred Heart
-85-08-31, 0, -, -, DLNB
+85-08-31, 0, =, -, DLNB
 85-09-18, 0, =, -, DLNB
 86-05-14, 0, -, -, 
 $ Dream Evil
 87-08-15, 0, -, -, DLNB "Giants Of Rock"
 87-08-22, 1, x, o, Donington
+87-08-26, 0, -, -, Italy
 87-11-21, 0, -, -, DLNB
 87-11-23, 0, -, -, DLNB  Paris FM Master
 87-12-07, 0, -, -, DLNB
 87-xx-xx, 0, -, -, DLNB Gothenburg
 # Strange Highways
+93-11-14, 0, -, -, Germany
 94.07.10, 0, -, -, DLNB
 05-09-13, 0, -, -, "Russian Diver"
 
@@ -460,7 +489,7 @@ JIMI HENDRIX
 68-03-15, 1, -, a, Missing interviews
 68-03-17, 1, -, ?, Hendrix & Friends  Very bluesy, who's the singer? 
 68-03-19, 1, -, s, Complete soundboard - rare for this tour. Close, but n/ceegar
-68-05-10, 1, -, s
+68-05-10, 1, X, l, Filmore East
 68-05-17, 0, -, -, Dled but not burned, horrible sound
 68-08-02, 1, -, ?
 68-08-10, 1, -, s, Chicago
@@ -677,8 +706,7 @@ PINK FLOYD
 --------------------------------------------------------------
 70-02-28, 2, -, l, boring                            
 70-04-22, 0, -, -, DLNB  Boring
-70-07-16, 1, -, s, whole cd is one track
-# Embryo, FOS, GitC (16:40), CwtAE (20:02), If (28:10), AHM (33:30)
+70-07-16, 1, x, l,
 70-09-26, 2, -, s, "The Electric Factory" 
 70-11-21, 2, -, s, one source says common date of 21st is error, really 22nd
 70-11-25, 0, -, -, DLNB  Pretty good AUD, but not quite good enough
@@ -778,6 +806,7 @@ $ Blow Up Your Video
 88-02-08, 0, -, -, DLNB
 88-10-23, 0, -, -, DLNB
 $ The Razor's Edge
+90-11-24, 0, -, -
 91-03-28, 2, -, ?
 91-07-07, 0, -, -, DLNB "Black Money Rules In Sin City"
 91-08-25, 2, -, l
@@ -885,7 +914,7 @@ $ Singles II
 78-06-28, 1, -, s
 78-xx-xx, 4, -, s, "Handsome Girls"
 79-04-22, 1, -, ?, "Blind Date"  Cd 2 only
-81-12-14, 2, -, l, w/ Mick Taylor from D1t10 onwards
+81-12-14, 2, =, l, w/ Mick Taylor from D1t10 onwards
 82-07-17, 1, -, l
 90-02-26, 2, -, s
 95-02-04, 0, -, -, "Bucketful Of Water" DLNB
@@ -896,8 +925,11 @@ $ Singles II
 MICK TAYLOR
 ---------------------------------------------------------------
 73.09.xx, 0, x, o
+81-10-R29 1, -, l, w/ Alvin Lee  Rome
 81-11-12, 1, -, l, w/ Alvin Lee  1 audio CD only if overburning - put audio on 2
 82-01-16, 1, -, l, 2 shows. So-so, but better than 12-27-86
+82-12-14, 1, -, l, BB
+83-06-14, 0, -, 0,  
 84-01-21, 2, -, l, 1st & 2nd shows
 86-07-24, 1, -, l
 86-12-27, 1, -, l, CD mislabeld as Oct
@@ -913,6 +945,7 @@ MICK TAYLOR
 89-10-27, 1, -, l, Cambridge
 90-03-04, 1, -, l, w/ Carla Olsen  1st show - 2nd show is officially released
 90-03-10, 1, -, l, has "Stop Breaking Down", just a bit too much wooing
+90-04-1r2 2, -, l, Isreal  Dead Sea Blues
 91-04-19, 2, -, l, The full show
 91-04-19, 1, X, l, D1: 3, 5 D2: 1, 4, 5
 91-10-xx, 0, -, -, JLB rehearsals, DLNB
@@ -920,10 +953,12 @@ MICK TAYLOR
 92-04-29, 1, -, l, w/ N Hopkins  1st few songs at least are a little different
 92-05-01, 0, -, -, DLNB
 92-05-02, 0, -, -, DLNB
+92-11-15, 1, x, l, ~5 tracks HB style.  The Hague
 93-02-12, 1, -, l, Miami
 93-05-01, 0, -, -, DLNB
 93-07-17, 0, -, -, DLNB
-95-04-04, 1, -, l
+95-04-04, 1, -, l, DLNB  Switzerland
+95-09-15, 1, -, -, DLNB  Kiev
 96-04-25, 2, -, l
 96-07-22, 1, -, l
 97-03-05, 0, -, -, DLNB
@@ -956,6 +991,7 @@ $ Ace Of Spades
 81-08-23, 0, -, -, DLNB Rough distant audience
 82-03-18, 0, -, -, DLNB
 82-03-22, 0, -, -, DLNB
+82-11-07, 0, -, -, DLNB
 82-11-17, 0, -, -, DLNB
 # "The Collection"
 84-10-13, 1, -, l, Bonus disc from Orgasmatron, but I think mine is a boot
@@ -1042,8 +1078,8 @@ $ Powerslave
 87-04-17, 0, -, -, DLNB
 % Seventh Son Of A Seventh Son
 88-07-12, 0, -, -, DLNB
-88-08-20, 1, -, o, Donnington, Monsters Of Rock.  Birmingham 11/27 has better set list than this truncated version of this show
-88-08-20, 0, -, ?, Donnington "Metal In The Park" boot, watch out for an AUD ver
+88-08-20, 1, -, o, Donington, Monsters Of Rock.  Birmingham 11/27 has better set list than this truncated version of this show
+88-08-20, 0, -, ?, Donington "Metal In The Park" boot, watch out for an AUD ver
 #  Need the 2-disc bootleg of metal in the park
 88-09-10, 0, -, -, DLNB
 88-09-28, 0, -, -, DLNB
@@ -1051,8 +1087,8 @@ $ Powerslave
 % No Prayer For The Dying
 90-12-18, 0, -, -, DLNB
 $ Fear Of The Dark
-92-08-22, 2, x, o, Donnington, Monsters Of Rock
-92-xx-xx, 2, -, o, "A Real Live/Dead One". Donnington 8/22 covers these better.
+92-08-22, 2, x, o, Donington, Monsters Of Rock
+92-xx-xx, 2, -, o, "A Real Live/Dead One". Donington 8/22 covers these better.
 % Brave New World
 00-06-29, 1, -, l, Roskilde
 01-01-19, ?, ?, ?, "Rock In Rio"
@@ -1149,12 +1185,14 @@ $ Diver Down
 82-11-18, 2, -, l, Dallas
 83-01-16, 2, =, l, FM, Caracas.  A little flat.  NOT "I'm So Glad"
 83-02-05, 2, -, s, South American Assault
-83-05-29, 2, -, s, U.S. Festival   Master from vid source
+83-05-29, 2, -, s, U.S. Festival   Master from vid source, 
+83-05-29, 2, =, s, U.S. Festival   Audience 
 $ 1984
 84-02-01, 0, -, -, DLNB "The Spider's Web"
 84-02-14, 0, -, -, DLNB
 84-03-24, 2, -, l, Did not burn audio 
 84-04-21, 2, -, l
+84-05-10, 2, -, s, DLNB  Cow Palace
 84-05-20, 2, -, s
 84-05-21, 2, -, s
 84-07-03, 0, -, -, DLNB  Supposedly best 84 show
@@ -1173,15 +1211,17 @@ METALLICA
 83-xx-xx, 1, -, s, Up And Down Demos
 83-05-05, 1, -, s, San Francisco
 $ Kill 'Em All
+83-10-31, 1, ?, l, Palo Alto, from K'eA deluxe
 83-11-25, 0, X, s
 83-12-18, 1, -, v, Cleveland Picture Disc                
-84-02-09, 1, x, l, Espace Balard, Paris
+84-02-09, 1, X, l, Espace Balard, Paris
 84-02-11, 1, -, v, Fucking Nuts. Best of the vinyl      
 # 84.07.00 for RtL
 $ Ride The Lightning
-84-11-22, 1, x, 3
+84-11-21, 1, =, -, 
+84-11-22, 1, x, 3, France
 84-12-01, 1, -, v, C4. Germany                         
-84-12-20, 1, x, l, London. prev "Welcome To The Ball", AKA "Four Horsemen in Brooklyn", now from new DL maybe official from Metallica 
+84-12-20, 1, -, l, London. prev "Welcome To The Ball", AKA "Four Horsemen in Brooklyn", now from new DL maybe official from Metallica 
 85-01-13, 1, -, s
 85-01-15, 1, -, s
 85-03-10, 1, X, l, Hollywood
@@ -1197,7 +1237,7 @@ $ Master Of Puppets
 86-12-01, 2, -, l, Master tape - higher gen than Assassin    
 86-12-01, 2, -, s, Assassin. Vinyl + Dl'ed shn
 86-12-05, 2, -, s
-86-12-13, 1, -, f, Metal Masters
+86-12-13, 1, -, 3, Metal Masters
 87-02-13, 1, -, s, 1 cd, but only if overburning, so audio split in two
 87-02-13, 2, x, s, More Complete, SB, but weak - doesn't cut it in the car
 87-08-20, 1, =, s, 100 Club, London. Audio split to two CDs            
@@ -1229,7 +1269,7 @@ $ Singles
 94-05-30, 2, =, l
 94-06-17, 0, -, -, Middletown, NY. Clear but weak. DLNB
 94-08-13, 2, =, s, Woostock
-95-08-26, 1, =, ?, Donnington Park
+95-08-26, 1, =, ?, Donington Park
 % Load
 96-06-09, 2, =, ?
 96-11-16, 2, X, l, Added 3 tracks from 3/21/98 + 1 studio jam from same boot
@@ -1308,6 +1348,7 @@ $ Lies
 93-05-29, r0 -, -, Fisrt 3 tracks are SB, rest is bad SB or Aud
 93-07-16, 2, -, s, 
 93-07-17, 0, -, -, 
+16-04-09, 0, -, -,  DLNB  Vegas
 
 JUDAS PRIEST
 ---------------------------------------------------------------
@@ -1333,12 +1374,13 @@ $ Hell Bent For Leather
 79-11-04, 2, -, l, FM  Low Gen  NYC  A little muted
 79-11-17, 2, -, l, SB, but dry 
 $ British Steel
-80-06-25, 1, x, l,             same set as below, smooth
-80-07-05, 1, x, l, Long Island same set as above, rough 
+80-06-25, 1, x, l, Denver      same set as below, smooth, sounds small
+80-07-05, 1, x, l, Long Island same set as above, less clear but better dynamics
 80-08-03, 0, -, -, DLNB
 $ Point Of Entry
-81-05-09, 1, x, l, Chicago
-81-06-21, 1, -, l, Chicago  A little rough, not Halford's best
+81-05-08, 1, x, l, Chicago
+81-05-09, 1, -, l, Chicago  Same show as above (?)
+81-06-21, 1, -, l, Chicago  Same show as above (?)
 81-07-22, 2, x, l, NYC Palladium, same show as below?
 81-07-23, 2, -, a, "Devil's Spine", mislabeled as 82-10-02
 81-07-23, 2, -, s, "Devil's Spine"
@@ -1356,6 +1398,7 @@ $ Defenders Of The Faith
 84-05-02, 1, -, s, "Love Bites '84", 3 bonus tracks 84-05-05
 84-05-02, 2, -, f, "New Mexican Radio", Used two tracks from 1-disc version
 84-05-05, 2, x, f, "California Burning"  Has a little more bite than 5/2
+84-06-18, 0, =, -, New York  MSG  riot  DLNB
 86-05-22, 2, -, l
 $ Ram It Down
 88-08-07, 1, x, f, "Last Temptation", New Haven
@@ -1389,29 +1432,46 @@ $ Lovedrive
 79-08-25, 1, X, l, Reading,  + 83.05.29 * 3 tracks
 79-09-16, 1, -, l, Tokyo  SB but quiet. 8/25 is far better.
 $ Animal Magnetism
+80-03-06, 1, x, l, Only 3 tracks KBFH
 80-04-22, 0, -, -, DLNB
 80-06-14, 0, -, -, DLNB
 80-07-10, 0, -, -, DLNB
 80-09-26. 0, -, -, DLNB
 $ Blackout
 82-03-14, 1, -, l       
+82-03-29, 0, =, -, DLNB  Italy
 82-03-30, 0, -, -, DLNB 
 82-04-23, 0, -, -, DLNB 
 82-04-24, 1, -, s, with M. Schenker
 82-04-28, 0, -, -
+82-07-27, 1, -, l, Winnipeg
+82-10-03, 0, -, -, SQ Not as good as Winnipeg
 82-09-28, 0, -, -, DLNB
 83-12-17, 1, x, f, "Teutonic Terror"
 $ Love At First Sting
 84-02-10, 0, -, -
+84-02-18, 0, -, -
+84-02-25, 0, -, -,  France
 84-xx-xx, 2, -, o, "World Wide Live"
 84-04-20, 0, -, -, DLNB
 84-04-30, 0, -, -, DLNB
-84-11-02, 2, x, l       
+84-08-08, 0, -, -, DLNB
+84-11-02, 2, X, l       
+84-11-08, 0, -, -, DLNB  Milan
+84-12-01, 0, -, -, DLNB
 85-08-31, 0, -, -
+85-09-02, 0, -, -
 86-08-16, 0, -, -, DLNB  Monsters Of Rock
 $ Savage Amusement
 88-12-20, 0, -, -, DLNB
 91-01.13, 0, -, -, DLNB  FM but rough 
+94-03-10, 1, x, l, Acoustic
+96-08-24. 0. =. -, DLNB  flat
+99-08-14, 1, x, l
+
+HALESTORM
+---------------------------------------------------------------
+16-04-09, 0, -, -
 
 ACCEPT
 ---------------------------------------------------------------
@@ -1426,6 +1486,7 @@ MANOWAR
 ---------------------------------------------------------------
 84-10-27, 0, -, -
 86-04-05, 0, -, -
+89-04-29, 0, -, -, SB, but the worst I ever heard
 99-xx-xx, 0, -, -, Sweden  "Mystery In The North"
 99-05-22, 0, -, -, used Twilight Zone, but none of the rest
 02-12-14, 0, -, -, DLNB
@@ -1451,14 +1512,14 @@ GARY MOORE
 87-04-01, 1, X, l, 5/26? Same show as Holland silver boot, has one more song.
 87-04-02, 0, -, -, another wrong date for 5/26
 87-04-04, 0, -, -, Zwolle, Holland another wrong date for 5/26
-87-05-10, 0, -, -, DLNB  FM, very flat
+87-05-10, 2, x, l, DLNB  FM, very flat. What? Sounds very good on stereo
 87-05-24, 0, -, -, DLNB
 87-05-26, 0, -, -, The correct date for Apr 1st
 87-xx-xx, 1, -, l, Holland  A little better sound than Boston  orgnly o factory
 87-09-01, 1, -, s, "Final Frontier"  Boston  ~3 more songs than Holland
 # "After The War" 1989
 89-03-09, 0, -, -, DLNB  Belfast
-89-03-26, 0, -, -, DLNB 
+89-03-26, 0, -, =, DLNB 
 89-04-08, 0, -, -, DLNB           
 89-04-19, 0, -, -, DLNB           
 $ Still Got The Blues
@@ -1468,9 +1529,10 @@ $ Still Got The Blues
 $ After Hours
 92-06-07, 2, -, s, "Blues From A Gun"
 92-06-28, 1, x, l, 
-93-xx-xx, 1, x, o, "Blues Alive"
+92-xx-xx, 1, x, o, "Blues Alive"  May - Oct '92
 % BBM 
-94-05-23, 1, x, l,    D1 t1,2,7,8     D2 t? 
+93-08-15, 0, -, -,  took one song from here, Keep It Down, added to 5/23
+94-05-23, 1, x, l,    D1 t1, t2, t7, t8     D2 t? 
 % Blues For Greeny
 95-07-16, 1, -, o, Montreux  Disc 2  Good, Consildated into 1 Montreux disc
 95-07-23, 1, -, l, + 9/28/85 (D2 #6,7) & 4/25/87 (D2 #8,9)  
@@ -1478,7 +1540,7 @@ $ After Hours
 % Dark Days In Paradise
 97-07-02, 1, -, s, "Around The Next Frontier"  Last 2 songs are from 8-15-97
 97-07-09, 1, =, o, Montreux  Disc 3
-98-07-18, 2, -, l, Chelsea, London w/ Jack Bruce and Gary Husbands + 7-14-98 * 2
+98-07-18, 2, x, l, Chelsea, London w/ Jack Bruce and Gary Husbands + 7-14-98 * 2
 % A Different Beat
 99-07-07, 1, -, o, Montreux  Disc 4, Consolidated into 1 Montreux disc
 00-03-13, 2, -, l, Excellent sound, eh show
@@ -1555,6 +1617,7 @@ $ Rocks
 88-02-15, 2, -, l, SB but mix isn't the best
 88-08-25, 2, -, l, better set list than Sep
 88-09-14, 2, -, l, better sound than Aug
+89-11-15, 1, x, l, London
 90-08-19, 1, x, s, With Jimmy Page
 94-xx-xx, 1, -, 3
 
@@ -1586,6 +1649,8 @@ MOUNTAIN/WEST
 ---------------------------------------------------------------
 # "Blood of the Sun" whichever date it is, is supposedly official
 70-05-01, 0, -, -, DLNB  Late show
+70-06-13, 0, -, -, DLNB  clear, but flawed and only 2 songs
+70-07-10, 0, -, -, DLNB  only 2 songs
 70-12-3x, 2, =, ?, "Live At The Filmore East"
 71-01-08, 0, -, -, DLNB
 71-02-25, 0, -, -, DLNB
@@ -1644,6 +1709,7 @@ MALMSTEEN
 86-11-14, 0, -, -, DLNB  Osaka
 86-12-17, 0, -, -, DLNB
 87-01-09, 0, x, -, Bad taping
+88-08-25, 0, -, -, DLNB  Budokan
 xx-xx-xx, 0, -, -, Odessy Tour Rehearsals DLNB
 94-05-23, 0, -, -, DLNB
 95-09-16, 0, -, -, DLNB
@@ -1654,6 +1720,7 @@ xx-xx-xx, 0, -, -, Odessy Tour Rehearsals DLNB
 01-04-08, 0, -, -, DLNB
 01-10-05, 0, -, -, DLNB
 04-06-04, 3, x, l
+10-04-24, 0, -, -, DLNB
 
 MERCYFUL FATE
 ---------------------------------------------------------------
@@ -1681,6 +1748,8 @@ ULI JON ROTH
 13-02-02, 0, -, -
 15-02-19, 2, x, l, Nagayo
 15-02-20, 0, -, -, Tokyo
+15-02-22, 2, -, l, Osaka. good, but 19th is slightly better
+16-02-29, 0, -, -
 
 STP
 ---------------------------------------------------------------
@@ -1712,8 +1781,8 @@ $ A Man And The Blues
 % Hold That Plane
 % Play The Blues
 74-xx-xx, 1, x, 3, Drinkin TNT and Smokin Dynamite
-79-xx-xx, 0, -, -, Checkerboard Lounge, slow blues
 $ Stone Cold
+79-xx-xx, 0, -, -, Checkerboard Lounge, slow blues
 82-xx-xx, 0, -, -, Chicago FM  Buddy Mulligan's
 82-08-xx, 0, -, -, Portland
 83-09-30, 0, -, -
@@ -1728,8 +1797,9 @@ $ Stone Cold
 89-07-xx, 0, -, -, Chicago Blues Fest
 89-07-30, 1, -, s, same date as below, diff show/city
 89-07-30, 1, -, s, w/ SRV  good, but gets monotonous. Just need the first jam
+90-02-03, 0, -, -, RAH w/ Clapton  Sterile performance
 90-03-14, 0, -, -, w/ Santana on SHC
-90-07-28, 1, ?, l
+90-07-28, 1, x, l
 90-12-01, 0, -, -, good show but guitar is buried
 % Damn Right I Got The Blues
 91-11-08, 0, -, -, Great Show, bad sq  Chestnut, Philly
@@ -1756,17 +1826,45 @@ $ Slippin' In (1994)
 $ Living Proof
 10.07.16, 1, x, l, Switzerland
 
+STEVIE RAY VAUGHAN
+--------------------------------------------------------------
+82.07.17, 1, -, o, Montreux
+84.10.04, 1, x, o, Carnegie Hall
+85.03.01, 1, -, l, Dallas    Boring
+85.07.15, 1, x, o, Montreux
+89.11.07, 1, x, l
+89.11.26, 1, x, l
+89.11.28, 1, 0, l,  Alberquerque      Transmission Impossible, 11/7 is better
+89.11.29, 1, 0, l, incomplete  Denver Transmisison Impossible, 11/7 is better
+
+FREDDIE KING
+---------------------------------------------------------------
+75-00-00,  France
+
+ALBERT COLLINS
+---------------------------------------------------------------
+79-xx-xx,  DLNB  Montreux jam w/ Jack Dupree
+81-11-16,  DLNB
+83-07-22,  DLNB w/ rory Gallagher
+85-02-15,  DLNB  Chestnut Cabaret
+89-07-29,  DLNB
+90-09-17,  DLNB
+93-06-10,  DLNB
+
 B.B. KING
 ---------------------------------------------------------------
 67-09-16, 0, -, -
 80-07-05, 1, x, l
+84.05.02, DLNB     Switzerland
 89-07-13, 1, x, l, Montreux
 90-07-18, 1, x, l, Montreux
 
 ALBERT KING
 ---------------------------------------------------------------
 74-02-02, 0, -, -
+80-01-17, 0, -, -, good style, bad recording
 86-05-14, 0, -, -
+90-??-??, one of his best, but still not for me
 
 WILLIE DIXON
 --------------------------------------------------------------
@@ -1777,9 +1875,21 @@ HOWLIN WOLF
 69-02-23, 0, -, -
 73-08-23, 0, -, -
 
+MUDDY WATERS
+--------------------------------------------------------------
+60-??-??, 0, -, -, Newport
+66-08-24, 0, -, -
+76-11-11, 0, -, -,  Muffled  Kansas Sity is really good, though
+80-05-24, 0, -, -, Tokyo  Good (but quiet, but better versions of all these songs exist
+
 BLUES
 --------------------------------------------------------------
 68-04-15, 2, -, l, Jimi ~after first two tracks
+
+MAYALL / BLUESBREAKERS
+--------------------------------------------------------------
+68-12-04, 0, -, -, 1st show
+87-06-06, 0, -, -,  DLNB  Philly
 
 BAD COMPANY
 --------------------------------------------------------------
@@ -1787,14 +1897,21 @@ BAD COMPANY
 72-09-14, 0, -, -, DLNB
 74-08-03, 0, -, -, DLNB  Newcastle
 
+JOHNNY WINTER
+--------------------------------------------------------------
+# bootleg vol 5  DLNB - 80s & 90s, when w/ Alligator
+
 THIN LIZZY
 --------------------------------------------------------------
 79-04-15, 0, -, -, DLNB
 
 SAXON
 --------------------------------------------------------------
+80-12-xx, 0, -, -
 81-xx-xx, 0, -, -, DLNB
-82-01-09, 1, x, l, burned w/ Crusader tracks
+82-01-09, 1, x, l,
+82-09-18, 0, -, -
+82-??-??, 0, -, -, Holland  FM
 #  Motorcycle Man, The Bands Played On, Princess of the Night, Denim & Leather
 83-02-26, 0, -, -, DLNB
 83-04-01, 0, -, -, DLNB
@@ -1841,8 +1958,22 @@ RATT
 --------------------------------------------------------------
 87-08-30, 0, -, -
 
+COTTON
+--------------------------------------------------------------
+70-04-08, 0, -, -
+81-10-30, 0, -, -
+
+LUTHER ALLISON
+--------------------------------------------------------------
+1977.11.25. 0, =. -. Paris
+1979.xx.xx, 0, =, -, Paris 
+
 OTIS RUSH
 --------------------------------------------------------------
 66-10-xx, 0, -, -
 78-10-31, 0, -, -, w/ Nighthawks
 95-06-03, 0, -, -
+
+PAPPO
+--------------------------------------------------------------
+Vol I, dlnb
