@@ -1,0 +1,13 @@
+# only make using the makefile in the partent directory
+
+all: formatcomics
+
+formatcomics : formatcomics.cpp
+	g++ -g -o formatcomics formatcomics.cpp
+
+clean: 
+	rm -f formatcomics
+
+install:
+	cp formatcomics ..
+

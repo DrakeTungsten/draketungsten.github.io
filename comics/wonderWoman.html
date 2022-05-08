@@ -1,6 +1,19 @@
 <html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
 <link href="comics.ico" rel="icon" type="image/bmp">
 <script type="text/javascript">
+
+function showdefault(){
+    var element = document.getElementById("metadata");
+    element.innerHTML = "metal rules";
+}
+
+function showcover(cover){
+    var element = document.getElementById("metadata");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+}
+
+
 function swapReprint(){
     var r  = document.getElementById('issuetable').rows
     var l = r.length
@@ -46,10 +59,15 @@ function swapReprint(){
 }
 </script>
 				
-<title>wonderWoman</title></head><body><center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
+<title>wonderWoman</title></head>
+<body>
+
+<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+<center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
  <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
- <td><b>Reprint</b></td>   </tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Wonder Woman: Perez Omnibus v1</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Wonder Woman: Perez Omnibus v2</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>030<br>031<br>033 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Wonder Woman: Rucka v1</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>195-200<br>202-205 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Wonder Woman: Rucka v2</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>206-217 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+ <td><b>Reprint</b></td>   </tr><tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Wonder Woman: Perez Omnibus v1</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Wonder Woman: Perez Omnibus v2</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>030<br>031<br>033 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Wonder Woman: Rucka v1</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>195-200<br>202-205 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Wonder Woman: Rucka v2</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>206-217 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
 </table></center></body></html>

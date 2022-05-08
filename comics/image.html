@@ -1,6 +1,19 @@
 <html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
 <link href="comics.ico" rel="icon" type="image/bmp">
 <script type="text/javascript">
+
+function showdefault(){
+    var element = document.getElementById("metadata");
+    element.innerHTML = "metal rules";
+}
+
+function showcover(cover){
+    var element = document.getElementById("metadata");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+}
+
+
 function swapReprint(){
     var r  = document.getElementById('issuetable').rows
     var l = r.length
@@ -46,51 +59,56 @@ function swapReprint(){
 }
 </script>
 				
-<title>image</title></head><body><center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
+<title>image</title></head>
+<body>
+
+<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+<center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
  <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
- <td><b>Reprint</b></td>   </tr><tr bgcolor="#ececec"><td>Pitt</td><td>001</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Pitt</td><td>002</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Pitt</td><td>003</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Pitt</td><td>004</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Pitt</td><td>005</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Pitt</td><td>006</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Pitt</td><td>007</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Pitt</td><td>008</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Pitt</td><td>009</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Pitt</td><td>010</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Pitt</td><td>011</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Pitt</td><td>012</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#cecece"><td colspan="6">
-</td></tr><tr bgcolor="#ececec"><td>Spawn</td><td>001</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Spawn</td><td>002</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Spawn</td><td>003</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Spawn</td><td>004</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Spawn</td><td>005</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Spawn</td><td>006</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Spawn</td><td>007</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Spawn</td><td>008</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Spawn</td><td>009</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Spawn</td><td>010</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Spawn</td><td>011</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Spawn</td><td>012</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Spawn</td><td>013</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#cecece"><td colspan="6">
-</td></tr><tr bgcolor="#ececec"><td>Maxx</td><td>001</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>002</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>003</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>004</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>005</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>006</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>007</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>008</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>009</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>010</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>011</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>012</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>013</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>014</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>015</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>018</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>019</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Maxx</td><td>020</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+ <td><b>Reprint</b></td>   </tr><tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Pitt</td><td>001</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Pitt</td><td>002</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Pitt</td><td>003</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Pitt</td><td>004</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Pitt</td><td>005</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Pitt</td><td>006</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Pitt</td><td>007</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Pitt</td><td>008</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Pitt</td><td>009</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Pitt</td><td>010</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Pitt</td><td>011</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Pitt</td><td>012</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6">
+</td></tr><tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Spawn</td><td>001</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Spawn</td><td>002</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Spawn</td><td>003</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Spawn</td><td>004</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Spawn</td><td>005</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Spawn</td><td>006</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Spawn</td><td>007</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Spawn</td><td>008</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Spawn</td><td>009</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Spawn</td><td>010</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Spawn</td><td>011</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Spawn</td><td>012</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Spawn</td><td>013</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6">
+</td></tr><tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>001</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>002</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>003</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>004</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>005</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>006</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>007</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>008</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>009</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>010</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>011</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>012</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>013</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>014</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>015</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>018</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>019</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Maxx</td><td>020</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
 </table></center></body></html>

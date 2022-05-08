@@ -1,6 +1,19 @@
 <html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
 <link href="comics.ico" rel="icon" type="image/bmp">
 <script type="text/javascript">
+
+function showdefault(){
+    var element = document.getElementById("metadata");
+    element.innerHTML = "metal rules";
+}
+
+function showcover(cover){
+    var element = document.getElementById("metadata");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+}
+
+
 function swapReprint(){
     var r  = document.getElementById('issuetable').rows
     var l = r.length
@@ -46,7 +59,12 @@ function swapReprint(){
 }
 </script>
 				
-<title>combine.sh</title></head><body><center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
+<title>combine.sh</title></head>
+<body>
+
+<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+<center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
  <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
- <td><b>Reprint</b></td>   </tr><tr bgcolor="#ececec"><td>cat</td><td>dcu superman | sort > fulldc</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+ <td><b>Reprint</b></td>   </tr><tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>cat</td><td>dcu superman | sort > fulldc</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
 </table></center></body></html>

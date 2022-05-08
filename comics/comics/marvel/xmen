@@ -40,6 +40,7 @@
 # xmen = X-Men
 # dptu = Deadpool Team-Up
 # gsxmt = Giant-Size X-Men Tribute 
+# deadpoolbwb = Deadpool: Black White &amp Blood
 
 svg 021 ^1 }
 svg 022 ^2 }
@@ -204,6 +205,10 @@ nxm3 @nxm 148
 .0   @nxm 153
 .Z   @nxm 154 @2004
 :
+deadpoolbwb 001 *Deadpool ^1 }
+deadpoolbwb 002 *Deadpool ^2 }
+deadpoolbwb 003 *Deadpool ^1 }
+deadpoolbwb 004 *Deadpool ^2 }
 dpl 065 ^1 @&nbsp @2002 }
 dpl 066 ^2 }
 dpl 067 ^1 }
@@ -218,6 +223,7 @@ sol 004 ^1 }
 sol 005 ^2 }
 sol 006 ^1 }
 sol 007 ^2 @&nbsp @2003 }
+
 :
 .A  @cdp 007
 .0  @cdp 008

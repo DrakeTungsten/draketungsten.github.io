@@ -1,6 +1,19 @@
 <html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
 <link href="comics.ico" rel="icon" type="image/bmp">
 <script type="text/javascript">
+
+function showdefault(){
+    var element = document.getElementById("metadata");
+    element.innerHTML = "metal rules";
+}
+
+function showcover(cover){
+    var element = document.getElementById("metadata");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+}
+
+
 function swapReprint(){
     var r  = document.getElementById('issuetable').rows
     var l = r.length
@@ -46,26 +59,31 @@ function swapReprint(){
 }
 </script>
 				
-<title>punisher</title></head><body><center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
+<title>punisher</title></head>
+<body>
+
+<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+<center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
  <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
- <td><b>Reprint</b></td>   </tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Born</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher War Zone</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>War Zone 1-6</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Welcome Back, Frank</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Marvel Knights Double Shot</td><td>001 </td><td>&nbsp</td><td>"Roots"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Punisher (MK)</td><td>006 </td><td>&nbsp</td><td>"Do Not Fall In New York City"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Business As Usual</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>South America<br>Wolverine<br>Belfast</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Punisher (MK) 13-18 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Punisher (MK)</td><td>019 </td><td>Joan</td><td>"Of Mice And Men"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Punisher (MK)</td><td>020 </td><td>&nbsp</td><td>"Brotherhood"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Punisher (MK)</td><td>021 </td><td>&nbsp</td><td>"Brotherhood"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Punisher (MK)</td><td>022 </td><td>&nbsp</td><td>"Brotherhood"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ececec"><td>Punisher (MK)</td><td>032 </td><td>&nbsp</td><td>"Soap"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v1</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"In The Beginning"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 1-6</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v2</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Mother Russia"<br>"Up Is Down And Black Is White"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 13-18<br>Punisher (Max) 19-24</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v3</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"The Slavers"<br>"Barracuda"</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v4</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Man Of Stone"<br>"Widowmaker"</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v5</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Long Cold Dark"<br>"Valley Forge, Valley Forge"</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>The Resurrection Of Ma Gnucci</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>War Of The Realms</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="#cecece"><td colspan="6">
-</td></tr><tr bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>From First To Last</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>The Tyger, The Cell, The End</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+ <td><b>Reprint</b></td>   </tr><tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Born</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher War Zone</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>War Zone 1-6</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Welcome Back, Frank</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Marvel Knights Double Shot</td><td>001</td><td>&nbsp</td><td>"Roots"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Punisher (MK)</td><td>006</td><td>&nbsp</td><td>"Do Not Fall In New York City"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Business As Usual</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>South America<br>Wolverine<br>Belfast</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Punisher (MK) 13-18 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Punisher (MK)</td><td>019</td><td>Joan</td><td>"Of Mice And Men"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Punisher (MK)</td><td>020</td><td>&nbsp</td><td>"Brotherhood"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Punisher (MK)</td><td>021</td><td>&nbsp</td><td>"Brotherhood"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Punisher (MK)</td><td>022</td><td>&nbsp</td><td>"Brotherhood"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Punisher (MK)</td><td>032</td><td>&nbsp</td><td>"Soap"</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v1</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"In The Beginning"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 1-6</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v2</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Mother Russia"<br>"Up Is Down And Black Is White"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 13-18<br>Punisher (Max) 19-24</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v3</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"The Slavers"<br>"Barracuda"</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v4</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Man Of Stone"<br>"Widowmaker"</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v5</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Long Cold Dark"<br>"Valley Forge, Valley Forge"</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>The Resurrection Of Ma Gnucci</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>War Of The Realms</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6">
+</td></tr><tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>From First To Last</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>The Tyger, The Cell, The End</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
 </table></center></body></html>
