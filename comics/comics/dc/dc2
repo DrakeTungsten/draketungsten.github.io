@@ -179,6 +179,8 @@
 # misterm = Mister Miracle
 # mmtpb = .Mister Miracle
 # ganthet = Ganthet's Tale
+# draghoard = .The Dragon's Hoard
+# finalmission = .The Final Mission
 # gods = .War Of The Gods
 # xmen = Teen Titans/X-Men
 # ww77 = Wonder Woman '77 Special
@@ -750,6 +752,23 @@ ssq6 @Suicide Squad 044
 .0 @Suicide Squad 047
 .0 @Suicide Squad 048
 .Z @Suicide Squad 049
+.A @Suicide Squad 050
+.0 @Suicide Squad 051
+.0 @Suicide Squad 052
+draghoard @Suicide Squad 053
+.0 @Suicide Squad 054
+.0 @Suicide Squad 055
+.0 @Suicide Squad 056
+.0 @Suicide Squad 057
+.Z @Suicide Squad 058
+.A @Suicide Squad 059
+.0 @Suicide Squad 060
+.0 @Suicide Squad 061
+finalmission @Suicide Squad 062
+.0 @Suicide Squad 063
+.0 @Suicide Squad 064
+.0 @Suicide Squad 065
+.Z @Suicide Squad 066
 :
 .A @JLA Classified 004
 .0 @JLA Classified 005
@@ -760,6 +779,7 @@ bel @JLA Classified 006
 #gods
 : <center><h4>BIG GUNS</h4></center>
 .A @JLA 010
+.0 @JLA 011
 .0 @JLA 012
 .0 @JLA 013
 jlamor2 @JLA 014

@@ -30,14 +30,14 @@
 # secfiles18 = Batman Secret Files (2018)
 # azr = .Sword Of Azrael
 # vbn = Vengeance Of Bane
-# pd2 = Batman/Predator II
+# pd2 = Batman vs Predator II
 # lonely = .A Lonely Place Of Dying
 # nwg = Nightwing
 # vob = .Vengeance Of Bane II
 # azl = Azrael
 # bdm = .Bane Of The Demon
 # gcp = .GCPD
-# pd3 = Batman/Predator III
+# pd3 = Batman vs Predator III
 # gra = Green Arrow
 # nml = No Man's Land
 # bwm = .Bruce Wayne: Murderer?
@@ -471,31 +471,83 @@ nwg 025 *Nightwing<br>Robin ^2 }
 :
 dredd *Judge Dredd
 :
-gcn1
-gcn2
-gcn3 *-(26-31)
-gcn4
+.A @Gotham Central 001
+.0 @Gotham Central 002
+.0 @Gotham Central 003
+.0 @Gotham Central 004
+gcn1 @Gotham Central 005
+.0 @Gotham Central 006
+.0 @Gotham Central 007
+.0 @Gotham Central 008
+.0 @Gotham Central 009
+.Z @Gotham Central 010
+.A @Gotham Central 011
+.0 @Gotham Central 012
+.0 @Gotham Central 013
+.0 @Gotham Central 014
+.0 @Gotham Central 015
+gcn2 @Gotham Central 016
+.0 @Gotham Central 017
+.0 @Gotham Central 018
+.0 @Gotham Central 019
+.0 @Gotham Central 020
+.0 @Gotham Central 021
+.Z @Gotham Central 022
+.A @Gotham Central 023
+gcn3 @Gotham Central 024
+.Z @Gotham Central 025
+.A @Gotham Central 032
+.0 @Gotham Central 033
+.0 @Gotham Central 034
+.0 @Gotham Central 035
+gcn4 @Gotham Central 036
+.0 @Gotham Central 037
+.0 @Gotham Central 038
+.0 @Gotham Central 039
+.Z @Gotham Central 040
 :
-bsn @&nbsp @2006 *Damian
+.A @Batman 655 *Damian
+bsn @Batman 656 @2006 *Damian
+.0 @Batman 657 *Damian
+.Z @Batman 658 *Damian
 #tec annual 11 - Fab Nic, Question, Azreal - Don't want it
 :
-wholelot *Damian
+.A @Li'l Gotham 001 *Damian
+.0 @Li'l Gotham 002 *Damian
+.0 @Li'l Gotham 003 *Damian
+.0 @Li'l Gotham 004 *Damian
+.0 @Li'l Gotham 005 *Damian
+wholelot @Li'l Gotham 006 *Damian
+.0 @Li'l Gotham 007 *Damian
+.0 @Li'l Gotham 008 *Damian
+.0 @Li'l Gotham 009 *Damian
+.0 @Li'l Gotham 010 *Damian
+.0 @Li'l Gotham 011 *Damian
+.0 @Li'l Gotham 012 *Damian
 :
 #yearblood *Damian
 #dawn *Damian
 bmbw2021 005 "Father &amp Son Outing" }
 sbm 077 *Damian<br>Kara  @@nbsp @2010 ^1 }
 bnr Annual 1 "Batman Impossible" *Damian @&nbsp @2013 ^2 }
-Batman Annual 3 *Alfred @&nbsp @2018     ^1 }
-Batman Annual 4 *Batman @&nbsp @2019 "Every Day" ^2 }
+Batman Annual 2018 *Alfred   ^1 }
+Batman Annual 2019 *Batman "Every Day" ^2 }
 #80p2010 *Riddler<br>Catwoman ^1 }
 bmbw2013 004 "Long Night" *Catwoman }
 vill100 001 *Joker  "Balyushka" ^9 }
 batman100 004 "Concrete Jungle" ^9 }
 :
-turtles *Teenage Mutant Ninja Turtles
+.A @Teenage Mutant Ninja Turtles 001 *Teenage Mutant Ninja Turtles
+.0 @Teenage Mutant Ninja Turtles 002 *Teenage Mutant Ninja Turtles
+turtles @Teenage Mutant Ninja Turtles 003 *Teenage Mutant Ninja Turtles
+.0 @Teenage Mutant Ninja Turtles 004 *Teenage Mutant Ninja Turtles
+.0 @Teenage Mutant Ninja Turtles 005 *Teenage Mutant Ninja Turtles
+.Z @Teenage Mutant Ninja Turtles 006 *Teenage Mutant Ninja Turtles
 :
-tdkr
+.A @The Dark Knight Returns 001
+tdkr @The Dark Knight Returns 002
+.0 @The Dark Knight Returns 003
+.Z @The Dark Knight Returns 004
 
 
 #bmbw 002 "Legend" This is in the DCU page
