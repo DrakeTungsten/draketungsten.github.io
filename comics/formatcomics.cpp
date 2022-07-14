@@ -442,55 +442,85 @@ std::string cleanbasename(std::string imagebasename){
     size_t pos;
     //  Any replacement involving an HTML character code that starts with the ampersand needs to happen before the single ampersand replacement 
     // replace HTML &deg embedded in name with Degrees
-    pos = imagebasename.find("&deg");
-    if(pos != std::string::npos)
-        imagebasename.replace(pos, 4, " Degrees ");
-    // remove ampersand
-    pos = imagebasename.find("&");
-    if(pos != std::string::npos)
-        imagebasename.replace(pos, 1, "And");
-    // remove a slash followed by HTML /<br> embedded in name (if there is both a slash and a <br>, then just leaving the indiviual replacements to handle it would result in two consecutive spaces)
-    pos = imagebasename.find("/<br>");
-    if(pos != std::string::npos)
-        imagebasename.replace(pos, 5, " ");
-    // remove slash and replace with a space
-    pos = imagebasename.find("/");
-    if(pos != std::string::npos)
-        imagebasename.replace(pos, 1, " ");
-    // remove up to two commas
-    pos = imagebasename.find(",");
-    if(pos != std::string::npos){
-        imagebasename.replace(pos, 1, "");
+    bool madereplacement = true;
+    while(madereplacement){
+        madereplacement = false;
+        pos = imagebasename.find("&deg");
+        if(pos != std::string::npos){
+            imagebasename.replace(pos, 4, " Degrees ");
+            madereplacement = true;
+        }
+        // remove ampersand escape code
+        pos = imagebasename.find("&amp");
+        if(pos != std::string::npos){
+            imagebasename.replace(pos, 4, "And");
+            madereplacement = true;
+        }
+        // remove single-standing ampersand
+        pos = imagebasename.find("&");
+        if(pos != std::string::npos){
+            imagebasename.replace(pos, 1, "And");
+            madereplacement = true;
+        }
+        // remove a slash followed by HTML /<br> embedded in name (if there is both a slash and a <br>, then just leaving the individual replacements to handle it would result in two consecutive spaces)
+        pos = imagebasename.find("/<br>");
+        if(pos != std::string::npos){
+            imagebasename.replace(pos, 5, " ");
+            madereplacement = true;
+        }
+        // remove slash and replace with a space
+        pos = imagebasename.find("/");
+        if(pos != std::string::npos){
+            imagebasename.replace(pos, 1, " ");
+            madereplacement = true;
+        }
+        // remove comma
         pos = imagebasename.find(",");
-        if(pos != std::string::npos)
+        if(pos != std::string::npos){
             imagebasename.replace(pos, 1, "");
+            madereplacement = true;
+        }
+        // remove colon
+        pos = imagebasename.find(":");
+        if(pos != std::string::npos){
+            imagebasename.replace(pos, 1, "");
+            madereplacement = true;
+        }
+        // remove HTML <br> embedded in name
+        pos = imagebasename.find("<br>");
+        if(pos != std::string::npos){
+            imagebasename.replace(pos, 4, " ");
+            madereplacement = true;
+        }
+        // remove apostrophe (e.g., Showcase '94)
+        pos = imagebasename.find("'");
+        if(pos != std::string::npos){
+            imagebasename.replace(pos, 1, "");
+            madereplacement = true;
+        }
+        // remove second apostrophe (e.g., Batman '66 Meets Wonder Woman '77)
+        pos = imagebasename.find("'");
+        if(pos != std::string::npos){
+            imagebasename.replace(pos, 1, "");
+            madereplacement = true;
+        }
+        // collapse three consecutive spaces which the above shenanigans might have created
+        pos = imagebasename.find("   ");
+        if(pos != std::string::npos){
+            imagebasename.replace(pos, 3, " ");
+            madereplacement = true;
+        }
+        // collapse two consecutive spaces which the above shenanigans might have created
+        pos = imagebasename.find("  ");
+        if(pos != std::string::npos){
+            imagebasename.replace(pos, 2, " ");
+            madereplacement = true;
+        }
     }
-    // remove colon
-    pos = imagebasename.find(":");
-    if(pos != std::string::npos)
-        imagebasename.replace(pos, 1, "");
-    // remove HTML <br> embedded in name
-    pos = imagebasename.find("<br>");
-    if(pos != std::string::npos)
-        imagebasename.replace(pos, 4, " ");
-    // remove apostrophe (e.g., Showcase '94)
-    pos = imagebasename.find("'");
-    if(pos != std::string::npos)
-        imagebasename.replace(pos, 1, "");
-    // remove second apostrophe (e.g., Batman '66 Meets Wonder Woman '77)
-    pos = imagebasename.find("'");
-    if(pos != std::string::npos)
-        imagebasename.replace(pos, 1, "");
-    // collapse three consecutive spaces which the above shenanigans might have created
-    pos = imagebasename.find("   ");
-    if(pos != std::string::npos)
-        imagebasename.replace(pos, 3, " ");
-    // collapse two consecutive spaces which the above shenanigans might have created
-    pos = imagebasename.find("  ");
-    if(pos != std::string::npos)
-        imagebasename.replace(pos, 2, " ");
+
 //std::cout << imagebasename << std::endl;
-       return imagebasename;
+
+    return imagebasename;
 }
 
 

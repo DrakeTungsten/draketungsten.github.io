@@ -28,7 +28,7 @@
 # aov = Avengers Origins: Vision
 # spns = Tales Of Suspense
 # mrvu = Marvel Universe
-# caps = Cap America: Sentinel of Liberty
+# caps = Captain America: Sentinel of Liberty
 # spct = Marvel Spectacular
 # dblf = Marvel Double Feature
 # supa = Marvel Super Action
@@ -92,7 +92,6 @@
 # warmach = .War Machine
 # surfer = Silver Surfer
 # tta = Tales To Astonish
-# gdff = Grand Design: Fantastic Four
 # howling = .Sgt Fury And His Howling Commandos
 # submw7 = .Masterworks: Sub-Mariner v7
 # hsa = Hulk Smash Avengers
@@ -106,23 +105,24 @@
 # 2in1 = Marvel Two-In-One
 # sub70 = Marvel 70th Anniversary:<br>Sub-Mariner Comics
 # shield = .SHIELD: The Complete Collection
-# ffspec = Fantastic Four Secial One-Sot
+# ffspec = Fantastic Four Special One-Shot
 # hulkfff = Hulk vs Fin Fang Foom
 # mcm = Marvel Comics
 # kssps = Spider-Man King-Size<br>Summer Special
 # grounded = .Rocket Raccoon: Grounded
 # imhulk1 = .The Immortal Hulk v1
 # imhulk2 = .The Immortal Hulk v2
-# snapcap = Marvels Snapshot: Captain America
-# ffroast = Fantastic Four Roast
+# snapcap = Marvels Snapshots: Captain America
 # jim = Journey Into Mystery
 # shadl = Shadows And Light
-# as1 = Avengers: Season 1
 # nfys = Night Falls On Yancy Street
-# snapsubby = Marvels Snapshot: Sub-Mariner
+# snapsubby = Marvels Snapshots: Sub-Mariner
+# snapshots = Marvels Snapshots
 # freefall = .Hawkeye: Freefall
 # who = Whosoever Weilds This Hammer
+# who2 = (Whosoever Weilds This Hammer)
 # tourn = Tournament Of Heroes
+# tourn2 = (Tournament Of Heroes)
 # slmss = Stan Lee Meets The Silver Surfer
 # slmtt = Stan Lee Meets The Thing
 # epicill = Epic Illustrated
@@ -133,10 +133,14 @@
 
 #asgd
 :
-oath *Thor<br>The Warriors Three
+.A @Blood Oath 001
+.0 @Blood Oath 002
+oath *Thor<br>The Warriors Three @Blood Oath 003
+.0 @Blood Oath 004
+.0 @Blood Oath 005
+.Z @Blood Oath 006
 : <center><h4>WWII</h4></center>
-Thor Giant-Sized 001<br>(1975) *The Destroyer<br>Hercules @Thor Annual #2<br>Journey Into Mystery Annual #1 ^1 }
-Thor 370 *Loki        ^2 }
+Thor 370 *Loki "Easy Money" ^2 }
 fanfare 016 *Sky-Wolf ^1 }
 fanfare 017 *Sky-Wolf ^2 }
 sub70 001 *Namor }
@@ -153,7 +157,7 @@ howling
 :
 rwb *Captain America<br>Red Skull
 :
-snapsubby *Namor }
+snapshots Sub-Mariner *Namor }
 : <center><h4>THE MARVEL AGE</h4></center>
 epicill 001 *Silver Surfer }
 ff 001 *Fantastic Four @Marvel Milestone @1961  ^1 }
@@ -161,34 +165,38 @@ mythosff 1 *Fantastic Four                      ^2 }
 #ff 005 *Fantastic Four<br>Doctor Doom @Marvel Milestone @1962 ^2 }
 hulk 001 *Hulk @Milestone  @1962  ^1 }
 mythoshulk 1                *Hulk ^2 }
-who *Thor @Journey Into Mystery 083<br>Journey Into Mystery 084<br>Journey Into Mystery 088 }
+jim 083 @who ^1 }
+jim 084 @who ^1 }
+jim 088 @who ^2 }
 :
-gray *Hulk
+.A @Hulk: Gray 001
+.0 @Hulk: Gray 002
+gray *Hulk @Hulk: Gray 003
+.0 @Hulk: Gray 004
+.0 @Hulk: Gray 005
+.Z @Hulk: Gray 006
 :
 ff Annual 1 *Fantastic Four<br>Namor @1984 Special Edition @1963 ^1 }
 spns 039 *Iron Man @&nbsp  @1963                                 ^2 }
 irag 001 *Iron Man ^1 }
 irag 002 *Iron Man ^2 }
 avcl 001 *Avengers "The Coming Of The Avengers|Some Assembly Required" @Avengers 001 @1963 ^1 }
-avrx 001.5 *Avengers<br>Doctor Doom            ^2 }
+avrx 1.5 *Avengers<br>Doctor Doom            ^2 }
 avcl 003 "Sub-Mariner|Crack In The Armor" @Avengers 003 @MSH 021 *Hulk<br>Namor ^1 }
 avcl 004 "Captain America Joins The Avengers|Blues In The Night" @Avengers 004 *Captain America  @1964 ^2 }
 caps 005 *Captain America<br>Iron Man          ^1 }
 caps 006 *Captain America<br>Iron Man          ^2 }
 :
 Avengers 006 *Avengers<br>Masters Of Evil @True Believers @1964 ^1 }
-jim 114 *Thor<br>Absorbing Man @True Believers @1965 ^2 }
-hsa 001 *Hulk<br>Avengers @&nbsp @~1964   }
-#as1 004 *Avengers                     ^2 }
+jim 114 *Thor<br>Absorbing Man @True Believers @1965            ^2 }
+hsa 001 *Hulk<br>Avengers @&nbsp @~1964 ^1 }
+shadl 001 *Iron Man                     ^2 }
 smash 001 *Hulk ^1 }
 smash 002 *Hulk ^2 }
-shadl 001 *Iron Man ^1 }
-tta 082 *Namor<br>Iron Man @Marvel Super-Heroes 037 @1966 ^2 }
-#tta 092 *Hulk<br>Silver Surfer @Marvel Super-Heroes 047 @1967 ^1 }
-#tta 093 *Hulk<br>Silver Surfer @Marvel Super-Heroes 048 @1967 ^1 }
-#gdff 001 *Fantastic Four  ^1 }      
-Marvels 003 *Galactus @&nbsp @1966 }
+tta 082 *Namor<br>Iron Man @Marvel Super-Heroes 037 @1966 ^1 }
+Thor Giant-Size 001 *The Destroyer<br>Hercules @Thor King-Size Special 2 (1966)<br>Journey Into Mystery Annual #1 ^2 @1975 }
 #savage  1
+Marvels 003 *Galactus @&nbsp @1966 }
 :
 .A    *Fantastic Four @Fantastic Four 035 @MGC 027, 1965
 .0    *Fantastic Four "Bedlam At The Baxter Building" @Fantastic Four Annual 3 @1965
@@ -218,7 +226,6 @@ thormw5 @Thor 138 *Ulik @Marvel Spectacular 009
 .0 @Thor 144
 thormw6 @Thor 148 *The Wrecker
 .0 @Thor 149 *The Wrecker
-.0 @Thor Annual 2 *The Destroyer
 .0 @Thor 151 *The Destroyer
 .Z @Thor 152 *The Destroyer, Ulik @1968
 .A @Thor 155 *Mangog @1968
@@ -268,12 +275,12 @@ shield *Nick Fury @Strange Tales 149 @1966
 .0     *Nick Fury @Nick Fury, Agent Of Shield 001
 .Z     *Nick Fury @Nick Fury, Agent Of Shield 002 @1968
 :
-aov 1 *Vision @&nbsp @1968 }
+aov 1 *Vision @&nbsp @~1968 }
 surfer 004 *Silver Surfer<br>Thor @Fantasy Masterpieces 004 @1969 ^1 }
 slmss 001 *Silver Surfer<br>Stan Lee ^2 }
 hulkfff 1 *Hulk<br>Fin Fang Foom ^1 }
 mmg 1 *Hulk<br>Devil Dinosaur   ^2 }
-mtss *Silver Surfer<br>Namor<br>Hulk @Sub-Mariner 034<br>@Sub-Mariner 035 @1971 }
+mtss 1 *Silver Surfer<br>Namor<br>Hulk @Sub-Mariner 034<br>@Sub-Mariner 035 @1971 }
 :
 .A *Ultron @Avengers 066 @1969
 avprem *Ultron @Avengers 067
@@ -328,22 +335,25 @@ serp @Avengers 144 *Avengers
 .0   @Avengers 148 *Avengers
 .Z   @Avengers 149 *Avengers @1976
 :
-ffgp1 *Fantastic Four<br>Hulk @Fantastic Four 166<br>Fantastic Four 167 @1976 
+.A    *Fantastic Four<br>Hulk @Fantastic Four 166 @1976 
+ffgp1 *Fantastic Four<br>Hulk @Fantastic Four 167 @1976 
 ffgp2 *Fantastic Four
 :
 .A *Thor @Thor 260 @&nbsp @1977
 odinquest *Thor @Thor 261
 .Z *Thor @Thor 263 @1977 
-.A *Warriors Three @Marvel Spotlight 30 @1976
-.0 *Warriors Three @Marvel Fanfare 13
-w3 *Warriors Three @Marvel Fanfare 34
-.0 *Warriors Three @Marvel Fanfare 35
-.0 *Warriors Three @Marvel Fanfare 36
-.Z *Warriors Three @Marvel Fanfare 37
+.A *Warriors Three @Marvel Spotlight 030 @1976
+.0 *Warriors Three @Marvel Fanfare 013
+w3 *Warriors Three @Marvel Fanfare 034
+.0 *Warriors Three @Marvel Fanfare 035
+.0 *Warriors Three @Marvel Fanfare 036
+.Z *Warriors Three @Marvel Fanfare 037
 :
-snapcap 1 *Captain America @&nbsp @1976 }
+snapshots Captain America *Captain America @&nbsp @1976 }
 hulk 214 *Hulk<br>Jack Of Hearts @&nbsp @1977   ^1 }
-tourn 001 *Dollar Bill<br>Everybody<br>Valkyrie ^2 @Defenders 062<br>Defenders 063<br>Defenders 064 @1978 }
+Defenders 062 *Dollar Bill  ^1 @tourn       }
+Defenders 063 *Everybody    ^1 @tourn @1978 }
+Defenders 064 *Valkyrie     ^2 @tourn       }
 #dfnr 062 *Dollar Bill            @&nbsp @1978 ^2 }
 #dfnr 063 *Everybody   ^1 }
 #dfnr 064 *Valkyrie    ^2 }
@@ -359,7 +369,7 @@ hsa 002 *Hulk<br>Avengers       @&nbsp @1979 ^1 }
 2in1 051 *The Thing<br>Avengers @Adventures Of The Thing 3 @1979 ^2 }
 prem 045 *Man-Wolf ^1 @&nbsp @1978}
 prem 046 *Man-Wolf ^2 }
-ffroast *Fantastic Four<br>Everybody @&nbsp @1982}
+ff Roast *Fantastic Four<br>Everybody @&nbsp @1982}
 :
 .A @Iron Man 169 "Blackout" *Iron Man @1983
 .0 @Iron Man 170 "And Who Shall Clothe Himself In Iron" *Iron Man
@@ -391,7 +401,10 @@ hulk 316 *Hulk<br>Avengers @&nbsp @1985 ^2 }
 :
 change *Hulk<br>The Thing 
 :
-intrigue *Black Widow
+.A @Marvel Fanfare 010
+intrigue *Black Widow @Marvel Fanfare 011
+.0 @Marvel Fanfare 012
+.Z @Marvel Fanfare 013
 :
 .A @Thor 337 "Doom!" *Beta Ray Bill @&nbsp @1983
 .0 @Thor 338 "A Fool And His Hammer..." *Beta Ray Bill
@@ -478,7 +491,7 @@ hulk 409 *Motormouth       @&nbsp @1993  ^2 }
 mshf93 015 *Volstagg "Volstagg's Mostly Greatest Adventure"  @&nbsp @1993 ^1 } 
 kssps 1 *She-Hulk<br>Scarlet Witch<br>Hellcat<br>MJ         @&nbsp @2008 ^2 }
 She-Hulk 039 *She-Hulk<br>The Thing @&nbsp @1992  ^1 }
-ffspec *Doom @&nbsp @2005                         ^2 }
+ffspec 1 *Doom @&nbsp @2005                         ^2 }
 :
 ff2 055 *Fantastic Four ^1 @&nbsp @2002 }
 ff2 056 *Fantastic Four ^2 @&nbsp @2002 }
@@ -534,7 +547,7 @@ grounded *Rocket Raccoon
 freefall *Hawkeye
 :
 mcm 1000 ^9 }
-pride
+pride 1
 
 
 # Captain America 602 - 605 "Two Americas"

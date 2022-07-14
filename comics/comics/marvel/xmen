@@ -6,6 +6,7 @@
 # mcp = Marvel Comics Presents
 # mcp1 = .Marvel Comics Presents I
 # wlv = Wolverine
+# wlv82 = Wolverine (1982)
 # dbw = .DeathBlow & Wolverine
 # uxm = Uncanny X-Men
 # uxm1 = .X-Men Omnibus I
@@ -36,7 +37,7 @@
 # ufor = .Uncanny X-Force
 # xfc = X-Force
 # cw2 = .Classic Wolverine v2
-# msx = Marvels Snapshots: X-Men
+# msx = Marvels Snapshots
 # xmen = X-Men
 # dptu = Deadpool Team-Up
 # gsxmt = Giant-Size X-Men Tribute 
@@ -47,7 +48,7 @@ svg 022 ^2 }
 wpx @MCP 72-84
 wlv Flashback ^1 }
 gen Flashback ^2 }
-msx 001 *Scott               ^1 }
+msx X-Men *Scott               ^1 }
 xmen 058 *Havok @&nbsp @1969 ^2 }
 gsxmt 1 @&nbsp @1975<br>2021 }
 
@@ -82,10 +83,10 @@ uxm2 @Uncanny X-Men 140 @Classic 046
 .Z   @Uncanny X-Men Annual 4 
 :
 #uxm Giant-Size #1
-.A  @Wolverine 001 @1982
-.0  @Wolverine 002
-wln @Wolverine 003
-.0  @Wolverine 004
+.A  @Wolverine (1982) 001
+.0  @Wolverine (1982) 002
+wln @Wolverine (1982) 003
+.0  @Wolverine (1982) 004
 .0  @Uncanny X-Men 172 @Classic 76, 1983
 .0  @Uncanny X-Men 173 @Classic 77
 :
@@ -131,10 +132,10 @@ cw2 @Wolverine 008 *Wolverine
 :
 bld @MCP 85-92 *Cyber @1991
 :
-.A *Wolverine @Wolverine 50  @1992
-wxu *Wolverine @Wolverine 55
-.0 *Wolverine @Wolverine 56
-.Z *Wolverine @Wolverine 57 @1992
+.A *Wolverine @Wolverine 050  @1992
+wxu *Wolverine @Wolverine 055
+.0 *Wolverine @Wolverine 056
+.Z *Wolverine @Wolverine 057 @1992
 #xfv1 @fac 71-75
 #xfv3 @fac 79-83
 wlv 077 *Deathstrike  ^1 @&nbsp @1994}
@@ -232,4 +233,40 @@ brn @cdp 009
 .0  @cdp 011
 .Z  @cdp 012 @2005
 :
-ufor @Uncanny X-Force 1-35
+.A @Uncanny X-Force 001
+.0 @Uncanny X-Force 002
+.0 @Uncanny X-Force 003
+.0 @Uncanny X-Force 004
+.0 @Uncanny X-Force 005
+.0 @Uncanny X-Force 006
+.0 @Uncanny X-Force 007
+.0 @Uncanny X-Force 008
+.0 @Uncanny X-Force 009
+.0 @Uncanny X-Force 010
+.0 @Uncanny X-Force 011
+.0 @Uncanny X-Force 012
+.0 @Uncanny X-Force 013
+.0 @Uncanny X-Force 014
+.0 @Uncanny X-Force 015
+.0 @Uncanny X-Force 016
+.0 @Uncanny X-Force 017
+ufor @Uncanny X-Force 018
+.0 @Uncanny X-Force 019
+.0 @Uncanny X-Force 020
+.0 @Uncanny X-Force 021
+.0 @Uncanny X-Force 022
+.0 @Uncanny X-Force 023
+.0 @Uncanny X-Force 024
+.0 @Uncanny X-Force 025
+.0 @Uncanny X-Force 026
+.0 @Uncanny X-Force 027
+.0 @Uncanny X-Force 028
+.0 @Uncanny X-Force 029
+.0 @Uncanny X-Force 030
+.0 @Uncanny X-Force 031
+.0 @Uncanny X-Force 032
+.0 @Uncanny X-Force 033
+.0 @Uncanny X-Force 034
+.Z @Uncanny X-Force 035
+
+

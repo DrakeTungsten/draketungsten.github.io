@@ -33,13 +33,17 @@
 # alien = .Alien Reality
 
 :
-docy1 *Doc Ock
+.A @Doctor Octopus Year One 001
+.0 @Doctor Octopus Year One 002
+docy1 *Doc Ock @Doctor Octopus Year One 003
+.0 @Doctor Octopus Year One 004
+.Z @Doctor Octopus Year One 005
 :
 : TW 14 | AF 15-17 | Amazing Spider-Man 1,3 | UT 1-2 | Amazing Spider-Man 7 | UT 3-4 | Amazing Spider-Man 9 | UT 5-8 | Amazing Spider-Man 11 | UT 10 | Amazing Spider-Man 12 | UT 11-18, 25  | Amazing Spider-Man 25, 27-30
 :
 tw 014 *Crusher Hogan }
 :
-.A                   @Amazing Fantasy 14
+.A                   @Amazing Fantasy 015
 .0                   @Amazing Spider-Man 001
 .0    *Doc Ock       @Amazing Spider-Man 003
 .0    *Vulture       @Amazing Spider-Man 007
@@ -55,25 +59,18 @@ ditko *Doc Ock       @Amazing Spider-Man 011
 smf 003 *Fantastic Four @What If 001 ^1 }
 shadows 002 ^2 *Liz, Rhino }
 :
-.A     @Amazing Fantasy 015
-.0     @Amazing Fantasy 016
+.A     @Amazing Fantasy 016
 .0     @Amazing Fantasy 017
-# ? .0     @Amazing Fantasy 018
-#sc 002  @as 001          ^1
-#sc 004  @as 003 *Doc Ock ^2
+.0     @Amazing Fantasy 018
 .0     @Untold Tales 001 *Scorcher 
 .0     @Untold Tales 002 *Batwing  
-#sc 008  @as 007 *Vulture ^1
 .0     @Untold Tales 003 *Sandman          
 .0     @Untold Tales 004 *The Spacemen     
-#sc 010  @as 009 *Electro ^2
 .0     @Untold Tales 005 *Vulture         
 .0     @Untold Tales 006  *Torch, Wizard   
 uto   @Untold Tales 007  *Electro         
 .0     @Untold Tales 008  *Enforcers       
-#sc 012  @as 011 *Doc Ock ^1
 .0     @Untold Tales 010  *Commanda        
-#sc 013  @as 012 *Doc Ock ^1
 .0     @Untold Tales 011 *Electro, Eel    
 .0     @Untold Tales 012 *Betty Brant 
 .0     @Untold Tales 013 *Blue Bird  
@@ -102,7 +99,8 @@ mw6 @Amazing Spider-Man 054         *Doctor Octopus
 .0  @Amazing Spider-Man 055         *Doctor Octopus
 .0  @Amazing Spider-Man 056         *Doctor Octopus
 .Z  @Amazing Spider-Man 058         *Spider-Slayer   @1968
-specmag *The Smasher<br>The Disruptor @The Spectacular Spider-Man 001<br>The Spectacular Spider-Man 002
+specmag *The Smasher @The Spectacular Spider-Man 001
+.Z     *The Disruptor @The Spectacular Spider-Man 002
 :
 deathdest 001 ^1 @&nbsp @~Amazing Spider-Man 090 }
 deathdest 002 ^2 }
@@ -110,7 +108,7 @@ deathdest 003    }
 :
 #mw11 @Amazing Spider-Man 10x        
 #:
-ht *Torch, Kraven<br>Torch, Red Ghost    @Spidey/Torch 002<br>SPidey/Torch 003
+ht *Torch, Kraven<br>Torch, Red Ghost    @Spidey/Torch 002<br>Spidey/Torch 003
 :
 Marvels 004 *Gwen @&nbsp @Jun 1973     ^1 }
 mtu 048 *Jean DeWolff @&nbsp @Aug 1976 ^2 }

@@ -1,16 +1,52 @@
-# empr = .Empire
 # strt = .Street Angel
-# sprm = .Supermarket
-# csnv = .Casanova
 # bnna = .Banana Sunday
 # gdad = .Grendel: Devils And Deaths
+# pgv1 = .Paper Girls v1
+# pgv2 = .Paper Girls v2
+# pgv3 = .Paper Girls v3
+# 4kids = .Four Kids Walk Into A Bank
+# 2ndc = .Second Coming
+# twe = .The Wrong Earth
+# twenad = .The Wrong Earth: Night And Day
+# dragon = .Dragonfly And Dragonflyman
+# pen = .Penultiman
+# ps238 = .PS238
+# marsdredd = .Mars Attacks Judge Dredd
+# theone = .The One
+# bwmm = Berni Wrightson
+# god50 = .Godzilla: The Half-Century War
 
+Hotspur 001 ^1
+Hotspur 002 ^2
+Hotspur 003 ^1
+:
+bwmm 001 ^1
+bwmm 002 ^2
+bwmm 003 ^1
+bwmm 001 ^2
+bwmm 002 ^1
+bwmm 003 ^2
+:
+theone
+:
 gdad
 :
-empr
+pgv1
+pgv2
+pgv3
+:
+4kids
+:
+twe
+twenad
+dragon
+:
+pen
+:
+2ndc
+:
+god50
+:
+marsdredd
 :
 strt
-sprm
-csnv
-:
-bnna
