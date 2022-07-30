@@ -9,23 +9,25 @@
 # twe = .The Wrong Earth
 # twenad = .The Wrong Earth: Night And Day
 # dragon = .Dragonfly And Dragonflyman
-# pen = .Penultiman
+# penult = .Penultiman
 # ps238 = .PS238
 # marsdredd = .Mars Attacks Judge Dredd
 # theone = .The One
-# bwmm = Berni Wrightson
-# god50 = .Godzilla: The Half-Century War
+# bwmm = Berni Wrightson:<br>Master Of The Macabre
+# tmsogcba = The Masterworks Series Of<br>Great Comic Book Artists
+# godzilla50 = .Godzilla: The Half-Century War
+# scout1 = .Scout v1
 
+bwmm 001 ^1
+bwmm 002 ^2
+bwmm 003 ^1
+tmsogcba 003 "The Macabre" ^2
+:
 Hotspur 001 ^1
 Hotspur 002 ^2
 Hotspur 003 ^1
 :
-bwmm 001 ^1
-bwmm 002 ^2
-bwmm 003 ^1
-bwmm 001 ^2
-bwmm 002 ^1
-bwmm 003 ^2
+scout1
 :
 theone
 :
@@ -41,11 +43,11 @@ twe
 twenad
 dragon
 :
-pen
+penult
 :
 2ndc
 :
-god50
+godzilla50
 :
 marsdredd
 :

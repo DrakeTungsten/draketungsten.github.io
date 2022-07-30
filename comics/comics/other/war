@@ -2,7 +2,8 @@
 # blaze = .Blazing Combat
 # enemy = .Enemy Ace: War In Heaven
 # war1 = .War Stories Vol I
-# war2 = .War Stroies Vol II
+# war2 = .War Stories Vol II
+# lioneagle = The Lion And The Eagle
 
 
 .A "Pigs Of The Roman Empire"      @Two-Fisted Tales 21
@@ -20,4 +21,8 @@ blaze
 enemy
 war1
 war2
-
+:
+lioneagle 001 ^1
+lioneagle 001 ^2
+lioneagle 001 ^1
+lioneagle 001 ^2
