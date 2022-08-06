@@ -32,11 +32,9 @@
 # comp2 = .The Complete Collection v2
 
 .A @Born 001
-.0 @Born 002
-.Born @Born 003
-.0 @Born 004
-.0 @Born 005
-.Z @Born 006
+.Born @Born 002
+.0 @Born 003
+.Z @Born 004
 : 
 .A @warz 001
 .0 @warz 002

@@ -12,7 +12,7 @@
 # pp = Peter Parker
 # ws = Web Of Spider-Man
 # tw = Tangled Web
-# ht = .Spidey/Torch
+# torch = .Spidey/Torch
 # wv = Spider-Man vs Wolverine
 # jw = .The Death Of Jean DeWolff
 # kraven = .Kraven's Last Hunt
@@ -25,12 +25,11 @@
 # specmag = .The Spectacular Spider-Man
 # docy1 = .Doctor Octopus Year One
 # deathdest = Death And Destiny
-# fullcirc = Full Circle
-# sweet = Sweet Charity
 # smf = Spider-Man Family
 # asmf = Amazing Spider-Man Family
 # symb = .Symbiote Spider-Man
 # alien = .Alien Reality
+# mkbwb = Moon Knight: Black, White & Blood
 
 :
 .A @Doctor Octopus Year One 001
@@ -108,7 +107,8 @@ deathdest 003    }
 :
 #mw11 @Amazing Spider-Man 10x        
 #:
-ht *Torch, Kraven<br>Torch, Red Ghost    @Spidey/Torch 002<br>Spidey/Torch 003
+torch *Torch, Kraven     @Spidey/Torch 002
+.Z    *Torch, Red Ghost  @Spidey/Torch 003 @~1973
 :
 Marvels 004 *Gwen @&nbsp @Jun 1973     ^1 }
 mtu 048 *Jean DeWolff @&nbsp @Aug 1976 ^2 }
@@ -191,7 +191,12 @@ pp 121            *Rashomon                                                ^2 }
 asmf 002           ^1 } 
 shadows 003  *AIM  ^2 }
 :
-kraven @&nbsp @1987
+.A @Web Of Spider-Man 031
+.0 @Amazing Spider-Man 293
+kraven @Peter Parker 131 @1987
+.0 @Web Of Spider-Man 032
+.0 @Amazing Spider-Man 294
+.Z @Peter Parker 132
 #:
 #pp 134
 #pp 135
@@ -223,4 +228,4 @@ pp 190 *Rhino ^1 @&nbsp @Jul 1992 }
 pp 200 *Green Goblin ^2 @&nbsp @May 1993 }
 tw 005 *Rhino ^1 }
 tw 006 *Rhino ^2 }
-#sweet    1 ^1 *Scorpion<br>JJJ }
+mkbwb 001 "So White. Yet, So Dark"  ^1 }

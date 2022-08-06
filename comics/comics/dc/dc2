@@ -258,6 +258,7 @@
 # redblue = Superman: Red And Blue
 # renee = The Other History<br>Of The DC Universe
 # ga80 = Green Arrow<br>80th Anniversary
+# ssbb = .Suicide Squad: Bad Blood
 
 # skip Titans 40-41
 :
@@ -697,7 +698,7 @@ ssq5 *Apokolips    @Suicide Squad 034
 :
 .A   *Dominators @Invasion 001
 inv  *Dominators @Invasion 002
-.Z   *Dominators @Invasion 001
+.Z   *Dominators @Invasion 003
 : <center><h4>JUSTICE LEAGUE INTERNATIONAL</h4></center>
 #jli4 @23-30 @+23<br>+24<br>+28 *Beetle<br>Booster
 .A @Justice League International 023
@@ -1006,6 +1007,8 @@ redblue 006 "The Special" ^9}
 upsky *Superman
 :
 archworlds *Superman<br>Batman
+:
+ssbb
 :
 challsupsons *Damian<br>Jon Kent
 # convnwo 1 *Nightwing<br>Oracle ^1 }
