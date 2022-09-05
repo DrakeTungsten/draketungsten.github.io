@@ -12,6 +12,7 @@
 # pp = Peter Parker
 # ws = Web Of Spider-Man
 # tw = Tangled Web
+# tangled = .Tangled Web
 # torch = .Spidey/Torch
 # wv = Spider-Man vs Wolverine
 # jw = .The Death Of Jean DeWolff
@@ -226,6 +227,6 @@ pp 188 *Vulture                       ^1 }
 pp 189 *Osborns                       ^2 }
 pp 190 *Rhino ^1 @&nbsp @Jul 1992 }
 pp 200 *Green Goblin ^2 @&nbsp @May 1993 }
-tw 005 *Rhino ^1 }
-tw 006 *Rhino ^2 }
+tangled @tw 005 *Rhino 
+.Z @tw 006 *Rhino 
 mkbwb 001 "So White. Yet, So Dark"  ^1 }

@@ -335,8 +335,9 @@ serp @Avengers 144 *Avengers
 .0   @Avengers 148 *Avengers
 .Z   @Avengers 149 *Avengers @1976
 :
-.A    *Fantastic Four<br>Hulk @Fantastic Four 166 @1976 
-ffgp1 *Fantastic Four<br>Hulk @Fantastic Four 167 @1976 
+ffgp1 *Fantastic Four<br>Hulk @Fantastic Four 166 @1976 
+.Z    *Fantastic Four<br>Hulk @Fantastic Four 167 @1976 
+:
 ffgp2 *Fantastic Four
 :
 .A *Thor @Thor 260 @&nbsp @1977

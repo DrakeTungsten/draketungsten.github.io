@@ -1,4 +1,4 @@
-# p = Powerman And Iron Fist
+# pmif = Powerman And Iron Fist
 # hfh = Heroes For Hire
 # s = Sabretooth Classics
 # lif = .The Last Iron Fist Story
@@ -8,14 +8,15 @@
 # lc = Luke Cage
 # mp = Marvel Premiere
 
-lc 001 *Luke Cage ^1 }
-lc 030 *Piranha   ^2 }
-mp 019 *Iron Fist<br>Colleen Wing ^1 }
-mp 021 *Iron Fist<br>Misty Knight ^2 }
+lc 001 *Luke Cage  @True Believers ^1 } 
+lc 030 *Piranha    @True Believers ^2 }
+mp 019 *Iron Fist<br>Colleen Wing @True Believers ^1 }
+mp 021 *Iron Fist<br>Misty Knight @True Believers ^2 }
 lc 048 *Luke Cage<br>Iron Fist       }
-
-heroes1  *El Aguila<br>Sabretooth @065<br>066
-
+:
+heroes1  *El Aguila  @Heroes For Hire 065
+.Z       *Sabretooth @Heroes For Hire 066
+:
 .A      @Heroes For Hire 071 *Montenegro
 .0      @Heroes For Hire 074 *Khan
 .0      @Heroes For Hire 075 *K'un-Lun
@@ -30,15 +31,17 @@ heroes2 @Heroes For Hire 081
 .0      @Heroes For Hire 087
 .0      @Heroes For Hire 088
 .Z      @Heroes For Hire 089
-
+:
 hfh 084or5 *Daleks?
 
-p 115 ^1 }
-p 116 ^2 }
-p 118 ^1 }
-p 120 ^2 }
-p 124    }
-# p 125
+pmif 115 ^1 }
+pmif 116 ^2 }
+pmif 118 ^1 }
+pmif 120 ^2 }
+pmif 124    }
+# pmif 125
+:
 lif
+:
 7cc
 

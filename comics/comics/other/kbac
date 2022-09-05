@@ -1,14 +1,126 @@
-# ac1 = KBAC Vol I
-# ac2 = KBAC Vol II
+# ac1 = Astro City v1
+# ac2 = Astro City v2
+# ac3 = Astro City v3
 # life = .Life In The Big City
 # conf = .Confession
 # fama = .Family Album
 # tarn = .The Tarnished Angel
+# local = .Local Heroes
+# shining = .Shining Stars
+# opendoors = .Through Open Doors
+# private = .Private Lives
+# quarrel = .Lovers Quarrel
+# honorguard = .Honor Guard
+# ordinary = .Ordinary Heroes
+# melody = .Broken Melody
 
-life @KBAC (vol I) 1-6
-conf @KBAC (vol II) 4-9, 1/2
-fama @KBAC (vol II) 1-3, 10-13
-tarn @KBAC (vol II) 14-20
-ac2 21
-ac2 22
+.A @ac1 001
+.0 @ac1 002
+life @ac1 003
+.0 @ac1 004
+.0 @ac1 005
+.Z @ac1 006
+:
+.A @ac2 0.5
+.0 @ac2 004
+.0 @ac2 005
+conf @ac2 006
+.0 @ac2 007
+.0 @ac2 008
+.Z @ac2 009
+:
+.A @ac2 001
+.0 @ac2 002
+.0 @ac2 003
+fama @ac2 010
+.0 @ac2 011
+.0 @ac2 012
+.Z @ac2 013
+:
+.A @ac2 014
+.0 @ac2 015
+.0 @ac2 016
+tarn @ac2 017
+.0 @ac2 018
+.0 @ac2 019
+.Z @ac2 020
+:
+.A @ac2 021
+.0 @ac2 022
+.0 @Local Heroes 001
+local @Local Heroes 002
+.0 @Local Heroes 003
+.0 @Local Heroes 004
+.0 @Local Heroes 005
+.Z *Supersonic @Supersonic Special
+:
+.A @Samaritan Special
+.0 @Astra 001
+shining @Astra 002
+.0 @Silver Agent 001
+.0 @Silver Agent 002
+.Z @Beautie Special
+:
+.A @ac3 001
+.0 @ac3 002
+opendoors @ac3 003
+.0 @ac3 004
+.0 @ac3 005
+.Z @ac3 006
+:
+.A @ac3 007
+.0 @ac3 008
+.Victory @ac3 009
+.0 @ac3 010
+.Z @Astro City Visitor's Guide
+:
+.A @ac3 011
+.0 @ac3 012
+private @ac3 013
+.0 @ac3 014
+.0 @ac3 015
+.Z @ac3 016
+:
+.A @ac3 018
+.0 @ac3 019
+quarrel @ac3 020
+.0 @ac3 021
+.0 @ac3 023
+.Z @ac3 024
+:
+.A @ac3 017
+.0 @ac3 022
+honorguard @ac3 025
+.0 @ac3 027
+.0 @ac3 028
+.Z @ac3 031
+:
+.A @ac3 026
+.0 @ac3 029
+.Reflections @ac3 030
+.0 @ac3 032
+.0 @ac3 033
+.Z @ac3 034
+:
+.A @ac3 035
+.0 @ac3 036
+ordinary @ac3 039
+.0 @ac3 040
+.0 @ac3 042
+.Z @ac3 044
+:
+.A @ac3 037
+.0 @ac3 038
+melody @ac3 041
+.0 @ac3 043
+.0 @ac3 045
+.Z @ac3 046
+:
+.0 @ac3 047
+.0 @ac3 048
+.Aftermaths @ac3 049
+.0 @ac3 050
+.0 @ac3 051
+.0 @ac3 052
+
 

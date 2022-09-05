@@ -15,36 +15,149 @@
 # wid = .The Widow
 # gld = .Golden Age
 # pap = .The Murdock Papers
-# vol2 = .Vol 2
-# vol3 = .Vol 3
-# vol4 = .Vol 4
-# vol6 = .Vol 6
+# v2 = .Vol 2
+# v3 = .Vol 3
+# v4 = .Vol 4
+# v6 = .Vol 6
 # vone = .Volume One
 # vtwo = .Volume Two
+# miller = .Omnibus: Miller
+# bru1 = .Omnibus: Brubaker 1
+# bru2 = .Omnibus: Brubaker 2
 
-mwf 
-elk Flashback
-dd1 165 *Miller
-dd1 166 *Miller
-dd1 167 *Miller
-vs2 @dd1 168-182 *Miller
-vs3 @dd1 183-191 *Miller
-lov *Miller
-ass *Miller
-brn @dd1 227-233 *Miller
+.A
+.0
+mwf
+.0
+.Z
+: 
+elk Flashback ^1
+:
+.A @Daredevil 165                          
+.0 @Daredevil 166                          
+.0 @Daredevil 167                          
+.0 @Daredevil 168                          
+.0 @Daredevil 169                          
+.0 @Daredevil 170                          
+.0 @Daredevil 171                          
+.0 @Daredevil 172                          
+.0 @Daredevil 173                          
+.0 @Daredevil 174                          
+.0 @Daredevil 175                          
+.0 @Daredevil 176                          
+.0 @Daredevil 177                          
+miller @Daredevil 178                          
+.0 @Daredevil 179                          
+.0 @Daredevil 180                          
+.0 @Daredevil 181                          
+.0 @Daredevil 182                          
+.0 @Daredevil 183                          
+.0 @Daredevil 184                          
+.0 @Daredevil 185                          
+.0 @Daredevil 186                          
+.0 @Daredevil 187                          
+.0 @Daredevil 188                          
+.0 @Daredevil 189                          
+.0 @Daredevil 190                          
+.Z @Daredevil 191                          
+:
+lov *Kingpin
+:
+ass *Elektra
+:
+.0 @Daredevil 227                          
+.0 @Daredevil 228                          
+.0 @Daredevil 229                          
+brn @Daredevil 230                          
+.0 @Daredevil 231                          
+.0 @Daredevil 232                          
+.0 @Daredevil 233                          
+:
 
-vol2  "Underboss|Out" *Bendis
-vol3 "Lowlife|Hardcore" *Bendis
-vol4 "King Of Hell's Kitchen|The Widow" *Bendis
-vol6 "The Murdock Papers" *Bendis
-vone *Brubaker
-vtwo *Brubaker
-#unb *vol IV    @dd2 26-31 @DD HC II
-#out *vol V     @dd2 32-40 @DD HC II
-#low *vol VI    @dd2 41-45 @DD HC III
-#hrd *vol VII   @dd2 46-50 @DD HC III
-#kng *vol IX    @dd2 56-60 @DD HC IV
-#wid *vol X     @dd2 61-65 @DD HC IV
-#gld *vol XI    @dd2 66-70 @DD HC V
-#pap            @dd2 75-81 @DD HC VI
-
+.A "Underboss" @Daredevil v2 026                          
+.0 "Underboss" @Daredevil v2 027                          
+.0 "Underboss" @Daredevil v2 028                          
+.0 "Underboss" @Daredevil v2 029                          
+.0 "Underboss" @Daredevil v2 030                          
+v2 "Underboss" @Daredevil v2 031                          
+.0 "Out" @Daredevil v2 032                          
+.0 "Out" @Daredevil v2 033                          
+.0 "Out" @Daredevil v2 034                          
+.0 "Out" @Daredevil v2 035                          
+.0 "Out" @Daredevil v2 036                          
+.Z "Out" @Daredevil v2 037                          
+:
+#.A "Trial Of The Century" @Daredevil v2 038
+#.0 "Trial of the Century" @Daredevil v2 039
+#.0 "Trial Of The Century" @Daredevil v2 040
+.A "Lowlife" @Daredevil v2 041
+.0 "Lowlife" @Daredevil v2 042
+.0 "Lowlife" @Daredevil v2 043
+.0 "Lowlife" @Daredevil v2 044
+v3 "Lowlife" @Daredevil v2 045
+.0 "Hardcore" @Daredevil v2 046
+.0 "Hardcore" @Daredevil v2 047
+.0 "Hardcore" @Daredevil v2 048
+.0 "Hardcore" @Daredevil v2 049
+.Z "Hardcore" @Daredevil v2 050
+:
+.A "King Of Hell's Kitchen" @Daredevil v2 056
+.0 "King Of Hell's Kitchen" @Daredevil v2 057
+.0 "King Of Hell's Kithcen" @Daredevil v2 058
+.0 "King Of Hell's Kitchen" @Daredevil v2 059
+v4 "King Of Hell's Kitchen" @Daredevil v2 060
+.0 "The Widow" @Daredevil v2 061
+.0 "The Widow" @Daredevil v2 062
+.0 "The Widow" @Daredevil v2 063
+.0 "The Widow" @Daredevil v2 064
+.Z "The Widow" @Daredevil v2 065
+:
+.A "The Murdock Papers" @Daredevil v2 076
+.0 "The Murdock Papers" @Daredevil v2 077
+v6 "The Murdock Papers" @Daredevil v2 078
+.0 "The Murdock Papers" @Daredevil v2 079
+.0 "The Murdock Papers" @Daredevil v2 080
+.0 "The Murdock Papers" @Daredevil v2 081
+:
+.A @Daredevil v2 082
+.0 @Daredevil v2 083
+.0 @Daredevil v2 084
+.0 @Daredevil v2 085
+.0 @Daredevil v2 086
+.0 @Daredevil v2 087
+.0 @Daredevil v2 088
+.0 @Daredevil v2 089
+.0 @Daredevil v2 090
+.0 @Daredevil v2 091
+.0 @Daredevil v2 092
+bru1 @Daredevil v2 093
+.0 @Daredevil v2 094
+.0 @Daredevil v2 095
+.0 @Daredevil v2 096
+.0 @Daredevil v2 097
+.0 @Daredevil v2 098
+.0 @Daredevil v2 099
+.0 @Daredevil v2 100
+.0 @Daredevil v2 101
+.0 @Daredevil v2 102
+.0 @Daredevil v2 103
+.0 @Daredevil v2 104
+.Z @Daredevil v2 105
+:
+.A @Daredevil v2 106
+.0 @Daredevil v2 107
+.0 @Daredevil v2 108
+.0 @Daredevil v2 109
+.0 @Daredevil v2 110
+.0 @Daredevil v2 111
+.0 @Daredevil v2 112
+.0 @Daredevil v2 113
+bru2 @Daredevil v2 114
+.0 @Daredevil v2 115
+.0 @Daredevil v2 116
+.0 @Daredevil v2 117
+.0 @Daredevil v2 118
+.0 @Daredevil v2 119
+.0 @Daredevil v2 500
+.0 @Daredevil v2 Annual 1
+.Z @Blood Of The Tarantula
