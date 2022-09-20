@@ -68,6 +68,7 @@ DC
 -----------------------------------
 Batman: The Knight (Zdarsky, late 2022?)
 Suicide Squad: Blaze (Spurrier, Dec 2022) 
+The Monkey Prince (Jan 2023)
 Batman: A Lonely Place Of Dying 
     NO! does not contain ALPOD as advertised! Batman: The Caped Crusader v2
 
@@ -81,6 +82,7 @@ WE3
 -----------------------------------
 Marvel  
 -----------------------------------
+Fantastic Four: Full Circle
 Weapon X: Gallery Edition (?)
 Captain America: Sentinel Of Liberty (FabNic)
 Red Skull Incarnate (Pak)
@@ -90,6 +92,8 @@ Astro City, own
 Local Heroes
 Family Album
 Reflections
+Through Open Doors
+Victory
 
 -----------------------------------
 Independent
@@ -109,9 +113,7 @@ Astro City:
 	Life In The Big City
 	Confession
 	Tarnished Angel
-	Shining Stars
-	Through Open Doors
-	Victory
+	Shining Stars		
 	Private Lives
 	Lovers Quarrel
 	Honor Guard

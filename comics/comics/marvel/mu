@@ -165,16 +165,16 @@ mythosff 1 *Fantastic Four                      ^2 }
 #ff 005 *Fantastic Four<br>Doctor Doom @Marvel Milestone @1962 ^2 }
 hulk 001 *Hulk @Milestone  @1962  ^1 }
 mythoshulk 1                *Hulk ^2 }
-jim 083 @who ^1 }
-jim 084 @who ^1 }
-jim 088 @who ^2 }
+jim 083 *Thor @who ^1 }
+jim 084 *Thor @who ^1 }
+jim 088 *Thor @who ^2 }
 :
-.A @Hulk: Gray 001
-.0 @Hulk: Gray 002
+.A *Hulk @Hulk: Gray 001
+.0 *Hulk @Hulk: Gray 002
 gray *Hulk @Hulk: Gray 003
-.0 @Hulk: Gray 004
-.0 @Hulk: Gray 005
-.Z @Hulk: Gray 006
+.0 *Hulk @Hulk: Gray 004
+.0 *Hulk @Hulk: Gray 005
+.Z *Hulk @Hulk: Gray 006
 :
 ff Annual 1 *Fantastic Four<br>Namor @1984 Special Edition @1963 ^1 }
 spns 039 *Iron Man @&nbsp  @1963                                 ^2 }

@@ -1,5 +1,5 @@
 # mwf = .Man Without Fear
-# elk = Elecktra
+# elk = Elektra
 # ass = .Elektra: Assassin
 # dd1 = Daredevil (I)
 # dd2 = Daredevil (II)
@@ -25,11 +25,11 @@
 # bru1 = .Omnibus: Brubaker 1
 # bru2 = .Omnibus: Brubaker 2
 
-.A
-.0
-mwf
-.0
-.Z
+.A @Man Without Fear 001
+.0 @Man Without Fear 002
+mwf @Man Without Fear 003
+.0 @Man Without Fear 004
+.Z @Man Without Fear 005
 : 
 elk Flashback ^1
 :
@@ -63,7 +63,14 @@ miller @Daredevil 178
 :
 lov *Kingpin
 :
-ass *Elektra
+.A *Elektra @Elektra: Assassin 001
+.0 *Elektra @Elektra: Assassin 002
+.0 *Elektra @Elektra: Assassin 003
+ass *Elektra @Elektra: Assassin 004
+.0 *Elektra @Elektra: Assassin 005
+.0 *Elektra @Elektra: Assassin 006
+.0 *Elektra @Elektra: Assassin 007
+.Z *Elektra @Elektra: Assassin 008
 :
 .0 @Daredevil 227                          
 .0 @Daredevil 228                          
