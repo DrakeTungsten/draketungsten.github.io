@@ -259,6 +259,7 @@
 # renee = The Other History<br>Of The DC Universe
 # ga80 = Green Arrow<br>80th Anniversary
 # ssbb = .Suicide Squad: Bad Blood
+# talestarget = Tales Of The Human Target
 
 # skip Titans 40-41
 :
@@ -284,6 +285,7 @@ so  001 ^1 *Superman }
 mos 080 ^2 *Superman }
 mos 081 ^1 *Superman }
 mos 082 ^2 *Superman }
+Detective 027 ^1 *Batman ^1 }
 so   006  *Batman                                   ^1 }
 bmbw3 002 *Batman "Silent Knight... Unholy Knight"  ^2 }
 gen1 001  *Superman<br>Batman ^9 }
@@ -1003,6 +1005,7 @@ yovr 1 *Riddler  ^2 }
 nye2019 1 *Poison Ivy<br>Black Adam<br>Calendar Man<br>Chronos<br>Prankster  ^9 }
 wwbg 001 "I'm Ageless|The Wager" ^9}
 redblue 006 "The Special" ^9}
+talestarget 001 *Booster Gold<br>Guy Gardner ^9 }
 :
 upsky *Superman
 :

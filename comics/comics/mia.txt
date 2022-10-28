@@ -82,7 +82,6 @@ WE3
 -----------------------------------
 Marvel  
 -----------------------------------
-Fantastic Four: Full Circle
 Weapon X: Gallery Edition (?)
 Captain America: Sentinel Of Liberty (FabNic)
 Red Skull Incarnate (Pak)
@@ -94,6 +93,7 @@ Family Album
 Reflections
 Through Open Doors
 Victory
+Private Lives * ordered
 
 -----------------------------------
 Independent
@@ -113,8 +113,7 @@ Astro City:
 	Life In The Big City
 	Confession
 	Tarnished Angel
-	Shining Stars		
-	Private Lives
+	Shining Stars			
 	Lovers Quarrel
 	Honor Guard
 	Ordinary Heroes
@@ -141,9 +140,7 @@ Absolute Swamp Thing v2 (May)
 League of Extraordinary Gentlemen
 Witzend, Fantagraphics
 ----------------------------
-Immortal Iron Fist (Apr 2022)
-Incredible Hulk v4
-X-Factor PAD omni
+Immortal Iron Fist (Feb 2023)
 ----------------------------
 
 

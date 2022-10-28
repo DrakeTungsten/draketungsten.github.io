@@ -66,6 +66,8 @@
 # odinquest = .The Quest For Odin
 # thoro = .Thor Omnibus
 # pado1 = .Hulk Omnibus: PAD v1
+# pado2 = .Hulk Omnibus: PAD v2
+# pado4 = .Hulk Omnibus: PAD v4
 # pad4 = .Hulk Visionaries: PAD v4
 # pad5 = .Hulk Visionaries: PAD v5
 # pad6 = .Hulk Visionaries: PAD v6
@@ -187,6 +189,7 @@ avcl 004 "Captain America Joins The Avengers|Blues In The Night" @Avengers 004 *
 caps 005 *Captain America<br>Iron Man          ^1 }
 caps 006 *Captain America<br>Iron Man          ^2 }
 :
+spns 057 *Iron Man<br>Hawkeye ^1 @True Believers }
 Avengers 006 *Avengers<br>Masters Of Evil @True Believers @1964 ^1 }
 jim 114 *Thor<br>Absorbing Man @True Believers @1965            ^2 }
 hsa 001 *Hulk<br>Avengers @&nbsp @~1964 ^1 }
@@ -450,27 +453,27 @@ ffwalt3 @Fantastic Four 348 *Hulk<br>Wolverine<br>Ghost Rider<br>Spider-Man @199
 .Z      @Fantastic Four 349 *Hulk<br>Wolverine<br>Ghost Rider<br>Spider-Man 
 :
 .A     *Freedom Force @Incredible Hulk 369
-pad5   *Defenders     @Incredible Hulk 370
+.0     *Defenders     @Incredible Hulk 370
 .0     *Dark Hulk     @Incredible Hulk 371
-.Z     *Hulk          @Incredible Hulk 372
-.A     *Hulk          @Incredible Hulk 373
+.0     *Hulk          @Incredible Hulk 372
+.0     *Hulk          @Incredible Hulk 373
 .0     *Hulk          @Incredible Hulk 374
 .0     *Hulk          @Incredible Hulk 375
-pad6   *Hulk          @Incredible Hulk 376
+.0     *Hulk          @Incredible Hulk 376
 .0     *Hulk          @Incredible Hulk 377
 .0     *Hulk          @Incredible Hulk 379
 .0     *Hulk          @Incredible Hulk 381
-.Z     *Hulk          @Incredible Hulk 382
-.A     *Hulk          @Incredible Hulk 383
+.0     *Hulk          @Incredible Hulk 382
+pado2  *Hulk          @Incredible Hulk 383
 .0     *Hulk          @Incredible Hulk 384
 .0     *Hulk          @Incredible Hulk 385
-pad7   *Hulk          @Incredible Hulk 386
+.0     *Hulk          @Incredible Hulk 386
 .0     *Hulk          @Incredible Hulk 387
 .0     *Hulk          @Incredible Hulk 388
-.Z     *Hulk          @Incredible Hulk 389
-.A     *X-Factor      @Incredible Hulk 390 "War And Peices"
+.0     *Hulk          @Incredible Hulk 389
+.0     *X-Factor      @Incredible Hulk 390 "War And Peices"
 .0     *X-Factor      @Incredible Hulk 391 "War And Peices"
-pad8   *X-Factor      @Incredible Hulk 392 "War And Peices"
+.0   *X-Factor      @Incredible Hulk 392 "War And Peices"
 .0     *Hulk          @Incredible Hulk 393 "The Closing Circle"
 #.0     *Trauma          @Incredible Hulk 394
 .0     *Punisher      @Incredible Hulk 395
@@ -509,6 +512,7 @@ mcp19 007 *Iron Man  ^2 }
 #hulk 412 *She-Hulk
 imp 1 *Maestro ^1 }
 imp 2 *Maestro ^2 }
+:
 #hulk 417
 #hulk 418 *Wedding
 #hulk 421 *Mythconceptions
@@ -517,22 +521,23 @@ imp 2 *Maestro ^2 }
 #hulk 424 *Fall Of The Pantheon
 #hulk 425
 #hulk 435 *Hulk at bat
+## omnibus v4 starts at 436
 #hulk 449 *Thunderbolts
-hulk 451 "Island Getaway" }
-hulk 452
-hulk 453
-hulk Flashback
-hulk 454
-hulk 455
-hulk 456
-hulk 457
-hulk 460
-hulk 462
-hulk 463
-hulk 464
-hulk 465
-hulk 466
-hulk 467 @&nbsp @1998
+.A *Hulk @hulk 451 "Island Getaway" 
+.0 *Hulk @hulk 452
+.0 *Hulk @hulk 453
+.0 *Hulk @hulk Flashback
+.0 *Hulk @hulk 454
+.0 *Hulk @hulk 455
+.0 *Hulk @hulk 456
+pado4 *Hulk @hulk 457
+.0 *Hulk @hulk 460
+.0 *Hulk @hulk 462
+.0 *Hulk @hulk 463
+.0 *Hulk @hulk 464
+.0 *Hulk @hulk 465
+.0 *Hulk @hulk 466
+.Z *Hulk @hulk 467 @&nbsp @1998
 :
 rna1 @&nbsp @2003
 rna2

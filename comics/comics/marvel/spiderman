@@ -1,5 +1,6 @@
 # af = Amazing Fantasy
 # as = Amazing Spider-Man
+# asan = Amazing Spiderman Annual
 # ut = Untold Tales Of Spider-Man
 # uto = .Untold Tales Of Spider-Man Omnibus
 # ditko = .Spider-Man Ditko Omnibus
@@ -39,7 +40,7 @@ docy1 *Doc Ock @Doctor Octopus Year One 003
 .0 @Doctor Octopus Year One 004
 .Z @Doctor Octopus Year One 005
 :
-: TW 14 | AF 15-17 | Amazing Spider-Man 1,3 | UT 1-2 | Amazing Spider-Man 7 | UT 3-4 | Amazing Spider-Man 9 | UT 5-8 | Amazing Spider-Man 11 | UT 10 | Amazing Spider-Man 12 | UT 11-18, 25  | Amazing Spider-Man 25, 27-30
+: TW 14 | AF 15-17 | ASM 1,3 | UT 1-2 | ASM 7 | UT 3-4 | ASM 9 | UT 5-8 | ASM 11 | UT 10 | ASM 12 | UT 11-18, 25  | ASM 25, 27-30
 :
 tw 014 *Crusher Hogan }
 :
@@ -48,8 +49,9 @@ tw 014 *Crusher Hogan }
 .0    *Doc Ock       @Amazing Spider-Man 003
 .0    *Vulture       @Amazing Spider-Man 007
 .0    *Electro       @Amazing Spider-Man 009
-ditko *Doc Ock       @Amazing Spider-Man 011
-.0    *Doc Ock       @Amazing Spider-Man 012
+.0    *Doc Ock       @Amazing Spider-Man 011
+ditko *Doc Ock       @Amazing Spider-Man 012
+.0    *Sinister Six  @Amazing Spider-Man Annual 1 @1964
 .0    *Spider Slayer @Amazing Spider-Man 025
 .0    *Green Goblin  @Amazing Spider-Man 027
 .0    *Molten Man    @Amazing Spider-Man 028
@@ -104,7 +106,9 @@ specmag *The Smasher @The Spectacular Spider-Man 001
 :
 deathdest 001 ^1 @&nbsp @~Amazing Spider-Man 090 }
 deathdest 002 ^2 }
-deathdest 003    }
+deathdest 003 ^1 }
+as 101 *Morbius @True Believers ^9 }
+
 :
 #mw11 @Amazing Spider-Man 10x        
 #:
