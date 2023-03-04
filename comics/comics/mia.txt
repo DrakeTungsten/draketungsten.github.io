@@ -1,3 +1,4 @@
+
 Shops:
 -----------------------------------
 No:
@@ -9,9 +10,14 @@ Yes?:
 Comic Asylum
 Alternate Reality
 
+
+jonathon luna
+
 -----------------------------------
 DC Single issues:
 -----------------------------------
+Batman: Scooby Doo 1, 8 Sholly Fisch (May)
+Batman Facsimile 181 Poison Ivy (May 2023)
 (Saga Of The) Swamp Thing 52
 Batman / Lobo
 Batman Black And White #1 (Death Alley cover) Don't Know Where...
@@ -34,6 +40,12 @@ Batman: Gotham Nights (digital)
 -----------------------------------
 Marvel single issues
 -----------------------------------
+Iron Man Marvel Tales 1 (Mar 2023)
+I Am Iron Man 1, 2 (Mar, Apr)
+X-Men Facsimile #1 (1961)
+X-Men Facsimile #1 (1991)
+Rocket Racoon: Marvel Tales (Apr 2023)
+X-Men Archives Featuring Captain Britain  2, 3, 4, 5, 6
 Thor Giant-Size 001 (1975)
 Silver Surfer 4 (Thor)
     Fantasy Masterpieces (v2) 4 (~$30)
@@ -45,17 +57,17 @@ Immortal Hulk 7
 -----------------------------------
 Independent single issues:
 -----------------------------------
+The Many Worlds Of Tesla Strong
+Barbaric: Axe to Grind
+
 King Conan: The Hour Of The Dragon (Dark Horse) #1
-King Conan: The Conquerer (Dark Horse) #2, 3, 5, 6
+King Conan: The Conquerer (Dark Horse) #5
 
 The Cimmerean: Rogues In The House - Ablaze has no plans yet
 
-Compass   Image June
 Berni (no "e") Wrightson: Master Of The Macabre (Pacific, Eclipse)
 Somerset Holmes 1, 2 (is there a 4?)
 The Secret History
-Jean-Claude Mézières works 
-James Sotkoe - Sobek
 Serial (Terry Moore)
 Ira Dei
 
@@ -66,59 +78,67 @@ Trades
 -----------------------------------
 DC
 -----------------------------------
+Batman: Urban Legends vol 3
 Batman: The Knight (Zdarsky, late 2022?)
 Suicide Squad: Blaze (Spurrier, Dec 2022) 
-The Monkey Prince (Jan 2023)
+Superman: Space Age (Mar 2023)
+Absolute V For Vendetta (Apr 2023)
+Superman: Camelot Falls Deluxe
 Batman: A Lonely Place Of Dying 
     NO! does not contain ALPOD as advertised! Batman: The Caped Crusader v2
 
 Batman/Dredd HC
 
 -----------------------------------
-Vertigo
------------------------------------
-WE3
-
------------------------------------
 Marvel  
 -----------------------------------
-Weapon X: Gallery Edition (?)
+The Variants
+Wolverine Epic: To The Bone
 Captain America: Sentinel Of Liberty (FabNic)
 Red Skull Incarnate (Pak)
 
 Astro City, own
 ------------------
-Local Heroes
-Family Album
-Reflections
-Through Open Doors
-Victory
-Private Lives * ordered
+	Confession
+	Family Album
+	Local Heroes
+	Reflections
+	Through Open Doors
+	Victory
+	Private Lives
+	Lovers Quarrel
+	Honor Guard
+	Aftermaths
 
 -----------------------------------
 Independent
 -----------------------------------
-Deadbox
+My Bad (russell, ahoy)
+Sara
+The Court Charade
+(Barbarella?)
+Hawk The Slayer (Ennis. Rebellion. Apr/May 2023)
+Pandora Perfect (Langridge. Rebellion. Apr/May 2023)
 Lucky Devil (Dark Horse / Bunn)
+Deadbox
 Sink (Comix Tribe)
 Boxers And Saints
 PS238
 Flight Of The Raven
+Impossible Jones
+Teknophage
 
 Blacksad
 Spirou & Fantasio
 The Scorpion (Cinebook)
 Jodorowsky + Georges Bess (Cinebook)
 Astro City: 
-	Life In The Big City
-	Confession
+	Life In The Big City	
 	Tarnished Angel
-	Shining Stars			
-	Lovers Quarrel
-	Honor Guard
+	Shining Stars  *priority, don't have the floppies
 	Ordinary Heroes
 	Broken Melody
-	Aftermaths
+	
 Sky Masters
 Houdini: The Handcuff King
 Assassination Classroom
@@ -134,16 +154,8 @@ Al Williamson - ?
 Omnibus / Absolute
 ==============================================================
 Batman: Secrets Of the Batcave  lithograph
-Absolute V For Vendetta
-Absolute Swamp Thing
-Absolute Swamp Thing v2 (May)
 League of Extraordinary Gentlemen
 Witzend, Fantagraphics
-----------------------------
-Immortal Iron Fist (Feb 2023)
-----------------------------
-
-
 
 ============================================================
 ============================================================
@@ -152,6 +164,7 @@ Immortal Iron Fist (Feb 2023)
 -----------------------------------
 NO
 -----------------------------------
+Absolute Swamp Thing - recolored - ugh
 Conan: Wolves Beyond the Border (Conan is not even in it)
 Hellblazer: Rise And Fall (Black Label, eh.. maybe skip it)
 Batman: The Detective (Taylor)
