@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Mike Zeck</h2>
+<br>
+<tr id="C70X140" onmouseover="showcover('../covers/Master Of Kung Fu 055.jpg', 'Doug Moench', 'Mike Zeck', 'Jim Mooney', 'Marvel')"><td> <a href="../masterofkungfu.html#A70X140">Master Of Kung Fu 055</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1977.08</td> </tr>
+<tr id="C1030X30" onmouseover="showcover('../covers/Amazing Spider-Man 293.jpg', 'J. M. DeMatteis', 'Mike Zeck', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A1030X30">Amazing Spider-Man 293</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1987.10</td> </tr>
+<tr id="C1030X40" onmouseover="showcover('../covers/Peter Parker 131.jpg', 'J. M. DeMatteis', 'Mike Zeck', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A1030X40">Peter Parker 131</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1987.10</td> </tr>
+<tr id="C1030X20" onmouseover="showcover('../covers/Web Of Spider-Man 031.jpg', 'J. M. DeMatteis', 'Mike Zeck', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A1030X20">Web Of Spider-Man 031</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1987.10</td> </tr>
+<tr id="C1030X60" onmouseover="showcover('../covers/Amazing Spider-Man 294.jpg', 'J. M. DeMatteis', 'Mike Zeck', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A1030X60">Amazing Spider-Man 294</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1987.11</td> </tr>
+<tr id="C1030X70" onmouseover="showcover('../covers/Peter Parker 132.jpg', 'J. M. DeMatteis', 'Mike Zeck', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A1030X70">Peter Parker 132</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1987.11</td> </tr>
+<tr id="C1030X50" onmouseover="showcover('../covers/Web Of Spider-Man 032.jpg', 'J. M. DeMatteis', 'Mike Zeck', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A1030X50">Web Of Spider-Man 032</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1987.11</td> </tr>
+<tr id="C350X20" onmouseover="showcover('../covers/Legends Of The Dark Knight 069.webp', 'Steven Grant', 'Mike Zeck', 'Mike Zeck', 'DC')"><td> <a href="../batman.html#A350X20">Legends Of The Dark Knight 069</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1995.03</td> </tr>
+<tr id="C350X30" onmouseover="showcover('../covers/Legends Of The Dark Knight 070.webp', 'Steven Grant', 'Mike Zeck', 'Mike Zeck', 'DC')"><td> <a href="../batman.html#A350X30">Legends Of The Dark Knight 070</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1995.04</td> </tr>
+</table></body></html>

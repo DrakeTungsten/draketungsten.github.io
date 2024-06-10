@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Mike Esposito</h2>
+<br>
+<tr id="C290X80" onmouseover="showcover('../covers/Amazing Spider-Man 053.jpg', 'Stan Lee', 'John Romita', 'Mike Esposito', 'Marvel')"><td> <a href="../spiderman.html#A290X80">Amazing Spider-Man 053</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1967.10</td> </tr>
+<tr id="C290X120" onmouseover="showcover('../covers/Amazing Spider-Man 058.jpg', 'Stan Lee', 'John Romita', 'Mike Esposito', 'Marvel')"><td> <a href="../spiderman.html#A290X120">Amazing Spider-Man 058</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1968.03</td> </tr>
+<tr id="C1410X20" onmouseover="showcover('../covers/Avengers 116.webp', 'Steve Englehart', 'Bob Brown', 'Mike Esposito', 'Marvel')"><td> <a href="../marveluniverse.html#A1410X20">Avengers 116</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1973.10</td> </tr>
+<tr id="C1590X50" onmouseover="showcover('../covers/Avengers 144.webp', 'Steve Englehart', 'George Perez', 'Mike Esposito', 'Marvel')"><td> <a href="../marveluniverse.html#A1590X50">Avengers 144</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1976.02</td> </tr>
+<tr id="C570X20" onmouseover="showcover('../covers/Marvel Team-Up 048.jpg', 'Bill Mantlo', 'Sal Buscema', 'Mike Esposito', 'Marvel')"><td> <a href="../spiderman.html#A570X20">Marvel Team-Up 048</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1976.08</td> </tr>
+<tr id="C570X30" onmouseover="showcover('../covers/Peter Parker 001.jpg', 'Gerry Conway', 'Sal Buscema', 'Mike Esposito', 'Marvel')"><td> <a href="../spiderman.html#A570X30">Peter Parker 001</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1976.12</td> </tr>
+<tr id="C70X130" onmouseover="showcover('../covers/Master Of Kung Fu 050.jpg', 'Doug Moench', 'Paul Gulacy', 'Mike Esposito', 'Marvel')"><td> <a href="../masterofkungfu.html#A70X130">Master Of Kung Fu 050</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1977.03</td> </tr>
+<tr id="C890X50" onmouseover="showcover('../covers/Peter Parker 110.jpg', 'Peter David', 'Rich Buckler', 'Mike Esposito', 'Marvel')"><td> <a href="../spiderman.html#A890X50">Peter Parker 110</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1986.01</td> </tr>
+</table></body></html>

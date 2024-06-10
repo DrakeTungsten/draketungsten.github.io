@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Paul Dini</h2>
+<br>
+<tr id="C830X20" onmouseover="showcover('../covers/Batman And Robin Adventures 001.webp', 'Paul Dini', 'Ty Templeton', 'Rick Burchett', 'DC')"><td> <a href="../batman.html#A830X20">Batman & Robin Adventures 001</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1995.11</td> </tr>
+<tr id="C830X30" onmouseover="showcover('../covers/Batman And Robin Adventures 002.webp', 'Paul Dini', 'Ty Templeton', 'Rick Burchett', 'DC')"><td> <a href="../batman.html#A830X30">Batman & Robin Adventures 002</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1995.12</td> </tr>
+<tr id="C850X20" onmouseover="showcover('../covers/Batman And Robin Adventures 003.webp', 'Paul Dini', 'Ty Templeton', 'Rick Burchett', 'DC')"><td> <a href="../batman.html#A850X20">Batman & Robin Adventures 003</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1996.01</td> </tr>
+<tr id="C1650X20" onmouseover="showcover('../covers/Superman Adventures 001.webp', 'Paul Dini', 'Rick Burchett', 'Terry Austin', 'DC')"><td> <a href="../dcuniverse.html#A1650X20">Superman Adventures 001</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1996.11</td> </tr>
+<tr id="C910X20" onmouseover="showcover('../covers/Batgirl Adventures 001.jpg', 'Paul Dini', 'Rick Burchett', 'Rick Burchett', 'DC')"><td> <a href="../batman.html#A910X20">Batgirl Adventures 001</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td></td> </tr>
+<tr id="C610X20" onmouseover="showcover('../covers/Batman Adventures Annual 1.webp', 'Paul Dini', 'Bruce Timm', 'Bruce Timm', 'DC')"><td> <a href="../batman.html#A610X20">Batman Adventures Annual 1</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td></td> </tr>
+<tr id="C610X40" onmouseover="showcover('../covers/Batman Adventures Annual 2.webp', 'Paul Dini', 'Glen Murakami', 'Glen Murakami', 'DC')"><td> <a href="../batman.html#A610X40">Batman Adventures Annual 2</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td></td> </tr>
+<tr id="C610X30" onmouseover="showcover('../covers/Mad Love 1.jpg', 'Paul Dini', 'Bruce Timm', 'Bruce Timm', 'DC')"><td> <a href="../batman.html#A610X30">Mad Love 1</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td></td> </tr>
+</table></body></html>
