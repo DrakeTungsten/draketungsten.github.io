@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Rick Veitch</h2>
+<br>
+<tr id="C130X20" onmouseover="showcover('../covers/The One 001.jpg', 'Rick Veitch', 'Rick Veitch', 'Rick Veitch', 'Epic')"><td> <a href="../misc.html#A130X20">The One 001</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1985.07</td> </tr>
+<tr id="C130X30" onmouseover="showcover('../covers/The One 002.jpg', 'Rick Veitch', 'Rick Veitch', 'Rick Veitch', 'Epic')"><td> <a href="../misc.html#A130X30">The One 002</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1985.09</td> </tr>
+<tr id="C130X40" onmouseover="showcover('../covers/The One 003.jpg', 'Rick Veitch', 'Rick Veitch', 'Rick Veitch', 'Epic')"><td> <a href="../misc.html#A130X40">The One 003</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1985.11</td> </tr>
+<tr id="C130X50" onmouseover="showcover('../covers/The One 004.jpg', 'Rick Veitch', 'Rick Veitch', 'Rick Veitch', 'Epic')"><td> <a href="../misc.html#A130X50">The One 004</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1986.01</td> </tr>
+<tr id="C130X60" onmouseover="showcover('../covers/The One 005.jpg', 'Rick Veitch', 'Rick Veitch', 'Rick Veitch', 'Epic')"><td> <a href="../misc.html#A130X60">The One 005</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1986.03</td> </tr>
+<tr id="C130X70" onmouseover="showcover('../covers/The One 006.jpg', 'Rick Veitch', 'Rick Veitch', 'Rick Veitch', 'Epic')"><td> <a href="../misc.html#A130X70">The One 006</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1986.05</td> </tr>
+<tr id="C3990X20" onmouseover="showcover('../covers/Swamp Thing 057.webp', 'Alan Moore', 'Rick Veitch', 'Alfredo Alcala', 'DC')"><td> <a href="../dcuniverse.html#A3990X20">Swamp Thing 057</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1987.02</td> </tr>
+<tr id="C3990X30" onmouseover="showcover('../covers/Swamp Thing 058.webp', 'Alan Moore', 'Rick Veitch', 'Alfredo Alcala', 'DC')"><td> <a href="../dcuniverse.html#A3990X30">Swamp Thing 058</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1987.03</td> </tr>
+<tr id="C4210X20" onmouseover="showcover('../covers/Swamp Thing 079.webp', 'Rick Veitch', 'Rick Veitch', 'Alfredo Alcala', 'DC')"><td> <a href="../dcuniverse.html#A4210X20">Swamp Thing 079</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1988.12</td> </tr>
+<tr id="C110X20" onmouseover="showcover('../covers/Swamp Thing 085.webp', 'Rick Veitch', 'Tom Mandrake', 'Alfredo Alcala', 'DC')"><td> <a href="../dcuniverse.html#A110X20">Swamp Thing 085</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1989.04</td> </tr>
+<tr id="C110X30" onmouseover="showcover('../covers/Swamp Thing 086.webp', 'Rick Veitch', 'Tom Yeates', 'Tom Yeates', 'DC')"><td> <a href="../dcuniverse.html#A110X30">Swamp Thing 086</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1989.05</td> </tr>
+</table></body></html>
