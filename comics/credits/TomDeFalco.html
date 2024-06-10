@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Tom DeFalco</h2>
+<br>
+<tr id="C810X20" onmouseover="showcover('../covers/Amazing Spider-Man 258.jpg', 'Tom DeFalco', 'Ron Frenz', 'Joe Rubinstein', 'Marvel')"><td> <a href="../spiderman.html#A810X20">Amazing Spider-Man 258</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1984.11</td> </tr>
+<tr id="C810X30" onmouseover="showcover('../covers/Amazing Spider-Man 259.jpg', 'Tom DeFalco', 'Ron Frenz', 'Joe Rubinstein', 'Marvel')"><td> <a href="../spiderman.html#A810X30">Amazing Spider-Man 259</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1984.12</td> </tr>
+<tr id="C830X20" onmouseover="showcover('../covers/Amazing Spider-Man 260.jpg', 'Tom DeFalco', 'Ron Frenz', 'Joe Rubinstein', 'Marvel')"><td> <a href="../spiderman.html#A830X20">Amazing Spider-Man 260</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1985.01</td> </tr>
+<tr id="C830X30" onmouseover="showcover('../covers/Amazing Spider-Man 261.jpg', 'Tom DeFalco', 'Ron Frenz', 'Joe Rubinstein', 'Marvel')"><td> <a href="../spiderman.html#A830X30">Amazing Spider-Man 261</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1985.02</td> </tr>
+<tr id="C850X20" onmouseover="showcover('../covers/Amazing Spider-Man 268.jpg', 'Tom DeFalco', 'Ron Frenz', 'Joe Rubinstein', 'Marvel')"><td> <a href="../spiderman.html#A850X20">Amazing Spider-Man 268</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1985.09</td> </tr>
+<tr id="C850X30" onmouseover="showcover('../covers/Amazing Spider-Man 271.jpg', 'Tom DeFalco', 'Ron Frenz', 'Joe Rubinstein', 'Marvel')"><td> <a href="../spiderman.html#A850X30">Amazing Spider-Man 271</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1985.12</td> </tr>
+<tr id="C950X30" onmouseover="showcover('../covers/Amazing Spider-Man 275.jpg', 'Tom DeFalco', 'Ron Frenz', 'Joe Rubinstein', 'Marvel')"><td> <a href="../spiderman.html#A950X30">Amazing Spider-Man 275</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1986.04</td> </tr>
+<tr id="C950X40" onmouseover="showcover('../covers/Amazing Spider-Man 276.jpg', 'Tom DeFalco', 'Ron Frenz', 'Brett Breeding', 'Marvel')"><td> <a href="../spiderman.html#A950X40">Amazing Spider-Man 276</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1986.05</td> </tr>
+<tr id="C750X20" onmouseover="showcover('../covers/Hulk Smash Avengers 001.webp', 'Tom DeFalco', 'Ron Frenz', 'Sal Buscema', 'Marvel')"><td> <a href="../marveluniverse.html#A750X20">Hulk Smash Avengers 001</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>2012.07</td> </tr>
+</table></body></html>
