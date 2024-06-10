@@ -23,13 +23,77 @@ span{ display: inline-block; margin:1em; }
     padding-bottom:10px; 
 }
 
-#onecolnarrow{ 
-    width:60%; 
-    float:left;  
-    margin-left: 22%; 
-    padding-top:50px; 
-    padding-bottom:50px; 
+@media screen and (max-width: 540px) 
+{
+    #onecolnarrow{ 
+        width:400px; 
+        float:left;  
+        margin-left:20px; 
+        padding-top:20px; 
+        padding-bottom:20px; 
+    }	
 }
+
+@media screen and (min-width: 541px) and (max-width 780px)
+{
+    #onecolnarrow{ 
+        width:600px; 
+        float:left;  
+        margin-left:30px; 
+        padding-top:30px; 
+        padding-bottom:30px; 
+    }	
+}
+
+@media screen and (min-width: 781px) and (max-width 1200px)
+{
+    #onecolnarrow{ 
+        width:900px; 
+        float:left;  
+        margin-left:40px; 
+        padding-top:40px; 
+        padding-bottom:40px; 
+    }	
+}
+
+
+@media screen and (min-width: 1201px) and (max-width 1600px)
+{
+    #onecolnarrow{ 
+        width:1000px; 
+        float:left;  
+        margin-left:40px; 
+        padding-top:40px; 
+        padding-bottom:40px; 
+    }	
+}
+
+@media screen and (min-width: 1601px) and (max-width 1920)
+{
+    #onecolnarrow{ 
+        width:1200px; 
+        float:left;  
+        margin-left:10px; 
+        padding-top:50px; 
+        padding-bottom:50px; 
+    }	
+}
+
+@media screen and (min-width: 1921)
+{
+    #onecolnarrow{ 
+        width:1500px; 
+        float:left;  
+        margin-left:60px; 
+        padding-top:60px; 
+        padding-bottom:60px; 
+    }	
+}
+
+div.cellwidener {
+    margin: 4px 15px 4px 15px;
+}
+
 
 #col3narrow{ 
     width:30%; 
@@ -76,7 +140,7 @@ span{ display: inline-block; margin:1em; }
 }
 
 #col4nav { 
-    width:18%; 
+    width:19%; 
     float:left; 
     margin-left: 2%; 
     padding-bottom:10px; 
@@ -91,6 +155,10 @@ span{ display: inline-block; margin:1em; }
 
 #bootlist li {
     list-style-type: none;
+}
+
+img.hbpic1 {
+    height:240px;
 }
 
 div.indent1 {
@@ -132,14 +200,227 @@ ul.hbdatalinks a:active {
     color: #113399;
 }
 
+.tpbr{
+    background-color: white;
+    color: black;	
+}
+
+.topborder{		
+	border-bottom: none;	
+}
+
+.noborder{		
+	border-top: none;	
+	border-bottom: none;
+}
+
+
+.storypage{
+    margin: 0;
+    margin-left: 8px;
+    font-family: system-ui; 
+    font-size: 14; 
+}
+
+.tpbc3{		
+	border-top: none;	
+}
+
+.Imagecomic1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.Imagecomic2{
+    background-color: #decaff;
+    color: black;	
+}
+
+.DarkHorsecomic1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.DarkHorsecomic2{
+    background-color: #decaff;
+    color: black;	
+}
+
+.PacificComicscomic1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.PacificComicscomic2{
+    background-color: #decaff;
+    color: black;	
+}
+
+.Eclipsecomic1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.Eclipsecomic2{
+    background-color: #decaff;
+    color: black;	
+}
+
+.Wildstormcomic1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.Wildstormcomic2{
+    background-color: #decaff;
+    color: black;	
+}
+
+.xxxDCcomic1{
+    background-color: #dedcfc;
+    color: black;	
+}
+
+.xxxDCcomic2{
+    background-color: #f0f4ff;
+    color: black;	
+}
+
+.xxxMarvelcomic1{
+    background-color: #dafcda;
+    color: black;	
+}
+
+.xxxMarvelcomic2{
+    background-color: #f5ffee;
+    color: black;	
+}
+
+.DCcomic1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.DCcomic2{
+    background-color: #decaff;
+    color: black;	
+}
+
+.Marvelcomic1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.Marvelcomic2{
+    background-color: #decaff;
+    color: black;	
+}
+
+.Epiccomic1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.Epiccomic2{
+    background-color: #decaff;
+    color: black;	
+}
+
+.ECcomic1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.ECcomic2{
+    background-color: #decaff;
+    color: black;	
+}
+
+.variouscomic1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.variouscomic2{
+    background-color: #decaff;
+    color: black;	
+}
+
+.Rebellioncomic1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.Rebellioncomic2{
+    background-color: #decaff;
+    color: black;	
+}
+
+.mag1{
+    background-color: #ffe590;
+    color: black;
+}
+
+.mag2{
+    background-color: #ffffbf;
+    color: black;
+}
+
+.marvel1{
+    background-color: #deb887;
+    color: black;
+}
+
+.marvel2{
+    background-color: #bc987e;
+    color: black;
+}
+
+.darkhorse1{
+    background-color: #7fffd4;
+    color: black;
+}
+
+.darkhorse2{
+    background-color: #40e0d0;
+    color: black;
+}
+
+.cimmerean1{
+    background-color: #565688;
+    color: white;
+}
+
+.cimmerean2{
+    background-color: #708095;
+    color: white;
+}
+
 .code{
     background: #ffffff;
     font-family: Verdana;
+    padding: 6px;
 }
 
 .attention{
     font-family: Helvetica, Sans-serif;
     color: red;
+}
+
+.T1R1{
+    background-color: ddffdd;
+}
+
+.T1R2{
+    background-color: eeffee;
+}
+
+.T2R1{
+    background-color: e0e0ff;
+}
+
+.T2R2{
+    background-color: f0f0ff;
 }
 
 #subsection{
@@ -267,7 +548,7 @@ text-decoration: none;
 width: 80%;
 }
 
-html>body #vertsurfbar li a {
+html.body #vertsurfbar li a {
 width: auto;
 }
 
