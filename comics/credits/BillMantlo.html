@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Bill Mantlo</h2>
+<br>
+<tr id="C570X20" onmouseover="showcover('../covers/Marvel Team-Up 048.jpg', 'Bill Mantlo', 'Sal Buscema', 'Mike Esposito', 'Marvel')"><td> <a href="../spiderman.html#A570X20">Marvel Team-Up 048</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1976.08</td> </tr>
+<tr id="C1850X30" onmouseover="showcover('../covers/Iron Man 112.webp', 'Bill Mantlo', 'Keith Pollard; Alfredo Alcala', 'Alfredo Alcala', 'Marvel')"><td> <a href="../marveluniverse.html#A1850X30">Iron Man 112</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1978.07</td> </tr>
+<tr id="C2190X20" onmouseover="showcover('../covers/Captain America 291.webp', 'Bill Mantlo', 'Herb Trimpe', 'Jack Abel', 'Marvel')"><td> <a href="../marveluniverse.html#A2190X20">Captain America 291</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1984.03</td> </tr>
+<tr id="C2230X20" onmouseover="showcover('../covers/Incredible Hulk 299.webp', 'Bill Mantlo', 'Sal Buscema', 'Gerry Talaoc', 'Marvel')"><td> <a href="../marveluniverse.html#A2230X20">Incredible Hulk 299</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1984.09</td> </tr>
+<tr id="C2230X30" onmouseover="showcover('../covers/Incredible Hulk 300.webp', 'Bill Mantlo', 'Sal Buscema; Gerry Talaoc; Stan Rouse; Danny Bulanadi', 'Gerry Talaoc; Danny Bulanadi', 'Marvel')"><td> <a href="../marveluniverse.html#A2230X30">Incredible Hulk 300</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1984.10</td> </tr>
+<tr id="C4550X20" onmouseover="showcover('../covers/Invasion 001.webp', 'Keith Giffen; Bill Mantlo', 'Keith Giffen; Todd McFarlane', 'P. Craig Russell', 'DC')"><td> <a href="../dcuniverse.html#A4550X20">Invasion 001</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1989.01</td> </tr>
+<tr id="C4550X30" onmouseover="showcover('../covers/Invasion 002.webp', 'Keith Giffen; Bill Mantlo', 'Keith Giffen; Todd McFarlane', '', 'DC')"><td> <a href="../dcuniverse.html#A4550X30">Invasion 002</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1989.02</td> </tr>
+<tr id="C4550X40" onmouseover="showcover('../covers/Invasion 003.webp', 'Keith Giffen; Bill Mantlo', 'Keith Giffen; Bart Sears', '', 'DC')"><td> <a href="../dcuniverse.html#A4550X40">Invasion 003</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1989.03</td> </tr>
+</table></body></html>

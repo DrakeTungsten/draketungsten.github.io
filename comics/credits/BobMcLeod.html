@@ -1,0 +1,63 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Bob McLeod</h2>
+<br>
+<tr id="C1990X30" onmouseover="showcover('../covers/Marvel Two-In-One 051.webp', 'Peter Gillis', 'Frank Miller', 'Bob McLeod', 'Marvel')"><td> <a href="../marveluniverse.html#A1990X30">Marvel Two-In-One 051</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1979.05</td> </tr>
+<tr id="C1910X20" onmouseover="showcover('../covers/Iron Man 124.webp', 'Bob Layton; David Michelinie', 'Bob Layton; John Romita Jr.', 'Bob Layton; Bob McLeod; Bob Wiacek; Joe Rubinstein; Dan Green', 'Marvel')"><td> <a href="../marveluniverse.html#A1910X20">Iron Man 124</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1979.07</td> </tr>
+<tr id="C210X180" onmouseover="showcover('../covers/Uncanny X-Men Annual 4.jpg', 'Chris Claremont', 'John Romita Jr.', 'Bob McLeod', 'Marvel')"><td> <a href="../xmen.html#A210X180">Uncanny X-Men Annual 4</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1980.00</td> </tr>
+<tr id="C930X20" onmouseover="showcover('../covers/Peter Parker 113.jpg', 'Peter David', 'Bob McLeod', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A930X20">Peter Parker 113</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1986.04</td> </tr>
+<tr id="C970X20" onmouseover="showcover('../covers/Peter Parker 119.jpg', 'Peter David', 'Rich Buckler', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A970X20">Peter Parker 119</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1986.10</td> </tr>
+<tr id="C970X30" onmouseover="showcover('../covers/Peter Parker 121.jpg', 'Peter David', 'John Romita', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A970X30">Peter Parker 121</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1986.12</td> </tr>
+<tr id="C1030X30" onmouseover="showcover('../covers/Amazing Spider-Man 293.jpg', 'J. M. DeMatteis', 'Mike Zeck', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A1030X30">Amazing Spider-Man 293</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1987.10</td> </tr>
+<tr id="C1030X40" onmouseover="showcover('../covers/Peter Parker 131.jpg', 'J. M. DeMatteis', 'Mike Zeck', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A1030X40">Peter Parker 131</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1987.10</td> </tr>
+<tr id="C1030X20" onmouseover="showcover('../covers/Web Of Spider-Man 031.jpg', 'J. M. DeMatteis', 'Mike Zeck', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A1030X20">Web Of Spider-Man 031</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1987.10</td> </tr>
+<tr id="C1030X60" onmouseover="showcover('../covers/Amazing Spider-Man 294.jpg', 'J. M. DeMatteis', 'Mike Zeck', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A1030X60">Amazing Spider-Man 294</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1987.11</td> </tr>
+<tr id="C1030X70" onmouseover="showcover('../covers/Peter Parker 132.jpg', 'J. M. DeMatteis', 'Mike Zeck', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A1030X70">Peter Parker 132</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1987.11</td> </tr>
+<tr id="C1030X50" onmouseover="showcover('../covers/Web Of Spider-Man 032.jpg', 'J. M. DeMatteis', 'Mike Zeck', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A1030X50">Web Of Spider-Man 032</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1987.11</td> </tr>
+<tr id="C2630X20" onmouseover="showcover('../covers/Incredible Hulk 369.webp', 'Peter David', 'Dale Keown', 'Bob McLeod', 'Marvel')"><td> <a href="../marveluniverse.html#A2630X20">Incredible Hulk 369</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1990.05</td> </tr>
+<tr id="C2630X30" onmouseover="showcover('../covers/Incredible Hulk 370.webp', 'Peter David', 'Dale Keown', 'Bob McLeod', 'Marvel')"><td> <a href="../marveluniverse.html#A2630X30">Incredible Hulk 370</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1990.06</td> </tr>
+<tr id="C2630X40" onmouseover="showcover('../covers/Incredible Hulk 371.webp', 'Peter David', 'Dale Keown', 'Bob McLeod', 'Marvel')"><td> <a href="../marveluniverse.html#A2630X40">Incredible Hulk 371</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1990.07</td> </tr>
+<tr id="C2630X50" onmouseover="showcover('../covers/Incredible Hulk 372.webp', 'Peter David', 'Dale Keown', 'Bob McLeod', 'Marvel')"><td> <a href="../marveluniverse.html#A2630X50">Incredible Hulk 372</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1990.08</td> </tr>
+<tr id="C2630X70" onmouseover="showcover('../covers/Incredible Hulk 374.webp', 'Peter David', 'Dale Keown', 'Bob McLeod', 'Marvel')"><td> <a href="../marveluniverse.html#A2630X70">Incredible Hulk 374</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1990.10</td> </tr>
+<tr id="C2630X80" onmouseover="showcover('../covers/Incredible Hulk 375.webp', 'Peter David', 'Dale Keown', 'Bob McLeod', 'Marvel')"><td> <a href="../marveluniverse.html#A2630X80">Incredible Hulk 375</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1990.11</td> </tr>
+<tr id="C2630X90" onmouseover="showcover('../covers/Incredible Hulk 376.webp', 'Peter David', 'Dale Keown', 'Bob McLeod', 'Marvel')"><td> <a href="../marveluniverse.html#A2630X90">Incredible Hulk 376</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1990.12</td> </tr>
+<tr id="C2630X100" onmouseover="showcover('../covers/Incredible Hulk 377.webp', 'Peter David', 'Dale Keown', 'Bob McLeod', 'Marvel')"><td> <a href="../marveluniverse.html#A2630X100">Incredible Hulk 377</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1991.01</td> </tr>
+<tr id="C750X30" onmouseover="showcover('../covers/Wolverine 082.webp', 'Larry Hama', 'Adam Kubert; Bob McLeod', 'Mark Farmer; Joe Kubert; Bob McLeod', 'Marvel')"><td> <a href="../xmen.html#A750X30">Wolverine 082</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1994.06</td> </tr>
+<tr id="C250X220" onmouseover="showcover('../covers/Untold Tales Of Spider-Man 025.jpg', 'Kurt Busiek', 'Ron Frenz', 'Bob McLeod', 'Marvel')"><td> <a href="../spiderman.html#A250X220">Untold Tales Of Spider-Man 025</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1997.10</td> </tr>
+<tr id="C5170X70" onmouseover="showcover('../covers/JLA 015.webp', 'Grant Morrison', 'Gary Frank; Greg Land; Howard Porter', 'John Dell; Bob McLeod', 'DC')"><td> <a href="../dcuniverse.html#A5170X70">JLA 015</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1998.02</td> </tr>
+<tr id="C610X20" onmouseover="showcover('../covers/The Iron Age 001.webp', 'Kurt Busiek', 'Patrick Zircher', 'Bob McLeod', 'Marvel')"><td> <a href="../marveluniverse.html#A610X20">The Iron Age 001</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1998.08</td> </tr>
+<tr id="C610X30" onmouseover="showcover('../covers/The Iron Age 002.webp', 'Kurt Busiek', 'Patrick Zircher', 'Bob McLeod', 'Marvel')"><td> <a href="../marveluniverse.html#A610X30">The Iron Age 002</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1998.09</td> </tr>
+</table></body></html>

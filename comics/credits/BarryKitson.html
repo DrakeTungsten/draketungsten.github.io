@@ -1,0 +1,44 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Barry Kitson</h2>
+<br>
+<tr id="C2390X50" onmouseover="showcover('../covers/Detective Comics 670.webp', 'Chuck Dixon', 'Barry Kitson', 'Scott Hanna', 'DC')"><td> <a href="../batman.html#A2390X50">Detective Comics 670</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1994.01</td> </tr>
+<tr id="C2430X100" onmouseover="showcover('../covers/Legends Of The Dark Knight 063.webp', 'Denny O\'Neil', 'Barry Kitson', 'Scott Hanna', 'DC')"><td> <a href="../batman.html#A2430X100">Legends Of The Dark Knight 063</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1994.08</td> </tr>
+<tr id="C2010X30" onmouseover="showcover('../covers/The Brave And The Bold (1999) 002.webp', 'Tom Peyer; Mark Waid', 'Barry Kitson', 'Barry Kitson', 'DC')"><td> <a href="../dcuniverse.html#A2010X30">The Brave And The Bold (1999) 002</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1999.11</td> </tr>
+<tr id="C2030X20" onmouseover="showcover('../covers/The Brave And The Bold (1999) 003.webp', 'Tom Peyer; Mark Waid', 'Barry Kitson', 'Barry Kitson', 'DC')"><td> <a href="../dcuniverse.html#A2030X20">The Brave And The Bold (1999) 003</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1999.12</td> </tr>
+<tr id="C2030X30" onmouseover="showcover('../covers/The Brave And The Bold (1999) 004.webp', 'Tom Peyer; Mark Waid', 'Tim Grindberg', 'Barry Kitson', 'DC')"><td> <a href="../dcuniverse.html#A2030X30">The Brave And The Bold (1999) 004</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2000.01</td> </tr>
+<tr id="C2490X20" onmouseover="showcover('../covers/The Silver Age 1.webp', 'Mark Waid', 'Barry Kitson', 'Barry Kitson', 'DC')"><td> <a href="../dcuniverse.html#A2490X20">The Silver Age 1</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2000.07</td> </tr>
+</table></body></html>

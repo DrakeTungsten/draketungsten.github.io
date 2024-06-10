@@ -1,0 +1,56 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Al Williamson</h2>
+<br>
+<tr id="C530X20" onmouseover="showcover('../covers/Uncanny X-Men 211.webp', 'Chris Claremont', 'John Romita Jr.; Bret Blevins', 'Al Williamson', 'Marvel')"><td> <a href="../xmen.html#A530X20">Uncanny X-Men 211</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1986.11</td> </tr>
+<tr id="C570X20" onmouseover="showcover('../covers/Wolverine 001.webp', 'Chris Claremont', 'John Buscema', 'Al Williamson', 'Marvel')"><td> <a href="../xmen.html#A570X20">Wolverine 001</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1988.11</td> </tr>
+<tr id="C630X20" onmouseover="showcover('../covers/Wolverine 006.webp', 'Chris Claremont', 'John Buscema', 'Al Williamson', 'Marvel')"><td> <a href="../xmen.html#A630X20">Wolverine 006</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1989.04</td> </tr>
+<tr id="C70X20" onmouseover="showcover('../covers/Fafhrd And The Gray Mouser 001.jpg', 'Howard Chaykin', 'Mike Mignola', 'Al Williamson', 'Dark Horse')"><td> <a href="../swordandsorcery.html#A70X20">Fafhrd And The Gray Mouser 001</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1990.10</td> </tr>
+<tr id="C70X30" onmouseover="showcover('../covers/Fafhrd And The Gray Mouser 002.jpg', 'Howard Chaykin', 'Mike Mignola', 'Al Williamson', 'Dark Horse')"><td> <a href="../swordandsorcery.html#A70X30">Fafhrd And The Gray Mouser 002</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1990.11</td> </tr>
+<tr id="C70X40" onmouseover="showcover('../covers/Fafhrd And The Gray Mouser 003.jpg', 'Howard Chaykin', 'Mike Mignola', 'Al Williamson', 'Dark Horse')"><td> <a href="../swordandsorcery.html#A70X40">Fafhrd And The Gray Mouser 003</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1990.12</td> </tr>
+<tr id="C70X50" onmouseover="showcover('../covers/Fafhrd And The Gray Mouser 004.jpg', 'Howard Chaykin', 'Mike Mignola', 'Al Williamson', 'Dark Horse')"><td> <a href="../swordandsorcery.html#A70X50">Fafhrd And The Gray Mouser 004</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1991.02</td> </tr>
+<tr id="C30X20" onmouseover="showcover('../covers/Man Without Fear 001.jpg', 'Frank Miller', 'John Romita Jr.', 'Al Williamson', 'Marvel')"><td> <a href="../daredevil.html#A30X20">Man Without Fear 001</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1993.10</td> </tr>
+<tr id="C30X30" onmouseover="showcover('../covers/Man Without Fear 002.jpg', 'Frank Miller', 'John Romita Jr.', 'Al Williamson', 'Marvel')"><td> <a href="../daredevil.html#A30X30">Man Without Fear 002</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1993.11</td> </tr>
+<tr id="C30X40" onmouseover="showcover('../covers/Man Without Fear 003.jpg', 'Frank Miller', 'John Romita Jr.', 'Al Williamson', 'Marvel')"><td> <a href="../daredevil.html#A30X40">Man Without Fear 003</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1993.12</td> </tr>
+<tr id="C30X50" onmouseover="showcover('../covers/Man Without Fear 004.jpg', 'Frank Miller', 'John Romita Jr.', 'Al Williamson', 'Marvel')"><td> <a href="../daredevil.html#A30X50">Man Without Fear 004</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1994.01</td> </tr>
+<tr id="C30X60" onmouseover="showcover('../covers/Man Without Fear 005.jpg', 'Frank Miller', 'John Romita Jr.', 'Al Williamson', 'Marvel')"><td> <a href="../daredevil.html#A30X60">Man Without Fear 005</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1994.02</td> </tr>
+<tr id="C250X200" onmouseover="showcover('../covers/Untold Tales Of Spider-Man 017.jpg', 'Kurt Busiek', 'Pat Olliffe', 'Al Williamson', 'Marvel')"><td> <a href="../spiderman.html#A250X200">Untold Tales Of Spider-Man 017</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1997.01</td> </tr>
+<tr id="C250X210" onmouseover="showcover('../covers/Untold Tales Of Spider-Man 018.jpg', 'Kurt Busiek', 'Pat Olliffe', 'Al Williamson', 'Marvel')"><td> <a href="../spiderman.html#A250X210">Untold Tales Of Spider-Man 018</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1997.02</td> </tr>
+<tr id="C4950X30" onmouseover="showcover('../covers/Unlimited Access 001.webp', 'Karl Kesel', 'Pat Olliffe', 'Al Williamson', 'DC')"><td> <a href="../dcuniverse.html#A4950X30">Unlimited Access 001</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1997.12</td> </tr>
+<tr id="C210X30" onmouseover="showcover('../covers/Marvel Universe 001.webp', 'Roger Stern', 'Steve Epting', 'Al Williamson', 'Marvel')"><td> <a href="../marveluniverse.html#A210X30">Marvel Universe 001</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1998.06</td> </tr>
+<tr id="C230X20" onmouseover="showcover('../covers/Marvel Universe 002.webp', 'Roger Stern', 'Steve Epting', 'Al Williamson', 'Marvel')"><td> <a href="../marveluniverse.html#A230X20">Marvel Universe 002</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1998.07</td> </tr>
+<tr id="C230X30" onmouseover="showcover('../covers/Marvel Universe 003.webp', 'Roger Stern', 'Steve Epting', 'Al Williamson', 'Marvel')"><td> <a href="../marveluniverse.html#A230X30">Marvel Universe 003</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1998.08</td> </tr>
+</table></body></html>

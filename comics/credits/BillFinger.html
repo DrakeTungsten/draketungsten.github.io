@@ -1,0 +1,44 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Bill Finger</h2>
+<br>
+<tr id="C290X20" onmouseover="showcover('../covers/Detective Comics 027.jpg', 'Bill Finger', 'Bob Kane', 'Bob Kane', 'DC')"><td> <a href="../dcuniverse.html#A290X20">Detective Comics 027</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1939.05</td> </tr>
+<tr id="C450X30" onmouseover="showcover('../covers/Detective Comics 038.webp', 'Bill Finger', 'Bob Kane', 'Jerry Robinson', 'DC')"><td> <a href="../dcuniverse.html#A450X30">Detective Comics 038</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1940.04</td> </tr>
+<tr id="C470X30" onmouseover="showcover('../covers/All-American Comics 016.webp', 'Bill Finger', 'Marty Nodell', 'Marty Nodell', 'DC')"><td> <a href="../dcuniverse.html#A470X30">All-American Comics 016</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1940.07</td> </tr>
+<tr id="C330X40" onmouseover="showcover('../covers/Batman 005.jpg', 'Bill Finger', 'Bob Kane', 'Jerry Robinson; George Roussos', 'DC')"><td> <a href="../dcuniverse.html#A330X40">Batman 005</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1941.04</td> </tr>
+<tr id="C530X30" onmouseover="showcover('../covers/Detective Comics 140.webp', 'Bill Finger', 'Dick Sprang', 'Charles Paris', 'DC')"><td> <a href="../batman.html#A530X30">Detective Comics 140</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1948.10</td> </tr>
+<tr id="C1010X20" onmouseover="showcover('../covers/Worlds Finest 087.webp', 'Bill Finger', 'Dick Sprang', 'Ray Burnley', 'DC')"><td> <a href="../dcuniverse.html#A1010X20">World's Finest 087</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1957.03</td> </tr>
+</table></body></html>

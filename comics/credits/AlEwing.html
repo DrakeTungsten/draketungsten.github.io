@@ -1,0 +1,42 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Al Ewing</h2>
+<br>
+<tr id="C470X20" onmouseover="showcover('../covers/Mars Attacks Judge Dredd 001.jpg', 'Al Ewing', 'John McCrea', 'John McCrea', 'various')"><td> <a href="../misc.html#A470X20">Mars Attacks Judge Dredd 001</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>2013.09</td> </tr>
+<tr id="C470X30" onmouseover="showcover('../covers/Mars Attacks Judge Dredd 002.jpg', 'Al Ewing', 'John McCrea', 'John McCrea', 'various')"><td> <a href="../misc.html#A470X30">Mars Attacks Judge Dredd 002</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>2013.10</td> </tr>
+<tr id="C470X40" onmouseover="showcover('../covers/Mars Attacks Judge Dredd 003.jpg', 'Al Ewing', 'John McCrea', 'John McCrea', 'various')"><td> <a href="../misc.html#A470X40">Mars Attacks Judge Dredd 003</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>2013.11</td> </tr>
+<tr id="C470X50" onmouseover="showcover('../covers/Mars Attacks Judge Dredd 004.jpg', 'Al Ewing', 'John McCrea', 'John McCrea', 'various')"><td> <a href="../misc.html#A470X50">Mars Attacks Judge Dredd 004</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>2013.12</td> </tr>
+</table></body></html>

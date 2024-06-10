@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Al Milgrom</h2>
+<br>
+<tr id="C30X60" onmouseover="showcover('../covers/Sword Of Sorcery 005.jpg', 'Denny O\'Neil', 'Walter Simonson', 'Al Milgrom', 'Dark Horse')"><td> <a href="../swordandsorcery.html#A30X60">Sword Of Sorcery 005</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1973.11</td> </tr>
+<tr id="C30X20" onmouseover="showcover('../covers/Master Of Kung Fu 015.jpg', 'Steve Englehart', 'Jim Starlin', 'Al Milgrom', 'Marvel')"><td> <a href="../masterofkungfu.html#A30X20">Master Of Kung Fu 015</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1973.12</td> </tr>
+<tr id="C30X30" onmouseover="showcover('../covers/Master Of Kung Fu 017.jpg', 'Steve Englehart', 'Jim Starlin', 'Al Milgrom', 'Marvel')"><td> <a href="../masterofkungfu.html#A30X30">Master Of Kung Fu 017</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1974.04</td> </tr>
+<tr id="C2390X40" onmouseover="showcover('../covers/Marvel Fanfare 012.webp', 'George Perez; Ralph Macchio', 'George Perez', 'Al Milgrom', 'Marvel')"><td> <a href="../marveluniverse.html#A2390X40">Marvel Fanfare 012</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1984.01</td> </tr>
+<tr id="C2470X20" onmouseover="showcover('../covers/Incredible Hulk 324.webp', 'Al Milgrom', 'Al Milgrom; Dennis Janke', 'Dennis Janke', 'Marvel')"><td> <a href="../marveluniverse.html#A2470X20">Incredible Hulk 324</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1986.10</td> </tr>
+<tr id="C2590X30" onmouseover="showcover('../covers/Fantastic Four 348.webp', 'Walter Simonson', 'Arthur Adams; Gracine Tanaka', 'Art Thibert; Al Milgrom', 'Marvel')"><td> <a href="../marveluniverse.html#A2590X30">Fantastic Four 348</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1991.01</td> </tr>
+<tr id="C2590X40" onmouseover="showcover('../covers/Fantastic Four 349.webp', 'Walter Simonson', 'Arthur Adams; Gracine Tanaka', 'Art Thibert; Al Milgrom', 'Marvel')"><td> <a href="../marveluniverse.html#A2590X40">Fantastic Four 349</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1991.02</td> </tr>
+<tr id="C710X50" onmouseover="showcover('../covers/Wolverine 057.webp', 'Larry Hama', 'Marc Silvestri', 'Dan Green; Al Milgrom; Joe Rubinstein', 'Marvel')"><td> <a href="../xmen.html#A710X50">Wolverine 057</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1992.07</td> </tr>
+<tr id="C250X90" onmouseover="showcover('../covers/Untold Tales Of Spider-Man 005.jpg', 'Kurt Busiek', 'Pat Olliffe', 'Al Milgrom', 'Marvel')"><td> <a href="../spiderman.html#A250X90">Untold Tales Of Spider-Man 005</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1996.01</td> </tr>
+<tr id="C250X120" onmouseover="showcover('../covers/Untold Tales Of Spider-Man 008.jpg', 'Kurt Busiek', 'Pat Olliffe', 'Al Milgrom', 'Marvel')"><td> <a href="../spiderman.html#A250X120">Untold Tales Of Spider-Man 008</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1996.04</td> </tr>
+<tr id="C1550X20" onmouseover="showcover('../covers/Legacies 006.webp', 'Len Wein', 'Keith Giffen', 'Al Milgrom', 'DC')"><td> <a href="../dcuniverse.html#A1550X20">Legacies 006</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2010.12</td> </tr>
+</table></body></html>

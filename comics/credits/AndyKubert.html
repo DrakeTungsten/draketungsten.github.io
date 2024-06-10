@@ -1,0 +1,53 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Andy Kubert</h2>
+<br>
+<tr id="C2030X20" onmouseover="showcover('../covers/Batman vs Predator 001.jpg', 'Dave Gibbons', 'Andy Kubert', 'Adam Kubert', 'DC')"><td> <a href="../batman.html#A2030X20">Batman vs Predator 001</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1992.01</td> </tr>
+<tr id="C2030X30" onmouseover="showcover('../covers/Batman vs Predator 002.jpg', 'Dave Gibbons', 'Andy Kubert', 'Adam Kubert', 'DC')"><td> <a href="../batman.html#A2030X30">Batman vs Predator 002</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1992.01</td> </tr>
+<tr id="C2030X40" onmouseover="showcover('../covers/Batman vs Predator 003.jpg', 'Dave Gibbons', 'Andy Kubert', 'Adam Kubert', 'DC')"><td> <a href="../batman.html#A2030X40">Batman vs Predator 003</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1992.02</td> </tr>
+<tr id="C2830X20" onmouseover="showcover('../covers/Batman 655.webp', 'Grant Morrison', 'Andy Kubert', 'Andy Kubert', 'DC')"><td> <a href="../batman.html#A2830X20">Batman 655</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2006.09</td> </tr>
+<tr id="C2830X30" onmouseover="showcover('../covers/Batman 656.webp', 'Grant Morrison', 'Andy Kubert', 'Jesse Delperdang', 'DC')"><td> <a href="../batman.html#A2830X30">Batman 656</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2006.10</td> </tr>
+<tr id="C2830X40" onmouseover="showcover('../covers/Batman 657.webp', 'Grant Morrison', 'Andy Kubert', 'Jesse Delperdang', 'DC')"><td> <a href="../batman.html#A2830X40">Batman 657</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2006.11</td> </tr>
+<tr id="C2830X50" onmouseover="showcover('../covers/Batman 658.webp', 'Grant Morrison', 'Andy Kubert', 'Jesse Delperdang', 'DC')"><td> <a href="../batman.html#A2830X50">Batman 658</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2006.12</td> </tr>
+<tr id="C430X20" onmouseover="showcover('../covers/Legacies 001.webp', 'Len Wein', 'Scott Kolins; Andy Kubert', 'Scott Kolins; Joe Kubert', 'DC')"><td> <a href="../dcuniverse.html#A430X20">Legacies 001</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2010.07</td> </tr>
+<tr id="C570X20" onmouseover="showcover('../covers/Legacies 002.webp', 'Len Wein', 'Scott Kolins; Andy Kubert', 'Scott Kolins; Joe Kubert', 'DC')"><td> <a href="../dcuniverse.html#A570X20">Legacies 002</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2010.08</td> </tr>
+<tr id="C6690X20" onmouseover="showcover('../covers/Up In The Sky 001.jpg', 'Tom King', 'Andy Kubert', 'Sandra Hope', 'DC')"><td> <a href="../dcuniverse.html#A6690X20">Up In The Sky 001</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2019.09</td> </tr>
+<tr id="C6690X30" onmouseover="showcover('../covers/Up In The Sky 002.jpg', 'Tom King', 'Andy Kubert', 'Sandra Hope', 'DC')"><td> <a href="../dcuniverse.html#A6690X30">Up In The Sky 002</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2019.10</td> </tr>
+<tr id="C6690X40" onmouseover="showcover('../covers/Up In The Sky 003.jpg', 'Tom King', 'Andy Kubert', 'Sandra Hope', 'DC')"><td> <a href="../dcuniverse.html#A6690X40">Up In The Sky 003</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2019.11</td> </tr>
+<tr id="C6690X50" onmouseover="showcover('../covers/Up In The Sky 004.jpg', 'Tom King', 'Andy Kubert', 'Sandra Hope', 'DC')"><td> <a href="../dcuniverse.html#A6690X50">Up In The Sky 004</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2019.12</td> </tr>
+<tr id="C6690X60" onmouseover="showcover('../covers/Up In The Sky 005.jpg', 'Tom King', 'Andy Kubert', 'Sandra Hope', 'DC')"><td> <a href="../dcuniverse.html#A6690X60">Up In The Sky 005</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2020.01</td> </tr>
+<tr id="C6690X70" onmouseover="showcover('../covers/Up In The Sky 006.jpg', 'Tom King', 'Andy Kubert', 'Sandra Hope', 'DC')"><td> <a href="../dcuniverse.html#A6690X70">Up In The Sky 006</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2020.02</td> </tr>
+</table></body></html>
