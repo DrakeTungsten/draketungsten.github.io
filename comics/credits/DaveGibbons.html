@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Dave Gibbons</h2>
+<br>
+<tr id="C3750X30" onmouseover="showcover('../covers/Superman Annual 11.jpg', 'Alan Moore', 'Dave Gibbons', 'Dave Gibbons', 'DC')"><td> <a href="../dcuniverse.html#A3750X30">Superman Annual 11</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1985.09</td> </tr>
+<tr id="C3870X20" onmouseover="showcover('../covers/DC Challenge 005.webp', 'Mike W. Barr', 'Dave Gibbons', 'Mark Farmer', 'DC')"><td> <a href="../dcuniverse.html#A3870X20">DC Challenge 005</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1986.03</td> </tr>
+<tr id="C2030X20" onmouseover="showcover('../covers/Batman vs Predator 001.jpg', 'Dave Gibbons', 'Andy Kubert', 'Adam Kubert', 'DC')"><td> <a href="../batman.html#A2030X20">Batman vs Predator 001</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1992.01</td> </tr>
+<tr id="C2030X30" onmouseover="showcover('../covers/Batman vs Predator 002.jpg', 'Dave Gibbons', 'Andy Kubert', 'Adam Kubert', 'DC')"><td> <a href="../batman.html#A2030X30">Batman vs Predator 002</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1992.01</td> </tr>
+<tr id="C2030X40" onmouseover="showcover('../covers/Batman vs Predator 003.jpg', 'Dave Gibbons', 'Andy Kubert', 'Adam Kubert', 'DC')"><td> <a href="../batman.html#A2030X40">Batman vs Predator 003</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1992.02</td> </tr>
+<tr id="C790X20" onmouseover="showcover('../covers/Super Soldier 1.jpg', 'Mark Waid; Dave Gibbons', 'Dave Gibbons', 'Dave Gibbons', 'DC')"><td> <a href="../dcuniverse.html#A790X20">Super Soldier 1</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1996.04</td> </tr>
+<tr id="C5710X30" onmouseover="showcover('../covers/Worlds Funnest 1.webp', 'Evan Dorkin', 'Dave Gibbons', 'Dave Gibbons', 'DC')"><td> <a href="../dcuniverse.html#A5710X30">World's Funnest 1</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2001.01</td> </tr>
+<tr id="C2010X20" onmouseover="showcover('../covers/Legacies 004.webp', 'Len Wein', 'Scott Kolins; Jose Garcia-Lopez', 'Scott Kolins; Dave Gibbons', 'DC')"><td> <a href="../dcuniverse.html#A2010X20">Legacies 004</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2010.10</td> </tr>
+</table></body></html>
