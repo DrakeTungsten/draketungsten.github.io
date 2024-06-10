@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Lots</h2>
+<br>
+<tr id="C2050X20" onmouseover="showcover('../covers/Fantastic Four Roast.jpg', 'Fred Hembeck', 'Lots', 'Lots', 'Marvel')"><td> <a href="../marveluniverse.html#A2050X20">Fantastic Four Roast</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1982.05</td> </tr>
+<tr id="C1930X20" onmouseover="showcover('../covers/Batman 400.webp', 'Doug Moench', 'Lots', 'Lots', 'DC')"><td> <a href="../batman.html#A1930X20">Batman 400</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1986.10</td> </tr>
+<tr id="C3910X30" onmouseover="showcover('../covers/DC Challenge 012.webp', 'Lots', 'Lots', 'Lots', 'DC')"><td> <a href="../dcuniverse.html#A3910X30">DC Challenge 012</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1986.10</td> </tr>
+<tr id="C3130X110" onmouseover="showcover('../covers/The Superior Foes Of Spider-Man 010.jpg', 'James Asmus', 'Lots', 'Lots', 'Marvel')"><td> <a href="../marveluniverse.html#A3130X110">The Superior Foes<br> Of Spider-Man 010</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2014.05</td> </tr>
+<tr id="C6730X50" onmouseover="showcover('../covers/Batman Superman (2019) 019.jpg', 'Gene Luen Yang', 'Lots', 'Lots', 'DC')"><td> <a href="../dcuniverse.html#A6730X50">Batman Superman (2019) 019</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2021.08</td> </tr>
+<tr id="C790X90" onmouseover="showcover('../covers/Batman Adventures Holiday Special 1.webp', 'Lots', 'Lots', 'Lots', 'DC')"><td> <a href="../batman.html#A790X90">Batman Adventures Holiday Special 1</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td></td> </tr>
+<tr id="C410X20" onmouseover="showcover('../covers/The Audio Adventures Special 1.webp', 'Dennis McNicholas', 'Lots', 'Lots', 'DC')"><td> <a href="../batman.html#A410X20">The Audio Adventures Special 1</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td></td> </tr>
+</table></body></html>

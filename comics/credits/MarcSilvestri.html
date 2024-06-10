@@ -1,0 +1,48 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Marc Silvestri</h2>
+<br>
+<tr id="C550X30" onmouseover="showcover('../covers/Uncanny X-Men 244.webp', 'Chris Claremont', 'Marc Silvestri', 'Dan Green', 'Marvel')"><td> <a href="../xmen.html#A550X30">Uncanny X-Men 244</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1989.05</td> </tr>
+<tr id="C590X20" onmouseover="showcover('../covers/Wolverine 037.webp', 'Larry Hama', 'Marc Silvestri', 'Dan Green', 'Marvel')"><td> <a href="../xmen.html#A590X20">Wolverine 037</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1991.03</td> </tr>
+<tr id="C710X20" onmouseover="showcover('../covers/Wolverine 050.webp', 'Larry Hama', 'Marc Silvestri', 'Dan Green; Hilary Barta; Tom Palmer', 'Marvel')"><td> <a href="../xmen.html#A710X20">Wolverine 050</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1992.01</td> </tr>
+<tr id="C710X30" onmouseover="showcover('../covers/Wolverine 055.webp', 'Larry Hama', 'Marc Silvestri', 'Dan Green', 'Marvel')"><td> <a href="../xmen.html#A710X30">Wolverine 055</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1992.06</td> </tr>
+<tr id="C710X40" onmouseover="showcover('../covers/Wolverine 056.webp', 'Larry Hama', 'Marc Silvestri', 'Dan Green', 'Marvel')"><td> <a href="../xmen.html#A710X40">Wolverine 056</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1992.07</td> </tr>
+<tr id="C710X50" onmouseover="showcover('../covers/Wolverine 057.webp', 'Larry Hama', 'Marc Silvestri', 'Dan Green; Al Milgrom; Joe Rubinstein', 'Marvel')"><td> <a href="../xmen.html#A710X50">Wolverine 057</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1992.07</td> </tr>
+<tr id="C910X110" onmouseover="showcover('../covers/New X-Men 151.webp', 'Grant Morrison', 'Marc Silvestri', 'Joe Weems; Billy Tan; Matt Banning', 'Marvel')"><td> <a href="../xmen.html#A910X110">New X-Men 151</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2004.03</td> </tr>
+<tr id="C910X120" onmouseover="showcover('../covers/New X-Men 152.webp', 'Grant Morrison', 'Marc Silvestri', 'Joe Weems; Billy Tan', 'Marvel')"><td> <a href="../xmen.html#A910X120">New X-Men 152</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2004.03</td> </tr>
+<tr id="C910X130" onmouseover="showcover('../covers/New X-Men 153.webp', 'Grant Morrison', 'Marc Silvestri', 'Joe Weems; Tim Townsend', 'Marvel')"><td> <a href="../xmen.html#A910X130">New X-Men 153</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2004.04</td> </tr>
+<tr id="C910X140" onmouseover="showcover('../covers/New X-Men 154.webp', 'Grant Morrison', 'Marc Silvestri', 'Joe Weems', 'Marvel')"><td> <a href="../xmen.html#A910X140">New X-Men 154</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>2004.05</td> </tr>
+</table></body></html>

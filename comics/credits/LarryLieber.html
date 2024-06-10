@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Larry Lieber</h2>
+<br>
+<tr id="C510X20" onmouseover="showcover('../covers/Journey Into Mystery 083.webp', 'Stan Lee; Larry Lieber', 'Jack Kirby', 'Joe Sinnott', 'Marvel')"><td> <a href="../marveluniverse.html#A510X20">Journey Into Mystery 083</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1962.08</td> </tr>
+<tr id="C510X40" onmouseover="showcover('../covers/Journey Into Mystery 088.webp', 'Stan Lee; Larry Lieber', 'Jack Kirby; Steve Ditko', 'Dick Ayers; Steve Ditko', 'Marvel')"><td> <a href="../marveluniverse.html#A510X40">Journey Into Mystery 088</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1963.01</td> </tr>
+<tr id="C590X30" onmouseover="showcover('../covers/Tales Of Suspense 039.webp', 'Stan Lee; Larry Lieber', 'Don Heck', 'Don Heck', 'Marvel')"><td> <a href="../marveluniverse.html#A590X30">Tales Of Suspense 039</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1963.03</td> </tr>
+</table></body></html>
