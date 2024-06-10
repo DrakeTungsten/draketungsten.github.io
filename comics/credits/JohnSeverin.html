@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>John Severin</h2>
+<br>
+<tr id="C1330X20" onmouseover="showcover('../covers/Incredible Hulk 108.jpg', 'Stan Lee', 'Herb Trimpe; Marie Severin', 'John Severin', 'Marvel')"><td> <a href="../marveluniverse.html#A1330X20">Incredible Hulk 108</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1968.10</td> </tr>
+<tr id="C1330X30" onmouseover="showcover('../covers/Incredible Hulk 109.jpg', 'Stan Lee', 'Frank Giacoia; Herb Trimpe', 'John Severin', 'Marvel')"><td> <a href="../marveluniverse.html#A1330X30">Incredible Hulk 109</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1968.11</td> </tr>
+<tr id="C1330X40" onmouseover="showcover('../covers/Incredible Hulk 110.jpg', 'Stan Lee', 'Herb Trimpe', 'John Severin', 'Marvel')"><td> <a href="../marveluniverse.html#A1330X40">Incredible Hulk 110</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1968.12</td> </tr>
+<tr id="C1330X80" onmouseover="showcover('../covers/Incredible Hulk 131.webp', 'Roy Thomas', 'Herb Trimpe', 'John Severin', 'Marvel')"><td> <a href="../marveluniverse.html#A1330X80">Incredible Hulk 131</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1970.09</td> </tr>
+<tr id="C1330X90" onmouseover="showcover('../covers/Incredible Hulk 132.webp', 'Roy Thomas', 'Herb Trimpe', 'John Severin', 'Marvel')"><td> <a href="../marveluniverse.html#A1330X90">Incredible Hulk 132</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1970.10</td> </tr>
+<tr id="C1330X100" onmouseover="showcover('../covers/Incredible Hulk 133.webp', 'Roy Thomas', 'Herb Trimpe', 'John Severin', 'Marvel')"><td> <a href="../marveluniverse.html#A1330X100">Incredible Hulk 133</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1970.11</td> </tr>
+<tr id="C1450X30" onmouseover="showcover('../covers/Incredible Hulk 142.webp', 'Roy Thomas', 'Herb Trimpe', 'John Severin', 'Marvel')"><td> <a href="../marveluniverse.html#A1450X30">Incredible Hulk 142</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1971.08</td> </tr>
+<tr id="C510X20" onmouseover="showcover('../covers/The Tyger 1.jpg', 'Garth Ennis', 'John Severin', 'John Severin', 'Marvel')"><td> <a href="../punisher.html#A510X20">The Tyger 1</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2006.02</td> </tr>
+</table></body></html>

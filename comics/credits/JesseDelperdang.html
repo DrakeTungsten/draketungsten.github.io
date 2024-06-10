@@ -1,0 +1,43 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Jesse Delperdang</h2>
+<br>
+<tr id="C2910X120" onmouseover="showcover('../covers/Incredible Hulk 463.webp', 'Peter David', 'Adam Kubert', 'Mark Farmer; Dan Green; Jesse Delperdang; Bud LaRosa', 'Marvel')"><td> <a href="../marveluniverse.html#A2910X120">Incredible Hulk 463</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1998.04</td> </tr>
+<tr id="C3070X110" onmouseover="showcover('../covers/Captain America (2005) 010.jpg', 'Ed Brubaker', 'Lee Weeks', 'Jesse Delperdang; Lee Weeks; Mike Perkins', 'Marvel')"><td> <a href="../marveluniverse.html#A3070X110">Captain America (2005) 010</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2005.10</td> </tr>
+<tr id="C2830X30" onmouseover="showcover('../covers/Batman 656.webp', 'Grant Morrison', 'Andy Kubert', 'Jesse Delperdang', 'DC')"><td> <a href="../batman.html#A2830X30">Batman 656</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2006.10</td> </tr>
+<tr id="C2830X40" onmouseover="showcover('../covers/Batman 657.webp', 'Grant Morrison', 'Andy Kubert', 'Jesse Delperdang', 'DC')"><td> <a href="../batman.html#A2830X40">Batman 657</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2006.11</td> </tr>
+<tr id="C2830X50" onmouseover="showcover('../covers/Batman 658.webp', 'Grant Morrison', 'Andy Kubert', 'Jesse Delperdang', 'DC')"><td> <a href="../batman.html#A2830X50">Batman 658</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2006.12</td> </tr>
+</table></body></html>

@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>John Wagner</h2>
+<br>
+<tr id="C2070X30" onmouseover="showcover('../covers/Detective Comics 583.webp', 'John Wagner; Alan Grant', 'Norm Breyfogle', 'Kim DeMulder', 'DC')"><td> <a href="../batman.html#A2070X30">Detective Comics 583</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1988.02</td> </tr>
+<tr id="C2070X40" onmouseover="showcover('../covers/Detective Comics 584.webp', 'John Wagner; Alan Grant', 'Norm Breyfogle', 'Steve Mitchell', 'DC')"><td> <a href="../batman.html#A2070X40">Detective Comics 584</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1988.03</td> </tr>
+<tr id="C2070X60" onmouseover="showcover('../covers/Detective Comics 588.webp', 'John Wagner; Alan Grant', 'Norm Breyfogle', 'Norm Breyfogle', 'DC')"><td> <a href="../batman.html#A2070X60">Detective Comics 588</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1988.07</td> </tr>
+<tr id="C2070X70" onmouseover="showcover('../covers/Detective Comics 589.webp', 'John Wagner; Alan Grant', 'Norm Breyfogle', 'Norm Breyfogle', 'DC')"><td> <a href="../batman.html#A2070X70">Detective Comics 589</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1988.08</td> </tr>
+<tr id="C2070X80" onmouseover="showcover('../covers/Detective Comics 592.webp', 'John Wagner; Alan Grant', 'Norm Breyfogle', 'Norm Breyfogle', 'DC')"><td> <a href="../batman.html#A2070X80">Detective Comics 592</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1988.11</td> </tr>
+<tr id="C2070X90" onmouseover="showcover('../covers/Detective Comics 593.webp', 'John Wagner; Alan Grant', 'Norm Breyfogle', 'Steve Mitchell', 'DC')"><td> <a href="../batman.html#A2070X90">Detective Comics 593</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1988.12</td> </tr>
+<tr id="C370X20" onmouseover="showcover('../covers/Showcase 94 008.webp', 'Alan Grant; John Wagner', 'Teddy Kristiansen', 'Teddy Kristiansen', 'DC')"><td> <a href="../batman.html#A370X20">Showcase '94 008</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1994.07</td> </tr>
+<tr id="C370X30" onmouseover="showcover('../covers/Showcase 94 009.webp', 'Alan Grant; John Wagner', 'Teddy Kristiansen', 'Teddy Kristiansen', 'DC')"><td> <a href="../batman.html#A370X30">Showcase '94 009</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td>&nbsp;</td>  <td>&nbsp;</td> <td>1994.08</td> </tr>
+</table></body></html>
