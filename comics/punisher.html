@@ -1,176 +1,2914 @@
-<html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../hb.css" />
 <link href="comics.ico" rel="icon" type="image/bmp">
 <script type="text/javascript">
-
-function showdefault(){
-    var element = document.getElementById("metadata");
-    element.innerHTML = "metal rules";
-}
-
-function showcover(cover){
-    var element = document.getElementById("metadata");
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
     var dta = "<img src='" + cover +  "' width='250'>";
     element.innerHTML = dta;
-}
-
-
-function swapReprint(){
-    var r  = document.getElementById('issuetable').rows
-    var l = r.length
-    var x
-    var temp
-    for (x = 1; x < l; x++){ //  skip row 0 cuz it's col headers
-        if(r[x].cells.length > 4){
-    	    if(r[x].cells[4].innerHTML != "&nbsp;" 
-	    && r[x].cells[1].innerHTML != "(tpb/gn)"){
-                temp = r[x].cells[4].innerHTML
-                r[x].cells[4].innerHTML = 
-	               r[x].cells[0].innerHTML + " " + r[x].cells[1].innerHTML
-                //  break temp into issue title and number
-                var tl = temp.length
-	        var ch = temp.charAt(tl - 1)
-		while(ch == " "){
-                    tl--
-	            ch = temp.charAt(tl - 1)
-                }
-	        if(ch < "0" || ch > "9"){
-	            r[x].cells[0].innerHTML = temp 
-	            r[x].cells[1].innerHTML = "&nbsp;" 
-	        }
-	        else{
-                    var ishnum = ""
-		    var n = tl - 1
-		    while(temp.charAt(n) == " "){
-                         n--
-                    }
-		    while(temp.charAt(n) != " "){
-		        c = temp.charAt(n)
-		        ishnum = c + ishnum
-                        n--
-		        //alert("ishnum = " + ishnum + "  n = " + n)
-		    }
-	            r[x].cells[0].innerHTML = temp.substr(0, n) 
-	            r[x].cells[1].innerHTML = ishnum   
-	        }
-	    }
-        }
-    }
-    temp = r[5].cells[0].innerHTML
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
 }
 </script>
-				
-<title>punisher</title></head>
+</head>
 <body>
 
-<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
 
-<center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
- <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
- <td><b>Reprint</b></td>   </tr><tr  onmouseover="showcover('covers/Born 001.jpg')" bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>Born 001</td><td style='border-bottom:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Born 002.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Born</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Born 002</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Born 003.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Born 003</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Born 004.jpg')" bgcolor="#ffffff"><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>Born 004</td><td style='border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6"> 
-</td></tr><tr  onmouseover="showcover('covers/Punisher War Zone 001.jpg')" bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>Punisher War Zone 001</td><td style='border-bottom:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher War Zone 002.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Punisher War Zone 002</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher War Zone 003.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher War Zone</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Punisher War Zone 003</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher War Zone 004.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Punisher War Zone 004</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher War Zone 005.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Punisher War Zone 005</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher War Zone 006.jpg')" bgcolor="#ffffff"><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>Punisher War Zone 006</td><td style='border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6">
-</td></tr><tr  onmouseover="showcover('covers/Welcome Back Frank 001.jpg')" bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>Welcome Back, Frank 001</td><td style='border-bottom:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Welcome Back Frank 002.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Welcome Back, Frank 002</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Welcome Back Frank 003.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Welcome Back, Frank 003</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Welcome Back Frank 004.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Welcome Back, Frank 004</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Welcome Back Frank 005.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Welcome Back, Frank 005</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Welcome Back Frank 006.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Welcome Back, Frank</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Welcome Back, Frank 006</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Welcome Back Frank 007.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Welcome Back, Frank 007</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Welcome Back Frank 008.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Welcome Back, Frank 008</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Welcome Back Frank 009.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Welcome Back, Frank 009</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Welcome Back Frank 010.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Welcome Back, Frank 010</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Welcome Back Frank 011.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Welcome Back, Frank 011</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Welcome Back Frank 012.jpg')" bgcolor="#ffffff"><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>Welcome Back, Frank 012</td><td style='border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6">
-</td></tr><tr  onmouseover="showcover('covers/Punisher (2001) 006.jpg')" bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>"Do Not Fall In New York City"</td><td style='border-bottom:none'>Punisher (2001) 006 </td><td style='border-bottom:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Marvel Knights Double Shot 001.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Roots"</td><td style='border-bottom:none;border-top:none'>Marvel Knights Double Shot 001 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (2001) 013.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"A Good Clean Fight"</td><td style='border-bottom:none;border-top:none'>Punisher (2001) 013 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (2001) 014.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Killing La Vida Loca"</td><td style='border-bottom:none;border-top:none'>Punisher (2001) 014 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (2001) 015.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Soap</td><td style='border-bottom:none;border-top:none'>"The Exclusive"</td><td style='border-bottom:none;border-top:none'>Punisher (2001) 015 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (2001) 016.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>The Complete Collection v2</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>Wolverine</td><td style='border-bottom:none;border-top:none'>"Vertical Challenge"</td><td style='border-bottom:none;border-top:none'>Punisher (2001) 016 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (2001) 017.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Wolverine</td><td style='border-bottom:none;border-top:none'>"Aim Low"</td><td style='border-bottom:none;border-top:none'>Punisher (2001) 017 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (2001) 018.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Belfast</td><td style='border-bottom:none;border-top:none'>"Downtown"</td><td style='border-bottom:none;border-top:none'>Punisher (2001) 018 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (2001) 019.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Joan</td><td style='border-bottom:none;border-top:none'>"Of Mice And Men"</td><td style='border-bottom:none;border-top:none'>Punisher (2001) 019 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (2001) 020.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Brotherhood"</td><td style='border-bottom:none;border-top:none'>Punisher (2001) 020 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (2001) 021.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Brotherhood"</td><td style='border-bottom:none;border-top:none'>Punisher (2001) 021 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (2001) 022.jpg')" bgcolor="#ffffff"><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>"Brotherhood"</td><td style='border-top:none'>Punisher (2001) 022 </td><td style='border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6">
-</td></tr><tr  onmouseover="showcover('covers/Punisher (2001) 032.jpg')" bgcolor="#f9f9a5"><td>Punisher (2001)</td><td>032</td><td>&nbsp</td><td>"Soap"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6">
-</td></tr><tr  onmouseover="showcover('covers/Punisher (Max) 001.jpg')" bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>"In the Beginning"</td><td style='border-bottom:none'>Punisher (Max) 001 </td><td style='border-bottom:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 002.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"In the Beginning"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 002 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 003.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v1</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"In The Beginning"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 003 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 004.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"In the Beginning"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 004 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 005.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"In the Beginning"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 005 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 006.jpg')" bgcolor="#ffffff"><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>"In the Beginning"</td><td style='border-top:none'>Punisher (Max) 006 </td><td style='border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6">
-</td></tr><tr  onmouseover="showcover('covers/Punisher (Max) 013.jpg')" bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>"Mother Russia"</td><td style='border-bottom:none'>Punisher (Max) 013 </td><td style='border-bottom:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 014.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Mother Russia"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 014 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 015.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Mother Russia"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 015 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 016.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Mother Russia"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 016 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 017.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Mother Russia"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 017 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 018.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v2</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Mother Russia"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 018</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 019.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Up Is Down And Black Is White"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 019 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 020.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Up Is Down And Black Is White"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 020 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 021.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Up Is Down And Black Is White"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 021 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 022.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Up Is Down And Black Is White"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 022 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 023.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Up Is Down And Black Is White"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 023 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 024.jpg')" bgcolor="#ffffff"><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>"Up Is Down And Black Is White"</td><td style='border-top:none'>Punisher (Max) 024 </td><td style='border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6"> 
-</td></tr><tr  onmouseover="showcover('covers/Punisher (Max) 031.jpg')" bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>"Barracuda"</td><td style='border-bottom:none'>Punisher (Max) 031 </td><td style='border-bottom:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 032.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Barracuda"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 032 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 033.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v3</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Barracuda"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 033 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 034.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Barracuda"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 034 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 035.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Barracuda"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 035 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 036.jpg')" bgcolor="#ffffff"><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>"Barracuda"</td><td style='border-top:none'>Punisher (Max) 036 </td><td style='border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6">
-</td></tr><tr  onmouseover="showcover('covers/Punisher (Max) 037.jpg')" bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>"Man Of Stone"</td><td style='border-bottom:none'>Punisher (Max) 037 </td><td style='border-bottom:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 038.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Man Of Stone"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 038 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 039.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Man Of Stone"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 039 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 040.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Man Of Stone"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 040 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 041.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Man Of Stone"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 041 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 042.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v4</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Man Of Stone"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 042</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 043.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Widowmaker"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 043 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 044.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Widowmaker"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 044 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 045.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Widowmaker"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 045 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 046.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Widowmaker"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 046 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 047.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Widowmaker"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 047 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 048.jpg')" bgcolor="#ffffff"><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>"Widowmaker"</td><td style='border-top:none'>Punisher (Max) 048 </td><td style='border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6">
-</td></tr><tr  onmouseover="showcover('covers/Punisher (Max) 049.jpg')" bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>"Long Cold Dark"</td><td style='border-bottom:none'>Punisher (Max) 049 </td><td style='border-bottom:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 050.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Long Cold Dark"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 050 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 051.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Long Cold Dark"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 051 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 052.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Long Cold Dark"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 052 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 053.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Long Cold Dark"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 053 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 054.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Punisher Max v5</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Long Cold Dark"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 054</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 055.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Valley Forge, Valley Forge"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 055 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 056.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Valley Forge, Valley Forge"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 056 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 057.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Valley Forge, Valley Forge"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 057 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 058.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Valley Forge, Valley Forge"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 058 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 059.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Valley Forge, Valley Forge"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 059 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/Punisher (Max) 060.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Valley Forge, Valley Forge"</td><td style='border-bottom:none;border-top:none'>Punisher (Max) 060 </td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6">
-</td></tr><tr  onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 001.jpg')" bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>The Resurrection Of Ma Gnucci 001</td><td style='border-bottom:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 002.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>The Resurrection Of Ma Gnucci 002</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 003.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>The Resurrection Of Ma Gnucci</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>The Resurrection Of Ma Gnucci 003</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 004.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>The Resurrection Of Ma Gnucci 004</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 005.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>The Resurrection Of Ma Gnucci 005</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 006.jpg')" bgcolor="#ffffff"><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>The Resurrection Of Ma Gnucci 006</td><td style='border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6">
-</td></tr><tr  onmouseover="showcover('covers/War Of The Realms 001.jpg')" bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>War Of The Realms 001</td><td style='border-bottom:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/War Of The Realms 002.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>War Of The Realms</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>War Of The Realms 002</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/War Of The Realms 003.jpg')" bgcolor="#ffffff"><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>War Of The Realms 003</td><td style='border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6">
-</td></tr><tr  onmouseover="showcover('covers/The Tyger 1.jpg')" bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>The Tyger 1</td><td style='border-bottom:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/The Cell 1.jpg')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>From First To Last</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>The Cell 1</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/The End 1.jpg')" bgcolor="#ffffff"><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>The End 1</td><td style='border-top:none'>&nbsp</td></tr>
-</table></center></body></html>
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="comics.html"><img width="200" src="comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="credits/_index.html"><img width="200" src="_credits.jpg"></a> </center></div>
+
+<div style="position: static; left: 260; top: 15;">
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td> <td><b>Reference 1</b></td> <td><b>Reference 2</b></td>  </tr>
+<tr id="A30X20" onmouseover="showcover('covers/Born 001.jpg', 'Garth Ennis', 'Darick Robertson', 'Tom Palmer', 'Marvel')" class="tpbr" >
+    <td class="topborder" >  Born                         </td>
+    <td class="topborder" >  <a href="#B30X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The First Day"               </td>
+    <td class="topborder" >  Born                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/219365"> 2003.08 </a>    </td>
+</tr>
+<tr id="A30X30" onmouseover="showcover('covers/Born 002.jpg', 'Garth Ennis', 'Darick Robertson', 'Tom Palmer', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Born                         </td>
+    <td class="noborder" >  <a href="#B30X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Second Day"               </td>
+    <td class="noborder" >  Born                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/219366"> 2003.09 </a>    </td>
+</tr>
+<tr id="A30X40" onmouseover="showcover('covers/Born 003.jpg', 'Garth Ennis', 'Darick Robertson', 'Tom Palmer', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Born                         </td>
+    <td class="noborder" >  <a href="#B30X40">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Third Day"               </td>
+    <td class="noborder" >  Born                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/219367"> 2003.10 </a>    </td>
+</tr>
+<tr id="A30X50" onmouseover="showcover('covers/Born 004.jpg', 'Garth Ennis', 'Darick Robertson', 'Tom Palmer', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Born                         </td>
+    <td class="noborder" >  <a href="#B30X50">004 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Last Day"               </td>
+    <td class="noborder" >  Born                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/219368"> 2003.11 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A70X20" onmouseover="showcover('covers/Punisher War Zone 001.jpg', 'Chuck Dixon', 'John Romita Jr.', 'Klaus Janson', 'Marvel')" class="tpbr" >
+    <td class="topborder" >  Punisher War Zone                         </td>
+    <td class="topborder" >  <a href="#B70X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Only the Dead Know Brooklyn"               </td>
+    <td class="topborder" >  Punisher War Zone                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/97156"> 1992.03 </a>    </td>
+</tr>
+<tr id="A70X30" onmouseover="showcover('covers/Punisher War Zone 002.jpg', 'Chuck Dixon', 'John Romita Jr.', 'Klaus Janson', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher War Zone                         </td>
+    <td class="noborder" >  <a href="#B70X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Blood in the Water"               </td>
+    <td class="noborder" >  Punisher War Zone                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/97157"> 1992.04 </a>    </td>
+</tr>
+<tr id="A70X40" onmouseover="showcover('covers/Punisher War Zone 003.jpg', 'Chuck Dixon', 'John Romita Jr.', 'Klaus Janson', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher War Zone                         </td>
+    <td class="noborder" >  <a href="#B70X40">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Frame"               </td>
+    <td class="noborder" >  Punisher War Zone                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/97158"> 1992.05 </a>    </td>
+</tr>
+<tr id="A70X50" onmouseover="showcover('covers/Punisher War Zone 004.jpg', 'Chuck Dixon', 'John Romita Jr.', 'Klaus Janson', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher War Zone                         </td>
+    <td class="noborder" >  <a href="#B70X50">004 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Closer to the Flame"               </td>
+    <td class="noborder" >  Punisher War Zone                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/97159"> 1992.06 </a>    </td>
+</tr>
+<tr id="A70X60" onmouseover="showcover('covers/Punisher War Zone 005.jpg', 'Chuck Dixon', 'John Romita Jr.', 'Klaus Janson', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher War Zone                         </td>
+    <td class="noborder" >  <a href="#B70X60">005 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Feeding Frenzy"               </td>
+    <td class="noborder" >  Punisher War Zone                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/97160"> 1992.07 </a>    </td>
+</tr>
+<tr id="A70X70" onmouseover="showcover('covers/Punisher War Zone 006.jpg', 'Chuck Dixon', 'John Romita Jr.', 'Klaus Janson', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher War Zone                         </td>
+    <td class="noborder" >  <a href="#B70X70">006 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Carrion Eaters"               </td>
+    <td class="noborder" >  Punisher War Zone                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/97161"> 1992.08 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A110X20" onmouseover="showcover('covers/Welcome Back Frank 001.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')" class="tpbr" >
+    <td class="topborder" >  Welcome Back, Frank                         </td>
+    <td class="topborder" >  <a href="#B110X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Welcome Back, Frank"               </td>
+    <td class="topborder" >  Welcome Back, Frank                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/65674"> 2000.04 </a>    </td>
+</tr>
+<tr id="A110X30" onmouseover="showcover('covers/Welcome Back Frank 002.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="#B110X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Badaboom, Badabing"               </td>
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/65675"> 2000.05 </a>    </td>
+</tr>
+<tr id="A110X40" onmouseover="showcover('covers/Welcome Back Frank 003.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="#B110X40">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Devil By The Horns"               </td>
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/65676"> 2000.06 </a>    </td>
+</tr>
+<tr id="A110X50" onmouseover="showcover('covers/Welcome Back Frank 004.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="#B110X50">004 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Wild Kingdom"               </td>
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/65677"> 2000.07 </a>    </td>
+</tr>
+<tr id="A110X60" onmouseover="showcover('covers/Welcome Back Frank 005.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="#B110X60">005 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Even Worse Things"               </td>
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/65678"> 2000.08 </a>    </td>
+</tr>
+<tr id="A110X70" onmouseover="showcover('covers/Welcome Back Frank 006.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="#B110X70">006 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Spit Out Of Luck"               </td>
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/65679"> 2000.09 </a>    </td>
+</tr>
+<tr id="A110X80" onmouseover="showcover('covers/Welcome Back Frank 007.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="#B110X80">007 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Bring out Your Dead"               </td>
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/65680"> 2000.10 </a>    </td>
+</tr>
+<tr id="A110X90" onmouseover="showcover('covers/Welcome Back Frank 008.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="#B110X90">008 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Desperate Measures"               </td>
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/65681"> 2000.11 </a>    </td>
+</tr>
+<tr id="A110X100" onmouseover="showcover('covers/Welcome Back Frank 009.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="#B110X100">009 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "From Russia With Love"               </td>
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/65682"> 2000.12 </a>    </td>
+</tr>
+<tr id="A110X110" onmouseover="showcover('covers/Welcome Back Frank 010.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="#B110X110">010 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Glutton For Punishment"               </td>
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/65683"> 2001.01 </a>    </td>
+</tr>
+<tr id="A110X120" onmouseover="showcover('covers/Welcome Back Frank 011.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="#B110X120">011 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Any Which Way You Can"               </td>
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/64058"> 2001.02 </a>    </td>
+</tr>
+<tr id="A110X130" onmouseover="showcover('covers/Welcome Back Frank 012.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="#B110X130">012 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Go Frank Go"               </td>
+    <td class="noborder" >  Welcome Back, Frank                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/64059"> 2001.03 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A150X20" onmouseover="showcover('covers/Punisher (2001) 006.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')" class="tpbr" >
+    <td class="topborder" >  Punisher (2001)                         </td>
+    <td class="topborder" >  <a href="#B150X20">006 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Do Not Fall In New York City"               </td>
+    <td class="topborder" >  The Complete Collection v2                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/87581"> 2002.01 </a>    </td>
+</tr>
+<tr id="A150X30" onmouseover="showcover('covers/Marvel Knights Double Shot 001.jpg', 'Garth Ennis', 'Joe Quesada', 'Danny Miki', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Marvel Knights Double Shot                         </td>
+    <td class="noborder" >  <a href="#B150X30">001 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Roots"               </td>
+    <td class="noborder" >  The Complete Collection v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/215949"> 2002.06 </a>    </td>
+</tr>
+<tr id="A150X40" onmouseover="showcover('covers/Punisher (2001) 013.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (2001)                         </td>
+    <td class="noborder" >  <a href="#B150X40">013 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "A Good Clean Fight"               </td>
+    <td class="noborder" >  The Complete Collection v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/97965"> 2002.08 </a>    </td>
+</tr>
+<tr id="A150X50" onmouseover="showcover('covers/Punisher (2001) 014.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (2001)                         </td>
+    <td class="noborder" >  <a href="#B150X50">014 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Killing La Vida Loca"               </td>
+    <td class="noborder" >  The Complete Collection v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/132618"> 2002.09 </a>    </td>
+</tr>
+<tr id="A150X60" onmouseover="showcover('covers/Punisher (2001) 015.jpg', 'Garth Ennis', 'Darick Robertson', 'Nelson', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (2001)                         </td>
+    <td class="noborder" >  <a href="#B150X60">015 </a>    </td>
+    <td class="noborder" >  Soap                         </td>
+    <td class="noborder" >  "The Exclusive"               </td>
+    <td class="noborder" >  The Complete Collection v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/132619"> 2002.10 </a>    </td>
+</tr>
+<tr id="A150X70" onmouseover="showcover('covers/Punisher (2001) 016.jpg', 'Garth Ennis', 'Darick Robertson', 'Darick Robertson', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (2001)                         </td>
+    <td class="noborder" >  <a href="#B150X70">016 </a>    </td>
+    <td class="noborder" >  Wolverine                         </td>
+    <td class="noborder" >  "Vertical Challenge"               </td>
+    <td class="noborder" >  The Complete Collection v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/132620"> 2002.11 </a>    </td>
+</tr>
+<tr id="A150X80" onmouseover="showcover('covers/Punisher (2001) 017.jpg', 'Garth Ennis', 'Darick Robertson', 'Darick Robertson', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (2001)                         </td>
+    <td class="noborder" >  <a href="#B150X80">017 </a>    </td>
+    <td class="noborder" >  Wolverine                         </td>
+    <td class="noborder" >  "Aim Low"               </td>
+    <td class="noborder" >  The Complete Collection v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/132621"> 2002.12 </a>    </td>
+</tr>
+<tr id="A150X90" onmouseover="showcover('covers/Punisher (2001) 018.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (2001)                         </td>
+    <td class="noborder" >  <a href="#B150X90">018 </a>    </td>
+    <td class="noborder" >  Belfast                         </td>
+    <td class="noborder" >  "Downtown"               </td>
+    <td class="noborder" >  The Complete Collection v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/132622"> 2002.12 </a>    </td>
+</tr>
+<tr id="A150X100" onmouseover="showcover('covers/Punisher (2001) 019.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (2001)                         </td>
+    <td class="noborder" >  <a href="#B150X100">019 </a>    </td>
+    <td class="noborder" >  Joan                         </td>
+    <td class="noborder" >  "Of Mice And Men"               </td>
+    <td class="noborder" >  The Complete Collection v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/132623"> 2003.01 </a>    </td>
+</tr>
+<tr id="A150X110" onmouseover="showcover('covers/Punisher (2001) 020.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (2001)                         </td>
+    <td class="noborder" >  <a href="#B150X110">020 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Brotherhood"               </td>
+    <td class="noborder" >  The Complete Collection v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/132624"> 2003.02 </a>    </td>
+</tr>
+<tr id="A150X120" onmouseover="showcover('covers/Punisher (2001) 021.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (2001)                         </td>
+    <td class="noborder" >  <a href="#B150X120">021 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Brotherhood"               </td>
+    <td class="noborder" >  The Complete Collection v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/201633"> 2003.03 </a>    </td>
+</tr>
+<tr id="A150X130" onmouseover="showcover('covers/Punisher (2001) 022.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (2001)                         </td>
+    <td class="noborder" >  <a href="#B150X130">022 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Brotherhood"               </td>
+    <td class="noborder" >  The Complete Collection v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/201634"> 2003.04 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A190X20" onmouseover="showcover('covers/Punisher (2001) 032.jpg', 'Garth Ennis', 'Steve Dillon', 'Matt Milla', 'Marvel')" class="Marvelcomic2" >
+    <td class="topborder" >  Punisher (2001)                         </td>
+    <td class="topborder" >  <a href="#B190X20">032 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Soap"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/201644"> 2003.11 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A230X20" onmouseover="showcover('covers/Punisher (Max) 001.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Tom Palmer', 'Marvel')" class="tpbr" >
+    <td class="topborder" >  Punisher (Max)                         </td>
+    <td class="topborder" >  <a href="#B230X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "In the Beginning"               </td>
+    <td class="topborder" >  Punisher Max v1                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/215590"> 2004.03 </a>    </td>
+</tr>
+<tr id="A230X30" onmouseover="showcover('covers/Punisher (Max) 002.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Tom Palmer', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B230X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "In the Beginning"               </td>
+    <td class="noborder" >  Punisher Max v1                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/215591"> 2004.03 </a>    </td>
+</tr>
+<tr id="A230X40" onmouseover="showcover('covers/Punisher (Max) 003.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Tom Palmer', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B230X40">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "In The Beginning"               </td>
+    <td class="noborder" >  Punisher Max v1                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/215592"> 2004.04 </a>    </td>
+</tr>
+<tr id="A230X50" onmouseover="showcover('covers/Punisher (Max) 004.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Tom Palmer', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B230X50">004 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "In the Beginning"               </td>
+    <td class="noborder" >  Punisher Max v1                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/215593"> 2004.05 </a>    </td>
+</tr>
+<tr id="A230X60" onmouseover="showcover('covers/Punisher (Max) 005.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Tom Palmer', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B230X60">005 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "In the Beginning"               </td>
+    <td class="noborder" >  Punisher Max v1                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/215594"> 2004.06 </a>    </td>
+</tr>
+<tr id="A230X70" onmouseover="showcover('covers/Punisher (Max) 006.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Tom Palmer', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B230X70">006 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "In the Beginning"               </td>
+    <td class="noborder" >  Punisher Max v1                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/215595"> 2004.07 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A270X20" onmouseover="showcover('covers/Punisher (Max) 013.jpg', 'Garth Ennis', 'Doug Braithwaite', 'Bill Reinhold', 'Marvel')" class="tpbr" >
+    <td class="topborder" >  Punisher (Max)                         </td>
+    <td class="topborder" >  <a href="#B270X20">013 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Mother Russia"               </td>
+    <td class="topborder" >  Punisher Max v2                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/215602"> 2005.01 </a>    </td>
+</tr>
+<tr id="A270X30" onmouseover="showcover('covers/Punisher (Max) 014.jpg', 'Garth Ennis', 'Doug Braithwaite', 'Bill Reinhold', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B270X30">014 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Mother Russia"               </td>
+    <td class="noborder" >  Punisher Max v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/215603"> 2005.01 </a>    </td>
+</tr>
+<tr id="A270X40" onmouseover="showcover('covers/Punisher (Max) 015.jpg', 'Garth Ennis', 'Doug Braithwaite', 'Bill Reinhold', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B270X40">015 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Mother Russia"               </td>
+    <td class="noborder" >  Punisher Max v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/215604"> 2005.02 </a>    </td>
+</tr>
+<tr id="A270X50" onmouseover="showcover('covers/Punisher (Max) 016.jpg', 'Garth Ennis', 'Doug Braithwaite', 'Bill Reinhold', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B270X50">016 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Mother Russia"               </td>
+    <td class="noborder" >  Punisher Max v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/266253"> 2005.03 </a>    </td>
+</tr>
+<tr id="A270X60" onmouseover="showcover('covers/Punisher (Max) 017.jpg', 'Garth Ennis', 'Doug Braithwaite', 'Bill Reinhold', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B270X60">017 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Mother Russia"               </td>
+    <td class="noborder" >  Punisher Max v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/266254"> 2005.04 </a>    </td>
+</tr>
+<tr id="A270X70" onmouseover="showcover('covers/Punisher (Max) 018.jpg', 'Garth Ennis', 'Doug Braithwaite', 'Bill Reinhold', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B270X70">018 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Mother Russia"               </td>
+    <td class="noborder" >  Punisher Max v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/266255"> 2005.05 </a>    </td>
+</tr>
+<tr id="A270X80" onmouseover="showcover('covers/Punisher (Max) 019.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Scott Hanna', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B270X80">019 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Up Is Down And Black Is White"               </td>
+    <td class="noborder" >  Punisher Max v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/266256"> 2005.06 </a>    </td>
+</tr>
+<tr id="A270X90" onmouseover="showcover('covers/Punisher (Max) 020.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Scott Hanna', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B270X90">020 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Up Is Down And Black Is White"               </td>
+    <td class="noborder" >  Punisher Max v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/266257"> 2005.06 </a>    </td>
+</tr>
+<tr id="A270X100" onmouseover="showcover('covers/Punisher (Max) 021.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Scott Hanna', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B270X100">021 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Up Is Down And Black Is White"               </td>
+    <td class="noborder" >  Punisher Max v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/266258"> 2005.07 </a>    </td>
+</tr>
+<tr id="A270X110" onmouseover="showcover('covers/Punisher (Max) 022.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Scott Hanna', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B270X110">022 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Up Is Down And Black Is White"               </td>
+    <td class="noborder" >  Punisher Max v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/266259"> 2005.08 </a>    </td>
+</tr>
+<tr id="A270X120" onmouseover="showcover('covers/Punisher (Max) 023.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Scott Hanna', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B270X120">023 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Up Is Down And Black Is White"               </td>
+    <td class="noborder" >  Punisher Max v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/266260"> 2005.09 </a>    </td>
+</tr>
+<tr id="A270X130" onmouseover="showcover('covers/Punisher (Max) 024.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Scott Hanna', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B270X130">024 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Up Is Down And Black Is White"               </td>
+    <td class="noborder" >  Punisher Max v2                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/300107"> 2005.10 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A310X20" onmouseover="showcover('covers/Punisher (Max) 031.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="topborder" >  Punisher (Max)                         </td>
+    <td class="topborder" >  <a href="#B310X20">031 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Barracuda"               </td>
+    <td class="topborder" >  Punisher Max v3                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/300114"> 2006.05 </a>    </td>
+</tr>
+<tr id="A310X30" onmouseover="showcover('covers/Punisher (Max) 032.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B310X30">032 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Barracuda"               </td>
+    <td class="noborder" >  Punisher Max v3                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/300115"> 2006.06 </a>    </td>
+</tr>
+<tr id="A310X40" onmouseover="showcover('covers/Punisher (Max) 033.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B310X40">033 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Barracuda"               </td>
+    <td class="noborder" >  Punisher Max v3                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/300116"> 2006.07 </a>    </td>
+</tr>
+<tr id="A310X50" onmouseover="showcover('covers/Punisher (Max) 034.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B310X50">034 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Barracuda"               </td>
+    <td class="noborder" >  Punisher Max v3                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/300117"> 2006.08 </a>    </td>
+</tr>
+<tr id="A310X60" onmouseover="showcover('covers/Punisher (Max) 035.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B310X60">035 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Barracuda"               </td>
+    <td class="noborder" >  Punisher Max v3                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/300118"> 2006.09 </a>    </td>
+</tr>
+<tr id="A310X70" onmouseover="showcover('covers/Punisher (Max) 036.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B310X70">036 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Barracuda"               </td>
+    <td class="noborder" >  Punisher Max v3                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417037"> 2006.10 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A350X20" onmouseover="showcover('covers/Punisher (Max) 037.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Leandro Fernandez', 'Marvel')" class="tpbr" >
+    <td class="topborder" >  Punisher (Max)                         </td>
+    <td class="topborder" >  <a href="#B350X20">037 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Man Of Stone"               </td>
+    <td class="topborder" >  Punisher Max v4                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/417038"> 2006.11 </a>    </td>
+</tr>
+<tr id="A350X30" onmouseover="showcover('covers/Punisher (Max) 038.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Leandro Fernandez', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B350X30">038 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Man Of Stone"               </td>
+    <td class="noborder" >  Punisher Max v4                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417039"> 2006.11 </a>    </td>
+</tr>
+<tr id="A350X40" onmouseover="showcover('covers/Punisher (Max) 039.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Leandro Fernandez', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B350X40">039 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Man Of Stone"               </td>
+    <td class="noborder" >  Punisher Max v4                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417040"> 2006.12 </a>    </td>
+</tr>
+<tr id="A350X50" onmouseover="showcover('covers/Punisher (Max) 040.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Leandro Fernandez', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B350X50">040 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Man Of Stone"               </td>
+    <td class="noborder" >  Punisher Max v4                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417041"> 2007.01 </a>    </td>
+</tr>
+<tr id="A350X60" onmouseover="showcover('covers/Punisher (Max) 041.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Leandro Fernandez', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B350X60">041 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Man Of Stone"               </td>
+    <td class="noborder" >  Punisher Max v4                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417042"> 2007.01 </a>    </td>
+</tr>
+<tr id="A350X70" onmouseover="showcover('covers/Punisher (Max) 042.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Leandro Fernandez', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B350X70">042 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Man Of Stone"               </td>
+    <td class="noborder" >  Punisher Max v4                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417043"> 2007.02 </a>    </td>
+</tr>
+<tr id="A350X80" onmouseover="showcover('covers/Punisher (Max) 043.jpg', 'Garth Ennis', 'Lan Medina', 'Bill Reinhold', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B350X80">043 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Widowmaker"               </td>
+    <td class="noborder" >  Punisher Max v4                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417044"> 2007.03 </a>    </td>
+</tr>
+<tr id="A350X90" onmouseover="showcover('covers/Punisher (Max) 044.jpg', 'Garth Ennis', 'Lan Medina', 'Bill Reinhold', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B350X90">044 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Widowmaker"               </td>
+    <td class="noborder" >  Punisher Max v4                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417045"> 2007.04 </a>    </td>
+</tr>
+<tr id="A350X100" onmouseover="showcover('covers/Punisher (Max) 045.jpg', 'Garth Ennis', 'Lan Medina', 'Bill Reinhold', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B350X100">045 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Widowmaker"               </td>
+    <td class="noborder" >  Punisher Max v4                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417046"> 2007.05 </a>    </td>
+</tr>
+<tr id="A350X110" onmouseover="showcover('covers/Punisher (Max) 046.jpg', 'Garth Ennis', 'Lan Medina', 'Tom Palmer', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B350X110">046 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Widowmaker"               </td>
+    <td class="noborder" >  Punisher Max v4                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417047"> 2007.06 </a>    </td>
+</tr>
+<tr id="A350X120" onmouseover="showcover('covers/Punisher (Max) 047.jpg', 'Garth Ennis', 'Lan Medina', 'Bill Reinhold', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B350X120">047 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Widowmaker"               </td>
+    <td class="noborder" >  Punisher Max v4                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417048"> 2007.07 </a>    </td>
+</tr>
+<tr id="A350X130" onmouseover="showcover('covers/Punisher (Max) 048.jpg', 'Garth Ennis', 'Lan Medina', 'Tom Palmer', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B350X130">048 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Widowmaker"               </td>
+    <td class="noborder" >  Punisher Max v4                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417049"> 2007.08 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A390X20" onmouseover="showcover('covers/Punisher (Max) 049.jpg', 'Garth Ennis', 'Lan Medina', 'Bill Reinhold', 'Marvel')" class="tpbr" >
+    <td class="topborder" >  Punisher (Max)                         </td>
+    <td class="topborder" >  <a href="#B390X20">049 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Widowmaker"               </td>
+    <td class="topborder" >  Punisher Max v5                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/417050"> 2007.09 </a>    </td>
+</tr>
+<tr id="A390X30" onmouseover="showcover('covers/Punisher (Max) 050.jpg', 'Garth Ennis', 'Howard Chaykin', 'Howard Chaykin', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B390X30">050 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Long Cold Dark"               </td>
+    <td class="noborder" >  Punisher Max v5                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417051"> 2007.10 </a>    </td>
+</tr>
+<tr id="A390X40" onmouseover="showcover('covers/Punisher (Max) 051.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B390X40">051 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Long Cold Dark"               </td>
+    <td class="noborder" >  Punisher Max v5                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417052"> 2007.12 </a>    </td>
+</tr>
+<tr id="A390X50" onmouseover="showcover('covers/Punisher (Max) 052.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B390X50">052 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Long Cold Dark"               </td>
+    <td class="noborder" >  Punisher Max v5                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/417053"> 2008.01 </a>    </td>
+</tr>
+<tr id="A390X60" onmouseover="showcover('covers/Punisher (Max) 053.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B390X60">053 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Long Cold Dark"               </td>
+    <td class="noborder" >  Punisher Max v5                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/541246"> 2008.02 </a>    </td>
+</tr>
+<tr id="A390X70" onmouseover="showcover('covers/Punisher (Max) 054.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B390X70">054 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Long Cold Dark"               </td>
+    <td class="noborder" >  Punisher Max v5                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/541247"> 2008.03 </a>    </td>
+</tr>
+<tr id="A390X80" onmouseover="showcover('covers/Punisher (Max) 055.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B390X80">055 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Valley Forge, Valley Forge"               </td>
+    <td class="noborder" >  Punisher Max v5                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/541248"> 2008.05 </a>    </td>
+</tr>
+<tr id="A390X90" onmouseover="showcover('covers/Punisher (Max) 056.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B390X90">056 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Valley Forge, Valley Forge"               </td>
+    <td class="noborder" >  Punisher Max v5                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/541249"> 2008.06 </a>    </td>
+</tr>
+<tr id="A390X100" onmouseover="showcover('covers/Punisher (Max) 057.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B390X100">057 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Valley Forge, Valley Forge"               </td>
+    <td class="noborder" >  Punisher Max v5                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/541250"> 2008.07 </a>    </td>
+</tr>
+<tr id="A390X110" onmouseover="showcover('covers/Punisher (Max) 058.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B390X110">058 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Valley Forge, Valley Forge"               </td>
+    <td class="noborder" >  Punisher Max v5                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/541251"> 2008.08 </a>    </td>
+</tr>
+<tr id="A390X120" onmouseover="showcover('covers/Punisher (Max) 059.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B390X120">059 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Valley Forge, Valley Forge"               </td>
+    <td class="noborder" >  Punisher Max v5                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/541252"> 2008.09 </a>    </td>
+</tr>
+<tr id="A390X130" onmouseover="showcover('covers/Punisher (Max) 060.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  Punisher (Max)                         </td>
+    <td class="noborder" >  <a href="#B390X130">060 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Valley Forge, Valley Forge"               </td>
+    <td class="noborder" >  Punisher Max v5                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/541253"> 2008.10 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A430X20" onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 001.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')" class="tpbr" >
+    <td class="topborder" >  The Resurrection Of Ma Gnucci                         </td>
+    <td class="topborder" >  <a href="#B430X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  The Resurrection Of Ma Gnucci                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/556448"> 2009.02 </a>    </td>
+</tr>
+<tr id="A430X30" onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 002.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  The Resurrection Of Ma Gnucci                         </td>
+    <td class="noborder" >  <a href="#B430X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Resurrection Of Ma Gnucci                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/556449"> 2009.02 </a>    </td>
+</tr>
+<tr id="A430X40" onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 003.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  The Resurrection Of Ma Gnucci                         </td>
+    <td class="noborder" >  <a href="#B430X40">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Resurrection Of Ma Gnucci                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/556450"> 2009.02 </a>    </td>
+</tr>
+<tr id="A430X50" onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 004.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  The Resurrection Of Ma Gnucci                         </td>
+    <td class="noborder" >  <a href="#B430X50">004 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Resurrection Of Ma Gnucci                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/556451"> 2009.02 </a>    </td>
+</tr>
+<tr id="A430X60" onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 005.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  The Resurrection Of Ma Gnucci                         </td>
+    <td class="noborder" >  <a href="#B430X60">005 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Resurrection Of Ma Gnucci                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/556452"> 2009.03 </a>    </td>
+</tr>
+<tr id="A430X70" onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 006.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  The Resurrection Of Ma Gnucci                         </td>
+    <td class="noborder" >  <a href="#B430X70">006 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Resurrection Of Ma Gnucci                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/556453"> 2009.03 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A470X20" onmouseover="showcover('covers/War Of The Realms 001.jpg', 'Gerry Duggan', 'Marcelo Ferreira', 'Roberto Poggi', 'Marvel')" class="tpbr" >
+    <td class="topborder" >  War Of The Realms                         </td>
+    <td class="topborder" >  <a href="#B470X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  War Of The Realms                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/1950750"> 2019.06 </a>    </td>
+</tr>
+<tr id="A470X30" onmouseover="showcover('covers/War Of The Realms 002.jpg', 'Gerry Duggan', 'Marcelo Ferreira', 'Roberto Poggi', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  War Of The Realms                         </td>
+    <td class="noborder" >  <a href="#B470X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  War Of The Realms                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/1966456"> 2019.07 </a>    </td>
+</tr>
+<tr id="A470X40" onmouseover="showcover('covers/War Of The Realms 003.jpg', 'Gerry Duggan', 'Marcelo Ferreira', 'Roberto Poggi', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  War Of The Realms                         </td>
+    <td class="noborder" >  <a href="#B470X40">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  War Of The Realms                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/1980743"> 2019.08 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A510X20" onmouseover="showcover('covers/The Tyger 1.jpg', 'Garth Ennis', 'John Severin', 'John Severin', 'Marvel')" class="tpbr" >
+    <td class="topborder" >  The Tyger                         </td>
+    <td class="topborder" >  <a href="#B510X20">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Tyger"               </td>
+    <td class="topborder" >  From First To Last                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/300181"> 2006.02 </a>    </td>
+</tr>
+<tr id="A510X30" onmouseover="showcover('covers/The Cell 1.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Scott Koblish', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  The Cell                         </td>
+    <td class="noborder" >  <a href="#B510X30">1 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  From First To Last                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/233879"> 2005.07 </a>    </td>
+</tr>
+<tr id="A510X40" onmouseover="showcover('covers/The End 1.jpg', 'Garth Ennis', 'Richard Corben', 'Richard Corben', 'Marvel')" class="tpbr" >
+    <td class="noborder" >  The End                         </td>
+    <td class="noborder" >  <a href="#B510X40">1 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The End"               </td>
+    <td class="noborder" >  From First To Last                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/216628"> 2004.06 </a>    </td>
+</tr>
+</table>
+<br><br><br>
+<table>
+<tr>
+<td>
+<table style="background-color:gold;">
+<tr id="B30X20" class="T1R2" onmouseover="showcover('covers/Born 001.jpg', 'Garth Ennis', 'Darick Robertson', 'Tom Palmer', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X20">Born 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/DarickRobertson.html">Darick Robertson</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/219365"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X30" class="T1R1" onmouseover="showcover('covers/Born 002.jpg', 'Garth Ennis', 'Darick Robertson', 'Tom Palmer', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X30">Born 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/DarickRobertson.html">Darick Robertson</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/219366"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X40" class="T1R2" onmouseover="showcover('covers/Born 003.jpg', 'Garth Ennis', 'Darick Robertson', 'Tom Palmer', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X40">Born 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/DarickRobertson.html">Darick Robertson</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/219367"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X50" class="T1R1" onmouseover="showcover('covers/Born 004.jpg', 'Garth Ennis', 'Darick Robertson', 'Tom Palmer', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X50">Born 004</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/DarickRobertson.html">Darick Robertson</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/219368"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B150X30" class="T1R2" onmouseover="showcover('covers/Marvel Knights Double Shot 001.jpg', 'Garth Ennis', 'Joe Quesada', 'Danny Miki', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X30">Marvel Knights Double Shot 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/JoeQuesada.html">Joe Quesada</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/215949"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B150X20" class="T1R1" onmouseover="showcover('covers/Punisher (2001) 006.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X20">Punisher (2001) 006</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/87581"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B150X40" class="T1R2" onmouseover="showcover('covers/Punisher (2001) 013.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X40">Punisher (2001) 013</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/97965"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B150X50" class="T1R1" onmouseover="showcover('covers/Punisher (2001) 014.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X50">Punisher (2001) 014</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/132618"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B150X60" class="T1R2" onmouseover="showcover('covers/Punisher (2001) 015.jpg', 'Garth Ennis', 'Darick Robertson', 'Nelson', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X60">Punisher (2001) 015</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/DarickRobertson.html">Darick Robertson</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/132619"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B150X70" class="T1R1" onmouseover="showcover('covers/Punisher (2001) 016.jpg', 'Garth Ennis', 'Darick Robertson', 'Darick Robertson', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X70">Punisher (2001) 016</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/DarickRobertson.html">Darick Robertson</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/132620"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B150X80" class="T1R2" onmouseover="showcover('covers/Punisher (2001) 017.jpg', 'Garth Ennis', 'Darick Robertson', 'Darick Robertson', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X80">Punisher (2001) 017</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/DarickRobertson.html">Darick Robertson</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/132621"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B150X90" class="T1R1" onmouseover="showcover('covers/Punisher (2001) 018.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X90">Punisher (2001) 018</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/132622"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B150X100" class="T1R2" onmouseover="showcover('covers/Punisher (2001) 019.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X100">Punisher (2001) 019</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/132623"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B150X110" class="T1R1" onmouseover="showcover('covers/Punisher (2001) 020.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X110">Punisher (2001) 020</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/132624"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B150X120" class="T1R2" onmouseover="showcover('covers/Punisher (2001) 021.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X120">Punisher (2001) 021</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/201633"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B150X130" class="T1R1" onmouseover="showcover('covers/Punisher (2001) 022.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X130">Punisher (2001) 022</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/201634"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B190X20" class="T1R2" onmouseover="showcover('covers/Punisher (2001) 032.jpg', 'Garth Ennis', 'Steve Dillon', 'Matt Milla', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A190X20">Punisher (2001) 032</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/201644"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B230X20" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 001.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Tom Palmer', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A230X20">Punisher (Max) 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LewisLaRosa.html">Lewis LaRosa</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/215590"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B230X30" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 002.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Tom Palmer', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A230X30">Punisher (Max) 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LewisLaRosa.html">Lewis LaRosa</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/215591"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B230X40" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 003.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Tom Palmer', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A230X40">Punisher (Max) 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LewisLaRosa.html">Lewis LaRosa</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/215592"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B230X50" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 004.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Tom Palmer', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A230X50">Punisher (Max) 004</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LewisLaRosa.html">Lewis LaRosa</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/215593"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B230X60" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 005.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Tom Palmer', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A230X60">Punisher (Max) 005</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LewisLaRosa.html">Lewis LaRosa</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/215594"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B230X70" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 006.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Tom Palmer', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A230X70">Punisher (Max) 006</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LewisLaRosa.html">Lewis LaRosa</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/215595"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B270X20" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 013.jpg', 'Garth Ennis', 'Doug Braithwaite', 'Bill Reinhold', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X20">Punisher (Max) 013</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/DougBraithwaite.html">Doug Braithwaite</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/215602"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B270X30" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 014.jpg', 'Garth Ennis', 'Doug Braithwaite', 'Bill Reinhold', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X30">Punisher (Max) 014</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/DougBraithwaite.html">Doug Braithwaite</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/215603"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B270X40" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 015.jpg', 'Garth Ennis', 'Doug Braithwaite', 'Bill Reinhold', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X40">Punisher (Max) 015</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/DougBraithwaite.html">Doug Braithwaite</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/215604"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B270X50" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 016.jpg', 'Garth Ennis', 'Doug Braithwaite', 'Bill Reinhold', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X50">Punisher (Max) 016</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/DougBraithwaite.html">Doug Braithwaite</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/266253"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B270X60" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 017.jpg', 'Garth Ennis', 'Doug Braithwaite', 'Bill Reinhold', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X60">Punisher (Max) 017</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/DougBraithwaite.html">Doug Braithwaite</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/266254"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B270X70" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 018.jpg', 'Garth Ennis', 'Doug Braithwaite', 'Bill Reinhold', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X70">Punisher (Max) 018</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/DougBraithwaite.html">Doug Braithwaite</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/266255"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B270X80" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 019.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Scott Hanna', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X80">Punisher (Max) 019</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LeandroFernandez.html">Leandro Fernandez</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/266256"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B270X90" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 020.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Scott Hanna', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X90">Punisher (Max) 020</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LeandroFernandez.html">Leandro Fernandez</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/266257"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B270X100" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 021.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Scott Hanna', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X100">Punisher (Max) 021</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LeandroFernandez.html">Leandro Fernandez</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/266258"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B270X110" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 022.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Scott Hanna', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X110">Punisher (Max) 022</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LeandroFernandez.html">Leandro Fernandez</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/266259"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B270X120" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 023.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Scott Hanna', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X120">Punisher (Max) 023</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LeandroFernandez.html">Leandro Fernandez</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/266260"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B270X130" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 024.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Scott Hanna', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X130">Punisher (Max) 024</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LeandroFernandez.html">Leandro Fernandez</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/300107"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B310X20" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 031.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A310X20">Punisher (Max) 031</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/300114"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B310X30" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 032.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A310X30">Punisher (Max) 032</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/300115"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B310X40" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 033.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A310X40">Punisher (Max) 033</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/300116"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B310X50" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 034.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A310X50">Punisher (Max) 034</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/300117"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B310X60" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 035.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A310X60">Punisher (Max) 035</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/300118"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B310X70" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 036.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A310X70">Punisher (Max) 036</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417037"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B350X20" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 037.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Leandro Fernandez', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A350X20">Punisher (Max) 037</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LeandroFernandez.html">Leandro Fernandez</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417038"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B350X30" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 038.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Leandro Fernandez', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A350X30">Punisher (Max) 038</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LeandroFernandez.html">Leandro Fernandez</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417039"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B350X40" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 039.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Leandro Fernandez', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A350X40">Punisher (Max) 039</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LeandroFernandez.html">Leandro Fernandez</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417040"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B350X50" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 040.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Leandro Fernandez', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A350X50">Punisher (Max) 040</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LeandroFernandez.html">Leandro Fernandez</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417041"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B350X60" class="T1R1" onmouseover="showcover('covers/Punisher (Max) 041.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Leandro Fernandez', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A350X60">Punisher (Max) 041</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LeandroFernandez.html">Leandro Fernandez</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417042"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B350X70" class="T1R2" onmouseover="showcover('covers/Punisher (Max) 042.jpg', 'Garth Ennis', 'Leandro Fernandez', 'Leandro Fernandez', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A350X70">Punisher (Max) 042</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LeandroFernandez.html">Leandro Fernandez</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417043"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+</table>
+</td>
+<td>
+<table style="background-color:gold;">
+<tr id="B350X80" class="T2R1" onmouseover="showcover('covers/Punisher (Max) 043.jpg', 'Garth Ennis', 'Lan Medina', 'Bill Reinhold', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A350X80">Punisher (Max) 043</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LanMedina.html">Lan Medina</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417044"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B350X90" class="T2R2" onmouseover="showcover('covers/Punisher (Max) 044.jpg', 'Garth Ennis', 'Lan Medina', 'Bill Reinhold', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A350X90">Punisher (Max) 044</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LanMedina.html">Lan Medina</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417045"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B350X100" class="T2R1" onmouseover="showcover('covers/Punisher (Max) 045.jpg', 'Garth Ennis', 'Lan Medina', 'Bill Reinhold', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A350X100">Punisher (Max) 045</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LanMedina.html">Lan Medina</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417046"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B350X110" class="T2R2" onmouseover="showcover('covers/Punisher (Max) 046.jpg', 'Garth Ennis', 'Lan Medina', 'Tom Palmer', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A350X110">Punisher (Max) 046</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LanMedina.html">Lan Medina</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417047"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B350X120" class="T2R1" onmouseover="showcover('covers/Punisher (Max) 047.jpg', 'Garth Ennis', 'Lan Medina', 'Bill Reinhold', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A350X120">Punisher (Max) 047</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LanMedina.html">Lan Medina</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417048"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B350X130" class="T2R2" onmouseover="showcover('covers/Punisher (Max) 048.jpg', 'Garth Ennis', 'Lan Medina', 'Tom Palmer', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A350X130">Punisher (Max) 048</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LanMedina.html">Lan Medina</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417049"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B390X20" class="T2R1" onmouseover="showcover('covers/Punisher (Max) 049.jpg', 'Garth Ennis', 'Lan Medina', 'Bill Reinhold', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A390X20">Punisher (Max) 049</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LanMedina.html">Lan Medina</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417050"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B390X30" class="T2R2" onmouseover="showcover('covers/Punisher (Max) 050.jpg', 'Garth Ennis', 'Howard Chaykin', 'Howard Chaykin', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A390X30">Punisher (Max) 050</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/HowardChaykin.html">Howard Chaykin</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417051"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B390X40" class="T2R1" onmouseover="showcover('covers/Punisher (Max) 051.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A390X40">Punisher (Max) 051</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417052"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B390X50" class="T2R2" onmouseover="showcover('covers/Punisher (Max) 052.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A390X50">Punisher (Max) 052</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/417053"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B390X60" class="T2R1" onmouseover="showcover('covers/Punisher (Max) 053.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A390X60">Punisher (Max) 053</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/541246"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B390X70" class="T2R2" onmouseover="showcover('covers/Punisher (Max) 054.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A390X70">Punisher (Max) 054</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/541247"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B390X80" class="T2R1" onmouseover="showcover('covers/Punisher (Max) 055.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A390X80">Punisher (Max) 055</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/541248"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B390X90" class="T2R2" onmouseover="showcover('covers/Punisher (Max) 056.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A390X90">Punisher (Max) 056</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/541249"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B390X100" class="T2R1" onmouseover="showcover('covers/Punisher (Max) 057.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A390X100">Punisher (Max) 057</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/541250"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B390X110" class="T2R2" onmouseover="showcover('covers/Punisher (Max) 058.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A390X110">Punisher (Max) 058</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/541251"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B390X120" class="T2R1" onmouseover="showcover('covers/Punisher (Max) 059.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A390X120">Punisher (Max) 059</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/541252"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B390X130" class="T2R2" onmouseover="showcover('covers/Punisher (Max) 060.jpg', 'Garth Ennis', 'Goran Parlov', 'Goran Parlov', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A390X130">Punisher (Max) 060</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GoranParlov.html">Goran Parlov</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/541253"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B70X20" class="T2R1" onmouseover="showcover('covers/Punisher War Zone 001.jpg', 'Chuck Dixon', 'John Romita Jr.', 'Klaus Janson', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X20">Punisher War Zone 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/ChuckDixon.html">Chuck Dixon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/JohnRomitaJr..html">John Romita Jr.</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/97156"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B70X30" class="T2R2" onmouseover="showcover('covers/Punisher War Zone 002.jpg', 'Chuck Dixon', 'John Romita Jr.', 'Klaus Janson', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X30">Punisher War Zone 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/ChuckDixon.html">Chuck Dixon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/JohnRomitaJr..html">John Romita Jr.</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/97157"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B70X40" class="T2R1" onmouseover="showcover('covers/Punisher War Zone 003.jpg', 'Chuck Dixon', 'John Romita Jr.', 'Klaus Janson', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X40">Punisher War Zone 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/ChuckDixon.html">Chuck Dixon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/JohnRomitaJr..html">John Romita Jr.</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/97158"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B70X50" class="T2R2" onmouseover="showcover('covers/Punisher War Zone 004.jpg', 'Chuck Dixon', 'John Romita Jr.', 'Klaus Janson', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X50">Punisher War Zone 004</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/ChuckDixon.html">Chuck Dixon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/JohnRomitaJr..html">John Romita Jr.</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/97159"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B70X60" class="T2R1" onmouseover="showcover('covers/Punisher War Zone 005.jpg', 'Chuck Dixon', 'John Romita Jr.', 'Klaus Janson', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X60">Punisher War Zone 005</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/ChuckDixon.html">Chuck Dixon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/JohnRomitaJr..html">John Romita Jr.</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/97160"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B70X70" class="T2R2" onmouseover="showcover('covers/Punisher War Zone 006.jpg', 'Chuck Dixon', 'John Romita Jr.', 'Klaus Janson', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X70">Punisher War Zone 006</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/ChuckDixon.html">Chuck Dixon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/JohnRomitaJr..html">John Romita Jr.</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/97161"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B510X30" class="T2R1" onmouseover="showcover('covers/The Cell 1.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Scott Koblish', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A510X30">The Cell 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/LewisLaRosa.html">Lewis LaRosa</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/233879"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B510X40" class="T2R2" onmouseover="showcover('covers/The End 1.jpg', 'Garth Ennis', 'Richard Corben', 'Richard Corben', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A510X40">The End 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCorben.html">Richard Corben</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/216628"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B430X20" class="T2R1" onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 001.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A430X20">The Resurrection Of Ma Gnucci 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/556448"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B430X30" class="T2R2" onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 002.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A430X30">The Resurrection Of Ma Gnucci 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/556449"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B430X40" class="T2R1" onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 003.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A430X40">The Resurrection Of Ma Gnucci 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/556450"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B430X50" class="T2R2" onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 004.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A430X50">The Resurrection Of Ma Gnucci 004</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/556451"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B430X60" class="T2R1" onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 005.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A430X60">The Resurrection Of Ma Gnucci 005</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/556452"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B430X70" class="T2R2" onmouseover="showcover('covers/The Resurrection Of Ma Gnucci 006.jpg', 'Garth Ennis', 'Steve Dillon', 'Steve Dillon', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A430X70">The Resurrection Of Ma Gnucci 006</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/556453"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B510X20" class="T2R1" onmouseover="showcover('covers/The Tyger 1.jpg', 'Garth Ennis', 'John Severin', 'John Severin', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A510X20">The Tyger 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/JohnSeverin.html">John Severin</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/300181"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B470X20" class="T2R2" onmouseover="showcover('covers/War Of The Realms 001.jpg', 'Gerry Duggan', 'Marcelo Ferreira', 'Roberto Poggi', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A470X20">War Of The Realms 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GerryDuggan.html">Gerry Duggan</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/MarceloFerreira.html">Marcelo Ferreira</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/1950750"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B470X30" class="T2R1" onmouseover="showcover('covers/War Of The Realms 002.jpg', 'Gerry Duggan', 'Marcelo Ferreira', 'Roberto Poggi', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A470X30">War Of The Realms 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GerryDuggan.html">Gerry Duggan</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/MarceloFerreira.html">Marcelo Ferreira</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/1966456"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B470X40" class="T2R2" onmouseover="showcover('covers/War Of The Realms 003.jpg', 'Gerry Duggan', 'Marcelo Ferreira', 'Roberto Poggi', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A470X40">War Of The Realms 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GerryDuggan.html">Gerry Duggan</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/MarceloFerreira.html">Marcelo Ferreira</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/1980743"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X20" class="T2R1" onmouseover="showcover('covers/Welcome Back Frank 001.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X20">Welcome Back, Frank 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/65674"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X30" class="T2R2" onmouseover="showcover('covers/Welcome Back Frank 002.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X30">Welcome Back, Frank 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/65675"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X40" class="T2R1" onmouseover="showcover('covers/Welcome Back Frank 003.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X40">Welcome Back, Frank 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/65676"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X50" class="T2R2" onmouseover="showcover('covers/Welcome Back Frank 004.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X50">Welcome Back, Frank 004</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/65677"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X60" class="T2R1" onmouseover="showcover('covers/Welcome Back Frank 005.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X60">Welcome Back, Frank 005</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/65678"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X70" class="T2R2" onmouseover="showcover('covers/Welcome Back Frank 006.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X70">Welcome Back, Frank 006</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/65679"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X80" class="T2R1" onmouseover="showcover('covers/Welcome Back Frank 007.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X80">Welcome Back, Frank 007</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/65680"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X90" class="T2R2" onmouseover="showcover('covers/Welcome Back Frank 008.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X90">Welcome Back, Frank 008</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/65681"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X100" class="T2R1" onmouseover="showcover('covers/Welcome Back Frank 009.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X100">Welcome Back, Frank 009</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/65682"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X110" class="T2R2" onmouseover="showcover('covers/Welcome Back Frank 010.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X110">Welcome Back, Frank 010</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/65683"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X120" class="T2R1" onmouseover="showcover('covers/Welcome Back Frank 011.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X120">Welcome Back, Frank 011</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/64058"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X130" class="T2R2" onmouseover="showcover('covers/Welcome Back Frank 012.jpg', 'Garth Ennis', 'Steve Dillon', 'Jimmy Palmiotti', 'Marvel')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X130">Welcome Back, Frank 012</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveDillon.html">Steve Dillon</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/64059"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<br><br><br>
+</body>
+</html>

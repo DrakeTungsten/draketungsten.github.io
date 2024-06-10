@@ -1,90 +1,922 @@
-<html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../hb.css" />
 <link href="comics.ico" rel="icon" type="image/bmp">
 <script type="text/javascript">
-
-function showdefault(){
-    var element = document.getElementById("metadata");
-    element.innerHTML = "metal rules";
-}
-
-function showcover(cover){
-    var element = document.getElementById("metadata");
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
     var dta = "<img src='" + cover +  "' width='250'>";
     element.innerHTML = dta;
-}
-
-
-function swapReprint(){
-    var r  = document.getElementById('issuetable').rows
-    var l = r.length
-    var x
-    var temp
-    for (x = 1; x < l; x++){ //  skip row 0 cuz it's col headers
-        if(r[x].cells.length > 4){
-    	    if(r[x].cells[4].innerHTML != "&nbsp;" 
-	    && r[x].cells[1].innerHTML != "(tpb/gn)"){
-                temp = r[x].cells[4].innerHTML
-                r[x].cells[4].innerHTML = 
-	               r[x].cells[0].innerHTML + " " + r[x].cells[1].innerHTML
-                //  break temp into issue title and number
-                var tl = temp.length
-	        var ch = temp.charAt(tl - 1)
-		while(ch == " "){
-                    tl--
-	            ch = temp.charAt(tl - 1)
-                }
-	        if(ch < "0" || ch > "9"){
-	            r[x].cells[0].innerHTML = temp 
-	            r[x].cells[1].innerHTML = "&nbsp;" 
-	        }
-	        else{
-                    var ishnum = ""
-		    var n = tl - 1
-		    while(temp.charAt(n) == " "){
-                         n--
-                    }
-		    while(temp.charAt(n) != " "){
-		        c = temp.charAt(n)
-		        ishnum = c + ishnum
-                        n--
-		        //alert("ishnum = " + ishnum + "  n = " + n)
-		    }
-	            r[x].cells[0].innerHTML = temp.substr(0, n) 
-	            r[x].cells[1].innerHTML = ishnum   
-	        }
-	    }
-        }
-    }
-    temp = r[5].cells[0].innerHTML
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
 }
 </script>
-				
-<title>doompatrol</title></head>
+</head>
 <body>
 
-<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
 
-<center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
- <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
- <td><b>Reprint</b></td>   </tr><tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>025</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>026</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>027</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>028</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>029</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>030</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>034</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>035</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>036</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Musclebound</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>Doom Patrol 42-50</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>051</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>052</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>055</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>056</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>057</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>058</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>059</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>060</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>061</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>062</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Doom Patrol</td><td>063</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-</table></center></body></html>
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="comics.html"><img width="200" src="comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="credits/_index.html"><img width="200" src="_credits.jpg"></a> </center></div>
+
+<div style="position: static; left: 260; top: 15;">
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td> <td><b>Reference 1</b></td> <td><b>Reference 2</b></td>  </tr>
+<tr id="A30X20" onmouseover="showcover('covers/Doom Patrol 025.jpg', 'Grant Morrison', 'Richard Case', 'Scott Hanna', 'Vertigo')" class="tpbr" >
+    <td class="topborder" >  Doom Patrol                         </td>
+    <td class="topborder" >  <a href="#B30X20">025 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Imaginary Friends"               </td>
+    <td class="topborder" >  Doom Patrol                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/46550"> 1989.08 </a>    </td>
+</tr>
+<tr id="A30X30" onmouseover="showcover('covers/Doom Patrol 026.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X30">026 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Nowhere Man"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/46674"> 1989.09 </a>    </td>
+</tr>
+<tr id="A30X40" onmouseover="showcover('covers/Doom Patrol 027.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X40">027 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Painting That Ate Paris"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/46923"> 1989.11 </a>    </td>
+</tr>
+<tr id="A30X50" onmouseover="showcover('covers/Doom Patrol 028.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X50">028 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Labyrinths"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/47074"> 1989.12 </a>    </td>
+</tr>
+<tr id="A30X60" onmouseover="showcover('covers/Doom Patrol 029.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X60">029 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Kingdom of No"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/47429"> 1990.01 </a>    </td>
+</tr>
+<tr id="A30X70" onmouseover="showcover('covers/Doom Patrol 030.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X70">030 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Going Underground"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/47652"> 1990.03 </a>    </td>
+</tr>
+<tr id="A30X80" onmouseover="showcover('covers/Doom Patrol 034.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X80">034 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Soul of a New Machine"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/48154"> 1990.07 </a>    </td>
+</tr>
+<tr id="A30X90" onmouseover="showcover('covers/Doom Patrol 035.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X90">035 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Down Paradise Way"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/48283"> 1990.08 </a>    </td>
+</tr>
+<tr id="A30X100" onmouseover="showcover('covers/Doom Patrol 036.jpg', 'Grant Morrison', 'Richard Case', 'Mark McKenna', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X100">036 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Box of Delights"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/48416"> 1990.09 </a>    </td>
+</tr>
+<tr id="A30X110" onmouseover="showcover('covers/Doom Patrol 042.jpg', 'Grant Morrison', 'Richard Case', 'Doug Hazlewood', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X110">042 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Musclebound"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/49321"> 1991.03 </a>    </td>
+</tr>
+<tr id="A30X120" onmouseover="showcover('covers/Doom Patrol 043.jpg', 'Grant Morrison', 'Richard Case', 'Steve Yeowell', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X120">043 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Anyhow Stories"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/49440"> 1991.04 </a>    </td>
+</tr>
+<tr id="A30X130" onmouseover="showcover('covers/Doom Patrol 044.jpg', 'Grant Morrison', 'Richard Case', 'Mark McKenna', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X130">044 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Voices"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/49559"> 1991.05 </a>    </td>
+</tr>
+<tr id="A30X140" onmouseover="showcover('covers/Doom Patrol 045.jpg', 'Grant Morrison', 'Richard Case', 'Malcolm Jones III', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X140">045 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Beard Hunter"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/49792"> 1991.07 </a>    </td>
+</tr>
+<tr id="A30X150" onmouseover="showcover('covers/Doom Patrol 046.jpg', 'Grant Morrison', 'Richard Case', 'Mark McKenna', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X150">046 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Aftermath"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/49928"> 1991.08 </a>    </td>
+</tr>
+<tr id="A30X160" onmouseover="showcover('covers/Doom Patrol 047.jpg', 'Grant Morrison', 'Richard Case', 'Mark McKenna', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X160">047 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The World, the Flesh, and the Devil"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/50052"> 1991.09 </a>    </td>
+</tr>
+<tr id="A30X170" onmouseover="showcover('covers/Doom Patrol 048.jpg', 'Grant Morrison', 'Richard Case', 'Scott Hanna', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X170">048 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Entertaining Mr. Evans"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/50189"> 1991.10 </a>    </td>
+</tr>
+<tr id="A30X180" onmouseover="showcover('covers/Doom Patrol 049.jpg', 'Grant Morrison', 'Richard Case', 'Mark Badger', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X180">049 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Death in Venice"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/50318"> 1991.11 </a>    </td>
+</tr>
+<tr id="A30X190" onmouseover="showcover('covers/Doom Patrol 050.jpg', 'Grant Morrison', 'Richard Case', 'Jamie Hewlett; Rian Hughes; Richard Case', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X190">050 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Tales of Hofmann"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/50451"> 1991.12 </a>    </td>
+</tr>
+<tr id="A30X200" onmouseover="showcover('covers/Doom Patrol 051.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch; Mark McKenna; Richard Case', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X200">051 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Magic Bus"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/50743"> 1992.01 </a>    </td>
+</tr>
+<tr id="A30X210" onmouseover="showcover('covers/Doom Patrol 052.jpg', 'Grant Morrison', 'Richard Case', 'Philip Bond', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X210">052 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "After the Cabaret"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/50861"> 1992.02 </a>    </td>
+</tr>
+<tr id="A30X220" onmouseover="showcover('covers/Doom Patrol 055.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X220">055 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Blood of the Lamb"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/51214"> 1992.05 </a>    </td>
+</tr>
+<tr id="A30X230" onmouseover="showcover('covers/Doom Patrol 056.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X230">056 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Down in the Well"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/51329"> 1992.06 </a>    </td>
+</tr>
+<tr id="A30X240" onmouseover="showcover('covers/Doom Patrol 057.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch; Mark McKenna; Richard Case', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X240">057 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Nature of the Catastrophe"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/51464"> 1992.07 </a>    </td>
+</tr>
+<tr id="A30X250" onmouseover="showcover('covers/Doom Patrol 058.jpg', 'Grant Morrison', 'Richard Case', 'Sean Phillips', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X250">058 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "In the Wonderful Land of Clockwork"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/51595"> 1992.08 </a>    </td>
+</tr>
+<tr id="A30X260" onmouseover="showcover('covers/Doom Patrol 059.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X260">059 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Dying Inside"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/51732"> 1992.09 </a>    </td>
+</tr>
+<tr id="A30X270" onmouseover="showcover('covers/Doom Patrol 060.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X270">060 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Brief Candles"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/51864"> 1992.10 </a>    </td>
+</tr>
+<tr id="A30X280" onmouseover="showcover('covers/Doom Patrol 061.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X280">061 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "..."               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/52005"> 1992.11 </a>    </td>
+</tr>
+<tr id="A30X290" onmouseover="showcover('covers/Doom Patrol 062.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X290">062 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Planet Love"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/52139"> 1992.12 </a>    </td>
+</tr>
+<tr id="A30X300" onmouseover="showcover('covers/Doom Patrol 063.jpg', 'Grant Morrison', 'Richard Case', 'Richard Case', 'Vertigo')" class="tpbr" >
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="#B30X300">063 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Empire of Chairs"               </td>
+    <td class="noborder" >  Doom Patrol                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/52407"> 1993.01 </a>    </td>
+</tr>
+</table>
+<br><br><br>
+<table>
+<tr>
+<td>
+<table style="background-color:gold;">
+<tr id="B30X20" class="T1R2" onmouseover="showcover('covers/Doom Patrol 025.jpg', 'Grant Morrison', 'Richard Case', 'Scott Hanna', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X20">Doom Patrol 025</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/46550"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X30" class="T1R1" onmouseover="showcover('covers/Doom Patrol 026.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X30">Doom Patrol 026</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/46674"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X40" class="T1R2" onmouseover="showcover('covers/Doom Patrol 027.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X40">Doom Patrol 027</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/46923"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X50" class="T1R1" onmouseover="showcover('covers/Doom Patrol 028.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X50">Doom Patrol 028</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/47074"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X60" class="T1R2" onmouseover="showcover('covers/Doom Patrol 029.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X60">Doom Patrol 029</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/47429"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X70" class="T1R1" onmouseover="showcover('covers/Doom Patrol 030.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X70">Doom Patrol 030</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/47652"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X80" class="T1R2" onmouseover="showcover('covers/Doom Patrol 034.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X80">Doom Patrol 034</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/48154"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X90" class="T1R1" onmouseover="showcover('covers/Doom Patrol 035.jpg', 'Grant Morrison', 'Richard Case', 'John Nyberg', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X90">Doom Patrol 035</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/48283"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X100" class="T1R2" onmouseover="showcover('covers/Doom Patrol 036.jpg', 'Grant Morrison', 'Richard Case', 'Mark McKenna', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X100">Doom Patrol 036</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/48416"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X110" class="T1R1" onmouseover="showcover('covers/Doom Patrol 042.jpg', 'Grant Morrison', 'Richard Case', 'Doug Hazlewood', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X110">Doom Patrol 042</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/49321"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X120" class="T1R2" onmouseover="showcover('covers/Doom Patrol 043.jpg', 'Grant Morrison', 'Richard Case', 'Steve Yeowell', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X120">Doom Patrol 043</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/49440"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X130" class="T1R1" onmouseover="showcover('covers/Doom Patrol 044.jpg', 'Grant Morrison', 'Richard Case', 'Mark McKenna', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X130">Doom Patrol 044</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/49559"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X140" class="T1R2" onmouseover="showcover('covers/Doom Patrol 045.jpg', 'Grant Morrison', 'Richard Case', 'Malcolm Jones III', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X140">Doom Patrol 045</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/49792"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X150" class="T1R1" onmouseover="showcover('covers/Doom Patrol 046.jpg', 'Grant Morrison', 'Richard Case', 'Mark McKenna', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X150">Doom Patrol 046</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/49928"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+</table>
+</td>
+<td>
+<table style="background-color:gold;">
+<tr id="B30X160" class="T2R2" onmouseover="showcover('covers/Doom Patrol 047.jpg', 'Grant Morrison', 'Richard Case', 'Mark McKenna', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X160">Doom Patrol 047</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/50052"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X170" class="T2R1" onmouseover="showcover('covers/Doom Patrol 048.jpg', 'Grant Morrison', 'Richard Case', 'Scott Hanna', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X170">Doom Patrol 048</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/50189"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X180" class="T2R2" onmouseover="showcover('covers/Doom Patrol 049.jpg', 'Grant Morrison', 'Richard Case', 'Mark Badger', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X180">Doom Patrol 049</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/50318"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X190" class="T2R1" onmouseover="showcover('covers/Doom Patrol 050.jpg', 'Grant Morrison', 'Richard Case', 'Jamie Hewlett; Rian Hughes; Richard Case', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X190">Doom Patrol 050</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/50451"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X200" class="T2R2" onmouseover="showcover('covers/Doom Patrol 051.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch; Mark McKenna; Richard Case', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X200">Doom Patrol 051</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/50743"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X210" class="T2R1" onmouseover="showcover('covers/Doom Patrol 052.jpg', 'Grant Morrison', 'Richard Case', 'Philip Bond', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X210">Doom Patrol 052</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/50861"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X220" class="T2R2" onmouseover="showcover('covers/Doom Patrol 055.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X220">Doom Patrol 055</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/51214"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X230" class="T2R1" onmouseover="showcover('covers/Doom Patrol 056.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X230">Doom Patrol 056</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/51329"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X240" class="T2R2" onmouseover="showcover('covers/Doom Patrol 057.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch; Mark McKenna; Richard Case', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X240">Doom Patrol 057</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/51464"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X250" class="T2R1" onmouseover="showcover('covers/Doom Patrol 058.jpg', 'Grant Morrison', 'Richard Case', 'Sean Phillips', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X250">Doom Patrol 058</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/51595"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X260" class="T2R2" onmouseover="showcover('covers/Doom Patrol 059.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X260">Doom Patrol 059</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/51732"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X270" class="T2R1" onmouseover="showcover('covers/Doom Patrol 060.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X270">Doom Patrol 060</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/51864"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X280" class="T2R2" onmouseover="showcover('covers/Doom Patrol 061.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X280">Doom Patrol 061</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/52005"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X290" class="T2R1" onmouseover="showcover('covers/Doom Patrol 062.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X290">Doom Patrol 062</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/52139"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X300" class="T2R2" onmouseover="showcover('covers/Doom Patrol 063.jpg', 'Grant Morrison', 'Richard Case', 'Richard Case', 'Vertigo')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X300">Doom Patrol 063</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GrantMorrison.html">Grant Morrison</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/RichardCase.html">Richard Case</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/52407"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<br><br><br>
+</body>
+</html>

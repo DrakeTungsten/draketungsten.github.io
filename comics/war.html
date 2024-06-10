@@ -1,89 +1,1755 @@
-<html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../hb.css" />
 <link href="comics.ico" rel="icon" type="image/bmp">
 <script type="text/javascript">
-
-function showdefault(){
-    var element = document.getElementById("metadata");
-    element.innerHTML = "metal rules";
-}
-
-function showcover(cover){
-    var element = document.getElementById("metadata");
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
     var dta = "<img src='" + cover +  "' width='250'>";
     element.innerHTML = dta;
-}
-
-
-function swapReprint(){
-    var r  = document.getElementById('issuetable').rows
-    var l = r.length
-    var x
-    var temp
-    for (x = 1; x < l; x++){ //  skip row 0 cuz it's col headers
-        if(r[x].cells.length > 4){
-    	    if(r[x].cells[4].innerHTML != "&nbsp;" 
-	    && r[x].cells[1].innerHTML != "(tpb/gn)"){
-                temp = r[x].cells[4].innerHTML
-                r[x].cells[4].innerHTML = 
-	               r[x].cells[0].innerHTML + " " + r[x].cells[1].innerHTML
-                //  break temp into issue title and number
-                var tl = temp.length
-	        var ch = temp.charAt(tl - 1)
-		while(ch == " "){
-                    tl--
-	            ch = temp.charAt(tl - 1)
-                }
-	        if(ch < "0" || ch > "9"){
-	            r[x].cells[0].innerHTML = temp 
-	            r[x].cells[1].innerHTML = "&nbsp;" 
-	        }
-	        else{
-                    var ishnum = ""
-		    var n = tl - 1
-		    while(temp.charAt(n) == " "){
-                         n--
-                    }
-		    while(temp.charAt(n) != " "){
-		        c = temp.charAt(n)
-		        ishnum = c + ishnum
-                        n--
-		        //alert("ishnum = " + ishnum + "  n = " + n)
-		    }
-	            r[x].cells[0].innerHTML = temp.substr(0, n) 
-	            r[x].cells[1].innerHTML = ishnum   
-	        }
-	    }
-        }
-    }
-    temp = r[5].cells[0].innerHTML
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
 }
 </script>
-				
-<title>war</title></head>
+</head>
 <body>
 
-<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
 
-<center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
- <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
- <td><b>Reprint</b></td>   </tr><tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>&nbsp</td><td style='border-bottom:none'>"Pigs Of The Roman Empire"</td><td style='border-bottom:none'>Two-Fisted Tales 21</td><td style='border-bottom:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Zero Hour"</td><td style='border-bottom:none;border-top:none'>Front-Line Combat 02</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Weak Link"</td><td style='border-bottom:none;border-top:none'>Two-Fisted Tales 24</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Buzz Bomb"</td><td style='border-bottom:none;border-top:none'>Two-Fisted Tales 25</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Bomb Run</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>John Severin </td><td style='border-bottom:none;border-top:none'>"War Machines"</td><td style='border-bottom:none;border-top:none'>Front-Line Combat 05</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Alamo"</td><td style='border-bottom:none;border-top:none'>Two-Fisted Tales 28</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Washington"</td><td style='border-bottom:none;border-top:none'>Two-Fisted Tales 29</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>"Bull Run"</td><td style='border-bottom:none;border-top:none'>Front-Line Combat 09</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>&nbsp</td><td style='border-top:none'>"Campaign"</td><td style='border-top:none'>Two-Fisted Tales 31</td><td style='border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6">
-</td></tr><tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Blazing Combat</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6">
-</td></tr><tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>Enemy Ace: War In Heaven</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>War Stories Vol I</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#ffffff"><td style='border-bottom:none;border-top:none'><b>War Stories Vol II</b></td><td style='border-bottom:none;border-top:none'>(tpb/gn)</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td><td style='border-bottom:none;border-top:none'>&nbsp</td></tr>
-<tr bgcolor="blue" style="color: white;"><td colspan="6">
-</td></tr><tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#decaff"><td>The Lion And The Eagle</td><td>001</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#decaff"><td>The Lion And The Eagle</td><td>001</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#f9f9a5"><td>The Lion And The Eagle</td><td>001</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#f9f9a5"><td>The Lion And The Eagle</td><td>001</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-</table></center></body></html>
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="comics.html"><img width="200" src="comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="credits/_index.html"><img width="200" src="_credits.jpg"></a> </center></div>
+
+<div style="position: static; left: 260; top: 15;">
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td> <td><b>Reference 1</b></td> <td><b>Reference 2</b></td>  </tr>
+<tr id="A30X20" onmouseover="showcover('covers/Two-Fisted Tales 021.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="topborder" >  Two-Fisted Tales                         </td>
+    <td class="topborder" >  <a href="#B30X20">021 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Pigs Of The Roman Empire"               </td>
+    <td class="topborder" >  Bomb Run                         </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A30X30" onmouseover="showcover('covers/Frontline Combat 002.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Frontline Combat                         </td>
+    <td class="noborder" >  <a href="#B30X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Zero Hour"               </td>
+    <td class="noborder" >  Bomb Run                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A30X40" onmouseover="showcover('covers/Two-Fisted Tales 024.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Two-Fisted Tales                         </td>
+    <td class="noborder" >  <a href="#B30X40">024 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Weak Link"               </td>
+    <td class="noborder" >  Bomb Run                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A30X50" onmouseover="showcover('covers/Two-Fisted Tales 025.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Two-Fisted Tales                         </td>
+    <td class="noborder" >  <a href="#B30X50">025 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Buzz Bomb"               </td>
+    <td class="noborder" >  Bomb Run                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A30X60" onmouseover="showcover('covers/Frontline Combat 005.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Frontline Combat                         </td>
+    <td class="noborder" >  <a href="#B30X60">005 </a>    </td>
+    <td class="noborder" >  John Severin                          </td>
+    <td class="noborder" >  "War Machines"               </td>
+    <td class="noborder" >  Bomb Run                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A30X70" onmouseover="showcover('covers/Two-Fisted Tales 028.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Two-Fisted Tales                         </td>
+    <td class="noborder" >  <a href="#B30X70">028 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Alamo"               </td>
+    <td class="noborder" >  Bomb Run                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A30X80" onmouseover="showcover('covers/Two-Fisted Tales 029.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Two-Fisted Tales                         </td>
+    <td class="noborder" >  <a href="#B30X80">029 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Washington"               </td>
+    <td class="noborder" >  Bomb Run                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A30X90" onmouseover="showcover('covers/Frontline Combat 009.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Frontline Combat                         </td>
+    <td class="noborder" >  <a href="#B30X90">009 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Bull Run"               </td>
+    <td class="noborder" >  Bomb Run                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A30X100" onmouseover="showcover('covers/Two-Fisted Tales 031.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Two-Fisted Tales                         </td>
+    <td class="noborder" >  <a href="#B30X100">031 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Campaign"               </td>
+    <td class="noborder" >  Bomb Run                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A70X20" onmouseover="showcover('covers/_qmark.png', '', '', '', 'EC')" class="tpbr" >
+    <td class="topborder" >  Two-Fisted Tales                         </td>
+    <td class="topborder" >  <a href="#B70X20">020 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Colt Single Action Army Revolver"               </td>
+    <td class="topborder" >  Death Stand                         </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A70X30" onmouseover="showcover('covers/Frontline Combat 001.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Frontline Combat                         </td>
+    <td class="noborder" >  <a href="#B70X30">001 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Enemy Assault"               </td>
+    <td class="noborder" >  Death Stand                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A70X40" onmouseover="showcover('covers/_qmark.png', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Two-Fisted Tales                         </td>
+    <td class="noborder" >  <a href="#B70X40">022 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Enemy Contact"               </td>
+    <td class="noborder" >  Death Stand                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A70X50" onmouseover="showcover('covers/_qmark.png', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Two-Fisted Tales                         </td>
+    <td class="noborder" >  <a href="#B70X50">040 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "The Last Of The Mohicans"               </td>
+    <td class="noborder" >  Death Stand                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A110X20" onmouseover="showcover('covers/Blazing Combat 001.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="topborder" >  Blazing Combat                         </td>
+    <td class="topborder" >  <a href="#B110X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  Blazing Combat                         </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A110X30" onmouseover="showcover('covers/Blazing Combat 002.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Blazing Combat                         </td>
+    <td class="noborder" >  <a href="#B110X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Blazing Combat                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A110X40" onmouseover="showcover('covers/Blazing Combat 003.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Blazing Combat                         </td>
+    <td class="noborder" >  <a href="#B110X40">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Blazing Combat                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A110X50" onmouseover="showcover('covers/Blazing Combat 004.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Blazing Combat                         </td>
+    <td class="noborder" >  <a href="#B110X50">004 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Blazing Combat                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A150X20" onmouseover="showcover('covers/Enemy Ace War In Heaven 001.jpg', '', '', '', 'EC')" class="ECcomic1" >
+    <td class="topborder" >  Enemy Ace: War In Heaven                         </td>
+    <td class="topborder" >  <a href="#B150X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A150X30" onmouseover="showcover('covers/Enemy Ace War In Heaven 002.jpg', '', '', '', 'EC')" class="ECcomic1" >
+    <td class="topborder" >  Enemy Ace: War In Heaven                         </td>
+    <td class="topborder" >  <a href="#B150X30">002 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A190X20" onmouseover="showcover('covers/War Story Johanns Tiger 1.jpg', '', '', '', 'EC')" class="ECcomic2" >
+    <td class="topborder" >  War Story: Johann's Tiger                         </td>
+    <td class="topborder" >  <a href="#B190X20">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A210X20" onmouseover="showcover('covers/War Story D-Day Dodgers 1.jpg', '', '', '', 'EC')" class="ECcomic1" >
+    <td class="topborder" >  War Story: D-Day Dodgers                         </td>
+    <td class="topborder" >  <a href="#B210X20">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A230X20" onmouseover="showcover('covers/War Story Screaming Eagles 1.jpg', '', '', '', 'EC')" class="ECcomic2" >
+    <td class="topborder" >  War Story: Screaming Eagles                         </td>
+    <td class="topborder" >  <a href="#B230X20">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A250X20" onmouseover="showcover('covers/War Story Nightingale 1.jpg', '', '', '', 'EC')" class="ECcomic1" >
+    <td class="topborder" >  War Story: Nightingale                         </td>
+    <td class="topborder" >  <a href="#B250X20">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A270X20" onmouseover="showcover('covers/War Story The Reivers 1.jpg', '', '', '', 'EC')" class="ECcomic2" >
+    <td class="topborder" >  War Story: The Reivers                         </td>
+    <td class="topborder" >  <a href="#B270X20">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A290X20" onmouseover="showcover('covers/War Story J For Jenny 1.jpg', '', '', '', 'EC')" class="ECcomic1" >
+    <td class="topborder" >  War Story: J For Jenny                         </td>
+    <td class="topborder" >  <a href="#B290X20">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A310X20" onmouseover="showcover('covers/War Story Condors 1.jpg', '', '', '', 'EC')" class="ECcomic2" >
+    <td class="topborder" >  War Story: Condors                         </td>
+    <td class="topborder" >  <a href="#B310X20">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A330X20" onmouseover="showcover('covers/War Story Archangel 1.jpg', '', '', '', 'EC')" class="ECcomic1" >
+    <td class="topborder" >  War Story: Archangel                         </td>
+    <td class="topborder" >  <a href="#B330X20">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A370X20" onmouseover="showcover('covers/Sara 001.jpg', 'Garth Ennis', 'Steve Epting', 'Steve Epting', 'EC')" class="tpbr" >
+    <td class="topborder" >  Sara                         </td>
+    <td class="topborder" >  <a href="#B370X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Words to Live By"               </td>
+    <td class="topborder" >  Sara                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/2106131">  </a>    </td>
+</tr>
+<tr id="A370X30" onmouseover="showcover('covers/Sara 002.jpg', 'Garth Ennis', 'Steve Epting', 'Steve Epting', 'EC')" class="tpbr" >
+    <td class="noborder" >  Sara                         </td>
+    <td class="noborder" >  <a href="#B370X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Theory & Application"               </td>
+    <td class="noborder" >  Sara                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/2106132">  </a>    </td>
+</tr>
+<tr id="A370X40" onmouseover="showcover('covers/Sara 003.jpg', 'Garth Ennis', 'Steve Epting', 'Steve Epting', 'EC')" class="tpbr" >
+    <td class="noborder" >  Sara                         </td>
+    <td class="noborder" >  <a href="#B370X40">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Motivation & Morale"               </td>
+    <td class="noborder" >  Sara                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/2106133">  </a>    </td>
+</tr>
+<tr id="A370X50" onmouseover="showcover('covers/Sara 004.jpg', 'Garth Ennis', 'Steve Epting', 'Steve Epting', 'EC')" class="tpbr" >
+    <td class="noborder" >  Sara                         </td>
+    <td class="noborder" >  <a href="#B370X50">004 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Ill Met By Moonlight, Proud Titania"               </td>
+    <td class="noborder" >  Sara                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/2106134">  </a>    </td>
+</tr>
+<tr id="A370X60" onmouseover="showcover('covers/Sara 005.jpg', 'Garth Ennis', 'Steve Epting', 'Steve Epting', 'EC')" class="tpbr" >
+    <td class="noborder" >  Sara                         </td>
+    <td class="noborder" >  <a href="#B370X60">005 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Recognition and Reward"               </td>
+    <td class="noborder" >  Sara                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/2106135">  </a>    </td>
+</tr>
+<tr id="A370X70" onmouseover="showcover('covers/Sara 006.jpg', 'Garth Ennis', 'Steve Epting', 'Steve Epting', 'EC')" class="tpbr" >
+    <td class="noborder" >  Sara                         </td>
+    <td class="noborder" >  <a href="#B370X70">006 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "Against a Ghost"               </td>
+    <td class="noborder" >  Sara                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/2106136">  </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A410X20" onmouseover="showcover('covers/The Lion And The Eagle 001.jpg', '', '', '', 'EC')" class="ECcomic1" >
+    <td class="topborder" >  The Lion And The Eagle                         </td>
+    <td class="topborder" >  <a href="#B410X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A410X30" onmouseover="showcover('covers/The Lion And The Eagle 002.jpg', '', '', '', 'EC')" class="ECcomic1" >
+    <td class="topborder" >  The Lion And The Eagle                         </td>
+    <td class="topborder" >  <a href="#B410X30">002 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A430X20" onmouseover="showcover('covers/The Lion And The Eagle 003.jpg', '', '', '', 'EC')" class="ECcomic2" >
+    <td class="topborder" >  The Lion And The Eagle                         </td>
+    <td class="topborder" >  <a href="#B430X20">003 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A430X30" onmouseover="showcover('covers/The Lion And The Eagle 004.jpg', '', '', '', 'EC')" class="ECcomic2" >
+    <td class="topborder" >  The Lion And The Eagle                         </td>
+    <td class="topborder" >  <a href="#B430X30">004 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A470X20" onmouseover="showcover('covers/Night Witches 001.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="topborder" >  Night Witches                         </td>
+    <td class="topborder" >  <a href="#B470X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  Battlefields v1                         </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A470X30" onmouseover="showcover('covers/Night Witches 002.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Night Witches                         </td>
+    <td class="noborder" >  <a href="#B470X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v1                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A470X40" onmouseover="showcover('covers/Night Witches 003.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Night Witches                         </td>
+    <td class="noborder" >  <a href="#B470X40">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v1                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A470X50" onmouseover="showcover('covers/Dear Billy 001.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Dear Billy                         </td>
+    <td class="noborder" >  <a href="#B470X50">001 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v1                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A470X60" onmouseover="showcover('covers/Dear Billy 002.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Dear Billy                         </td>
+    <td class="noborder" >  <a href="#B470X60">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v1                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A470X70" onmouseover="showcover('covers/Dear Billy 003.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Dear Billy                         </td>
+    <td class="noborder" >  <a href="#B470X70">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v1                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A470X80" onmouseover="showcover('covers/The Tankies 001.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  The Tankies                         </td>
+    <td class="noborder" >  <a href="#B470X80">001 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v1                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A470X90" onmouseover="showcover('covers/The Tankies 002.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  The Tankies                         </td>
+    <td class="noborder" >  <a href="#B470X90">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v1                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A470X100" onmouseover="showcover('covers/The Tankies 003.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  The Tankies                         </td>
+    <td class="noborder" >  <a href="#B470X100">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v1                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A510X20" onmouseover="showcover('covers/Happy Valley 001.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="topborder" >  Happy Valley                         </td>
+    <td class="topborder" >  <a href="#B510X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  Battlefields v2                         </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A510X30" onmouseover="showcover('covers/Happy Valley 002.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Happy Valley                         </td>
+    <td class="noborder" >  <a href="#B510X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A510X40" onmouseover="showcover('covers/Happy Valley 003.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Happy Valley                         </td>
+    <td class="noborder" >  <a href="#B510X40">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A510X50" onmouseover="showcover('covers/The Firefly And His Majesty 001.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  The Firefly And His Majesty                         </td>
+    <td class="noborder" >  <a href="#B510X50">001 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A510X60" onmouseover="showcover('covers/The Firefly And His Majesty 002.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  The Firefly And His Majesty                         </td>
+    <td class="noborder" >  <a href="#B510X60">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A510X70" onmouseover="showcover('covers/The Firefly And His Majesty 003.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  The Firefly And His Majesty                         </td>
+    <td class="noborder" >  <a href="#B510X70">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A510X80" onmouseover="showcover('covers/Motherland 001.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Motherland                         </td>
+    <td class="noborder" >  <a href="#B510X80">001 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A510X90" onmouseover="showcover('covers/Motherland 002.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Motherland                         </td>
+    <td class="noborder" >  <a href="#B510X90">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A510X100" onmouseover="showcover('covers/Motherland 003.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  Motherland                         </td>
+    <td class="noborder" >  <a href="#B510X100">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A550X20" onmouseover="showcover('covers/The Green Fields Beyond 001.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="topborder" >  The Green Fields Beyond                         </td>
+    <td class="topborder" >  <a href="#B550X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  Battlefields v3                         </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A550X30" onmouseover="showcover('covers/The Green Fields Beyond 002.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  The Green Fields Beyond                         </td>
+    <td class="noborder" >  <a href="#B550X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v3                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A550X40" onmouseover="showcover('covers/The Green Fields Beyond 003.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  The Green Fields Beyond                         </td>
+    <td class="noborder" >  <a href="#B550X40">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v3                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A550X50" onmouseover="showcover('covers/The Fall And Rise Of Anna Kharkova 001.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  The Fall And Rise Of Anna Kharkova                         </td>
+    <td class="noborder" >  <a href="#B550X50">001 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v3                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A550X60" onmouseover="showcover('covers/The Fall And Rise Of Anna Kharkova 002.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  The Fall And Rise Of Anna Kharkova                         </td>
+    <td class="noborder" >  <a href="#B550X60">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v3                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A550X70" onmouseover="showcover('covers/The Fall And Rise Of Anna Kharkova 003.jpg', '', '', '', 'EC')" class="tpbr" >
+    <td class="noborder" >  The Fall And Rise Of Anna Kharkova                         </td>
+    <td class="noborder" >  <a href="#B550X70">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Battlefields v3                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A590X20" onmouseover="showcover('covers/_qmark.png', '', '', '', 'EC')" class="tpbr" >
+    <td class="topborder" >  Adventures In The Rifle Brigade                         </td>
+    <td class="topborder" >  <a href="#B590X20"> </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  Adventures In The Rifle Brigade                         </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+</table>
+<br><br><br>
+<table>
+<tr>
+<td>
+<table style="background-color:gold;">
+<tr id="B590X20" class="T1R2" onmouseover="showcover('covers/_qmark.png', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A590X20">Adventures In The Rifle Brigade </a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B110X20" class="T1R1" onmouseover="showcover('covers/Blazing Combat 001.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X20">Blazing Combat 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B110X30" class="T1R2" onmouseover="showcover('covers/Blazing Combat 002.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X30">Blazing Combat 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B110X40" class="T1R1" onmouseover="showcover('covers/Blazing Combat 003.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X40">Blazing Combat 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B110X50" class="T1R2" onmouseover="showcover('covers/Blazing Combat 004.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X50">Blazing Combat 004</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B470X50" class="T1R1" onmouseover="showcover('covers/Dear Billy 001.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A470X50">Dear Billy 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B470X60" class="T1R2" onmouseover="showcover('covers/Dear Billy 002.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A470X60">Dear Billy 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B470X70" class="T1R1" onmouseover="showcover('covers/Dear Billy 003.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A470X70">Dear Billy 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B150X20" class="T1R2" onmouseover="showcover('covers/Enemy Ace War In Heaven 001.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X20">Enemy Ace: War In Heaven 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B150X30" class="T1R1" onmouseover="showcover('covers/Enemy Ace War In Heaven 002.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X30">Enemy Ace: War In Heaven 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B70X30" class="T1R2" onmouseover="showcover('covers/Frontline Combat 001.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X30">Frontline Combat 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B30X30" class="T1R1" onmouseover="showcover('covers/Frontline Combat 002.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X30">Frontline Combat 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B30X60" class="T1R2" onmouseover="showcover('covers/Frontline Combat 005.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X60">Frontline Combat 005</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B30X90" class="T1R1" onmouseover="showcover('covers/Frontline Combat 009.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X90">Frontline Combat 009</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B510X20" class="T1R2" onmouseover="showcover('covers/Happy Valley 001.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A510X20">Happy Valley 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B510X30" class="T1R1" onmouseover="showcover('covers/Happy Valley 002.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A510X30">Happy Valley 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B510X40" class="T1R2" onmouseover="showcover('covers/Happy Valley 003.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A510X40">Happy Valley 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B510X80" class="T1R1" onmouseover="showcover('covers/Motherland 001.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A510X80">Motherland 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B510X90" class="T1R2" onmouseover="showcover('covers/Motherland 002.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A510X90">Motherland 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B510X100" class="T1R1" onmouseover="showcover('covers/Motherland 003.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A510X100">Motherland 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B470X20" class="T1R2" onmouseover="showcover('covers/Night Witches 001.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A470X20">Night Witches 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B470X30" class="T1R1" onmouseover="showcover('covers/Night Witches 002.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A470X30">Night Witches 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B470X40" class="T1R2" onmouseover="showcover('covers/Night Witches 003.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A470X40">Night Witches 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B370X20" class="T1R1" onmouseover="showcover('covers/Sara 001.jpg', 'Garth Ennis', 'Steve Epting', 'Steve Epting', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A370X20">Sara 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveEpting.html">Steve Epting</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/2106131"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B370X30" class="T1R2" onmouseover="showcover('covers/Sara 002.jpg', 'Garth Ennis', 'Steve Epting', 'Steve Epting', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A370X30">Sara 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveEpting.html">Steve Epting</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/2106132"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B370X40" class="T1R1" onmouseover="showcover('covers/Sara 003.jpg', 'Garth Ennis', 'Steve Epting', 'Steve Epting', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A370X40">Sara 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveEpting.html">Steve Epting</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/2106133"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B370X50" class="T1R2" onmouseover="showcover('covers/Sara 004.jpg', 'Garth Ennis', 'Steve Epting', 'Steve Epting', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A370X50">Sara 004</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveEpting.html">Steve Epting</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/2106134"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B370X60" class="T1R1" onmouseover="showcover('covers/Sara 005.jpg', 'Garth Ennis', 'Steve Epting', 'Steve Epting', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A370X60">Sara 005</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveEpting.html">Steve Epting</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/2106135"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B370X70" class="T1R2" onmouseover="showcover('covers/Sara 006.jpg', 'Garth Ennis', 'Steve Epting', 'Steve Epting', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A370X70">Sara 006</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/GarthEnnis.html">Garth Ennis</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/SteveEpting.html">Steve Epting</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/2106136"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B550X50" class="T1R1" onmouseover="showcover('covers/The Fall And Rise Of Anna Kharkova 001.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A550X50">The Fall And Rise Of Anna Kharkova 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B550X60" class="T1R2" onmouseover="showcover('covers/The Fall And Rise Of Anna Kharkova 002.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A550X60">The Fall And Rise Of Anna Kharkova 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+</table>
+</td>
+<td>
+<table style="background-color:gold;">
+<tr id="B550X70" class="T2R1" onmouseover="showcover('covers/The Fall And Rise Of Anna Kharkova 003.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A550X70">The Fall And Rise Of Anna Kharkova 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B510X50" class="T2R2" onmouseover="showcover('covers/The Firefly And His Majesty 001.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A510X50">The Firefly And His Majesty 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B510X60" class="T2R1" onmouseover="showcover('covers/The Firefly And His Majesty 002.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A510X60">The Firefly And His Majesty 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B510X70" class="T2R2" onmouseover="showcover('covers/The Firefly And His Majesty 003.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A510X70">The Firefly And His Majesty 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B550X20" class="T2R1" onmouseover="showcover('covers/The Green Fields Beyond 001.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A550X20">The Green Fields Beyond 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B550X30" class="T2R2" onmouseover="showcover('covers/The Green Fields Beyond 002.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A550X30">The Green Fields Beyond 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B550X40" class="T2R1" onmouseover="showcover('covers/The Green Fields Beyond 003.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A550X40">The Green Fields Beyond 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B410X20" class="T2R2" onmouseover="showcover('covers/The Lion And The Eagle 001.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A410X20">The Lion And The Eagle 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B410X30" class="T2R1" onmouseover="showcover('covers/The Lion And The Eagle 002.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A410X30">The Lion And The Eagle 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B430X20" class="T2R2" onmouseover="showcover('covers/The Lion And The Eagle 003.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A430X20">The Lion And The Eagle 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B430X30" class="T2R1" onmouseover="showcover('covers/The Lion And The Eagle 004.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A430X30">The Lion And The Eagle 004</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B470X80" class="T2R2" onmouseover="showcover('covers/The Tankies 001.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A470X80">The Tankies 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B470X90" class="T2R1" onmouseover="showcover('covers/The Tankies 002.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A470X90">The Tankies 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B470X100" class="T2R2" onmouseover="showcover('covers/The Tankies 003.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A470X100">The Tankies 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B70X20" class="T2R1" onmouseover="showcover('covers/_qmark.png', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X20">Two-Fisted Tales 020</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B30X20" class="T2R2" onmouseover="showcover('covers/Two-Fisted Tales 021.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X20">Two-Fisted Tales 021</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B70X40" class="T2R1" onmouseover="showcover('covers/_qmark.png', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X40">Two-Fisted Tales 022</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B30X40" class="T2R2" onmouseover="showcover('covers/Two-Fisted Tales 024.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X40">Two-Fisted Tales 024</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B30X50" class="T2R1" onmouseover="showcover('covers/Two-Fisted Tales 025.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X50">Two-Fisted Tales 025</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B30X70" class="T2R2" onmouseover="showcover('covers/Two-Fisted Tales 028.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X70">Two-Fisted Tales 028</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B30X80" class="T2R1" onmouseover="showcover('covers/Two-Fisted Tales 029.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X80">Two-Fisted Tales 029</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B30X100" class="T2R2" onmouseover="showcover('covers/Two-Fisted Tales 031.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X100">Two-Fisted Tales 031</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B70X50" class="T2R1" onmouseover="showcover('covers/_qmark.png', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X50">Two-Fisted Tales 040</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B330X20" class="T2R2" onmouseover="showcover('covers/War Story Archangel 1.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A330X20">War Story: Archangel 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B310X20" class="T2R1" onmouseover="showcover('covers/War Story Condors 1.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A310X20">War Story: Condors 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B210X20" class="T2R2" onmouseover="showcover('covers/War Story D-Day Dodgers 1.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A210X20">War Story: D-Day Dodgers 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B290X20" class="T2R1" onmouseover="showcover('covers/War Story J For Jenny 1.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A290X20">War Story: J For Jenny 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B190X20" class="T2R2" onmouseover="showcover('covers/War Story Johanns Tiger 1.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A190X20">War Story: Johann's Tiger 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B250X20" class="T2R1" onmouseover="showcover('covers/War Story Nightingale 1.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A250X20">War Story: Nightingale 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B230X20" class="T2R2" onmouseover="showcover('covers/War Story Screaming Eagles 1.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A230X20">War Story: Screaming Eagles 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B270X20" class="T2R1" onmouseover="showcover('covers/War Story The Reivers 1.jpg', '', '', '', 'EC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X20">War Story: The Reivers 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<br><br><br>
+</body>
+</html>

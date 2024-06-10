@@ -1,0 +1,707 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../hb.css" />
+<link href="comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="comics.html"><img width="200" src="comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="credits/_index.html"><img width="200" src="_credits.jpg"></a> </center></div>
+
+<div style="position: static; left: 260; top: 15;">
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td> <td><b>Reference 1</b></td> <td><b>Reference 2</b></td>  </tr>
+<tr id="A30X20" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="DCcomic2" >
+    <td class="topborder" >  Legion Of Superheroes v2                         </td>
+    <td class="topborder" >  <a href="#B30X20">008 </a>    </td>
+    <td class="topborder" >  RJ Brande                          </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A30X30" onmouseover="showcover('covers/Secret Origins 025.webp', '', '', '', 'DC')" class="DCcomic2" >
+    <td class="topborder" >  Secret Origins                         </td>
+    <td class="topborder" >  <a href="#B30X30">025 </a>    </td>
+    <td class="topborder" >  RJ Brande                          </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A50X20" onmouseover="showcover('covers/Secret Origins 046.webp', '', '', '', 'DC')" class="DCcomic1" >
+    <td class="topborder" >  Secret Origins                         </td>
+    <td class="topborder" >  <a href="#B50X20">046 </a>    </td>
+    <td class="topborder" >  Arm-Fall-Off Boy                                     </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A50X30" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="DCcomic1" >
+    <td class="topborder" >  The Legion Of Super-Heroes<br>In The 31st Century                         </td>
+    <td class="topborder" >  <a href="#B50X30">16 </a>    </td>
+    <td class="topborder" >  Arm-Fall-Off Boy                                     </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A70X20" onmouseover="showcover('covers/Secret Origins 037.webp', '', '', '', 'DC')" class="DCcomic2" >
+    <td class="topborder" >  Secret Origins                         </td>
+    <td class="topborder" >  <a href="#B70X20">037 </a>    </td>
+    <td class="topborder" >  Legion Of Substitute Heroes                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A110X20" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="tpbr" >
+    <td class="topborder" >  Adventure Comics                         </td>
+    <td class="topborder" >  <a href="#B110X20">310 </a>    </td>
+    <td class="topborder" >  Mxyzptlk                         </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  LSH Archives v2                         </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A110X30" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  Adventure Comics                         </td>
+    <td class="noborder" >  <a href="#B110X30">311 </a>    </td>
+    <td class="noborder" >  Legion Of Substitute Heroes                         </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  LSH Archives v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A110X40" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  Adventure Comics                         </td>
+    <td class="noborder" >  <a href="#B110X40">316 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  LSH Archives v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A150X20" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="tpbr" >
+    <td class="topborder" >  Adventure Comics                         </td>
+    <td class="topborder" >  <a href="#B150X20">329 </a>    </td>
+    <td class="topborder" >  Bizarro                            </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  LSH Archives v4                         </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A190X20" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="DCcomic1" >
+    <td class="topborder" >  Legion Of Superheroes                         </td>
+    <td class="topborder" >  <a href="#B190X20">239 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Murder Most Foul"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A230X20" onmouseover="showcover('covers/Legion Of Super-Heroes 241.webp', '', '', '', 'DC')" class="tpbr" >
+    <td class="topborder" >  Legion Of Super-Heroes                         </td>
+    <td class="topborder" >  <a href="#B230X20">241 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  Superboy And The<br>Legion Of Super-Heroes v2                         </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A230X30" onmouseover="showcover('covers/Legion Of Super-Heroes 242.webp', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  Legion Of Super-Heroes                         </td>
+    <td class="noborder" >  <a href="#B230X30">242 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Superboy And The<br>Legion Of Super-Heroes v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A230X40" onmouseover="showcover('covers/Legion Of Super-Heroes 243.webp', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  Legion Of Super-Heroes                         </td>
+    <td class="noborder" >  <a href="#B230X40">243 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Superboy And The<br>Legion Of Super-Heroes v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A230X50" onmouseover="showcover('covers/Legion Of Super-Heroes 244.webp', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  Legion Of Super-Heroes                         </td>
+    <td class="noborder" >  <a href="#B230X50">244 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Superboy And The<br>Legion Of Super-Heroes v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A230X60" onmouseover="showcover('covers/Legion Of Super-Heroes 245.webp', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  Legion Of Super-Heroes                         </td>
+    <td class="noborder" >  <a href="#B230X60">245 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  Superboy And The<br>Legion Of Super-Heroes v2                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A270X20" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="DCcomic1" >
+    <td class="topborder" >  Legion Of Superheroes                         </td>
+    <td class="topborder" >  <a href="#B270X20">285 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A290X20" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="DCcomic2" >
+    <td class="topborder" >  Legion Of Superheroes                         </td>
+    <td class="topborder" >  <a href="#B290X20">287 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A330X20" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="tpbr" >
+    <td class="topborder" >  Legion Of Superheroes                         </td>
+    <td class="topborder" >  <a href="#B330X20">298 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  The Curse                         </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A330X30" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  Legion Of Superheroes                         </td>
+    <td class="noborder" >  <a href="#B330X30">300 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Curse                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A330X40" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  Legion Of Superheroes                         </td>
+    <td class="noborder" >  <a href="#B330X40">302 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Curse                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A330X50" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  Legion Of Superheroes                         </td>
+    <td class="noborder" >  <a href="#B330X50">303 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Curse                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A330X60" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  Legion Of Superheroes                         </td>
+    <td class="noborder" >  <a href="#B330X60">304 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Curse                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A330X70" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  Legion Of Superheroes                         </td>
+    <td class="noborder" >  <a href="#B330X70">305 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Curse                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A370X20" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')" class="DCcomic2" >
+    <td class="topborder" >  Legion Of Superheroes v2                         </td>
+    <td class="topborder" >  <a href="#B370X20">011 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+</table>
+<br><br><br>
+<table>
+<tr>
+<td>
+<table style="background-color:gold;">
+<tr id="B110X20" class="T1R2" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X20">Adventure Comics 310</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B110X30" class="T1R1" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X30">Adventure Comics 311</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B110X40" class="T1R2" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X40">Adventure Comics 316</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B150X20" class="T1R1" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X20">Adventure Comics 329</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B230X20" class="T1R2" onmouseover="showcover('covers/Legion Of Super-Heroes 241.webp', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A230X20">Legion Of Super-Heroes 241</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B230X30" class="T1R1" onmouseover="showcover('covers/Legion Of Super-Heroes 242.webp', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A230X30">Legion Of Super-Heroes 242</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B230X40" class="T1R2" onmouseover="showcover('covers/Legion Of Super-Heroes 243.webp', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A230X40">Legion Of Super-Heroes 243</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B230X50" class="T1R1" onmouseover="showcover('covers/Legion Of Super-Heroes 244.webp', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A230X50">Legion Of Super-Heroes 244</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B230X60" class="T1R2" onmouseover="showcover('covers/Legion Of Super-Heroes 245.webp', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A230X60">Legion Of Super-Heroes 245</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B190X20" class="T1R1" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A190X20">Legion Of Superheroes 239</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B270X20" class="T1R2" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A270X20">Legion Of Superheroes 285</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B290X20" class="T1R1" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A290X20">Legion Of Superheroes 287</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+</table>
+</td>
+<td>
+<table style="background-color:gold;">
+<tr id="B330X20" class="T2R2" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A330X20">Legion Of Superheroes 298</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B330X30" class="T2R1" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A330X30">Legion Of Superheroes 300</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B330X40" class="T2R2" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A330X40">Legion Of Superheroes 302</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B330X50" class="T2R1" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A330X50">Legion Of Superheroes 303</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B330X60" class="T2R2" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A330X60">Legion Of Superheroes 304</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B330X70" class="T2R1" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A330X70">Legion Of Superheroes 305</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B30X20" class="T2R2" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X20">Legion Of Superheroes v2 008</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B370X20" class="T2R1" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A370X20">Legion Of Superheroes v2 011</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B30X30" class="T2R2" onmouseover="showcover('covers/Secret Origins 025.webp', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X30">Secret Origins 025</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B70X20" class="T2R1" onmouseover="showcover('covers/Secret Origins 037.webp', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X20">Secret Origins 037</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B50X20" class="T2R2" onmouseover="showcover('covers/Secret Origins 046.webp', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A50X20">Secret Origins 046</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B50X30" class="T2R1" onmouseover="showcover('covers/_qmark.png', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A50X30">The Legion Of Super-Heroes<br>In The 31st Century 16</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<br><br><br>
+</body>
+</html>

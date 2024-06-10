@@ -1,0 +1,350 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../hb.css" />
+<link href="comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="comics.html"><img width="200" src="comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="credits/_index.html"><img width="200" src="_credits.jpg"></a> </center></div>
+
+<div style="position: static; left: 260; top: 15;">
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td> <td><b>Reference 1</b></td> <td><b>Reference 2</b></td>  </tr>
+<tr id="A30X20" onmouseover="showcover('covers/The Shadow Strikes 001.jpg', '', '', '', 'DC')" class="DCcomic2" >
+    <td class="topborder" >  The Shadow Strikes                         </td>
+    <td class="topborder" >  <a href="#B30X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A30X30" onmouseover="showcover('covers/The Shadow Strikes 002.jpg', '', '', '', 'DC')" class="DCcomic2" >
+    <td class="topborder" >  The Shadow Strikes                         </td>
+    <td class="topborder" >  <a href="#B30X30">002 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A50X20" onmouseover="showcover('covers/The Shadow Strikes 003.jpg', '', '', '', 'DC')" class="DCcomic1" >
+    <td class="topborder" >  The Shadow Strikes                         </td>
+    <td class="topborder" >  <a href="#B50X20">003 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A50X30" onmouseover="showcover('covers/The Shadow Strikes 004.jpg', '', '', '', 'DC')" class="DCcomic1" >
+    <td class="topborder" >  The Shadow Strikes                         </td>
+    <td class="topborder" >  <a href="#B50X30">004 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A70X20" onmouseover="showcover('covers/The Shadow Strikes 016.jpg', '', '', '', 'DC')" class="DCcomic2" >
+    <td class="topborder" >  The Shadow Strikes                         </td>
+    <td class="topborder" >  <a href="#B70X20">016 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A70X30" onmouseover="showcover('covers/The Shadow Strikes 017.jpg', '', '', '', 'DC')" class="DCcomic2" >
+    <td class="topborder" >  The Shadow Strikes                         </td>
+    <td class="topborder" >  <a href="#B70X30">017 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A110X20" onmouseover="showcover('covers/The Shadow 001.jpg', '', '', '', 'DC')" class="tpbr" >
+    <td class="topborder" >  The Shadow                         </td>
+    <td class="topborder" >  <a href="#B110X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  The Private Files Of The Shadow                         </td>
+    <td class="topborder" >               </td>
+</tr>
+<tr id="A110X30" onmouseover="showcover('covers/The Shadow 002.jpg', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  The Shadow                         </td>
+    <td class="noborder" >  <a href="#B110X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Private Files Of The Shadow                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A110X40" onmouseover="showcover('covers/The Shadow 003.jpg', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  The Shadow                         </td>
+    <td class="noborder" >  <a href="#B110X40">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Private Files Of The Shadow                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A110X50" onmouseover="showcover('covers/The Shadow 004.jpg', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  The Shadow                         </td>
+    <td class="noborder" >  <a href="#B110X50">004 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Private Files Of The Shadow                         </td>
+    <td class="noborder" >               </td>
+</tr>
+<tr id="A110X60" onmouseover="showcover('covers/The Shadow 006.jpg', '', '', '', 'DC')" class="tpbr" >
+    <td class="noborder" >  The Shadow                         </td>
+    <td class="noborder" >  <a href="#B110X60">006 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Private Files Of The Shadow                         </td>
+    <td class="noborder" >               </td>
+</tr>
+</table>
+<br><br><br>
+<table>
+<tr>
+<td>
+<table style="background-color:gold;">
+<tr id="B110X20" class="T1R2" onmouseover="showcover('covers/The Shadow 001.jpg', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X20">The Shadow 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B110X30" class="T1R1" onmouseover="showcover('covers/The Shadow 002.jpg', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X30">The Shadow 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B110X40" class="T1R2" onmouseover="showcover('covers/The Shadow 003.jpg', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X40">The Shadow 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B110X50" class="T1R1" onmouseover="showcover('covers/The Shadow 004.jpg', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X50">The Shadow 004</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B110X60" class="T1R2" onmouseover="showcover('covers/The Shadow 006.jpg', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X60">The Shadow 006</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+</table>
+</td>
+<td>
+<table style="background-color:gold;">
+<tr id="B30X20" class="T2R1" onmouseover="showcover('covers/The Shadow Strikes 001.jpg', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X20">The Shadow Strikes 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B30X30" class="T2R2" onmouseover="showcover('covers/The Shadow Strikes 002.jpg', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X30">The Shadow Strikes 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B50X20" class="T2R1" onmouseover="showcover('covers/The Shadow Strikes 003.jpg', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A50X20">The Shadow Strikes 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B50X30" class="T2R2" onmouseover="showcover('covers/The Shadow Strikes 004.jpg', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A50X30">The Shadow Strikes 004</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B70X20" class="T2R1" onmouseover="showcover('covers/The Shadow Strikes 016.jpg', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X20">The Shadow Strikes 016</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+<tr id="B70X30" class="T2R2" onmouseover="showcover('covers/The Shadow Strikes 017.jpg', '', '', '', 'DC')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X30">The Shadow Strikes 017</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+            </div>
+        </td>
+    </tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<br><br><br>
+</body>
+</html>

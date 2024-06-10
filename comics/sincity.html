@@ -1,77 +1,895 @@
-<html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../hb.css" />
 <link href="comics.ico" rel="icon" type="image/bmp">
 <script type="text/javascript">
-
-function showdefault(){
-    var element = document.getElementById("metadata");
-    element.innerHTML = "metal rules";
-}
-
-function showcover(cover){
-    var element = document.getElementById("metadata");
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
     var dta = "<img src='" + cover +  "' width='250'>";
     element.innerHTML = dta;
-}
-
-
-function swapReprint(){
-    var r  = document.getElementById('issuetable').rows
-    var l = r.length
-    var x
-    var temp
-    for (x = 1; x < l; x++){ //  skip row 0 cuz it's col headers
-        if(r[x].cells.length > 4){
-    	    if(r[x].cells[4].innerHTML != "&nbsp;" 
-	    && r[x].cells[1].innerHTML != "(tpb/gn)"){
-                temp = r[x].cells[4].innerHTML
-                r[x].cells[4].innerHTML = 
-	               r[x].cells[0].innerHTML + " " + r[x].cells[1].innerHTML
-                //  break temp into issue title and number
-                var tl = temp.length
-	        var ch = temp.charAt(tl - 1)
-		while(ch == " "){
-                    tl--
-	            ch = temp.charAt(tl - 1)
-                }
-	        if(ch < "0" || ch > "9"){
-	            r[x].cells[0].innerHTML = temp 
-	            r[x].cells[1].innerHTML = "&nbsp;" 
-	        }
-	        else{
-                    var ishnum = ""
-		    var n = tl - 1
-		    while(temp.charAt(n) == " "){
-                         n--
-                    }
-		    while(temp.charAt(n) != " "){
-		        c = temp.charAt(n)
-		        ishnum = c + ishnum
-                        n--
-		        //alert("ishnum = " + ishnum + "  n = " + n)
-		    }
-	            r[x].cells[0].innerHTML = temp.substr(0, n) 
-	            r[x].cells[1].innerHTML = ishnum   
-	        }
-	    }
-        }
-    }
-    temp = r[5].cells[0].innerHTML
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
 }
 </script>
-				
-<title>sincity</title></head>
+</head>
 <body>
 
-<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
 
-<center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
- <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
- <td><b>Reprint</b></td>   </tr><tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>A Dame To Kill For</td><td></td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>The Big Fat Kill</td><td></td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>That Yellow Bastard</td><td></td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Sex And Voilence</td><td></td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Silent Night</td><td></td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>The Babe Wore Red</td><td></td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Lost, Lonely, And Lethal</td><td></td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr  onmouseover="showcover('covers/_qmark.png')" bgcolor="#eedce2"><td>Just Another Saturday Night</td><td></td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
-</table></center></body></html>
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="comics.html"><img width="200" src="comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="credits/_index.html"><img width="200" src="_credits.jpg"></a> </center></div>
+
+<div style="position: static; left: 260; top: 15;">
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td> <td><b>Reference 1</b></td> <td><b>Reference 2</b></td>  </tr>
+<tr id="A30X20" onmouseover="showcover('covers/Dark Horse Presents 051.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="topborder" >  Dark Horse Presents                         </td>
+    <td class="topborder" >  <a href="#B30X20">051 </a>    </td>
+    <td class="topborder" >  Marv                          </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  The Hard Goodbye                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/49662"> 1991.06 </a>    </td>
+</tr>
+<tr id="A30X30" onmouseover="showcover('covers/Dark Horse Presents 052.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  Dark Horse Presents                         </td>
+    <td class="noborder" >  <a href="#B30X30">052 </a>    </td>
+    <td class="noborder" >  Marv                          </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Hard Goodbye                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/49777"> 1991.07 </a>    </td>
+</tr>
+<tr id="A30X40" onmouseover="showcover('covers/Dark Horse Presents 053.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  Dark Horse Presents                         </td>
+    <td class="noborder" >  <a href="#B30X40">053 </a>    </td>
+    <td class="noborder" >  Marv                          </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Hard Goodbye                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/49916"> 1991.08 </a>    </td>
+</tr>
+<tr id="A30X50" onmouseover="showcover('covers/Dark Horse Presents 054.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  Dark Horse Presents                         </td>
+    <td class="noborder" >  <a href="#B30X50">054 </a>    </td>
+    <td class="noborder" >  Marv                          </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Hard Goodbye                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/50040"> 1991.09 </a>    </td>
+</tr>
+<tr id="A30X60" onmouseover="showcover('covers/Dark Horse Presents 055.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  Dark Horse Presents                         </td>
+    <td class="noborder" >  <a href="#B30X60">055 </a>    </td>
+    <td class="noborder" >  Marv                          </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Hard Goodbye                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/50176"> 1991.10 </a>    </td>
+</tr>
+<tr id="A30X70" onmouseover="showcover('covers/Dark Horse Presents 056.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  Dark Horse Presents                         </td>
+    <td class="noborder" >  <a href="#B30X70">056 </a>    </td>
+    <td class="noborder" >  Marv                          </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Hard Goodbye                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/50306"> 1991.11 </a>    </td>
+</tr>
+<tr id="A30X80" onmouseover="showcover('covers/Dark Horse Presents 057.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  Dark Horse Presents                         </td>
+    <td class="noborder" >  <a href="#B30X80">057 </a>    </td>
+    <td class="noborder" >  Marv                          </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Hard Goodbye                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/50436"> 1991.12 </a>    </td>
+</tr>
+<tr id="A30X90" onmouseover="showcover('covers/Dark Horse Presents 058.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  Dark Horse Presents                         </td>
+    <td class="noborder" >  <a href="#B30X90">058 </a>    </td>
+    <td class="noborder" >  Marv                          </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Hard Goodbye                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/50729"> 1992.01 </a>    </td>
+</tr>
+<tr id="A30X100" onmouseover="showcover('covers/Dark Horse Presents 059.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  Dark Horse Presents                         </td>
+    <td class="noborder" >  <a href="#B30X100">059 </a>    </td>
+    <td class="noborder" >  Marv                          </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Hard Goodbye                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/50845"> 1992.02 </a>    </td>
+</tr>
+<tr id="A30X110" onmouseover="showcover('covers/Dark Horse Presents 060.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  Dark Horse Presents                         </td>
+    <td class="noborder" >  <a href="#B30X110">060 </a>    </td>
+    <td class="noborder" >  Marv                          </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Hard Goodbye                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/50971"> 1992.03 </a>    </td>
+</tr>
+<tr id="A30X120" onmouseover="showcover('covers/Dark Horse Presents 061.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  Dark Horse Presents                         </td>
+    <td class="noborder" >  <a href="#B30X120">061 </a>    </td>
+    <td class="noborder" >  Marv                          </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Hard Goodbye                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/51079"> 1992.04 </a>    </td>
+</tr>
+<tr id="A30X130" onmouseover="showcover('covers/Dark Horse Presents 062.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  Dark Horse Presents                         </td>
+    <td class="noborder" >  <a href="#B30X130">062 </a>    </td>
+    <td class="noborder" >  Marv                          </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  The Hard Goodbye                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/51201"> 1992.05 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A70X20" onmouseover="showcover('covers/A Dame To Kill For 001.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="topborder" >  A Dame To Kill For                         </td>
+    <td class="topborder" >  <a href="#B70X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >  A Dame To Kill For                         </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/53866"> 1993.11 </a>    </td>
+</tr>
+<tr id="A70X30" onmouseover="showcover('covers/A Dame To Kill For 002.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  A Dame To Kill For                         </td>
+    <td class="noborder" >  <a href="#B70X30">002 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  A Dame To Kill For                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/54315"> 1994.01 </a>    </td>
+</tr>
+<tr id="A70X40" onmouseover="showcover('covers/A Dame To Kill For 003.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  A Dame To Kill For                         </td>
+    <td class="noborder" >  <a href="#B70X40">003 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  A Dame To Kill For                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/54491"> 1994.02 </a>    </td>
+</tr>
+<tr id="A70X50" onmouseover="showcover('covers/A Dame To Kill For 004.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  A Dame To Kill For                         </td>
+    <td class="noborder" >  <a href="#B70X50">004 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  A Dame To Kill For                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/54648"> 1994.03 </a>    </td>
+</tr>
+<tr id="A70X60" onmouseover="showcover('covers/A Dame To Kill For 005.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  A Dame To Kill For                         </td>
+    <td class="noborder" >  <a href="#B70X60">005 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  A Dame To Kill For                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/66667"> 1994.04 </a>    </td>
+</tr>
+<tr id="A70X70" onmouseover="showcover('covers/A Dame To Kill For 006.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="tpbr" >
+    <td class="noborder" >  A Dame To Kill For                         </td>
+    <td class="noborder" >  <a href="#B70X70">006 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >                 </td>
+    <td class="noborder" >  A Dame To Kill For                         </td>
+    <td class="noborder" >  <a href="https://www.comics.org/issue/54975"> 1994.05 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A110X20" onmouseover="showcover('covers/The Big Fat Kill 001.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="DarkHorsecomic2" >
+    <td class="topborder" >  The Big Fat Kill                         </td>
+    <td class="topborder" >  <a href="#B110X20">001 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/55947"> 1994.11 </a>    </td>
+</tr>
+<tr id="A110X30" onmouseover="showcover('covers/The Big Fat Kill 002.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="DarkHorsecomic2" >
+    <td class="topborder" >  The Big Fat Kill                         </td>
+    <td class="topborder" >  <a href="#B110X30">002 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/56099"> 1994.12 </a>    </td>
+</tr>
+<tr id="A130X20" onmouseover="showcover('covers/The Big Fat Kill 003.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="DarkHorsecomic1" >
+    <td class="topborder" >  The Big Fat Kill                         </td>
+    <td class="topborder" >  <a href="#B130X20">003 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/56364"> 1995.01 </a>    </td>
+</tr>
+<tr id="A130X30" onmouseover="showcover('covers/The Big Fat Kill 004.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="DarkHorsecomic1" >
+    <td class="topborder" >  The Big Fat Kill                         </td>
+    <td class="topborder" >  <a href="#B130X30">004 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/56527"> 1995.02 </a>    </td>
+</tr>
+<tr id="A150X20" onmouseover="showcover('covers/The Big Fat Kill 005.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="DarkHorsecomic2" >
+    <td class="topborder" >  The Big Fat Kill                         </td>
+    <td class="topborder" >  <a href="#B150X20">005 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/56683"> 1995.03 </a>    </td>
+</tr>
+<tr bgcolor="blue" style="color: white;"><td colspan="6"></td></tr>
+<tr id="A190X20" onmouseover="showcover('covers/The Babe Wore Red 1.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="DarkHorsecomic1" >
+    <td class="topborder" >  The Babe Wore Red                         </td>
+    <td class="topborder" >  <a href="#B190X20">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/55925"> 1994.11 </a>    </td>
+</tr>
+<tr id="A190X30" onmouseover="showcover('covers/Silent Night 1.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="DarkHorsecomic1" >
+    <td class="topborder" >  Silent Night                         </td>
+    <td class="topborder" >  <a href="#B190X30">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/57881"> 1995.11 </a>    </td>
+</tr>
+<tr id="A210X20" onmouseover="showcover('covers/Lost Lonely And Lethal 1.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="DarkHorsecomic2" >
+    <td class="topborder" >  Lost, Lonely, And Lethal                         </td>
+    <td class="topborder" >  <a href="#B210X20">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/59556"> 1996.12 </a>    </td>
+</tr>
+<tr id="A210X30" onmouseover="showcover('covers/Sex And Violence 1.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="DarkHorsecomic2" >
+    <td class="topborder" >  Sex And Violence                         </td>
+    <td class="topborder" >  <a href="#B210X30">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/709802"> 1997.03 </a>    </td>
+</tr>
+<tr id="A230X20" onmouseover="showcover('covers/Just Another Saturday Night 1.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')" class="DarkHorsecomic1" >
+    <td class="topborder" >  Just Another Saturday Night                         </td>
+    <td class="topborder" >  <a href="#B230X20">1 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >                 </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  <a href="https://www.comics.org/issue/66658"> 1998.10 </a>    </td>
+</tr>
+</table>
+<br><br><br>
+<table>
+<tr>
+<td>
+<table style="background-color:gold;">
+<tr id="B70X20" class="T1R2" onmouseover="showcover('covers/A Dame To Kill For 001.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X20">A Dame To Kill For 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/53866"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B70X30" class="T1R1" onmouseover="showcover('covers/A Dame To Kill For 002.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X30">A Dame To Kill For 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/54315"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B70X40" class="T1R2" onmouseover="showcover('covers/A Dame To Kill For 003.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X40">A Dame To Kill For 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/54491"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B70X50" class="T1R1" onmouseover="showcover('covers/A Dame To Kill For 004.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X50">A Dame To Kill For 004</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/54648"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B70X60" class="T1R2" onmouseover="showcover('covers/A Dame To Kill For 005.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X60">A Dame To Kill For 005</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/66667"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B70X70" class="T1R1" onmouseover="showcover('covers/A Dame To Kill For 006.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A70X70">A Dame To Kill For 006</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/54975"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X20" class="T1R2" onmouseover="showcover('covers/Dark Horse Presents 051.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X20">Dark Horse Presents 051</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/49662"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X30" class="T1R1" onmouseover="showcover('covers/Dark Horse Presents 052.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X30">Dark Horse Presents 052</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/49777"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X40" class="T1R2" onmouseover="showcover('covers/Dark Horse Presents 053.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X40">Dark Horse Presents 053</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/49916"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X50" class="T1R1" onmouseover="showcover('covers/Dark Horse Presents 054.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X50">Dark Horse Presents 054</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/50040"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X60" class="T1R2" onmouseover="showcover('covers/Dark Horse Presents 055.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X60">Dark Horse Presents 055</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/50176"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X70" class="T1R1" onmouseover="showcover('covers/Dark Horse Presents 056.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X70">Dark Horse Presents 056</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/50306"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X80" class="T1R2" onmouseover="showcover('covers/Dark Horse Presents 057.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X80">Dark Horse Presents 057</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/50436"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X90" class="T1R1" onmouseover="showcover('covers/Dark Horse Presents 058.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X90">Dark Horse Presents 058</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/50729"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+</table>
+</td>
+<td>
+<table style="background-color:gold;">
+<tr id="B30X100" class="T2R2" onmouseover="showcover('covers/Dark Horse Presents 059.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X100">Dark Horse Presents 059</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/50845"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X110" class="T2R1" onmouseover="showcover('covers/Dark Horse Presents 060.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X110">Dark Horse Presents 060</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/50971"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X120" class="T2R2" onmouseover="showcover('covers/Dark Horse Presents 061.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X120">Dark Horse Presents 061</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/51079"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B30X130" class="T2R1" onmouseover="showcover('covers/Dark Horse Presents 062.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A30X130">Dark Horse Presents 062</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/51201"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B230X20" class="T2R2" onmouseover="showcover('covers/Just Another Saturday Night 1.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A230X20">Just Another Saturday Night 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/66658"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B210X20" class="T2R1" onmouseover="showcover('covers/Lost Lonely And Lethal 1.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A210X20">Lost, Lonely, And Lethal 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/59556"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B210X30" class="T2R2" onmouseover="showcover('covers/Sex And Violence 1.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A210X30">Sex And Violence 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/709802"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B190X30" class="T2R1" onmouseover="showcover('covers/Silent Night 1.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A190X30">Silent Night 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/57881"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B190X20" class="T2R2" onmouseover="showcover('covers/The Babe Wore Red 1.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A190X20">The Babe Wore Red 1</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/55925"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X20" class="T2R1" onmouseover="showcover('covers/The Big Fat Kill 001.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X20">The Big Fat Kill 001</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/55947"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B110X30" class="T2R2" onmouseover="showcover('covers/The Big Fat Kill 002.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A110X30">The Big Fat Kill 002</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/56099"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B130X20" class="T2R1" onmouseover="showcover('covers/The Big Fat Kill 003.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A130X20">The Big Fat Kill 003</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/56364"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B130X30" class="T2R2" onmouseover="showcover('covers/The Big Fat Kill 004.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A130X30">The Big Fat Kill 004</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/56527"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+<tr id="B150X20" class="T2R1" onmouseover="showcover('covers/The Big Fat Kill 005.jpg', 'Frank Miller', 'Frank Miller', 'Frank Miller', 'Dark Horse')">
+        <td>
+            <div class="cellwidener">
+                <a href="#A150X20">The Big Fat Kill 005</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="credits/FrankMiller.html">Frank Miller</a>
+            </div>
+        </td>
+        <td>
+            <div class="cellwidener">
+                <a href="https://www.comics.org/issue/56683"> <img src="GCD.png" style="height: 30;"> </a>
+            </div>
+        </td>
+    </tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<br><br><br>
+</body>
+</html>
