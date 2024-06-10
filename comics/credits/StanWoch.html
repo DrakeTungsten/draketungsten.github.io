@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Stan Woch</h2>
+<br>
+<tr id="C30X200" onmouseover="showcover('../covers/Doom Patrol 051.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch; Mark McKenna; Richard Case', 'Vertigo')"><td> <a href="../doompatrol.html#A30X200">Doom Patrol 051</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1992.01</td> </tr>
+<tr id="C30X220" onmouseover="showcover('../covers/Doom Patrol 055.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')"><td> <a href="../doompatrol.html#A30X220">Doom Patrol 055</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1992.05</td> </tr>
+<tr id="C30X230" onmouseover="showcover('../covers/Doom Patrol 056.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')"><td> <a href="../doompatrol.html#A30X230">Doom Patrol 056</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1992.06</td> </tr>
+<tr id="C30X240" onmouseover="showcover('../covers/Doom Patrol 057.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch; Mark McKenna; Richard Case', 'Vertigo')"><td> <a href="../doompatrol.html#A30X240">Doom Patrol 057</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1992.07</td> </tr>
+<tr id="C30X260" onmouseover="showcover('../covers/Doom Patrol 059.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')"><td> <a href="../doompatrol.html#A30X260">Doom Patrol 059</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1992.09</td> </tr>
+<tr id="C30X270" onmouseover="showcover('../covers/Doom Patrol 060.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')"><td> <a href="../doompatrol.html#A30X270">Doom Patrol 060</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1992.10</td> </tr>
+<tr id="C30X280" onmouseover="showcover('../covers/Doom Patrol 061.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')"><td> <a href="../doompatrol.html#A30X280">Doom Patrol 061</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1992.11</td> </tr>
+<tr id="C30X290" onmouseover="showcover('../covers/Doom Patrol 062.jpg', 'Grant Morrison', 'Richard Case', 'Stan Woch', 'Vertigo')"><td> <a href="../doompatrol.html#A30X290">Doom Patrol 062</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1992.12</td> </tr>
+</table></body></html>

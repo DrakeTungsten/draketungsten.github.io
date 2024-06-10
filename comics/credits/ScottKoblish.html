@@ -1,0 +1,44 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Scott Koblish</h2>
+<br>
+<tr id="C2790X30" onmouseover="showcover('../covers/Fantastic Four (1998) 056.webp', 'Karl Kesel', 'Stuart Immonen', 'Scott Koblish', 'Marvel')"><td> <a href="../marveluniverse.html#A2790X30">Fantastic Four (1998) 056</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2002.08</td> </tr>
+<tr id="C510X30" onmouseover="showcover('../covers/The Cell 1.jpg', 'Garth Ennis', 'Lewis LaRosa', 'Scott Koblish', 'Marvel')"><td> <a href="../punisher.html#A510X30">The Cell 1</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2005.07</td> </tr>
+<tr id="C2250X20" onmouseover="showcover('../covers/Marvel Adventures Avengers 004.webp', 'Jeff Parker', 'Manuel Garcia', 'Scott Koblish', 'Marvel')"><td> <a href="../marveluniverse.html#A2250X20">Marvel Adventures Avengers 004</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2006.10</td> </tr>
+<tr id="C6170X70" onmouseover="showcover('../covers/The Brave And The Bold (2007) 006.webp', 'Mark Waid', 'George Perez', 'Scott Koblish', 'DC')"><td> <a href="../dcuniverse.html#A6170X70">The Brave And The Bold (2007) 006</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2007.10</td> </tr>
+<tr id="C470X170" onmouseover="showcover('../covers/Daredevil v2 Annual 1.jpg', 'Ed Brubaker; Ande Parks', 'Leandro Fernandez', 'Scott Koblish', 'Marvel')"><td> <a href="../daredevil.html#A470X170">Daredevil v2 Annual 1</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2007.12</td> </tr>
+<tr id="C6190X50" onmouseover="showcover('../covers/The Brave And The Bold (2007) 010.webp', 'Mark Waid', 'George Perez', 'Scott Koblish', 'DC')"><td> <a href="../dcuniverse.html#A6190X50">The Brave And The Bold (2007) 010</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>2008.04</td> </tr>
+</table></body></html>

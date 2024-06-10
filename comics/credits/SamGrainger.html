@@ -1,0 +1,44 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Sam Grainger</h2>
+<br>
+<tr id="C1290X40" onmouseover="showcover('../covers/Avengers 068.webp', 'Roy Thomas', 'Sal Buscema', 'Sam Grainger', 'Marvel')"><td> <a href="../marveluniverse.html#A1290X40">Avengers 068</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1969.09</td> </tr>
+<tr id="C1370X20" onmouseover="showcover('../covers/Avengers 089.webp', 'Roy Thomas', 'Sal Buscema', 'Sam Grainger', 'Marvel')"><td> <a href="../marveluniverse.html#A1370X20">Avengers 089</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1971.06</td> </tr>
+<tr id="C1590X40" onmouseover="showcover('../covers/Avengers 143.webp', 'Steve Englehart', 'George Perez', 'Sam Grainger', 'Marvel')"><td> <a href="../marveluniverse.html#A1590X40">Avengers 143</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1976.01</td> </tr>
+<tr id="C170X20" onmouseover="showcover('../covers/Uncanny X-Men 098.jpg', 'Chris Claremont', 'Dave Cockrum', 'Sam Grainger', 'Marvel')"><td> <a href="../xmen.html#A170X20">Uncanny X-Men 098</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1976.04</td> </tr>
+<tr id="C1590X70" onmouseover="showcover('../covers/Avengers 148.webp', 'Steve Englehart', 'George Perez', 'Sam Grainger', 'Marvel')"><td> <a href="../marveluniverse.html#A1590X70">Avengers 148</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1976.06</td> </tr>
+<tr id="C1590X80" onmouseover="showcover('../covers/Avengers 149.webp', 'Steve Englehart', 'George Perez', 'Sam Grainger', 'Marvel')"><td> <a href="../marveluniverse.html#A1590X80">Avengers 149</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1976.07</td> </tr>
+</table></body></html>

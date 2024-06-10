@@ -1,0 +1,55 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Steve Ditko</h2>
+<br>
+<tr id="C170X20" onmouseover="showcover('../covers/Amazing Fantasy 015.jpg', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../spiderman.html#A170X20">Amazing Fantasy 015</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1962.09</td> </tr>
+<tr id="C510X30" onmouseover="showcover('../covers/Journey Into Mystery 084.webp', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../marveluniverse.html#A510X30">Journey Into Mystery 084</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1962.09</td> </tr>
+<tr id="C510X40" onmouseover="showcover('../covers/Journey Into Mystery 088.webp', 'Stan Lee; Larry Lieber', 'Jack Kirby; Steve Ditko', 'Dick Ayers; Steve Ditko', 'Marvel')"><td> <a href="../marveluniverse.html#A510X40">Journey Into Mystery 088</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1963.01</td> </tr>
+<tr id="C170X30" onmouseover="showcover('../covers/Amazing Spider-Man 001.webp', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../spiderman.html#A170X30">Amazing Spider-Man 001</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1963.03</td> </tr>
+<tr id="C170X40" onmouseover="showcover('../covers/Amazing Spider-Man 003.jpg', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../spiderman.html#A170X40">Amazing Spider-Man 003</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1963.07</td> </tr>
+<tr id="C170X50" onmouseover="showcover('../covers/Amazing Spider-Man 007.jpg', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../spiderman.html#A170X50">Amazing Spider-Man 007</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1963.11</td> </tr>
+<tr id="C170X60" onmouseover="showcover('../covers/Amazing Spider-Man 009.jpg', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../spiderman.html#A170X60">Amazing Spider-Man 009</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1964.02</td> </tr>
+<tr id="C170X70" onmouseover="showcover('../covers/Amazing Spider-Man 011.jpg', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../spiderman.html#A170X70">Amazing Spider-Man 011</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1964.04</td> </tr>
+<tr id="C170X80" onmouseover="showcover('../covers/Amazing Spider-Man 012.jpg', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../spiderman.html#A170X80">Amazing Spider-Man 012</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1964.05</td> </tr>
+<tr id="C170X90" onmouseover="showcover('../covers/Amazing Spider-Man Annual 1.jpg', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../spiderman.html#A170X90">Amazing Spider-Man Annual 1</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1964.09</td> </tr>
+<tr id="C310X160" onmouseover="showcover('../covers/Sgt Fury And His Howling Commandos 015.jpg', 'Stan Lee', 'Dick Ayers', 'Steve Ditko', 'Marvel')"><td> <a href="../marveluniverse.html#A310X160">Sgt Fury And His<br> Howling Commandos 015</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1965.02</td> </tr>
+<tr id="C170X100" onmouseover="showcover('../covers/Amazing Spider-Man 025.jpg', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../spiderman.html#A170X100">Amazing Spider-Man 025</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1965.06</td> </tr>
+<tr id="C170X110" onmouseover="showcover('../covers/Amazing Spider-Man 027.jpg', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../spiderman.html#A170X110">Amazing Spider-Man 027</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1965.08</td> </tr>
+<tr id="C170X120" onmouseover="showcover('../covers/Amazing Spider-Man 028.jpg', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../spiderman.html#A170X120">Amazing Spider-Man 028</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1965.09</td> </tr>
+<tr id="C170X130" onmouseover="showcover('../covers/Amazing Spider-Man 029.jpg', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../spiderman.html#A170X130">Amazing Spider-Man 029</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1965.10</td> </tr>
+<tr id="C170X140" onmouseover="showcover('../covers/Amazing Spider-Man 030.jpg', 'Stan Lee', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../spiderman.html#A170X140">Amazing Spider-Man 030</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1965.11</td> </tr>
+<tr id="C750X30" onmouseover="showcover('../covers/Shadows And Light 001.webp', 'Steve Ditko; Len Wein', 'Steve Ditko', 'Steve Ditko', 'Marvel')"><td> <a href="../marveluniverse.html#A750X30">Shadows And Light 001</a> </td>   <td><img style="height: 50;"  src="_keyboard.webp"></td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1998.02</td> </tr>
+</table></body></html>
