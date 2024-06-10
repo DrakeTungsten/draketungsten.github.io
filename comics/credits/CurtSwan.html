@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Curt Swan</h2>
+<br>
+<tr id="C3370X30" onmouseover="showcover('../covers/Action Comics 467.webp', 'Bob Rozakis', 'Curt Swan', 'Tex Blaisdell', 'DC')"><td> <a href="../dcuniverse.html#A3370X30">Action Comics 467</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1977.01</td> </tr>
+<tr id="C3570X21" onmouseover="showcover('../covers/Action Comics 544.webp', 'Marv Wolfman', 'Gil Kane', 'Gil Kane', 'DC')"><td> <a href="../dcuniverse.html#A3570X21">Action Comics 544</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1983.06</td> </tr>
+<tr id="C3570X30" onmouseover="showcover('../covers/Superman 386.webp', 'Cary Bates', 'Curt Swan', 'Dave Hunt', 'DC')"><td> <a href="../dcuniverse.html#A3570X30">Superman 386</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1983.08</td> </tr>
+<tr id="C3630X20" onmouseover="showcover('../covers/DC Comics Presents 071.webp', 'E. Nelson Bridwell', 'Curt Swan', 'Dave Hunt', 'DC')"><td> <a href="../dcuniverse.html#A3630X20">DC Comics Presents 071</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1984.07</td> </tr>
+<tr id="C7030X30" onmouseover="showcover('../covers/Action Comics 583.webp', 'Alan Moore', 'Curt Swan', 'Kurt Schaffenberger', 'DC')"><td> <a href="../dcuniverse.html#A7030X30">Action Comics 583</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1986.09</td> </tr>
+<tr id="C7030X20" onmouseover="showcover('../covers/Superman 423.webp', 'Alan Moore', 'Curt Swan', 'George Perez', 'DC')"><td> <a href="../dcuniverse.html#A7030X20">Superman 423</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1986.09</td> </tr>
+<tr id="C850X20" onmouseover="showcover('../covers/Power Of Shazam 008.webp', 'Jerry Ordway', 'Curt Swan; Peter Krause', 'Mike Manley', 'DC')"><td> <a href="../dcuniverse.html#A850X20">Power Of Shazam 008</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1995.10</td> </tr>
+<tr id="C50X20" onmouseover="showcover('../covers/Batman Chronicles 006.webp', 'Denny O\'Neil', 'Curt Swan', 'John Dell', 'DC')"><td> <a href="../batman.html#A50X20">Batman Chronicles 006</a> </td>   <td>&nbsp</td>  <td><img style="height: 50;"  src="_pencil.jpg"></td>  <td>&nbsp;</td> <td>1996.10</td> </tr>
+</table></body></html>

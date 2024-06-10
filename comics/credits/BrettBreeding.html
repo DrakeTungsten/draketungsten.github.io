@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Brett Breeding</h2>
+<br>
+<tr id="C2390X20" onmouseover="showcover('../covers/Marvel Fanfare 010.webp', 'George Perez; Ralph Macchio', 'George Perez', 'Brett Breeding', 'Marvel')"><td> <a href="../marveluniverse.html#A2390X20">Marvel Fanfare 010</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1983.09</td> </tr>
+<tr id="C690X190" onmouseover="showcover('../covers/Amazing Spider-Man 248.jpg', 'Roger Stern', 'John Romita Jr.', 'Brett Breeding', 'Marvel')"><td> <a href="../spiderman.html#A690X190">Amazing Spider-Man 248</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1984.01</td> </tr>
+<tr id="C1730X30" onmouseover="showcover('../covers/Marvel Fanfare 013.webp', 'Ralph Macchio', 'George Perez', 'John Beatty; Brett Breeding', 'Marvel')"><td> <a href="../marveluniverse.html#A1730X30">Marvel Fanfare 013</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1984.03</td> </tr>
+<tr id="C690X230" onmouseover="showcover('../covers/Amazing Spider-Man 252.jpg', 'Roger Stern', 'Ron Frenz', 'Brett Breeding', 'Marvel')"><td> <a href="../spiderman.html#A690X230">Amazing Spider-Man 252</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1984.05</td> </tr>
+<tr id="C890X20" onmouseover="showcover('../covers/Peter Parker 107.jpg', 'Peter David', 'Rich Buckler', 'Brett Breeding', 'Marvel')"><td> <a href="../spiderman.html#A890X20">Peter Parker 107</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1985.10</td> </tr>
+<tr id="C890X30" onmouseover="showcover('../covers/Peter Parker 108.jpg', 'Peter David', 'Rich Buckler', 'Brett Breeding', 'Marvel')"><td> <a href="../spiderman.html#A890X30">Peter Parker 108</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1985.11</td> </tr>
+<tr id="C890X40" onmouseover="showcover('../covers/Peter Parker 109.jpg', 'Peter David', 'Rich Buckler', 'Brett Breeding', 'Marvel')"><td> <a href="../spiderman.html#A890X40">Peter Parker 109</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1985.12</td> </tr>
+<tr id="C950X40" onmouseover="showcover('../covers/Amazing Spider-Man 276.jpg', 'Tom DeFalco', 'Ron Frenz', 'Brett Breeding', 'Marvel')"><td> <a href="../spiderman.html#A950X40">Amazing Spider-Man 276</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1986.05</td> </tr>
+<tr id="C5010X20" onmouseover="showcover('../covers/Superman (1987) 075.webp', 'Dan Jurgens', 'Dan Jurgens', 'Brett Breeding', 'DC')"><td> <a href="../dcuniverse.html#A5010X20">Superman (1987) 075</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td></td> </tr>
+</table></body></html>

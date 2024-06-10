@@ -1,0 +1,42 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Chic Stone</h2>
+<br>
+<tr id="C710X30" onmouseover="showcover('../covers/Avengers 006.webp', 'Stan Lee; Jack Kirby', 'Jack Kirby', 'Chic Stone', 'Marvel')"><td> <a href="../marveluniverse.html#A710X30">Avengers 006</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1964.07</td> </tr>
+<tr id="C850X20" onmouseover="showcover('../covers/Fantastic Four 035.webp', 'Stan Lee', 'Jack Kirby', 'Chic Stone', 'Marvel')"><td> <a href="../marveluniverse.html#A850X20">Fantastic Four 035</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1965.02</td> </tr>
+<tr id="C730X20" onmouseover="showcover('../covers/Journey Into Mystery 114.webp', 'Stan Lee', 'Jack Kirby', 'Chic Stone', 'Marvel')"><td> <a href="../marveluniverse.html#A730X20">Journey Into Mystery 114</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1965.03</td> </tr>
+<tr id="C310X190" onmouseover="showcover('../covers/Sgt Fury And His Howling Commandos 018.jpg', 'Stan Lee', 'Dick Ayers; Jack Kirby', 'Chic Stone; Carl Hubbell', 'Marvel')"><td> <a href="../marveluniverse.html#A310X190">Sgt Fury And His<br> Howling Commandos 018</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1965.05</td> </tr>
+</table></body></html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../comics.ico" rel="icon" type="image/bmp">
+<script type="text/javascript">
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
+}
+</script>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="../comics.html"><img width="200" src="../comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="_index.html"><img width="200" src="../_credits.jpg"></a> </center></div>
+
+<center>
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Issue</b></td> <td><b>Writer</b></td> <td><b>Penciler</b></td>  <td><b>Inker</b></td> <td><b>Date</b></td>  </tr>
+<br><br>
+<h2>Dan Adkins</h2>
+<br>
+<tr id="C1010X90" onmouseover="showcover('../covers/Tales Of Suspense 094.webp', 'Stan Lee', 'Gene Colan', 'Dan Adkins', 'Marvel')"><td> <a href="../marveluniverse.html#A1010X90">Tales Of Suspense 094</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1967.10</td> </tr>
+<tr id="C890X40" onmouseover="showcover('../covers/Tales To Astonish 100.webp', 'Stan Lee', 'Marie Severin', 'Dan Adkins; Roger Brand', 'Marvel')"><td> <a href="../marveluniverse.html#A890X40">Tales To Astonish 100</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1968.02</td> </tr>
+<tr id="C1090X30" onmouseover="showcover('../covers/Captain America 104.webp', 'Stan Lee', 'Jack Kirby', 'Dan Adkins; Jim Steranko', 'Marvel')"><td> <a href="../marveluniverse.html#A1090X30">Captain America 104</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1968.08</td> </tr>
+<tr id="C30X50" onmouseover="showcover('../covers/Master Of Kung Fu 022.jpg', 'Doug Moench', 'Paul Gulacy', 'Dan Adkins', 'Marvel')"><td> <a href="../masterofkungfu.html#A30X50">Master Of Kung Fu 022</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1974.11</td> </tr>
+<tr id="C30X90" onmouseover="showcover('../covers/Master Of Kung Fu 030.jpg', 'Doug Moench', 'Paul Gulacy', 'Dan Adkins', 'Marvel')"><td> <a href="../masterofkungfu.html#A30X90">Master Of Kung Fu 030</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1975.07</td> </tr>
+<tr id="C30X100" onmouseover="showcover('../covers/Master Of Kung Fu 031.jpg', 'Doug Moench', 'Paul Gulacy', 'Dan Adkins', 'Marvel')"><td> <a href="../masterofkungfu.html#A30X100">Master Of Kung Fu 031</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1975.08</td> </tr>
+<tr id="C70X20" onmouseover="showcover('../covers/Master Of Kung Fu 038.jpg', 'Doug Moench', 'Paul Gulacy', 'Dan Adkins', 'Marvel')"><td> <a href="../masterofkungfu.html#A70X20">Master Of Kung Fu 038</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1976.03</td> </tr>
+<tr id="C70X30" onmouseover="showcover('../covers/Master Of Kung Fu 039.jpg', 'Doug Moench', 'Paul Gulacy', 'Dan Adkins', 'Marvel')"><td> <a href="../masterofkungfu.html#A70X30">Master Of Kung Fu 039</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1976.04</td> </tr>
+<tr id="C1510X30" onmouseover="showcover('../covers/Detective Comics 497.webp', 'Gerry Conway', 'Don Newton', 'Dan Adkins', 'DC')"><td> <a href="../batman.html#A1510X30">Detective Comics 497</a> </td>   <td>&nbsp</td>  <td>&nbsp;</td>  <td><img style="height: 50;"  src="_pen.jpg"></td> <td>1980.12</td> </tr>
+</table></body></html>
