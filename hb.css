@@ -226,6 +226,31 @@ ul.hbdatalinks a:active {
 	border-top: none;	
 }
 
+.comic1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.comic2{
+    background-color: #ffdefc;
+    color: black;	
+}
+
+.comic3{
+    background-color: #90ffff;
+    color: black;	
+}
+
+.magazine1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.magazine2{
+    background-color: #decaff;
+    color: black;	
+}
+
 .Imagecomic1{
     background-color: #f9f9a5;
     color: black;	
@@ -262,6 +287,16 @@ ul.hbdatalinks a:active {
 }
 
 .Eclipsecomic2{
+    background-color: #decaff;
+    color: black;	
+}
+
+.IDWcomic1{
+    background-color: #f9f9a5;
+    color: black;	
+}
+
+.IDWcomic2{
     background-color: #decaff;
     color: black;	
 }
