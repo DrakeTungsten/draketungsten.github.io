@@ -1,7 +1,5 @@
 
 
-
-
 Shops:
 -----------------------------------
 No:
@@ -22,11 +20,6 @@ Did I find this in the house yet?
 -----------------------------------
 DC Single issues:
 -----------------------------------
-World's Finest 227, reprints wf 159, 1966, edmond hamilton
-Batman Chronicles 6 (missing from house?)
-Detective 494 (Pinball, ~1980)
-Superman 272 , ~$30 Mxy reprint from Action Comics 80, 1945
-	(writer = Don C. Cameron, artist = Ira Yarbrough)
 Showcase 22 facsimile, GL
 Batman / Scooby #5 (May, author unknown) #8 (Aug, Fisch)
 Action Comics 1067 (July, Gail), 1068 (Aug), 1069
@@ -37,9 +30,15 @@ Multiversus: Collision Detected (Sep)
 Trinity Special: World's Finest (Sep, collection of backups from WW)
 Lobo: Cancelation Special (Starks)
 Detective Comics 400 facsimile
-
-(Saga Of The) Swamp Thing 52
+---
 Batman Black And White #1 (Death Alley cover) Don't Know Where...
+Batman Chronicles 6 (missing from house?)
+Detective 494 (Pinball, ~1980)
+Impulse 50   45, 47, 57, 67, 68, 86
+(Saga Of The) Swamp Thing 52
+Superman 272 , ~$30 Mxy reprint from Action Comics 80, 1945
+	(writer = Don C. Cameron, artist = Ira Yarbrough)
+World's Finest 227, reprints wf 159, 1966, edmond hamilton
 
 Superman: Man Of Tomorrow (digital second, reprints from 80-page giant)    
     "Viral" #7 (but not according to dc fandom wiki))
@@ -54,21 +53,23 @@ Batman: Gotham Nights (digital)
 -----------------------------------
 Marvel single issues
 -----------------------------------
-wolverine: madripoor nights
-new mutants 98
-avengers annual 10
+new mutants 98 (may)
+avengers annual 10 (may)
 darth maul: black, white and red 2 (mark russell)
-get fury
+Amazing Spiderman 258, 259, 260, 261
 Wolverine 88 facsimile (Jul)
 What If... Donald Duck Became Wolverine (Jul)
-Spidey/Torch 3
+SPiderman: Black Suit And Blood
+X-Men 274 (Sep)
+---
 Avengers 300 (Simonson backup story)
+Spidey/Torch 3
 X-Men First Class (2007) #5 (Hulk, NOT #5 w/ Thor)
 
 -----------------------------------
 Independent single issues:
 -----------------------------------
-Anything Goes #2
+Anything Goes #2 (Fantagraphics 1986)
 Conan The Cimmerian: 2 (but should be in the house)
 King Conan: The Conquerer (Dark Horse) #5
 The Cimmerean: Rogues In The House - Ablaze has no plans yet
@@ -84,18 +85,19 @@ Trades
 -----------------------------------
 DC
 -----------------------------------
-Adam Strange Two Worlds (Bruning, Kuberts, 1990, HC)
+Shazam: The World's Mightiest Mortal v3
 Supergirl: Woman Of Tomorrow Deluxe (Jul 2024)
 Flinch v1 (maybe)
 Flinch v2 (maybe)
-Batman: A Lonely Place Of Dying 
-    NO! does not contain ALPOD as advertised! Batman: The Caped Crusader v2
 Batman/Dredd HC
 The Great Superman Comic Book Collection (1981 hardcover ~$40) Supes 296-299
+Batman: A Lonely Place Of Dying 
+    NO! does not contain ALPOD as advertised! Batman: The Caped Crusader v2
 
 -----------------------------------
 Marvel  
 -----------------------------------
+Get Fury
 John Romita's The Amazing Spider-Man Vol. 2 Artisan Edition (Jul) 106, 108 - 115
 Avengers Twilight (Jul) (maybe)
 Captain America: The Adventures Of Captain America, Sentinel Of Liberty (FabNic)
@@ -103,9 +105,10 @@ Captain America: The Adventures Of Captain America, Sentinel Of Liberty (FabNic)
 -----------------------------------
 Independent
 -----------------------------------
-The Complete Web Of Horror
+Bernie Wrightson: The FPG Years (2022)
 Betrayal Of The Planet Of The Apes
 Planet Of The Apes: Ursus
+The Wrong Earth: Dead Ringers (fall 2024?)
 Foul Play (Sep 2024, Jack Davis , I think it's early work)
 Spawn Of Mars (Wally Wood, 2015)
 ---
@@ -144,6 +147,7 @@ Astro City Opus v1 (Dec 3, 2024)
 -----------------------------------
 NO
 -----------------------------------
+wolverine: madripoor knights
 Code Of Honor (Severin, 2022)
 Atom Bomb (Wally Wood, 2019)
 Doctor Of Horror (Ghastly, 2018, his first EC work)
