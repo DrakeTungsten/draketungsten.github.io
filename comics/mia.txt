@@ -1,5 +1,3 @@
-
-
 Shops:
 -----------------------------------
 No:
@@ -11,17 +9,14 @@ Yes?:
 Comic Asylum
 Alternate Reality
 
-
 ----------------------------------
 Did I find this in the house yet?
 	Conan Saga 66
 ----------------------------------
-
 -----------------------------------
 DC Single issues:
 -----------------------------------
-Showcase 22 facsimile, GL
-Batman / Scooby #5 (May, author unknown) #8 (Aug, Fisch)
+Batman / Scooby #8 (Aug, Fisch)
 Action Comics 1067 (July, Gail), 1068 (Aug), 1069
 The Brave And The Bold 15 (Mark Russell) (Jul)
 Tales Of The Teen Titans 44 facsimile (Jul)
@@ -29,10 +24,12 @@ Absolute Power Origins #2 (Aug)
 Multiversus: Collision Detected (Sep)
 Trinity Special: World's Finest (Sep, collection of backups from WW)
 Lobo: Cancelation Special (Starks)
-Detective Comics 400 facsimile
+Detective Comics 400 facsimile (Sep)
+Hawkman 4 (Oct)
+Batman-Santa Claus - Silent Knight
 ---
+Campbell on Hellblazer (?)
 Batman Black And White #1 (Death Alley cover) Don't Know Where...
-Batman Chronicles 6 (missing from house?)
 Detective 494 (Pinball, ~1980)
 Impulse 50   45, 47, 57, 67, 68, 86
 (Saga Of The) Swamp Thing 52
@@ -53,15 +50,42 @@ Batman: Gotham Nights (digital)
 -----------------------------------
 Marvel single issues
 -----------------------------------
-new mutants 98 (may)
-avengers annual 10 (may)
-darth maul: black, white and red 2 (mark russell)
 Amazing Spiderman 258, 259, 260, 261
-Wolverine 88 facsimile (Jul)
 What If... Donald Duck Became Wolverine (Jul)
-SPiderman: Black Suit And Blood
+Spiderman: Black Suit And Blood
 X-Men 274 (Sep)
 ---
+Savage Sword Of Conan 	
+	71   "the lurker in the labyrinth"  Conan is ~35, some corinthian city
+	74   ("The Black Stone") non-Conan, non-hyborean, HPL-like
+	83   "hunters and hunted" young conan			
+	89   young conan
+	91   "forest of fiends", "the beast"
+	96   "ape-bat"
+	99   "one night in the maul"
+	105  "the mill"
+	109  "the vezek inn"
+	110  "the army of the dead" (already have "dinner guest", saga 76)
+	113  "quest for the shrine of luna"	placement is hard. 
+		blurb says Conan in 30s, takes place in or near Aquilonia 
+	113  "a quiet place"
+	118  "Valley of howling shadows"
+	122  "the blossoms of the black lotus"
+	126  "the mercenary"  Corinthia, Conan 27-yo prbly, ~ss91/6
+	128  "curse of the ageless ones" (RR - can't place it chronolgcly)
+	129  "the sea mage's daughter"
+	131  "reavers of the steppes"
+	142  "blind vengeance"  ... maybe read it first (sometime before Beyond the black river)
+	145  "feast of the stag"
+	153  "blood on the sands"  part 1
+	154  "return of the iron damsels" part 2
+	161  "call of the howling shadows"
+	172  "by hatred reborn" valeria, no Conan
+	185  "the masque of the demon"
+	189  "what can one man do"
+
+
+Conan The Barbarian 273, 274
 Avengers 300 (Simonson backup story)
 Spidey/Torch 3
 X-Men First Class (2007) #5 (Hulk, NOT #5 w/ Thor)
@@ -70,7 +94,6 @@ X-Men First Class (2007) #5 (Hulk, NOT #5 w/ Thor)
 Independent single issues:
 -----------------------------------
 Anything Goes #2 (Fantagraphics 1986)
-Conan The Cimmerian: 2 (but should be in the house)
 King Conan: The Conquerer (Dark Horse) #5
 The Cimmerean: Rogues In The House - Ablaze has no plans yet
 Berni (no "e") Wrightson: Master Of The Macabre (Pacific)
@@ -106,7 +129,7 @@ Captain America: The Adventures Of Captain America, Sentinel Of Liberty (FabNic)
 Independent
 -----------------------------------
 Bernie Wrightson: The FPG Years (2022)
-Betrayal Of The Planet Of The Apes
+Betrayal Of The Planet Of The Apes (ordered)
 Planet Of The Apes: Ursus
 The Wrong Earth: Dead Ringers (fall 2024?)
 Foul Play (Sep 2024, Jack Davis , I think it's early work)
@@ -271,6 +294,7 @@ Marvels Snapshots: Avengers (B Kesel, Nov)
 These Savage Shores
 Super Powers/ Super Friends from Cave Carson / Scioli
 Shazam: The New Beginning
+Superman 386
 The Best Of DC #2 (Batman, treasury size, I think)
 Limited Collectors Edition #37 (Batman, treasury size, I think)
 
