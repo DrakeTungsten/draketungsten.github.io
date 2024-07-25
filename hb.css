@@ -222,32 +222,58 @@ ul.hbdatalinks a:active {
     font-size: 14; 
 }
 
+.conanchrono{
+    margin: 0;
+    margin-left: 10px;
+    font-family: system-ui; 
+    font-size: 14; 
+}
+
 .tpbc3{		
 	border-top: none;	
 }
 
-.comic1{
-    background-color: #f9f9a5;
-    color: black;	
+.section0{    
+    font-size: 8;    
 }
 
-.comic2{
-    background-color: #ffdefc;
-    color: black;	
-}
-
-.comic3{
-    background-color: #90ffff;
-    color: black;	
+.section1{
+    font-weight: bold;
+    font-size: 18;    
 }
 
 .magazine1{
-    background-color: #f9f9a5;
+    background-color: #d0f4de;
     color: black;	
 }
 
 .magazine2{
-    background-color: #decaff;
+    background-color: #a9def9;
+    color: black;	
+}
+
+.comic3{
+    background-color: #fcf6bd;
+    color: black;	
+}
+
+.comic1{
+    background-color: #ffe590;
+    color: black;
+}
+
+.comic2{
+    background-color: #ffffbf;
+    color: black;
+}
+
+.magazine3{
+    background-color: #ddbea9;
+    color: black;	
+}
+
+.magazine4{
+    background-color: #bc987e;
     color: black;	
 }
 
