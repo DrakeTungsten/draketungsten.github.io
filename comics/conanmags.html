@@ -1,90 +1,943 @@
-<html><head><link rel="stylesheet" type="text/css" href="../hb.css"/>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../hb.css" />
 <link href="comics.ico" rel="icon" type="image/bmp">
 <script type="text/javascript">
-function swapReprint(){
-    var r  = document.getElementById('issuetable').rows
-    var l = r.length
-    var x
-    var temp
-    for (x = 1; x < l; x++){ //  skip row 0 cuz it's col headers
-        if(r[x].cells.length > 4){
-    	    if(r[x].cells[4].innerHTML != "&nbsp;" 
-	    && r[x].cells[1].innerHTML != "(tpb/gn)"){
-                temp = r[x].cells[4].innerHTML
-                r[x].cells[4].innerHTML = 
-	               r[x].cells[0].innerHTML + " " + r[x].cells[1].innerHTML
-                //  break temp into issue title and number
-                var tl = temp.length
-	        var ch = temp.charAt(tl - 1)
-		while(ch == " "){
-                    tl--
-	            ch = temp.charAt(tl - 1)
-                }
-	        if(ch < "0" || ch > "9"){
-	            r[x].cells[0].innerHTML = temp 
-	            r[x].cells[1].innerHTML = "&nbsp;" 
-	        }
-	        else{
-                    var ishnum = ""
-		    var n = tl - 1
-		    while(temp.charAt(n) == " "){
-                         n--
-                    }
-		    while(temp.charAt(n) != " "){
-		        c = temp.charAt(n)
-		        ishnum = c + ishnum
-                        n--
-		        //alert("ishnum = " + ishnum + "  n = " + n)
-		    }
-	            r[x].cells[0].innerHTML = temp.substr(0, n) 
-	            r[x].cells[1].innerHTML = ishnum   
-	        }
-	    }
-        }
-    }
-    temp = r[5].cells[0].innerHTML
+function showcover(cover, writer, pencils, inks, publisher){
+    var element = document.getElementById("cover");
+    var dta = "<img src='" + cover +  "' width='250'>";
+    element.innerHTML = dta;
+    element = document.getElementById("credits");
+    var dta = "writer: " + writer + "<br>pencils: " + pencils + "<br>inks: " + inks + "<br>publisher: " + publisher;
+    element.innerHTML = dta;
 }
 </script>
-				
-<title>conanmags</title></head><body><center><table cellpadding="12" border="2" id="issuetable"><tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td>
- <td><b><input type="button" value="Reprint" onClick="swapReprint()"></b></td>
- <td><b>Reprint</b></td>   </tr><tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>039  </td><td>(Hyperborea) </td><td>"Legions Of The Dead"</td><td>Saga 40 </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>001  </td><td>Red Sonja <br>(Arenjun, Zamora) </td><td>"Curse Of The Undead Man"</td><td>Saga 11 </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Tales</td><td>005<br>004  </td><td>&nbsp<br>(Cimmeria) </td><td>"The Secret Of Skull River"<br>"Night Of The Dark God"</td><td>Saga 10 </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>108 </td><td>(Argos) </td><td>"Fear Of Crom"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>002<br>003  </td><td>Yasmela (Khoraja)<br>Yasmela (Khoraja) </td><td>"Black Colossus"<br>"At The Mountain Of The Moon-God"</td><td>Saga 12 </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>029  </td><td>&nbsp</td><td>"Child Of Sorcery"</td><td>Saga 28 (2nd story)     </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>004  </td><td>&nbsp</td><td>"Iron Shadows In The Moon"</td><td>Saga 13           </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>038  </td><td>(Turan)  </td><td>"Road Of The Eagles"</td><td>Saga 59 </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>179 </td><td>Valeria<br>Red Sonja </td><td>"Fury Of The Iron Damsels"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>005  </td><td>(Khauran) </td><td>"A Witch Shall Be Born"</td><td>Saga 32 </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>011  </td><td>(Fortress of Thieves)   </td><td>"Abode Of The Damned"</td><td>Saga 14 </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>012  </td><td>&nbsp</td><td>"Haunters Of The Castle Crimson"</td><td>Saga 36           </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>028  </td><td>Zamboula </td><td>"Blood Of The Gods"</td><td>Saga 19 </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>014  </td><td>Zamboula </td><td>"Shadows In Zamboula"</td><td>Saga 17 </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>037  </td><td>Kozaki chieftan </td><td>"Son Of The White Wolf"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>031  </td><td>Olgerd<br>(Iranistan) </td><td>"The Flame Knife"</td><td>Saga 34 </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>032  </td><td>Olgerd<br>(Iranistan) </td><td>"The Ghouls Of Yanaidar"</td><td>Saga 35 </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>016  </td><td>&nbsp</td><td>"People Of The Black Circle"</td><td>Saga 28 </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>017  </td><td>&nbsp</td><td>"On To Yimsha"</td><td>Saga 29 </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>018  </td><td>&nbsp</td><td>"The Battle Of The Towers"</td><td>Saga 30 </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>019  </td><td>&nbsp</td><td>"Vengence In Vendhya"</td><td>Saga 31 </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>110 </td><td>&nbsp</td><td>"The Dinner Guest"</td><td>Saga 76   </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>165 </td><td>(Iranistan) </td><td>"City Of Rats"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>045  </td><td>Barachan <i>Hawk</i> </td><td>"The Gem In The Tower"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>196 </td><td>Valeria            </td><td>"The Devourer Of The Dead"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>197 </td><td>Valeria            </td><td>"A Night In Messantia"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>199 </td><td>&nbsp</td><td>"Treachery On Tortage"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>022  </td><td>&nbsp</td><td>"The Pool Of The Black One"</td><td>Saga 47                          </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>023  </td><td>Zingaran <i>Wastrel</i> </td><td>"Torrent Of Doom"</td><td>Saga 48 </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>040  </td><td>Black Zarono  </td><td>"A Dream Of Blood"</td><td>Saga 42 </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>043  </td><td>Black Zarono  </td><td>"King Thoth-Amon"</td><td>Saga 45 </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>025  </td><td>(Keshan)     </td><td>"The Jewels Of Gwahlur"</td><td>Saga 20 </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>060  </td><td>(Punt)       </td><td>"The Ivory Goddess"</td><td>Saga 65 </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>201  </td><td>Valeria </td><td>"The Man In The Iron Tower"</td><td>&nbsp</td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>049  </td><td>&nbsp</td><td>"When Madness Wears The Crown"</td><td>Saga 53                    </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>050  </td><td>&nbsp</td><td>"Swords Across The Alimane"</td><td>Saga 54                    </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>051  </td><td>&nbsp</td><td>"Satyr's Blood"</td><td>Saga 55                    </td><td>&nbsp</td></tr>
-<tr bgcolor="#f9f9a5"><td>Savage Sword Of Conan</td><td>052  </td><td>King Of Aquilonia </td><td>"Conan The Liberator"</td><td>Saga 56 </td><td>&nbsp</td></tr>
-<tr bgcolor="#decaff"><td>Savage Sword Of Conan</td><td>214  </td><td>&nbsp</td><td>"The Reign Of Thulundra Thuu"</td><td>&nbsp</td><td>&nbsp</td></tr>
-</table></center></body></html>
+</head>
+<body>
+
+
+
+
+<div id="cover" style="position: fixed; left: 1480; top: 10; background-color: white; color: red; line-height: 1.5; width: 250"></div>
+
+
+<div id="credits" style="position: fixed; left: 1480; top: 400; background-color: #ffebff; color: black; line-height: 1.5; width: 500"></div>
+
+
+<div id="comicshome" style="position: fixed; left: 1480; top: 505; background-color: white; color: red; width: 250"><center> <a href="comics.html"><img width="200" src="comics.png"></a> </center></div>
+
+
+<div id="creators" style="position: fixed; left: 1480; top: 710; background-color: white; color: red; width: 250"><center> <a href="credits/_index.html"><img width="200" src="_credits.jpg"></a> </center></div>
+
+<div style="position: static; left: 260; top: 15;">
+<table cellpadding="12" border="2" id="issuetable">
+<tr align="center" > <td><b>Series</b></td> <td><b>Issue</b></td> <td><b>Comments</b></td> <td><b>Title</b></td> <td><b>Reference 1</b></td> <td><b>Reference 2</b></td>  </tr>
+<tr id="A220X10" onmouseover="showcover('covers/The Savage Sword Of Conan 089.jpg', 'Michael Fleisher', 'Mary Wilshire', 'Armando Gil', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B220X10">089 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Rite Of Blood"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174698"> 1983.06 </a>
+ <span class="conanchrono">72</span>
+<br><br><a href="https://classiccomics.org/post/75327/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_89"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A220X30" onmouseover="showcover('covers/The Savage Sword Of Conan 203.jpg', 'Roy Thomas', 'Sandu Florea', 'Sandu Florea', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B220X30">203 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Old Garrad's Heart"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174803"> 1992.11 </a>
+ <span class="conanchrono">72</span>
+<br><br><a href="https://classiccomics.org/post/166236/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_203"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A230X10" onmouseover="showcover('covers/The Savage Sword Of Conan 227.jpg', 'Roy Thomas', 'Mark Pennington', 'Jason Minor', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B230X10">227 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Day of Manhood"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174827"> 1994.11 </a>
+ <span class="conanchrono">72</span>
+<br><br><a href="https://classiccomics.org/post/182634/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_227"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A230X30" onmouseover="showcover('covers/The Savage Sword Of Conan 083.jpg', 'Alan Zelenetz', 'Mary Wilshire', 'Mary Wilshire', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B230X30">083 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Hunters And Hunted"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/36930"> 1982.12 </a>
+ <span class="conanchrono">72</span>
+<br><br><a href="https://classiccomics.org/post/72565/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_83"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A700X10" onmouseover="showcover('covers/The Savage Sword Of Conan 039.jpg', 'Roy Thomas', 'Sal Buscema', 'Tony DeZuniga', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B700X10">039 </a>    </td>
+    <td class="topborder" >  (Hyperborea)                          </td>
+    <td class="topborder" >  "Legions Of The Dead"               </td>
+    <td class="topborder" >  Conan Saga 40                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/33301"> 1979.04 </a>
+ <span class="conanchrono">72</span>
+<br><br><a href="http://classiccomics.org/post/45220/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_39"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A700X30" onmouseover="showcover('covers/The Savage Sword Of Conan 099.jpg', 'Christopher Priest', 'Stan Woch', 'Ned Sonntag', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B700X30">099 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "One Night At The Maul"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174706"> 1984.04 </a>
+ <span class="conanchrono">72</span>
+<br><br><a href="https://classiccomics.org/post/79849/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_99"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A2070X10" onmouseover="showcover('covers/The Savage Sword Of Conan 118.jpg', 'Larry Yakata', 'Gary Kwapisz', 'Gary Kwapisz', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B2070X10">118 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Valley of Howling Shadows!"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174724"> 1985.11 </a>
+ <span class="conanchrono">73</span>
+<br><br><a href="https://classiccomics.org/post/86022/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_118"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A2070X30" onmouseover="showcover('covers/The Savage Sword Of Conan 161.jpg', 'Chuck Dixon; Gary Kwapisz', 'Gary Kwapisz', 'Mark Pacella', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B2070X30">161 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Call of the Howling Shadows"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174766"> 1989.06 </a>
+<br><br><a href="https://classiccomics.org/post/122550/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_161"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A2090X10" onmouseover="showcover('covers/The Savage Sword Of Conan 091.jpg', 'Christopher Priest', 'Gary Kwapisz', 'Gary Kwapisz', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B2090X10">091 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Beast"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174700"> 1983.08 </a>
+ <span class="conanchrono">74</span>
+<br><br><a href="https://classiccomics.org/post/77384/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_91"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A2350X10" onmouseover="showcover('covers/The Savage Sword Of Conan 110.jpg', 'Alan Rowlands', 'Tim Burgard', 'Tim Burgard', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B2350X10">110 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Dinner Guest"               </td>
+    <td class="topborder" >  Conan Saga 76                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174717"> 1985.03 </a>
+ <span class="conanchrono">74</span>
+<br><br><a href="https://classiccomics.org/post/83323/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_110"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A2350X30" onmouseover="showcover('covers/The Savage Sword Of Conan 113.jpg', 'Don Kraar', 'Tony Salmons', 'Tony Salmons', 'Marvel')" class="magazine2" >
+    <td class="noborder" >  The Savage Sword Of Conan                         </td>
+    <td class="noborder" >  <a href="#B2350X30">113 </a>    </td>
+    <td class="noborder" >                           </td>
+    <td class="noborder" >  "A Quiet Place"               </td>
+    <td class="noborder" >  Conan Saga 76                         </td>
+    <td class="noborder" ><a href="https://www.comics.org/issue/174720"> 1985.06 </a>
+ <span class="conanchrono">82</span>
+<br><br><a href="https://classiccomics.org/post/84286/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_113"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A2400X10" onmouseover="showcover('covers/Marvel Super Special 009.jpg', 'Roy Thomas', 'John Buscema', 'Tony DeZuniga', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  Marvel Super Special                         </td>
+    <td class="topborder" >  <a href="#B2400X10">009 </a>    </td>
+    <td class="topborder" >  (Kezankian Mountains)                          </td>
+    <td class="topborder" >  "The Trail Of The Blood-Stained God"               </td>
+    <td class="topborder" >  Conan Saga 80                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/31799"> 1978 </a>
+    </td>
+</tr>
+
+<tr id="A2700X10" onmouseover="showcover('covers/The Savage Sword Of Conan 001.jpg', 'Roy Thomas; Robert E. Howard', 'John Buscema', 'Pablo Marcos', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B2700X10">001 </a>    </td>
+    <td class="topborder" >  Red Sonja<br>(Arenjun, Zamora)<br>(between CtB 42 and 43)                         </td>
+    <td class="topborder" >  "Curse Of The Undead Man"               </td>
+    <td class="topborder" >  Conan Saga 11                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/27659"> 1974.08 </a>
+<br><br><a href="https://classiccomics.org/thread/19/annotated-savage-sword-conan?page=1"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_1"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A2700X30" onmouseover="showcover('covers/Savage Tales 005.jpg', 'Roy Thomas', 'Jim Starlin', 'Al Milgrom', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  Savage Tales                         </td>
+    <td class="topborder" >  <a href="#B2700X30">005 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Secret Of Skull River"               </td>
+    <td class="topborder" >  Conan Saga 10                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/27580"> 1974.07 </a>
+<br><br><a href="https://classiccomics.org/post/25302/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Tales_5"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A2700X40" onmouseover="showcover('covers/Savage Tales 004.jpg', 'Roy Thomas', 'Gil Kane; Neal Adams', 'Neal Adams', 'Marvel')" class="magazine2" >
+    <td class="noborder" >  Savage Tales                         </td>
+    <td class="noborder" >  <a href="#B2700X40">004 </a>    </td>
+    <td class="noborder" >  (Cimmeria)                         </td>
+    <td class="noborder" >  "Night Of The Dark God"               </td>
+    <td class="noborder" >  Conan Saga 10                         </td>
+    <td class="noborder" ><a href="https://www.comics.org/issue/27412"> 1974.05 </a>
+<br><br><a href="https://classiccomics.org/post/25206/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Tales_4"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A3320X10" onmouseover="showcover('covers/The Savage Sword Of Conan 071.jpg', 'Michael Fleisher', 'John Buscema', 'Ernie Chan', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B3320X10">071 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Lurker in the Labyrinth"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/35900"> 1981.12 </a>
+ <span class="conanchrono">79</span>
+<br><br><a href="https://classiccomics.org/post/68181/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_71"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A3320X30" onmouseover="showcover('covers/The Savage Sword Of Conan 126.jpg', 'Gary Kwapisz; Larry Yakata', 'Gary Kwapisz', 'Gary Kwapisz', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B3320X30">126 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Mercenary"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174732"> 1986.07 </a>
+<br><br><a href="https://classiccomics.org/post/89395/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_126"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A3330X10" onmouseover="showcover('covers/The Savage Sword Of Conan 091.jpg', 'Michael Fleisher', 'John Buscema', 'Gary Kwapisz', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B3330X10">091 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Forest Of Fiends!"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174700"> 1983.08 </a>
+ <span class="conanchrono">74</span>
+<br><br><a href="https://classiccomics.org/post/77384/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_91"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A3330X30" onmouseover="showcover('covers/The Savage Sword Of Conan 096.jpg', 'Michael Fleisher', 'John Buscema', 'Rudy Nebres', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B3330X30">096 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Ape-Bat of Marmet Tarn"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174703"> 1984.01 </a>
+ <span class="conanchrono">79</span>
+<br><br><a href="https://classiccomics.org/post/78401/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_96"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A3340X10" onmouseover="showcover('covers/The Savage Sword Of Conan 185.jpg', 'Don Kraar', 'Dale Eaglesham', 'Pat Redding', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B3340X10">185 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Masque Of The Demon"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174790"> 1991.05 </a>
+<br><br><a href="https://classiccomics.org/post/148921/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_185"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A3450X10" onmouseover="showcover('covers/The Savage Sword Of Conan 113.jpg', 'Larry Yakata', 'Ernie Chan', 'Ernie Chan', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B3450X10">113 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Quest for the Shrine of Luma"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174720"> 1985.06 </a>
+ <span class="conanchrono">82</span>
+<br><br><a href="https://classiccomics.org/post/84286/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_113"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A3450X30" onmouseover="showcover('covers/The Savage Sword Of Conan 108.jpg', 'Don Kraar', 'Mike Docherty', 'Mike Docherty', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B3450X30">108 </a>    </td>
+    <td class="topborder" >  (Argos)                          </td>
+    <td class="topborder" >  "Fear Of Crom"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174715"> 1985.01 </a>
+ <span class="conanchrono">82</span>
+<br><br><a href="https://classiccomics.org/post/82252/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_108"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A3520X10" onmouseover="showcover('covers/The Savage Sword Of Conan 105.jpg', 'Don Kraar', 'Gary Kwapisz', 'Bob Camp', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B3520X10">105 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Mill"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174712"> 1984.10 </a>
+ <span class="conanchrono">82</span>
+<br><br><a href="https://classiccomics.org/post/81326/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_105"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A3520X30" onmouseover="showcover('covers/The Savage Sword Of Conan 002.jpg', 'Roy Thomas; Robert E. Howard', 'John Buscema', 'Alfredo Alcala', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B3520X30">002 </a>    </td>
+    <td class="topborder" >  Yasmela<br>(Khoraja)                         </td>
+    <td class="topborder" >  "Black Colossus"               </td>
+    <td class="topborder" >  Conan Saga 12                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/27851"> 1974.10 </a>
+ <span class="conanchrono">82</span>
+<br><br><a href="http://classiccomics.boards.net/post/650/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_2"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A3620X10" onmouseover="showcover('covers/The Savage Sword Of Conan 003.jpg', 'Roy Thomas; Robert E. Howard', 'John Buscema', 'Pablo Marcos', 'Marvel')" class="magazine1" >
+    <td class="noborder" >  The Savage Sword Of Conan                         </td>
+    <td class="noborder" >  <a href="#B3620X10">003 </a>    </td>
+    <td class="noborder" >  Yasmela<br>(Khoraja)                         </td>
+    <td class="noborder" >  "At The Mountain Of The Moon-God"               </td>
+    <td class="noborder" >  Conan Saga 12                         </td>
+    <td class="noborder" ><a href="https://www.comics.org/issue/28036"> 1974.12 </a>
+ <span class="conanchrono">82</span>
+<br><br><a href="http://classiccomics.boards.net/post/657/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_3"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A3620X30" onmouseover="showcover('covers/The Savage Sword Of Conan 029.jpg', 'Roy Thomas', 'Ernie Chan', 'Ernie Chan', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B3620X30">029 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Child Of Sorcery"               </td>
+    <td class="topborder" >  Conan Saga 28 (2nd story)                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/32253"> 1978.05 </a>
+ <span class="conanchrono">82</span>
+<br><br><a href="http://classiccomics.org/post/27540/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_29"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A3770X10" onmouseover="showcover('covers/The Savage Sword Of Conan 131.jpg', 'Don Kraar', 'Dave Simons', 'Dave Simons', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B3770X10">131 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Reavers of the Steppes"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174737"> 1986.12 </a>
+ <span class="conanchrono">83</span>
+<br><br><a href="https://classiccomics.org/post/94379/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_131"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A3770X30" onmouseover="showcover('covers/The Savage Sword Of Conan 110.jpg', 'Bill Mantlo', 'Gary Kwapisz', 'Gary Kwapisz', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B3770X30">110 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Army of the Dead!"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174717"> 1985.03 </a>
+ <span class="conanchrono">74</span>
+<br><br><a href="https://classiccomics.org/post/83323/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_110"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A4000X10" onmouseover="showcover('covers/The Savage Sword Of Conan 004.jpg', 'Roy Thomas; Robert E. Howard', 'John Buscema', 'Alfredo Alcala', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B4000X10">004 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Iron Shadows In The Moon"               </td>
+    <td class="topborder" >  Conan Saga 13                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/28268"> 1975.02 </a>
+ <span class="conanchrono">83</span>
+<br><br><a href="http://classiccomics.boards.net/post/1008/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_4"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A4000X30" onmouseover="showcover('covers/The Savage Sword Of Conan 038.jpg', 'Roy Thomas', 'John Buscema', 'Tony DeZuniga', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B4000X30">038 </a>    </td>
+    <td class="topborder" >  (Turan)                          </td>
+    <td class="topborder" >  "Road Of The Eagles"               </td>
+    <td class="topborder" >  Conan Saga 59                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/33227"> 1979.03 </a>
+ <span class="conanchrono">83</span>
+<br><br><a href="http://classiccomics.org/post/44383/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_38"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A4350X10" onmouseover="showcover('covers/The Savage Sword Of Conan 128.jpg', 'Christopher Priest', 'Mike Docherty', 'Fraja Bator', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B4350X10">128 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Curse Of The Ageless Ones!"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174734"> 1986.09 </a>
+<br><br><a href="https://classiccomics.org/post/90659/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_128"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A4350X30" onmouseover="showcover('covers/The Savage Sword Of Conan 005.jpg', 'Roy Thomas; Robert E. Howard', 'John Buscema', 'Tony DeZuniga; Steve Gan', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B4350X30">005 </a>    </td>
+    <td class="topborder" >  (Khauran)                          </td>
+    <td class="topborder" >  "A Witch Shall Be Born"               </td>
+    <td class="topborder" >  Conan Saga 32                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/28476"> 1975.04 </a>
+ <span class="conanchrono">83</span>
+<br><br><a href="http://classiccomics.boards.net/post/1015/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_05"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A4400X10" onmouseover="showcover('covers/The Savage Sword Of Conan 011.jpg', 'Roy Thomas; Robert E. Howard', 'John Buscema', 'Yong Montano', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B4400X10">011 </a>    </td>
+    <td class="topborder" >  (Fortress of Thieves)                          </td>
+    <td class="topborder" >  "Abode Of The Damned"               </td>
+    <td class="topborder" >  Conan Saga 14                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/29763"> 1976.04 </a>
+ <span class="conanchrono">83</span>
+<br><br><a href="http://classiccomics.boards.net/post/4146/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_11"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A4400X30" onmouseover="showcover('covers/The Savage Sword Of Conan 012.jpg', 'Roy Thomas; Robert E. Howard', 'John Buscema', 'Alfredo Alcala', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B4400X30">012 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Haunters Of The Castle Crimson"               </td>
+    <td class="topborder" >  Conan Saga 36                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/29937"> 1976.06 </a>
+ <span class="conanchrono">83</span>
+<br><br><a href="http://classiccomics.boards.net/post/5322/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_12"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A4600X10" onmouseover="showcover('covers/The Savage Sword Of Conan 028.jpg', 'Roy Thomas', 'John Buscema', 'Alfredo Alcala', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B4600X10">028 </a>    </td>
+    <td class="topborder" >  Zamboula                          </td>
+    <td class="topborder" >  "Blood Of The Gods"               </td>
+    <td class="topborder" >  Conan Saga 19                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/32162"> 1978.04 </a>
+ <span class="conanchrono">83</span>
+<br><br><a href="http://classiccomics.org/post/27539/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_28"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A4600X30" onmouseover="showcover('covers/The Savage Sword Of Conan 014.jpg', 'Roy Thomas', 'Neal Adams; The Tribe; Tony DeZuniga', 'Neal Adams; The Tribe; Tony DeZuniga', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B4600X30">014 </a>    </td>
+    <td class="topborder" >  Zamboula                          </td>
+    <td class="topborder" >  "Shadows In Zamboula"               </td>
+    <td class="topborder" >  Conan Saga 17                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/30228"> 1976.09 </a>
+ <span class="conanchrono">83</span>
+<br><br><a href="http://classiccomics.boards.net/post/6519/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_14"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5100X10" onmouseover="showcover('covers/The Savage Sword Of Conan 037.jpg', 'Roy Thomas', 'Sal Buscema', 'Rudy Nebres', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5100X10">037 </a>    </td>
+    <td class="topborder" >  Kozaki chieftan                          </td>
+    <td class="topborder" >  "Sons Of The White Wolf"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/33148"> 1979.02 </a>
+ <span class="conanchrono">84</span>
+<br><br><a href="http://classiccomics.org/post/41000/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_37"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5100X30" onmouseover="showcover('covers/The Savage Sword Of Conan 189.jpg', 'Doug Murray', 'Patrick Archibald', 'Alfredo Alcala', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5100X30">189 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "What Can One Man Do?"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174794"> 1991.09 </a>
+ <span class="conanchrono">84</span>
+<br><br><a href="https://classiccomics.org/post/151150/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_189"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5200X10" onmouseover="showcover('covers/The Savage Sword Of Conan 031.jpg', 'Roy Thomas', 'John Buscema', 'Tony DeZuniga', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5200X10">031 </a>    </td>
+    <td class="topborder" >  Olgerd<br>(Iranistan)                         </td>
+    <td class="topborder" >  "The Flame Knife"               </td>
+    <td class="topborder" >  Conan Saga 34                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/32435"> 1978.07 </a>
+ <span class="conanchrono">84</span>
+<br><br><a href="http://classiccomics.org/post/31024/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_31"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5200X30" onmouseover="showcover('covers/The Savage Sword Of Conan 032.jpg', 'Roy Thomas', 'John Buscema', 'Tony DeZuniga', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5200X30">032 </a>    </td>
+    <td class="topborder" >  Olgerd<br>(Iranistan)                         </td>
+    <td class="topborder" >  "The Ghouls Of Yanaidar"               </td>
+    <td class="topborder" >  Conan Saga 35                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/32527"> 1978.08 </a>
+ <span class="conanchrono">84</span>
+<br><br><a href="http://classiccomics.org/post/31137/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_32"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5300X10" onmouseover="showcover('covers/The Savage Sword Of Conan 016.jpg', 'Roy Thomas', 'John Buscema', 'Alfredo Alcala', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5300X10">016 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "People Of The Black Circle"               </td>
+    <td class="topborder" >  Conan Saga 28                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/30533"> 1976.12 </a>
+ <span class="conanchrono">84</span>
+<br><br><a href="http://classiccomics.boards.net/post/13239/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_16"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5300X30" onmouseover="showcover('covers/The Savage Sword Of Conan 017.jpg', 'Roy Thomas; Robert E. Howard', 'Tim Conrad', 'Tim Conrad', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5300X30">017 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "On To Yimsha"               </td>
+    <td class="topborder" >  Conan Saga 29                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/30777"> 1977.02 </a>
+ <span class="conanchrono">84</span>
+<br><br><a href="http://classiccomics.boards.net/post/14103/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_17"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5400X10" onmouseover="showcover('covers/The Savage Sword Of Conan 018.jpg', 'Roy Thomas', 'John Buscema', 'Alfredo Alcala', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5400X10">018 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Battle Of The Towers"               </td>
+    <td class="topborder" >  Conan Saga 30                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/30962"> 1977.04 </a>
+ <span class="conanchrono">84</span>
+<br><br><a href="http://classiccomics.boards.net/post/15425/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_18"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5400X30" onmouseover="showcover('covers/The Savage Sword Of Conan 019.jpg', 'Roy Thomas', 'John Buscema', 'Alfredo Alcala', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5400X30">019 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Vengence In Vendhya"               </td>
+    <td class="topborder" >  Conan Saga 31                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/31140"> 1977.06 </a>
+ <span class="conanchrono">84</span>
+<br><br><a href="http://classiccomics.boards.net/post/16519/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_19"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5500X10" onmouseover="showcover('covers/The Savage Sword Of Conan 165.jpg', 'Chuck Dixon; Gary Kwapisz', 'Gary Kwapisz', 'Gary Kwapisz', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5500X10">165 </a>    </td>
+    <td class="topborder" >  (Iranistan)                          </td>
+    <td class="topborder" >  "City Of Rats"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174770"> 1989.10 </a>
+ <span class="conanchrono">84</span>
+<br><br><a href="https://classiccomics.org/post/126866/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_165"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5500X30" onmouseover="showcover('covers/The Savage Sword Of Conan 109.jpg', 'Christopher Priest', 'Mike Docherty', 'Mike Docherty', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5500X30">109 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Vezek Inn"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174716"> 1985.02 </a>
+ <span class="conanchrono">84</span>
+<br><br><a href="https://classiccomics.org/post/82541/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_109"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5700X10" onmouseover="showcover('covers/The Savage Sword Of Conan 145.jpg', 'Chuck Dixon', 'Gary Kwapisz', 'Geof Isherwood', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5700X10">145 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Feast of the Stag"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174750"> 1988.02 </a>
+ <span class="conanchrono">86</span>
+<br><br><a href="https://classiccomics.org/post/105946/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_145"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5700X30" onmouseover="showcover('covers/The Savage Sword Of Conan 045.jpg', 'Roy Thomas', 'John Buscema', 'Tony DeZuniga', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5700X30">045 </a>    </td>
+    <td class="topborder" >  Barachan <i>Hawk</i>                         </td>
+    <td class="topborder" >  "The Gem In The Tower"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/33775"> 1979.10 </a>
+ <span class="conanchrono">86</span>
+<br><br><a href="http://classiccomics.org/post/57278/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_45"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5800X10" onmouseover="showcover('covers/The Savage Sword Of Conan 196.jpg', 'Roy Thomas', 'John Buscema', 'Ernie Chan', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5800X10">196 </a>    </td>
+    <td class="topborder" >  Valeria                          </td>
+    <td class="topborder" >  "The Devourer Of The Dead"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174796"> 1992.04 </a>
+ <span class="conanchrono">86</span>
+<br><br><a href="https://classiccomics.org/post/158746/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_196"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5800X30" onmouseover="showcover('covers/The Savage Sword Of Conan 197.jpg', 'Roy Thomas', 'John Buscema', 'Ernie Chan', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5800X30">197 </a>    </td>
+    <td class="topborder" >  Valeria                          </td>
+    <td class="topborder" >  "A Night In Messantia"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174797"> 1992.05 </a>
+ <span class="conanchrono">86</span>
+<br><br><a href="https://classiccomics.org/post/159009/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_197"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5900X10" onmouseover="showcover('covers/The Savage Sword Of Conan 199.jpg', 'Roy Thomas', 'John Buscema', 'Ernie Chan', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5900X10">199 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Treachery On Tortage"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174799"> 1992.07 </a>
+ <span class="conanchrono">86</span>
+<br><br><a href="https://classiccomics.org/post/161374/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_199"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5900X30" onmouseover="showcover('covers/The Savage Sword Of Conan 122.jpg', 'Don Kraar', 'Ernie Chan', 'Ernie Chan', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5900X30">122 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Blossoms of the Black Lotus"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174728"> 1986.03 </a>
+ <span class="conanchrono">87</span>
+<br><br><a href="https://classiccomics.org/post/87440/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_122"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5950X10" onmouseover="showcover('covers/The Savage Sword Of Conan 022.jpg', 'Roy Thomas', 'John Buscema', 'Sonny Trinidad', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5950X10">022 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Pool Of The Black One"               </td>
+    <td class="topborder" >  Conan Saga 47                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/31451"> 1977.09 </a>
+ <span class="conanchrono">87</span>
+<br><br><a href="http://classiccomics.boards.net/post/22096/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_22"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5950X30" onmouseover="showcover('covers/The Savage Sword Of Conan 023.jpg', 'Roy Thomas', 'John Buscema', 'Alfredo Alcala', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5950X30">023 </a>    </td>
+    <td class="topborder" >  Zingaran <i>Wastrel</i>                         </td>
+    <td class="topborder" >  "Torrent Of Doom"               </td>
+    <td class="topborder" >  Conan Saga 48                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/31559"> 1977.10 </a>
+ <span class="conanchrono">87</span>
+<br><br><a href="http://classiccomics.boards.net/post/23102/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_23"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A5970X10" onmouseover="showcover('covers/The Savage Sword Of Conan 129.jpg', 'Don Kraar', 'Gary Kwapisz', 'Gary Kwapisz', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B5970X10">129 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Sea-Mage's Daughter"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174735"> 1986.10 </a>
+ <span class="conanchrono">87</span>
+<br><br><a href="https://classiccomics.org/post/93358/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_129"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6000X10" onmouseover="showcover('covers/The Savage Sword Of Conan 040.jpg', 'Roy Thomas', 'John Buscema', 'Tony DeZuniga', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6000X10">040 </a>    </td>
+    <td class="topborder" >  Black Zarono                          </td>
+    <td class="topborder" >  "A Dream Of Blood"               </td>
+    <td class="topborder" >  Conan Saga 42                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/33380"> 1979.05 </a>
+ <span class="conanchrono">87</span>
+<br><br><a href="http://classiccomics.org/post/47528/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_40"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6000X30" onmouseover="showcover('covers/The Savage Sword Of Conan 043.jpg', 'Roy Thomas', 'John Buscema', 'Tony DeZuniga', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6000X30">043 </a>    </td>
+    <td class="topborder" >  Black Zarono                          </td>
+    <td class="topborder" >  "King Thoth-Amon"               </td>
+    <td class="topborder" >  Conan Saga 45                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/33613"> 1979.08 </a>
+ <span class="conanchrono">87</span>
+<br><br><a href="http://classiccomics.org/post/56518/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_43"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6050X10" onmouseover="showcover('covers/The Savage Sword Of Conan 153.jpg', 'Chuck Dixon', 'Gary Kwapisz', 'Gary Kwapisz', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6050X10">153 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Blood on the Sand"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174758"> 1988.10 </a>
+<br><br><a href="https://classiccomics.org/post/116758/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_153"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6050X30" onmouseover="showcover('covers/The Savage Sword Of Conan 154.jpg', 'Chuck Dixon; Gary Kwapisz', 'Gary Kwapisz', 'Gary Kwapisz', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6050X30">154 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Return of the Iron Damsels"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174759"> 1988.11 </a>
+<br><br><a href="https://classiccomics.org/post/117258/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_154"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6400X10" onmouseover="showcover('covers/The Savage Sword Of Conan 025.jpg', 'Roy Thomas', 'Dick Giordano', 'Dick Giordano; Terry Austin', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6400X10">025 </a>    </td>
+    <td class="topborder" >  (Keshan)                          </td>
+    <td class="topborder" >  "The Jewels Of Gwahlur"               </td>
+    <td class="topborder" >  Conan Saga 20                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/31748"> 1977.12 </a>
+ <span class="conanchrono">90</span>
+<br><br><a href="http://classiccomics.boards.net/post/24607/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_25"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6400X30" onmouseover="showcover('covers/The Savage Sword Of Conan 060.jpg', 'Roy Thomas', 'John Buscema', 'Danny Bulanadi', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6400X30">060 </a>    </td>
+    <td class="topborder" >  (Punt)                          </td>
+    <td class="topborder" >  "The Ivory Goddess"               </td>
+    <td class="topborder" >  Conan Saga 65                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/35053"> 1981.01 </a>
+ <span class="conanchrono">90</span>
+<br><br><a href="https://classiccomics.org/post/63395/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_60"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6450X10" onmouseover="showcover('covers/The Savage Sword Of Conan 142.jpg', 'Chuck Dixon', 'Gary Kwapisz', 'Ernie Chan', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6450X10">142 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Blind Vengeance"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/43610"> 1987.11 </a>
+<br><br><a href="https://classiccomics.org/post/102410/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_142"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6450X30" onmouseover="showcover('covers/The Savage Sword Of Conan 179.jpg', 'Chuck Dixon', 'Gary Kwapisz', 'Gary Kwapisz', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6450X30">179 </a>    </td>
+    <td class="topborder" >  Valeria<br>Red Sonja                         </td>
+    <td class="topborder" >  "Fury Of The Iron Damsels"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174784"> 1990.11 </a>
+ <span class="conanchrono">90</span>
+<br><br><a href="https://classiccomics.org/post/144263/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_179"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6500X10" onmouseover="showcover('covers/The Savage Sword Of Conan 172.jpg', 'John Arcudi', 'Javier Saltares', 'Javier Saltares', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6500X10">172 </a>    </td>
+    <td class="topborder" >  Valeria<br>(no Conan)                         </td>
+    <td class="topborder" >  "By Hatred Reborn"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174777"> 1990.04 </a>
+<br><br><a href="https://classiccomics.org/post/135813/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_172"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6500X30" onmouseover="showcover('covers/The Savage Sword Of Conan 201.jpg', 'Roy Thomas', 'M. C. Wyman', 'Dave Simons', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6500X30">201 </a>    </td>
+    <td class="topborder" >  Valeria                          </td>
+    <td class="topborder" >  "The Man In The Iron Tower"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174801"> 1992.09 </a>
+ <span class="conanchrono">91</span>
+<br><br><a href="https://classiccomics.org/post/163939/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_201"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6600X10" onmouseover="showcover('covers/The Savage Sword Of Conan 049.jpg', 'Roy Thomas', 'John Buscema', 'Tony DeZuniga', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6600X10">049 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "When Madness Wears The Crown"               </td>
+    <td class="topborder" >  Conan Saga 53                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/34142"> 1980.02 </a>
+ <span class="conanchrono">91</span>
+<br><br><a href="http://classiccomics.org/post/60503/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_49"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6600X30" onmouseover="showcover('covers/The Savage Sword Of Conan 050.jpg', 'Roy Thomas', 'John Buscema', 'Tony DeZuniga', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6600X30">050 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Swords Across The Alimane"               </td>
+    <td class="topborder" >  Conan Saga 54                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/34225"> 1980.03 </a>
+<br><br><a href="http://classiccomics.org/post/60529/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_50"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6700X10" onmouseover="showcover('covers/The Savage Sword Of Conan 051.jpg', 'Roy Thomas', 'John Buscema', 'Tony DeZuniga', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6700X10">051 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "Satyr's Blood"               </td>
+    <td class="topborder" >  Conan Saga 55                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/34304"> 1980.04 </a>
+<br><br><a href="http://classiccomics.org/post/62017/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_51"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6700X30" onmouseover="showcover('covers/The Savage Sword Of Conan 052.jpg', 'Roy Thomas', 'John Buscema', 'Tony DeZuniga', 'Marvel')" class="magazine1" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6700X30">052 </a>    </td>
+    <td class="topborder" >  King Of Aquilonia                          </td>
+    <td class="topborder" >  "Conan The Liberator"               </td>
+    <td class="topborder" >  Conan Saga 56                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/34387"> 1980.05 </a>
+<br><br><a href="http://classiccomics.org/post/62021/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_52"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6800X10" onmouseover="showcover('covers/The Savage Sword Of Conan 214.jpg', 'Roy Thomas', 'Ernie Chan', 'Ernie Chan', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  The Savage Sword Of Conan                         </td>
+    <td class="topborder" >  <a href="#B6800X10">214 </a>    </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" >  "The Reign Of Thulundra Thuu"               </td>
+    <td class="topborder" >                           </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/174814"> 1993.10 </a>
+<br><br><a href="https://classiccomics.org/post/173284/thread"><img src="ccc.ico" style="height:20;"></a>
+<a href="https://conan.fandom.com/wiki/Savage_Sword_of_Conan_214"><img src="wiki.ico" style="height:20;"></a>
+    </td>
+</tr>
+
+<tr id="A6800X30" onmouseover="showcover('covers/Conan Saga 066.jpg', 'Roy Thomas', 'Vicente Alcazar', 'Yong Montano', 'Marvel')" class="magazine2" >
+    <td class="topborder" >  Conan Saga                         </td>
+    <td class="topborder" >  <a href="#B6800X30">066 </a>    </td>
+    <td class="topborder" >  Thoth-Amon                          </td>
+    <td class="topborder" >  "The Phoenix On The Sword"               </td>
+    <td class="topborder" >  Conan Annual 2                         </td>
+    <td class="topborder" ><a href="https://www.comics.org/issue/129961"> 1992.09 </a>
+    </td>
+</tr>
+
+</td>
+</tr>
+</table>
+</div>
+<br><br><br>
+</body>
+</html>

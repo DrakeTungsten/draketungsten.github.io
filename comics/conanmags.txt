@@ -1,0 +1,99 @@
+https://conan.fandom.com/wiki/Savage_Sword_of_Conan_227
+
+
+[section break] $210
+SS 089 "rite of blood"			X 72	$220
+SS 203 "old garrad's heart"		X 72	$220
+SS 227 15th birthday			# 72	$230
+	** seige of venarium		
+SS 083 "hunters and hunted"		# 72	$230
+	(ctb 1,2)
+The Savage Sword Of Conan	039	X 72	$700  Legions Of The Dead
+	(ctb 3-4)
+	** the tower of the elephant
+SS 099 "One Night in the Maul"		X 72	$700
+	(ctb 5-7)		
+SS 118 "Valley of howling shadows"	# 73
+SS 161  "call of the howling shadows"	#
+	(rogues in the house)
+SS 091 "The Beast"			@ 74 $2090
+	(ctb 13-36) $2300
+SS 110 "dinner guest"			X 74 $2350
+SS 113 "a quiet place"			X 74 $2350
+
+	(ctb 37-42) $2370
+The Savage Sword Of Conan	001	#	Curse Of The Undead Man
+Savage Tales			005	#	The Secret Of Skull River
+Savage Tales			004	#	Night Of The Dark God
+
+[section break] $3310
+
+SS 071 "the lurker in the labyrinth"	X 79  some corinthian city 
+SS 126  "the mercenary"  		X ?? Corinthia, Conan 27-yo prbly, ~ss91/6
+SS 091 "forest of fiends"		# 79
+SS 096 "ape-bat of marmet tarn"		# 79
+SS 185 "masque of the demon"		@
+
+(return to cimmeria) $3350
+
+SS 113 "quest for the shrine of  luma"	X 82			$3450
+The Savage Sword Of Conan	108	X 82	Fear Of Crom    $3450
+SS 105 "the mill"			# 82
+The Savage Sword Of Conan	002	# 82	Black Colossus
+The Savage Sword Of Conan	003	X 82	At The Mountain Of The Moon-God
+The Savage Sword Of Conan	029	X 82	Child Of Sorcery
+
+
+(kozaki)
+
+SS131 "Reavers Of The Steppes" 		# 83
+SS110 "The Army of the dead" 		# 83
+
+The Savage Sword Of Conan	004	X 	Iron Shadows In The Moon
+The Savage Sword Of Conan	038	X 	Road Of The Eagles
+The Savage Sword Of Conan 	128	# -	"curse of the ageless ones"(RR - can't place it chronolgcly),
+The Savage Sword Of Conan	005	#	A Witch Shall Be Born
+The Savage Sword Of Conan	011	X 	Abode Of The Damned
+The Savage Sword Of Conan	012	X 83 	Haunters Of The Castle Crimson
+The Savage Sword Of Conan	028	#	Blood Of The Gods
+The Savage Sword Of Conan	014	# 83	Shadows In Zamboula
+
+The Savage Sword Of Conan	037	X 84	Sons Of The White Wolf
+
+(age early 30s)
+
+SS189 "what can one man do" 		X 84
+
+The Savage Sword Of Conan	031	#	The Flame Knife
+The Savage Sword Of Conan	032	#	The Ghouls Of Yanaidar
+The Savage Sword Of Conan	016	X	People Of The Black Circle
+The Savage Sword Of Conan	017	X	On To Yimsha
+The Savage Sword Of Conan	018	#	The Battle Of The Towers
+The Savage Sword Of Conan	019	#	Vengence In Vendhya
+The Savage Sword Of Conan	165	X	City Of Rats
+SS 109 "The Vezek Inn"		109	X
+SS 145 "feast of the stag"	145	# 86
+The Savage Sword Of Conan	045	# 86	The Gem In The Tower
+The Savage Sword Of Conan	196	X	The Devourer Of The Dead
+The Savage Sword Of Conan	197	X	A Night In Messantia
+The Savage Sword Of Conan	199	# 86	Treachery On Tortage
+SS 122  			122	# 87	"the blossoms of the black lotus"
+The Savage Sword Of Conan	022	X 	The Pool Of The Black One
+The Savage Sword Of Conan	023	X	Torrent Of Doom
+SS 129  "sea-mage's daughter"	129	@ 87
+The Savage Sword Of Conan	040	#	A Dream Of Blood
+The Savage Sword Of Conan	043	#	King Thoth-Amon
+153  "blood on the sands"  part 1
+154  "return of the iron damsels" part 2
+The Savage Sword Of Conan	025	X	The Jewels Of Gwahlur
+The Savage Sword Of Conan	060	X	The Ivory Goddess
+SS 142  "blind vengeance"  	142	X	Blind Vengeance
+The Savage Sword Of Conan	179	X $6450	Fury Of The Iron Damsels (moved this to down here)
+SS 172  "by hatred reborn" 	172	#	valeria, no Conan
+The Savage Sword Of Conan	201	#	The Man In The Iron Tower
+The Savage Sword Of Conan	049	X	When Madness Wears The Crown
+The Savage Sword Of Conan	050	X	Swords Across The Alimane
+The Savage Sword Of Conan	051	#	Satyr's Blood
+The Savage Sword Of Conan	052	#	Conan The Liberator
+The Savage Sword Of Conan	214	X	The Reign Of Thulundra Thuu
+Conan Saga			066	X	The Phoenix On The Sword
