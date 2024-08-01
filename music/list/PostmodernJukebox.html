@@ -1,0 +1,113 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../music.ico" rel="icon" type="image/bmp">
+<title>PostmodernJukebox</title></head>
+<style>
+span{display: inline-block; margin:0em; height: 22px; width:900px;}
+.musicfile{font-weight: normal; padding-left: 30px;}
+.setlist{font-weight:bold; margin-bottom: 3px; margin-top: 5px;}
+h3{ text-decoration: none; font-family: serif; padding-left: 22px;}
+.tooltip {
+    position: relative;
+    display: inline;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -100%;
+    bottom: 1%;
+}
+.tooltip:hover {
+    background-color: #dd9999;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+</style>
+<script type="text/javascript">
+function showpic(){
+    var element = document.getElementById("metadata");
+    element.innerHTML = "<img src='../bandpics/Metal-RPM.png' width='350'>";
+}
+function setmetadata(dta, trackid){
+    var element = document.getElementById("metadata");
+    element.innerHTML = dta;
+    var element2 = document.getElementById(trackid);
+    element2.style.backgroundColor = 'yellow';
+}
+function resetbg(trackid){
+    var element2 = document.getElementById(trackid);
+    element2.style.backgroundColor = '#EEEEEE';
+}
+function playoptions(trackpath){
+    var myanow   = "MetalUpYourAss:@" + trackpath;
+    var myalater = "MetalUpYourAss:+" + trackpath;
+    alert(myanow);
+}
+</script>
+</head>
+<body>
+<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: black; color: white; line-height: 1.5; width: 350"><image src="../bandpics/Metal-RPM.png" width="350"></div>
+<div style="margin-left:27%;" onmouseleave="showpic()">
+<span id="5408" class="musicfile" onmouseover="setmetadata('<h3><i>I Feel Like A Woman</i><br>Postmodern Jukebox, Allison Young<br><u> (unknown set)</u><br>(unknown date)</h3>', '5408')" onmouseleave="resetbg('5408')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.AllisonYoung-IFeelLikeAWoman.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.AllisonYoung-IFeelLikeAWoman.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">I Feel Like A Woman</font></span>
+
+<span id="5409" class="musicfile" onmouseover="setmetadata('<h3><i>99 Luftballons</i><br>Postmodern Jukebox, Aly Ryan<br><u> (unknown set)</u><br>(unknown date)</h3>', '5409')" onmouseleave="resetbg('5409')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.AlyRyan-08-99Luftballons.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.AlyRyan-08-99Luftballons.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">99 Luftballons</font></span>
+
+<span id="5410" class="musicfile" onmouseover="setmetadata('<h3><i>Criminal</i><br>Postmodern Jukebox, Ariana Savalas<br><u> (unknown set)</u><br>(unknown date)</h3>', '5410')" onmouseleave="resetbg('5410')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.ArianaSavalas-05-Criminal.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.ArianaSavalas-05-Criminal.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Criminal</font></span>
+
+<span id="5411" class="musicfile" onmouseover="setmetadata('<h3><i>Straight Up</i><br>Postmodern Jukebox, Ashley Stroud<br><u> (unknown set)</u><br>(unknown date)</h3>', '5411')" onmouseleave="resetbg('5411')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.AshleyStroud-02-StraightUp.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.AshleyStroud-02-StraightUp.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Straight Up</font></span>
+
+<span id="5412" class="musicfile" onmouseover="setmetadata('<h3><i>Smooth Criminal</i><br>Postmodern Jukebox, Aubrey Logan<br><u> (unknown set)</u><br>(unknown date)</h3>', '5412')" onmouseleave="resetbg('5412')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.AubreyLogan-03-SmoothCriminal.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.AubreyLogan-03-SmoothCriminal.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Smooth Criminal</font></span>
+
+<span id="5413" class="musicfile" onmouseover="setmetadata('<h3><i>Ice Ice Baby</i><br>Postmodern Jukebox, Aubrey Logan<br><u> (unknown set)</u><br>(unknown date)</h3>', '5413')" onmouseleave="resetbg('5413')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.AubreyLogan-04-IceIceBaby.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.AubreyLogan-04-IceIceBaby.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Ice Ice Baby</font></span>
+
+<span id="5414" class="musicfile" onmouseover="setmetadata('<h3><i>Don\'t Speak</i><br>Postmodern Jukebox, Haley Reinhart<br><u> (unknown set)</u><br>(unknown date)</h3>', '5414')" onmouseleave="resetbg('5414')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.HaleyReinhart-01-DontSpeak.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.HaleyReinhart-01-DontSpeak.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Don't Speak</font></span>
+
+<span id="5415" class="musicfile" onmouseover="setmetadata('<h3><i>Creep</i><br>Postmodern Jukebox, Haley Reinhart<br><u> (unknown set)</u><br>(unknown date)</h3>', '5415')" onmouseleave="resetbg('5415')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.HaleyReinhart-03-Creep.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.HaleyReinhart-03-Creep.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Creep</font></span>
+
+<span id="5416" class="musicfile" onmouseover="setmetadata('<h3><i>Oops, I Did It Again</i><br>Postmodern Jukebox, Haley Reinhart<br><u> (unknown set)</u><br>(unknown date)</h3>', '5416')" onmouseleave="resetbg('5416')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.HaleyReinhart-11-Oops.IDidItAgain.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.HaleyReinhart-11-Oops.IDidItAgain.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Oops, I Did It Again</font></span>
+
+<span id="5417" class="musicfile" onmouseover="setmetadata('<h3><i>Seven Nation Army</i><br>Postmodern Jukebox, Haley Reinhart<br><u> (unknown set)</u><br>(unknown date)</h3>', '5417')" onmouseleave="resetbg('5417')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.HaleyReinhart-14-SevenNationArmy.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.HaleyReinhart-14-SevenNationArmy.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Seven Nation Army</font></span>
+
+<span id="5418" class="musicfile" onmouseover="setmetadata('<h3><i>All About That Bass</i><br>Postmodern Jukebox, Haley Reinhart, Ariana Savalas, Morgan James<br><u> (unknown set)</u><br>(unknown date)</h3>', '5418')" onmouseleave="resetbg('5418')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.HaleyReinhart.ArianaSavalas.MorganJames-11-AllAboutThatBass.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.HaleyReinhart.ArianaSavalas.MorganJames-11-AllAboutThatBass.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">All About That Bass</font></span>
+
+<span id="5419" class="musicfile" onmouseover="setmetadata('<h3><i>You Give Love A Bad Name</i><br>Postmodern Jukebox, Jennie Lena<br><u> (unknown set)</u><br>(unknown date)</h3>', '5419')" onmouseleave="resetbg('5419')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.JennieLena-05-YouGiveLoveABadName.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.JennieLena-05-YouGiveLoveABadName.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">You Give Love A Bad Name</font></span>
+
+<span id="5420" class="musicfile" onmouseover="setmetadata('<h3><i>Crazy Train</i><br>Postmodern Jukebox, Jennie Lena<br><u> (unknown set)</u><br>(unknown date)</h3>', '5420')" onmouseleave="resetbg('5420')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.JennieLena-07-CrazyTrain.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.JennieLena-07-CrazyTrain.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Crazy Train</font></span>
+
+<span id="5421" class="musicfile" onmouseover="setmetadata('<h3><i>Ain\'t No Rest For The Wicked</i><br>Postmodern Jukebox, Joey Cook<br><u> (unknown set)</u><br>(unknown date)</h3>', '5421')" onmouseleave="resetbg('5421')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.JoeyCook-12-AintNoRestForTheWicked.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.JoeyCook-12-AintNoRestForTheWicked.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Ain't No Rest For The Wicked</font></span>
+
+<span id="5422" class="musicfile" onmouseover="setmetadata('<h3><i>All About That Bass</i><br>Postmodern Jukebox, Kate Davis<br><u> (unknown set)</u><br>(unknown date)</h3>', '5422')" onmouseleave="resetbg('5422')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.KateDavis-04-AllAboutThatBass.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.KateDavis-04-AllAboutThatBass.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">All About That Bass</font></span>
+
+<span id="5423" class="musicfile" onmouseover="setmetadata('<h3><i>Before He Cheats</i><br>Postmodern Jukebox, Kittyhawk<br><u> (unknown set)</u><br>(unknown date)</h3>', '5423')" onmouseleave="resetbg('5423')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.Kittyhawk-07-BeforeHeCheats.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.Kittyhawk-07-BeforeHeCheats.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Before He Cheats</font></span>
+
+<span id="5424" class="musicfile" onmouseover="setmetadata('<h3><i>Ex\'s &amp Oh\'s</i><br>Postmodern Jukebox, Lisa Gary<br><u> (unknown set)</u><br>(unknown date)</h3>', '5424')" onmouseleave="resetbg('5424')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.LisaGary-03-Ex'sNNOh's.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.LisaGary-03-Ex'sNNOh's.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Ex's & Oh's</font></span>
+
+<span id="5425" class="musicfile" onmouseover="setmetadata('<h3><i>Really Don\'t Care</i><br>Postmodern Jukebox, Morgan James<br><u> (unknown set)</u><br>(unknown date)</h3>', '5425')" onmouseleave="resetbg('5425')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.MorganJames-07-ReallyDontCare.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.MorganJames-07-ReallyDontCare.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Really Don't Care</font></span>
+
+<span id="5426" class="musicfile" onmouseover="setmetadata('<h3><i>Barbie Girl</i><br>Postmodern Jukebox, Morgan James<br><u> (unknown set)</u><br>(unknown date)</h3>', '5426')" onmouseleave="resetbg('5426')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.MorganJames-08-BarbieGirl.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.MorganJames-08-BarbieGirl.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Barbie Girl</font></span>
+
+<span id="5427" class="musicfile" onmouseover="setmetadata('<h3><i>Dream On</i><br>Postmodern Jukebox, Morgan James<br><u> (unknown set)</u><br>(unknown date)</h3>', '5427')" onmouseleave="resetbg('5427')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.MorganJames-08-DreamOn.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.MorganJames-08-DreamOn.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Dream On</font></span>
+
+<span id="5428" class="musicfile" onmouseover="setmetadata('<h3><i>Careless Whisper</i><br>Postmodern Jukebox, Robyn Adele Anderson<br><u> (unknown set)</u><br>(unknown date)</h3>', '5428')" onmouseleave="resetbg('5428')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.RobynAdeleAnderson-02-CarelessWhisper.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.RobynAdeleAnderson-02-CarelessWhisper.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Careless Whisper</font></span>
+
+<span id="5429" class="musicfile" onmouseover="setmetadata('<h3><i>Anaconda</i><br>Postmodern Jukebox, Robyn Adele Anderson<br><u> (unknown set)</u><br>(unknown date)</h3>', '5429')" onmouseleave="resetbg('5429')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.RobynAdeleAnderson-08-Anaconda.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.RobynAdeleAnderson-08-Anaconda.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Anaconda</font></span>
+
+<span id="5430" class="musicfile" onmouseover="setmetadata('<h3><i>Blurred Lines</i><br>Postmodern Jukebox, Robyn Adele Anderson<br><u>Twist Is The New Twerk</u><br>2014.01.00</h3>', '5430')" onmouseleave="resetbg('5430')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.RobynAdeleAnderson-2014.01.00-TwistIsTheNewTwerk-06-BlurredLines.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.RobynAdeleAnderson-2014.01.00-TwistIsTheNewTwerk-06-BlurredLines.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Blurred Lines</font></span>
+
+<span id="5431" class="musicfile" onmouseover="setmetadata('<h3><i>Straight Up</i><br>Postmodern Jukebox, Sara Neimietz, Olivia Kuper Harris, Vonzell Solomon<br><u> (unknown set)</u><br>(unknown date)</h3>', '5431')" onmouseleave="resetbg('5431')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.SaraNeimietz.OliviaKuperHarris.VonzellSolomon-06-StraightUp.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.SaraNeimietz.OliviaKuperHarris.VonzellSolomon-06-StraightUp.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Straight Up</font></span>
+
+<span id="5432" class="musicfile" onmouseover="setmetadata('<h3><i>Call Me</i><br>Postmodern Jukebox, Tess Mohr<br><u> (unknown set)</u><br>(unknown date)</h3>', '5432')" onmouseleave="resetbg('5432')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.TessMohr-02-CallMe.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.TessMohr-02-CallMe.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Call Me</font></span>
+
+<span id="5433" class="musicfile" onmouseover="setmetadata('<h3><i>Location</i><br>Postmodern Jukebox, Tess Mohr<br><u> (unknown set)</u><br>(unknown date)</h3>', '5433')" onmouseleave="resetbg('5433')" ><a href="MetalUpYourAss:+PostmodernJukebox/PostmodernJukebox.TessMohr-10-Location.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@PostmodernJukebox/PostmodernJukebox.TessMohr-10-Location.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Location</font></span>
+
+</div>
+</body>
+</html>

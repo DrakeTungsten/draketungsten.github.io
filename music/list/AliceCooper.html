@@ -1,0 +1,175 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../music.ico" rel="icon" type="image/bmp">
+<title>AliceCooper</title></head>
+<style>
+span{display: inline-block; margin:0em; height: 22px; width:900px;}
+.musicfile{font-weight: normal; padding-left: 30px;}
+.setlist{font-weight:bold; margin-bottom: 3px; margin-top: 5px;}
+h3{ text-decoration: none; font-family: serif; padding-left: 22px;}
+.tooltip {
+    position: relative;
+    display: inline;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -100%;
+    bottom: 1%;
+}
+.tooltip:hover {
+    background-color: #dd9999;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+</style>
+<script type="text/javascript">
+function showpic(){
+    var element = document.getElementById("metadata");
+    element.innerHTML = "<img src='../bandpics/AliceCooper.jpg' width='350'>";
+}
+function setmetadata(dta, trackid){
+    var element = document.getElementById("metadata");
+    element.innerHTML = dta;
+    var element2 = document.getElementById(trackid);
+    element2.style.backgroundColor = 'yellow';
+}
+function resetbg(trackid){
+    var element2 = document.getElementById(trackid);
+    element2.style.backgroundColor = '#EEEEEE';
+}
+function playoptions(trackpath){
+    var myanow   = "MetalUpYourAss:@" + trackpath;
+    var myalater = "MetalUpYourAss:+" + trackpath;
+    alert(myanow);
+}
+</script>
+</head>
+<body>
+<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: black; color: white; line-height: 1.5; width: 350"><image src="../bandpics/AliceCooper.jpg" width="350"></div>
+<div style="margin-left:27%;" onmouseleave="showpic()">
+<span id="433" class="musicfile" onmouseover="setmetadata('<h3><i>Poison</i><br>Alice Cooper<br><u>Trash</u><br>1989.07.00</h3>', '433')" onmouseleave="resetbg('433')" ><a href="MetalUpYourAss:+AliceCooper/1989.07.00-01-AliceCooper-Trash-Poison.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/1989.07.00-01-AliceCooper-Trash-Poison.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Poison</font></span>
+
+<span id="434" class="musicfile" onmouseover="setmetadata('<h3><i>Bed Of Nails</i><br>Alice Cooper<br><u>Trash</u><br>1989.07.00</h3>', '434')" onmouseleave="resetbg('434')" ><a href="MetalUpYourAss:+AliceCooper/1989.07.00-06-AliceCooper-Trash-BedOfNails.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/1989.07.00-06-AliceCooper-Trash-BedOfNails.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Bed Of Nails</font></span>
+
+<span id="435" class="musicfile" onmouseover="setmetadata('<h3><i>Trash</i><br>Alice Cooper, Jon Bon Jovi<br><u>Trash</u><br>1989.07.00</h3>', '435')" onmouseleave="resetbg('435')" ><a href="MetalUpYourAss:+AliceCooper/1989.07.00-08-AliceCooper.JonBonJovi-Trash-Trash.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/1989.07.00-08-AliceCooper.JonBonJovi-Trash-Trash.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Trash</font></span>
+
+<span id="436" class="musicfile" onmouseover="setmetadata('<h3><i>Hey Stoopid</i><br>Alice Cooper<br><u>Hey Stoopid</u><br>1991.07.00</h3>', '436')" onmouseleave="resetbg('436')" ><a href="MetalUpYourAss:+AliceCooper/1991.07.00-01-AliceCooper-HeyStoopid-HeyStoopid.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/1991.07.00-01-AliceCooper-HeyStoopid-HeyStoopid.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Hey Stoopid</font></span>
+
+<span id="437" class="musicfile" onmouseover="setmetadata('<h3><i>Feed My Frankenstein</i><br>Alice Cooper, Joe Satriani, Steve Vai<br><u>Hey Stoopid</u><br>1991.07.00</h3>', '437')" onmouseleave="resetbg('437')" ><a href="MetalUpYourAss:+AliceCooper/1991.07.00-07-AliceCooper.JoeSatriani.SteveVai-HeyStoopid-FeedMyFrankenstein.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/1991.07.00-07-AliceCooper.JoeSatriani.SteveVai-HeyStoopid-FeedMyFrankenstein.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Feed My Frankenstein</font></span>
+
+<span id="438" class="musicfile" onmouseover="setmetadata('<h3><i>Dirty Dreams</i><br>Alice Cooper, Vinnie Moore<br><u>Hey Stoopid</u><br>1991.07.00</h3>', '438')" onmouseleave="resetbg('438')" ><a href="MetalUpYourAss:+AliceCooper/1991.07.00-11-AliceCooper.VinnieMoore-HeyStoopid-DirtyDreams.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/1991.07.00-11-AliceCooper.VinnieMoore-HeyStoopid-DirtyDreams.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Dirty Dreams</font></span>
+
+<span id="439" class="musicfile" onmouseover="setmetadata('<h3><i>Bad Place Alone</i><br>Alice Cooper<br><u>The Last Temptation</u><br>1994.07.00</h3>', '439')" onmouseleave="resetbg('439')" ><a href="MetalUpYourAss:+AliceCooper/1994.07.00-AliceCooper-TheLastTemptation-04-BadPlaceAlone.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/1994.07.00-AliceCooper-TheLastTemptation-04-BadPlaceAlone.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Bad Place Alone</font></span>
+
+<span id="440" class="musicfile" onmouseover="setmetadata('<h3><i>Schools Out</i><br>Alice Cooper<br><u>Cabo Wabo, Mexico - A Fistful Of Alice</u><br>1996.06.02</h3>', '440')" onmouseleave="resetbg('440')" ><a href="MetalUpYourAss:+AliceCooper/1996.06.02-01-AliceCooper-CaboWabo.Mexico__AFistfulOfAlice-SchoolsOut.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/1996.06.02-01-AliceCooper-CaboWabo.Mexico__AFistfulOfAlice-SchoolsOut.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Schools Out</font></span>
+
+<span id="441" class="musicfile" onmouseover="setmetadata('<h3><i>I\'m Eighteen</i><br>Alice Cooper<br><u>Cabo Wabo, Mexico - A Fistful Of Alice</u><br>1996.06.02</h3>', '441')" onmouseleave="resetbg('441')" ><a href="MetalUpYourAss:+AliceCooper/1996.06.02-03-AliceCooper-CaboWabo.Mexico__AFistfulOfAlice-ImEighteen.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/1996.06.02-03-AliceCooper-CaboWabo.Mexico__AFistfulOfAlice-ImEighteen.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">I'm Eighteen</font></span>
+
+<span id="442" class="musicfile" onmouseover="setmetadata('<h3><i>Desperado</i><br>Alice Cooper<br><u>Cabo Wabo, Mexico - A Fistful Of Alice</u><br>1996.06.02</h3>', '442')" onmouseleave="resetbg('442')" ><a href="MetalUpYourAss:+AliceCooper/1996.06.02-04-AliceCooper-CaboWabo.Mexico__AFistfulOfAlice-Desperado.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/1996.06.02-04-AliceCooper-CaboWabo.Mexico__AFistfulOfAlice-Desperado.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Desperado</font></span>
+
+<span id="443" class="musicfile" onmouseover="setmetadata('<h3><i>Lost In America</i><br>Alice Cooper, Slash<br><u>Cabo Wabo, Mexico - A Fistful Of Alice</u><br>1996.06.02</h3>', '443')" onmouseleave="resetbg('443')" ><a href="MetalUpYourAss:+AliceCooper/1996.06.02-05-AliceCooper.Slash-CaboWabo.Mexico__AFistfulOfAlice-LostInAmerica.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/1996.06.02-05-AliceCooper.Slash-CaboWabo.Mexico__AFistfulOfAlice-LostInAmerica.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Lost In America</font></span>
+
+<span id="444" class="musicfile" onmouseover="setmetadata('<h3><i>Welcome To My Nightmare</i><br>Alice Cooper<br><u>Cabo Wabo, Mexico - A Fistful Of Alice</u><br>1996.06.02</h3>', '444')" onmouseleave="resetbg('444')" ><a href="MetalUpYourAss:+AliceCooper/1996.06.02-10-AliceCooper-CaboWabo.Mexico__AFistfulOfAlice-WelcomeToMyNightmare.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/1996.06.02-10-AliceCooper-CaboWabo.Mexico__AFistfulOfAlice-WelcomeToMyNightmare.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Welcome To My Nightmare</font></span>
+
+<span id="445" class="musicfile" onmouseover="setmetadata('<h3><i>Brutal Planet</i><br>Alice Cooper<br><u>Brutal Planet</u><br>2000.06.00</h3>', '445')" onmouseleave="resetbg('445')" ><a href="MetalUpYourAss:+AliceCooper/2000.06.00-AliceCooper-BrutalPlanet-01-BrutalPlanet.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2000.06.00-AliceCooper-BrutalPlanet-01-BrutalPlanet.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Brutal Planet</font></span>
+
+<span id="446" class="musicfile" onmouseover="setmetadata('<h3><i>Wicked Young Man</i><br>Alice Cooper<br><u>Brutal Planet</u><br>2000.06.00</h3>', '446')" onmouseleave="resetbg('446')" ><a href="MetalUpYourAss:+AliceCooper/2000.06.00-AliceCooper-BrutalPlanet-02-WickedYoungMan.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2000.06.00-AliceCooper-BrutalPlanet-02-WickedYoungMan.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Wicked Young Man</font></span>
+
+<span id="447" class="musicfile" onmouseover="setmetadata('<h3><i>Pick Up The Bones</i><br>Alice Cooper<br><u>Brutal Planet</u><br>2000.06.00</h3>', '447')" onmouseleave="resetbg('447')" ><a href="MetalUpYourAss:+AliceCooper/2000.06.00-AliceCooper-BrutalPlanet-06-PickUpTheBones.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2000.06.00-AliceCooper-BrutalPlanet-06-PickUpTheBones.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Pick Up The Bones</font></span>
+
+<span id="448" class="musicfile" onmouseover="setmetadata('<h3><i>Can\'t Sleep, Clowns Will Eat Me</i><br>Alice Cooper<br><u>Brutal Planet</u><br>2000.06.00</h3>', '448')" onmouseleave="resetbg('448')" ><a href="MetalUpYourAss:+AliceCooper/2000.06.00-AliceCooper-BrutalPlanet-12-CantSleep.ClownsWillEatMe.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2000.06.00-AliceCooper-BrutalPlanet-12-CantSleep.ClownsWillEatMe.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Can't Sleep, Clowns Will Eat Me</font></span>
+
+<span id="449" class="musicfile" onmouseover="setmetadata('<h3><i>Triggerman</i><br>Alice Cooper<br><u>Dragontown</u><br>2001.09.00</h3>', '449')" onmouseleave="resetbg('449')" ><a href="MetalUpYourAss:+AliceCooper/2001.09.00-AliceCooper-Dragontown-01-Triggerman.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2001.09.00-AliceCooper-Dragontown-01-Triggerman.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Triggerman</font></span>
+
+<span id="450" class="musicfile" onmouseover="setmetadata('<h3><i>Disgraceland</i><br>Alice Cooper<br><u>Dragontown</u><br>2001.09.00</h3>', '450')" onmouseleave="resetbg('450')" ><a href="MetalUpYourAss:+AliceCooper/2001.09.00-AliceCooper-Dragontown-07-Disgraceland.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2001.09.00-AliceCooper-Dragontown-07-Disgraceland.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Disgraceland</font></span>
+
+<span id="451" class="musicfile" onmouseover="setmetadata('<h3><i>Hey Bulldog</i><br>Ale Vai, Duff McKaganai, Duff McKagan, Mikkey Dee<br><u>Butchering The Beatles</u><br>2006.09.00</h3>', '451')" onmouseleave="resetbg('451')" ><a href="MetalUpYourAss:+AliceCooper/2006.09.00-01-AliceCooper.SteveVai.DuffMcKagan.MikkeyDee-ButcheringTheBeatles-HeyBulldog.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2006.09.00-01-AliceCooper.SteveVai.DuffMcKagan.MikkeyDee-ButcheringTheBeatles-HeyBulldog.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Hey Bulldog</font></span>
+
+<span id="452" class="musicfile" onmouseover="setmetadata('<h3><i>Vengeance Is Mine</i><br>Alice Cooper, Slash<br><u>Along Came A Spider</u><br>2008.07.00</h3>', '452')" onmouseleave="resetbg('452')" ><a href="MetalUpYourAss:+AliceCooper/2008.07.00-02-AliceCooper.Slash-AlongCameASpider-VengeanceIsMine.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2008.07.00-02-AliceCooper.Slash-AlongCameASpider-VengeanceIsMine.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Vengeance Is Mine</font></span>
+
+<span id="453" class="musicfile" onmouseover="setmetadata('<h3><i>Wake The Dead</i><br>Alice Cooper<br><u>Along Came A Spider</u><br>2008.07.00</h3>', '453')" onmouseleave="resetbg('453')" ><a href="MetalUpYourAss:+AliceCooper/2008.07.00-03-AliceCooper-AlongCameASpider-WakeTheDead.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2008.07.00-03-AliceCooper-AlongCameASpider-WakeTheDead.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Wake The Dead</font></span>
+
+<span id="454" class="musicfile" onmouseover="setmetadata('<h3><i>Wicked Young Man</i><br>Alice Cooper<br><u>Hammersmith - Theatre Of Death</u><br>2009.12.06</h3>', '454')" onmouseleave="resetbg('454')" ><a href="MetalUpYourAss:+AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-04-WickedYoungMan.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-04-WickedYoungMan.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Wicked Young Man</font></span>
+
+<span id="455" class="musicfile" onmouseover="setmetadata('<h3><i>Go To Hell</i><br>Alice Cooper<br><u>Hammersmith - Theatre Of Death</u><br>2009.12.06</h3>', '455')" onmouseleave="resetbg('455')" ><a href="MetalUpYourAss:+AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-06-GoToHell.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-06-GoToHell.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Go To Hell</font></span>
+
+<span id="456" class="musicfile" onmouseover="setmetadata('<h3><i>From The Inside</i><br>Alice Cooper<br><u>Hammersmith - Theatre Of Death</u><br>2009.12.06</h3>', '456')" onmouseleave="resetbg('456')" ><a href="MetalUpYourAss:+AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-12-FromTheInside.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-12-FromTheInside.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">From The Inside</font></span>
+
+<span id="457" class="musicfile" onmouseover="setmetadata('<h3><i>Nurse Rozetta</i><br>Alice Cooper<br><u>Hammersmith - Theatre Of Death</u><br>2009.12.06</h3>', '457')" onmouseleave="resetbg('457')" ><a href="MetalUpYourAss:+AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-13-NurseRozetta.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-13-NurseRozetta.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Nurse Rozetta</font></span>
+
+<span id="458" class="musicfile" onmouseover="setmetadata('<h3><i>Black Widow</i><br>Alice Cooper<br><u>Hammersmith - Theatre Of Death</u><br>2009.12.06</h3>', '458')" onmouseleave="resetbg('458')" ><a href="MetalUpYourAss:+AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-18-BlackWidow.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-18-BlackWidow.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Black Widow</font></span>
+
+<span id="459" class="musicfile" onmouseover="setmetadata('<h3><i>Devils Food</i><br>Alice Cooper<br><u>Hammersmith - Theatre Of Death</u><br>2009.12.06</h3>', '459')" onmouseleave="resetbg('459')" ><a href="MetalUpYourAss:+AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-20-DevilsFood.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-20-DevilsFood.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Devils Food</font></span>
+
+<span id="460" class="musicfile" onmouseover="setmetadata('<h3><i>Dirty Diamonds</i><br>Alice Cooper<br><u>Hammersmith - Theatre Of Death</u><br>2009.12.06</h3>', '460')" onmouseleave="resetbg('460')" ><a href="MetalUpYourAss:+AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-21-DirtyDiamonds.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-21-DirtyDiamonds.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Dirty Diamonds</font></span>
+
+<span id="461" class="musicfile" onmouseover="setmetadata('<h3><i>Billion Dollar Babies</i><br>Alice Cooper<br><u>Hammersmith - Theatre Of Death</u><br>2009.12.06</h3>', '461')" onmouseleave="resetbg('461')" ><a href="MetalUpYourAss:+AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-22-BillionDollarBabies.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-22-BillionDollarBabies.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Billion Dollar Babies</font></span>
+
+<span id="462" class="musicfile" onmouseover="setmetadata('<h3><i>Killer</i><br>Alice Cooper<br><u>Hammersmith - Theatre Of Death</u><br>2009.12.06</h3>', '462')" onmouseleave="resetbg('462')" ><a href="MetalUpYourAss:+AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-23-Killer.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-23-Killer.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Killer</font></span>
+
+<span id="463" class="musicfile" onmouseover="setmetadata('<h3><i>Under My Wheels</i><br>Alice Cooper<br><u>Hammersmith - Theatre Of Death</u><br>2009.12.06</h3>', '463')" onmouseleave="resetbg('463')" ><a href="MetalUpYourAss:+AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-26-UnderMyWheels.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2009.12.06-AliceCooper-Hammersmith__TheatreOfDeath-26-UnderMyWheels.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Under My Wheels</font></span>
+
+<span id="464" class="musicfile" onmouseover="setmetadata('<h3><i>Poison</i><br>Alice Cooper<br><u>Donington Park - Download Festival</u><br>2011.06.11</h3>', '464')" onmouseleave="resetbg('464')" ><a href="MetalUpYourAss:+AliceCooper/2011.06.11-AliceCooper-DoningtonPark__DownloadFestival-16-Poison.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2011.06.11-AliceCooper-DoningtonPark__DownloadFestival-16-Poison.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Poison</font></span>
+
+<span id="465" class="musicfile" onmouseover="setmetadata('<h3><i>No More Mr. Nice Guy</i><br>Alice Cooper<br><u>Donington Park - Download Festival</u><br>2011.06.11</h3>', '465')" onmouseleave="resetbg('465')" ><a href="MetalUpYourAss:+AliceCooper/2011.06.11-AliceCooper-DoningtonPark__DownloadFestival-17-NoMoreMrNiceGuy.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2011.06.11-AliceCooper-DoningtonPark__DownloadFestival-17-NoMoreMrNiceGuy.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">No More Mr. Nice Guy</font></span>
+
+<span id="466" class="musicfile" onmouseover="setmetadata('<h3><i>The Black Widow</i><br>Alice Cooper<br><u>Donington Park - Download Festival</u><br>2011.06.11</h3>', '466')" onmouseleave="resetbg('466')" ><a href="MetalUpYourAss:+AliceCooper/2011.06.11-AliceCooper-DoningtonPark__DownloadFestival-18-TheBlackWidow.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2011.06.11-AliceCooper-DoningtonPark__DownloadFestival-18-TheBlackWidow.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">The Black Widow</font></span>
+
+<span id="467" class="musicfile" onmouseover="setmetadata('<h3><i>A Runaway Train</i><br>Alice Cooper, Vince Gill<br><u>Welcome 2 My Nightmare</u><br>2011.09.00</h3>', '467')" onmouseleave="resetbg('467')" ><a href="MetalUpYourAss:+AliceCooper/2011.09.00-04-AliceCooper.VinceGill-Welcome2MyNightmare-ARunawayTrain.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2011.09.00-04-AliceCooper.VinceGill-Welcome2MyNightmare-ARunawayTrain.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">A Runaway Train</font></span>
+
+<span id="468" class="musicfile" onmouseover="setmetadata('<h3><i>The Congregation</i><br>Alice Cooper, Rob Zombie<br><u>Welcome 2 My Nightmare</u><br>2011.09.00</h3>', '468')" onmouseleave="resetbg('468')" ><a href="MetalUpYourAss:+AliceCooper/2011.09.00-06-AliceCooper.RobZombie-Welcome2MyNightmare-TheCongregation.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2011.09.00-06-AliceCooper.RobZombie-Welcome2MyNightmare-TheCongregation.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">The Congregation</font></span>
+
+<span id="469" class="musicfile" onmouseover="setmetadata('<h3><i>I\'ll Bite Your Face Off</i><br>Alice Cooper<br><u>Welcome 2 My Nightmare</u><br>2011.09.00</h3>', '469')" onmouseleave="resetbg('469')" ><a href="MetalUpYourAss:+AliceCooper/2011.09.00-07-AliceCooper-Welcome2MyNightmare-IllBiteYourFaceOff.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2011.09.00-07-AliceCooper-Welcome2MyNightmare-IllBiteYourFaceOff.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">I'll Bite Your Face Off</font></span>
+
+<span id="470" class="musicfile" onmouseover="setmetadata('<h3><i>Raise The Dead</i><br>Hos - Alice Cooper, J-Alice Cooper, Joe Perry, Duff McKagan<br><u>Brazil</u><br>2015.09.24</h3>', '470')" onmouseleave="resetbg('470')" ><a href="MetalUpYourAss:+AliceCooper/2015.09.24-01-HollywoodVampires__AliceCooper.JoePerry.DuffMcKagan-Brazil-RaiseTheDead.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2015.09.24-01-HollywoodVampires__AliceCooper.JoePerry.DuffMcKagan-Brazil-RaiseTheDead.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Raise The Dead</font></span>
+
+<span id="471" class="musicfile" onmouseover="setmetadata('<h3><i>My Generation</i><br>Hos - Alice Cooper, J-Alice Cooper, Joe Perry, Duff McKagan<br><u>Brazil</u><br>2015.09.24</h3>', '471')" onmouseleave="resetbg('471')" ><a href="MetalUpYourAss:+AliceCooper/2015.09.24-02-HollywoodVampires__AliceCooper.JoePerry.DuffMcKagan-Brazil-MyGeneration.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2015.09.24-02-HollywoodVampires__AliceCooper.JoePerry.DuffMcKagan-Brazil-MyGeneration.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">My Generation</font></span>
+
+<span id="472" class="musicfile" onmouseover="setmetadata('<h3><i>Manic Depression</i><br>Hos - Alice Cooper, J-Alice Cooper, Joe Perry, Duff McKagan<br><u>Brazil</u><br>2015.09.24</h3>', '472')" onmouseleave="resetbg('472')" ><a href="MetalUpYourAss:+AliceCooper/2015.09.24-06-HollywoodVampires__AliceCooper.JoePerry.DuffMcKagan-Brazil-ManicDepression.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2015.09.24-06-HollywoodVampires__AliceCooper.JoePerry.DuffMcKagan-Brazil-ManicDepression.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Manic Depression</font></span>
+
+<span id="473" class="musicfile" onmouseover="setmetadata('<h3><i>Whole Lotta Love</i><br>Hos - Alice Cooper, L-Alice Cooper, Lizzy Hale, Joe Perry, Duff McKagan<br><u>Brazil</u><br>2015.09.24</h3>', '473')" onmouseleave="resetbg('473')" ><a href="MetalUpYourAss:+AliceCooper/2015.09.24-08-HollywoodVampires__AliceCooper.LizzyHale.JoePerry.DuffMcKagan-Brazil-WholeLottaLove.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2015.09.24-08-HollywoodVampires__AliceCooper.LizzyHale.JoePerry.DuffMcKagan-Brazil-WholeLottaLove.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Whole Lotta Love</font></span>
+
+<span id="474" class="musicfile" onmouseover="setmetadata('<h3><i>The Black Widow</i><br>Alice Cooper, Nita Strauss<br><u>Columbus, Ohio</u><br>2016.05.06</h3>', '474')" onmouseleave="resetbg('474')" ><a href="MetalUpYourAss:+AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-01-TheBlackWidow.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-01-TheBlackWidow.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">The Black Widow</font></span>
+
+<span id="475" class="musicfile" onmouseover="setmetadata('<h3><i>Public Animal# 9</i><br>Alice Cooper, Nita Strauss<br><u>Columbus, Ohio</u><br>2016.05.06</h3>', '475')" onmouseleave="resetbg('475')" ><a href="MetalUpYourAss:+AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-02-PublicAnimal#9.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-02-PublicAnimal#9.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Public Animal# 9</font></span>
+
+<span id="476" class="musicfile" onmouseover="setmetadata('<h3><i>No More Mr. Nice Guy</i><br>Alice Cooper, Nita Strauss<br><u>Columbus, Ohio</u><br>2016.05.06</h3>', '476')" onmouseleave="resetbg('476')" ><a href="MetalUpYourAss:+AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-03-NoMoreMrNiceGuy.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-03-NoMoreMrNiceGuy.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">No More Mr. Nice Guy</font></span>
+
+<span id="477" class="musicfile" onmouseover="setmetadata('<h3><i>Under My Wheels</i><br>Alice Cooper, Nita Strauss<br><u>Columbus, Ohio</u><br>2016.05.06</h3>', '477')" onmouseleave="resetbg('477')" ><a href="MetalUpYourAss:+AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-04-UnderMyWheels.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-04-UnderMyWheels.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Under My Wheels</font></span>
+
+<span id="478" class="musicfile" onmouseover="setmetadata('<h3><i>Billion Dollar Babies</i><br>Alice Cooper, Nita Strauss<br><u>Columbus, Ohio</u><br>2016.05.06</h3>', '478')" onmouseleave="resetbg('478')" ><a href="MetalUpYourAss:+AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-06-BillionDollarBabies.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-06-BillionDollarBabies.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Billion Dollar Babies</font></span>
+
+<span id="479" class="musicfile" onmouseover="setmetadata('<h3><i>Feed My Frankenstein</i><br>Alice Cooper, Nita Strauss<br><u>Columbus, Ohio</u><br>2016.05.06</h3>', '479')" onmouseleave="resetbg('479')" ><a href="MetalUpYourAss:+AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-11-FeedMyFrankenstein.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-11-FeedMyFrankenstein.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Feed My Frankenstein</font></span>
+
+<span id="480" class="musicfile" onmouseover="setmetadata('<h3><i>Schools Out</i><br>Alice Cooper, Nita Strauss<br><u>Columbus, Ohio</u><br>2016.05.06</h3>', '480')" onmouseleave="resetbg('480')" ><a href="MetalUpYourAss:+AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-23-SchoolsOut.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2016.05.06-AliceCooper.NitaStrauss-Columbus.Ohio-23-SchoolsOut.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Schools Out</font></span>
+
+<span id="481" class="musicfile" onmouseover="setmetadata('<h3><i>Fallen In Love</i><br>Alice Cooper, Billy Gibbons<br><u>Paranormal</u><br>2017.07.00</h3>', '481')" onmouseleave="resetbg('481')" ><a href="MetalUpYourAss:+AliceCooper/2017.07.00-05-AliceCooper.BillyGibbons-Paranormal-FallenInLove.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2017.07.00-05-AliceCooper.BillyGibbons-Paranormal-FallenInLove.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Fallen In Love</font></span>
+
+<span id="482" class="musicfile" onmouseover="setmetadata('<h3><i>Brutal Planet</i><br>Alice Cooper<br><u>Charlotte, North Carolina</u><br>2018.10.09</h3>', '482')" onmouseleave="resetbg('482')" ><a href="MetalUpYourAss:+AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-01-BrutalPlanet.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-01-BrutalPlanet.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Brutal Planet</font></span>
+
+<span id="483" class="musicfile" onmouseover="setmetadata('<h3><i>Grim Facts</i><br>Alice Cooper<br><u>Charlotte, North Carolina</u><br>2018.10.09</h3>', '483')" onmouseleave="resetbg('483')" ><a href="MetalUpYourAss:+AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-05-GrimFacts.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-05-GrimFacts.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Grim Facts</font></span>
+
+<span id="484" class="musicfile" onmouseover="setmetadata('<h3><i>Serious</i><br>Alice Cooper<br><u>Charlotte, North Carolina</u><br>2018.10.09</h3>', '484')" onmouseleave="resetbg('484')" ><a href="MetalUpYourAss:+AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-07-Serious.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-07-Serious.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Serious</font></span>
+
+<span id="485" class="musicfile" onmouseover="setmetadata('<h3><i>Fallen In Love</i><br>Alice Cooper<br><u>Charlotte, North Carolina</u><br>2018.10.09</h3>', '485')" onmouseleave="resetbg('485')" ><a href="MetalUpYourAss:+AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-08-FallenInLove.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-08-FallenInLove.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Fallen In Love</font></span>
+
+<span id="486" class="musicfile" onmouseover="setmetadata('<h3><i>Woman Of Mass Distraction</i><br>Alice Cooper<br><u>Charlotte, North Carolina</u><br>2018.10.09</h3>', '486')" onmouseleave="resetbg('486')" ><a href="MetalUpYourAss:+AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-09-WomanOfMassDistraction.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-09-WomanOfMassDistraction.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Woman Of Mass Distraction</font></span>
+
+<span id="487" class="musicfile" onmouseover="setmetadata('<h3><i>Paranoic Personality</i><br>Alice Cooper<br><u>Charlotte, North Carolina</u><br>2018.10.09</h3>', '487')" onmouseleave="resetbg('487')" ><a href="MetalUpYourAss:+AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-16-ParanoicPersonality.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-16-ParanoicPersonality.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Paranoic Personality</font></span>
+
+<span id="488" class="musicfile" onmouseover="setmetadata('<h3><i>I Love The Dead</i><br>Alice Cooper<br><u>Charlotte, North Carolina</u><br>2018.10.09</h3>', '488')" onmouseleave="resetbg('488')" ><a href="MetalUpYourAss:+AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-19-ILoveTheDead.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2018.10.09-AliceCooper-Charlotte.NorthCarolina-19-ILoveTheDead.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">I Love The Dead</font></span>
+
+<span id="489" class="musicfile" onmouseover="setmetadata('<h3><i>Nita Strauss Guitar Solo</i><br>Alice Cooper, Nita Strauss<br><u>Charlotte, North Carolina</u><br>2018.10.09</h3>', '489')" onmouseleave="resetbg('489')" ><a href="MetalUpYourAss:+AliceCooper/2018.10.09-AliceCooper.NitaStrauss-Charlotte.NorthCarolina-10-NitaStraussGuitarSolo.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@AliceCooper/2018.10.09-AliceCooper.NitaStrauss-Charlotte.NorthCarolina-10-NitaStraussGuitarSolo.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Nita Strauss Guitar Solo</font></span>
+
+</div>
+</body>
+</html>

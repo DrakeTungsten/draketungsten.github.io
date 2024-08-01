@@ -1,0 +1,135 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../music.ico" rel="icon" type="image/bmp">
+<title>TunesAndSymphonies</title></head>
+<style>
+span{display: inline-block; margin:0em; height: 22px; width:900px;}
+.musicfile{font-weight: normal; padding-left: 30px;}
+.setlist{font-weight:bold; margin-bottom: 3px; margin-top: 5px;}
+h3{ text-decoration: none; font-family: serif; padding-left: 22px;}
+.tooltip {
+    position: relative;
+    display: inline;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -100%;
+    bottom: 1%;
+}
+.tooltip:hover {
+    background-color: #dd9999;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+</style>
+<script type="text/javascript">
+function showpic(){
+    var element = document.getElementById("metadata");
+    element.innerHTML = "<img src='../bandpics/Metal-RPM.png' width='350'>";
+}
+function setmetadata(dta, trackid){
+    var element = document.getElementById("metadata");
+    element.innerHTML = dta;
+    var element2 = document.getElementById(trackid);
+    element2.style.backgroundColor = 'yellow';
+}
+function resetbg(trackid){
+    var element2 = document.getElementById(trackid);
+    element2.style.backgroundColor = '#EEEEEE';
+}
+function playoptions(trackpath){
+    var myanow   = "MetalUpYourAss:@" + trackpath;
+    var myalater = "MetalUpYourAss:+" + trackpath;
+    alert(myanow);
+}
+</script>
+</head>
+<body>
+<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: black; color: white; line-height: 1.5; width: 350"><image src="../bandpics/Metal-RPM.png" width="350"></div>
+<div style="margin-left:27%;" onmouseleave="showpic()">
+<span id="6465" class="musicfile" onmouseover="setmetadata('<h3><i>Fairies Wear Boots</i><br>Jazz Sabbath<br><u> (unknown set)</u><br>(unknown date)</h3>', '6465')" onmouseleave="resetbg('6465')" ><a href="MetalUpYourAss:+TunesAndSymphonies/01-JazzSabbath-FairiesWearBoots.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/01-JazzSabbath-FairiesWearBoots.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Fairies Wear Boots</font></span>
+
+<span id="6466" class="musicfile" onmouseover="setmetadata('<h3><i>Evil Woman</i><br>Jazz Sabbath<br><u> (unknown set)</u><br>(unknown date)</h3>', '6466')" onmouseleave="resetbg('6466')" ><a href="MetalUpYourAss:+TunesAndSymphonies/02-JazzSabbath-EvilWoman.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/02-JazzSabbath-EvilWoman.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Evil Woman</font></span>
+
+<span id="6467" class="musicfile" onmouseover="setmetadata('<h3><i>Iron Man</i><br>Jazz Sabbath<br><u> (unknown set)</u><br>(unknown date)</h3>', '6467')" onmouseleave="resetbg('6467')" ><a href="MetalUpYourAss:+TunesAndSymphonies/04-JazzSabbath-IronMan.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/04-JazzSabbath-IronMan.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Iron Man</font></span>
+
+<span id="6468" class="musicfile" onmouseover="setmetadata('<h3><i>Lonely Goatherd</i><br>Julie Andrews<br><u>The Sound Of Music</u><br>1965.03.00</h3>', '6468')" onmouseleave="resetbg('6468')" ><a href="MetalUpYourAss:+TunesAndSymphonies/09-1965.03.00-JulieAndrews-TheSoundOfMusic-LonelyGoatherd.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/09-1965.03.00-JulieAndrews-TheSoundOfMusic-LonelyGoatherd.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Lonely Goatherd</font></span>
+
+<span id="6469" class="musicfile" onmouseover="setmetadata('<h3><i>Hey There Cthulhu</i><br>Cami<br><u>Gibbous</u><br>2016</h3>', '6469')" onmouseleave="resetbg('6469')" ><a href="MetalUpYourAss:+TunesAndSymphonies/11-2016-Cami-Gibbous-HeyThereCthulhu.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/11-2016-Cami-Gibbous-HeyThereCthulhu.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Hey There Cthulhu</font></span>
+
+<span id="6470" class="musicfile" onmouseover="setmetadata('<h3><i>Always Look On The Bright Side Of Life</i><br>Eric Idle<br><u> (unknown set)</u><br>(unknown date)</h3>', '6470')" onmouseleave="resetbg('6470')" ><a href="MetalUpYourAss:+TunesAndSymphonies/11-EricIdle-AlwaysLookOnTheBrightSideOfLife.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/11-EricIdle-AlwaysLookOnTheBrightSideOfLife.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Always Look On The Bright Side Of Life</font></span>
+
+<span id="6471" class="musicfile" onmouseover="setmetadata('<h3><i>Gaston</i><br>Beauty And The Beast<br><u>Soundtrack</u><br>1991</h3>', '6471')" onmouseleave="resetbg('6471')" ><a href="MetalUpYourAss:+TunesAndSymphonies/31-1991-BeautyAndTheBeast-Soundtrack-04-Gaston.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/31-1991-BeautyAndTheBeast-Soundtrack-04-Gaston.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Gaston</font></span>
+
+<span id="6472" class="musicfile" onmouseover="setmetadata('<h3><i>The Mob Song</i><br>Beauty And The Beast<br><u>Soundtrack</u><br>1991</h3>', '6472')" onmouseleave="resetbg('6472')" ><a href="MetalUpYourAss:+TunesAndSymphonies/31-1991-BeautyAndTheBeast-Soundtrack-08-TheMobSong.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/31-1991-BeautyAndTheBeast-Soundtrack-08-TheMobSong.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">The Mob Song</font></span>
+
+<span id="6473" class="musicfile" onmouseover="setmetadata('<h3><i>Prince Ali</i><br>Aladdin<br><u>Soundtrack</u><br>1992</h3>', '6473')" onmouseleave="resetbg('6473')" ><a href="MetalUpYourAss:+TunesAndSymphonies/31-1992-Aladdin-Soundtrack-PrinceAli.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/31-1992-Aladdin-Soundtrack-PrinceAli.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Prince Ali</font></span>
+
+<span id="6474" class="musicfile" onmouseover="setmetadata('<h3><i>Be Prepared</i><br>Lion King<br><u>Soundtrack</u><br>1994</h3>', '6474')" onmouseleave="resetbg('6474')" ><a href="MetalUpYourAss:+TunesAndSymphonies/31-1994-LionKing-Soundtrack-BePrepared.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/31-1994-LionKing-Soundtrack-BePrepared.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Be Prepared</font></span>
+
+<span id="6475" class="musicfile" onmouseover="setmetadata('<h3><i>Let It Go</i><br>Frozen<br><u>Soundtrack</u><br>2013</h3>', '6475')" onmouseleave="resetbg('6475')" ><a href="MetalUpYourAss:+TunesAndSymphonies/31-2013-Frozen-Soundtrack-03-LetItGo.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/31-2013-Frozen-Soundtrack-03-LetItGo.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Let It Go</font></span>
+
+<span id="6476" class="musicfile" onmouseover="setmetadata('<h3><i>For The First Time In Forever (reprise)</i><br>Frozen<br><u>Soundtrack</u><br>2013</h3>', '6476')" onmouseleave="resetbg('6476')" ><a href="MetalUpYourAss:+TunesAndSymphonies/31-2013-Frozen-Soundtrack-07-ForTheFirstTimeInForever(reprise).flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/31-2013-Frozen-Soundtrack-07-ForTheFirstTimeInForever(reprise).flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">For The First Time In Forever (reprise)</font></span>
+
+<span id="6477" class="musicfile" onmouseover="setmetadata('<h3><i>How Far I\'ll Go</i><br>Moana<br><u>Soundtrack</u><br>2016</h3>', '6477')" onmouseleave="resetbg('6477')" ><a href="MetalUpYourAss:+TunesAndSymphonies/31-2016-Moana-Soundtrack-04-HowFarIllGo.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/31-2016-Moana-Soundtrack-04-HowFarIllGo.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">How Far I'll Go</font></span>
+
+<span id="6478" class="musicfile" onmouseover="setmetadata('<h3><i>We Know The Way</i><br>Moana<br><u>Soundtrack</u><br>2016</h3>', '6478')" onmouseleave="resetbg('6478')" ><a href="MetalUpYourAss:+TunesAndSymphonies/31-2016-Moana-Soundtrack-05-WeKnowTheWay.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/31-2016-Moana-Soundtrack-05-WeKnowTheWay.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">We Know The Way</font></span>
+
+<span id="6479" class="musicfile" onmouseover="setmetadata('<h3><i>How Far I\'ll Go (reprise)</i><br>Moana<br><u>Soundtrack</u><br>2016</h3>', '6479')" onmouseleave="resetbg('6479')" ><a href="MetalUpYourAss:+TunesAndSymphonies/31-2016-Moana-Soundtrack-06-HowFarIllGo(reprise).flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/31-2016-Moana-Soundtrack-06-HowFarIllGo(reprise).flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">How Far I'll Go (reprise)</font></span>
+
+<span id="6480" class="musicfile" onmouseover="setmetadata('<h3><i>You\'re Welcome</i><br>Moana<br><u>Soundtrack</u><br>2016</h3>', '6480')" onmouseleave="resetbg('6480')" ><a href="MetalUpYourAss:+TunesAndSymphonies/31-2016-Moana-Soundtrack-07-YoureWelcome.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/31-2016-Moana-Soundtrack-07-YoureWelcome.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">You're Welcome</font></span>
+
+<span id="6481" class="musicfile" onmouseover="setmetadata('<h3><i>We Know The Way (finale)</i><br>Moana<br><u>Soundtrack</u><br>2016</h3>', '6481')" onmouseleave="resetbg('6481')" ><a href="MetalUpYourAss:+TunesAndSymphonies/31-2016-Moana-Soundtrack-12-WeKnowTheWay(finale).flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/31-2016-Moana-Soundtrack-12-WeKnowTheWay(finale).flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">We Know The Way (finale)</font></span>
+
+<span id="6482" class="musicfile" onmouseover="setmetadata('<h3><i>How Far I\'ll Go (instrumental)</i><br>Moana<br><u>Soundtrack</u><br>2016</h3>', '6482')" onmouseleave="resetbg('6482')" ><a href="MetalUpYourAss:+TunesAndSymphonies/31-2016-Moana-Soundtrack-58-HowFarIllGo(instrumental).flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/31-2016-Moana-Soundtrack-58-HowFarIllGo(instrumental).flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">How Far I'll Go (instrumental)</font></span>
+
+<span id="6483" class="musicfile" onmouseover="setmetadata('<h3><i>Overture / And All That Jazz</i><br>Chicago<br><u>Chicago</u><br>2002.12.00</h3>', '6483')" onmouseleave="resetbg('6483')" ><a href="MetalUpYourAss:+TunesAndSymphonies/41-2002.12.00-Chicago-Chicago-01-Overture..AndAllThatJazz.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/41-2002.12.00-Chicago-Chicago-01-Overture..AndAllThatJazz.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Overture / And All That Jazz</font></span>
+
+<span id="6484" class="musicfile" onmouseover="setmetadata('<h3><i>Cell Block Tango</i><br>Chicago<br><u>Chicago</u><br>2002.12.00</h3>', '6484')" onmouseleave="resetbg('6484')" ><a href="MetalUpYourAss:+TunesAndSymphonies/41-2002.12.00-Chicago-Chicago-02-CellBlockTango.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/41-2002.12.00-Chicago-Chicago-02-CellBlockTango.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Cell Block Tango</font></span>
+
+<span id="6485" class="musicfile" onmouseover="setmetadata('<h3><i>All I Care About</i><br>Chicago<br><u>Chicago</u><br>2002.12.00</h3>', '6485')" onmouseleave="resetbg('6485')" ><a href="MetalUpYourAss:+TunesAndSymphonies/41-2002.12.00-Chicago-Chicago-03-AllICareAbout.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/41-2002.12.00-Chicago-Chicago-03-AllICareAbout.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">All I Care About</font></span>
+
+<span id="6486" class="musicfile" onmouseover="setmetadata('<h3><i>Written In The Stars</i><br>Red Plains Rider And Cactoid Jim<br><u>Thrilling Adventure Hour</u><br>2011.11.00</h3>', '6486')" onmouseleave="resetbg('6486')" ><a href="MetalUpYourAss:+TunesAndSymphonies/53-2011.11.00-RedPlainsRiderAndCactoidJim-ThrillingAdventureHour-WrittenInTheStars.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/53-2011.11.00-RedPlainsRiderAndCactoidJim-ThrillingAdventureHour-WrittenInTheStars.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Written In The Stars</font></span>
+
+<span id="6487" class="musicfile" onmouseover="setmetadata('<h3><i>Our Love Is The Best</i><br>Frank And Sadie<br><u>Thrilling Adventure Hour</u><br>2013.02.14</h3>', '6487')" onmouseleave="resetbg('6487')" ><a href="MetalUpYourAss:+TunesAndSymphonies/53-2013.02.14-FrankAndSadie-ThrillingAdventureHour-OurLoveIsTheBest.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/53-2013.02.14-FrankAndSadie-ThrillingAdventureHour-OurLoveIsTheBest.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Our Love Is The Best</font></span>
+
+<span id="6488" class="musicfile" onmouseover="setmetadata('<h3><i>The House Of The Rising Sun</i><br>Haley Reinhart<br><u>American Idol</u><br>2011</h3>', '6488')" onmouseleave="resetbg('6488')" ><a href="MetalUpYourAss:+TunesAndSymphonies/66-2011-HaleyReinhart-AmericanIdol-TheHouseOfTheRisingSun.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/66-2011-HaleyReinhart-AmericanIdol-TheHouseOfTheRisingSun.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">The House Of The Rising Sun</font></span>
+
+<span id="6489" class="musicfile" onmouseover="setmetadata('<h3><i>House Of The Rising Sun</i><br>Haley Reinhart<br><u>M Y FM New Music Night</u><br>2012.02.21</h3>', '6489')" onmouseleave="resetbg('6489')" ><a href="MetalUpYourAss:+TunesAndSymphonies/66-2012.02.21-HaleyReinhart-MYFMNewMusicNight-HouseOfTheRisingSun.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/66-2012.02.21-HaleyReinhart-MYFMNewMusicNight-HouseOfTheRisingSun.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">House Of The Rising Sun</font></span>
+
+<span id="6490" class="musicfile" onmouseover="setmetadata('<h3><i>Can\'t Find My Way Home</i><br>Haley Reinhart<br><u>What\'s That Sound</u><br>2017.06.00</h3>', '6490')" onmouseleave="resetbg('6490')" ><a href="MetalUpYourAss:+TunesAndSymphonies/66-2017.06.00-HaleyReinhart-WhatsThatSound-05-CantFindMyWayHome.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/66-2017.06.00-HaleyReinhart-WhatsThatSound-05-CantFindMyWayHome.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Can't Find My Way Home</font></span>
+
+<span id="6491" class="musicfile" onmouseover="setmetadata('<h3><i>White Rabbit</i><br>Haley Reinhart<br><u>What\'s That Sound</u><br>2017.06.00</h3>', '6491')" onmouseleave="resetbg('6491')" ><a href="MetalUpYourAss:+TunesAndSymphonies/66-2017.06.00-HaleyReinhart-WhatsThatSound-06-WhiteRabbit.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/66-2017.06.00-HaleyReinhart-WhatsThatSound-06-WhiteRabbit.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">White Rabbit</font></span>
+
+<span id="6492" class="musicfile" onmouseover="setmetadata('<h3><i>Time Of The Season</i><br>Haley Reinhart<br><u>What\'s That Sound</u><br>2017.06.00</h3>', '6492')" onmouseleave="resetbg('6492')" ><a href="MetalUpYourAss:+TunesAndSymphonies/66-2017.06.00-HaleyReinhart-WhatsThatSound-13-TimeOfTheSeason.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/66-2017.06.00-HaleyReinhart-WhatsThatSound-13-TimeOfTheSeason.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Time Of The Season</font></span>
+
+<span id="6493" class="musicfile" onmouseover="setmetadata('<h3><i>These Boots Are Made For Walkin\'</i><br>Haley Reinhart<br><u>What\'s That Sound</u><br>2017.06.00</h3>', '6493')" onmouseleave="resetbg('6493')" ><a href="MetalUpYourAss:+TunesAndSymphonies/66-2017.06.00-HaleyReinhart-WhatsThatSound-14-TheseBootsAreMadeForWalkin.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/66-2017.06.00-HaleyReinhart-WhatsThatSound-14-TheseBootsAreMadeForWalkin.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">These Boots Are Made For Walkin'</font></span>
+
+<span id="6494" class="musicfile" onmouseover="setmetadata('<h3><i>Black Sabbath / Randy Rhoads Medley</i><br>Epic Symphonic Rock<br><u> (unknown set)</u><br>(unknown date)</h3>', '6494')" onmouseleave="resetbg('6494')" ><a href="MetalUpYourAss:+TunesAndSymphonies/99-EpicSymphonicRock-BlackSabbath..RandyRhoadsMedley.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/99-EpicSymphonicRock-BlackSabbath..RandyRhoadsMedley.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Black Sabbath / Randy Rhoads Medley</font></span>
+
+<span id="6495" class="musicfile" onmouseover="setmetadata('<h3><i>Kashmir</i><br>Epic Symphonic Rock<br><u> (unknown set)</u><br>(unknown date)</h3>', '6495')" onmouseleave="resetbg('6495')" ><a href="MetalUpYourAss:+TunesAndSymphonies/99-EpicSymphonicRock-Kashmir.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/99-EpicSymphonicRock-Kashmir.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Kashmir</font></span>
+
+<span id="6496" class="musicfile" onmouseover="setmetadata('<h3><i>Metallica Medley</i><br>Epic Symphonic Rock<br><u> (unknown set)</u><br>(unknown date)</h3>', '6496')" onmouseleave="resetbg('6496')" ><a href="MetalUpYourAss:+TunesAndSymphonies/99-EpicSymphonicRock-MetallicaMedley.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/99-EpicSymphonicRock-MetallicaMedley.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Metallica Medley</font></span>
+
+<span id="6497" class="musicfile" onmouseover="setmetadata('<h3><i>Metallica Medley II</i><br>Epic Symphonic Rock<br><u> (unknown set)</u><br>(unknown date)</h3>', '6497')" onmouseleave="resetbg('6497')" ><a href="MetalUpYourAss:+TunesAndSymphonies/99-EpicSymphonicRock-MetallicaMedleyII.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/99-EpicSymphonicRock-MetallicaMedleyII.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Metallica Medley II</font></span>
+
+<span id="6498" class="musicfile" onmouseover="setmetadata('<h3><i>Sweet Child O\' Mine</i><br>Epic Symphonic Rock<br><u> (unknown set)</u><br>(unknown date)</h3>', '6498')" onmouseleave="resetbg('6498')" ><a href="MetalUpYourAss:+TunesAndSymphonies/99-EpicSymphonicRock-SweetChildOMine.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/99-EpicSymphonicRock-SweetChildOMine.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">Sweet Child O' Mine</font></span>
+
+<span id="6499" class="musicfile" onmouseover="setmetadata('<h3><i>The Imperial March</i><br>Epic Symphonic Rock<br><u> (unknown set)</u><br>(unknown date)</h3>', '6499')" onmouseleave="resetbg('6499')" ><a href="MetalUpYourAss:+TunesAndSymphonies/99-EpicSymphonicRock-TheImperialMarch.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/99-EpicSymphonicRock-TheImperialMarch.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">The Imperial March</font></span>
+
+<span id="6500" class="musicfile" onmouseover="setmetadata('<h3><i>In The Hall Of The Mountain King</i><br>Falkkone<br><u>Intense Symphonic Metal Covers Vol 6</u><br>(unknown date)</h3>', '6500')" onmouseleave="resetbg('6500')" ><a href="MetalUpYourAss:+TunesAndSymphonies/99-Falkkone-IntenseSymphonicMetalCoversVol6-InTheHallOfTheMountainKing.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/99-Falkkone-IntenseSymphonicMetalCoversVol6-InTheHallOfTheMountainKing.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">In The Hall Of The Mountain King</font></span>
+
+<span id="6501" class="musicfile" onmouseover="setmetadata('<h3><i>The Call Of Ktulu</i><br>Yannick Streibert<br><u> (unknown set)</u><br>2018</h3>', '6501')" onmouseleave="resetbg('6501')" ><a href="MetalUpYourAss:+TunesAndSymphonies/99-YannickStreibert-2018-TheCallOfKtulu.mp3"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@TunesAndSymphonies/99-YannickStreibert-2018-TheCallOfKtulu.mp3"><img src="controls/play.png"></a>&nbsp <font color="#883344">The Call Of Ktulu</font></span>
+
+</div>
+</body>
+</html>

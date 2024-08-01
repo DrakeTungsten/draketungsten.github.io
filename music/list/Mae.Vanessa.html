@@ -1,0 +1,79 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../hb.css" />
+<link href="../music.ico" rel="icon" type="image/bmp">
+<title>Mae.Vanessa</title></head>
+<style>
+span{display: inline-block; margin:0em; height: 22px; width:900px;}
+.musicfile{font-weight: normal; padding-left: 30px;}
+.setlist{font-weight:bold; margin-bottom: 3px; margin-top: 5px;}
+h3{ text-decoration: none; font-family: serif; padding-left: 22px;}
+.tooltip {
+    position: relative;
+    display: inline;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: -100%;
+    bottom: 1%;
+}
+.tooltip:hover {
+    background-color: #dd9999;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+</style>
+<script type="text/javascript">
+function showpic(){
+    var element = document.getElementById("metadata");
+    element.innerHTML = "<img src='../bandpics/Metal-RPM.png' width='350'>";
+}
+function setmetadata(dta, trackid){
+    var element = document.getElementById("metadata");
+    element.innerHTML = dta;
+    var element2 = document.getElementById(trackid);
+    element2.style.backgroundColor = 'yellow';
+}
+function resetbg(trackid){
+    var element2 = document.getElementById(trackid);
+    element2.style.backgroundColor = '#EEEEEE';
+}
+function playoptions(trackpath){
+    var myanow   = "MetalUpYourAss:@" + trackpath;
+    var myalater = "MetalUpYourAss:+" + trackpath;
+    alert(myanow);
+}
+</script>
+</head>
+<body>
+<div id="metadata" style="position: fixed; left: 10; top: 10; background-color: black; color: white; line-height: 1.5; width: 350"><image src="../bandpics/Metal-RPM.png" width="350"></div>
+<div style="margin-left:27%;" onmouseleave="showpic()">
+<span id="3871" class="musicfile" onmouseover="setmetadata('<h3><i>My Favourite Things</i><br>Vanessa Mae<br><u> (unknown set)</u><br>1991</h3>', '3871')" onmouseleave="resetbg('3871')" ><a href="MetalUpYourAss:+Mae.Vanessa/VanessaMae-1991-04-MyFavouriteThings.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@Mae.Vanessa/VanessaMae-1991-04-MyFavouriteThings.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">My Favourite Things</font></span>
+
+<span id="3872" class="musicfile" onmouseover="setmetadata('<h3><i>The Pink Panther</i><br>Vanessa Mae<br><u> (unknown set)</u><br>1991</h3>', '3872')" onmouseleave="resetbg('3872')" ><a href="MetalUpYourAss:+Mae.Vanessa/VanessaMae-1991-05-ThePinkPanther.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@Mae.Vanessa/VanessaMae-1991-05-ThePinkPanther.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">The Pink Panther</font></span>
+
+<span id="3873" class="musicfile" onmouseover="setmetadata('<h3><i>Hocus Pocus</i><br>Vanessa Mae<br><u>Storm</u><br>1997.10.00</h3>', '3873')" onmouseleave="resetbg('3873')" ><a href="MetalUpYourAss:+Mae.Vanessa/VanessaMae-1997.10.00-Storm-13-HocusPocus.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@Mae.Vanessa/VanessaMae-1997.10.00-Storm-13-HocusPocus.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Hocus Pocus</font></span>
+
+<span id="3874" class="musicfile" onmouseover="setmetadata('<h3><i>Sabre Dance</i><br>Vanessa Mae<br><u>Choreography</u><br>2004</h3>', '3874')" onmouseleave="resetbg('3874')" ><a href="MetalUpYourAss:+Mae.Vanessa/VanessaMae-2004-Choreography-01-SabreDance.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@Mae.Vanessa/VanessaMae-2004-Choreography-01-SabreDance.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Sabre Dance</font></span>
+
+<span id="3875" class="musicfile" onmouseover="setmetadata('<h3><i>Bolero</i><br>Vanessa Mae<br><u>Choreography</u><br>2004</h3>', '3875')" onmouseleave="resetbg('3875')" ><a href="MetalUpYourAss:+Mae.Vanessa/VanessaMae-2004-Choreography-03-Bolero.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@Mae.Vanessa/VanessaMae-2004-Choreography-03-Bolero.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Bolero</font></span>
+
+<span id="3876" class="musicfile" onmouseover="setmetadata('<h3><i>Emerald Tiger</i><br>Vanessa Mae<br><u>Choreography</u><br>2004</h3>', '3876')" onmouseleave="resetbg('3876')" ><a href="MetalUpYourAss:+Mae.Vanessa/VanessaMae-2004-Choreography-06-EmeraldTiger.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@Mae.Vanessa/VanessaMae-2004-Choreography-06-EmeraldTiger.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Emerald Tiger</font></span>
+
+<span id="3877" class="musicfile" onmouseover="setmetadata('<h3><i>Tribal Gathering</i><br>Vanessa Mae<br><u>Choreography</u><br>2004</h3>', '3877')" onmouseleave="resetbg('3877')" ><a href="MetalUpYourAss:+Mae.Vanessa/VanessaMae-2004-Choreography-07-TribalGathering.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@Mae.Vanessa/VanessaMae-2004-Choreography-07-TribalGathering.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Tribal Gathering</font></span>
+
+<span id="3878" class="musicfile" onmouseover="setmetadata('<h3><i>Raga\'s Dance</i><br>Vanessa Mae<br><u>Choreography</u><br>2004</h3>', '3878')" onmouseleave="resetbg('3878')" ><a href="MetalUpYourAss:+Mae.Vanessa/VanessaMae-2004-Choreography-08-RagasDance.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@Mae.Vanessa/VanessaMae-2004-Choreography-08-RagasDance.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Raga's Dance</font></span>
+
+<span id="3879" class="musicfile" onmouseover="setmetadata('<h3><i>Moroccan Roll</i><br>Vanessa Mae<br><u>Choreography</u><br>2004</h3>', '3879')" onmouseleave="resetbg('3879')" ><a href="MetalUpYourAss:+Mae.Vanessa/VanessaMae-2004-Choreography-09-MoroccanRoll.flac"><img src="controls/add.png"></a>&nbsp <a href="MetalUpYourAss:@Mae.Vanessa/VanessaMae-2004-Choreography-09-MoroccanRoll.flac"><img src="controls/play.png"></a>&nbsp <font color="#111166">Moroccan Roll</font></span>
+
+</div>
+</body>
+</html>
