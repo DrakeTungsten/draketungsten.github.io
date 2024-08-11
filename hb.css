@@ -224,7 +224,15 @@ ul.hbdatalinks a:active {
 
 .conanchrono{
     margin: 0;
+    margin-left: 10px;    
+    font-family: system-ui; 
+    font-size: 14; 
+}
+
+.reprint{
+    margin: 0;
     margin-left: 10px;
+    margin-top: 5px;
     font-family: system-ui; 
     font-size: 14; 
 }
@@ -240,6 +248,11 @@ ul.hbdatalinks a:active {
 .section1{
     font-weight: bold;
     font-size: 18;    
+}
+
+.section6{
+    font-family: "Lucida Console", Monospace;   
+    font-size: 20;    
 }
 
 .magazine1{
