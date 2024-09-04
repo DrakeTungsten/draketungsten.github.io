@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+
+<title>Grappling With Grappling: How to Implement Grappling in a Tabletop RPG &#8211; Codex Integrum</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Codex Integrum &raquo; Feed" href="https://www.codexintegrum.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Codex Integrum &raquo; Comments Feed" href="https://www.codexintegrum.com/comments/feed/" />
+		<script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.codexintegrum.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='astra-theme-css-css'  href='https://www.codexintegrum.com/wp-content/themes/astra/assets/css/minified/frontend.min.css?ver=3.6.8' media='all' />
+<style id='astra-theme-css-inline-css'>
+html{font-size:87.5%;}a,.page-title{color:#0361ad;}a:hover,a:focus{color:#2d015f;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-weight:normal;font-size:14px;font-size:1rem;}blockquote{color:#000000;}h1,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6,.site-title,.site-title a{font-family:'Mada',sans-serif;font-weight:400;text-transform:capitalize;}.site-title{font-size:35px;font-size:2.5rem;display:none;}header .custom-logo-link img{max-width:241px;}.astra-logo-svg{width:241px;}.ast-archive-description .ast-archive-title{font-size:40px;font-size:2.85714285714rem;}.site-header .site-description{font-size:15px;font-size:1.07142857143rem;display:none;}.entry-title{font-size:40px;font-size:2.85714285714rem;}h1,.entry-content h1{font-size:24px;font-size:1.71428571429rem;font-weight:400;font-family:'Mada',sans-serif;text-transform:capitalize;}h2,.entry-content h2{font-size:18px;font-size:1.28571428571rem;font-weight:400;font-family:'Mada',sans-serif;text-transform:capitalize;}h3,.entry-content h3{font-size:16px;font-size:1.14285714286rem;font-weight:400;font-family:'Mada',sans-serif;text-transform:capitalize;}h4,.entry-content h4{font-size:15px;font-size:1.07142857143rem;}h5,.entry-content h5{font-size:15px;font-size:1.07142857143rem;}h6,.entry-content h6{font-size:15px;font-size:1.07142857143rem;}.ast-single-post .entry-title,.page-title{font-size:30px;font-size:2.14285714286rem;}::selection{background-color:#9da2a5;color:#000000;}body,h1,.entry-title a,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6{color:#020202;}.tagcloud a:hover,.tagcloud a:focus,.tagcloud a.current-item{color:#ffffff;border-color:#0361ad;background-color:#0361ad;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,textarea:focus{border-color:#0361ad;}input[type="radio"]:checked,input[type=reset],input[type="checkbox"]:checked,input[type="checkbox"]:hover:checked,input[type="checkbox"]:focus:checked,input[type=range]::-webkit-slider-thumb{border-color:#0361ad;background-color:#0361ad;box-shadow:none;}.site-footer a:hover + .post-count,.site-footer a:focus + .post-count{background:#0361ad;border-color:#0361ad;}.single .nav-links .nav-previous,.single .nav-links .nav-next{color:#0361ad;}.entry-meta,.entry-meta *{line-height:1.45;color:#0361ad;}.entry-meta a:hover,.entry-meta a:hover *,.entry-meta a:focus,.entry-meta a:focus *,.page-links > .page-link,.page-links .page-link:hover,.post-navigation a:hover{color:#2d015f;}.widget-title{font-size:20px;font-size:1.42857142857rem;color:#020202;}#cat option,.secondary .calendar_wrap thead a,.secondary .calendar_wrap thead a:visited{color:#0361ad;}.secondary .calendar_wrap #today,.ast-progress-val span{background:#0361ad;}.secondary a:hover + .post-count,.secondary a:focus + .post-count{background:#0361ad;border-color:#0361ad;}.calendar_wrap #today > a{color:#ffffff;}.page-links .page-link,.single .post-navigation a{color:#0361ad;}.ast-header-break-point .main-header-bar .ast-button-wrap .menu-toggle{border-radius:0px;}#secondary,#secondary button,#secondary input,#secondary select,#secondary textarea{font-size:14px;font-size:1rem;}.ast-logo-title-inline .site-logo-img{padding-right:1em;}.site-logo-img img{ transition:all 0.2s linear;}#secondary {margin: 4em 0 2.5em;word-break: break-word;line-height: 2;}#secondary li {margin-bottom: 0.25em;}#secondary li:last-child {margin-bottom: 0;}@media (max-width: 768px) {.js_active .ast-plain-container.ast-single-post #secondary {margin-top: 1.5em;}}.ast-separate-container.ast-two-container #secondary .widget {background-color: #fff;padding: 2em;margin-bottom: 2em;}@media (min-width: 993px) {.ast-left-sidebar #secondary {padding-right: 60px;}.ast-right-sidebar #secondary {padding-left: 60px;}}@media (max-width: 993px) {.ast-right-sidebar #secondary {padding-left: 30px;}.ast-left-sidebar #secondary {padding-right: 30px;}}@media (max-width:921px){#ast-desktop-header{display:none;}}@media (min-width:921px){#ast-mobile-header{display:none;}}.wp-block-buttons.aligncenter{justify-content:center;}@media (max-width:782px){.entry-content .wp-block-columns .wp-block-column{margin-left:0px;}}@media (max-width:921px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 2.14em;}.ast-separate-container #primary,.ast-separate-container #secondary{padding:1.5em 0;}#primary,#secondary{padding:1.5em 0;margin:0;}.ast-left-sidebar #content > .ast-container{display:flex;flex-direction:column-reverse;width:100%;}.ast-author-box img.avatar{margin:20px 0 0 0;}}@media (max-width:921px){#secondary.secondary{padding-top:0;}.ast-separate-container.ast-right-sidebar #secondary{padding-left:1em;padding-right:1em;}.ast-separate-container.ast-two-container #secondary{padding-left:0;padding-right:0;}.ast-page-builder-template .entry-header #secondary,.ast-page-builder-template #secondary{margin-top:1.5em;}}@media (max-width:921px){.ast-right-sidebar #primary{padding-right:0;}.ast-page-builder-template.ast-left-sidebar #secondary,.ast-page-builder-template.ast-right-sidebar #secondary{padding-right:20px;padding-left:20px;}.ast-right-sidebar #secondary,.ast-left-sidebar #primary{padding-left:0;}.ast-left-sidebar #secondary{padding-right:0;}}@media (min-width:922px){.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary{border:0;}.search-no-results.ast-separate-container #primary{margin-bottom:4em;}}@media (min-width:922px){.ast-right-sidebar #primary{border-right:1px solid #eee;}.ast-left-sidebar #primary{border-left:1px solid #eee;}.ast-right-sidebar #secondary{border-left:1px solid #eee;margin-left:-1px;}.ast-left-sidebar #secondary{border-right:1px solid #eee;margin-right:-1px;}.ast-separate-container.ast-two-container.ast-right-sidebar #secondary{padding-left:30px;padding-right:0;}.ast-separate-container.ast-two-container.ast-left-sidebar #secondary{padding-right:30px;padding-left:0;}.ast-separate-container.ast-right-sidebar #secondary,.ast-separate-container.ast-left-sidebar #secondary{border:0;margin-left:auto;margin-right:auto;}.ast-separate-container.ast-two-container #secondary .widget:last-child{margin-bottom:0;}}.elementor-button-wrapper .elementor-button{border-style:solid;text-decoration:none;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;}body .elementor-button.elementor-size-sm,body .elementor-button.elementor-size-xs,body .elementor-button.elementor-size-md,body .elementor-button.elementor-size-lg,body .elementor-button.elementor-size-xl,body .elementor-button{border-radius:0;padding-top:12px;padding-right:26px;padding-bottom:12px;padding-left:26px;}.elementor-button-wrapper .elementor-button{border-color:#990000;background-color:#990000;}.elementor-button-wrapper .elementor-button:hover,.elementor-button-wrapper .elementor-button:focus{color:#ffffff;background-color:#7d70ba;border-color:#7d70ba;}.wp-block-button .wp-block-button__link,.elementor-button-wrapper .elementor-button,.elementor-button-wrapper .elementor-button:visited{color:#ffffff;}.elementor-button-wrapper .elementor-button{font-family:'Libre Caslon Text',serif;font-weight:700;text-transform:none;letter-spacing:2px;}body .elementor-button.elementor-size-sm,body .elementor-button.elementor-size-xs,body .elementor-button.elementor-size-md,body .elementor-button.elementor-size-lg,body .elementor-button.elementor-size-xl,body .elementor-button{font-size:14px;font-size:1rem;}.wp-block-button .wp-block-button__link:hover,.wp-block-button .wp-block-button__link:focus{color:#ffffff;background-color:#7d70ba;border-color:#7d70ba;}.wp-block-button .wp-block-button__link{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;border-color:#990000;background-color:#990000;color:#ffffff;font-family:'Libre Caslon Text',serif;font-weight:700;text-transform:none;letter-spacing:2px;font-size:14px;font-size:1rem;border-radius:0;padding-top:12px;padding-right:26px;padding-bottom:12px;padding-left:26px;}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],input[type="submit"],input[type="reset"]{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;color:#ffffff;border-color:#990000;background-color:#990000;border-radius:0;padding-top:12px;padding-right:26px;padding-bottom:12px;padding-left:26px;font-family:'Libre Caslon Text',serif;font-weight:700;font-size:14px;font-size:1rem;text-transform:none;letter-spacing:2px;}button:focus,.menu-toggle:hover,button:hover,.ast-button:hover,.ast-custom-button:hover .button:hover,.ast-custom-button:hover ,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="submit"]:hover,input[type="submit"]:focus{color:#ffffff;background-color:#7d70ba;border-color:#7d70ba;}@media (min-width:544px){.ast-container{max-width:100%;}}@media (max-width:544px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single,.ast-separate-container .comments-title,.ast-separate-container .ast-archive-description{padding:1.5em 1em;}.ast-separate-container #content .ast-container{padding-left:0.54em;padding-right:0.54em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 1em;margin-bottom:1.5em;}.ast-separate-container .ast-comment-list .bypostauthor{padding:.5em;}.ast-search-menu-icon.ast-dropdown-active .search-field{width:170px;}.ast-separate-container #secondary{padding-top:0;}.ast-separate-container.ast-two-container #secondary .widget{margin-bottom:1.5em;padding-left:1em;padding-right:1em;}}@media (max-width:921px){.ast-mobile-header-stack .main-header-bar .ast-search-menu-icon{display:inline-block;}.ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon{margin:0;}.ast-comment-avatar-wrap img{max-width:2.5em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 2.14em;}.ast-separate-container .comment-respond{padding:2em 2.14em;}.ast-comment-meta{padding:0 1.8888em 1.3333em;}}body,.ast-separate-container{background-color:#ffffff;;background-image:none;;}@media (max-width:921px){.site-title{display:none;}.ast-archive-description .ast-archive-title{font-size:40px;}.site-header .site-description{display:none;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:40px;}h2,.entry-content h2{font-size:35px;}h3,.entry-content h3{font-size:26px;}h4,.entry-content h4{font-size:24px;font-size:1.71428571429rem;}.ast-single-post .entry-title,.page-title{font-size:30px;}.astra-logo-svg{width:40px;}header .custom-logo-link img,.ast-header-break-point .site-logo-img .custom-mobile-logo-link img{max-width:40px;}}@media (max-width:544px){.site-title{display:none;}.ast-archive-description .ast-archive-title{font-size:40px;}.site-header .site-description{display:none;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:40px;}h2,.entry-content h2{font-size:30px;}h3,.entry-content h3{font-size:27px;}h4,.entry-content h4{font-size:25px;font-size:1.78571428571rem;}.ast-single-post .entry-title,.page-title{font-size:30px;}}@media (max-width:921px){html{font-size:79.8%;}}@media (max-width:544px){html{font-size:79.8%;}}@media (min-width:922px){.ast-container{max-width:1090px;}}@font-face {font-family: "Astra";src: url(https://www.codexintegrum.com/wp-content/themes/astra/assets/fonts/astra.woff) format("woff"),url(https://www.codexintegrum.com/wp-content/themes/astra/assets/fonts/astra.ttf) format("truetype"),url(https://www.codexintegrum.com/wp-content/themes/astra/assets/fonts/astra.svg#astra) format("svg");font-weight: normal;font-style: normal;font-display: fallback;}@media (min-width:922px){.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu:hover > .sub-menu,.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu.focus > .sub-menu{margin-left:-4px;}}.astra-icon-down_arrow::after {content: "\e900";font-family: Astra;}.astra-icon-close::after {content: "\e5cd";font-family: Astra;}.astra-icon-drag_handle::after {content: "\e25d";font-family: Astra;}.astra-icon-format_align_justify::after {content: "\e235";font-family: Astra;}.astra-icon-menu::after {content: "\e5d2";font-family: Astra;}.astra-icon-reorder::after {content: "\e8fe";font-family: Astra;}.astra-icon-search::after {content: "\e8b6";font-family: Astra;}.astra-icon-zoom_in::after {content: "\e56b";font-family: Astra;}.astra-icon-check-circle::after {content: "\e901";font-family: Astra;}.astra-icon-shopping-cart::after {content: "\f07a";font-family: Astra;}.astra-icon-shopping-bag::after {content: "\f290";font-family: Astra;}.astra-icon-shopping-basket::after {content: "\f291";font-family: Astra;}.astra-icon-circle-o::after {content: "\e903";font-family: Astra;}.astra-icon-certificate::after {content: "\e902";font-family: Astra;}.ast-breadcrumbs .trail-browse,.ast-breadcrumbs .trail-items,.ast-breadcrumbs .trail-items li{display:inline-block;margin:0;padding:0;border:none;background:inherit;text-indent:0;}.ast-breadcrumbs .trail-browse{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;}.ast-breadcrumbs .trail-items{list-style:none;}.trail-items li::after{padding:0 0.3em;content:"\00bb";}.trail-items li:last-of-type::after{display:none;}h1,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6{color:#020202;}@media (max-width:921px){.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-firstrow .ast-builder-grid-row > *:first-child,.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-lastrow .ast-builder-grid-row > *:last-child{grid-column:1 / -1;}}@media (max-width:544px){.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-firstrow .ast-builder-grid-row > *:first-child,.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-lastrow .ast-builder-grid-row > *:last-child{grid-column:1 / -1;}}.ast-builder-layout-element[data-section="title_tagline"]{display:flex;}@media (max-width:921px){.ast-header-break-point .ast-builder-layout-element[data-section="title_tagline"]{display:flex;}}@media (max-width:544px){.ast-header-break-point .ast-builder-layout-element[data-section="title_tagline"]{display:flex;}}.ast-builder-menu-1{font-family:inherit;font-weight:inherit;}.ast-builder-menu-1 .sub-menu,.ast-builder-menu-1 .inline-on-mobile .sub-menu{border-top-width:2px;border-bottom-width:2px;border-right-width:2px;border-left-width:2px;border-color:#9da2a5;border-style:solid;border-radius:0;}.ast-builder-menu-1 .main-header-menu > .menu-item > .sub-menu,.ast-builder-menu-1 .main-header-menu > .menu-item > .astra-full-megamenu-wrapper{margin-top:0;}.ast-desktop .ast-builder-menu-1 .main-header-menu > .menu-item > .sub-menu:before,.ast-desktop .ast-builder-menu-1 .main-header-menu > .menu-item > .astra-full-megamenu-wrapper:before{height:calc( 0px + 5px );}.ast-desktop .ast-builder-menu-1 .menu-item .sub-menu .menu-link{border-style:none;}@media (max-width:921px){.ast-header-break-point .ast-builder-menu-1 .menu-item.menu-item-has-children > .ast-menu-toggle{top:0;}.ast-builder-menu-1 .menu-item-has-children > .menu-link:after{content:unset;}}@media (max-width:544px){.ast-header-break-point .ast-builder-menu-1 .menu-item.menu-item-has-children > .ast-menu-toggle{top:0;}}.ast-builder-menu-1{display:flex;}@media (max-width:921px){.ast-header-break-point .ast-builder-menu-1{display:flex;}}@media (max-width:544px){.ast-header-break-point .ast-builder-menu-1{display:flex;}}.ast-builder-html-element img.alignnone{display:inline-block;}.ast-builder-html-element p:first-child{margin-top:0;}.ast-builder-html-element p:last-child{margin-bottom:0;}.ast-header-break-point .main-header-bar .ast-builder-html-element{line-height:1.85714285714286;}.ast-header-html-1 .ast-builder-html-element{font-size:15px;font-size:1.07142857143rem;}.ast-header-html-1{font-size:15px;font-size:1.07142857143rem;}.ast-header-html-1{display:flex;}@media (max-width:921px){.ast-header-break-point .ast-header-html-1{display:flex;}}@media (max-width:544px){.ast-header-break-point .ast-header-html-1{display:flex;}}.site-below-footer-wrap{padding-top:20px;padding-bottom:20px;}.site-below-footer-wrap[data-section="section-below-footer-builder"]{background-color:#000000;;min-height:80px;}.site-below-footer-wrap[data-section="section-below-footer-builder"] .ast-builder-grid-row{max-width:1050px;margin-left:auto;margin-right:auto;}.site-below-footer-wrap[data-section="section-below-footer-builder"] .ast-builder-grid-row,.site-below-footer-wrap[data-section="section-below-footer-builder"] .site-footer-section{align-items:flex-start;}.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-inline .site-footer-section{display:flex;margin-bottom:0;}.ast-builder-grid-row-full .ast-builder-grid-row{grid-template-columns:1fr;}@media (max-width:921px){.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-tablet-inline .site-footer-section{display:flex;margin-bottom:0;}.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-tablet-stack .site-footer-section{display:block;margin-bottom:10px;}.ast-builder-grid-row-container.ast-builder-grid-row-tablet-full .ast-builder-grid-row{grid-template-columns:1fr;}}@media (max-width:544px){.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-mobile-inline .site-footer-section{display:flex;margin-bottom:0;}.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-mobile-stack .site-footer-section{display:block;margin-bottom:10px;}.ast-builder-grid-row-container.ast-builder-grid-row-mobile-full .ast-builder-grid-row{grid-template-columns:1fr;}}.site-below-footer-wrap[data-section="section-below-footer-builder"]{display:grid;}@media (max-width:921px){.ast-header-break-point .site-below-footer-wrap[data-section="section-below-footer-builder"]{display:grid;}}@media (max-width:544px){.ast-header-break-point .site-below-footer-wrap[data-section="section-below-footer-builder"]{display:grid;}}.ast-footer-copyright{text-align:center;}.ast-footer-copyright {color:#ffffff;}@media (max-width:921px){.ast-footer-copyright{text-align:center;}}@media (max-width:544px){.ast-footer-copyright{text-align:center;}}.ast-footer-copyright.ast-builder-layout-element{display:flex;}@media (max-width:921px){.ast-header-break-point .ast-footer-copyright.ast-builder-layout-element{display:flex;}}@media (max-width:544px){.ast-header-break-point .ast-footer-copyright.ast-builder-layout-element{display:flex;}}.elementor-template-full-width .ast-container{display:block;}@media (max-width:544px){.elementor-element .elementor-wc-products .woocommerce[class*="columns-"] ul.products li.product{width:auto;margin:0;}.elementor-element .woocommerce .woocommerce-result-count{float:none;}}.ast-header-break-point .main-header-bar{border-bottom-width:1px;border-bottom-color:#000000;}@media (min-width:922px){.main-header-bar{border-bottom-width:1px;border-bottom-color:#000000;}}@media (min-width:922px){#primary{width:70%;}#secondary{width:30%;}}.ast-safari-browser-less-than-11 .main-header-menu .menu-item, .ast-safari-browser-less-than-11 .main-header-bar .ast-masthead-custom-menu-items{display:block;}.main-header-menu .menu-item, #astra-footer-menu .menu-item, .main-header-bar .ast-masthead-custom-menu-items{-js-display:flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}.main-header-menu > .menu-item > .menu-link, #astra-footer-menu > .menu-item > .menu-link,{height:100%;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-js-display:flex;display:flex;}.main-header-menu .sub-menu .menu-item.menu-item-has-children > .menu-link:after{position:absolute;right:1em;top:50%;transform:translate(0,-50%) rotate(270deg);}.ast-header-break-point .main-header-bar .main-header-bar-navigation .page_item_has_children > .ast-menu-toggle::before, .ast-header-break-point .main-header-bar .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle::before, .ast-mobile-popup-drawer .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle::before, .ast-header-break-point .ast-mobile-header-wrap .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle::before{font-weight:bold;content:"\e900";font-family:Astra;text-decoration:inherit;display:inline-block;}.ast-header-break-point .main-navigation ul.sub-menu .menu-item .menu-link:before{content:"\e900";font-family:Astra;font-size:.65em;text-decoration:inherit;display:inline-block;transform:translate(0, -2px) rotateZ(270deg);margin-right:5px;}.widget_search .search-form:after{font-family:Astra;font-size:1.2em;font-weight:normal;content:"\e8b6";position:absolute;top:50%;right:15px;transform:translate(0, -50%);}.astra-search-icon::before{content:"\e8b6";font-family:Astra;font-style:normal;font-weight:normal;text-decoration:inherit;text-align:center;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.main-header-bar .main-header-bar-navigation .page_item_has_children > a:after, .main-header-bar .main-header-bar-navigation .menu-item-has-children > a:after, .site-header-focus-item .main-header-bar-navigation .menu-item-has-children > .menu-link:after{content:"\e900";display:inline-block;font-family:Astra;font-size:.6rem;font-weight:bold;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin-left:10px;line-height:normal;}.ast-mobile-popup-drawer .main-header-bar-navigation .ast-submenu-expanded>.ast-menu-toggle::before{transform:rotateX(180deg);}.ast-header-break-point .main-header-bar-navigation .menu-item-has-children > .menu-link:after{display:none;}.ast-mobile-header-content > *,.ast-desktop-header-content > * {padding: 10px 0;height: auto;}.ast-mobile-header-content > *:first-child,.ast-desktop-header-content > *:first-child {padding-top: 10px;}.ast-mobile-header-content > .ast-builder-menu,.ast-desktop-header-content > .ast-builder-menu {padding-top: 0;}.ast-mobile-header-content > *:last-child,.ast-desktop-header-content > *:last-child {padding-bottom: 0;}.ast-mobile-header-content .ast-search-menu-icon.ast-inline-search label,.ast-desktop-header-content .ast-search-menu-icon.ast-inline-search label {width: 100%;}.ast-desktop-header-content .main-header-bar-navigation .ast-submenu-expanded > .ast-menu-toggle::before {transform: rotateX(180deg);}#ast-desktop-header .ast-desktop-header-content,.ast-mobile-header-content .ast-search-icon,.ast-desktop-header-content .ast-search-icon,.ast-mobile-header-wrap .ast-mobile-header-content,.ast-main-header-nav-open.ast-popup-nav-open .ast-mobile-header-wrap .ast-mobile-header-content,.ast-main-header-nav-open.ast-popup-nav-open .ast-desktop-header-content {display: none;}.ast-main-header-nav-open.ast-header-break-point #ast-desktop-header .ast-desktop-header-content,.ast-main-header-nav-open.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content {display: block;}.ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-up > .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-up > .menu-item .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-down > .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-down > .menu-item .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-fade > .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-fade > .menu-item .menu-item > .sub-menu {opacity: 1;visibility: visible;}.ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation {width: unset;margin: unset;}.ast-mobile-header-content.content-align-flex-end .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle,.ast-desktop-header-content.content-align-flex-end .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle {left: calc( 20px - 0.907em);}.ast-mobile-header-content .ast-search-menu-icon,.ast-mobile-header-content .ast-search-menu-icon.slide-search,.ast-desktop-header-content .ast-search-menu-icon,.ast-desktop-header-content .ast-search-menu-icon.slide-search {width: 100%;position: relative;display: block;right: auto;transform: none;}.ast-mobile-header-content .ast-search-menu-icon.slide-search .search-form,.ast-mobile-header-content .ast-search-menu-icon .search-form,.ast-desktop-header-content .ast-search-menu-icon.slide-search .search-form,.ast-desktop-header-content .ast-search-menu-icon .search-form {right: 0;visibility: visible;opacity: 1;position: relative;top: auto;transform: none;padding: 0;display: block;overflow: hidden;}.ast-mobile-header-content .ast-search-menu-icon.ast-inline-search .search-field,.ast-mobile-header-content .ast-search-menu-icon .search-field,.ast-desktop-header-content .ast-search-menu-icon.ast-inline-search .search-field,.ast-desktop-header-content .ast-search-menu-icon .search-field {width: 100%;padding-right: 5.5em;}.ast-mobile-header-content .ast-search-menu-icon .search-submit,.ast-desktop-header-content .ast-search-menu-icon .search-submit {display: block;position: absolute;height: 100%;top: 0;right: 0;padding: 0 1em;border-radius: 0;}.ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation ul .sub-menu .menu-link {padding-left: 30px;}.ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation .sub-menu .menu-item .menu-item .menu-link {padding-left: 40px;}.ast-mobile-popup-drawer.active .ast-mobile-popup-inner{background-color:#ffffff;;}.ast-mobile-header-wrap .ast-mobile-header-content, .ast-desktop-header-content{background-color:#ffffff;;}.ast-mobile-popup-content > *, .ast-mobile-header-content > *, .ast-desktop-popup-content > *, .ast-desktop-header-content > *{padding-top:0;padding-bottom:0;}.content-align-flex-start .ast-builder-layout-element{justify-content:flex-start;}.content-align-flex-start .main-header-menu{text-align:left;}.ast-mobile-popup-drawer.active .menu-toggle-close{color:#3a3a3a;}.ast-mobile-header-wrap .ast-primary-header-bar,.ast-primary-header-bar .site-primary-header-wrap{min-height:70px;}.ast-desktop .ast-primary-header-bar .main-header-menu > .menu-item{line-height:70px;}@media (max-width:921px){#masthead .ast-mobile-header-wrap .ast-primary-header-bar,#masthead .ast-mobile-header-wrap .ast-below-header-bar{padding-left:20px;padding-right:20px;}}.ast-header-break-point .ast-primary-header-bar{border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;}@media (min-width:922px){.ast-primary-header-bar{border-bottom-width:1px;border-bottom-color:#000000;border-bottom-style:solid;}}.ast-primary-header-bar{background-color:#ffffff;;background-image:none;;}.ast-primary-header-bar{display:block;}@media (max-width:921px){.ast-header-break-point .ast-primary-header-bar{display:grid;}}@media (max-width:544px){.ast-header-break-point .ast-primary-header-bar{display:grid;}}[data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-fill{color:#990000;border:none;background:#9da2a5;border-radius:0;}[data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-toggle-icon .ast-mobile-svg{width:20px;height:20px;fill:#990000;}[data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-wrap .mobile-menu{color:#990000;}.ast-above-header .main-header-bar-navigation{height:100%;}.ast-header-break-point .ast-mobile-header-wrap .ast-above-header-wrap .main-header-bar-navigation .inline-on-mobile .menu-item .menu-link{border:none;}.ast-header-break-point .ast-mobile-header-wrap .ast-above-header-wrap .main-header-bar-navigation .inline-on-mobile .menu-item-has-children > .ast-menu-toggle::before{font-size:.6rem;}.ast-header-break-point .ast-mobile-header-wrap .ast-above-header-wrap .main-header-bar-navigation .ast-submenu-expanded > .ast-menu-toggle::before{transform:rotateX(180deg);}.ast-mobile-header-wrap .ast-above-header-bar ,.ast-above-header-bar .site-above-header-wrap{min-height:50px;}.ast-desktop .ast-above-header-bar .main-header-menu > .menu-item{line-height:50px;}.ast-desktop .ast-above-header-bar .ast-header-woo-cart,.ast-desktop .ast-above-header-bar .ast-header-edd-cart{line-height:50px;}.ast-above-header-bar{border-bottom-width:1px;border-bottom-color:#eaeaea;border-bottom-style:solid;}.ast-above-header.ast-above-header-bar{background-color:#ffffff;;}.ast-header-break-point .ast-above-header-bar{background-color:#ffffff;}@media (max-width:921px){#masthead .ast-mobile-header-wrap .ast-above-header-bar{padding-left:20px;padding-right:20px;}}.ast-above-header-bar{display:block;}@media (max-width:921px){.ast-header-break-point .ast-above-header-bar{display:grid;}}@media (max-width:544px){.ast-header-break-point .ast-above-header-bar{display:grid;}}.ast-below-header .main-header-bar-navigation{height:100%;}.ast-header-break-point .ast-mobile-header-wrap .ast-below-header-wrap .main-header-bar-navigation .inline-on-mobile .menu-item .menu-link{border:none;}.ast-header-break-point .ast-mobile-header-wrap .ast-below-header-wrap .main-header-bar-navigation .inline-on-mobile .menu-item-has-children > .ast-menu-toggle::before{font-size:.6rem;}.ast-header-break-point .ast-mobile-header-wrap .ast-below-header-wrap .main-header-bar-navigation .ast-submenu-expanded > .ast-menu-toggle::before{transform:rotateX(180deg);}#masthead .ast-mobile-header-wrap .ast-below-header-bar{padding-left:20px;padding-right:20px;}.ast-mobile-header-wrap .ast-below-header-bar ,.ast-below-header-bar .site-below-header-wrap{min-height:60px;}.ast-desktop .ast-below-header-bar .main-header-menu > .menu-item{line-height:60px;}.ast-desktop .ast-below-header-bar .ast-header-woo-cart,.ast-desktop .ast-below-header-bar .ast-header-edd-cart{line-height:60px;}.ast-below-header-bar{border-bottom-width:1px;border-bottom-color:#eaeaea;border-bottom-style:solid;}.ast-below-header-bar{background-color:#eeeeee;;}.ast-header-break-point .ast-below-header-bar{background-color:#eeeeee;}.ast-below-header-bar{display:block;}@media (max-width:921px){.ast-header-break-point .ast-below-header-bar{display:grid;}}@media (max-width:544px){.ast-header-break-point .ast-below-header-bar{display:grid;}}
+</style>
+<link rel='stylesheet' id='astra-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Mada%3A400%2C%7CLibre+Caslon+Text%3A700&#038;display=fallback&#038;ver=3.6.8' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.codexintegrum.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8' media='all' />
+<link rel='stylesheet' id='bbp-default-css'  href='https://www.codexintegrum.com/wp-content/plugins/bbpress/templates/default/css/bbpress.min.css?ver=2.6.6' media='all' />
+<link rel='stylesheet' id='bbpressmoderationstyle-css'  href='https://www.codexintegrum.com/wp-content/plugins/bbpressmoderation/style.css?ver=5.8' media='all' />
+<link rel='stylesheet' id='wpdm-font-awesome-css'  href='https://www.codexintegrum.com/wp-content/plugins/download-manager/assets/fontawesome/css/all.css?ver=5.8' media='all' />
+<link rel='stylesheet' id='wpdm-front-bootstrap-css'  href='https://www.codexintegrum.com/wp-content/plugins/download-manager/assets/bootstrap/css/bootstrap.min.css?ver=5.8' media='all' />
+<link rel='stylesheet' id='wpdm-front-css'  href='https://www.codexintegrum.com/wp-content/plugins/download-manager/assets/css/front.css?ver=5.8' media='all' />
+<link rel='stylesheet' id='bbpress-wp-tweaks-css'  href='https://www.codexintegrum.com/wp-content/plugins/bbpress-wp-tweaks/style.css?ver=5.8' media='all' />
+<link rel='stylesheet' id='recent-posts-widget-with-thumbnails-public-style-css'  href='https://www.codexintegrum.com/wp-content/plugins/recent-posts-widget-with-thumbnails/public.css?ver=7.1.1' media='all' />
+<!--[if IE]>
+<script src='https://www.codexintegrum.com/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=3.6.8' id='astra-flexibility-js'></script>
+<script id='astra-flexibility-js-after'>
+flexibility(document.documentElement);
+</script>
+<![endif]-->
+<script src='https://www.codexintegrum.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script src='https://www.codexintegrum.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script src='https://www.codexintegrum.com/wp-content/plugins/download-manager/assets/bootstrap/js/popper.min.js?ver=5.8' id='wpdm-poper-js'></script>
+<script src='https://www.codexintegrum.com/wp-content/plugins/download-manager/assets/bootstrap/js/bootstrap.min.js?ver=5.8' id='wpdm-front-bootstrap-js'></script>
+<script id='wpdm-frontjs-js-extra'>
+var wpdm_url = {"home":"https:\/\/www.codexintegrum.com\/","site":"https:\/\/www.codexintegrum.com\/","ajax":"https:\/\/www.codexintegrum.com\/wp-admin\/admin-ajax.php"};
+var wpdm_js = {"spinner":"<i class=\"fas fa-sun fa-spin\"><\/i>"};
+</script>
+<script src='https://www.codexintegrum.com/wp-content/plugins/download-manager/assets/js/front.js?ver=3.2.13' id='wpdm-frontjs-js'></script>
+<link rel="https://api.w.org/" href="https://www.codexintegrum.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.codexintegrum.com/wp-json/wp/v2/posts/1006" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.codexintegrum.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.codexintegrum.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8" />
+<link rel="canonical" href="https://www.codexintegrum.com/blog/grappling-with-grappling-how-to-implement-grappling-in-a-tabletop-rpg/" />
+<link rel='shortlink' href='https://www.codexintegrum.com/?p=1006' />
+<link rel="alternate" type="application/json+oembed" href="https://www.codexintegrum.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.codexintegrum.com%2Fblog%2Fgrappling-with-grappling-how-to-implement-grappling-in-a-tabletop-rpg%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.codexintegrum.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.codexintegrum.com%2Fblog%2Fgrappling-with-grappling-how-to-implement-grappling-in-a-tabletop-rpg%2F&#038;format=xml" />
+		<style id="wp-custom-css">
+			/* Author portrait has circle cutout*/
+.circle-image {
+    border-radius: 15%;
+    -moz-border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -o-border-radius: 15%;
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Gray background for h2*/
+.textwidget h2{
+	color:#FFF;
+	text-align:center;
+  background-color: #444;
+	text-transform: uppercase;
+	padding: 5px;
+}
+
+.ast-below-header-bar{
+	background:#FFF;
+}
+
+.widget-title{
+	color:#FFF;
+}
+
+/* Make "recent posts" and author bio h2's line up*/
+.ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single{
+	padding-top:0;
+	padding-left:0;
+	padding-right:0;
+}
+
+/* show Header widget on ONLY homepage */
+body:not(.home) .ast-below-header-wrap{ 
+	display:none;
+}
+
+
+/* center text over banners */
+.sam_centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	color: white;
+	text-align:center;
+	font-size: 50px;
+	text-shadow: 1px 1px 2px #000000;
+	font-weight: bold;
+}
+
+.sam_button{
+	background-color: #444;
+  border: none;
+  color: white;
+  padding: 9px 15px;
+  text-align: center;
+  text-decoration: none;
+	text-transform: uppercase;
+  display: inline-block;
+  font-size:30px;
+  margin: 4px 2px;
+  cursor: pointer;
+	font-weight: bold;
+}
+
+.sam-banner {
+	width: 1200px;
+  height: 425px;
+  object-fit: cover;
+}
+
+/* space out recent posts */
+.wp-block-latest-posts__post-excerpt{
+	margin-top:2em;
+	margin-bottom:2em;
+}
+
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.sam-column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+/* Clear floats after image containers */
+.sam-row::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+
+
+
+
+/* Icon Columns */
+.sam-column-text{
+	text-align:center;
+  background-color: #444C;
+  color:#FFF;
+	text-transform: uppercase;
+	padding: 5px;
+	position: absolute;
+	top: 90.7%;
+	transform: translate(0%, -50%);
+	width:21.5%;
+}
+
+.ast-separate-container.ast-two-container #secondary .widget{
+	padding:0px;
+}
+
+
+
+.ast-row .post-thumb{
+	width:200px;
+	height:auto;
+	display:inline;  
+	margin-right:10pt;
+}
+
+.ast-row .entry-title{
+	float: left;
+	font-size: 14pt;  
+	clear:none;
+}
+
+.ast-row .entry-meta{
+	float:left !important;
+	clear:right !important;
+	font-size: 10pt;
+	display:none;
+}
+
+.ast-row .read-more{
+	display:inline;
+	clear:none;
+	white-space:pre-wrap;
+}
+
+.ast-row .read-more a{
+	display:inline;
+	clear:none;
+	white-space:pre-wrap;
+	clear:none;
+	font-size:15pt;
+	background:#000;
+	color:#FFF;
+	background-color: #444;
+	text-transform: uppercase;
+	padding: 5px;
+	position:absolute;
+	left: 50%;
+}
+
+.ast-row .ast-post-format- .entry-content{
+	display:inline;
+	clear:both;
+	white-space: pre-line;
+	padding:0pt;
+	
+}
+
+.ast-row .ast-post-format- .entry-content p{
+	margin-bottom:0;
+}
+
+.ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single{
+	padding:0pt;
+}
+
+.ast-row .post-content{
+	margin-bottom:40pt;
+}
+
+.home .site-main::before {
+	text-align:center;
+  content: "RECENT POSTS ";
+	color:#FFF;
+	text-align:center;
+  background-color: #444;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	width:100%;
+	font-size:12pt;
+}
+
+.nf-form-title h3{
+	text-align:center;
+	font-size:22pt;
+}
+
+/* Make the Category pages look less stupid */
+.ast-separate-container .ast-archive-description, .ast-separate-container .ast-author-box{
+	padding: 0 0 0 0;
+	background-color:#FFFFFF;
+}
+
+a, .page-title{
+color: #000000;
+}		</style>
+		<meta name="generator" content="WordPress Download Manager 3.2.13" />
+                <link href="https://fonts.googleapis.com/css?family=Rubik"
+              rel="stylesheet">
+        <style>
+            .w3eden .fetfont,
+            .w3eden .btn,
+            .w3eden .btn.wpdm-front h3.title,
+            .w3eden .wpdm-social-lock-box .IN-widget a span:last-child,
+            .w3eden #xfilelist .panel-heading,
+            .w3eden .wpdm-frontend-tabs a,
+            .w3eden .alert:before,
+            .w3eden .panel .panel-heading,
+            .w3eden .discount-msg,
+            .w3eden .panel.dashboard-panel h3,
+            .w3eden #wpdm-dashboard-sidebar .list-group-item,
+            .w3eden #package-description .wp-switch-editor,
+            .w3eden .w3eden.author-dashbboard .nav.nav-tabs li a,
+            .w3eden .wpdm_cart thead th,
+            .w3eden #csp .list-group-item,
+            .w3eden .modal-title {
+                font-family: Rubik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            .w3eden #csp .list-group-item {
+                text-transform: unset;
+            }
+
+
+        </style>
+            <style>
+        /* WPDM Link Template Styles */        </style>
+                <style>
+
+            :root {
+                --color-primary: #4a8eff;
+                --color-primary-rgb: 74, 142, 255;
+                --color-primary-hover: #4a8eff;
+                --color-primary-active: #4a8eff;
+                --color-secondary: #4a8eff;
+                --color-secondary-rgb: 74, 142, 255;
+                --color-secondary-hover: #4a8eff;
+                --color-secondary-active: #4a8eff;
+                --color-success: #18ce0f;
+                --color-success-rgb: 24, 206, 15;
+                --color-success-hover: #4a8eff;
+                --color-success-active: #4a8eff;
+                --color-info: #2CA8FF;
+                --color-info-rgb: 44, 168, 255;
+                --color-info-hover: #2CA8FF;
+                --color-info-active: #2CA8FF;
+                --color-warning: #f29e0f;
+                --color-warning-rgb: 242, 158, 15;
+                --color-warning-hover: orange;
+                --color-warning-active: orange;
+                --color-danger: #ff5062;
+                --color-danger-rgb: 255, 80, 98;
+                --color-danger-hover: #ff5062;
+                --color-danger-active: #ff5062;
+                --color-green: #30b570;
+                --color-blue: #0073ff;
+                --color-purple: #8557D3;
+                --color-red: #ff5062;
+                --color-muted: rgba(69, 89, 122, 0.6);
+                --wpdm-font: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            }
+
+            .wpdm-download-link.btn.btn-primary {
+                border-radius: 4px;
+            }
+
+
+        </style>
+        </head>
+
+<body itemtype='https://schema.org/Blog' itemscope='itemscope' class="post-template-default single single-post postid-1006 single-format-standard wp-custom-logo group-blog ast-blog-single-style-1 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-desktop ast-separate-container ast-two-container ast-right-sidebar astra-3.6.8 ast-normal-title-enabled elementor-default elementor-kit-249">
+<div 
+class="hfeed site" id="page">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+			<header
+		class="site-header header-main-layout-2 ast-primary-menu-enabled ast-logo-title-inline ast-hide-custom-menu-mobile ast-builder-menu-toggle-icon ast-mobile-header-stack" id="masthead" itemtype="https://schema.org/WPHeader" itemscope="itemscope" itemid="#masthead"		>
+			<div id="ast-desktop-header" data-toggle-type="dropdown">
+		<div class="ast-above-header-wrap  ">
+		<div class="ast-above-header-bar ast-above-header  site-header-focus-item" data-section="section-above-header-builder">
+						<div class="site-above-header-wrap ast-builder-grid-row-container site-header-focus-item ast-container" data-section="section-above-header-builder">
+				<div class="ast-builder-grid-row ast-grid-center-col-layout-only ast-flex ast-grid-center-col-layout">
+																		<div class="site-header-above-section-center site-header-section ast-flex ast-grid-section-center">
+										<div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="title_tagline">
+											<div
+				class="site-branding ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope"				>
+					<span class="site-logo-img"><a href="https://www.codexintegrum.com/" class="custom-logo-link" rel="home"><img width="241" height="140" src="https://www.codexintegrum.com/wp-content/uploads/2021/02/cropped-Logo-241x140.jpg" class="custom-logo" alt="Codex Integrum" srcset="https://www.codexintegrum.com/wp-content/uploads/2021/02/cropped-Logo-241x140.jpg 241w, https://www.codexintegrum.com/wp-content/uploads/2021/02/cropped-Logo-300x174.jpg 300w, https://www.codexintegrum.com/wp-content/uploads/2021/02/cropped-Logo.jpg 510w" sizes="(max-width: 241px) 100vw, 241px" /></a></span>				</div>
+			<!-- .site-branding -->
+					</div>
+									</div>
+																		</div>
+					</div>
+								</div>
+			</div>
+		<div class="ast-main-header-wrap main-header-bar-wrap ">
+		<div class="ast-primary-header-bar ast-primary-header main-header-bar site-header-focus-item" data-section="section-primary-header-builder">
+						<div class="site-primary-header-wrap ast-builder-grid-row-container site-header-focus-item ast-container" data-section="section-primary-header-builder">
+				<div class="ast-builder-grid-row ast-grid-center-col-layout-only ast-flex ast-grid-center-col-layout">
+																		<div class="site-header-primary-section-center site-header-section ast-flex ast-grid-section-center">
+										<div class="ast-builder-menu-1 ast-builder-menu ast-flex ast-builder-menu-1-focus-item ast-builder-layout-element site-header-focus-item" data-section="section-hb-menu-1">
+			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="site-navigation" aria-label="Site Navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation ast-inline-flex"><ul id="ast-hf-menu-1" class="main-header-menu ast-nav-menu ast-flex  submenu-with-border stack-on-mobile"><li id="menu-item-1320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1320"><a href="https://www.codexintegrum.com/products/" class="menu-link">Products</a></li>
+<li id="menu-item-2457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2457"><a href="https://www.codexintegrum.com/blog/" class="menu-link">Blog</a></li>
+<li id="menu-item-841" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-841"><a href="https://www.codexintegrum.com/forums/" class="menu-link">Forums</a></li>
+<li id="menu-item-877" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-877"><a href="https://www.drivethrurpg.com/browse.php?keywords=codex+martialis++&#038;x=38&#038;y=18&#038;author=&#038;artist=&#038;pfrom=&#038;pto=" class="menu-link">Store</a></li>
+</ul></div></nav></div></div>		</div>
+									</div>
+																		</div>
+					</div>
+								</div>
+			</div>
+		<div class="ast-below-header-wrap  ">
+		<div class="ast-below-header-bar ast-below-header  site-header-focus-item" data-section="section-below-header-builder">
+						<div class="site-below-header-wrap ast-builder-grid-row-container site-header-focus-item ast-container" data-section="section-below-header-builder">
+				<div class="ast-builder-grid-row ast-grid-center-col-layout-only ast-flex ast-grid-center-col-layout">
+																		<div class="site-header-below-section-center site-header-section ast-flex ast-grid-section-center">
+										<div class="ast-builder-layout-element ast-flex site-header-focus-item ast-header-html-1" data-section="section-hb-html-1">
+			<div class="ast-header-html inner-link-style-"><div class="ast-builder-html-element"><p><a href="https://www.codexintegrum.com/codex-adventum-road-to-monsterberg/" class="a-invisible"></p>
+<div class="container" >
+		<img id="sam_banner" class="sam_banner" src="https://www.codexintegrum.com/wp-content/uploads/2021/02/Banner_Monsterberg_1.jpg"/>
+	</div>
+<p></a></p>
+</div></div>		</div>
+									</div>
+																		</div>
+					</div>
+								</div>
+			</div>
+		<div class="ast-desktop-header-content content-align-flex-start ">
+			</div>
+</div> <!-- Main Header Bar Wrap -->
+<div id="ast-mobile-header" class="ast-mobile-header-wrap " data-type="dropdown">
+		<div class="ast-main-header-wrap main-header-bar-wrap" >
+		<div class="ast-primary-header-bar ast-primary-header main-header-bar site-primary-header-wrap site-header-focus-item ast-builder-grid-row-layout-default ast-builder-grid-row-tablet-layout-default ast-builder-grid-row-mobile-layout-default" data-section="section-primary-header-builder">
+									<div class="ast-builder-grid-row ast-grid-center-col-layout-only ast-flex ast-grid-center-col-layout">
+																			<div class="site-header-primary-section-center site-header-section ast-flex ast-grid-section-center">
+										<div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="title_tagline">
+											<div
+				class="site-branding ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope"				>
+					<span class="site-logo-img"><a href="https://www.codexintegrum.com/" class="custom-logo-link" rel="home"><img width="241" height="140" src="https://www.codexintegrum.com/wp-content/uploads/2021/02/cropped-Logo-241x140.jpg" class="custom-logo" alt="Codex Integrum" srcset="https://www.codexintegrum.com/wp-content/uploads/2021/02/cropped-Logo-241x140.jpg 241w, https://www.codexintegrum.com/wp-content/uploads/2021/02/cropped-Logo-300x174.jpg 300w, https://www.codexintegrum.com/wp-content/uploads/2021/02/cropped-Logo.jpg 510w" sizes="(max-width: 241px) 100vw, 241px" /></a></span>				</div>
+			<!-- .site-branding -->
+					</div>
+									</div>
+																	</div>
+						</div>
+	</div>
+		<div class="ast-below-header-wrap " >
+		<div class="ast-below-header-bar ast-below-header site-below-header-wrap site-header-focus-item ast-builder-grid-row-layout-default ast-builder-grid-row-tablet-layout-default ast-builder-grid-row-mobile-layout-default" data-section="section-below-header-builder">
+									<div class="ast-builder-grid-row ast-grid-center-col-layout-only ast-flex ast-grid-center-col-layout">
+																			<div class="site-header-below-section-center site-header-section ast-flex ast-grid-section-center">
+										<div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="section-header-mobile-trigger">
+						<div class="ast-button-wrap">
+				<button type="button" class="menu-toggle main-header-menu-toggle ast-mobile-menu-trigger-fill"   aria-expanded="false">
+					<span class="screen-reader-text">Main Menu</span>
+					<span class="mobile-menu-toggle-icon">
+						<span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg role='img' class='ast-mobile-svg ast-menu-svg' fill='currentColor' version='1.1' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z'></path></svg></span><span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg class='ast-mobile-svg ast-close-svg' fill='currentColor' version='1.1' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z'></path></svg></span>					</span>
+									</button>
+			</div>
+					</div>
+									</div>
+																	</div>
+						</div>
+	</div>
+		<div class="ast-mobile-header-content content-align-flex-start ">
+				<div class="ast-builder-menu-1 ast-builder-menu ast-flex ast-builder-menu-1-focus-item ast-builder-layout-element site-header-focus-item" data-section="section-hb-menu-1">
+			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="site-navigation" aria-label="Site Navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation ast-inline-flex"><ul id="ast-hf-menu-1" class="main-header-menu ast-nav-menu ast-flex  submenu-with-border stack-on-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1320"><a href="https://www.codexintegrum.com/products/" class="menu-link">Products</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2457"><a href="https://www.codexintegrum.com/blog/" class="menu-link">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-841"><a href="https://www.codexintegrum.com/forums/" class="menu-link">Forums</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-877"><a href="https://www.drivethrurpg.com/browse.php?keywords=codex+martialis++&#038;x=38&#038;y=18&#038;author=&#038;artist=&#038;pfrom=&#038;pto=" class="menu-link">Store</a></li>
+</ul></div></nav></div></div>		</div>
+			</div>
+</div>
+		</header><!-- #masthead -->
+			<div id="content" class="site-content">
+		<div class="ast-container">
+		
+
+	<div id="primary" class="content-area primary">
+
+		
+					<main id="main" class="site-main">
+				
+
+<article
+class="post-1006 post type-post status-publish format-standard has-post-thumbnail hentry category-blog tag-codex-martialis ast-article-single" id="post-1006" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+
+	
+	
+<div class="ast-post-format- single-layout-1">
+
+	
+	<header class="entry-header ">
+
+		
+		<div class="post-thumb-img-content post-thumb"><img width="590" height="250" src="https://www.codexintegrum.com/wp-content/uploads/2020/10/blog_grapple.png" class="attachment-large size-large wp-post-image" alt="Martialis Grappling" loading="lazy" itemprop="image" srcset="https://www.codexintegrum.com/wp-content/uploads/2020/10/blog_grapple.png 590w, https://www.codexintegrum.com/wp-content/uploads/2020/10/blog_grapple-300x127.png 300w" sizes="(max-width: 590px) 100vw, 590px" /></div>		<div class="ast-single-post-order">
+			<h1 class="entry-title" itemprop="headline">Grappling With Grappling: How to Implement Grappling in a Tabletop RPG</h1><div class="entry-meta"><span class="cat-links"><a href="https://www.codexintegrum.com/category/blog/" rel="category tag">blog</a></span> / By <span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by Jean Chandler"
+				href="https://www.codexintegrum.com/author/auctor/" rel="author"
+				class="url fn n" itemprop="url"				>
+				<span
+				class="author-name" itemprop="name"				>Jean Chandler</span>
+			</a>
+		</span>
+
+		</div>		</div>
+		
+		
+	</header><!-- .entry-header -->
+
+	
+	<div class="entry-content clear" 
+	itemprop="text"	>
+
+		
+		
+<p>Since the earliest days of table top role playing games, grappling or unarmed combat more generally has always been a somewhat tricky part of fighting. Some systems were wildly complex involving percentile dice and many tables to consult, many were ignored or discarded. <a href="https://www.codexintegrum.com/what-is-codex-martialis/">Codex Martialis</a> seeks to make this ‘up close and personal’ part of the fight simpler and more intuitive. <br><br>This short article is derived from questions in the FAQ thread in the old Codex Forum, and will help you bring grappling to life in your game.</p>
+
+
+
+<p>But first, let’s cover some basics.</p>
+
+
+
+<h2>Controlling Distance: The Three Range Bands</h2>
+
+
+
+<p>In Codex Martialis, we have three range bands: Onset, Melee and Ringen (grapple).</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="638" height="245" src="https://www.codexintegrum.com/wp-content/uploads/2020/10/OnsetRange.png" alt="" class="wp-image-1007" srcset="https://www.codexintegrum.com/wp-content/uploads/2020/10/OnsetRange.png 638w, https://www.codexintegrum.com/wp-content/uploads/2020/10/OnsetRange-600x230.png 600w, https://www.codexintegrum.com/wp-content/uploads/2020/10/OnsetRange-300x115.png 300w" sizes="(max-width: 638px) 100vw, 638px" /></figure></div>
+
+
+
+<p class="has-text-align-center"><em>In this image, both fighters are at Onset Range.</em></p>
+
+
+
+<p>The first range is <strong>Onset</strong>, which is everything up to the point where you can hit your opponent with a weapon by physically moving across the range threshold, which in game turns usually means taking a five-foot step. Opening attacks take place in this range, as does tactical movement just outside of actual combat. A weapon’s Reach To-Hit bonus is applicable during Onset range, making long weapons like spears and polearms ideal for fighting at this range. At Onset range, your weapons Defense bonus also counts.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="615" height="236" src="https://www.codexintegrum.com/wp-content/uploads/2020/10/MeleeRange.png" alt="" class="wp-image-1008" srcset="https://www.codexintegrum.com/wp-content/uploads/2020/10/MeleeRange.png 615w, https://www.codexintegrum.com/wp-content/uploads/2020/10/MeleeRange-600x230.png 600w, https://www.codexintegrum.com/wp-content/uploads/2020/10/MeleeRange-300x115.png 300w" sizes="(max-width: 615px) 100vw, 615px" /></figure></div>
+
+
+
+<p class="has-text-align-center">In this image, the fighter with the spear on the right is crossing from Onset to Melee. His first attack will be at Onset range.</p>
+
+
+
+<p>The second range is Melee. <strong>Melee </strong>rangeis within Onset range. This is where you can hit the other person without taking a step. Melee range (called <em>Krieg</em> in German language fencing manuals) is very dangerous unless you are the one in control. Any time you make two or more attacks within a given turn, you will enter Melee range automatically. This is because in a fight, people tend to get closer.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="631" height="234" src="https://www.codexintegrum.com/wp-content/uploads/2020/10/RingenRange_Parry.png" alt="" class="wp-image-1009" srcset="https://www.codexintegrum.com/wp-content/uploads/2020/10/RingenRange_Parry.png 631w, https://www.codexintegrum.com/wp-content/uploads/2020/10/RingenRange_Parry-600x223.png 600w, https://www.codexintegrum.com/wp-content/uploads/2020/10/RingenRange_Parry-300x111.png 300w" sizes="(max-width: 631px) 100vw, 631px" /></figure></div>
+
+
+
+<p class="has-text-align-center"><em>Here the swordsman attacks at melee range, and the spearman parries.</em></p>
+
+
+
+<p>If you <em>don’t</em> want to close to Melee range, you have to make a special effort like Maintaining Range, (which means spending some dice from your Martial Pool, or making only multi-dice attacks). While at Melee range, you use your Speed To-Hit bonus, meaning short weapons like daggers and hand axes are very effective here. At Melee range a weapons Defense bonus counts, just as it does at Onset.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="620" height="247" src="https://www.codexintegrum.com/wp-content/uploads/2020/10/RingenRange_Seize.png" alt="" class="wp-image-1010" srcset="https://www.codexintegrum.com/wp-content/uploads/2020/10/RingenRange_Seize.png 620w, https://www.codexintegrum.com/wp-content/uploads/2020/10/RingenRange_Seize-600x239.png 600w, https://www.codexintegrum.com/wp-content/uploads/2020/10/RingenRange_Seize-300x120.png 300w" sizes="(max-width: 620px) 100vw, 620px" /></figure></div>
+
+
+
+<p class="has-text-align-center"><em>Here the spearman seizes the sword-arm of the swordsman, initiating a Grapple</em></p>
+
+
+
+<p>The third range is Grapple. Grapple range is within Melee range. This is where you can execute grappling techniques like throwing another person, moving them or taking a weapon out of their hands. Entering Grapple range is not automatic, and Grapple range isn’t so much a particular distance as a particular state of combat. To initiate a Grapple, you have to either touch your opponent (Hit with an unarmed attack) or hit them with a small (Size T or S) weapon. Entering Grapple always grants the defender an Attack of Opportunity (AoO) unless you have a Feat (such as Ringen) or some special ability which says otherwise, and so long as <strong>they still have dice remaining in their Martial Pool</strong>. If they do have MP remaining they can use Martial Feats like Sidestep or Distance Fighting to <em>avoid</em> the grapple instead. If they have the Ringen MF they can have the choice whether to use their grappling skill to avoid Grapple or to win an exchange. <strong>If they don’t have any MP remaining, they cannot prevent you from initiating grapple</strong>.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img loading="lazy" width="624" height="238" src="https://www.codexintegrum.com/wp-content/uploads/2020/10/RingenRange_Submit.png" alt="" class="wp-image-1011" srcset="https://www.codexintegrum.com/wp-content/uploads/2020/10/RingenRange_Submit.png 624w, https://www.codexintegrum.com/wp-content/uploads/2020/10/RingenRange_Submit-600x229.png 600w, https://www.codexintegrum.com/wp-content/uploads/2020/10/RingenRange_Submit-300x114.png 300w" sizes="(max-width: 624px) 100vw, 624px" /></figure></div>
+
+
+
+<p class="has-text-align-center"><em>Here the spearman drops his spear and performs a throw (Grapple attack) on the swordsman, who is now prone.</em></p>
+
+
+
+<p>Entering grapple range has three immediate effects. Most weapons can no longer be used for defense (unless you have special Martial Feats), Shields only confer passive defense, and medium or larger weapons cannot be used to attack (unless you have special Martial Feats).</p>
+
+
+
+<h2>In The Grapple &#8211; What to do when you&#8217;ve been caught</h2>
+
+
+
+<p>So now we have some idea how to get into Grapple the next pressing issue is, what is it for? The answer is that of course, there are many things you can do in a grapple, some of which require certain Feats or skills, but others can be done by anybody. The basics including Immobilizing people, Throwing people, Disarming people, and Moving people.</p>
+
+
+
+<h3>Immobilizing your Opponent</h3>
+
+
+
+<p><strong>Immobilizing </strong>is the easiest thing, as soon as you have initiated a grapple you have begun to prevent your opponent from doing many things. They can’t use their larger weapons, they can’t run away, they can’t start fires or blow horns, they can’t cast spells if you are using magic in your game. Temporarily immobilizing someone by grappling with them is not the same thing as pinning someone, but it can be a short term solution to many serious problems!</p>
+
+
+
+<h3>Throwing an Opponent</h3>
+
+
+
+<p><strong>Throwing </strong>someone means taking them from a normal vertical standing position down to a horizontal prone position on the ground while you yourself remain standing. If you attempt to <strong>throw</strong> someone and you win a contested Grapple check (your Grapple To-Hit bonus vs. theirs) then they are Prone. If they have no MP remaining in their Pool, then it’s your Grapple die roll vs. their Passive Defense. In the SRD the Prone status confers a -4 penalty to defense in Melee (this applies to both Active and Passive Defense), and getting up from being prone triggers an AoO from anyone within normal attack range (5’ for normal weapons, or 10’ for reach weapons). If you fail to throw your opponent, you are considered to be still in a grapple at the beginning of the next turn, but they can’t do anything else until it’s their turn (unless they have a special MF like Counterstroke or Kampfringen). If you have the Kampfringen MF you can Throw your opponent with a successful defense of their attempt to throw <em>you</em>. See Kampfringen MF in the core rules for more details on this.</p>
+
+
+
+<h3>Grappling to a Take-Down</h3>
+
+
+
+<p>If you generate a bind or a counterattack (natural 20 on defense) during a Throw attempt, then <em>both</em> fighters end up prone and remain in grapple. This is called a take-down.</p>
+
+
+
+<h3>Disarming your Opponent</h3>
+
+
+
+<p><strong>Disarming</strong> someone means taking their weapon out of their hands. This works the same way as a <strong>Throw</strong>. You make a contested Grapple Check and if you succeed, they no longer have a weapon. The defender in this case can decide whether or not to contest the attempt by spending an MP (they might instead prefer to move away for example). If they do, then the contested Grapple Check pits your die roll + Grapple Bonus vs. their die roll vs. Grapple bonus. The MF Gioco Stretto confers a Free Dice on any attempt to disarm.</p>
+
+
+
+<h3>Moving your Opponent</h3>
+
+
+
+<p><strong>Moving</strong> someone might mean pushing someone off a cliff, or out of a door, or away from your friend, or away from the pool of naphtha they are trying to ignite with their torch, or away from a weapon they are trying to retrieve, or any other action which involves pushing someone away from where they are at the beginning of the round. Moving someone works the same way as a Throw or a Disarm. You make a contested grapple check, and if you succeed, you have moved them. Remember certain Feats confer Free Dice when grappling. For example, Ringen gives you one Free Dice for grappling in each turn. This can be for any roll related to the grapple, the initial touch, or an attempt to Throw, Disarm or Move, or in a defensive roll against such an attack. This stacks with all other Free Dice conferred by any other MF.</p>
+
+
+
+<h3>Grappling to Pin</h3>
+
+
+
+<p>If you have the MF Grapple and Pin, you can Pin your opponent with a successful grapple check and then either render them unconscious or cripple them. See Advanced Martial Feats, Grapple and Pin for more on this.</p>
+
+
+
+<h2>Using Weapons in Grapple</h2>
+
+
+
+<p>Unless you have special Martial Feats (such as Half-Swording or Half-Staff MF) you can only use weapons with a size T or S. Unarmed attacks such as those conferred by Dance de La Rue, Bind and Batter, Pugilism, or Morstrosse MF’s.</p>
+
+
+
+<h3>In the grapple, some weapons are better than others</h3>
+
+
+
+<p>The Grapple Bonus is normally your BaB plus your strength. If you have Weapon Finesse: Grappling, you can apply your dexterity bonus instead.</p>
+
+
+
+<h2>Grappling Is a Critical Component of Real Fencing</h2>
+
+
+
+<p>As fights run long, fighters typically get closer together. Real fighters don&#8217;t just stand at melee-range and slam each other like boxing robots.  Despite its prevalence, grappling has largely been avoided by RPG&#8217;s due to its complexity and to avoid burdening players with cumbersome new rules.</p>
+
+
+
+<p><a href="https://www.codexintegrum.com/what-is-codex-martialis/">Codex Martialis </a>brings historical combat, including grappling, to tabletop RPG&#8217;s with new combat options that won&#8217;t bog down your game. </p>
+
+
+
+<p></p>
+
+
+
+<p class="has-text-align-center"><a href="https://www.drivethrurpg.com/product/58045/Codex-Martialis-V10"><strong>Codex Martialis is available now at DriveThruRPG!</strong></a></p>
+
+		
+		
+			</div><!-- .entry-content .clear -->
+</div>
+
+	
+</article><!-- #post-## -->
+
+
+	        <nav class="navigation post-navigation" role="navigation" aria-label="Posts">
+	                <span class="screen-reader-text">Post navigation</span>
+	                <div class="nav-links"><div class="nav-previous"><a href="https://www.codexintegrum.com/codex-martialis/what-is-codex-martialis/" rel="prev"><span class="ast-left-arrow">&larr;</span> Previous Post</a></div><div class="nav-next"><a href="https://www.codexintegrum.com/codex-martialis/now-available-codex-martialis-quick-start-guide/" rel="next">Next Post <span class="ast-right-arrow">&rarr;</span></a></div></div>
+	        </nav>			</main><!-- #main -->
+			
+		
+	</div><!-- #primary -->
+
+
+	<div class="widget-area secondary" id="secondary" role="complementary" itemtype="https://schema.org/WPSideBar" itemscope="itemscope">
+	<div class="sidebar-main" >
+				<aside id="text-5" class="widget widget_text">			<div class="textwidget"><h2>About the Author</h2>
+</div>
+		</aside><aside id="media_image-3" class="widget widget_media_image"><img width="539" height="511" src="https://www.codexintegrum.com/wp-content/uploads/2021/02/JeanAndSam.jpg" class="image wp-image-2208 circle-image attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="https://www.codexintegrum.com/wp-content/uploads/2021/02/JeanAndSam.jpg 539w, https://www.codexintegrum.com/wp-content/uploads/2021/02/JeanAndSam-300x284.jpg 300w" sizes="(max-width: 539px) 100vw, 539px" /></aside><aside id="text-3" class="widget widget_text">			<div class="textwidget"><p>Jean is a researcher and ‘history aggregator’ specializing in historical fencing treatises, and the history of late medieval Central Europe. He is an historical fencing instructor and is still (just barely) active in the tournaments circuit. Jean’s published work includes both academic historical research, and books and articles for the game industry. Jean created Codex Martialis to bring the fun and dynamism of historical fencing to tabletop games.</p>
+</div>
+		</aside><aside id="text-6" class="widget widget_text">			<div class="textwidget"><p>Sam is a regimental broadsword fencing instructor with nearly ten years experience with the Scottish basket-hilt broadsword. Sam competes in rapier, longsword, broadsword, and singlestick tournaments. Sam joined the Codex Integrum project in 2020.</p>
+</div>
+		</aside>
+	</div><!-- .sidebar-main -->
+</div><!-- #secondary -->
+
+
+	</div> <!-- ast-container -->
+	</div><!-- #content -->
+<footer
+class="site-footer" id="colophon" itemtype="https://schema.org/WPFooter" itemscope="itemscope" itemid="#colophon">
+			<div class="site-below-footer-wrap ast-builder-grid-row-container site-footer-focus-item ast-builder-grid-row-full ast-builder-grid-row-tablet-full ast-builder-grid-row-mobile-full ast-footer-row-stack ast-footer-row-tablet-stack ast-footer-row-mobile-stack" data-section="section-below-footer-builder">
+	<div class="ast-builder-grid-row-container-inner">
+					<div class="ast-builder-footer-grid-columns site-below-footer-inner-wrap ast-builder-grid-row">
+											<div class="site-footer-below-section-1 site-footer-section site-footer-section-1">
+								<div class="ast-builder-layout-element ast-flex site-footer-focus-item ast-footer-copyright" data-section="section-footer-builder">
+				<div class="ast-footer-copyright"><p>Copyright © 2021 Codex Integrum</p>
+</div>			</div>
+						</div>
+										</div>
+			</div>
+
+</div>
+	</footer><!-- #colophon -->
+	</div><!-- #page -->
+            <script>
+                jQuery(function($){
+
+                    
+                });
+            </script>
+            <div id="fb-root"></div>
+            <script id='astra-theme-js-js-extra'>
+var astra = {"break_point":"921","isRtl":""};
+</script>
+<script src='https://www.codexintegrum.com/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=3.6.8' id='astra-theme-js-js'></script>
+<script src='https://www.codexintegrum.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
+<script src='https://www.codexintegrum.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script src='https://www.codexintegrum.com/wp-includes/js/dist/hooks.min.js?ver=a7edae857aab69d69fa10d5aef23a5de' id='wp-hooks-js'></script>
+<script src='https://www.codexintegrum.com/wp-includes/js/dist/i18n.min.js?ver=5f1269854226b4dd90450db411a12b79' id='wp-i18n-js'></script>
+<script id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src='https://www.codexintegrum.com/wp-includes/js/jquery/jquery.form.min.js?ver=4.2.1' id='jquery-form-js'></script>
+<script src='https://www.codexintegrum.com/wp-includes/js/wp-embed.min.js?ver=5.8' id='wp-embed-js'></script>
+			<script>
+			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+			</script>
+				</body>
+</html>
