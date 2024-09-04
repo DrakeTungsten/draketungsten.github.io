@@ -5,65 +5,136 @@ rel="stylesheet"
 type="text/css"
 href="../../hb.css"
 />
+<script>
+function sizechange(){
+    let s = document.getElementById("size").value;
+    let ss = "0";
+    if(s == "fine"){
+        ss = "1";
+    }
+    else if(s == "diminutive"){
+        ss = "1d3";
+    }
+    else if(s == "tiny"){
+        ss = "2 + 1d3";
+    }
+    else if(s == "small"){
+        ss = "6 + 1d4";
+    }
+    else if(s == "medium"){
+        ss = "12 + 1d6";
+    }
+    else if(s == "large"){
+        ss = "25 + 1d10";
+    }
+    else if(s == "huge"){
+        ss = "50 + 1d12";
+    }
+    else if(s == "gargantuan"){
+        ss = "100 + 2d20";
+    }
+    else if(s == "colossal"){
+        ss = "200 + 3d20";
+    }
+    document.getElementById("hitpoints").value = ss;
+    document.getElementById("hp").value = ss;
+}
+function hitpointschange(){
+    document.getElementById("hitpoints").value =  document.getElementById("hp").value;
+}
+function numberchange(){
+    document.getElementById("numberapp").value =  document.getElementById("numbers").value;
+}
+</script>
 <link href="../../rpg.ico" rel="icon" type="image/bmp">
-<title>HB Monster Index</title>
+<title>Valor Monster Index</title>
 </head>
 <body>
+    
+    <!-- end of _head-creature-page-a.html  need to stop here so that the absolute position div can be created by the cpp code, and then the common batch of links and opening of the main div will be imported from the -b head.html  -->>
+
+    
 <div id="onecolnarrow" style="background-color:#ffeedd;">
 
 <p>
-<a href="../../000-Home.html"><img height="150" src="../../000-Valor.png"></a>
+    <center>
+         <!---  This block of links is from _head-creaturepage-b.html  --->
+<a href="../../000-Home.html"><img height="200" src="../../000-Valor.jpg" title="Valor home page"></a>
 &nbsp &nbsp
-<a href="../../480-Creatures.html"><img height="150" src="../../480-chimera.jpg"></a>
+<a href="../../480-Creatures.html"><img height="200" src="../../480-Creatures.jpg" title="Creatures home page"></a>
 &nbsp &nbsp
-<a href="../Index-full/page25.html"><img height="150" src="../../485-Monsters.png"></a>
+<a href="../../485-Monsters-Master.html"><img height="200" src="../../480-MonsterMenagerie.jpg" title="Alphabetical list of all creatures"></a>
 &nbsp &nbsp
-<a href="../../485-Monsters-Master.html"><img height="150" src="../../485-Monsters-master.jpg"></a>
+<a href="../../485-Monsters-sources.html"><img height="200" src="../../480-MonstersByGame.jpg" title="Creatures by game and source"></a>
 &nbsp &nbsp
-<a href="../../485-Monsters-sources.html"><img height="150" src="../../485-Monsters-games.png"></a>
+<a href="../../485-Monsters-environments.html"><img height="200" src="../../480-Monsters-byhabitat.jpg" title="Creatures by environment"></a>
 &nbsp &nbsp
-<a href="../../485-Monsters-tags.html"><img height="150" src="../../485-Monsters-tags.png"></a>
+<a href="../../485-Monsters-tags.html"><img height="200" src="../../480-Monsters-tags.jpg" title="Creatures by tags"></a>
+    </center>
 </p>
 <br><br>
+<a href="basilisk.html">PREV</a> &nbsp; &nbsp; &nbsp;
+<a href="bataraKala.html">NEXT</a>
 <h1>Bat</h1>
-<br><br>
-<p id="bat_aquilae.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#aquilae">Aquilae Bestiary</a></span> &nbsp &nbsp
-<span class="gamesource">OSR</span> <span class="externallink"> <a href="https://google.com/search?q=heavy+metal">source link</a>
-</p>
-<p id="bat_wsulerin.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#wsulerin">Sulerin On The Web</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 3e</span> <span class="externallink"> <a href="http://sulerin.com/creatures/creatures.asp?op=open&a=20020509170145">source link</a>
-</p>
-<p id="bat_wag.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#wag">Angry Golem On The Web</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 5e</span> <span class="externallink"> <a href="https://angrygolem-games.com/?s=bat">source link</a>
+<div class="hbcritterstats">
+Size: tiny<br>
+Type: beast<br>
+Temper: undefined<br>
+Number appearing: 3d8<br>
+Combat Pool: 0<br>
+Hit Points: 2 + 1d3<br>
+Attack Rank: 0<br>
+Defense Rank: 0<br>
+Damage Reduction: 0<br>
+</div>
+<div class="hbcritterstats2">
+<a title="grasslands, prairie (uncommon)" href="../../485-Monsters-environments.html#1150"><img src="../../HabitatImages/grasslands, prairie.jpg" height="200"></a> &nbsp; 
+<a title="grasslands, savanna (uncommon)" href="../../485-Monsters-environments.html#1160"><img src="../../HabitatImages/grasslands, savanna.jpg" height="200"></a> &nbsp; 
+<a title="forest (uncommon)" href="../../485-Monsters-environments.html#1200"><img src="../../HabitatImages/forest.jpg" height="200"></a> &nbsp; 
+<a title="jungle (uncommon)" href="../../485-Monsters-environments.html#1300"><img src="../../HabitatImages/jungle.jpg" height="200"></a> &nbsp; 
+<a title="coast, tropical (uncommon)" href="../../485-Monsters-environments.html#7110"><img src="../../HabitatImages/coast, tropical.jpg" height="200"></a> &nbsp; 
+<a title="coast, temperate (uncommon)" href="../../485-Monsters-environments.html#7210"><img src="../../HabitatImages/coast, temperate.jpg" height="200"></a> &nbsp; 
+</div>
+<p id="bat_wag.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#wag">Angry Golem (web)</a></span> &nbsp &nbsp
+<span class="gamesource">D&ampD 5e</span> <span class="externallink"><a href="https://angrygolem-games.com/?s=bat">original/official source</a>
 </p>
 <p id="bat_wd100.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#wd100">OSE Encounter Activity Tables</a></span> &nbsp &nbsp
-<span class="gamesource">Any</span> <span class="externallink"> <a href="https://blog.d4caltrops.com/p/ose-encounter-activity-tables.html">source link</a>
+<span class="gamesource">Any</span> <span class="externallink"><a href="https://blog.d4caltrops.com/p/ose-encounter-activity-tables.html">original/official source</a>
 </p>
 <iframe title="Metal!" src="../PDFs/bat_wd100.pdf#zoom=120" width="1010"> </iframe> <br><br>
 
 <p id="bat_pf1b1.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#pf1b1">Pathfinder 1e Bestiary 1</a></span> &nbsp &nbsp
-<span class="gamesource">Pathfinder</span> <span class="externallink"> <a href="https://www.aonprd.com/MonsterDisplay.aspx?ItemName=Bat">source link</a>
+<span class="gamesource">Pathfinder</span> <span class="externallink"><a href="https://www.aonprd.com/MonsterDisplay.aspx?ItemName=Bat">original/official source</a>
 </p>
 <p id="bat_pf1b2.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#pf1b2">Pathfinder 1e Bestiary 2 </a></span> &nbsp &nbsp
-<span class="gamesource">Pathfinder</span> <span class="externallink"> <a href="https://www.aonprd.com/MonsterDisplay.aspx?ItemName=Bat">source link</a>
+<span class="gamesource">Pathfinder</span> <span class="externallink"><a href="https://www.aonprd.com/MonsterDisplay.aspx?ItemName=Bat">original/official source</a>
 </p>
 <p id="bat_toh.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#toh">Tome Of Horrors Complete</a></span> &nbsp &nbsp
-<span class="gamesource">Pathfinder</span> <span class="externallink"> <a href="https://www.aonprd.com/">source link</a>
+<span class="gamesource">Pathfinder</span> <span class="externallink"><a href="https://www.froggodgames.com/product/the-tome-of-horrors-complete/">original/official source</a>
 </p>
 <p id="bat_5ef.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#5ef">Fifth Edition Foes</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 5e</span> <span class="externallink"> <a href="https://www.5esrd.com/srd-content-source/fifth-edition-foes">source link</a>
+<span class="gamesource">D&ampD 5e</span> <span class="externallink"><a href="https://www.froggodgames.com/product/fifth-edition-foes/">original/official source</a>
 </p>
 <p id="bat_toh2018.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#toh2018">Tome Of Horrors 2018</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 5e</span> <span class="externallink"> <a href="https://www.5esrd.com/srd-content-source/tome-of-horrors/">source link</a>
+<span class="gamesource">D&ampD 5e</span> <span class="externallink"><a href="https://www.5esrd.com/database/creature/doombat/">original/official source</a>
 </p>
 <p id="bat_vathis.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#vathis">Creatures Of Vathis</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 5e</span> <span class="externallink"> <a href="https://www.5esrd.com/database/creature/">source link</a>
+<span class="gamesource">D&ampD 5e</span> <span class="externallink"><a href="https://www.drivethrurpg.com/product/263691/Creatures-of-Vathis--5e">original/official source</a>
 </p>
 <p id="bat_2mm.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#2mm">D&ampD 2e Monstrous Manual</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 2e</span> <span class="externallink"> <a href="https://google.com/search?q=D%26D+2e+Bat">source link</a>
+<span class="gamesource">D&ampD 2e</span> <span class="externallink"><a href="https://www.drivethrurpg.com/product/16865/Monstrous-Manual-2e">original/official source</a>
+</p>
+<p id="bat_scruffygrognard2e.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#scruffygrognard2e">Scruffy Grognard's Monstrous Manual</a></span> &nbsp &nbsp
+<span class="gamesource">D&ampD 2e</span> <span class="externallink">(no source link)
 </p>
 <p id="bat_13a.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#13a">13th Age Bestiary</a></span> &nbsp &nbsp
-<span class="gamesource">13th Age</span> <span class="externallink"> <a href="https://www.13thagesrd.com/monsters/">source link</a>
+<span class="gamesource">13th Age</span> <span class="externallink"><a href="https://www.13thagesrd.com/monsters/">original/official source</a>
+</p>
+<p id="bat_ccndens.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#ccndens">Critters, Creatures, &amp Denizens</a></span> &nbsp &nbsp
+<span class="gamesource">Dungeon Crawl Classics</span> <span class="externallink">(no source link)
+</p>
+<p id="bat_had.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#had">Monsters Compendium</a></span> &nbsp &nbsp
+<span class="gamesource">Heroes Of Adventure</span> <span class="externallink">(no source link)
 </p>
 <br><br>
 </div>
