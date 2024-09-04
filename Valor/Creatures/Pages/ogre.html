@@ -5,95 +5,190 @@ rel="stylesheet"
 type="text/css"
 href="../../hb.css"
 />
+<script>
+function sizechange(){
+    let s = document.getElementById("size").value;
+    let ss = "0";
+    if(s == "fine"){
+        ss = "1";
+    }
+    else if(s == "diminutive"){
+        ss = "1d3";
+    }
+    else if(s == "tiny"){
+        ss = "2 + 1d3";
+    }
+    else if(s == "small"){
+        ss = "6 + 1d4";
+    }
+    else if(s == "medium"){
+        ss = "12 + 1d6";
+    }
+    else if(s == "large"){
+        ss = "25 + 1d10";
+    }
+    else if(s == "huge"){
+        ss = "50 + 1d12";
+    }
+    else if(s == "gargantuan"){
+        ss = "100 + 2d20";
+    }
+    else if(s == "colossal"){
+        ss = "200 + 3d20";
+    }
+    document.getElementById("hitpoints").value = ss;
+    document.getElementById("hp").value = ss;
+}
+function hitpointschange(){
+    document.getElementById("hitpoints").value =  document.getElementById("hp").value;
+}
+function numberchange(){
+    document.getElementById("numberapp").value =  document.getElementById("numbers").value;
+}
+</script>
 <link href="../../rpg.ico" rel="icon" type="image/bmp">
-<title>HB Monster Index</title>
+<title>Valor Monster Index</title>
 </head>
 <body>
+    
+    <!-- end of _head-creature-page-a.html  need to stop here so that the absolute position div can be created by the cpp code, and then the common batch of links and opening of the main div will be imported from the -b head.html  -->>
+
+    
 <div id="onecolnarrow" style="background-color:#ffeedd;">
 
 <p>
-<a href="../../000-Home.html"><img height="150" src="../../000-Valor.png"></a>
+    <center>
+         <!---  This block of links is from _head-creaturepage-b.html  --->
+<a href="../../000-Home.html"><img height="200" src="../../000-Valor.jpg" title="Valor home page"></a>
 &nbsp &nbsp
-<a href="../../480-Creatures.html"><img height="150" src="../../480-chimera.jpg"></a>
+<a href="../../480-Creatures.html"><img height="200" src="../../480-Creatures.jpg" title="Creatures home page"></a>
 &nbsp &nbsp
-<a href="../Index-full/page25.html"><img height="150" src="../../485-Monsters.png"></a>
+<a href="../../485-Monsters-Master.html"><img height="200" src="../../480-MonsterMenagerie.jpg" title="Alphabetical list of all creatures"></a>
 &nbsp &nbsp
-<a href="../../485-Monsters-Master.html"><img height="150" src="../../485-Monsters-master.jpg"></a>
+<a href="../../485-Monsters-sources.html"><img height="200" src="../../480-MonstersByGame.jpg" title="Creatures by game and source"></a>
 &nbsp &nbsp
-<a href="../../485-Monsters-sources.html"><img height="150" src="../../485-Monsters-games.png"></a>
+<a href="../../485-Monsters-environments.html"><img height="200" src="../../480-Monsters-byhabitat.jpg" title="Creatures by environment"></a>
 &nbsp &nbsp
-<a href="../../485-Monsters-tags.html"><img height="150" src="../../485-Monsters-tags.png"></a>
+<a href="../../485-Monsters-tags.html"><img height="200" src="../../480-Monsters-tags.jpg" title="Creatures by tags"></a>
+    </center>
 </p>
 <br><br>
+<a href="octopus.html">PREV</a> &nbsp; &nbsp; &nbsp;
+<a href="ogreMage.html">NEXT</a>
 <h1>Ogre</h1>
-<br><br>
-<p id="ogre_wsulerin.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#wsulerin">Sulerin On The Web</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 3e</span> <span class="externallink"> <a href="http://sulerin.com/creatures/creatures.asp?op=open&a=20020509122342">source link</a>
-</p>
-<p id="ogre_aquilae.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#aquilae">Aquilae Bestiary</a></span> &nbsp &nbsp
-<span class="gamesource">OSR</span> <span class="externallink"> <a href="https://google.com/search?q=heavy+metal">source link</a>
-</p>
+<div class="hbcritterstats">
+Size: undefined<br>
+Type: undefined<br>
+Temper: undefined<br>
+Number appearing: 0<br>
+Combat Pool: 0<br>
+Hit Points: 0<br>
+Attack Rank: 0<br>
+Defense Rank: 0<br>
+Damage Reduction: 0<br>
+</div>
+<div class="hbcritterstats2">
+</div>
 <p id="ogre_monstersknow.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#monstersknow">The Monsters Know What They're Doing</a></span> &nbsp &nbsp
-<span class="gamesource">Dungeons And Dragons</span> <span class="externallink"> <a href="https://google.com/search?q=heavy+metal">source link</a>
+<span class="gamesource">Dungeons And Dragons</span> <span class="externallink"><a href="https://www.amazon.com/Monsters-Know-What-Theyre-Doing/dp/1982122668">original/official source</a>
 </p>
-<p id="ogre_wag.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#wag">Angry Golem On The Web</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 5e</span> <span class="externallink"> <a href="https://angrygolem-games.com/?s=ogre">source link</a>
+<p id="ogre_monstersknow2.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#monstersknow2">The Monsters Know What They're Doing 2 (moar)</a></span> &nbsp &nbsp
+<span class="gamesource">Dungeons And Dragons</span> <span class="externallink">(no source link)
+</p>
+<p id="ogre_wag.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#wag">Angry Golem (web)</a></span> &nbsp &nbsp
+<span class="gamesource">D&ampD 5e</span> <span class="externallink"><a href="https://angrygolem-games.com/?s=ogre">original/official source</a>
 </p>
 <p id="ogre_wd100.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#wd100">OSE Encounter Activity Tables</a></span> &nbsp &nbsp
-<span class="gamesource">Any</span> <span class="externallink"> <a href="https://blog.d4caltrops.com/p/ose-encounter-activity-tables.html">source link</a>
+<span class="gamesource">Any</span> <span class="externallink"><a href="https://blog.d4caltrops.com/p/ose-encounter-activity-tables.html">original/official source</a>
 </p>
 <iframe title="Metal!" src="../PDFs/ogre_wd100.pdf#zoom=120" width="1010"> </iframe> <br><br>
 
 <p id="ogre_pf1b1.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#pf1b1">Pathfinder 1e Bestiary 1</a></span> &nbsp &nbsp
-<span class="gamesource">Pathfinder</span> <span class="externallink"> <a href="https://www.aonprd.com/MonsterDisplay.aspx?ItemName=Ogre">source link</a>
+<span class="gamesource">Pathfinder</span> <span class="externallink"><a href="https://www.aonprd.com/MonsterDisplay.aspx?ItemName=Ogre">original/official source</a>
 </p>
 <p id="ogre_pf2b1.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#pf2b1">Pathfinder 2e Bestiary 1</a></span> &nbsp &nbsp
-<span class="gamesource">Pathfinder</span> <span class="externallink"> <a href="https://2e.aonprd.com/Monsters.aspx?ID=317">source link</a>
+<span class="gamesource">Pathfinder</span> <span class="externallink"><a href="https://2e.aonprd.com/Monsters.aspx?ID=317">original/official source</a>
 </p>
 <p id="ogre_pathcodex.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#pathcodex">Monster Codex</a></span> &nbsp &nbsp
-<span class="gamesource">Pathfinder</span> <span class="externallink"> <a href="https://google.com/search?q=heavy+metal">source link</a>
+<span class="gamesource">Pathfinder</span> <span class="externallink"><a href="https://www.amazon.com/Pathfinder-Roleplaying-Game-Monster-Codex/dp/1601256868">original/official source</a>
 </p>
 <p id="ogre_monrev.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#monrev">Classic Monsters Revisited</a></span> &nbsp &nbsp
-<span class="gamesource">Pathfinder</span> <span class="externallink"> <a href="https://www.aonprd.com/">source link</a>
+<span class="gamesource">Pathfinder</span> <span class="externallink"><a href="https://paizo.com/products/btpy82r5?Pathfinder-Chronicles-Classic-Monsters-Revisited">original/official source</a>
 </p>
 <p id="ogre_mythadv.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#mythadv">Mythic Adventures</a></span> &nbsp &nbsp
-<span class="gamesource">Pathfinder</span> <span class="externallink"> <a href="https://www.aonprd.com/">source link</a>
+<span class="gamesource">Pathfinder</span> <span class="externallink"><a href="https://www.aonprd.com/">original/official source</a>
 </p>
 <p id="ogre_dnd.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#dnd">Monster Manual</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 5e</span> <span class="externallink"> <a href="https://www.5esrd.com/database/creature/">source link</a>
+<span class="gamesource">D&ampD 5e</span> <span class="externallink"><a href="https://www.dndbeyond.com/monsters/16969-ogre">original/official source</a>
 </p>
 <p id="ogre_tob2.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#tob2">Kobold Press Tome Of Beasts 2</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 5e</span> <span class="externallink"> <a href="https://www.5esrd.com/srd-content-source/tome-of-beasts-2/">source link</a>
+<span class="gamesource">D&ampD 5e</span> <span class="externallink"><a href="https://www.5esrd.com/database/creature/ogre-one-horned/">original/official source</a>
+</p>
+<p id="ogre_fleemort.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#fleemort">Flee, Mortals</a></span> &nbsp &nbsp
+<span class="gamesource">D&ampD 5e</span> <span class="externallink">(no source link)
 </p>
 <p id="ogre_nord.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#nord">Ultimate Bestiary: Revenge Of The Horde</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 5e</span> <span class="externallink"> <a href="https://www.5esrd.com/srd-content-source/game-masters-toolbox-ultimate-bestiary-revenge-of-the-horde/">source link</a>
+<span class="gamesource">D&ampD 5e</span> <span class="externallink"><a href="https://www.5esrd.com/srd-content-source/game-masters-toolbox-ultimate-bestiary-revenge-of-the-horde/">original/official source</a>
 </p>
 <p id="ogre_mord.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#mord">Mordenkainen's Tome Of Foes</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 5e</span> <span class="externallink"> <a href="https://www.5esrd.com/database/creature/">source link</a>
+<span class="gamesource">D&ampD 5e</span> <span class="externallink"><a href="https://www.dndbeyond.com/sources/mtof">original/official source</a>
 </p>
 <p id="ogre_monunderworld.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#monunderworld">Monsters Of The Underworld</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 5e</span> <span class="externallink"> <a href="https://www.5esrd.com/database/creature/">source link</a>
+<span class="gamesource">D&ampD 5e</span> <span class="externallink"><a href="https://www.drivethrurpg.com/product/290974/Monsters-of-the-Underworld">original/official source</a>
+</p>
+<p id="ogre_monecoanth.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#monecoanth">Monster Ecology Anthology</a></span> &nbsp &nbsp
+<span class="gamesource">D&ampD 5e</span> <span class="externallink">(no source link)
+</p>
+<p id="ogre_mm1.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#mm1">Monster Manual</a></span> &nbsp &nbsp
+<span class="gamesource">D&ampD 4e</span> <span class="externallink">(no source link)
+</p>
+<p id="ogre_mm3.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#mm3">Monster Manual 3</a></span> &nbsp &nbsp
+<span class="gamesource">D&ampD 4e</span> <span class="externallink">(no source link)
 </p>
 <p id="ogre_monstervault.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#monstervault">Dungeons And Dragons Essentials: Monster Vault</a></span> &nbsp &nbsp
-<span class="gamesource">D&ampD 4e</span> <span class="externallink"> <a href="https://google.com/search?q=heavy+metal">source link</a>
+<span class="gamesource">D&ampD 4e</span> <span class="externallink">(no source link)
+</p>
+<p id="ogre_2mm.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#2mm">D&ampD 2e Monstrous Manual</a></span> &nbsp &nbsp
+<span class="gamesource">D&ampD 2e</span> <span class="externallink">(no source link)
+</p>
+<p id="ogre_scruffygrognard2e.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#scruffygrognard2e">Scruffy Grognard's Monstrous Manual</a></span> &nbsp &nbsp
+<span class="gamesource">D&ampD 2e</span> <span class="externallink">(no source link)
+</p>
+<p id="ogre_addmm.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#addmm">AD&ampD Monster Manual</a></span> &nbsp &nbsp
+<span class="gamesource">AD&ampD 1e</span> <span class="externallink">(no source link)
 </p>
 <p id="ogre_13a.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#13a">13th Age Bestiary</a></span> &nbsp &nbsp
-<span class="gamesource">13th Age</span> <span class="externallink"> <a href="https://www.13thagesrd.com/monsters/">source link</a>
+<span class="gamesource">13th Age</span> <span class="externallink"><a href="https://www.13thagesrd.com/monsters/">original/official source</a>
+</p>
+<p id="ogre_dragonlance.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#dragonlance">Dragonlance Bestiary</a></span> &nbsp &nbsp
+<span class="gamesource">SAGA</span> <span class="externallink">(no source link)
 </p>
 <p id="ogre_hm.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#hm">Hacklopedia Of Beasts</a></span> &nbsp &nbsp
-<span class="gamesource">Hackmaster</span> <span class="externallink"> <a href="https://kenzerco.com/product-category/hackmaster/">source link</a>
+<span class="gamesource">Hackmaster</span> <span class="externallink"><a href="https://kenzerco.com/product-category/hackmaster/">original/official source</a>
+</p>
+<p id="ogre_ccndens.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#ccndens">Critters, Creatures, &amp Denizens</a></span> &nbsp &nbsp
+<span class="gamesource">Dungeon Crawl Classics</span> <span class="externallink">(no source link)
+</p>
+<p id="ogre_had.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#had">Monsters Compendium</a></span> &nbsp &nbsp
+<span class="gamesource">Heroes Of Adventure</span> <span class="externallink">(no source link)
 </p>
 <p id="ogre_wow.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#wow">Manual Of Monsters</a></span> &nbsp &nbsp
-<span class="gamesource">World Of Warcraft RPG</span> <span class="externallink"> <a href="https://google.com/search?q=World+Of+Warcraft+RPG+Ogre">source link</a>
+<span class="gamesource">World Of Warcraft RPG</span> <span class="externallink"><a href="https://www.amazon.com/Warcraft-Roleplaying-Game-Manual-Monsters/dp/1588460703">original/official source</a>
 </p>
 <p id="ogre_oldworld.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#oldworld">Old World Bestiary</a></span> &nbsp &nbsp
-<span class="gamesource">Warhammer</span> <span class="externallink"> <a href="https://google.com/search?q=Warhammer+Ogre">source link</a>
+<span class="gamesource">Warhammer</span> <span class="externallink"><a href="https://www.amazon.com/Warhammer-Fantasy-Roleplay-World-Bestiary/dp/1844162265">original/official source</a>
 </p>
 <p id="ogre_advcomp.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#advcomp">Mystara Adversary Compendium I</a></span> &nbsp &nbsp
-<span class="gamesource">Dragon Age</span> <span class="externallink"> <a href="https://eidoloncore.wordpress.com/2012/02/01/mystara-adversary-compendium-i-for-age/">source link</a>
+<span class="gamesource">Dragon Age</span> <span class="externallink"><a href="https://eidoloncore.wordpress.com/2012/02/01/mystara-adversary-compendium-i-for-age/">original/official source</a>
 </p>
 <iframe title="Metal!" src="../PDFs/ogre_advcomp.pdf#zoom=120" width="1010"> </iframe> <br><br>
 
+<p id="ogre_overhaul.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#overhaul">The Monster Overhaul</a></span> &nbsp &nbsp
+<span class="gamesource">OSR</span> <span class="externallink">(no source link)
+</p>
+<p id="ogre_darkdeep.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#darkdeep">Adventures Dark And Deep</a></span> &nbsp &nbsp
+<span class="gamesource">Adventures Dark And Deep</span> <span class="externallink">(no source link)
+</p>
 <br><br>
 </div>
 </body>
