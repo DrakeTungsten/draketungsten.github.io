@@ -1,0 +1,69 @@
+<html>
+<head>
+<link
+rel="stylesheet"
+type="text/css"
+href="hb.css"
+/>
+<link href="rpg.ico" rel="icon" type="image/bmp">
+<title>Equipment</title>
+
+<script type="text/javascript">
+    function setmetadata(book, game, notes){
+        var element = document.getElementById("metadata");
+        var j = "<span class='innerbook'>" + book + "</span><br><span class='innergame'>" + game + "</span><br><span class='innernotes'>" + notes + "</span>";
+        element.innerHTML = j;
+    }
+    function setmetadataaspic(){
+        var element = document.getElementById("metadata");
+        element.innerHTML =  "<img src=\"260-Equipment.jpg\" width=\"350\">";
+    }    
+</script>
+
+</head>
+<body>
+
+ <div id="metadata" style="position: fixed; left: 10; top: 10; background-color: white; color: red; line-height: 1.5; width: 350">
+    <img src="260-Equipment.jpg" width="350">
+</div>
+
+<p>
+    <center> 
+       <a href="000-Home.html"><img height="150" src="000-Valor.jpg"></a>   
+   </center>
+   </p>
+
+<div id="onecolnarrow">
+
+
+<h2><a href="https://1d4chan.org/wiki/List_of_/tg/%27s_magic_items">Some items</a></h2>
+
+
+<a href="265-Equipment_ogl.pdf#zoom=120"><img src="265-Equipment_ogl.png" class="imagebox"
+    onmouseover='setmetadata("Equipment", "OGL", "&nbsp")'
+    onmouseleave="setmetadataaspic()" >
+</a>
+
+
+<a href="265-Equipment_basicfantasy.pdf#zoom=120"><img src="265-Equipment_basicfantasy.png" class="imagebox"
+    onmouseover='setmetadata("Equipment Emporium", "Basic Fantasy", "&nbsp")'
+    onmouseleave="setmetadataaspic()"    >
+</a>
+
+<!-- -------------------------------------------------------------------------------------------------------------  -->
+<a href="267-Trinkets.pdf#zoom=120"><img src="267-Trinkets.png" class="imagebox"
+    onmouseover='setmetadata("Trinkets", "OGL", "gear")'
+    onmouseleave="setmetadataaspic()"    >
+</a>
+
+
+<div style="clear: both"></div>
+
+
+
+<div style="clear: both;"></div>
+
+<br><br>
+</div>
+</body>
+</html>

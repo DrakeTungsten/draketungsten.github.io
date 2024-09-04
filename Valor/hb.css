@@ -1,11 +1,195 @@
 body {
-    background-color: #0000FF;
-    /*background-image: url("background.gif");*/
+    background-color: #0000FF;    
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
+.habpageinfo{
+    font-size: 16px;
+    font-family: Helvetica, Sans-serif;
+}
+.freqroll{
+    font-size: 16px;
+    font-family: Helvetica, Sans-serif;
+}
+.hbcritterstats{
+    font-size: 20px;
+    padding: 15px;
+    background-color: rgba(240, 240, 255, 0.8);
+    font-family: Helvetica, Sans-serif;
+}
+.hbcritterstats2{
+    font-size: 16px;
+    padding: 15px;
+    background-color: rgba(249, 240, 250, 0.8);
+    font-family: Helvetica, Sans-serif;
+}
+.habitatgroup{    
+    background-color: #2196F3;   
+    font-size: 34px;
+    text-align: left;
+    padding: 10px;  
+}
+.habitatgroup2{    
+    background-color: #51CCFD;   
+    font-size: 24px;
+    text-align: left;
+    padding: 10px;  
+}
+
+.habitatgroup-desert{
+    background-color: #F1E4D0;
+}
+.habitatgroup-grassland{
+    background-color: #EEFAEE;
+}
+.habitatgroup-forest{
+    background-color: #DAF2DD;
+}
+.habitatgroup-jungle{
+    background-color: #C5F0D1;
+}
+.habitatgroup-wetlands{
+    background-color: #cccc88;
+}
+.habitatgroup-taiga{
+    background-color: #DFFAFF;
+}
+.habitatgroup-tundra{
+    background-color: #EFF2FE;
+}
+.habitatgroup-snowandice{
+    background-color: #FFFFFF;
+}
+.habitatgroup-tropicallake{
+    /*background-color: #FFFF66;*/
+    background-color: #EFF3FF;
+}
+.habitatgroup-temperatelake{
+    /*background-color: #FaF530;*/
+    background-color: #e4e8fd;
+}
+.habitatgroup-subarcticlake{
+    /*background-color: #eddb15;*/
+    background-color: #D7DCF9;
+}
+.habitatgroup-arcticlake{
+    /*background-color: #efbf2c;*/
+    background-color: #D0D0F6;
+}
+.habitatgroup-mountains{
+    background-color: #E5D3B3;
+}
+.habitatgroup-caves{
+    background-color: #c9c9c9;
+}
+.habitatgroup-civilization{
+    background-color: #FFE1E1;
+}
+.habitatgroup-tropicalsea{
+    background-color: #EFF3FF;
+}
+.habitatgroup-temperatesea{
+    background-color: #e4e8fd;
+}
+.habitatgroup-subarcticsea{
+    background-color: #D7DCF9;
+}
+.habitatgroup-arcticsea{
+    background-color: #D0D0F6;
+}
+.habitatgroup-underdark{
+    background-color: #CCCCCC;
+}
+.habitatgroup-fiends{
+    background-color: #FFa0bb;
+}
+.habitatgroup-undefined{
+    background-color: #FFFFFF;
+}
+
+
+.habitat{
+    display: grid;  
+    grid-auto-columns: 280px 230px 230px 230px 230px 230px;
+    gap: 10px; 
+    padding: 10px;     
+}
+
+.habitatparans {
+    display: inline-block;    
+    font-size: 18px;  
+    margin-top: 7px;  
+}
+
+.habitatname {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 25;
+    background-color: rgba(240, 240, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 22px;
+    text-align: left;
+    max-width 260px;
+}
+
+.frequency-common {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.frequency-uncommon {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;    
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.frequency-rare {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;    
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.frequency-veryrare {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;   
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.frequency-unique {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;   
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+}
 
 .math{
     font-family: Helvetica, Sans-serif;
@@ -155,6 +339,10 @@ ul.naked {
     padding-bottom:20px; */
 }
 
+.pod{
+    height: 200px;
+}
+
 .terrainlink{
     display: inline-block;
     color: green;
@@ -188,6 +376,18 @@ a.creaturetag1:visited {
     color: green;
     font-size: 24;        
 }
+
+a.creaturetag2:link {
+    color: green;
+    text-decoration: none;    
+}
+
+a.creaturetag2:visited {
+    color: green;
+    text-decoration: none;    
+}
+
+
 
 .tagnote{
     font-family: monospace;         
@@ -357,7 +557,7 @@ a.creaturetag1:visited {
 }
 
 .homeimage{
-    height: 180;    
+    height: 300;    
     margin-left: 12;
     margin-right: 12;
     margin-bottom: 15;
@@ -472,6 +672,16 @@ a.creaturetag1:visited {
 
 div.indent1 {
     margin-left: 2.0em;
+}
+
+span.rollresult {
+    display: inline-block;
+    width: 50px;
+    color:#2175bc;
+}
+
+span.sceneoracle {
+    color: #119311;
 }
 
 div.feature_bottomnav {
