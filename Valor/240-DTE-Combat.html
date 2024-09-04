@@ -1,0 +1,384 @@
+<html>
+<head>
+<link
+rel="stylesheet"
+type="text/css"
+href="hb.css"
+/>
+<link href="rpg.ico" rel="icon" type="image/bmp">
+<title>Combat</title>
+<script type="text/javascript">
+function PopRepeatedContent(){
+/***  The Attack Roll Equation  ***/
+    var attack = `    
+        <span title="Best result out of martial dice rolled">
+            <img class="equation40" src="Stats/exclamation.svg">
+            <img class="equation80" src="Stats/paran-open.svg">
+            <img class="equation60" src="Stats/red/hash.svg">
+            <img class="equation60" src="Dice/red/d20.svg"> &nbsp
+            <img class="equation80" src="Stats/paran-close.svg">
+        </span>
+        &nbsp+&nbsp
+        <span title="BAB">
+            <img class="equation60" src="Stats/01_level-full.svg">  
+        </span>
+        &nbsp+&nbsp
+        <span title="Strength Bonus">
+            <img class="equation60" src="Stats/21_strength.svg"> &nbsp
+        </span>
+        &nbsp+&nbsp
+        <span title="Weapon Reach Bonus (at onset range)">
+            <img class="equation80" src="Stats/paran-open.svg">
+            <img class="equation60" src="Stats/red/reach.svg">  
+        </span>
+        <span title="or">
+            <img class="equation50" src="Stats/or.svg">
+        </span>
+        <span title="Weapon Speed Bonus (at melee range)">
+            <img class="equation60" src="Stats/red/speed.svg"> &nbsp  
+            <img class="equation80" src="Stats/paran-close.svg">
+        </span>
+        &nbsp+&nbsp
+        <span title="Misc Offensive Bonuses">
+            <img class="equation60" src="Stats/25_bonuses.svg">  &nbsp
+        </span>
+        &nbsp-&nbsp
+        <span title="Subtract the armor's Armor Bypass penalty if attempting Armor Bypass">
+            <img class="equation80" src="Stats/paran-open.svg"><img class="equation60" src="Stats/armorbypass-hitpenalty.svg"> 
+            <img class="equation80" src="Stats/paran-close.svg">
+        </span>
+        &nbsp-&nbsp
+        <span title="Misc Offensive Penalties">
+            <img class="equation60" src="Stats/penalties.svg"> 
+        </span>
+`        
+    var a1 = document.getElementById('AttackPassiveDefense')
+    a1.innerHTML = attack
+    var a2 = document.getElementById('AttackActiveDefense')
+    a2.innerHTML = attack
+
+/***  The Critical Hit Damage Block  ***/
+    var critdamage = `    
+        <span title="Damage Inflicted">
+            <img class="equation40" src="Stats/wound.svg"> &nbsp
+        </span>
+        <img class="equation20" src="Stats/equals.svg"> &nbsp
+        <span title="Weapon's Damage Die">
+            <img class="equation40" src="Dice/damage.svg"> &nbsp + &nbsp
+        </span>
+        <span title="The weapon's damage-type damage die, rolled once for each martial die expended in the attack">
+            <img class="equation50" src="Stats/paran-open.svg">
+            <img class="equation40" src="Stats/critdamage.svg">
+            *
+            <img class="equation30" src="Stats/red/hash.svg">
+            <img class="equation50" src="Stats/paran-close.svg">
+        </span>
+        + 
+        <span title="Strength Bonus">
+            &nbsp <img class="equation40" src="Stats/21_strength.svg"> &nbsp
+        </span>
+        + 
+        <span title="Misc Damage Bonuses">
+            &nbsp<img class="equation40" src="Stats/25_bonuses.svg">  &nbsp
+        </span>
+        - &nbsp
+        <span title="The defender's Damage Reduction minus the weapon's Armor-Piercing value">
+            <img class="equation50" src="Stats/paran-open.svg"><img class="equation40" src="Stats/damagereduction.svg">
+            &nbsp- &nbsp
+            <img class="equation40" src="Stats/armorpiercing.svg">
+        </span>
+        <span title="or">
+            <img class="equation40" src="Stats/or.svg">
+        </span>
+        <span title="No Damage Reduction Applied because this was an Armor-Bypass attack">
+            <img class="equation30" src="Stats/red/0.svg">
+            <img class="equation40" src="Stats/red/armorbypass-damage.svg"> 
+        </span>
+        <img class="equation50" src="Stats/paran-close.svg">
+        <span title="Misc Damage Penalties">
+            - &nbsp<img class="equation40" src="Stats/penalties.svg"> 
+        </span>
+        <div class="outlineif2">
+            IF &nbsp <img class="equation40" src="Stats/bludgeon.svg"> &nbsp
+            <div class="outlineif1">
+                IF &nbsp 
+                <span title="Damage Inflicted">
+                    <img class="equation40" src="Stats/wound.svg"> &nbsp
+                </span>    
+                <img class="equation20" src="Stats/greaterthan.svg"> &nbsp
+                <img class="equation60" src="Dice/purple/d20.svg"> &nbsp
+                + &nbsp Con
+                <span class="damagetext">make a constitution save vs damage inflicted</span>
+                <div class="outline1">
+                    <img class="equation20" src="Stats/minus.svg"> 
+                    <img class="equation60" src="Dice/d20-mas-defender.svg">
+                    <span class="damagetext">defender loses one martial die</span>
+                </div>
+            </div>
+            IF &nbsp <img class="equation40" src="Stats/pierce.svg"> &nbsp
+            <span class="damagetext">twist the blade</span>
+            <!--  twist the blade -->
+            <div class="outline1">
+                <span title="Damage Inflicted">
+                    <img class="equation40" src="Stats/wound.svg"> &nbsp
+                </span>
+                <span title="add the following additional damage">
+                    <img class="equation20" src="Stats/plus.svg"> 
+                    <img class="equation20" src="Stats/equals.svg"> &nbsp 
+                </span>
+                <img class="equation40" src="Stats/critdamage.svg">&nbsp
+                * &nbsp<img class="equation40" src="Dice/d20.svg"> 
+                <span class="damagetext">roll an extra Piercing damage die (d6) for each MD you elect to burn</span>
+            </div>
+        </div>
+
+`        
+    var cd1 = document.getElementById('CritDamage1')
+    cd1.innerHTML = critdamage
+    var cd2 = document.getElementById('CritDamage2')
+    cd2.innerHTML = critdamage
+
+/***  Basic Damage / Normal Damage Equation  ***/
+    var normaldamage = `    
+        <div class="outline1">
+            <span title="Damage Inflicted">
+              <img class="equation40" src="Stats/wound.svg"> &nbsp
+            </span>
+            <img class="equation20" src="Stats/equals.svg"> &nbsp
+        <span title="Weapon's Damage Die">
+            <img class="equation40" src="Dice/damage.svg"> &nbsp
+            </span>
+            <!-- wrathful strike --> + <span title="Wrathful Strike: Declare before rolling. Expend, but do not roll, one additional die on the attack. If the rolled die (or dice) do hit, then roll one crit-type damage die for additional damage">&nbsp<img class="equation40" src="Stats/wrathful.svg"> <img class="equation40" src="Stats/critdamage.svg">&nbsp</span> 
+            + <!-- artful strike --> <span title="Artful Strike: If attack was with 2 or more MD and modified attack roll > 20, then roll one free crit-type damage die">&nbsp<img class="equation50" src="Stats/paran-open.svg"><img class="equation30" src="Stats/red/hash.svg"> <img class="equation20" src="Stats/greaterthan.svg">&nbsp <img class="equation20" src="Stats/1.svg"> &nbsp  <img class="equation20" src="Stats/amp.svg"> &nbsp  <img class="equation20" src="Stats/red/x.svg"> &nbsp<img class="equation20" src="Stats/greaterthan.svg"> &nbsp<img class="equation20" src="Stats/red/2.svg"><img class="equation20" src="Stats/red/0.svg"> : <img class="equation40" src="Stats/critdamage.svg"><img class="equation50" src="Stats/paran-close.svg"> </span>
+            + &nbsp<img class="equation40" title="Strength bonus" src="Stats/21_strength.svg"> &nbsp
+            + &nbsp<img class="equation40" title="Misc damage bonuses" src="Stats/25_bonuses.svg">  &nbsp
+            <!--  penalties -->
+            - &nbsp
+            <span title="The defender's Damage Reduction minus the weapon's Armor-Piercing value">
+                <img class="equation50" src="Stats/paran-open.svg"><img class="equation40" src="Stats/damagereduction.svg"> 
+                &nbsp- &nbsp
+                <img class="equation40" src="Stats/armorpiercing.svg">
+            </span>
+            <span title="or">
+                <img class="equation40" src="Stats/or.svg">
+            </span>
+            <span title="No Damage Reduction Applied because this was an Armor-Bypass attack">
+                <img class="equation30" src="Stats/red/0.svg">
+                <img class="equation40" src="Stats/red/armorbypass-damage.svg"> 
+                <img class="equation50" src="Stats/paran-close.svg">
+            </span>
+            - &nbsp<img class="equation40" title="Misc damage penalties" src="Stats/penalties.svg"> 
+        </div>
+
+`        
+    var damage1 = document.getElementById('Damage1')
+    damage1.innerHTML = normaldamage
+    var damage2 = document.getElementById('Damage2')
+    damage2.innerHTML = normaldamage
+    var damage3 = document.getElementById('Damage3')
+    damage3.innerHTML = normaldamage
+    var damage4 = document.getElementById('Damage4')
+    damage4.innerHTML = normaldamage
+    var damage5 = document.getElementById('Damage5')
+    damage5.innerHTML = normaldamage
+    
+}
+</script>
+</head>
+<body onload="PopRepeatedContent()">
+<div id="onecolwide">
+
+<p>
+    <a href="000-Home.html"><img height="100" src="000-Valor.png"></a>
+</p>
+    
+<br>
+
+<iframe style="border: 16px solid #55ff55; height:900;" title="Combat" src="240-Combat/240-10-Keys.pdf" width="1140"> </iframe> <br><br>
+<br>
+<iframe style="border: 16px solid #55ff55; height: 770px;" title="Combat" src="240-Combat/240-25-Ranges.pdf" width="1180"> </iframe> <br><br>
+<br>
+<iframe style="border: 16px solid #55ff55; height: 600px; width: 1200px" title="Combat" src="240-Combat/ResolutionAndDamage-landscapeletter.png"> </iframe> <br><br>
+<br>
+<iframe style="border: 16px solid #55ff55; height: 890;" title="Combat" src="240-Combat/240-35-CombatantBoard.pdf" width="1140"> </iframe> <br><br>
+<br>
+
+<!--
+<iframe style="border: 16px solid #55ff55;" title="Combat" src="240-Combat/240-40-AttackResolution.pdf" width="1140"> </iframe> <br><br>
+<br>
+<iframe style="border: 16px solid #55ff55; height:880;" title="Combat" src="240-Combat/240-50-Damage.pdf" width="1140"> </iframe> <br><br>
+-->
+<!--
+<iframe style="border: 16px solid #f734f8" title="Combat" src="240-Combat/240-99-Combat.pdf" width="1140"> </iframe> <br><br>
+-->
+
+<a href="249-combatnotes.txt"><h3>Working Notes</h3></a>
+
+<a href="241-CM-1.pdf"><img src="241-CM-1.png"></a>
+<!--<a href="241-CM-2.pdf"><img src="241-CM-2.png"></a>-->
+<a href="241-CM-3.pdf"><img src="241-CM-3.png"></a>
+<a href="241-CM-4.pdf"><img src="241-CM-4.png"></a>
+<br>
+<a href="251-KoboldGuideToCombat.pdf"><img src="251-KoboldGuideToCombat.png" height="350"></a>
+<a href="245-MeleeTacticsToolbox.pdf"><img src="245-MeleeTacticsToolbox.png" height="350"></a>
+<a href="245-DirtyTricks.pdf"><img src="245-DirtyTricks.png"></a>
+<a href="246-Psych-ultchar.pdf"><img src="246-Psych-ultchar.png" height="350"></a>
+
+<br><br><br>
+<div class="bg2">
+    <p>
+    As for the spear only world, there are a lot of neolithic weapons which fill the niche of the sword – war hammers, hand axes, ‘proto swords’ edged with obsidian or shark’s teeth, daggers, throwing sticks, shortened spears, and various other weapons.
+    </p>
+    <p>
+    We cover a lot of these in our weapon book and some of them are in the core rules.
+</p>
+<p>
+
+    For a deeper dive into this stuff, I’d recommend Sir Richard Burton’s “Book of the Sword”. It’s a little bit fantastical but he gets into the pre-historical origins of swords, ‘proto-swords’ and many other related weapons.
+</p>
+<p>
+
+    One interesting theory he had, which I learned subsequently may have some legs, was that swords seem to have “evolved” from a range of ‘throwing sticks’ and ‘throwing woods’, some of which end up with a use and a shape similar to hunting boomerangs. There were two important types in Europe called ‘Cataea’ and ‘Teutona’. They were made smooth and streamlined to fly better, but this had the knock-on effect of making them cut through the air much better, which was exploited to make a new class of striking weapons and so on.
+</p>
+<p>
+
+    These go back to the neolithic in Europe, I think I remember they found one in a cave in Poland which was 30,000 years old.
+</p>
+<p>
+
+    Apparently there was a version of the Cataea known to the Greeks
+</p>
+<p>
+
+    http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0063:id=cateia-cn
+</p>
+<p>
+
+    https://www.jstor.org/stable/30079143?seq=1
+</p>
+</div>
+<br><br>
+<p>
+<center>
+<a href="https://www.codexintegrum.com/">Codex Integrum Forums</a>
+</center>
+</p>
+
+<div class="bg1">
+
+<div class="bg2">
+<p>In Codex Martialis, we have three range bands: Onset, Melee and Ringen (grapple).</p>
+
+<p>The first range is <strong>Onset</strong>, which is everything up to the point where you can hit your opponent with a weapon by physically moving across the range threshold, which in game turns usually means taking a five-foot step. Opening attacks take place in this range, as does tactical movement just outside of actual combat. A weapon�s Reach To-Hit bonus is applicable during Onset range, making long weapons like spears and polearms ideal for fighting at this range. At Onset range, your weapons Defense bonus also counts.</p>
+
+<p>The second range is Melee. <strong>Melee </strong>range is within Onset range. This is where you can hit the other person without taking a step. Melee range (called <em>Krieg</em> in German language fencing manuals) is very dangerous unless you are the one in control. Any time you make two or more attacks within a given turn, you will enter Melee range automatically. This is because in a fight, people tend to get closer.</p>
+
+<p>If you <em>don�t</em> want to close to Melee range, you have to make a special effort like Maintaining Range, (which means spending some dice from your Martial Pool, or making only multi-dice attacks). While at Melee range, you use your Speed To-Hit bonus, meaning short weapons like daggers and hand axes are very effective here. At Melee range a weapons Defense bonus counts, just as it does at Onset.</p>
+
+<p>The third range is Grapple. Grapple range is within Melee range. This is where you can execute grappling techniques like throwing another person, moving them or taking a weapon out of their hands. Entering Grapple range is not automatic, and Grapple range isn�t so much a particular distance as a particular state of combat. To initiate a Grapple, you have to either touch your opponent (Hit with an unarmed attack) or hit them with a small (Size T or S) weapon. Entering Grapple always grants the defender an Attack of Opportunity (AoO) unless you have a Feat (such as Ringen) or some special ability which says otherwise, and so long as <strong>they still have dice remaining in their Martial Pool</strong>. If they do have MP remaining they can use Martial Feats like Sidestep or Distance Fighting to <em>avoid</em> the grapple instead. If they have the Ringen MF they can have the choice whether to use their grappling skill to avoid Grapple or to win an exchange. <strong>If they don�t have any MP remaining, they cannot prevent you from initiating grapple</strong>.</p>
+
+<p class="has-text-align-center"><em>Here the spearman drops his spear and performs a throw (Grapple attack) on the swordsman, who is now prone.</em></p>
+
+<p>Entering grapple range has three immediate effects. Most weapons can no longer be used for defense (unless you have special Martial Feats), Shields only confer passive defense, and medium or larger weapons cannot be used to attack (unless you have special Martial Feats).</p>
+
+<h2>In The Grapple &#8211; What to do when you&#8217;ve been caught</h2>
+
+<p>So now we have some idea how to get into Grapple the next pressing issue is, what is it for? The answer is that of course, there are many things you can do in a grapple, some of which require certain Feats or skills, but others can be done by anybody. The basics including Immobilizing people, Throwing people, Disarming people, and Moving people.</p>
+
+<h3>Immobilizing your Opponent</h3>
+
+<p><strong>Immobilizing </strong>is the easiest thing, as soon as you have initiated a grapple you have begun to prevent your opponent from doing many things. They can�t use their larger weapons, they can�t run away, they can�t start fires or blow horns, they can�t cast spells if you are using magic in your game. Temporarily immobilizing someone by grappling with them is not the same thing as pinning someone, but it can be a short term solution to many serious problems!</p>
+
+<h3>Throwing an Opponent</h3>
+
+<p><strong>Throwing </strong>someone means taking them from a normal vertical standing position down to a horizontal prone position on the ground while you yourself remain standing. If you attempt to <strong>throw</strong> someone and you win a contested Grapple check (your Grapple To-Hit bonus vs. theirs) then they are Prone. If they have no MP remaining in their Pool, then it�s your Grapple die roll vs. their Passive Defense. In the SRD the Prone status confers a -4 penalty to defense in Melee (this applies to both Active and Passive Defense), and getting up from being prone triggers an AoO from anyone within normal attack range (5� for normal weapons, or 10� for reach weapons). If you fail to throw your opponent, you are considered to be still in a grapple at the beginning of the next turn, but they can�t do anything else until it�s their turn (unless they have a special MF like Counterstroke or Kampfringen). If you have the Kampfringen MF you can Throw your opponent with a successful defense of their attempt to throw <em>you</em>. See Kampfringen MF in the core rules for more details on this.</p>
+
+<h3>Grappling to a Take-Down</h3>
+
+<p>If you generate a bind or a counterattack (natural 20 on defense) during a Throw attempt, then <em>both</em> fighters end up prone and remain in grapple. This is called a take-down.</p>
+
+<h3>Disarming your Opponent</h3>
+
+<p><strong>Disarming</strong> someone means taking their weapon out of their hands. This works the same way as a <strong>Throw</strong>. You make a contested Grapple Check and if you succeed, they no longer have a weapon. The defender in this case can decide whether or not to contest the attempt by spending an MP (they might instead prefer to move away for example). If they do, then the contested Grapple Check pits your die roll + Grapple Bonus vs. their die roll vs. Grapple bonus. The MF Gioco Stretto confers a Free Dice on any attempt to disarm.</p>
+
+<h3>Moving your Opponent</h3>
+
+<p><strong>Moving</strong> someone might mean pushing someone off a cliff, or out of a door, or away from your friend, or away from the pool of naphtha they are trying to ignite with their torch, or away from a weapon they are trying to retrieve, or any other action which involves pushing someone away from where they are at the beginning of the round. Moving someone works the same way as a Throw or a Disarm. You make a contested grapple check, and if you succeed, you have moved them. Remember certain Feats confer Free Dice when grappling. For example, Ringen gives you one Free Dice for grappling in each turn. This can be for any roll related to the grapple, the initial touch, or an attempt to Throw, Disarm or Move, or in a defensive roll against such an attack. This stacks with all other Free Dice conferred by any other MF.</p>
+
+<h3>Grappling to Pin</h3>
+
+<p>If you have the MF Grapple and Pin, you can Pin your opponent with a successful grapple check and then either render them unconscious or cripple them. See Advanced Martial Feats, Grapple and Pin for more on this.</p>
+
+<h2>Using Weapons in Grapple</h2>
+
+<p>Unless you have special Martial Feats (such as Half-Swording or Half-Staff MF) you can only use weapons with a size T or S. Unarmed attacks such as those conferred by Dance de La Rue, Bind and Batter, Pugilism, or Morstrosse MF�s.</p>
+
+<h3>In the grapple, some weapons are better than others</h3>
+
+<p>The Grapple Bonus is normally your BaB plus your strength. If you have Weapon Finesse: Grappling, you can apply your dexterity bonus instead.</p>
+
+<h2>Grappling Is a Critical Component of Real Fencing</h2>
+
+<p>As fights run long, fighters typically get closer together. Real fighters don't just stand at melee-range and slam each other like boxing robots.  Despite its prevalence, grappling has largely been avoided by RPG&#8217;s due to its complexity and to avoid burdening players with cumbersome new rules.</p>
+</div>
+
+<span class="pdfsource2">Codex Martialis (armor and missiles of the ancient world)</span>
+<iframe src="241-CheatSheet_cm.pdf#zoom=120" width="1020"></iframe>
+
+<span class="pdfsource2">Codex Martialis (melee weapons of the ancient world)</span>
+<iframe src="243-Weapons-cm.pdf#zoom=120" width="1020"></iframe>
+
+<span class="pdfsource2">Codex Martialis (core)</span>
+<iframe src="244-SeriousInjuries_cm.pdf#zoom=120"  width="1020"></iframe>
+
+<div class="box">
+<pre>
+
+
+GRAPPLE range special:
+	No WDB
+	Shields do not grant advantage to Active Defense
+
+
+=======================================================================================================================================
+Prone: 
+    limited to 1 MP for the round
+    attacker gets free MD to attack
+    expend 1 MD to stand, suffer AoO
+    crawl at 1/2 speed, suffer AoO
+
+================================================================================================================
+
+
+Grapple Range:
+	weapon defense bonus does not apply
+	cannot use weapons size >= M
+	shields only passive defense
+	weapons use "speed" bonus instead of "reach" bonus
+	
+
+
+Attack Types: Bludgeon (100% DR), Chop (150% DR), Pierce (100%) DR, Slash (200% DR)
+
+Primary Attack: the only attack type(s) which can cause dynamic crits (all types cause normal crits)
+
+Start of combat:
+-------------
+Initiative:
+	combatant with largest weapon size category (if they are unequal) rolls initiative w/ advantage
+
+Per round:
+-------------
+To-Hit roll vs armor:
+    !d20 + BAB/Rank + Str + (WRB || WSB) + Thumbs up
+    damamge to armor: die roll - armor's hardness (which functions as DR in this case)
+
+    
+</pre>
+</div>
+
+</div>								
+<br><br>
+</div>
+</body>
+</html>
