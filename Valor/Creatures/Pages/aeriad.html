@@ -5,30 +5,92 @@ rel="stylesheet"
 type="text/css"
 href="../../hb.css"
 />
+<script>
+function sizechange(){
+    let s = document.getElementById("size").value;
+    let ss = "0";
+    if(s == "fine"){
+        ss = "1";
+    }
+    else if(s == "diminutive"){
+        ss = "1d3";
+    }
+    else if(s == "tiny"){
+        ss = "2 + 1d3";
+    }
+    else if(s == "small"){
+        ss = "6 + 1d4";
+    }
+    else if(s == "medium"){
+        ss = "12 + 1d6";
+    }
+    else if(s == "large"){
+        ss = "25 + 1d10";
+    }
+    else if(s == "huge"){
+        ss = "50 + 1d12";
+    }
+    else if(s == "gargantuan"){
+        ss = "100 + 2d20";
+    }
+    else if(s == "colossal"){
+        ss = "200 + 3d20";
+    }
+    document.getElementById("hitpoints").value = ss;
+    document.getElementById("hp").value = ss;
+}
+function hitpointschange(){
+    document.getElementById("hitpoints").value =  document.getElementById("hp").value;
+}
+function numberchange(){
+    document.getElementById("numberapp").value =  document.getElementById("numbers").value;
+}
+</script>
 <link href="../../rpg.ico" rel="icon" type="image/bmp">
-<title>HB Monster Index</title>
+<title>Valor Monster Index</title>
 </head>
 <body>
+    
+    <!-- end of _head-creature-page-a.html  need to stop here so that the absolute position div can be created by the cpp code, and then the common batch of links and opening of the main div will be imported from the -b head.html  -->>
+
+    
 <div id="onecolnarrow" style="background-color:#ffeedd;">
 
 <p>
-<a href="../../000-Home.html"><img height="150" src="../../000-Valor.png"></a>
+    <center>
+         <!---  This block of links is from _head-creaturepage-b.html  --->
+<a href="../../000-Home.html"><img height="200" src="../../000-Valor.jpg" title="Valor home page"></a>
 &nbsp &nbsp
-<a href="../../480-Creatures.html"><img height="150" src="../../480-chimera.jpg"></a>
+<a href="../../480-Creatures.html"><img height="200" src="../../480-Creatures.jpg" title="Creatures home page"></a>
 &nbsp &nbsp
-<a href="../Index-full/page25.html"><img height="150" src="../../485-Monsters.png"></a>
+<a href="../../485-Monsters-Master.html"><img height="200" src="../../480-MonsterMenagerie.jpg" title="Alphabetical list of all creatures"></a>
 &nbsp &nbsp
-<a href="../../485-Monsters-Master.html"><img height="150" src="../../485-Monsters-master.jpg"></a>
+<a href="../../485-Monsters-sources.html"><img height="200" src="../../480-MonstersByGame.jpg" title="Creatures by game and source"></a>
 &nbsp &nbsp
-<a href="../../485-Monsters-sources.html"><img height="150" src="../../485-Monsters-games.png"></a>
+<a href="../../485-Monsters-environments.html"><img height="200" src="../../480-Monsters-byhabitat.jpg" title="Creatures by environment"></a>
 &nbsp &nbsp
-<a href="../../485-Monsters-tags.html"><img height="150" src="../../485-Monsters-tags.png"></a>
+<a href="../../485-Monsters-tags.html"><img height="200" src="../../480-Monsters-tags.jpg" title="Creatures by tags"></a>
+    </center>
 </p>
 <br><br>
+<a href="adred.html">PREV</a> &nbsp; &nbsp; &nbsp;
+<a href="aetherElemental.html">NEXT</a>
 <h1>Aeriad</h1>
-<br><br>
+<div class="hbcritterstats">
+Size: undefined<br>
+Type: undefined<br>
+Temper: undefined<br>
+Number appearing: 0<br>
+Combat Pool: 0<br>
+Hit Points: 0<br>
+Attack Rank: 0<br>
+Defense Rank: 0<br>
+Damage Reduction: 0<br>
+</div>
+<div class="hbcritterstats2">
+</div>
 <p id="aeriad_tal.pdf"> <span class="pdfsource"><a href="../../485-Monsters-sources.html#tal">Talislanta Menagerie</a></span> &nbsp &nbsp
-<span class="gamesource">Talislanta</span> <span class="externallink"> <a href="https://google.com/search?q=Talislanta+Aeriad">source link</a>
+<span class="gamesource">Talislanta</span> <span class="externallink"><a href="https://www.amazon.com/Talislanta-Menagerie/dp/0973692847">original/official source</a>
 </p>
 <br><br>
 </div>
